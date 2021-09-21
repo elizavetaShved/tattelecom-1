@@ -1,9 +1,60 @@
-$big: 1150px;
-$middle: 960px;
-$small: 760px;
-$xs: 560px;
-$xxs: 360px;
+//$full: 1400px;
+//$vast: 1200px;
+//$big: 1024px;
+//$large: 960px;
+//$middle: 768px;
+//$small: 560px;
+//$xxs: 426px;
 
+$full: 1400px;
+$huge: 1200px;
+$large: 1160px;
+$big: 1024px;
+$middle: 960px;
+$small: 768px;
+$xs: 560px;
+$xxs: 426px;
+
+//full
+@mixin for-fl-up {
+  @media screen and (min-width: $full) {
+    @content;
+  }
+}
+
+@mixin for-fl-down {
+  @media screen and (max-width: $full - 1) {
+    @content;
+  }
+}
+
+//huge
+@mixin for-hg-up {
+  @media screen and (min-width: $huge) {
+    @content;
+  }
+}
+
+@mixin for-hg-down {
+  @media screen and (max-width: $huge - 1) {
+    @content;
+  }
+}
+
+//large
+@mixin for-lg-up {
+  @media screen and (min-width: $large) {
+    @content;
+  }
+}
+
+@mixin for-lg-down {
+  @media screen and (max-width: $large - 1) {
+    @content;
+  }
+}
+
+//big
 @mixin for-bg-up {
   @media screen and (min-width: $big) {
     @content;
@@ -16,6 +67,8 @@ $xxs: 360px;
   }
 }
 
+
+//middle
 @mixin for-md-up {
   @media screen and (min-width: $middle) {
     @content;
@@ -28,6 +81,7 @@ $xxs: 360px;
   }
 }
 
+//small
 @mixin for-sm-up {
   @media screen and (min-width: $small) {
     @content;
@@ -40,6 +94,7 @@ $xxs: 360px;
   }
 }
 
+//xs
 @mixin for-xs-up {
   @media screen and (min-width: $xs) {
     @content;
@@ -52,6 +107,7 @@ $xxs: 360px;
   }
 }
 
+//xxs
 @mixin for-xxs-up {
   @media screen and (min-width: $xxs) {
     @content;
@@ -65,12 +121,48 @@ $xxs: 360px;
 }
 
 .gl-fl-show {
-  @include for-bg-up {
+  @include for-fl-up {
     display: none !important;
   }
 }
 
 .gl-fl-hide {
+  @include for-fl-down {
+    display: none !important;
+  }
+}
+
+.gl-hg-show {
+  @include for-hg-up {
+    display: none !important;
+  }
+}
+
+.gl-hg-hide {
+  @include for-hg-down {
+    display: none !important;
+  }
+}
+
+.gl-lg-show {
+  @include for-lg-up {
+    display: none !important;
+  }
+}
+
+.gl-lg-hide {
+  @include for-lg-down {
+    display: none !important;
+  }
+}
+
+.gl-bg-show {
+  @include for-bg-up {
+    display: none !important;
+  }
+}
+
+.gl-bg-hide {
   @include for-bg-down {
     display: none !important;
   }

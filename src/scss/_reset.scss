@@ -1,10 +1,24 @@
+@import 'sizes';
+
 html {
   height: -webkit-fill-available;
+  font-size: 10px;
+  -webkit-text-size-adjust: 100%;
+
+  @include for-fl-down {
+    font-size: 8px;
+  }
+
+  @include for-hg-down {
+    font-size: 9px;
+  }
 }
 
 html, body {
   background-repeat: no-repeat;
   color: var(--main-text-color);
+  font-size: 16px;
+  line-height: 20px;
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -12,7 +26,7 @@ html, body {
 }
 
 *, *:before, *:after {
-  font-family: var(--font-riffic), sans-serif;
+  font-family: var(--font-ibm), sans-serif;
   outline: none;
   box-sizing: border-box;
   background-repeat: no-repeat;
