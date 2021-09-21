@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta name="format-detection" content="telephone=no">
+  <script src="assets/js/ie11CustomProperties.js"></script>
+  <link rel="stylesheet" href="css/styles.min.css"/>
+  <title>
+    {{ title }}
+  </title>
+</head>
+
+<body class="no-touch">
+<div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+  {{> sprite }}
+</div>
+
+<div class="gl__layout-wrapper">
+  <div class="gl__layout-header">
+    {{> layout-header }}
+  </div>
+
+  <main class="gl__layout-content">
+    {{#block "main"}}{{/block}}
+  </main>
+
+  <div class="gl__layout-footer">
+    {{> layout-footer }}
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="assets/js/backend.js"></script>
+</div>
+</body>
+</html>

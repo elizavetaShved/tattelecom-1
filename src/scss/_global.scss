@@ -1,0 +1,35 @@
+@import 'sizes';
+
+.gl__page-content {
+  padding-left: var(--page-content-padding-fl);
+  padding-right: var(--page-content-padding-fl);
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include for-md-down {
+    padding-left: var(--page-content-padding-md-down);
+    padding-right: var(--page-content-padding-md-down);
+  }
+
+  @include for-sm-down {
+    padding-left: var(--page-content-padding-small);
+    padding-right: var(--page-content-padding-small);
+  }
+
+  @include for-xxs-down {
+    padding-left: var(--page-content-padding-xxs-down);
+    padding-right: var(--page-content-padding-xxs-down);
+  }
+}
+
+.gl__layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.gl__layout-content {
+  flex: 1 1 100%;
+}
