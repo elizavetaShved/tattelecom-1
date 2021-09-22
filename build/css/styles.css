@@ -651,13 +651,13 @@ nav ul {
   -webkit-transition: fill 250ms;
   transition: fill 250ms; }
 
-.rates {
+.rates-preview {
   position: relative;
   height: 47rem;
   margin-bottom: 8rem;
   color: #fff; }
 
-.rates__main-image {
+.rates-preview__main-image {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -667,7 +667,7 @@ nav ul {
      object-fit: cover;
   z-index: -1; }
 
-.rates__content-wrapper {
+.rates-preview__content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -676,22 +676,22 @@ nav ul {
           align-items: center;
   height: 100%; }
 
-.rates__content {
+.rates-preview__content {
   max-width: 45rem; }
 
-.rates__content-title {
+.rates-preview__content-title {
   font-size: 3.4rem;
   line-height: 4rem;
   margin-bottom: 2rem; }
 
-.rates__content-subtitle {
+.rates-preview__content-subtitle {
   font-weight: 600;
   font-size: 4.4rem;
   line-height: 5.4rem;
   margin-bottom: 1.2rem;
   text-transform: uppercase; }
 
-.rates__content-caption {
+.rates-preview__content-caption {
   font-weight: 300;
   font-size: 2rem;
   line-height: 2.4rem;
