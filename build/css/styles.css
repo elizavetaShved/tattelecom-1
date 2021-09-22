@@ -936,7 +936,18 @@ nav ul {
   padding-bottom: 1.8rem; }
 
 .rates-list__slide-content {
-  z-index: 2; }
+  z-index: 2;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .rates-list__slide-title {
   font-weight: 600;
