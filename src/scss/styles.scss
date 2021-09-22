@@ -5,8 +5,11 @@
 @import 'reset';
 @import 'sizes';
 
+@import 'form/checkbox';
+
 @import 'components/header';
 @import 'components/footer';
 @import 'components/main-page/rates-preview';
 @import 'components/main-page/rates-list';
+@import 'components/main-page/services';
 
