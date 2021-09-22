@@ -39,3 +39,53 @@
 .gl__link-show-all-icon {
   fill: #A6A6A6;
 }
+
+.gl__link-arrow-container {
+  display: block;
+  &:hover {
+    .gl__link-arrow-link {
+      opacity: 1;
+
+      &:before {
+        width: 11rem;
+        height: 11rem;
+      }
+    }
+  }
+}
+
+.gl__link-arrow-block {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.gl__link-arrow-wrapper {
+  margin: -2rem;
+}
+
+.gl__link-arrow-link {
+  padding: 2rem;
+  opacity: 0;
+  transition: opacity 600ms;
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FEE7D7;
+    z-index: -1;
+    border-radius: 100%;
+    transition: width 300ms, height 300ms;
+  }
+}
+
+.gl__link-arrow-icon {
+  height: 3.2rem;
+  fill: var(--main-color);
+}
