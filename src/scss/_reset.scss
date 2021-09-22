@@ -59,7 +59,15 @@ a {
 
   &:hover {
     color: var(--main-color);
+
+    svg {
+      fill: var(--main-color);
+    }
   }
+}
+
+svg {
+  transition: fill 250ms;
 }
 
 button {
@@ -67,6 +75,12 @@ button {
   background-color: transparent;
   border: none;
   padding: 0;
+
+  &:hover {
+    svg {
+      fill: var(--main-color);
+    }
+  }
 }
 
 table {

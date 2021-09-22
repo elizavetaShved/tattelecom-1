@@ -33,3 +33,10 @@
 .gl__layout-content {
   flex: 1 1 100%;
 }
+
+.gl__title {
+  font-size: 3.8rem;
+  line-height: 5rem;
+  letter-spacing: 0.015em;
+  color: var(--main-text-color);
+}

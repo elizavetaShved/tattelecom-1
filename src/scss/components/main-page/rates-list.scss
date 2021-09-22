@@ -1,0 +1,195 @@
+.rates-list {
+  padding: 8rem 0;
+}
+
+.rates-list__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -1rem;
+  margin-right: -1rem;
+  margin-bottom: 4rem;
+}
+
+.rates-list__link-show-all {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.01em;
+  color: #A6A6A6;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.rates-list__link-show-all-icon {
+  fill: #A6A6A6;
+}
+
+.rates-list__slider-wrapper {
+  display: flex;
+}
+
+.rates-list__slide {
+  padding: 2.2rem 1.6rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px 4px #0000000f;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & + & {
+    margin-left: 3rem;
+  }
+}
+
+.rates-list__slide-hit {
+  background-color: #2B2B2B;
+  position: relative;
+  color: #fff;
+
+  .rates-list__slide-hit-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .rates-list__slide-hit-mark {
+    position: absolute;
+    top: 0;
+    right: 2.4rem;
+    height: 3.8rem;
+  }
+}
+
+.rates-list__slide-up {
+  padding-bottom: 1.8rem;
+}
+
+.rates-list__slide-content {
+  z-index: 2;
+}
+
+.rates-list__slide-title {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  margin-bottom: .6rem;
+}
+
+.rates-list__slide-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+.rates-list__slide-condition-item {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  display: flex;
+  align-items: center;
+
+  & + & {
+    margin-top: 1.6rem;
+  }
+}
+
+.rates-list__slide-condition-item-icon {
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.rates-list__opportunities-wrapper {
+  border-top: 1px solid #F5F5F5;
+  padding: .8rem 0 1.6rem 0;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+.rates-list__opportunities-title {
+  color: #ADADAD;
+  margin-bottom: 1.2rem;
+}
+
+.rates-list__opportunities-text {
+  max-width: 80%;
+}
+
+.rates-list__slide-price-wrapper {
+  border-top: 1px solid #F5F5F5;
+  padding-top: 2.8rem;
+  margin-bottom: 1.4rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rates-list__slide-price {
+  .big {
+    font-size: 4rem;
+    line-height: 5rem
+  }
+
+  .small {
+    font-size: 1.8rem;
+    line-height: 2.2rem
+  }
+}
+
+.rates-list__slide-btns-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rates-list__slide-btn-plug {
+  width: 100%;
+}
+
+.rates-list__slide-link-detailed-wrapper {
+  margin: 0 -1.4rem -1.4rem -1.4rem;
+}
+
+.rates-list__slide-link-detailed {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  padding: 1.4rem;
+  display: block;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.rates-list__slider-container {
+  position: relative;
+}
+
+.rates-list__slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5rem;
+  height: 5rem;
+  background-color: #fff;
+  box-shadow: 0 0.266004px 10px rgba(153, 152, 168, 0.2);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.mod-prev {
+    left: -6.6rem;
+  }
+
+  &.mod-next {
+    right: -6.6rem;
+  }
+}
+
+.rates-list__slider-btn-icon {
+  height: 2.4rem;
+}

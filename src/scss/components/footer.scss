@@ -111,16 +111,9 @@
 
 .footer__contact-social-link {
   padding: 1.6rem;
-
-  &:hover {
-    .footer__contact-social-icon {
-      fill: var(--main-color);
-    }
-  }
 }
 
 .footer__contact-social-icon {
   height: 4rem;
   fill: #A6A6A6;
-  transition: fill 250ms;
 }
