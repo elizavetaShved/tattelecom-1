@@ -1,19 +1,14 @@
 <section class="rates-list" id="rates-list-host">
   <div class="gl__page-content">
     <div class="rates-list__head">
-      <h2 class="gl__title">
+      <h2 class="gl__title rates-list__title">
         Тарифы мобильной связи
       </h2>
-      <a href="" class="rates-list__link-show-all">
-        <span class="rates-list__link-show-all-text">Все тарифы</span>
-        <svg width="20" height="20" aria-hidden="true" class="rates-list__link-show-all-icon">
-          <use xlink:href="#arrow-right"></use>
-        </svg>
-      </a>
+      {{> common/link-show-all text="Все тарифы" }}
     </div>
 
-    <div class="rates-list__slider-container">
-      <ul class="rates-list__slider-wrapper">
+    <div class="gl-slider__slider-container">
+      <ul class="gl-slider__wrapper">
         {{> main-page/rates-list/components/slide
           isHit=true
           title="Много минут"
@@ -55,13 +50,13 @@
         }}
       </ul>
 
-      <button type="button" class="rates-list__slider-btn mod-prev">
-        <svg width="26" height="26" aria-hidden="true" class="rates-list__slider-btn-icon">
+      <button type="button" class="gl-slider__slider-btn mod-prev">
+        <svg width="26" height="26" aria-hidden="true" class="gl-slider__slider-btn-icon">
           <use xlink:href="#arrow-left"></use>
         </svg>
       </button>
-      <button type="button" class="rates-list__slider-btn mod-next">
-        <svg width="26" height="26" aria-hidden="true" class="rates-list__slider-btn-icon">
+      <button type="button" class="gl-slider__slider-btn mod-next">
+        <svg width="26" height="26" aria-hidden="true" class="gl-slider__slider-btn-icon">
           <use xlink:href="#arrow-right"></use>
         </svg>
       </button>

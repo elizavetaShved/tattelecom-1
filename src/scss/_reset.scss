@@ -127,3 +127,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 nav ul {
   list-style: none;
 }
+
+::selection {
+  color: white;
+  background-color: var(--main-color);
+}

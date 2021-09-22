@@ -1,0 +1,29 @@
+<section class="news-list" id="news-list-host">
+  <div class="gl__page-content">
+    <div class="news-list__head">
+      <h2 class="gl__title news-list__title">
+        Новости
+      </h2>
+      {{> common/link-show-all text="Все новости" }}
+    </div>
+
+    <div class="gl-slider__slider-container">
+      <ul class="gl-slider__wrapper">
+        {{> main-page/news-list/components/slide title="22 май" text="Провели праздник двора для жителей ЖК Салават Купере" }}
+        {{> main-page/news-list/components/slide title="22 май" text="Провели праздник двора для жителей ЖК Салават Купере" }}
+        {{> main-page/news-list/components/slide title="22 май" text="Провели праздник двора для жителей ЖК Салават Купере" }}
+      </ul>
+
+      <button type="button" class="gl-slider__slider-btn mod-prev">
+        <svg width="26" height="26" aria-hidden="true" class="gl-slider__slider-btn-icon">
+          <use xlink:href="#arrow-left"></use>
+        </svg>
+      </button>
+      <button type="button" class="gl-slider__slider-btn mod-next">
+        <svg width="26" height="26" aria-hidden="true" class="gl-slider__slider-btn-icon">
+          <use xlink:href="#arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>

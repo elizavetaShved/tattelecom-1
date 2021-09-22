@@ -1,0 +1,39 @@
+.gl-slider__slider-container {
+  position: relative;
+}
+
+.gl-slider__wrapper {
+  display: flex;
+}
+
+.gl-slider__slide {
+  & + & {
+    margin-left: 3rem;
+  }
+}
+
+.gl-slider__slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5rem;
+  height: 5rem;
+  background-color: #fff;
+  box-shadow: 0 0.266004px 10px rgba(153, 152, 168, 0.2);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.mod-prev {
+    left: -6.6rem;
+  }
+
+  &.mod-next {
+    right: -6.6rem;
+  }
+}
+
+.gl-slider__slider-btn-icon {
+  height: 2.4rem;
+}
