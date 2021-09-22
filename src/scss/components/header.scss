@@ -109,6 +109,8 @@
 }
 
 .header__btn {
+  padding: 1.6rem 2rem;
+
   & + & {
     margin-left: 2rem;
   }

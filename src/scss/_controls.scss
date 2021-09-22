@@ -1,15 +1,27 @@
 .gl__main-btn {
-  padding: 1.6rem 2rem;
+  padding: 1.4rem 4.4rem;
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 2rem;
   background: var(--main-color);
   border-radius: 3px;
   color: #fff;
-  min-width: 17.6rem;
-  transition: background-color 250ms;
+  border: 1px solid transparent;
+  transition: background-color 250ms, border-color 250ms;
+  white-space: nowrap;
 
   &:hover {
     background: #ff7846;
+  }
+
+  &.mod-transparent {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+
+    &:hover {
+      background: var(--main-color);
+      border-color: transparent;
+    }
   }
 }
