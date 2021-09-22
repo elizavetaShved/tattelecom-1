@@ -1,0 +1,15 @@
+.gl__main-btn {
+  padding: 1.6rem 2rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  background: var(--main-color);
+  border-radius: 3px;
+  color: #fff;
+  min-width: 17.6rem;
+  transition: background-color 250ms;
+
+  &:hover {
+    background: #ff7846;
+  }
+}
