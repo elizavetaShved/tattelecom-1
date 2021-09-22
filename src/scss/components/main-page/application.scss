@@ -1,0 +1,43 @@
+.application {
+  padding: 11rem 0;
+  position: relative;
+  background-color: #F5F5F5;
+  z-index: 1;
+}
+
+.application__background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.application__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.application__title {
+  margin-bottom: 3.6rem;
+  text-align: center;
+}
+
+.application__subtitle {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  color: #555759;
+  margin-bottom: 4.4rem;
+  max-width: 47rem;
+  text-align: center;
+}
+
+.application__form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  max-width: 80rem;
+}

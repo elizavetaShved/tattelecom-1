@@ -570,6 +570,22 @@ nav ul {
       -ms-user-select: none;
           user-select: none; }
 
+.gl-input__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.gl-input__title {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: 0.02em;
+  color: #A6A6A6; }
+
 .header {
   height: 11.8rem;
   display: -webkit-box;
@@ -1011,6 +1027,8 @@ nav ul {
 .services {
   background-color: #F5F5F5;
   padding: 8rem 0; }
+  .services .gl-input__input, .services .services__btn-submit {
+    height: 5.4rem; }
 
 .services__list {
   display: grid;
@@ -1032,7 +1050,7 @@ nav ul {
   .services__item-wrapper.mod-painted {
     background-color: var(--main-color);
     color: #fff; }
-    .services__item-wrapper.mod-painted .services__input-title {
+    .services__item-wrapper.mod-painted .gl-input__title {
       color: #fff; }
   .services__item-wrapper:nth-child(1) {
     grid-column: 1 / 8; }
@@ -1091,23 +1109,7 @@ nav ul {
           align-items: end;
   grid-gap: 1.4rem; }
 
-.services__input-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.services__input-title {
-  font-weight: 300;
-  font-size: 1.2rem;
-  line-height: 2rem;
-  letter-spacing: 0.02em;
-  color: #A6A6A6; }
-
-.services__input {
+.gl-input__input {
   background-color: #fff;
   -webkit-box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 16px rgba(51, 51, 51, 0.08);
           box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 16px rgba(51, 51, 51, 0.08);
@@ -1117,19 +1119,16 @@ nav ul {
   font-size: 1.6rem;
   line-height: 2.6rem;
   letter-spacing: 0.02em; }
-  .services__input::-webkit-input-placeholder {
+  .gl-input__input::-webkit-input-placeholder {
     color: #A6A6A6; }
-  .services__input::-moz-placeholder {
+  .gl-input__input::-moz-placeholder {
     color: #A6A6A6; }
-  .services__input:-ms-input-placeholder {
+  .gl-input__input:-ms-input-placeholder {
     color: #A6A6A6; }
-  .services__input::-ms-input-placeholder {
+  .gl-input__input::-ms-input-placeholder {
     color: #A6A6A6; }
-  .services__input::placeholder {
+  .gl-input__input::placeholder {
     color: #A6A6A6; }
-
-.services__input, .services__btn-submit {
-  height: 5.4rem; }
 
 .services__btn-submit.mod-transparent {
   padding-left: 2rem;
@@ -1277,3 +1276,49 @@ nav ul {
   line-height: 3.2rem;
   letter-spacing: 0.015em;
   margin-right: 1rem; }
+
+.application {
+  padding: 11rem 0;
+  position: relative;
+  background-color: #F5F5F5;
+  z-index: 1; }
+
+.application__background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1; }
+
+.application__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.application__title {
+  margin-bottom: 3.6rem;
+  text-align: center; }
+
+.application__subtitle {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  color: #555759;
+  margin-bottom: 4.4rem;
+  max-width: 47rem;
+  text-align: center; }
+
+.application__form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  max-width: 80rem; }

@@ -21,14 +21,18 @@
 
         <form class="services__form-wrapper">
           <div class="services__form-inputs-wrapper">
-            <label class="services__input-wrapper">
-              <span class="services__input-title">Введите номер</span>
-              <input type="text" class="services__input" placeholder="+7 (___)  ___-__-__">
-            </label>
-            <label class="services__input-wrapper">
-              <span class="services__input-title">От 10 до 30 000 Р</span>
-              <input type="text" class="services__input" placeholder="Сумма">
-            </label>
+            {{> common/input-main
+              type="tel"
+              inputTitle="Введите номер"
+              placeholder="+7 (___)  ___-__-__"
+              name="services-tel"
+            }}
+            {{> common/input-main
+              type="number"
+              inputTitle="От 10 до 30 000 Р"
+              placeholder="Сумма"
+              name="services-summ"
+            }}
             <button type="submit" class="gl__main-btn services__btn-submit">Продолжить</button>
           </div>
 
@@ -82,14 +86,18 @@
 
         <form class="services__form-wrapper">
           <div class="services__form-inputs-wrapper">
-            <label class="services__input-wrapper">
-              <span class="services__input-title">Введите номер переноса</span>
-              <input type="text" class="services__input" placeholder="+7 (___)  ___-__-__">
-            </label>
-            <label class="services__input-wrapper">
-              <span class="services__input-title">Укажите город проживания</span>
-              <input type="text" class="services__input" placeholder="Сумма">
-            </label>
+            {{> common/input-main
+              type="tel"
+              inputTitle="Введите номер переноса"
+              placeholder="+7 (___)  ___-__-__"
+              name="services-tel-transfer"
+            }}
+            {{> common/input-main
+              type="text"
+              inputTitle="Укажите город проживания"
+              placeholder="Казань"
+              name="services-city"
+            }}
             <button type="submit" class="gl__main-btn mod-transparent services__btn-submit">Начать перенос</button>
           </div>
 

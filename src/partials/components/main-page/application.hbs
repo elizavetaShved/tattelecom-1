@@ -1,0 +1,25 @@
+<section class="application" id="application-host">
+  <img src="img/main-page/application/background.svg" alt="" class="application__background">
+  <div class="gl__page-content">
+    <div class="application__content">
+      <h2 class="gl__title application__title">Оставьте заявку</h2>
+      <div class="application__subtitle">
+        Заполните данные и наши специалисты свяжутся с вами.
+      </div>
+
+      <form class="application__form">
+        {{> common/input-main
+          type="text"
+          placeholder="Ваше имя"
+          name="application-name"
+        }}
+        {{> common/input-main
+          type="tel"
+          placeholder="+7 (___)  ___-__-__"
+          name="application-tel"
+        }}
+        <button type="button" class="gl__main-btn">Жду звонка</button>
+      </form>
+    </div>
+  </div>
+</section>
