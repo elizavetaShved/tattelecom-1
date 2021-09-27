@@ -37,9 +37,9 @@ button {
   margin-left: auto;
   margin-right: auto;
 
-  @include for-md-down {
-    padding-left: var(--page-content-padding-md-down);
-    padding-right: var(--page-content-padding-md-down);
+  @include for-bg-down {
+    padding-left: var(--page-content-padding-bg-down);
+    padding-right: var(--page-content-padding-bg-down);
   }
 
   @include for-sm-down {

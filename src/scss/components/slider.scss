@@ -1,15 +1,13 @@
-.gl-slider__container {
+.gl-slider {
   position: relative;
+}
+
+.gl-slider__container {
+  padding: 2rem; margin: -2rem;
 }
 
 .gl-slider__wrapper {
   display: flex;
-}
-
-.gl-slider__slide {
-  & + & {
-    margin-left: 3rem;
-  }
 }
 
 .gl-slider__slider-btn {

@@ -1,6 +1,6 @@
 import { primaryInput } from 'detect-it';
 
-export default function() {
+export default function () {
 
   // Определение тач устройств
   if (primaryInput === 'touch') {

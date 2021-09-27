@@ -12,7 +12,6 @@
     {{ title }}
   </title>
 </head>
-
 <body class="no-touch">
 <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
   {{> sprite }}
@@ -20,7 +19,7 @@
 
 <div class="gl__layout-wrapper">
   <div class="gl__layout-header">
-    {{> layout-header }}
+<!--    {{> layout-header }}-->
   </div>
 
   <main class="gl__layout-content">
@@ -32,7 +31,13 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Всегда вслючённый скрипт -->
   <script src="js/app.js"></script>
+
+  <!-- Скрипты для кокретных страниц -->
+  <script src="js/mainPage.js"></script>
+
   <script src="assets/js/backend.js"></script>
 </div>
 </body>
