@@ -1,17 +1,106 @@
-.header {
-  height: 11.8rem;
+.header__top-block {
+  background-color: var(--main-background);
+}
+
+.header__top-block-content {
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  margin: 0 -1.2rem;
+}
+
+.header__bottom-block {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.header__top-menu-items {
+  height: 100%;
+}
+
+.header__top-menu-items-list {
+  display: flex;
+  align-items: center;
+}
+
+.header__top-block-right {
+  display: flex;
+  height: 100%;
+}
+
+.header__top-menu-items-link {
+  height: 100%;
+  padding: 0 1.2rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  transition: border-top-color 250ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    border-top-color: var(--main-color);
+  }
+
+  &.mod-with-icons {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__contacts-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 4.8rem;
+}
+
+.header__top-menu-items-link-icon {
+  margin-right: .4rem;
+  height: 2rem;
+  fill: var(--main-text-color);
+}
+
+.header__bottom-block-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10rem;
+}
+
 .header__logo-wrapper {
   display: flex;
   align-items: center;
-  margin-right: 4rem;
+  margin: -2.4rem;
+  width: 100%;
+}
+
+.header__logo-link {
+  height: 100%;
+  padding: 2.4rem;
+  display: flex;
+  align-items: center;
+
+  & + & {
+    padding-left: 0;
+
+    .header__logo {
+      border-left: 1px solid #E7F2FA;
+      padding-left: 2.4rem;
+    }
+  }
+}
+
+.header__logo {
 
   &.mod-tat {
-    height: 2.8rem;
+    height: 2rem;
   }
 
   &.mod-fly {
@@ -19,117 +108,45 @@
   }
 }
 
-.header__content {
-  width: 100%;
-  flex-grow: 0;
-}
-
-.header__top-block {
+.header__bottom-block-right {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  border-bottom: 2px solid #F5F5F5;
 }
 
-.header__whom-wrapper, .header__connection-wrapper {
+.header__bottom-menu-list {
+  height: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin: -1.6rem;
 }
 
-.header__whom-item, .header__connection-item {
-  padding: 1.2rem 1rem;
-  font-size: 1.4rem;
-}
-
-.header__whom-item {
-  font-weight: 600;
-  color: #ADADAD;
-  transition: color 250ms;
-
-  &:hover {
-    color: var(--main-text-color);
-  }
-}
-
-.header__connection-item {
-  font-weight: 300;
-  color: #555759;
-  transition: color 250ms;
-
-  &.mod-with-icon {
-    display: flex;
-    align-items: center;
-  }
-
-  &:hover {
-    color: #ADADAD;
-
-    .header__connection-item-icon {
-      fill: #ADADAD;
-    }
-  }
-}
-
-.header__connection-item-icon {
-  fill: #555759;
-  margin-right: .8rem;
-}
-
-.header__bottom-block {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 7.6rem;
-}
-
-.header__navigation-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header__navigation-item {
-  font-size: 1.6rem;
+.header__bottom-menu-link {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
-  padding: 1.8rem;
-  transition: color 250ms;
+  height: 100%;
+  padding: 0 1.6rem;
+  display: flex;
+  align-items: center;
   white-space: nowrap;
-
-  &:hover {
-    color: #ADADAD;
-  }
 }
 
 .header__btns-container {
   display: flex;
-  align-items: flex-end;
-}
-
-.header__btn {
-  padding: 1.6rem 2rem;
-
-  & + & {
-    margin-left: 2rem;
-  }
+  margin-left: 2rem;
 }
 
 .header__btn-search {
-  display: flex;
-  align-items: center;
-  padding: 1.6rem 0;
-  border-bottom: 2px solid transparent;
-  font-weight: 600;
-  font-size: 1.6rem;
-  color: #555759;
-  transition: border-color 350ms;
+  padding: 1rem;
+}
 
-  &:hover {
-    border-color: #F5F5F5;
+.header__bottom-btn {
+  & + & {
+    margin-left: 2.4rem;
   }
 }
 
 .header__btn-search-icon {
-  height: 2.4rem;
+  height: 3rem;
 }
