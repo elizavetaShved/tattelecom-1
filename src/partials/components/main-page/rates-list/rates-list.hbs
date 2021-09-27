@@ -7,7 +7,7 @@
       {{> common/link-show-all text="Все тарифы" }}
     </div>
 
-    <div class="gl-slider js-swiper-4" >
+    <div class="gl-slider js-swiper-4">
       <div class="gl-slider__container swiper-container js-swiper-container-4">
         <ul class="gl-slider__wrapper swiper-wrapper">
           {{> main-page/rates-list/components/slide
@@ -91,16 +91,7 @@
         </ul>
       </div>
 
-      <button type="button" class="gl-slider__slider-btn mod-prev js-slider-btn-prev">
-        <svg width="26" height="26" aria-hidden="true" class="gl-slider__slider-btn-icon">
-          <use xlink:href="#arrow-left"></use>
-        </svg>
-      </button>
-      <button type="button" class="gl-slider__slider-btn mod-next js-slider-btn-next">
-        <svg width="26" height="26" aria-hidden="true" class="gl-slider__slider-btn-icon">
-          <use xlink:href="#arrow-right"></use>
-        </svg>
-      </button>
+      {{> common/btns-slider}}
     </div>
   </div>
 </section>

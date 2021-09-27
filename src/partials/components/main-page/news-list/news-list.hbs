@@ -5,23 +5,18 @@
       {{> common/link-show-all text="Все новости" }}
     </div>
 
-    <div class="gl-slider__container">
-      <ul class="gl-slider__wrapper">
-        {{> main-page/news-list/components/slide title="22 май" text="Провели праздник двора для жителей ЖК Салават Купере" }}
-        {{> main-page/news-list/components/slide title="22 май" text="Провели праздник двора для жителей ЖК Салават Купере" }}
-        {{> main-page/news-list/components/slide title="22 май" text="Провели праздник двора для жителей ЖК Салават Купере" }}
-      </ul>
+    <div class="gl-slider js-swiper-3">
+      <div class="gl-slider__container swiper-container js-swiper-container-3">
+        <ul class="gl-slider__wrapper swiper-wrapper">
+          {{> main-page/news-list/components/slide title="22 май" text="Провели праздник двора для жителей ЖК Салават Купере" }}
+          {{> main-page/news-list/components/slide title="22 май" text="Провели праздник двора для жителей ЖК Салават Купере" }}
+          {{> main-page/news-list/components/slide title="22 май" text="Провели праздник двора для жителей ЖК Салават Купере" }}
+          {{> main-page/news-list/components/slide title="22 май" text="Провели праздник двора для жителей ЖК Салават Купере" }}
+          {{> main-page/news-list/components/slide title="22 май" text="Провели праздник двора для жителей ЖК Салават Купере" }}
+        </ul>
+      </div>
 
-      <button type="button" class="gl-slider__slider-btn mod-prev">
-        <svg width="26" height="26" aria-hidden="true" class="gl-slider__slider-btn-icon">
-          <use xlink:href="#arrow-left"></use>
-        </svg>
-      </button>
-      <button type="button" class="gl-slider__slider-btn mod-next">
-        <svg width="26" height="26" aria-hidden="true" class="gl-slider__slider-btn-icon">
-          <use xlink:href="#arrow-right"></use>
-        </svg>
-      </button>
+      {{> common/btns-slider}}
     </div>
   </div>
 </section>
