@@ -6,7 +6,7 @@ export class Slider {
 
   constructor(sliderElem, numSlide, btnPrev, btnNext) {
     new Swiper(sliderElem, {
-      slidesPerView: numSlide,
+      slidesPerView: 1.5,
       lazy: true,
       keyboard: true,
       spaceBetween: 30,
@@ -15,17 +15,16 @@ export class Slider {
         prevEl: btnPrev,
         nextEl: btnNext
       },
-
-      // breakpoints: {
-      //   769: {
-      //     slidesPerView: 2,
-      //     spaceBetween: 20
-      //   },
-      //   1025: {
-      //     slidesPerView: 2,
-      //     spaceBetween: 30
-      //   }
-      // }
+      breakpoints: {
+        769: {
+          slidesPerView: numSlide - 1,
+          spaceBetween: 20
+        },
+        1201: {
+          slidesPerView: numSlide,
+          spaceBetween: 30
+        }
+      }
     })
   }
 }

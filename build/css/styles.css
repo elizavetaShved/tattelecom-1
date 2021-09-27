@@ -2267,6 +2267,7 @@ button.swiper-pagination-bullet {
 
 .useful-information__slide-image {
   height: 33.8rem;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   display: block; }
