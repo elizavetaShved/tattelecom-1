@@ -2,7 +2,7 @@
   <div class="header__top-block">
     <div class="gl__page-content">
       <div class="header__top-block-content">
-        <ul class="header__top-menu-items-list">
+        <ul class="header__top-menu-items-list gl__md-hide">
           <li class="header__top-menu-items">
             <a href="" class="header__top-menu-items-link">Таттелеком</a>
           </li>
@@ -16,12 +16,16 @@
             <a href="" class="header__top-menu-items-link">Акции</a>
           </li>
           <li class="header__top-menu-items">
-            <a href="" class="header__top-menu-items-link">Ещё</a>
+            <button type="button" class="header__top-menu-items-link">Ещё</button>
           </li>
         </ul>
 
+        <button type="button" class="header__top-menu-items-link gl__md-show">
+          Частным клиентам
+        </button>
+
         <div class="header__top-block-right">
-          <ul class="header__top-menu-items-list">
+          <ul class="header__top-menu-items-list gl__bg-hide">
             <li class="header__top-menu-items">
               <a href="" class="header__top-menu-items-link">Поддержка</a>
             </li>
@@ -40,11 +44,11 @@
               </svg>
               Казань
             </a>
-            <a href="" class="header__top-menu-items-link mod-with-icons">
+            <a href="" class="header__top-menu-items-link mod-with-icons gl__bg-hide">
               <svg width="20" height="20" aria-hidden="true" class="header__top-menu-items-link-icon">
                 <use xlink:href="#lk"></use>
               </svg>
-              Войти
+              Личный кабинет
             </a>
           </div>
         </div>
@@ -63,7 +67,7 @@
         </a>
       </div>
 
-      <div class="header__bottom-block-right">
+      <div class="header__bottom-block-right gl__bg-hide">
         <ul class="header__bottom-menu-list">
           <li class="header__bottom-menu-item">
             <a href="" class="header__bottom-menu-link">Мобильная связь</a>
@@ -88,9 +92,21 @@
               <use xlink:href="#search"></use>
             </svg>
           </button>
-          <button type="button" class="header__bottom-btn gl__main-btn">
+          <button type="button" class="header__bottom-btn header__btn-subscriber gl__main-btn">
             Стать абонентом
           </button>
+        </div>
+      </div>
+
+      <div class="header__bottom-block-right gl__bg-show">
+        <div class="header__btns-container">
+          <button type="button" class="header__bottom-btn header__btn-lk">
+            <svg width="20" height="20" aria-hidden="true" class="header__btn-lk-icon">
+              <use xlink:href="#lk"></use>
+            </svg>
+          </button>
+
+          <button type="button" class="header__bottom-btn header__btn-burger"></button>
         </div>
       </div>
     </div>

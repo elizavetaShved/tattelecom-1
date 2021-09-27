@@ -1,5 +1,5 @@
 .header__top-block {
-  background-color: var(--main-background);
+  background-color: #E7F2FA;
 }
 
 .header__top-block-content {
@@ -77,13 +77,14 @@
 .header__logo-wrapper {
   display: flex;
   align-items: center;
-  margin: -2.4rem;
+  margin: -1.8rem;
+  margin-right: 1rem;
   width: 100%;
 }
 
 .header__logo-link {
   height: 100%;
-  padding: 2.4rem;
+  padding: 1.8rem;
   display: flex;
   align-items: center;
 
@@ -92,7 +93,7 @@
 
     .header__logo {
       border-left: 1px solid #E7F2FA;
-      padding-left: 2.4rem;
+      padding-left: 1.8rem;
     }
   }
 }
@@ -101,10 +102,34 @@
 
   &.mod-tat {
     height: 2rem;
+
+    @include for-fl-down {
+      height: 1.8rem;
+    }
+
+    @include for-hg-down {
+      height: 1.6rem;
+    }
+
+    @include for-bg-down {
+      height: 2rem;
+    }
   }
 
   &.mod-fly {
     height: 4rem;
+
+    @include for-hg-down {
+      height: 3.4rem;
+    }
+
+    @include for-fl-down {
+      height: 3.6rem;
+    }
+
+    @include for-bg-down {
+      height: 4rem;
+    }
   }
 }
 
@@ -117,16 +142,16 @@
   height: 100%;
   display: flex;
   justify-content: space-between;
-  margin: -1.6rem;
+  margin: -1.4rem;
 }
 
 .header__bottom-menu-link {
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.6rem;
   letter-spacing: 0.02em;
   height: 100%;
-  padding: 0 1.6rem;
+  padding: 0 1.4rem;
   display: flex;
   align-items: center;
   white-space: nowrap;
@@ -135,18 +160,93 @@
 .header__btns-container {
   display: flex;
   margin-left: 2rem;
-}
-
-.header__btn-search {
-  padding: 1rem;
+  align-items: center;
 }
 
 .header__bottom-btn {
   & + & {
-    margin-left: 2.4rem;
+    margin-left: 1.4rem;
+  }
+}
+
+.header__btn-search {
+  padding: 1rem;
+
+  @include for-fl-down {
+    padding: .6rem;
   }
 }
 
 .header__btn-search-icon {
   height: 3rem;
+}
+
+.header__btn-subscriber {
+  @include for-mx-down {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @include for-fl-down {
+    padding: 1rem 2rem;
+    white-space: initial;
+  }
+
+  @include for-bg-down {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    white-space: nowrap;
+  }
+}
+
+.header__btn-lk {
+  padding: 1rem;
+}
+
+.header__btn-lk-icon {
+  height: 2rem;
+}
+
+.header__btn-burger {
+  position: relative;
+  display: block;
+  width: 28px;
+  height: 28px;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    transition: all 0.3s ease;
+    margin-left: -9px;
+  }
+
+  &:before {
+    height: 14px;
+    border-top: 2px solid var(--main-text-color);
+    border-bottom: 2px solid var(--main-text-color);
+    margin-top: -9px;
+  }
+
+  &:after {
+    height: 2px;
+    margin-top: -3px;
+    background: var(--main-text-color);
+  }
+
+  &.mod-open {
+    &:before {
+      border: none;
+      height: 2px;
+      background: var(--main-text-color);
+      transform: rotate(45deg);
+      margin-top: 0;
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
 }

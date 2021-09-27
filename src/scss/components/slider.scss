@@ -3,11 +3,41 @@
 }
 
 .gl-slider__container {
-  padding: 2rem; margin: -2rem;
+  padding: 2rem;
+  margin: -2rem;
+
+  @include for-hg-down {
+    padding: 1.2rem;
+    margin: -1.2rem;
+  }
+
+  @include for-bg-down {
+    margin: -1.2rem calc(var(--page-content-padding-bg-down) * -1);
+  }
+
+  @include for-sm-down {
+    margin: -1.2rem calc(var(--page-content-padding-small) * -1);
+  }
+
+  @include for-xxs-down {
+    margin: -1.2rem calc(var(--page-content-padding-xxs-down) * -1);
+  }
 }
 
 .gl-slider__wrapper {
   display: flex;
+
+  @include for-bg-down {
+    padding: 0 var(--page-content-padding-bg-down);
+  }
+
+  @include for-sm-down {
+    padding: 0 var(--page-content-padding-small);
+  }
+
+  @include for-xxs-down {
+    padding: 0 var(--page-content-padding-xxs-down);
+  }
 }
 
 .gl-slider__slider-btn {
@@ -47,8 +77,8 @@
   }
 
   .swiper-pagination-bullet {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 12px;
+    height: 12px;
     border-radius: 100%;
     background-color: #DBDBDB;
     margin-right: 1rem;

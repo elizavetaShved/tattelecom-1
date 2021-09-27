@@ -1,3 +1,4 @@
+$max: 1600px;
 $full: 1400px;
 $huge: 1200px;
 $large: 1160px;
@@ -6,6 +7,19 @@ $middle: 960px;
 $small: 768px;
 $xs: 560px;
 $xxs: 426px;
+
+//full
+@mixin for-mx-up {
+  @media screen and (min-width: $max) {
+    @content;
+  }
+}
+
+@mixin for-mx-down {
+  @media screen and (max-width: $max - 1) {
+    @content;
+  }
+}
 
 //full
 @mixin for-fl-up {
@@ -112,97 +126,109 @@ $xxs: 426px;
   }
 }
 
-.gl-fl-show {
+.gl__mx-show {
+  @include for-mx-up {
+    display: none !important;
+  }
+}
+
+.gl__mx-hide {
+  @include for-mx-down {
+    display: none !important;
+  }
+}
+
+.gl__fl-show {
   @include for-fl-up {
     display: none !important;
   }
 }
 
-.gl-fl-hide {
+.gl__fl-hide {
   @include for-fl-down {
     display: none !important;
   }
 }
 
-.gl-hg-show {
+.gl__hg-show {
   @include for-hg-up {
     display: none !important;
   }
 }
 
-.gl-hg-hide {
+.gl__hg-hide {
   @include for-hg-down {
     display: none !important;
   }
 }
 
-.gl-lg-show {
+.gl__lg-show {
   @include for-lg-up {
     display: none !important;
   }
 }
 
-.gl-lg-hide {
+.gl__lg-hide {
   @include for-lg-down {
     display: none !important;
   }
 }
 
-.gl-bg-show {
+.gl__bg-show {
   @include for-bg-up {
     display: none !important;
   }
 }
 
-.gl-bg-hide {
+.gl__bg-hide {
   @include for-bg-down {
     display: none !important;
   }
 }
 
-.gl-md-show {
+.gl__md-show {
   @include for-md-up {
     display: none !important;
   }
 }
 
-.gl-md-hide {
+.gl__md-hide {
   @include for-md-down {
     display: none !important;
   }
 }
 
-.gl-sm-show {
+.gl__sm-show {
   @include for-sm-up {
     display: none !important;
   }
 }
 
-.gl-sm-hide {
+.gl__sm-hide {
   @include for-sm-down {
     display: none !important;
   }
 }
 
-.gl-xs-show {
+.gl__xs-show {
   @include for-xs-up {
     display: none !important;
   }
 }
 
-.gl-xs-hide {
+.gl__xs-hide {
   @include for-xs-down {
     display: none !important;
   }
 }
 
-.gl-xxs-show {
+.gl__xxs-show {
   @include for-xxs-up {
     display: none !important;
   }
 }
 
-.gl-xxs-hide {
+.gl__xxs-hide {
   @include for-xxs-down {
     display: none !important;
   }
