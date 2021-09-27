@@ -1,5 +1,11 @@
-import initSlider from '../finctions/initSlider';
+import common from '../common';
 
 document.addEventListener('DOMContentLoaded', () => {
-  initSlider(4);
+  common();
 });
+
+window.addEventListener('load', function () {
+  document.body.classList.add('loaded');
+  setTimeout(() => document.body.classList.add('animatable'), 300)
+})
+
