@@ -35,3 +35,31 @@
 .gl-slider__slider-btn-icon {
   height: 2.4rem;
 }
+
+.gl-slider__pagination-container {
+  display: flex;
+  justify-content: center;
+}
+
+.gl-slider__pagination-wrapper {
+  &.swiper-pagination {
+    bottom: -5.4rem;
+  }
+
+  .swiper-pagination-bullet {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    background-color: #DBDBDB;
+    margin-right: 1rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: var(--main-color);
+  }
+}
+

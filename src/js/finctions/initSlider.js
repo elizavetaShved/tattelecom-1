@@ -11,5 +11,6 @@ export default function initSlider(numSlide) {
     numSlide,
     sliderWrapperElements[index].querySelector('.js-slider-btn-prev'),
     sliderWrapperElements[index].querySelector('.js-slider-btn-next'),
+    sliderWrapperElements[index].querySelector('.js-pagination-slider')
   ));
 }

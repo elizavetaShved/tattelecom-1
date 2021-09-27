@@ -1503,6 +1503,29 @@ button.swiper-pagination-bullet {
 .gl-slider__slider-btn-icon {
   height: 2.4rem; }
 
+.gl-slider__pagination-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.gl-slider__pagination-wrapper.swiper-pagination {
+  bottom: -5.4rem; }
+
+.gl-slider__pagination-wrapper .swiper-pagination-bullet {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 100%;
+  background-color: #DBDBDB;
+  margin-right: 1rem; }
+  .gl-slider__pagination-wrapper .swiper-pagination-bullet:last-child {
+    margin-right: 0; }
+
+.gl-slider__pagination-wrapper .swiper-pagination-bullet-active {
+  background-color: var(--main-color); }
+
 .checkbox__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1933,7 +1956,7 @@ button.swiper-pagination-bullet {
   margin-bottom: 5.2rem; }
 
 .rates-list {
-  padding: 8rem 0; }
+  padding: 8rem 0 13.2rem; }
 
 .rates-list__slide {
   padding: 2.2rem 1.6rem;
