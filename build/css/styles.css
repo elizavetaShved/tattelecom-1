@@ -1508,6 +1508,8 @@ button.swiper-pagination-bullet {
   display: -ms-flexbox;
   display: flex;
   cursor: pointer; }
+  .checkbox__wrapper.parsley-error .checkbox__content {
+    border-color: var(--main-color); }
 
 .checkbox {
   display: none; }
@@ -1556,7 +1558,10 @@ button.swiper-pagination-bullet {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  position: relative; }
+  .gl-input__wrapper .parsley-errors-list {
+    display: none; }
 
 .gl-input__title {
   font-weight: 300;
@@ -1564,6 +1569,32 @@ button.swiper-pagination-bullet {
   line-height: 2rem;
   letter-spacing: 0.02em;
   color: #A6A6A6; }
+
+.gl-input__input {
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 16px rgba(51, 51, 51, 0.08);
+          box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 16px rgba(51, 51, 51, 0.08);
+  border-radius: 4px;
+  padding: 1.2rem 1.4rem;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+  border: 2px solid transparent;
+  -webkit-transition: border-color 250ms;
+  transition: border-color 250ms; }
+  .gl-input__input::-webkit-input-placeholder {
+    color: #A6A6A6; }
+  .gl-input__input::-moz-placeholder {
+    color: #A6A6A6; }
+  .gl-input__input:-ms-input-placeholder {
+    color: #A6A6A6; }
+  .gl-input__input::-ms-input-placeholder {
+    color: #A6A6A6; }
+  .gl-input__input::placeholder {
+    color: #A6A6A6; }
+  .gl-input__input.parsley-error {
+    border-color: var(--main-color); }
 
 .header__top-block {
   background-color: var(--main-background); }
@@ -2095,7 +2126,10 @@ button.swiper-pagination-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 3rem; }
+  margin: 0 -1.4rem 3rem -1.4rem; }
+
+.services__radio-wrapper {
+  padding: 0 1.4rem; }
 
 .services__radio {
   display: none; }
@@ -2108,12 +2142,16 @@ button.swiper-pagination-bullet {
   line-height: 2.6rem;
   letter-spacing: 0.02em;
   color: #A6A6A6;
-  padding: 1.2rem 1.4rem;
+  padding: 1.2rem 0;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   -webkit-transition: border-bottom-color 250ms, color 250ms;
   transition: border-bottom-color 250ms, color 250ms;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
 
 .services__form-inputs-wrapper {
   display: grid;
@@ -2122,27 +2160,6 @@ button.swiper-pagination-bullet {
       -ms-flex-align: end;
           align-items: end;
   grid-gap: 1.4rem; }
-
-.gl-input__input {
-  background-color: #fff;
-  -webkit-box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 16px rgba(51, 51, 51, 0.08);
-          box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 16px rgba(51, 51, 51, 0.08);
-  border-radius: 4px;
-  padding: 1.4rem 1.6rem;
-  font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  letter-spacing: 0.02em; }
-  .gl-input__input::-webkit-input-placeholder {
-    color: #A6A6A6; }
-  .gl-input__input::-moz-placeholder {
-    color: #A6A6A6; }
-  .gl-input__input:-ms-input-placeholder {
-    color: #A6A6A6; }
-  .gl-input__input::-ms-input-placeholder {
-    color: #A6A6A6; }
-  .gl-input__input::placeholder {
-    color: #A6A6A6; }
 
 .services__btn-submit.mod-transparent {
   padding-left: 2rem;

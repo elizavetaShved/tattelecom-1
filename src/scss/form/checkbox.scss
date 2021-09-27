@@ -1,6 +1,12 @@
 .checkbox__wrapper {
   display: flex;
   cursor: pointer;
+
+  &.parsley-error {
+    .checkbox__content {
+      border-color: var(--main-color);
+    }
+  }
 }
 
 .checkbox {

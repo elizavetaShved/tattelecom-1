@@ -61,7 +61,11 @@
 
 .services__radio-btns-container {
   display: flex;
-  margin-bottom: 3rem;
+  margin: 0 -1.4rem 3rem -1.4rem;
+}
+
+.services__radio-wrapper {
+  padding: 0 1.4rem;
 }
 
 .services__radio {
@@ -80,11 +84,12 @@
   line-height: 2.6rem;
   letter-spacing: 0.02em;
   color: #A6A6A6;
-  padding: 1.2rem 1.4rem;
+  padding: 1.2rem 0;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   transition: border-bottom-color 250ms, color 250ms;
   cursor: pointer;
+  user-select: none;
 }
 
 .services__form-inputs-wrapper {
@@ -92,21 +97,6 @@
   grid-template-columns: repeat(3, 1fr);
   align-items: end;
   grid-gap: 1.4rem;
-}
-
-.gl-input__input {
-  background-color: #fff;
-  box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 16px rgba(51, 51, 51, 0.08);
-  border-radius: 4px;
-  padding: 1.4rem 1.6rem;
-  font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  letter-spacing: 0.02em;
-
-  &::placeholder {
-    color: #A6A6A6;
-  }
 }
 
 .services__btn-submit {

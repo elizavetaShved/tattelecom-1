@@ -1,10 +1,53 @@
 <!--
+  ___Обязательные поля___
+  type - html-тип инута
   name - обязательно префикс - род.компонент (н-р services-tel)
+  placeholder
+
+  ___Необязательные поля___
+  required (true/false) - обязательно для заполнения
+  inputTitle - заголовок НАД инпутом
+  phoneMask (true/false) - маска для телефона
+  minLength - деф-2
+  maxLength - деф-none
+  id - обычный id, например для первого пароля
+  parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
+  parsleyType - для валидации (н-р email)
 -->
 
-<label class="gl-input__wrapper">
+<label class="gl-input__wrapper js-input-{{ type }}">
   {{#if inputTitle}}
     <span class="gl-input__title">{{ inputTitle }}</span>
   {{/if}}
-  <input type="{{ type }}" class="gl-input__input" placeholder="{{ placeholder }}" name="{{ name }}">
+  <input type="{{ type }}"
+         class="gl-input__input {{#if required }}js-phone-input{{/if}}"
+         placeholder="{{ placeholder }}"
+         name="{{ name }}"
+
+    {{#if required }}
+         data-parsley-required=""
+    {{/if}}
+
+    {{#if minLength }}
+         data-parsley-minlength="{{ minLength }}"
+    {{else}}
+         data-parsley-minlength="2"
+    {{/if}}
+
+    {{#if maxLength }}
+         data-parsley-maxlength="{{ maxLength }}"
+    {{/if}}
+
+    {{#if id }}
+         id="{{id}}-{{type}}"
+    {{/if}}
+
+    {{#if parsleyEqualto }}
+         data-parsley-equalto="{{parsleyEqualto}}-{{type}}"
+    {{/if}}
+
+    {{#if parsleyType }}
+         data-parsley-type="{{ parsleyType }}"
+    {{/if}}
+  >
 </label>

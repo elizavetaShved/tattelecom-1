@@ -6,7 +6,7 @@
 
         <div class="services__radio-btns-container">
           <label class="services__radio-wrapper">
-            <input type="radio" class="services__radio" name="adding-funds-account">
+            <input type="radio" class="services__radio" name="adding-funds-account" checked>
             <span class="services__radio-content">Мобильная связь</span>
           </label>
           <label class="services__radio-wrapper">
@@ -19,16 +19,21 @@
           </label>
         </div>
 
-        <form class="services__form-wrapper">
+        <form class="services__form-wrapper" data-need-validation data-parsley-validate data-parsley-focus="none">
           <div class="services__form-inputs-wrapper">
             {{> common/input-main
+              required=true
               type="tel"
+              phoneMask=true
+              placeholder="+7 (___) ___-__-__"
               inputTitle="Введите номер"
-              placeholder="+7 (___)  ___-__-__"
               name="services-tel"
             }}
             {{> common/input-main
+              required=true
               type="number"
+              minLength="10"
+              maxLength="30000"
               inputTitle="От 10 до 30 000 Р"
               placeholder="Сумма"
               name="services-summ"
@@ -84,15 +89,18 @@
           Переходите на “Летай” со своим номером
         </h3>
 
-        <form class="services__form-wrapper">
+        <form class="services__form-wrapper" data-need-validation data-parsley-validate data-parsley-focus="none">
           <div class="services__form-inputs-wrapper">
             {{> common/input-main
+              required=true
               type="tel"
+              phoneMask=true
+              placeholder="+7 (___) ___-__-__"
               inputTitle="Введите номер переноса"
-              placeholder="+7 (___)  ___-__-__"
               name="services-tel-transfer"
             }}
             {{> common/input-main
+              required=true
               type="text"
               inputTitle="Укажите город проживания"
               placeholder="Казань"
@@ -101,11 +109,11 @@
             <button type="submit" class="gl__main-btn mod-transparent services__btn-submit">Начать перенос</button>
           </div>
 
-          <label class="checkbox__wrapper services__checkbox">
-            <input type="checkbox" class="checkbox">
-            <span class="checkbox__content"></span>
-            <span class="checkbox__text">Я соглашаюсь на получение консультации по переносу номера</span>
-          </label>
+          {{> common/input-checkbox
+            required=true
+            caption="Я соглашаюсь на получение консультации по переносу номера"
+            name="services-approval"
+          }}
         </form>
       </li>
     </ul>

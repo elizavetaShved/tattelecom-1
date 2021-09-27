@@ -1,0 +1,23 @@
+<!--
+  ___Обязательные поля___
+  name - обязательно префикс - род.компонент (н-р services-tel)
+
+  ___Необязательные поля___
+  required (true/false) - обязательно для заполнения
+  caption - пояснение чекбокса справа
+  isChecked - нужен ли checked изначально
+-->
+
+<label class="checkbox__wrapper services__checkbox">
+  <input type="checkbox"
+         class="checkbox" name="{{ name }}"
+    {{#if required }}
+         data-parsley-required=""
+    {{/if}}
+    {{#if isChecked }}
+         checked
+    {{/if}}
+  >
+  <span class="checkbox__content"></span>
+  <span class="checkbox__text">{{ caption }}</span>
+</label>
