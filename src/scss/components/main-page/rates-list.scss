@@ -10,7 +10,7 @@
 }
 
 .rates-list__slide-hit {
-  background-color: #2B2B2B;
+  background-color: var(--main-text-color);
   position: relative;
   color: #fff;
 
@@ -73,7 +73,7 @@
 }
 
 .rates-list__opportunities-wrapper {
-  border-top: 1px solid #F5F5F5;
+  border-top: 1px solid var(--border-color);
   padding: .8rem 0 1.6rem 0;
   font-size: 1.4rem;
   line-height: 1.8rem;
@@ -89,7 +89,7 @@
 }
 
 .rates-list__slide-price-wrapper {
-  border-top: 1px solid #F5F5F5;
+  border-top: 1px solid var(--border-color);
   padding-top: 2.8rem;
   margin-bottom: 1.4rem;
   display: flex;

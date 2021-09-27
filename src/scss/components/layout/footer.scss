@@ -1,13 +1,13 @@
 .footer {
   padding: 6.2rem 3.6rem;
   color: #fff;
-  background-color: #2B2B2B;
+  background-color: var(--main-text-color);
   font-weight: 300;
 }
 
 .footer__top-block {
   padding-bottom: 4.4rem;
-  border-bottom: 1px solid #A6A6A6;
+  border-bottom: 1px solid var(--main-grey-color);
 }
 
 .footer__top-grid-wrapper {
@@ -72,7 +72,7 @@
   font-style: normal;
   font-size: 1.6rem;
   line-height: 2rem;
-  color: #A6A6A6;
+  color: var(--main-grey-color);
   margin-bottom: 3.6rem;
 }
 
@@ -90,7 +90,7 @@
   font-size: 1.6rem;
   line-height: 2rem;
   letter-spacing: 0.01em;
-  color: #A6A6A6;
+  color: var(--main-grey-color);
   margin-bottom: .6rem;
 }
 
@@ -115,5 +115,5 @@
 
 .footer__contact-social-icon {
   height: 4rem;
-  fill: #A6A6A6;
+  fill: var(--main-grey-color);
 }

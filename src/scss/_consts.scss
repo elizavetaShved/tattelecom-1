@@ -1,9 +1,22 @@
 :root {
-    --page-content-padding-fl: 100px;
-    --page-content-padding-bg-down: 50px;
-    --page-content-padding-small: 20px;
-    --page-content-padding-xxs-down: 16px;
-    --font-golos: 'Golos';
-    --main-color: #FA4907;
-    --main-text-color: #2B2B2B;
+  --font-golos: 'Golos';
+  --page-content-padding-fl: 100px;
+  --page-content-padding-bg-down: 50px;
+  --page-content-padding-small: 20px;
+  --page-content-padding-xxs-down: 16px;
+
+  //colors
+  --main-color: #fa4907;
+  --main-hover: #ff7846;
+  --main-text-color: #2b2b2b;
+  --main-grey-color: #a6a6a6;
+  --border-color: #F5F5F5;
+
+  // fixme единичные цвета:
+  // #FEE7D7
+  // #E7F2FA
+  // #555759
+  // #ADADAD
+  // #D4D4D4
+  // #F9FAFB
 }

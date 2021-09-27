@@ -1,5 +1,5 @@
 .services {
-  background-color: #F5F5F5;
+  background-color: var(--border-color);
   padding: 8rem 0;
 
   .gl-input__input, .services__btn-submit {
@@ -83,7 +83,7 @@
   font-size: 1.6rem;
   line-height: 2.6rem;
   letter-spacing: 0.02em;
-  color: #A6A6A6;
+  color: var(--main-grey-color);
   padding: 1.2rem 0;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
