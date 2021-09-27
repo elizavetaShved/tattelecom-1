@@ -1,10 +1,18 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: var(--z-index-header);
+}
+
 .header__top-block {
   background-color: #E7F2FA;
 }
 
 .header__top-block-content {
   display: flex;
-  height: 4rem;
+  height: var(--header-height-top-block);
   justify-content: space-between;
   margin: 0 -1.2rem;
 }
@@ -13,6 +21,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: var(--header-height-bottom-block);
+  background-color: #fff;
 }
 
 .header__top-menu-items {
@@ -71,7 +81,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 10rem;
+  height: 100%;
 }
 
 .header__logo-wrapper {
@@ -99,7 +109,6 @@
 }
 
 .header__logo {
-
   &.mod-tat {
     height: 2rem;
 
@@ -112,7 +121,7 @@
     }
 
     @include for-bg-down {
-      height: 2rem;
+      height: 1.2rem;
     }
   }
 
@@ -128,7 +137,7 @@
     }
 
     @include for-bg-down {
-      height: 4rem;
+      height: 3rem;
     }
   }
 }
@@ -151,10 +160,11 @@
   line-height: 2.6rem;
   letter-spacing: 0.02em;
   height: 100%;
-  padding: 0 1.4rem;
+  padding: 1.4rem;
   display: flex;
   align-items: center;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .header__btns-container {
@@ -204,7 +214,7 @@
 }
 
 .header__btn-lk-icon {
-  height: 2rem;
+  height: 3rem;
 }
 
 .header__btn-burger {
@@ -249,4 +259,54 @@
       transform: rotate(-45deg);
     }
   }
+}
+
+.header__popup-container {
+  @extend %modal;
+
+  &.mod-show {
+    top: var(--header-height);
+  }
+}
+
+.header__popup-wrapper {
+  background-color: #fff;
+  box-shadow: 0 1px 20px rgba(153, 152, 168, 0.17);
+  overflow: auto;
+  max-height: calc(100vh - var(--header-height));
+}
+
+.header__popup-content {
+  padding: 3.2rem 0;
+  min-height: 32.6rem;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 3rem;
+
+  @include for-bg-down {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  @include for-xs-down {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+.header__popup-item-caption {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+  -moz-border-radius-bottomleft: .8rem;
+  margin-bottom: .8rem;
+}
+
+.header__popup-item-link {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+  display: block;
+  padding: .4rem;
+  margin: 0 -.4rem;
 }

@@ -1,0 +1,15 @@
+%modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: 400ms opacity;
+  background-color: rgba(0, 0, 0, .2);
+  pointer-events: none;
+
+  &.mod-show {
+    opacity: 1;
+    z-index: var(--z-index-header);
+    pointer-events: auto;
+  }
+}

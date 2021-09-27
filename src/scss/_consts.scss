@@ -1,5 +1,9 @@
 :root {
   --font-golos: 'Golos';
+  --header-height-top-block: 4rem;
+  --header-height-bottom-block: 10rem;
+  --header-height: calc(var(--header-height-top-block) + var(--header-height-bottom-block));
+
   --page-content-padding-fl: 8rem;
   --page-content-padding-bg-down: 5rem;
   --page-content-padding-small: 2rem;
@@ -12,11 +16,6 @@
   --main-grey-color: #a6a6a6;
   --border-color: #F5F5F5;
 
-  // fixme единичные цвета:
-  // #FEE7D7
-  // #E7F2FA
-  // #555759
-  // #ADADAD
-  // #D4D4D4
-  // #F9FAFB
+  // z-index
+  --z-index-header: 2;
 }
