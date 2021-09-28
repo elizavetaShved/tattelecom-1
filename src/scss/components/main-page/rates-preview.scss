@@ -1,15 +1,16 @@
+$padding-content: 2rem;
+
 .rates-preview {
   position: relative;
   height: 47rem;
   color: #fff;
-  padding: 2rem 0;
+  padding: $padding-content 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @include for-sm-down {
     background-color: #131419;
-    background-image: none !important;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -23,10 +24,37 @@
         display: none;
       }
     }
+
+    @include for-sm-down {
+      background-image: none !important;
+    }
   }
 
   &.mod-mobile-communication {
     background-color: #202342;
+  }
+
+  &.mod-cashback {
+    background-color: #FDDD66;
+
+    @include for-sm-up {
+      .rates-preview-img {
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+      }
+    }
+
+    @include for-sm-down {
+      .rates-preview__content-wrapper {
+        flex-direction: column;
+      }
+
+      .rates-preview-img {
+        margin-bottom: -$padding-content;
+        height: 28.4rem;
+      }
+    }
   }
 }
 
@@ -35,6 +63,10 @@
   justify-content: flex-end;
   width: 100%;
   margin-bottom: 2.6rem;
+
+  @include for-sm-down {
+    margin-bottom: 0;
+  }
 }
 
 .rates-preview-img {
@@ -61,6 +93,16 @@
 
   @include for-sm-down {
     max-width: none;
+  }
+
+  &.mod-white-background {
+    .rates-preview__content-subtitle {
+      color: var(--main-color);
+    }
+
+    .rates-preview__content-caption {
+      color: var(--grey-text);
+    }
   }
 }
 

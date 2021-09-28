@@ -3,12 +3,12 @@
          id="rates-preview-host">
 
   <div class="gl__page-content rates-preview__content-wrapper">
-    <div class="rates-preview__content">
-      {{#if title}}
-        <div class="rates-preview__content-title">{{ title }}</div>
+    <div class="rates-preview__content {{#if isWhiteBackground}}mod-white-background{{/if}}">
+      {{#if ratesSecondName}}
+        <div class="rates-preview__content-title">{{ ratesSecondName }}</div>
       {{/if}}
-      <div class="rates-preview__content-subtitle">{{ subtitle }}</div>
-      <div class="rates-preview__content-caption">{{ caption }}</div>
+      <div class="rates-preview__content-subtitle">{{ ratesName }}</div>
+      <div class="rates-preview__content-caption">{{ ratesCaption }}</div>
       <button type="button" class="gl__main-btn">{{ btnText }}</button>
     </div>
 
