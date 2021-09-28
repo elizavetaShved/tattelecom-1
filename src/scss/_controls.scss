@@ -34,6 +34,11 @@
   padding: 1rem;
   display: flex;
   align-items: center;
+  margin: -1rem;
+
+  @include for-xs-down {
+    margin-top: 1.6rem;
+  }
 }
 
 .gl__link-show-all-icon {

@@ -67,12 +67,14 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: -1rem;
-  margin-right: -1rem;
   margin-bottom: 4rem;
 
   .gl__title {
     margin-bottom: 0;
+  }
+
+  @include for-sm-down {
+    margin-bottom: 2.6rem;
   }
 }
 
@@ -82,6 +84,13 @@ button {
   letter-spacing: 0.015em;
   color: var(--main-text-color);
   margin-bottom: 5rem;
+  font-weight: normal;
+
+  @include for-sm-down {
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+    margin-bottom: 2.6rem;
+  }
 }
 
 .gl__white-container {

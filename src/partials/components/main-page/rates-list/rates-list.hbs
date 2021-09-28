@@ -4,7 +4,9 @@
       <h2 class="gl__title">
         Тарифы мобильной связи
       </h2>
-      {{> common/link-show-all text="Все тарифы" }}
+      <div class="gl__xs-hide">
+        {{> common/link-show-all text="Все тарифы" }}
+      </div>
     </div>
 
     <div class="gl-slider js-swiper-4">
@@ -93,8 +95,12 @@
 
       {{> common/btns-slider }}
 
-      <div class="gl-slider__pagination-container ">
-        <div class="gl-slider__pagination-wrapper swiper-pagination js-pagination-slider"></div>
+      <div class="gl__xs-hide">
+        {{> common/pagination-slider }}
+      </div>
+
+      <div class="gl__xs-show">
+        {{> common/link-show-all text="Все тарифы" }}
       </div>
     </div>
   </div>
