@@ -415,7 +415,29 @@ button:hover svg {
   -webkit-box-shadow: 0 0 12px 4px #0000000f;
           box-shadow: 0 0 12px 4px #0000000f;
   background-color: #fff;
-  border-radius: 10px; }
+  border-radius: 10px;
+  overflow: hidden;
+  pointer-events: none; }
+
+.gl__drop-menu-btn + .gl__drop-menu {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 500ms;
+  transition: max-height 500ms; }
+
+.gl__drop-menu-btn.mod-open + .gl__drop-menu {
+  max-height: 40rem;
+  pointer-events: auto; }
+
+.gl__drop-menu-btn.mod-open .gl__drop-menu-icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.gl__drop-menu-btn:not(.mod-open) + .gl__drop-menu {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0; }
 
 /**
  * Swiper 6.8.0
@@ -2008,12 +2030,6 @@ button.swiper-pagination-bullet {
       padding: 2rem 0;
       border-bottom: 1px solid #F5F5F5;
       position: relative; } }
-  .footer__link-title.mod-open + .footer__links-list {
-    max-height: 30rem;
-    pointer-events: auto; }
-  .footer__link-title.mod-open .footer__link-title-icon {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg); }
 
 .footer__link-title-icon {
   display: none;
@@ -2035,15 +2051,13 @@ button.swiper-pagination-bullet {
 
 .footer__links-list {
   margin: -.7rem; }
+  @media screen and (min-width: 768px) {
+    .footer__links-list {
+      max-height: none !important; } }
   @media screen and (max-width: 559px) {
     .footer__links-list {
-      max-height: 0;
-      overflow: hidden;
-      -webkit-transition: max-height 500ms;
-      transition: max-height 500ms;
       margin-top: 0;
-      margin-bottom: 0;
-      pointer-events: none; } }
+      margin-bottom: 0; } }
 
 .footer__link {
   padding: .7rem;
@@ -2815,3 +2829,117 @@ button.swiper-pagination-bullet {
   @media screen and (max-width: 559px) {
     .application__btn {
       width: 100%; } }
+
+.cashback {
+  padding: 8rem 0 4rem; }
+  @media screen and (max-width: 767px) {
+    .cashback {
+      padding: 4rem 0 2rem; } }
+
+.cashback__slide {
+  padding: 3.6rem 3.2rem;
+  position: relative;
+  min-height: 33.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1; }
+
+.cashback__slide-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1; }
+
+.cashback__slide-title {
+  font-weight: 600;
+  font-size: 3.4rem;
+  line-height: 3.6rem;
+  color: var(--main-color);
+  margin-bottom: 3.6rem;
+  max-width: 42%; }
+
+.cashback__slide-text {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.015em;
+  color: var(--grey-text);
+  max-width: 72%; }
+
+.cashback__slide-link {
+  color: var(--main-color);
+  padding: 1.4rem;
+  margin: -1.4rem;
+  margin-top: 2rem;
+  display: block; }
+  .cashback__slide-link:hover {
+    text-decoration: underline; }
+
+.faq {
+  padding: 4rem 0 8rem; }
+  @media screen and (max-width: 767px) {
+    .faq {
+      padding: 2rem 0 4rem; } }
+
+.faq__item {
+  border-bottom: 2px solid var(--border-color); }
+
+.faq__item-btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+  padding: 2rem 0;
+  font-weight: 600;
+  text-align: start; }
+  .faq__item-btn-wrapper:hover {
+    color: var(--main-color); }
+
+.faq__item-content-wrapper {
+  margin-left: 4.2rem;
+  padding-bottom: 2rem; }
+
+.faq__item-btn-icon {
+  fill: var(--main-text-color);
+  margin-right: 1.8rem; }
+
+.faq__item-content-text {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em; }
+  .faq__item-content-text + .faq__item-content-text {
+    margin-top: 1rem; }
+
+.faq__link-show-all {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.01em;
+  padding: 2rem;
+  margin: -2rem;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2.2rem; }
+
+.faq__link-show-all-icon {
+  fill: var(--main-text-color);
+  height: 2.4rem;
+  padding-top: .4rem; }

@@ -20,7 +20,7 @@ export class Slider {
       },
       breakpoints: {
         769: {
-          slidesPerView: numSlide - 1,
+          slidesPerView: numSlide > 2 ? numSlide - 1 : numSlide,
           spaceBetween: 20
         },
         1201: {

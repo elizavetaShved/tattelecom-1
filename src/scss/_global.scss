@@ -101,4 +101,34 @@ button {
   box-shadow: 0 0 12px 4px #0000000f;
   background-color: #fff;
   border-radius: 10px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.gl__drop-menu-btn {
+  + .gl__drop-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 500ms;
+  }
+
+  &.mod-open {
+    + .gl__drop-menu {
+      max-height: 40rem; // todo костыль анимации
+      pointer-events: auto;
+    }
+
+    .gl__drop-menu-icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &:not(.mod-open) {
+    + .gl__drop-menu {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
 }
