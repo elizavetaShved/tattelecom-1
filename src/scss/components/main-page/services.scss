@@ -5,12 +5,24 @@
   .gl-input__input, .services__btn-submit {
     height: 5.4rem;
   }
+
+  @include for-sm-down {
+    padding: 5rem 0;
+  }
 }
 
 .services__list {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 3rem;
+
+  @include for-md-down {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @include for-sm-down {
+    grid-template-columns: 1fr;
+  }
 }
 
 .services__item-wrapper {
@@ -18,6 +30,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include for-xs-down {
+    padding: 2rem
+  }
 
   &.mod-painted {
     background-color: var(--main-color);
@@ -30,18 +46,38 @@
 
   &:nth-child(1) {
     grid-column: 1 / 8;
+
+    @include for-md-down {
+      grid-column: 1 / 7;
+    }
   }
 
   &:nth-child(2) {
     grid-column: 8 / 13;
+
+    @include for-md-down {
+      grid-column: 1 / 4;
+    }
   }
 
   &:nth-child(3) {
     grid-column: 1 / 6;
+
+    @include for-md-down {
+      grid-column: 4 / 7;
+    }
   }
 
   &:nth-child(4) {
     grid-column: 6 / 13;
+
+    @include for-md-down {
+      grid-column: 1 / 7;
+    }
+  }
+
+  @include for-sm-down {
+    grid-column: auto !important;
   }
 }
 
@@ -52,6 +88,10 @@
   margin-bottom: 2.8rem;
   display: flex;
   align-items: center;
+
+  @include for-xs-down {
+    margin-bottom: 1.6rem;
+  }
 }
 
 .services__item-info-title-icon {
@@ -61,11 +101,14 @@
 
 .services__radio-btns-container {
   display: flex;
-  margin: 0 -1.4rem 3rem -1.4rem;
+  margin-top: -1.2rem;
+  margin-bottom: 2rem;
 }
 
 .services__radio-wrapper {
-  padding: 0 1.4rem;
+  & + & {
+    margin-left: 1.4rem;
+  }
 }
 
 .services__radio {
@@ -90,6 +133,12 @@
   transition: border-bottom-color 250ms, color 250ms;
   cursor: pointer;
   user-select: none;
+  display: block;
+
+  @include for-xs-down {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
 }
 
 .services__form-inputs-wrapper {
@@ -97,6 +146,22 @@
   grid-template-columns: repeat(3, 1fr);
   align-items: end;
   grid-gap: 1.4rem;
+
+  @include for-hg-down {;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.services__btn-submit-wrapper {
+  @include for-hg-down {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @include for-xs-down {
+    grid-column: 1 / 3;
+  }
 }
 
 .services__btn-submit {
@@ -107,8 +172,12 @@
     &:hover {
       border-color: #fff;
       background-color: #ffffff;
-      color: var(--main-color)
+      color: var(--main-color);
     }
+  }
+
+  @include for-xs-down {
+    width: 100%;
   }
 }
 
@@ -141,6 +210,11 @@
   font-size: 1.6rem;
   line-height: 2.6rem;
   letter-spacing: 0.02em;
+
+  @include for-xs-down {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
 }
 
 .services__item-info-btn {
@@ -164,6 +238,10 @@
 
 .services__item-info-image {
   height: 22.6rem;
+
+  @include for-xs-down {
+    height: 15.2rem;
+  }
 }
 
 .services__checkbox {

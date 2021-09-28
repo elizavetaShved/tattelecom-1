@@ -27,6 +27,7 @@
   letter-spacing: 0.02em;
   border: 2px solid transparent;
   transition: border-color 250ms;
+  width: 100%;
 
   &::placeholder {
     color: var(--main-grey-color);

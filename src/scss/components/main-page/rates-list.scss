@@ -2,7 +2,11 @@
   padding: 8rem 0 13.2rem;
 
   @include for-sm-down {
-    padding: 4.2rem 0 5rem;
+    padding-top: 4.2rem;
+  }
+
+  @include for-xs-down {
+    padding-bottom: 5rem;
   }
 }
 
