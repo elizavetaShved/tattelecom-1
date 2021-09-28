@@ -1,5 +1,13 @@
 .rates-list {
   padding: 8rem 0 13.2rem;
+
+  @include for-sm-down {
+    padding-top: 4.2rem;
+  }
+
+  @include for-xs-down {
+    padding-bottom: 5rem;
+  }
 }
 
 .rates-list__slide {

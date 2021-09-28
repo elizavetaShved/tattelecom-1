@@ -46,8 +46,8 @@ button {
   }
 
   @include for-xxs-down {
-    padding-left: var(--page-content-padding-xxs-down);
-    padding-right: var(--page-content-padding-xxs-down);
+    padding-left: var(--page-content-padding-xxs);
+    padding-right: var(--page-content-padding-xxs);
   }
 }
 
@@ -60,19 +60,25 @@ button {
 
 .gl__layout-content {
   flex: 1 1 100%;
-  margin-top: var(--header-height);
+  margin-top: var(--header-height-desk);
+
+  @include for-bg-down {
+    margin-top: var(--header-height-mobile);
+  }
 }
 
 .gl__title-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: -1rem;
-  margin-right: -1rem;
   margin-bottom: 4rem;
 
   .gl__title {
     margin-bottom: 0;
+  }
+
+  @include for-sm-down {
+    margin-bottom: 2.6rem;
   }
 }
 
@@ -82,6 +88,13 @@ button {
   letter-spacing: 0.015em;
   color: var(--main-text-color);
   margin-bottom: 5rem;
+  font-weight: normal;
+
+  @include for-sm-down {
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+    margin-bottom: 2.6rem;
+  }
 }
 
 .gl__white-container {

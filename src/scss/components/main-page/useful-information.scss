@@ -1,5 +1,9 @@
 .useful-information {
   padding: 4rem 0 8rem;
+
+  @include for-sm-down {
+    padding: 1rem 0 5rem;
+  }
 }
 
 .useful-information__slide-wrapper {
@@ -46,6 +50,10 @@
   align-items: center;
   margin-left: 0;
   overflow: hidden;
+
+  @include for-sm-down {
+    padding: 1.6rem 1.4rem;
+  }
 }
 
 .useful-information__slide-content-text {
@@ -53,4 +61,9 @@
   line-height: 3.2rem;
   letter-spacing: 0.015em;
   margin-right: 1rem;
+
+  @include for-sm-down {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
 }

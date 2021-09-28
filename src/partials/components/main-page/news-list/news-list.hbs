@@ -2,7 +2,9 @@
   <div class="gl__page-content">
     <div class="gl__title-head">
       <h2 class="gl__title">Новости</h2>
-      {{> common/link-show-all text="Все новости" }}
+      <div class="gl__xs-hide">
+        {{> common/link-show-all text="Все новости" }}
+      </div>
     </div>
 
     <div class="gl-slider js-swiper-3">
@@ -17,6 +19,10 @@
       </div>
 
       {{> common/btns-slider}}
+    </div>
+
+    <div class="gl__xs-show">
+      {{> common/link-show-all text="Все тарифы" }}
     </div>
   </div>
 </section>
