@@ -1,0 +1,33 @@
+.bread-crumbs__container {
+  background-color: #FCFCFC;
+}
+
+.bread-crumbs__list {
+  display: flex;
+  margin-left: 0 -.6rem;
+}
+
+.bread-crumbs__item {
+  &:last-child {
+    .bread-crumbs__link-icon {
+      display: none;
+    }
+  }
+}
+
+.bread-crumbs__link {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+  color: var(--grey-text);
+  padding: 1.8rem .6rem;
+}
+
+.bread-crumbs__link-icon {
+  height: 1.6rem;
+  fill: var(--grey-text);
+  margin-left: 1rem;
+}

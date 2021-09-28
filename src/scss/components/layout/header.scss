@@ -28,6 +28,8 @@
   height: var(--header-height-bottom-block-desk);
   background-color: #fff;
 
+  box-shadow: 0 0.194081px 41px rgba(52, 52, 52, 0.0646723), 0 -5.73123px 21px rgba(52, 52, 52, 0.0423377);
+
   @include for-bg-down {
     height: var(--header-height-bottom-block-mobile);
   }
