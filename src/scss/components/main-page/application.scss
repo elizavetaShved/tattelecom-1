@@ -3,6 +3,10 @@
   position: relative;
   background-color: var(--border-color);
   z-index: 1;
+
+  @include for-sm-down {
+    padding: 3.4rem 0 5rem;
+  }
 }
 
 .application__background {
@@ -23,6 +27,10 @@
 .application__title {
   margin-bottom: 3.6rem;
   text-align: center;
+
+  @include for-sm-down {
+    margin-bottom: 2.4rem;
+  }
 }
 
 .application__subtitle {
@@ -33,6 +41,11 @@
   margin-bottom: 4.4rem;
   max-width: 47rem;
   text-align: center;
+
+  @include for-sm-down {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
 }
 
 .application__form {
@@ -40,4 +53,36 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   max-width: 80rem;
+
+  @include for-sm-down {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem 1rem;
+  }
+
+  @include for-xs-down {
+    grid-template-columns: 1fr;
+    max-width: none;
+    width: 100%;
+    grid-gap: 2rem;
+  }
+}
+
+.application__btn-wrapper {
+  @include for-sm-down {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+  }
+
+  @include for-xs-down {
+    grid-column: auto;
+  }
+}
+
+.application__btn {
+  height: 100%;
+
+  @include for-xs-down {
+    width: 100%;
+  }
 }
