@@ -60,7 +60,11 @@ button {
 
 .gl__layout-content {
   flex: 1 1 100%;
-  margin-top: var(--header-height);
+  margin-top: var(--header-height-desk);
+
+  @include for-bg-down {
+    margin-top: var(--header-height-mobile);
+  }
 }
 
 .gl__title-head {

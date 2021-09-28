@@ -1,8 +1,11 @@
 :root {
   --font-golos: 'Golos';
-  --header-height-top-block: 4rem;
-  --header-height-bottom-block: 10rem;
-  --header-height: calc(var(--header-height-top-block) + var(--header-height-bottom-block));
+  --header-height-top-block-desk: 4rem;
+  --header-height-bottom-block-desk: 10rem;
+  --header-height-desk: calc(var(--header-height-top-block-desk) + var(--header-height-bottom-block-desk));
+  --header-height-top-block-mobile: 3rem;
+  --header-height-bottom-block-mobile: 6rem;
+  --header-height-mobile: calc(var(--header-height-top-block-mobile) + var(--header-height-bottom-block-mobile));
 
   --page-content-padding-fl: 8rem;
   --page-content-padding-bg-down: 5rem;

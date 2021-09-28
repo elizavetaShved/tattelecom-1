@@ -1,13 +1,22 @@
 .footer {
-  padding: 6.2rem 3.6rem;
+  padding: 6.2rem 0;
   color: #fff;
   background-color: var(--main-text-color);
   font-weight: 300;
+
+  @include for-sm-down {
+    padding: 4.4rem 0;
+  }
 }
 
 .footer__top-block {
   padding-bottom: 4.4rem;
   border-bottom: 1px solid var(--main-grey-color);
+
+  @include for-xs-down {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
 }
 
 .footer__top-grid-wrapper {
@@ -15,6 +24,17 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 3rem;
+
+  @include for-bg-down {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 4rem;
+  }
+
+  @include for-xs-down {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
 }
 
 .footer__top-grid-item {
@@ -26,6 +46,37 @@
 
   &.mod-second-half-row {
     grid-row: 2 / 3;
+
+    @include for-bg-down {
+      grid-column: 2;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    @include for-xs-down {
+      display: block;
+      margin-top: 3rem;
+    }
+  }
+
+  @include for-bg-down {
+    grid-row: auto !important;
+  }
+
+  @include for-xs-down {
+    grid-column: auto !important;
+
+    &:first-child {
+      .footer__link-title {
+        border-top: 1px solid #F5F5F5;
+      }
+    }
+  }
+}
+
+.footer__btn {
+  @include for-xs-down {
+   width: 100%;
   }
 }
 
@@ -34,10 +85,59 @@
   line-height: 3.2rem;
   letter-spacing: 0.015em;
   margin-bottom: 1.2rem;
+
+  @include for-bg-down {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  @include for-xs-down {
+    margin-bottom: 0;
+    padding: 2rem 0;
+    border-bottom: 1px solid #F5F5F5;
+    position: relative;
+  }
+
+  &.mod-open {
+    + .footer__links-list {
+      max-height: 30rem;
+      pointer-events: auto;
+    }
+
+    .footer__link-title-icon {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.footer__link-title-icon {
+  display: none;
+  position: absolute;
+  content: '';
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  height: 2.4rem;
+  fill: #fff;
+  transition: transform 250ms;
+
+  @include for-xs-down {
+    display: block;
+  }
 }
 
 .footer__links-list {
   margin: -.7rem;
+
+  @include for-xs-down {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 500ms;
+    margin-top: 0;
+    margin-bottom: 0;
+    pointer-events: none;
+  }
 }
 
 .footer__link {
@@ -46,26 +146,58 @@
   line-height: 2.6rem;
   letter-spacing: 0.02em;
   display: inline-block;
+
+  @include for-bg-down {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
 }
 
 .footer__bottom-block {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   padding-top: 3.6rem;
+  grid-gap: 3.2rem;
+
+  @include for-hg-down {
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer__additional-info-links-list {
   display: flex;
   align-items: center;
-  margin: -2rem -3.4rem 1.4rem -3.4rem;
+  margin: -2rem -3.4rem;
+
+  @include for-hg-down {
+    margin: -2rem;
+  }
+
+  @include for-sm-down {
+    display: block;
+    margin: -1rem;
+    border-bottom: 1px solid var(--main-grey-color);
+    padding-bottom: 2rem;
+  }
 }
 
 .footer__additional-info-link {
   padding: 2rem 3.4rem;
   font-size: 1.6rem;
   line-height: 2rem;
-  letter-spacing: 0.01em;transition: color 250ms;
+  letter-spacing: 0.01em;
+  transition: color 250ms;
   display: inline-block;
+
+  @include for-hg-down {
+    padding: 2rem;
+  }
+
+  @include for-sm-down {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    padding: 1rem;
+  }
 }
 
 .footer__agreement-text {
@@ -82,7 +214,13 @@
 }
 
 .footer__bottom-block-contacts {
-  margin-left: 3rem;
+  grid-column: 2;
+  grid-row: 1 / 3;
+
+  @include for-hg-down {
+    grid-column: 1;
+    grid-row: 2;
+  }
 }
 
 .footer__contacts-title {
@@ -92,6 +230,10 @@
   letter-spacing: 0.01em;
   color: var(--main-grey-color);
   margin-bottom: .6rem;
+
+  @include for-hg-down {
+    text-align: start;
+  }
 }
 
 .footer__contact-phone {
@@ -107,10 +249,25 @@
   display: flex;
   justify-content: flex-end;
   margin: -1.6rem;
+
+  @include for-hg-down {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  @include for-sm-down {
+    margin: -1.4rem;
+    margin-top: 1rem;
+  }
 }
 
 .footer__contact-social-link {
   padding: 1.6rem;
+  display: inline-block;
+
+  @include for-sm-down {
+    padding: 1.4rem;
+  }
 }
 
 .footer__contact-social-icon {
