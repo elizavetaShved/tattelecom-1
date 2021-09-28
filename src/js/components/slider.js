@@ -12,7 +12,7 @@ export class Slider {
       spaceBetween: 30,
       speed: 400,
       pagination: {
-        el: paginationElem ? paginationElem : null
+        el: paginationElem
       },
       navigation: {
         prevEl: btnPrev,
