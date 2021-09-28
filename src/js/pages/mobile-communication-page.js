@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initSlider(4);
   initSlider(3);
+  initSlider(2);
 
   validation();
   phoneMask();

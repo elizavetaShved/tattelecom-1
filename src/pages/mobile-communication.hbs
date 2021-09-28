@@ -3,12 +3,18 @@
 
     {{> bread-crumbs item1="Частным клиентам" item2="Мобильная связь" }}
 
-    {{> main-page/rates-preview}}
+    {{> common/rates-preview
+      pageName="mobile-communication"
+      img="img/mobile-communication/rates-preview/rates-preview-1.jpg"
+      ratesName="БЕЗЛИМИТНЫЙ ИНТЕРНЕТ 4G"
+      ratesCaption="за 240 руб/мес"
+      btnText="Подробнее"}}
     {{> main-page/rates-list/rates-list }}
     {{> main-page/services}}
-    {{> main-page/news-list/news-list}}
-    {{> main-page/useful-information/useful-information}}
-    {{> main-page/application}}
+    {{> mobile-communication-page/cashback/cashback }}
+    {{> common/faq }}
+    {{> main-page/useful-information/useful-information }}
+    {{> main-page/application }}
 
   {{/content}}
 {{/extend}}
