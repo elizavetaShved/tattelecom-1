@@ -78,7 +78,7 @@
   --page-content-padding-fl: 8rem;
   --page-content-padding-bg-down: 5rem;
   --page-content-padding-small: 2rem;
-  --page-content-padding-xxs-down: 1.6rem;
+  --page-content-padding-xxs: 1.6rem;
   --main-color: #fa4907;
   --main-hover: #ff7846;
   --main-text-color: #2b2b2b;
@@ -354,8 +354,8 @@ button:hover svg {
       padding-right: var(--page-content-padding-small); } }
   @media screen and (max-width: 425px) {
     .gl__page-content {
-      padding-left: var(--page-content-padding-xxs-down);
-      padding-right: var(--page-content-padding-xxs-down); } }
+      padding-left: var(--page-content-padding-xxs);
+      padding-right: var(--page-content-padding-xxs); } }
 
 .gl__layout-wrapper {
   display: -webkit-box;
@@ -1397,13 +1397,13 @@ button.swiper-pagination-bullet {
       margin: -1.2rem; } }
   @media screen and (max-width: 1023px) {
     .gl-slider__container {
-      margin: -1.2rem calc(var(--page-content-padding-bg-down) * -1); } }
+      margin-right: calc(var(--page-content-padding-bg-down) * -1); } }
   @media screen and (max-width: 767px) {
     .gl-slider__container {
-      margin: -1.2rem calc(var(--page-content-padding-small) * -1); } }
+      margin-right: calc(var(--page-content-padding-small) * -1); } }
   @media screen and (max-width: 425px) {
     .gl-slider__container {
-      margin: -1.2rem calc(var(--page-content-padding-xxs-down) * -1); } }
+      margin-right: calc(var(--page-content-padding-xxs) * -1); } }
 
 .gl-slider__wrapper {
   display: -webkit-box;
@@ -1411,13 +1411,13 @@ button.swiper-pagination-bullet {
   display: flex; }
   @media screen and (max-width: 1023px) {
     .gl-slider__wrapper {
-      padding: 0 var(--page-content-padding-bg-down); } }
+      margin-right: var(--page-content-padding-bg-down); } }
   @media screen and (max-width: 767px) {
     .gl-slider__wrapper {
-      padding: 0 var(--page-content-padding-small); } }
+      margin-right: var(--page-content-padding-small); } }
   @media screen and (max-width: 425px) {
     .gl-slider__wrapper {
-      padding: 0 var(--page-content-padding-xxs-down); } }
+      margin-right: var(--page-content-padding-xxs); } }
 
 .gl-slider__slider-btn {
   position: absolute;
@@ -2449,6 +2449,9 @@ button.swiper-pagination-bullet {
 
 .news-list {
   padding: 8rem 0; }
+  @media screen and (max-width: 767px) {
+    .news-list {
+      padding: 5rem 0; } }
 
 .news-list__slide {
   padding: 1.2rem 2.2rem;

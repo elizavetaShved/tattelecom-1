@@ -12,15 +12,15 @@
   }
 
   @include for-bg-down {
-    margin: -1.2rem calc(var(--page-content-padding-bg-down) * -1);
+    margin-right: calc(var(--page-content-padding-bg-down) * -1);
   }
 
   @include for-sm-down {
-    margin: -1.2rem calc(var(--page-content-padding-small) * -1);
+    margin-right: calc(var(--page-content-padding-small) * -1);
   }
 
   @include for-xxs-down {
-    margin: -1.2rem calc(var(--page-content-padding-xxs-down) * -1);
+    margin-right: calc(var(--page-content-padding-xxs) * -1);
   }
 }
 
@@ -28,15 +28,15 @@
   display: flex;
 
   @include for-bg-down {
-    padding: 0 var(--page-content-padding-bg-down);
+    margin-right: var(--page-content-padding-bg-down);
   }
 
   @include for-sm-down {
-    padding: 0 var(--page-content-padding-small);
+    margin-right: var(--page-content-padding-small);
   }
 
   @include for-xxs-down {
-    padding: 0 var(--page-content-padding-xxs-down);
+    margin-right: var(--page-content-padding-xxs);
   }
 }
 

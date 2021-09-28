@@ -46,8 +46,8 @@ button {
   }
 
   @include for-xxs-down {
-    padding-left: var(--page-content-padding-xxs-down);
-    padding-right: var(--page-content-padding-xxs-down);
+    padding-left: var(--page-content-padding-xxs);
+    padding-right: var(--page-content-padding-xxs);
   }
 }
 

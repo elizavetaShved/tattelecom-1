@@ -1,5 +1,9 @@
 .news-list {
   padding: 8rem 0;
+
+  @include for-sm-down {
+    padding: 5rem 0;
+  }
 }
 
 .news-list__slide {
