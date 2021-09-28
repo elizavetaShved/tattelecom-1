@@ -6,10 +6,10 @@ export class Slider {
 
   constructor(sliderElem, numSlide, btnPrev, btnNext, paginationElem) {
     new Swiper(sliderElem, {
-      slidesPerView: 1.5,
+      slidesPerView: 1.2,
       lazy: true,
       keyboard: true,
-      spaceBetween: 30,
+      spaceBetween: 16,
       speed: 400,
       pagination: {
         el: paginationElem

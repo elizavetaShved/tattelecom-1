@@ -2475,6 +2475,9 @@ button.swiper-pagination-bullet {
 
 .useful-information {
   padding: 4rem 0 8rem; }
+  @media screen and (max-width: 767px) {
+    .useful-information {
+      padding: 1rem 0 5rem; } }
 
 .useful-information__slide-wrapper {
   overflow: hidden; }
@@ -2516,12 +2519,19 @@ button.swiper-pagination-bullet {
           align-items: center;
   margin-left: 0;
   overflow: hidden; }
+  @media screen and (max-width: 767px) {
+    .useful-information__slide-content {
+      padding: 1.6rem 1.4rem; } }
 
 .useful-information__slide-content-text {
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 0.015em;
   margin-right: 1rem; }
+  @media screen and (max-width: 767px) {
+    .useful-information__slide-content-text {
+      font-size: 1.6rem;
+      line-height: 2.6rem; } }
 
 .application {
   padding: 11rem 0;
