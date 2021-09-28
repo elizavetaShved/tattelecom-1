@@ -1977,17 +1977,36 @@ button.swiper-pagination-bullet {
   position: relative;
   height: 47rem;
   color: #fff;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  @media screen and (max-width: 767px) {
+    .rates-preview {
+      background-color: #131419;
+      background-image: none !important;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      height: auto; } }
 
-.rates-preview__main-image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: -1; }
+.rates-preview-img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 2.6rem; }
+
+.rates-preview-img {
+  height: 27.6rem;
+  -o-object-fit: contain;
+     object-fit: contain; }
 
 .rates-preview__content-wrapper {
   display: -webkit-box;
@@ -1997,14 +2016,24 @@ button.swiper-pagination-bullet {
       -ms-flex-align: center;
           align-items: center;
   height: 100%; }
+  @media screen and (max-width: 767px) {
+    .rates-preview__content-wrapper {
+      width: 100%; } }
 
 .rates-preview__content {
   max-width: 45rem; }
+  @media screen and (max-width: 767px) {
+    .rates-preview__content {
+      max-width: none; } }
 
 .rates-preview__content-title {
   font-size: 3.4rem;
   line-height: 4rem;
   margin-bottom: 2rem; }
+  @media screen and (max-width: 767px) {
+    .rates-preview__content-title {
+      font-size: 2.4rem;
+      line-height: 3rem; } }
 
 .rates-preview__content-subtitle {
   font-weight: 600;
@@ -2012,12 +2041,22 @@ button.swiper-pagination-bullet {
   line-height: 5.4rem;
   margin-bottom: 1.2rem;
   text-transform: uppercase; }
+  @media screen and (max-width: 767px) {
+    .rates-preview__content-subtitle {
+      font-size: 3.2rem;
+      line-height: 3.8rem;
+      margin-bottom: 2rem; } }
 
 .rates-preview__content-caption {
   font-weight: 300;
   font-size: 2rem;
   line-height: 2.4rem;
   margin-bottom: 5.2rem; }
+  @media screen and (max-width: 767px) {
+    .rates-preview__content-caption {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      margin-bottom: 2.8rem; } }
 
 .rates-list {
   padding: 8rem 0 13.2rem; }
