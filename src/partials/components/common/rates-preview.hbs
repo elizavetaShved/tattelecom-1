@@ -1,0 +1,19 @@
+<section class="rates-preview mod-{{ pageName }}"
+         {{#if imgFull}}style="background-image: url({{ imgFull }})"{{/if}}
+         id="rates-preview-host">
+
+  <div class="gl__page-content rates-preview__content-wrapper">
+    <div class="rates-preview__content">
+      {{#if title}}
+        <div class="rates-preview__content-title">{{ title }}</div>
+      {{/if}}
+      <div class="rates-preview__content-subtitle">{{ subtitle }}</div>
+      <div class="rates-preview__content-caption">{{ caption }}</div>
+      <button type="button" class="gl__main-btn">{{ btnText }}</button>
+    </div>
+
+    <div class="rates-preview-img-wrapper">
+      <img src="{{ img }}" alt="" class="rates-preview-img">
+    </div>
+  </div>
+</section>
