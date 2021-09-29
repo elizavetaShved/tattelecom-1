@@ -1,0 +1,35 @@
+.conditions {
+  padding: 5rem 0 8rem;
+
+  @include for-sm-down {
+    padding: 2.6rem 0 4rem;
+  }
+}
+
+.conditions__title {
+  display: flex;
+  align-items: center;
+  font-size: 3.8rem;
+  line-height: 5rem;
+  letter-spacing: 0.015em;
+  padding: 3rem 0;
+
+  &:hover {
+    color: var(--main-color);
+
+    .conditions__title-icon {
+      fill: var(--main-color);
+    }
+  }
+}
+
+.conditions__title-icon {
+  height: 3.2rem;
+  fill: var(--main-text-color)
+}
+
+.conditions__text {
+  padding: 0 2rem;
+  font-size: 2rem;
+  line-height: 2.8rem;
+}

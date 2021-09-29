@@ -116,6 +116,11 @@ button {
     transition: max-height 500ms;
   }
 
+  .gl__drop-menu-icon {
+    transform: rotate(0);
+    transition: transform 250ms;
+  }
+
   &.mod-open {
     + .gl__drop-menu {
       max-height: 40rem; // todo костыль анимации
@@ -123,7 +128,7 @@ button {
     }
 
     .gl__drop-menu-icon {
-      transform: rotate(180deg);
+      transform: rotate(-180deg);
     }
   }
 
