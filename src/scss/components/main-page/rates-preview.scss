@@ -56,6 +56,38 @@ $padding-content: 2rem;
       }
     }
   }
+
+  &.mod-together-profitable {
+    background: linear-gradient(99.54deg, #D5DDDF 3.54%, #D5DDDF 73.5%);
+
+    @include for-sm-down {
+      .rates-preview__content-wrapper {
+        flex-direction: column;
+      }
+
+      .rates-preview-img-wrapper {
+        margin-left: calc(var(--page-content-padding-small) * -1);
+        margin-right: calc(var(--page-content-padding-small) * -1);
+        margin-bottom: -$padding-content;
+        width: 100vw;
+      }
+
+      .rates-preview-img {
+        margin-top: 4rem;
+        height: auto;
+      }
+    }
+
+    @include for-sm-up {
+      .rates-preview-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        max-width: 60%;
+      }
+    }
+  }
 }
 
 .rates-preview-img-wrapper {
@@ -89,7 +121,7 @@ $padding-content: 2rem;
 }
 
 .rates-preview__content {
-  max-width: 45rem;
+  max-width: 30%;
 
   @include for-sm-down {
     max-width: none;

@@ -5,7 +5,8 @@ module.exports = {
   entry: {
     mainPage: './src/js/pages/main-page.js',
     mobileCommunicationPage: './src/js/pages/mobile-communication-page.js',
-    cashbackPage: './src/js/pages/cashback-page.js'
+    cashbackPage: './src/js/pages/cashback-page.js',
+    togetherProfitable: './src/js/pages/together-profitable.js'
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

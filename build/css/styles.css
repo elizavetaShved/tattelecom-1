@@ -2235,6 +2235,29 @@ button.swiper-pagination-bullet {
       .rates-preview.mod-cashback .rates-preview-img {
         margin-bottom: -2rem;
         height: 28.4rem; } }
+  .rates-preview.mod-together-profitable {
+    background: linear-gradient(99.54deg, #D5DDDF 3.54%, #D5DDDF 73.5%); }
+    @media screen and (max-width: 767px) {
+      .rates-preview.mod-together-profitable .rates-preview__content-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+      .rates-preview.mod-together-profitable .rates-preview-img-wrapper {
+        margin-left: calc(var(--page-content-padding-small) * -1);
+        margin-right: calc(var(--page-content-padding-small) * -1);
+        margin-bottom: -2rem;
+        width: 100vw; }
+      .rates-preview.mod-together-profitable .rates-preview-img {
+        margin-top: 4rem;
+        height: auto; } }
+    @media screen and (min-width: 768px) {
+      .rates-preview.mod-together-profitable .rates-preview-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        max-width: 60%; } }
 
 .rates-preview-img-wrapper {
   display: -webkit-box;
@@ -2278,7 +2301,7 @@ button.swiper-pagination-bullet {
       width: 100%; } }
 
 .rates-preview__content {
-  max-width: 45rem; }
+  max-width: 30%; }
   @media screen and (max-width: 767px) {
     .rates-preview__content {
       max-width: none; } }
