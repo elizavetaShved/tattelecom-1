@@ -3,11 +3,13 @@
 }
 
 .bread-crumbs__list {
-  display: flex;
-  margin-left: 0 -.6rem;
+  margin-left: -.6rem;
+  padding: 1.2rem 0;
 }
 
 .bread-crumbs__item {
+  display: inline-block;
+
   &:last-child {
     .bread-crumbs__link-icon {
       display: none;
@@ -23,7 +25,7 @@
   line-height: 2.4rem;
   letter-spacing: 0.02em;
   color: var(--grey-text);
-  padding: 1.8rem .6rem;
+  padding: .6rem;
 }
 
 .bread-crumbs__link-icon {
