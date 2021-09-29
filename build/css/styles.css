@@ -3029,3 +3029,97 @@ button.swiper-pagination-bullet {
     .what-is__caption {
       font-size: 2rem;
       line-height: 3.2rem; } }
+
+.how-receive {
+  padding: 4rem 0 8rem; }
+  @media screen and (max-width: 959px) {
+    .how-receive {
+      padding: 2rem 0 4rem; } }
+
+.how-receive__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media screen and (max-width: 959px) {
+    .how-receive__content {
+      display: block; } }
+
+.how-receive__steps-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media screen and (max-width: 959px) {
+    .how-receive__steps-wrapper {
+      display: block; } }
+
+.how-receive__step-item {
+  width: 100%; }
+  .how-receive__step-item + .how-receive__step-item {
+    margin-left: 2rem; }
+    @media screen and (max-width: 959px) {
+      .how-receive__step-item + .how-receive__step-item {
+        margin-left: 0;
+        margin-top: 4rem; } }
+
+.how-receive__step-item-num {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+  background-color: var(--main-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  margin-bottom: 3rem; }
+  @media screen and (max-width: 959px) {
+    .how-receive__step-item-num {
+      margin-bottom: 2rem; } }
+  @media screen and (max-width: 767px) {
+    .how-receive__step-item-num {
+      width: 6rem;
+      height: 6rem; } }
+
+.how-receive__step-item-caption {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em; }
+  @media screen and (max-width: 959px) {
+    .how-receive__step-item-caption {
+      font-size: 2.2rem;
+      line-height: 3.2rem; } }
+  @media screen and (max-width: 767px) {
+    .how-receive__step-item-caption {
+      font-size: 1.6rem;
+      line-height: 2.6rem; } }
+
+.how-receive__hint {
+  margin-left: 2rem;
+  padding: 4.2rem;
+  background-color: var(--border-color);
+  color: var(--main-color);
+  font-weight: 300;
+  font-size: 2.6rem;
+  line-height: 4.2rem;
+  letter-spacing: 0.015em;
+  border-radius: 10px; }
+  @media screen and (max-width: 959px) {
+    .how-receive__hint {
+      margin-left: 0;
+      margin-top: 5rem; } }
+  @media screen and (max-width: 767px) {
+    .how-receive__hint {
+      padding: 3rem;
+      font-size: 2rem;
+      line-height: 3.2rem; } }
