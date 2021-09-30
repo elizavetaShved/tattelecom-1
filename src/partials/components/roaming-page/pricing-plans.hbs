@@ -1,0 +1,36 @@
+<section class="pricing-plans" id="pricing-plans-host">
+  <div class="gl__page-content">
+    <h2 class="gl__title">Тарифы</h2>
+
+    <div class="pricing-plans__content">
+        <ul class="pricing-plans__list">
+          {{#each pricing-plans}}
+          <li class="pricing-plans__item">
+            <div class="pricing-plans__item-title">{{ this.title }}</div>
+            <div class="pricing-plans__item-subtitle">{{ subtitle }}</div>
+
+            {{#each this.plans}}
+              <ul class="pricing-plans__item-plans-list">
+                <li class="pricing-plans__item-plans-item">
+                  {{#if captionHint}}
+                    <div>
+                      <div class="pricing-plans__item-plans-caption">{{ caption }}</div>
+                      <div class="pricing-plans__item-plans-caption--hint">{{ captionHint }}</div>
+                    </div>
+
+                  {{else}}
+                    <div class="pricing-plans__item-plans-caption">{{ caption }}</div>
+                  {{/if}}
+                  <div class="pricing-plans__item-plans-value">
+                    {{ valuePrice }} <span class="unit">{{ valueUnit }}</span>
+                  </div>
+                </li>
+              </ul>
+            {{/each}}
+          </li>
+          {{/each}}
+        </ul>
+      <img src="img/roaming/man.svg" alt="" class="pricing-plans__image gl__sm-hide">
+    </div>
+  </div>
+</section>

@@ -1,0 +1,67 @@
+.pricing-plans {
+  padding: 5rem 0;
+}
+
+.pricing-plans__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricing-plans__image {
+  height: 50rem;
+  max-width: 100%;
+  margin-right: 3rem;
+}
+
+.pricing-plans__item {
+  & + & {
+    margin-top: 5rem;
+  }
+}
+
+.pricing-plans__item-title {
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 2rem;
+}
+
+.pricing-plans__item-subtitle {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  color: var(--main-grey-color);
+  margin-bottom: 1.4rem;
+}
+
+.pricing-plans__item-plans-item {
+  padding: 2rem 2rem 2rem 0;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  max-width: 87.6rem;
+}
+
+.pricing-plans__item-plans-caption {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+
+  &--hint {
+    color: #A5A5A5;
+  }
+}
+
+.pricing-plans__item-plans-value {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: flex-start;
+  margin-left: 2rem;
+
+  .unit {
+    padding-top: 1px;
+    padding-left: 4px;
+  }
+}
