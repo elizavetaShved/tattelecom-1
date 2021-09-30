@@ -1,0 +1,24 @@
+.roaming-tabs {
+  height: 13.6rem;
+  margin-bottom: 5rem;
+}
+
+.roaming-tabs__content {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.roaming-tabs__menu-tabs-wrapper {
+  padding: 4rem 4rem 3rem;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.roaming-tabs__select-wrapper {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  width: 100%;
+}

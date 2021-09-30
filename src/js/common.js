@@ -9,5 +9,4 @@ export default function common() {
   initDropDownMenu() // для футера точно нужно
 
   new Header();
-  // new Footer();
 }

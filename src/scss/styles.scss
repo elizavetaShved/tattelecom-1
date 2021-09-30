@@ -9,9 +9,11 @@
 
 @import 'components/slider';
 @import 'components/bread-crumbs';
+@import 'components/menu-tabs';
 
 @import 'form/checkbox';
 @import 'form/input-main';
+@import 'form/select';
 
 @import 'components/layout/header';
 @import 'components/layout/footer';
@@ -33,4 +35,8 @@
 @import 'components/together-profitable-page/how-works';
 @import 'components/together-profitable-page/steps';
 @import 'components/together-profitable-page/conditions';
+
+@import 'components/roaming-page/roaming';
+@import 'components/roaming-page/top-block';
+@import 'components/roaming-page/roaming-tabs';
 

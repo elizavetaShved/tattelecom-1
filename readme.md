@@ -2,10 +2,11 @@
 
 <body>
 <div class="hint__wrapper">
-  <a class="hint__link" style="display: block; padding: 6px; font-size: 20px" href="/tattelecom-1/build">Главная</a>
-  <a class="hint__link" style="display: block; padding: 6px; font-size: 20px" href="/tattelecom-1/build/mobile-communication.html">Мобильная связь</a>
-  <a class="hint__link" style="display: block; padding: 6px; font-size: 20px" href="/tattelecom-1/build/cashback.html">Кэшбек 20 %</a>
-  <a class="hint__link" style="display: block; padding: 6px; font-size: 20px" href="/tattelecom-1/build/together-profitable.html">Вместе выгодно 2.0</a>
+  <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build">Главная</a>
+  <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/mobile-communication.html">Мобильная связь</a>
+  <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/cashback.html">Кэшбек 20 %</a>
+  <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/together-profitable.html">Вместе выгодно 2.0</a>
+  <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/roaming.html">Роуминг</a>
 </div>
 </body>
 

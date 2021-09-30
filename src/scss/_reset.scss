@@ -139,6 +139,5 @@ nav ul {
 }
 
 ::selection {
-  color: white;
-  background-color: var(--main-color);
+  @extend %select-white-background;
 }

@@ -4,20 +4,12 @@
       <li class="services__item-wrapper gl__white-container">
         <h3 class="services__item-info-title">Быстрое пополнение счета</h3>
 
-        <div class="services__radio-btns-container">
-          <label class="services__radio-wrapper">
-            <input type="radio" class="services__radio" name="adding-funds-account" checked>
-            <span class="services__radio-content">Мобильная связь</span>
-          </label>
-          <label class="services__radio-wrapper">
-            <input type="radio" class="services__radio" name="adding-funds-account">
-            <span class="services__radio-content">Интернет</span>
-          </label>
-          <label class="services__radio-wrapper">
-            <input type="radio" class="services__radio" name="adding-funds-account">
-            <span class="services__radio-content">Телевидение</span>
-          </label>
-        </div>
+        {{> common/menu-tabs
+          name="services-adding-funds-account"
+          item1="Мобильная связь"
+          item2="Интернет"
+          item3="Телевидение"
+        }}
 
         <form class="services__form-wrapper" data-need-validation data-parsley-validate data-parsley-focus="none">
           <div class="services__form-inputs-wrapper">

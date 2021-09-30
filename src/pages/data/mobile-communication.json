@@ -1,4 +1,13 @@
 {
   "title": "Мобильная связь",
-  "script": "mobileCommunicationPage"
+  "script": "mobileCommunicationPage",
+  "bread-crumbs": [
+    {
+      "name": "Частным клиентам"
+    },
+    {
+      "name": "Мобильная связь",
+      "noLink": true
+    }
+  ]
 }

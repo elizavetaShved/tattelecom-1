@@ -1,0 +1,22 @@
+.roaming__top-wrapper {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.roaming__background {
+  position: absolute;
+  top: 0;
+  right: -18rem;
+  z-index: 1;
+  object-fit: cover;
+  height: 51.6rem;
+
+  @include for-sm-down {
+    right: -4rem;
+    left: -4rem;
+    min-height: 22rem;
+    height: auto;
+    width: calc(100vw + 4rem + 4rem);
+  }
+}

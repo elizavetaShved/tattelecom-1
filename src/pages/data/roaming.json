@@ -1,6 +1,6 @@
 {
-  "title": "Вместе выгодно 2.0",
-  "script": "togetherProfitablePage",
+  "title": "Роуминг по России",
+  "script": "roamingPage",
   "bread-crumbs": [
     {
       "name": "Частным клиентам"
@@ -9,7 +9,7 @@
       "name": "Мобильная связь"
     },
     {
-      "name": "Вместе выгодно 2.0",
+      "name": "Роуминг по России",
       "noLink": true
     }
   ]

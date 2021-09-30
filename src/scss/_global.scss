@@ -24,8 +24,7 @@ button {
 }
 
 ::selection {
-  color: white;
-  background-color: var(--main-color);
+ @extend %select-orange-background;
 }
 
 .gl__page-content {

@@ -1,5 +1,31 @@
 .bread-crumbs__container {
   background-color: #FCFCFC;
+
+  &.mod-orange {
+    ::selection {
+      @extend %select-white-background;
+    }
+
+    background-color: var(--main-color);
+
+    .bread-crumbs__link {
+      color: #fff;
+    }
+
+    a.bread-crumbs__link {
+      &:hover {
+        color: var(--main-text-color);
+
+        .bread-crumbs__link-icon {
+          fill: var(--main-text-color);
+        }
+      }
+    }
+
+    .bread-crumbs__link-icon {
+      fill: #fff;
+    }
+  }
 }
 
 .bread-crumbs__list {

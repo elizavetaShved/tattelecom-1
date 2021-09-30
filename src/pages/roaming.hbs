@@ -1,0 +1,16 @@
+{{#extend "layout"}}
+  {{#content "main"}}
+
+    <div class="roaming__top-wrapper">
+      {{> bread-crumbs isOrangeBackground=true}}
+      {{> roaming-page/top-block }}
+      <img src="img/roaming/background.svg" alt="" class="roaming__background gl__sm-hide">
+      <img src="img/roaming/background-small.svg" alt="" class="roaming__background gl__sm-show">
+    </div>
+
+    {{> roaming-page/roaming-tabs }}
+
+    {{> main-page/application }}
+
+  {{/content}}
+{{/extend}}

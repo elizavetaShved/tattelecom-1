@@ -1,4 +1,16 @@
 {
   "title": "Кэшбэк 20%",
-  "script": "cashbackPage"
+  "script": "cashbackPage",
+  "bread-crumbs": [
+    {
+      "name": "Частным клиентам"
+    },
+    {
+      "name": "Мобильная связь"
+    },
+    {
+      "name": "Кэшбек 20%",
+      "noLink": true
+    }
+  ]
 }

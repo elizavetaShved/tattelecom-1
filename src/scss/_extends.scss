@@ -13,3 +13,13 @@
     pointer-events: auto;
   }
 }
+
+%select-white-background {
+  background-color: #fff;
+  color: var(--main-color);
+}
+
+%select-orange-background {
+  background-color: var(--main-color);
+  color: #fff;
+}
