@@ -1,4 +1,118 @@
 {
-    "title": "Таттелеком",
-    "script": "mainPage"
+  "title": "Таттелеком",
+  "script": "mainPage",
+  "rates-list": [
+    {
+      "isHit": true,
+      "title": "Интернет + ТВ за 0 минут",
+      "subtitle": "Перейти по USSD *116*201#",
+      "unlimited": true,
+      "calls": [
+        "500 мин. звонки по РТ",
+        "300 мин. звонки по РФ",
+        "Безлимитные звонки на Летай"
+      ],
+      "opportunities": "Смартфоны в рассрочку Кешбек 20%",
+      "price": "333"
+    },
+    {
+      "title": "Много интернета",
+      "subtitle": "Перейти по USSD *116*204#",
+      "unlimited": true,
+      "calls": [
+        "200 мин. звонки по РТ"
+      ],
+      "opportunities": "Смартфоны в рассрочку Кешбек 20%",
+      "price": "240"
+    },
+    {
+      "title": "Много минут",
+      "subtitle": "Перейти по USSD *116*201#",
+      "unlimited": true,
+      "calls": [
+        "500 мин. звонки по РТ",
+        "300 мин. звонки по РФ",
+        "Безлимитные звонки на Летай"
+      ],
+      "opportunities": "Смартфоны в рассрочку Кешбек 20%",
+      "price": "350"
+    },
+    {
+      "title": "Много интернета",
+      "subtitle": "Перейти по USSD *116*204#",
+      "unlimited": true,
+      "calls": [
+        "200 мин. звонки по РТ"
+      ],
+      "opportunities": "Смартфоны в рассрочку Кешбек 20%",
+      "price": "240"
+    },
+    {
+      "title": "Много минут",
+      "subtitle": "Перейти по USSD *116*201#",
+      "unlimited": true,
+      "calls": [
+        "500 мин. звонки по РТ",
+        "300 мин. звонки по РФ",
+        "Безлимитные звонки на Летай"
+      ],
+      "opportunities": "Смартфоны в рассрочку Кешбек 20%",
+      "price": "350"
+    }
+  ],
+  "services-menu-tabs": [
+    {
+      "items": [
+        {
+          "itemName": "Мобильная связь",
+          "name": "services-adding-funds-account",
+          "isChecked": true
+        },
+        {
+          "itemName": "Интернет",
+          "name": "services-adding-funds-account"
+        },
+        {
+          "itemName": "Телевидение",
+          "name": "services-adding-funds-account"
+        }
+      ]
+    }
+  ],
+  "news-list": [
+    {
+      "title": "22 май",
+      "text": "Провели праздник двора для жителей ЖК Салават Купере"
+    },
+    {
+      "title": "22 май",
+      "text": "Провели праздник двора для жителей ЖК Салават Купере"
+    },
+    {
+      "title": "22 май",
+      "text": "Провели праздник двора для жителей ЖК Салават Купере"
+    },
+    {
+      "title": "22 май",
+      "text": "Провели праздник двора для жителей ЖК Салават Купере"
+    },
+    {
+      "title": "22 май",
+      "text": "Провели праздник двора для жителей ЖК Салават Купере"
+    }
+  ],
+  "useful-information": [
+    {
+      "img": "img/main-page/useful-information/image-1.jpg",
+      "title": "Домофония"
+    },
+    {
+      "img": "img/main-page/useful-information/image-2.jpg",
+      "title": "Роуминг"
+    },
+    {
+      "img": "img/main-page/useful-information/image-3.jpg",
+      "title": "Приложения Таттелеком"
+    }
+  ]
 }

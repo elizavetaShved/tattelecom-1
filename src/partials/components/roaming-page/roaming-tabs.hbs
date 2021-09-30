@@ -2,21 +2,12 @@
   <div class="gl__page-content">
     <div class="roaming-tabs__content">
       <div class="roaming-tabs__menu-tabs-wrapper gl__white-container gl__xs-hide">
-        {{> common/menu-tabs
-          name="services-adding-funds-account"
-          type2=true
-          item1="Роуминг по Россиии"
-          item2="Роуминг по всему миру"
-        }}
+        {{> common/controls/menu-tabs menu-tabs=roaming-menu-tabs }}
       </div>
 
       <div class="gl__xs-show">
         <div class="roaming-tabs__select-wrapper">
-          {{> common/select
-            name="roaming-tabs"
-            option1="Роуминг по Россиии"
-            option2="Роуминг по всему миру"
-          }}
+          {{> common/controls/select selects=roaming-select }}
         </div>
 
         <div class="roaming-tabs__image-wrapper">

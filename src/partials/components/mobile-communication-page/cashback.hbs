@@ -1,0 +1,25 @@
+<section class="cashback" id="cashback-host">
+  <div class="gl__page-content">
+    <h2 class="gl__title">Выберите свой кэшбэк до 25%</h2>
+
+    <div class="gl-slider js-swiper-2">
+      <div class="gl-slider__container swiper-container js-swiper-container-2">
+        <ul class="gl-slider__wrapper swiper-wrapper">
+          {{#each cashback}}
+            <li class="gl-slider__slide swiper-slide gl__white-container cashback__slide gl__link-arrow-container">
+              <img src="{{ this.img }}" alt="" class="cashback__slide-background">
+              <div class="cashback__slide-content-wrapper">
+                <div class="cashback__slide-title">{{ this.title }}</div>
+                <div class="cashback__slide-text">{{ this.text }}</div>
+              </div>
+
+              <a href="" class="cashback__slide-link">Подробнее</a>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <!--      {{> common/controls/btns-slider}}-->
+    </div>
+  </div>
+</section>

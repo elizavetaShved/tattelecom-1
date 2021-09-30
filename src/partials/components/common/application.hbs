@@ -8,13 +8,13 @@
       </div>
 
       <form class="application__form" data-need-validation data-parsley-validate data-parsley-focus="none">
-        {{> common/input-main
+        {{> common/controls/input-main
           required=true
           type="text"
           placeholder="Ваше имя"
           name="application-name"
         }}
-        {{> common/input-main
+        {{> common/controls/input-main
           required=true
           type="tel"
           phoneMask=true

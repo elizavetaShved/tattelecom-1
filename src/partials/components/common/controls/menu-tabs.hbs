@@ -1,0 +1,10 @@
+{{#each menu-tabs }}
+  <div class="menu-tabs__radio-btns-container {{#if this.type2}}mod-type-2{{/if}}">
+    {{#each this.items }}
+      <label class="menu-tabs__radio-wrapper">
+        <input type="radio" class="menu-tabs__radio" name="{{ this.name }}" {{#if this.isChecked}}checked{{/if}}>
+        <span class="menu-tabs__radio-content">{{ this.itemName }}</span>
+      </label>
+    {{/each}}
+  </div>
+{{/each}}

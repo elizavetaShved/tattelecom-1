@@ -13,6 +13,31 @@
       "noLink": true
     }
   ],
+  "roaming-menu-tabs": [
+    {
+      "type2": true,
+      "items": [
+        {
+          "itemName": "Роуминг по Россиии",
+          "name": "roaming",
+          "isChecked": true
+        },
+        {
+          "itemName": "Роуминг по всему миру",
+          "name": "roaming"
+        }
+      ]
+    }
+  ],
+  "roaming-select": [
+    {
+      "name": "roaming",
+      "options": [
+        "Роуминг по Россиии",
+        "Роуминг по всему миру"
+      ]
+    }
+  ],
   "pricing-plans": [
     {
       "title": "Базовые тарифы",

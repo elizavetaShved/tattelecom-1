@@ -1,0 +1,82 @@
+<section class="rates-list" id="rates-list-host">
+  <div class="gl__page-content">
+    <div class="gl__title-head">
+      <h2 class="gl__title">
+        Тарифы мобильной связи
+      </h2>
+      <div class="gl__xs-hide">
+        {{> common/controls/link-show-all text="Все тарифы" }}
+      </div>
+    </div>
+
+    <div class="gl-slider js-swiper-4">
+      <div class="gl-slider__container swiper-container js-swiper-container-4">
+        <ul class="gl-slider__wrapper swiper-wrapper">
+          {{#each rates-list}}
+            <li class="rates-list__slide gl-slider__slide gl__white-container swiper-slide {{#if
+              this.isHit }}rates-list__slide-hit{{/if}}">
+              {{#if this.isHit }}
+                <img src="img/main-page/rates-list/hit-background.svg" alt="" class="rates-list__slide-hit-background">
+                <img src="img/main-page/rates-list/hit-mark.svg" alt="" class="rates-list__slide-hit-mark">
+              {{/if}}
+              <div class="rates-list__slide-content">
+                <div class="rates-list__slide-up">
+                  <div class="rates-list__slide-title">{{ this.title }}</div>
+                  <div class="rates-list__slide-subtitle">{{ this.subtitle }}</div>
+
+                  <ul class="rates-list__slide-conditions-list">
+                    {{#if this.unlimited }}
+                      <li class="rates-list__slide-condition-item">
+                        <img src="img/main-page/rates-list/unlimited.svg" alt="" class="rates-list__slide-condition-item-icon">
+                        <div class="rates-list__slide-condition-item-text">Безлимитный интернет</div>
+                      </li>
+                    {{/if}}
+                    {{#each calls}}
+                      <li class="rates-list__slide-condition-item">
+                        <img src="img/main-page/rates-list/phone-1.svg" alt="" class="rates-list__slide-condition-item-icon">
+                        <div class="rates-list__slide-condition-item-text">{{ this }}</div>
+                      </li>
+                    {{/each}}
+                  </ul>
+                </div>
+
+                <div class="rates-list__slide-down">
+                  {{#if this.opportunities }}
+                    <div class="rates-list__opportunities-wrapper">
+                      <div class="rates-list__opportunities-title">Возможности</div>
+
+                      <div class="rates-list__opportunities-text">{{ this.opportunities }}</div>
+                    </div>
+                  {{/if}}
+
+                  <div class="rates-list__slide-price-wrapper">
+                    <div class="rates-list__slide-price">
+                      <span class="big">{{ this.price }}</span><span class="small">₽/мес</span>
+                    </div>
+                  </div>
+
+                  <div class="rates-list__slide-btns-wrapper">
+                    <button type="button" class="rates-list__slide-btn-plug gl__main-btn">Подключить</button>
+                    <div class="rates-list__slide-link-detailed-wrapper">
+                      <a href="" class="rates-list__slide-link-detailed">Подробнее о тарифе</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      {{> common/controls/btns-slider }}
+
+      <div class="gl__xs-hide">
+        {{> common/pagination-slider }}
+      </div>
+
+      <div class="gl__xs-show">
+        {{> common/controls/link-show-all text="Все тарифы" }}
+      </div>
+    </div>
+  </div>
+</section>

@@ -347,16 +347,16 @@
       <div class="gl__page-content">
         <div class="roaming-tabs__content">
           <div class="roaming-tabs__menu-tabs-wrapper gl__white-container gl__xs-hide">
-            <div class="menu-tabs__radio-btns-container mod-type-2">
-                <label class="menu-tabs__radio-wrapper">
-                  <input type="radio" class="menu-tabs__radio" name="services-adding-funds-account" checked>
-                  <span class="menu-tabs__radio-content">Роуминг по Россиии</span>
-                </label>
-                <label class="menu-tabs__radio-wrapper">
-                  <input type="radio" class="menu-tabs__radio" name="services-adding-funds-account" checked>
-                  <span class="menu-tabs__radio-content">Роуминг по всему миру</span>
-                </label>
-            </div>
+              <div class="menu-tabs__radio-btns-container mod-type-2">
+                  <label class="menu-tabs__radio-wrapper">
+                    <input type="radio" class="menu-tabs__radio" name="roaming" checked>
+                    <span class="menu-tabs__radio-content">Роуминг по Россиии</span>
+                  </label>
+                  <label class="menu-tabs__radio-wrapper">
+                    <input type="radio" class="menu-tabs__radio" name="roaming" >
+                    <span class="menu-tabs__radio-content">Роуминг по всему миру</span>
+                  </label>
+              </div>
           </div>
     
           <div class="gl__xs-show">
@@ -370,25 +370,17 @@
                 required - обязательно для заполнения
                 placeholder
               -->
-              
-              <div class="select__container" id="roaming-tabs">
-                <label class="select__wrapper">
-                  <select class="gl__select js-custom-select"
-                          data-parsley-class-handler="#roaming-tabs-"
-                          name="roaming-tabs-"
-                  >
-                    <option value="Роуминг по Россиии">Роуминг по Россиии</option>
-                    <option value="Роуминг по всему миру">Роуминг по всему миру</option>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                  </select>
-                </label>
-              </div>
+                <div class="select__container" id="roaming">
+                  <label class="select__wrapper">
+                    <select class="gl__select js-custom-select"
+                            data-parsley-class-handler="#roaming"
+                            name="roaming"
+                    >
+                          <option value="Роуминг по Россиии">Роуминг по Россиии</option>
+                          <option value="Роуминг по всему миру">Роуминг по всему миру</option>
+                    </select>
+                  </label>
+                </div>
             </div>
     
             <div class="roaming-tabs__image-wrapper">

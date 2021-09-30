@@ -4,16 +4,11 @@
       <li class="services__item-wrapper gl__white-container">
         <h3 class="services__item-info-title">Быстрое пополнение счета</h3>
 
-        {{> common/menu-tabs
-          name="services-adding-funds-account"
-          item1="Мобильная связь"
-          item2="Интернет"
-          item3="Телевидение"
-        }}
+        {{> common/controls/menu-tabs menu-tabs=services-menu-tabs }}
 
         <form class="services__form-wrapper" data-need-validation data-parsley-validate data-parsley-focus="none">
           <div class="services__form-inputs-wrapper">
-            {{> common/input-main
+            {{> common/controls/input-main
               required=true
               type="tel"
               phoneMask=true
@@ -21,7 +16,7 @@
               inputTitle="Введите номер"
               name="services-tel"
             }}
-            {{> common/input-main
+            {{> common/controls/input-main
               required=true
               type="number"
               minLength="10"
@@ -85,7 +80,7 @@
 
         <form class="services__form-wrapper" data-need-validation data-parsley-validate data-parsley-focus="none">
           <div class="services__form-inputs-wrapper">
-            {{> common/input-main
+            {{> common/controls/input-main
               required=true
               type="tel"
               phoneMask=true
@@ -93,7 +88,7 @@
               inputTitle="Введите номер переноса"
               name="services-tel-transfer"
             }}
-            {{> common/input-main
+            {{> common/controls/input-main
               required=true
               type="text"
               inputTitle="Укажите город проживания"
@@ -105,7 +100,7 @@
             </div>
           </div>
 
-          {{> common/input-checkbox
+          {{> common/controls/input-checkbox
             required=true
             caption="Я соглашаюсь на получение консультации по переносу номера"
             name="services-approval"

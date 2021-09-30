@@ -1,0 +1,33 @@
+<!--
+  __Обязательные поля__
+  name - input name
+  option1 - опции
+
+  __Необязательные поля__
+  required - обязательно для заполнения
+  placeholder
+-->
+{{#each selects }}
+  <div class="select__container" id="{{ this.name }}">
+    <label class="select__wrapper">
+      {{#if this.required }}
+        <span class="gl__input-mark-required"></span>
+      {{/if}}
+      <select class="gl__select js-custom-select"
+              data-parsley-class-handler="#{{ this.name }}"
+              name="{{ this.name }}"
+        {{#if this.required }}
+              data-parsley-required="" data-parsley-trigger="change"
+        {{/if}}
+      >
+        {{#if this.placeholder }}
+          <option placeholder value="">{{ this.placeholder }}</option>
+        {{/if}}
+        {{#each options}}
+          {{#if this }}
+            <option value="{{ this }}">{{ this }}</option>{{/if}}
+        {{/each}}
+      </select>
+    </label>
+  </div>
+{{/each}}

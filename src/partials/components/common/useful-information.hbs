@@ -1,0 +1,34 @@
+<section class="useful-information" id="useful-information-host">
+  <div class="gl__page-content">
+    <h2 class="gl__title">Полезная информация</h2>
+    <div class="gl-slider js-swiper-3">
+      <div class="gl-slider__container swiper-container js-swiper-container-3">
+        <ul class="gl-slider__wrapper swiper-wrapper">
+         {{#each useful-information}}
+           <li class="gl-slider__slide swiper-slide gl__white-container useful-information__slide-wrapper">
+             <a class="gl__link-arrow-container useful-information__slide">
+               <div class="useful-information__slide-image-wrapper">
+                 <img src="{{ this.img }}" alt="" class="useful-information__slide-image">
+               </div>
+               <div class="gl__link-arrow-block useful-information__slide-content">
+                 <div class="useful-information__slide-content-text">
+                   {{ this.title }}
+                 </div>
+                 <div class="gl__link-arrow-wrapper">
+                   <div class="gl__link-arrow-link">
+                     <svg width="26" height="26" aria-hidden="true" class="gl__link-arrow-icon">
+                       <use xlink:href="#arrow-line-right"></use>
+                     </svg>
+                   </div>
+                 </div>
+               </div>
+             </a>
+           </li>
+         {{/each}}
+        </ul>
+      </div>
+
+<!--      {{> common/controls/btns-slider}}-->
+    </div>
+  </div>
+</section>
