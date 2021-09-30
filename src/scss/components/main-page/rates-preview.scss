@@ -60,6 +60,10 @@ $padding-content: 2rem;
   &.mod-together-profitable {
     background: linear-gradient(99.54deg, #D5DDDF 3.54%, #D5DDDF 73.5%);
 
+    .rates-preview__content-wrapper {
+      position: relative;
+    }
+
     @include for-sm-down {
       .rates-preview__content-wrapper {
         flex-direction: column;
@@ -81,9 +85,9 @@ $padding-content: 2rem;
     @include for-sm-up {
       .rates-preview-img {
         position: absolute;
-        bottom: 0;
+        top: -$padding-content;
         right: 0;
-        height: 100%;
+        height: calc(100% + #{$padding-content} * 2);
         max-width: 60%;
       }
     }
@@ -93,11 +97,11 @@ $padding-content: 2rem;
 .rates-preview-img-wrapper {
   display: flex;
   justify-content: flex-end;
-  width: 100%;
   margin-bottom: 2.6rem;
 
   @include for-sm-down {
     margin-bottom: 0;
+    width: 100%;
   }
 }
 
@@ -121,7 +125,7 @@ $padding-content: 2rem;
 }
 
 .rates-preview__content {
-  max-width: 30%;
+  max-width: 36%;
 
   @include for-sm-down {
     max-width: none;
@@ -174,4 +178,8 @@ $padding-content: 2rem;
     line-height: 1.8rem;
     margin-bottom: 2.8rem;
   }
+}
+
+.rates-preview__btn {
+  padding: 1.4rem 5.8rem;
 }

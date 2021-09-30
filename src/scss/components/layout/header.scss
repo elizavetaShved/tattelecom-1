@@ -64,8 +64,11 @@
   align-items: center;
   justify-content: center;
 
-  &:hover {
-    border-top-color: var(--main-color);
+  &:not(.mod-with-icons) {
+    &:hover {
+      border-top-color: var(--main-color);
+    }
+
   }
 
   &.mod-with-icons {
@@ -164,7 +167,7 @@
   margin: -1.4rem;
 }
 
-.header__bottom-menu-link {
+.header__bottom-menu-btn {
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -175,6 +178,10 @@
   align-items: center;
   white-space: nowrap;
   cursor: pointer;
+
+  &:hover {
+    color: var(--main-color);
+  }
 }
 
 .header__btns-container {
@@ -300,6 +307,10 @@
   display: grid;
   grid-template-columns: repeat(6, auto);
   grid-gap: 3rem;
+
+  &:not(.mod-show) {
+    display: none;
+  }
 
   @include for-bg-down {
     grid-template-columns: repeat(3, auto);

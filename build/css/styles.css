@@ -1850,7 +1850,7 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .header__top-menu-items-link:hover {
+  .header__top-menu-items-link:not(.mod-with-icons):hover {
     border-top-color: var(--main-color); }
   .header__top-menu-items-link.mod-with-icons {
     display: -webkit-box;
@@ -1955,7 +1955,7 @@ button.swiper-pagination-bullet {
           justify-content: space-between;
   margin: -1.4rem; }
 
-.header__bottom-menu-link {
+.header__bottom-menu-btn {
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -1970,6 +1970,8 @@ button.swiper-pagination-bullet {
           align-items: center;
   white-space: nowrap;
   cursor: pointer; }
+  .header__bottom-menu-btn:hover {
+    color: var(--main-color); }
 
 .header__btns-container {
   display: -webkit-box;
@@ -2070,6 +2072,8 @@ button.swiper-pagination-bullet {
   display: grid;
   grid-template-columns: repeat(6, auto);
   grid-gap: 3rem; }
+  .header__popup-content:not(.mod-show) {
+    display: none; }
   @media screen and (max-width: 1023px) {
     .header__popup-content {
       grid-template-columns: repeat(3, auto); } }
@@ -2299,7 +2303,8 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: -1.6rem; }
+  margin: -1.6rem;
+  margin-top: 3.6rem; }
   @media screen and (max-width: 1199px) {
     .footer__contact-social-wrapper {
       display: block;
@@ -2367,6 +2372,8 @@ button.swiper-pagination-bullet {
         height: 28.4rem; } }
   .rates-preview.mod-together-profitable {
     background: linear-gradient(99.54deg, #D5DDDF 3.54%, #D5DDDF 73.5%); }
+    .rates-preview.mod-together-profitable .rates-preview__content-wrapper {
+      position: relative; }
     @media screen and (max-width: 767px) {
       .rates-preview.mod-together-profitable .rates-preview__content-wrapper {
         -webkit-box-orient: vertical;
@@ -2384,9 +2391,9 @@ button.swiper-pagination-bullet {
     @media screen and (min-width: 768px) {
       .rates-preview.mod-together-profitable .rates-preview-img {
         position: absolute;
-        bottom: 0;
+        top: -2rem;
         right: 0;
-        height: 100%;
+        height: calc(100% + 2rem * 2);
         max-width: 60%; } }
 
 .rates-preview-img-wrapper {
@@ -2396,11 +2403,11 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 100%;
   margin-bottom: 2.6rem; }
   @media screen and (max-width: 767px) {
     .rates-preview-img-wrapper {
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      width: 100%; } }
 
 .rates-preview-img {
   height: 27.6rem;
@@ -2431,7 +2438,7 @@ button.swiper-pagination-bullet {
       width: 100%; } }
 
 .rates-preview__content {
-  max-width: 30%; }
+  max-width: 36%; }
   @media screen and (max-width: 767px) {
     .rates-preview__content {
       max-width: none; } }
@@ -2472,6 +2479,9 @@ button.swiper-pagination-bullet {
       line-height: 1.8rem;
       margin-bottom: 2.8rem; } }
 
+.rates-preview__btn {
+  padding: 1.4rem 5.8rem; }
+
 .rates-list {
   padding: 8rem 0 13.2rem; }
   @media screen and (max-width: 767px) {
@@ -2511,6 +2521,14 @@ button.swiper-pagination-bullet {
     top: 0;
     right: 2.4rem;
     height: 3.8rem; }
+  .rates-list__slide-hit .rates-list__slide-title {
+    max-width: 86%; }
+  .rates-list__slide-hit .rates-list__slide-btn-plug {
+    background-color: #fff;
+    color: var(--main-color); }
+    .rates-list__slide-hit .rates-list__slide-btn-plug:hover {
+      background-color: var(--main-hover);
+      color: #fff; }
 
 .rates-list__slide-up {
   padding-bottom: 1.8rem; }

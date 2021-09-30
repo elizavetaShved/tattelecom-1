@@ -37,6 +37,20 @@
     right: 2.4rem;
     height: 3.8rem;
   }
+
+  .rates-list__slide-title {
+    max-width: 86%;
+  }
+
+  .rates-list__slide-btn-plug {
+    background-color: #fff;
+    color: var(--main-color);
+
+    &:hover {
+      background-color: var(--main-hover);
+      color: #fff;
+    }
+  }
 }
 
 .rates-list__slide-up {

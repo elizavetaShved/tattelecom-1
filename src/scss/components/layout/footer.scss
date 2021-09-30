@@ -237,6 +237,7 @@
   display: flex;
   justify-content: flex-end;
   margin: -1.6rem;
+  margin-top: 3.6rem;
 
   @include for-hg-down {
     display: block;
