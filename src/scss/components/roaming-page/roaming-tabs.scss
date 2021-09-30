@@ -1,6 +1,10 @@
 .roaming-tabs {
   height: 13.6rem;
   margin-bottom: 5rem;
+
+  @include for-sm-down {
+    height: auto;
+  }
 }
 
 .roaming-tabs__content {
@@ -21,4 +25,16 @@
   top: 0;
   transform: translateY(-50%);
   width: 100%;
+}
+
+.roaming-tabs__image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.roaming-tabs__image {
+  height: 35.6rem;
+  max-width: 100%;
+  object-fit: contain;
+  margin-top: 5.4rem;
 }

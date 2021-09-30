@@ -10,12 +10,18 @@
         }}
       </div>
 
-      <div class="roaming-tabs__select-wrapper gl__xs-show">
-        {{> common/select
-          name="roaming-tabs"
-          option1="Роуминг по Россиии"
-          option2="Роуминг по всему миру"
-        }}
+      <div class="gl__xs-show">
+        <div class="roaming-tabs__select-wrapper">
+          {{> common/select
+            name="roaming-tabs"
+            option1="Роуминг по Россиии"
+            option2="Роуминг по всему миру"
+          }}
+        </div>
+
+        <div class="roaming-tabs__image-wrapper">
+          <img src="img/roaming/man.svg" alt="" class="roaming-tabs__image">
+        </div>
       </div>
     </div>
   </div>

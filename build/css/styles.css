@@ -3465,6 +3465,9 @@ button.swiper-pagination-bullet {
 .roaming-tabs {
   height: 13.6rem;
   margin-bottom: 5rem; }
+  @media screen and (max-width: 767px) {
+    .roaming-tabs {
+      height: auto; } }
 
 .roaming-tabs__content {
   width: 100%;
@@ -3484,3 +3487,18 @@ button.swiper-pagination-bullet {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 100%; }
+
+.roaming-tabs__image-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.roaming-tabs__image {
+  height: 35.6rem;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: 5.4rem; }
