@@ -3,12 +3,13 @@ const MomentLocalesPlugin = require('moment-locales-webpack-plugin')
 
 module.exports = {
   entry: {
-    mainPage: './src/js/pages/main-page.js',
-    mobileCommunicationPage: './src/js/pages/mobile-communication-page.js',
-    cashbackPage: './src/js/pages/cashback-page.js',
-    togetherProfitablePage: './src/js/pages/together-profitable-page.js',
-    roamingPage: './src/js/pages/roaming-page.js',
-    ussdRequestsPage: './src/js/pages/ussd-requests-page.js'
+    ['main-page']: './src/js/pages/main-page.js',
+    ['mobile-communication-page']: './src/js/pages/mobile-communication-page.js',
+    ['cashback-page']: './src/js/pages/cashback-page.js',
+    ['together-profitable-page']: './src/js/pages/together-profitable-page.js',
+    ['roaming-page']: './src/js/pages/roaming-page.js',
+    ['ussd-requests-page']: './src/js/pages/ussd-requests-page.js',
+    ['fly-old-number-page']: './src/js/pages/fly-old-number-page.js'
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

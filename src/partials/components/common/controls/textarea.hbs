@@ -1,0 +1,29 @@
+<!--
+  ___Обязательные поля___
+  name - обязательно префикс - род.компонент (н-р services-tel)
+  placeholder
+
+  ___Необязательные поля___
+  required (true/false) - обязательно для заполнения
+  minLength - деф-2
+  maxLength - деф-none
+-->
+
+<label>
+  <textarea class="gl-input__input mod-textarea"
+            placeholder="{{ placeholder }}"
+            name="{{ name }}"
+    {{#if required }}
+            data-parsley-required=""
+    {{/if}}
+
+    {{#if minLength }}
+            data-parsley-minlength="{{ minLength }}"
+    {{else}}
+            data-parsley-minlength="2"
+    {{/if}}
+
+    {{#if maxLength }}
+            data-parsley-maxlength="{{ maxLength }}"
+    {{/if}}></textarea>
+</label>

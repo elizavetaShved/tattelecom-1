@@ -2,29 +2,72 @@
   <img src="img/main-page/application/background.svg" alt="" class="application__background">
   <div class="gl__page-content">
     <div class="application__content">
-      <h2 class="gl__title application__title">Оставьте заявку</h2>
-      <div class="application__subtitle">
-        Заполните данные и наши специалисты свяжутся с вами.
-      </div>
+      {{#if leaveRrequest }}
+        <h2 class="gl__title application__title">Оставьте заявку</h2>
 
-      <form class="application__form" data-need-validation data-parsley-validate data-parsley-focus="none">
-        {{> common/controls/input-main
-          required=true
-          type="text"
-          placeholder="Ваше имя"
-          name="application-name"
-        }}
-        {{> common/controls/input-main
-          required=true
-          type="tel"
-          phoneMask=true
-          placeholder="+7 (___) ___-__-__"
-          name="application-tel"
-        }}
-        <div class="application__btn-wrapper">
-          <button type="submit" class="gl__main-btn application__btn">Жду звонка</button>
+        <div class="application__subtitle">
+          Заполните данные и наши специалисты свяжутся с вами.
         </div>
-      </form>
+
+        <form class="application__form mod-leave-request" data-need-validation data-parsley-validate data-parsley-focus="none">
+          {{> common/controls/input-main
+            required=true
+            type="text"
+            placeholder="Ваше имя"
+            name="application-name"
+          }}
+          {{> common/controls/input-main
+            required=true
+            type="tel"
+            phoneMask=true
+            placeholder="+7 (___) ___-__-__"
+            name="application-tel"
+          }}
+          <div class="application__btn-wrapper">
+            <button type="submit" class="gl__main-btn application__btn">Жду звонка</button>
+          </div>
+        </form>
+      {{/if}}
+
+      {{#if noAnswer }}
+        <h2 class="gl__title application__title">Не нашли ответа на свой вопрос?</h2>
+
+        <div class="application__subtitle mod-no-answer">
+          Напишите нам или позвоните по телефону
+        </div>
+
+        <a href="tel:+78432222222" class="application__tel">(843) 222-22-22</a>
+
+        <form class="application__form mod-no-answer" data-need-validation data-parsley-validate data-parsley-focus="none">
+          <div class="application__form-item mod-no-answer">
+            {{> common/controls/input-main
+              required=true
+              type="text"
+              placeholder="Ваше имя"
+              name="application-name"
+            }}
+          </div>
+          <div class="application__form-item mod-no-answer">
+            {{> common/controls/input-main
+              required=true
+              type="tel"
+              phoneMask=true
+              placeholder="+7 (___) ___-__-__"
+              name="application-tel"
+            }}
+          </div>
+          <div class="application__form-item mod-no-answer">
+            {{> common/controls/textarea
+              required=true
+              placeholder="Ваш вопрос"
+              name="application-question"
+            }}
+          </div>
+          <div class="application__btn-wrapper mod-no-answer">
+            <button type="submit" class="gl__main-btn application__btn">Отправить</button>
+          </div>
+        </form>
+      {{/if}}
     </div>
   </div>
 </section>

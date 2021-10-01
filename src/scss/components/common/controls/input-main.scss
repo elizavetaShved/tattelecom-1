@@ -29,6 +29,11 @@
   transition: border-color 250ms;
   width: 100%;
 
+  &.mod-textarea {
+    height: 9.4rem;
+    resize: none;
+  }
+
   &::placeholder {
     color: var(--main-grey-color);
   }
