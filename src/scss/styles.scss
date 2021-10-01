@@ -7,26 +7,27 @@
 @import 'vendor';
 @import 'extends';
 
-@import 'components/slider';
-@import 'components/bread-crumbs';
-@import 'components/menu-tabs';
-
-@import 'form/checkbox';
-@import 'form/input-main';
-@import 'form/select';
+@import 'components/common/bread-crumbs';
+@import 'components/common/slider';
+@import 'components/common/controls/menu-tabs';
+@import 'components/common/controls/checkbox';
+@import 'components/common/controls/input-main';
+@import 'components/common/controls/select';
+@import 'components/common/instructions';
 
 @import 'components/layout/header';
 @import 'components/layout/footer';
 
-@import 'components/main-page/rates-preview';
-@import 'components/main-page/rates-list';
-@import 'components/main-page/services';
+@import 'components/common/rates-preview';
+@import 'components/common/rates-list';
+@import 'components/common/services';
+@import 'components/common/useful-information';
+@import 'components/common/application';
+@import 'components/common/faq';
+
 @import 'components/main-page/news-list';
-@import 'components/main-page/useful-information';
-@import 'components/main-page/application';
 
 @import 'components/mobile-communication-page/cashback';
-@import 'components/mobile-communication-page/faq';
 
 @import 'components/cashback-page/what-is';
 @import 'components/cashback-page/how-receive';

@@ -1,0 +1,30 @@
+{{#each instructions }}
+  <section class="instructions" id="instructions-host">
+    <div class="gl__page-content">
+      <h2 class="gl__title">{{ this.title }}</h2>
+      {{#if this.subtitle }}
+        <div class="instructions__subtitle">{{ this.subtitle }}</div>
+      {{/if}}
+
+      <ul class="instructions__step-list">
+        {{#each this.steps }}
+          <li class="instructions__step-item gl__white-container">
+            <div>
+              <div class="instructions__step-caption">Шаг {{ this.number }}</div>
+              <p class="instructions__step-text">{{ this.text }}</p>
+            </div>
+
+            {{#if this.important }}
+              <div class="instructions__mark">
+                <svg width="24" height="24" aria-hidden="true" class="instructions__mark-icon">
+                  <use xlink:href="#info-ellipse"></use>
+                </svg>
+                Важно!
+              </div>
+            {{/if}}
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </section>
+{{/each}}
