@@ -1,0 +1,16 @@
+{{#each faq }}
+  <li class="faq__item">
+    <button type="button" class="faq__item-btn-wrapper gl__drop-menu-btn js-drop-menu-btn">
+      <svg width="24" height="24" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
+        <use xlink:href="#arrow-down"></use>
+      </svg>
+      {{ this.title }}
+    </button>
+
+    <div class="faq__item-content-wrapper gl__drop-menu">
+      {{#each text }}
+        <p class="faq__item-content-text">{{ this }}</p>
+      {{/each}}
+    </div>
+  </li>
+{{/each}}
