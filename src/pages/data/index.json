@@ -1,6 +1,6 @@
 {
   "title": "Таттелеком",
-  "script": "mainPage",
+  "script": "main-page",
   "rates-list": [
     {
       "isHit": true,
@@ -76,6 +76,19 @@
           "itemName": "Телевидение",
           "name": "services-adding-funds-account"
         }
+      ]
+    }
+  ],
+  "city-select": [
+    {
+      "name": "fly-top-block-city",
+      "selectTitle": "Укажите город проживания",
+      "isWhiteTitle": true,
+      "isCity": true,
+      "required": true,
+      "placeholder": "город",
+      "options": [
+        "Казань", "Чебоксары", "Набережные Челны"
       ]
     }
   ],

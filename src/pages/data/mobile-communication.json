@@ -1,6 +1,6 @@
 {
   "title": "Мобильная связь",
-  "script": "mobileCommunicationPage",
+  "script": "mobile-communication-page",
   "bread-crumbs": [
     {
       "name": "Частным клиентам"

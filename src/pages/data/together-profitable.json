@@ -1,6 +1,6 @@
 {
   "title": "Вместе выгодно 2.0",
-  "script": "togetherProfitablePage",
+  "script": "together-profitable-page",
   "bread-crumbs": [
     {
       "name": "Частным клиентам"

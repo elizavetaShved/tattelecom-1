@@ -364,22 +364,27 @@
               <!--
                 __Обязательные поля__
                 name - input name
-                option1 - опции
+                options - опции
               
                 __Необязательные поля__
+                selectTitle - заголовок
                 required - обязательно для заполнения
                 placeholder
               -->
-                <div class="select__container" id="roaming">
-                  <label class="select__wrapper">
-                    <select class="gl__select js-custom-select"
-                            data-parsley-class-handler="#roaming"
-                            name="roaming"
-                    >
-                          <option value="Роуминг по Россиии">Роуминг по Россиии</option>
-                          <option value="Роуминг по всему миру">Роуминг по всему миру</option>
-                    </select>
-                  </label>
+                <div class="select">
+              
+                  <div class="select__container" id="roaming">
+                    <label class="select__wrapper ">
+                      <select class="gl__select js-custom-select"
+                              data-parsley-class-handler="#roaming"
+                              name="roaming"
+                      >
+                            <option value="Роуминг по Россиии">Роуминг по Россиии</option>
+                            <option value="Роуминг по всему миру">Роуминг по всему миру</option>
+                      </select>
+                    </label>
+              
+                  </div>
                 </div>
             </div>
     
@@ -1054,7 +1059,7 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/roamingPage.js"></script>
+  <script src="js/roaming-page.js"></script>
   <script src="assets/js/backend.js"></script>
 </div>
 </body>

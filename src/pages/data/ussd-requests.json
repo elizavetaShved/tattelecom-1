@@ -1,6 +1,6 @@
 {
   "title": "USSD-запросы",
-  "script": "ussdRequestsPage",
+  "script": "ussd-requests-page",
   "bread-crumbs": [
     {
       "name": "Частным клиентам"

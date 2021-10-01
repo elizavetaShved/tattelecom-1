@@ -318,8 +318,8 @@
             <button type="button" class="gl__main-btn rates-preview__btn">Подробнее</button>
           </div>
       
-          <div class="rates-preview-img-wrapper">
-              <img src="img/main-page/rates-preview/rates-preview-2.jpg" alt="" class="rates-preview-img">
+          <div class="rates-preview__img-wrapper">
+              <img src="img/main-page/rates-preview/rates-preview-2.jpg" alt="" class="rates-preview__img">
           </div>
         </div>
       </section>
@@ -642,7 +642,7 @@
                   -->
                   
                   <label class="gl-input__wrapper js-input-tel">
-                      <span class="gl-input__title">Введите номер</span>
+                      <span class="gl-input__title ">Введите номер</span>
                     <input type="tel"
                            class="gl-input__input js-phone-input"
                            placeholder="+7 (___) ___-__-__"
@@ -675,7 +675,7 @@
                   -->
                   
                   <label class="gl-input__wrapper js-input-number">
-                      <span class="gl-input__title">От 10 до 30 000 Р</span>
+                      <span class="gl-input__title ">От 10 до 30 000 Р</span>
                     <input type="number"
                            class="gl-input__input "
                            placeholder="Сумма"
@@ -764,7 +764,7 @@
                   -->
                   
                   <label class="gl-input__wrapper js-input-tel">
-                      <span class="gl-input__title">Введите номер переноса</span>
+                      <span class="gl-input__title ">Введите номер переноса</span>
                     <input type="tel"
                            class="gl-input__input js-phone-input"
                            placeholder="+7 (___) ___-__-__"
@@ -780,61 +780,63 @@
                     >
                   </label>
                   <!--
-                    ___Обязательные поля___
-                    type - html-тип инута
-                    name - обязательно префикс - род.компонент (н-р services-tel)
+                    __Обязательные поля__
+                    name - input name
+                    options - опции
+                  
+                    __Необязательные поля__
+                    selectTitle - заголовок
+                    required - обязательно для заполнения
                     placeholder
-                  
-                    ___Необязательные поля___
-                    required (true/false) - обязательно для заполнения
-                    inputTitle - заголовок НАД инпутом
-                    phoneMask (true/false) - маска для телефона
-                    minLength - деф-2
-                    maxLength - деф-none
-                    id - обычный id, например для первого пароля
-                    parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
-                    parsleyType - для валидации (н-р email)
                   -->
+                    <div class="select">
+                        <span class="gl-input__title mod-white">Укажите город проживания</span>
                   
-                  <label class="gl-input__wrapper js-input-text">
-                      <span class="gl-input__title">Укажите город проживания</span>
-                    <input type="text"
-                           class="gl-input__input "
-                           placeholder="Казань"
-                           name="services-city"
+                      <div class="select__container" id="fly-top-block-city">
+                        <label class="select__wrapper mod-city">
+                            <span class="gl__input-mark-required"></span>
+                          <select class="gl__select js-custom-select"
+                                  data-parsley-class-handler="#fly-top-block-city"
+                                  name="fly-top-block-city"
+                                  data-parsley-required="" data-parsley-trigger="change"
+                          >
+                              <option placeholder value="">город</option>
+                                <option value="Казань">Казань</option>
+                                <option value="Чебоксары">Чебоксары</option>
+                                <option value="Набережные Челны">Набережные Челны</option>
+                          </select>
+                        </label>
                   
-                           data-parsley-required=""
-                  
-                           data-parsley-minlength="2"
-                  
-                  
-                  
-                  
-                    >
-                  </label>
+                          <svg width="16" height="16" aria-hidden="true" class="select__search-icon">
+                            <use xlink:href="#search"></use>
+                          </svg>
+                      </div>
+                    </div>
                   <div class="services__btn-submit-wrapper">
                     <button type="submit" class="gl__main-btn mod-transparent services__btn-submit">Начать перенос</button>
                   </div>
                 </div>
       
-                <!--
-                  ___Обязательные поля___
-                  name - обязательно префикс - род.компонент (н-р services-tel)
-                
-                  ___Необязательные поля___
-                  required (true/false) - обязательно для заполнения
-                  caption - пояснение чекбокса справа
-                  isChecked - нужен ли checked изначально
-                -->
-                
-                <label class="checkbox__wrapper services__checkbox">
-                  <input type="checkbox"
-                         class="checkbox" name="services-approval"
-                         data-parsley-required=""
-                  >
-                  <span class="checkbox__content"></span>
-                  <span class="checkbox__text">Я соглашаюсь на получение консультации по переносу номера</span>
-                </label>
+                <div class="services__checkbox">
+                  <!--
+                    ___Обязательные поля___
+                    name - обязательно префикс - род.компонент (н-р services-tel)
+                  
+                    ___Необязательные поля___
+                    required (true/false) - обязательно для заполнения
+                    caption - пояснение чекбокса справа
+                    isChecked - нужен ли checked изначально
+                  -->
+                  
+                  <label class="checkbox__wrapper">
+                    <input type="checkbox"
+                           class="checkbox" name="services-approval"
+                           data-parsley-required=""
+                    >
+                    <span class="checkbox__content"></span>
+                    <span class="checkbox__text">Я соглашаюсь на получение консультации по переносу номера</span>
+                  </label>
+                </div>
               </form>
             </li>
           </ul>
@@ -1283,7 +1285,7 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/mainPage.js"></script>
+  <script src="js/main-page.js"></script>
   <script src="assets/js/backend.js"></script>
 </div>
 </body>

@@ -334,6 +334,117 @@
       </div>
     </section>
 
+    <section class="fly-top-block rates-preview" id="fly-top-block-host">
+    
+      <div class="gl__page-content rates-preview__content-wrapper fly-top-block__content-wrapper">
+        <div class="rates-preview__content fly-top-block__content-wrapper__content">
+          <h2 class="gl__title mod-white">Перейти на Летай со своим номером</h2>
+          <div class="fly-top-block__subtitle">
+            Станьте абонентом Таттелеком, сохранив номер своего мобильного телефона!
+          </div>
+    
+          <form class="fly-top-block__form">
+            <!--
+              ___Обязательные поля___
+              type - html-тип инута
+              name - обязательно префикс - род.компонент (н-р services-tel)
+              placeholder
+            
+              ___Необязательные поля___
+              required (true/false) - обязательно для заполнения
+              inputTitle - заголовок НАД инпутом
+              phoneMask (true/false) - маска для телефона
+              minLength - деф-2
+              maxLength - деф-none
+              id - обычный id, например для первого пароля
+              parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
+              parsleyType - для валидации (н-р email)
+            -->
+            
+            <label class="gl-input__wrapper js-input-tel">
+                <span class="gl-input__title mod-white">Введите номер переноса</span>
+              <input type="tel"
+                     class="gl-input__input js-phone-input"
+                     placeholder="+7 (___) ___-__-__"
+                     name="fly-top-block-tel"
+            
+                     data-parsley-required=""
+            
+                     data-parsley-minlength="2"
+            
+            
+            
+            
+              >
+            </label>
+    
+            <!--
+              __Обязательные поля__
+              name - input name
+              options - опции
+            
+              __Необязательные поля__
+              selectTitle - заголовок
+              required - обязательно для заполнения
+              placeholder
+            -->
+              <div class="select">
+                  <span class="gl-input__title mod-white">Укажите город проживания</span>
+            
+                <div class="select__container" id="fly-top-block-city">
+                  <label class="select__wrapper mod-city">
+                      <span class="gl__input-mark-required"></span>
+                    <select class="gl__select js-custom-select"
+                            data-parsley-class-handler="#fly-top-block-city"
+                            name="fly-top-block-city"
+                            data-parsley-required="" data-parsley-trigger="change"
+                    >
+                        <option placeholder value="">город</option>
+                          <option value="Казань">Казань</option>
+                          <option value="Чебоксары">Чебоксары</option>
+                          <option value="Набережные Челны">Набережные Челны</option>
+                    </select>
+                  </label>
+            
+                    <svg width="16" height="16" aria-hidden="true" class="select__search-icon">
+                      <use xlink:href="#search"></use>
+                    </svg>
+                </div>
+              </div>
+    
+            <button type="submit" class="fly-top-block__btn gl__main-btn mod-black">
+              Начать перенос
+            </button>
+    
+            <div class="fly-top-block__checkbox-wrapper">
+              <!--
+                ___Обязательные поля___
+                name - обязательно префикс - род.компонент (н-р services-tel)
+              
+                ___Необязательные поля___
+                required (true/false) - обязательно для заполнения
+                caption - пояснение чекбокса справа
+                isChecked - нужен ли checked изначально
+              -->
+              
+              <label class="checkbox__wrapper">
+                <input type="checkbox"
+                       class="checkbox" name="fly-top-block-approval"
+                       data-parsley-required=""
+                >
+                <span class="checkbox__content"></span>
+                <span class="checkbox__text">Я соглашаюсь на получение консультации по переносу номера</span>
+              </label>
+            </div>
+          </form>
+        </div>
+    
+        <div class="rates-preview__img-wrapper fly-top-block__img-wrapper">
+          <img src="img/fly-old-number-page/cards.png" alt="" class="rates-preview__img fly-top-block__image">
+        </div>
+      </div>
+    </section>
+
     <section class="faq" id="faq-host">
       <div class="gl__page-content">
         <h2 class="gl__title">Вопросы и ответы</h2>
@@ -689,7 +800,7 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/cashbackPage.js"></script>
+  <script src="js/fly-old-number-page.js"></script>
   <script src="assets/js/backend.js"></script>
 </div>
 </body>

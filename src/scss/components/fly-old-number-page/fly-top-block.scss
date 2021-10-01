@@ -1,0 +1,97 @@
+.fly-top-block {
+  background: linear-gradient(99.54deg, #FA7007 3.54%, #FA4907 73.5%);
+  padding: 4.4rem 0 7.6rem;
+  height: auto;
+
+  @include for-sm-down {
+    padding: 3.2rem 0 1.4rem;
+  }
+
+  &.gl-input__input, &.select__container, .gl__main-btn {
+    height: 5.4rem;
+  }
+}
+
+.fly-top-block__image {
+  height: 35.6rem;
+
+  @include for-md-down {
+    height: 20rem;
+  }
+
+  @include for-xs-down {
+    height: 9.4rem;
+  }
+}
+
+.fly-top-block__img-wrapper {
+  margin-bottom: 0;
+
+  @include for-md-down {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+.fly-top-block__content-wrapper {
+  @include for-md-down {
+    flex-direction: column;
+  }
+}
+
+.fly-top-block__content-wrapper__content {
+  max-width: 50%;
+
+  @include for-hg-down {
+    max-width: 70%;
+  }
+
+  @include for-md-down {
+    max-width: none;
+  }
+}
+
+.fly-top-block__subtitle {
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.015em;
+  color: #fff;
+  margin-bottom: 5.4rem;
+
+  @include for-sm-down {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    margin-bottom: 1.6rem;
+  }
+}
+
+.fly-top-block__form {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr;
+  grid-gap: 1rem;
+  color: var(--main-text-color);
+  align-items: end;
+
+  @include for-md-down {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+.fly-top-block__btn {
+  @include for-md-down {
+    width: min-content;
+    grid-row: 3;
+    margin-top: 1rem;
+  }
+}
+
+.fly-top-block__checkbox-wrapper {
+  grid-column: 1 / 4;
+  margin-top: 4rem;
+
+  @include for-md-down {
+    grid-row: 2;
+    margin-top: 1rem;
+  }
+}

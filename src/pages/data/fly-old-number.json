@@ -1,6 +1,6 @@
 {
   "title": "Кэшбэк 20%",
-  "script": "cashbackPage",
+  "script": "fly-old-number-page",
   "bread-crumbs": [
     {
       "name": "Частным клиентам"
@@ -39,6 +39,19 @@
         "1. пункт 1",
         "2. пункт 2",
         "3. пункт 3"
+      ]
+    }
+  ],
+  "city-select": [
+    {
+      "name": "fly-top-block-city",
+      "selectTitle": "Укажите город проживания",
+      "isWhiteTitle": true,
+      "isCity": true,
+      "required": true,
+      "placeholder": "город",
+      "options": [
+        "Казань", "Чебоксары", "Набережные Челны"
       ]
     }
   ]

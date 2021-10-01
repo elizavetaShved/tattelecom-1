@@ -1,0 +1,41 @@
+<section class="fly-top-block rates-preview" id="fly-top-block-host">
+
+  <div class="gl__page-content rates-preview__content-wrapper fly-top-block__content-wrapper">
+    <div class="rates-preview__content fly-top-block__content-wrapper__content">
+      <h2 class="gl__title mod-white">Перейти на Летай со своим номером</h2>
+      <div class="fly-top-block__subtitle">
+        Станьте абонентом Таттелеком, сохранив номер своего мобильного телефона!
+      </div>
+
+      <form class="fly-top-block__form">
+        {{> common/controls/input-main
+          required=true
+          inputTitle="Введите номер переноса"
+          isWhiteTitle=true
+          type="tel"
+          phoneMask=true
+          placeholder="+7 (___) ___-__-__"
+          name="fly-top-block-tel"
+        }}
+
+        {{> common/controls/select selects=city-select }}
+
+        <button type="submit" class="fly-top-block__btn gl__main-btn mod-black">
+          Начать перенос
+        </button>
+
+        <div class="fly-top-block__checkbox-wrapper">
+          {{> common/controls/input-checkbox
+            required=true
+            caption="Я соглашаюсь на получение консультации по переносу номера"
+            name="fly-top-block-approval"
+          }}
+        </div>
+      </form>
+    </div>
+
+    <div class="rates-preview__img-wrapper fly-top-block__img-wrapper">
+      <img src="img/fly-old-number-page/cards.png" alt="" class="rates-preview__img fly-top-block__image">
+    </div>
+  </div>
+</section>

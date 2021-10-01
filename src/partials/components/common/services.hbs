@@ -88,23 +88,19 @@
               inputTitle="Введите номер переноса"
               name="services-tel-transfer"
             }}
-            {{> common/controls/input-main
-              required=true
-              type="text"
-              inputTitle="Укажите город проживания"
-              placeholder="Казань"
-              name="services-city"
-            }}
+            {{> common/controls/select selects=city-select }}
             <div class="services__btn-submit-wrapper">
               <button type="submit" class="gl__main-btn mod-transparent services__btn-submit">Начать перенос</button>
             </div>
           </div>
 
-          {{> common/controls/input-checkbox
-            required=true
-            caption="Я соглашаюсь на получение консультации по переносу номера"
-            name="services-approval"
-          }}
+          <div class="services__checkbox">
+            {{> common/controls/input-checkbox
+              required=true
+              caption="Я соглашаюсь на получение консультации по переносу номера"
+              name="services-approval"
+            }}
+          </div>
         </form>
       </li>
     </ul>

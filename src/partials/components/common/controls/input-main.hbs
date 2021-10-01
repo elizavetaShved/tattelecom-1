@@ -17,7 +17,7 @@
 
 <label class="gl-input__wrapper js-input-{{ type }}">
   {{#if inputTitle}}
-    <span class="gl-input__title">{{ inputTitle }}</span>
+    <span class="gl-input__title {{#if isWhiteTitle}}mod-white{{/if}}">{{ inputTitle }}</span>
   {{/if}}
   <input type="{{ type }}"
          class="gl-input__input {{#if phoneMask }}js-phone-input{{/if}}"

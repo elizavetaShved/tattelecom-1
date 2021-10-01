@@ -8,6 +8,7 @@
   <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/together-profitable.html">Вместе выгодно 2.0</a>
   <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/roaming.html">Роуминг</a>
   <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/ussd-requests.html">USSD запросы</a>
+  <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/fly-old-number.html">Перейти на Летай со своим номером</a>
 </div>
 </body>
 

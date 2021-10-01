@@ -10,7 +10,6 @@ $padding-content: 2rem;
   background-size: cover;
 
   @include for-sm-down {
-    background-color: #131419;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -19,14 +18,15 @@ $padding-content: 2rem;
   &.mod-main-page {
     display: block;
 
-    .rates-preview-img-wrapper {
+    @include for-sm-down {
+      background-color: #131419;
+      background-image: none !important;
+    }
+
+    .rates-preview__img-wrapper {
       @include for-sm-up {
         display: none;
       }
-    }
-
-    @include for-sm-down {
-      background-image: none !important;
     }
   }
 
@@ -38,7 +38,7 @@ $padding-content: 2rem;
     background-color: #FDDD66;
 
     @include for-sm-up {
-      .rates-preview-img {
+      .rates-preview__img {
         position: absolute;
         bottom: 0;
         height: 100%;
@@ -50,7 +50,7 @@ $padding-content: 2rem;
         flex-direction: column;
       }
 
-      .rates-preview-img {
+      .rates-preview__img {
         margin-bottom: -$padding-content;
         height: 28.4rem;
       }
@@ -69,21 +69,21 @@ $padding-content: 2rem;
         flex-direction: column;
       }
 
-      .rates-preview-img-wrapper {
+      .rates-preview__img-wrapper {
         margin-left: calc(var(--page-content-padding-small) * -1);
         margin-right: calc(var(--page-content-padding-small) * -1);
         margin-bottom: -$padding-content;
         width: 100vw;
       }
 
-      .rates-preview-img {
+      .rates-preview__img {
         margin-top: 4rem;
         height: auto;
       }
     }
 
     @include for-sm-up {
-      .rates-preview-img {
+      .rates-preview__img {
         position: absolute;
         top: -$padding-content;
         right: 0;
@@ -94,18 +94,19 @@ $padding-content: 2rem;
   }
 }
 
-.rates-preview-img-wrapper {
+.rates-preview__img-wrapper {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 2.6rem;
+  height: 100%;
+  align-items: center;
 
   @include for-sm-down {
-    margin-bottom: 0;
     width: 100%;
+    margin-bottom: 2.6rem;
   }
 }
 
-.rates-preview-img {
+.rates-preview__img {
   height: 27.6rem;
   max-width: 100%;
   object-fit: contain;
@@ -126,6 +127,7 @@ $padding-content: 2rem;
 
 .rates-preview__content {
   max-width: 36%;
+  width: 100%;
 
   @include for-sm-down {
     max-width: none;

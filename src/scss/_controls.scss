@@ -36,6 +36,16 @@
       border-color: #fff;
     }
   }
+
+  &.mod-black {
+    background-color: #000;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
 }
 
 .gl__link-show-all {
