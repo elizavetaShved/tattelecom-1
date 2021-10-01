@@ -1436,19 +1436,19 @@ button.swiper-pagination-bullet {
     z-index: var(--z-index-header);
     pointer-events: auto; }
 
-::-moz-selection, .bread-crumbs__container.mod-orange ::-moz-selection {
+::-moz-selection, .bread-crumbs__container.mod-orange ::-moz-selection, .order-call ::-moz-selection, .fly-top-block ::-moz-selection {
   background-color: #fff;
   color: var(--main-color); }
 
-::selection, .bread-crumbs__container.mod-orange ::selection {
+::selection, .bread-crumbs__container.mod-orange ::selection, .order-call ::selection, .fly-top-block ::selection {
   background-color: #fff;
   color: var(--main-color); }
 
-::-moz-selection, .top-block ::-moz-selection {
+::-moz-selection, .top-block ::-moz-selection, .fly-top-block__form ::-moz-selection {
   background-color: var(--main-color);
   color: #fff; }
 
-::selection, .top-block ::selection {
+::selection, .top-block ::selection, .fly-top-block__form ::selection {
   background-color: var(--main-color);
   color: #fff; }
 

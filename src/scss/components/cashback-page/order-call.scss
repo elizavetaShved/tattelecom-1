@@ -1,6 +1,10 @@
 .order-call {
   color: #fff;
 
+  ::selection {
+    @extend %select-white-background;
+  }
+
   &.mod-giv-month-section {
     margin-bottom: 3rem;
 
