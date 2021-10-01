@@ -1,12 +1,52 @@
 .order-call {
   color: #fff;
+
+  &.mod-giv-month-section {
+    margin-bottom: 3rem;
+
+    @include for-sm-up {
+      margin-top: 10rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .order-call__content-wrapper {
+      @include for-xs-down {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+
+    .order-call__content {
+      position: relative;
+      z-index: 1;
+      border-radius: 10px;
+
+      @include for-xs-down {
+        height: 42rem;
+        display: block;
+      }
+    }
+
+    .order-call__img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 48rem;
+      margin-bottom: 0;
+      z-index: -1;
+
+      @include for-sm-down {
+        height: 27.6rem;
+      }
+    }
+  }
 }
 
 .order-call-page-content {
-  @include for-sm-down {
-    padding: 0;
-    margin: 0;
-  }
+  padding: 0;
+  margin: 0;
 }
 
 .order-call__content {
@@ -22,6 +62,15 @@
   @include for-sm-down {
     flex-direction: column-reverse;
     border-radius: 0;
+  }
+}
+
+.order-call__content-wrapper {
+  max-width: 60%;
+  width: 100%;
+
+  @include for-xs-down {
+    max-width: none;
   }
 }
 

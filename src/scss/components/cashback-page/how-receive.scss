@@ -28,10 +28,23 @@
 
   & + & {
     margin-left: 2rem;
+  }
 
+  &.mod-flex {
     @include for-md-down {
-      margin-left: 0;
-      margin-top: 4rem;
+      display: flex;
+
+      & + & {
+        margin-left: 0;
+        margin-top: 4rem;
+      }
+
+      .how-receive__step-item-num {
+        margin-right: 2.6rem;
+        width: 6.4rem;
+        height: 6.4rem;
+        flex: 0 0 6.4rem;
+      }
     }
   }
 }
@@ -40,14 +53,18 @@
   width: 8rem;
   height: 8rem;
   border-radius: 100%;
-  background-color: var(--main-color);
+  background-color: var(--border-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
   font-size: 2.6rem;
   line-height: 3.4rem;
   margin-bottom: 3rem;
+
+  &.mod-orange {
+    background-color: var(--main-color);
+    color: #fff;
+  }
 
   @include for-md-down {
     margin-bottom: 2rem;
@@ -60,6 +77,20 @@
 }
 
 .how-receive__step-item-caption {
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 1.6rem;
+  color: var(--main-color);
+
+  @include for-md-down {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.how-receive__step-item-value {
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 2.6rem;

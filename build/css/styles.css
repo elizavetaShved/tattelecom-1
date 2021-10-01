@@ -3435,16 +3435,27 @@ button.swiper-pagination-bullet {
   width: 100%; }
   .how-receive__step-item + .how-receive__step-item {
     margin-left: 2rem; }
-    @media screen and (max-width: 959px) {
-      .how-receive__step-item + .how-receive__step-item {
+  @media screen and (max-width: 959px) {
+    .how-receive__step-item.mod-flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .how-receive__step-item.mod-flex + .how-receive__step-item.mod-flex {
         margin-left: 0;
-        margin-top: 4rem; } }
+        margin-top: 4rem; }
+      .how-receive__step-item.mod-flex .how-receive__step-item-num {
+        margin-right: 2.6rem;
+        width: 6.4rem;
+        height: 6.4rem;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 6.4rem;
+                flex: 0 0 6.4rem; } }
 
 .how-receive__step-item-num {
   width: 8rem;
   height: 8rem;
   border-radius: 100%;
-  background-color: var(--main-color);
+  background-color: var(--border-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3454,10 +3465,12 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #fff;
   font-size: 2.6rem;
   line-height: 3.4rem;
   margin-bottom: 3rem; }
+  .how-receive__step-item-num.mod-orange {
+    background-color: var(--main-color);
+    color: #fff; }
   @media screen and (max-width: 959px) {
     .how-receive__step-item-num {
       margin-bottom: 2rem; } }
@@ -3467,16 +3480,28 @@ button.swiper-pagination-bullet {
       height: 6rem; } }
 
 .how-receive__step-item-caption {
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 1.6rem;
+  color: var(--main-color); }
+  @media screen and (max-width: 959px) {
+    .how-receive__step-item-caption {
+      font-size: 2rem;
+      line-height: 2.6rem;
+      margin-bottom: 2rem; } }
+
+.how-receive__step-item-value {
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 2.6rem;
   letter-spacing: 0.02em; }
   @media screen and (max-width: 959px) {
-    .how-receive__step-item-caption {
+    .how-receive__step-item-value {
       font-size: 2.2rem;
       line-height: 3.2rem; } }
   @media screen and (max-width: 767px) {
-    .how-receive__step-item-caption {
+    .how-receive__step-item-value {
       font-size: 1.6rem;
       line-height: 2.6rem; } }
 
@@ -3502,11 +3527,47 @@ button.swiper-pagination-bullet {
 
 .order-call {
   color: #fff; }
+  .order-call.mod-giv-month-section {
+    margin-bottom: 3rem; }
+    @media screen and (min-width: 768px) {
+      .order-call.mod-giv-month-section {
+        margin-top: 10rem;
+        margin-bottom: 1.6rem; } }
+    @media screen and (max-width: 559px) {
+      .order-call.mod-giv-month-section .order-call__content-wrapper {
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; } }
+    .order-call.mod-giv-month-section .order-call__content {
+      position: relative;
+      z-index: 1;
+      border-radius: 10px; }
+      @media screen and (max-width: 559px) {
+        .order-call.mod-giv-month-section .order-call__content {
+          height: 42rem;
+          display: block; } }
+    .order-call.mod-giv-month-section .order-call__img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 48rem;
+      margin-bottom: 0;
+      z-index: -1; }
+      @media screen and (max-width: 767px) {
+        .order-call.mod-giv-month-section .order-call__img {
+          height: 27.6rem; } }
 
-@media screen and (max-width: 767px) {
-  .order-call-page-content {
-    padding: 0;
-    margin: 0; } }
+.order-call-page-content {
+  padding: 0;
+  margin: 0; }
 
 .order-call__content {
   display: -webkit-box;
@@ -3525,6 +3586,13 @@ button.swiper-pagination-bullet {
           -ms-flex-direction: column-reverse;
               flex-direction: column-reverse;
       border-radius: 0; } }
+
+.order-call__content-wrapper {
+  max-width: 60%;
+  width: 100%; }
+  @media screen and (max-width: 559px) {
+    .order-call__content-wrapper {
+      max-width: none; } }
 
 .order-call__text {
   font-weight: 300;
@@ -3906,7 +3974,8 @@ button.swiper-pagination-bullet {
 .fly-top-block {
   background: linear-gradient(99.54deg, #FA7007 3.54%, #FA4907 73.5%);
   padding: 4.4rem 0 7.6rem;
-  height: auto; }
+  height: auto;
+  margin-bottom: 3rem; }
   @media screen and (max-width: 767px) {
     .fly-top-block {
       padding: 3.2rem 0 1.4rem; } }
