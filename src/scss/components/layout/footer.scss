@@ -68,7 +68,7 @@
 
     &:first-child {
       .footer__link-title {
-        border-top: 1px solid #F5F5F5;
+        border-top: 1px solid var(--border-color);
       }
     }
   }
@@ -95,7 +95,7 @@
   @include for-xs-down {
     margin-bottom: 0;
     padding: 2rem 0;
-    border-bottom: 1px solid #F5F5F5;
+    border-bottom: 1px solid var(--border-color);
     position: relative;
   }
 }

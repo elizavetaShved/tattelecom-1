@@ -121,7 +121,7 @@ button {
 
   &.mod-open {
     + .gl__drop-menu {
-      max-height: 40rem; // todo костыль анимации
+      max-height: 50rem; // todo костыль анимации
       pointer-events: auto;
     }
 

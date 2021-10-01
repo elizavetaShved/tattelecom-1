@@ -428,7 +428,7 @@ button:hover svg {
   transition: transform 250ms, -webkit-transform 250ms; }
 
 .gl__drop-menu-btn.mod-open + .gl__drop-menu {
-  max-height: 40rem;
+  max-height: 50rem;
   pointer-events: auto; }
 
 .gl__drop-menu-btn.mod-open .gl__drop-menu-icon {
@@ -2258,7 +2258,7 @@ button.swiper-pagination-bullet {
     .footer__top-grid-item {
       grid-column: auto !important; }
       .footer__top-grid-item:first-child .footer__link-title {
-        border-top: 1px solid #F5F5F5; } }
+        border-top: 1px solid var(--border-color); } }
 
 @media screen and (max-width: 559px) {
   .footer__btn {
@@ -2278,7 +2278,7 @@ button.swiper-pagination-bullet {
     .footer__link-title {
       margin-bottom: 0;
       padding: 2rem 0;
-      border-bottom: 1px solid #F5F5F5;
+      border-bottom: 1px solid var(--border-color);
       position: relative; } }
 
 .footer__link-title-icon {
@@ -3136,6 +3136,39 @@ button.swiper-pagination-bullet {
   height: 2.4rem;
   padding-top: .4rem; }
 
+.faq__flexs-list {
+  margin-left: 10.4rem; }
+  @media screen and (max-width: 767px) {
+    .faq__flexs-list {
+      margin-left: 3rem; } }
+  @media screen and (max-width: 559px) {
+    .faq__flexs-list {
+      margin-left: 0; } }
+
+.faq__flexs-item {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.02em; }
+  .faq__flexs-item + .faq__flexs-item {
+    border-top: 1px solid var(--border-color); }
+
+.faq__flexs-item-caption {
+  font-weight: 300; }
+
+.faq__flexs-item-value {
+  font-weight: 600; }
+
 .news-list {
   padding: 8rem 0; }
   @media screen and (max-width: 767px) {
@@ -3760,3 +3793,18 @@ button.swiper-pagination-bullet {
     .international-calls__title, .international-calls__faq-list {
       max-width: none;
       width: 100%; } }
+
+.ussd-faq {
+  padding: 4rem 0 10rem; }
+  @media screen and (max-width: 767px) {
+    .ussd-faq {
+      padding: 2rem 0 5rem; } }
+
+.ussd-faq__content {
+  max-width: 95.4rem; }
+
+.ussd-faq__subtitle {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 4.2rem; }

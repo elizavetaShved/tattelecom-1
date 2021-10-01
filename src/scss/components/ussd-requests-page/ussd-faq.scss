@@ -1,0 +1,18 @@
+.ussd-faq {
+  padding: 4rem 0 10rem;
+
+  @include for-sm-down {
+    padding: 2rem 0 5rem;
+  }
+}
+
+.ussd-faq__content {
+  max-width: 95.4rem;
+}
+
+.ussd-faq__subtitle {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 4.2rem;
+}
