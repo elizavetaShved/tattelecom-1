@@ -7,11 +7,16 @@
 // .js-form-modal - форма в модалке
 // .js-btn-submit - кнопка сабмита в форме додалки
 
-import { Modal } from '../components/modal';
+import { Modal } from '../../components/modal';
 
-export default function initModal() {
-  new Modal(
-    '.js-open-callback-modal',
-    '#modal-callback-host'
-  );
+export default function initCallbackModal() {
+  const btnsOpen = document.querySelectorAll('.js-open-callback-modal');
+  const modalElem = document.querySelector('#modal-callback-host');
+
+  btnsOpen.forEach(btn => {
+    btn.onclick = () => {
+      const modal = new Modal(modalElem);
+      modal.onOpenModal();
+    };
+  })
 }

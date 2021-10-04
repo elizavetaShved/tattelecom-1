@@ -2,7 +2,7 @@ import polyfills from './finctions/polyfills';
 import detectTouch from './finctions/detectTouch';
 import { Header } from './components/header';
 import initDropDownMenu from './finctions/initDropDownMenu';
-import initModal from './finctions/initModal';
+import initCallbackModal from './finctions/initModals/initCallbackModal';
 
 export default function common() {
   new Header();
@@ -10,5 +10,5 @@ export default function common() {
   polyfills();
   detectTouch();
   initDropDownMenu() // для футера точно нужно
-  initModal();
+  initCallbackModal();
 }

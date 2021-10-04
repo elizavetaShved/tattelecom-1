@@ -56,9 +56,16 @@
                   </div>
 
                   <div class="rates-list__slide-btns-wrapper">
-                    <button type="button" class="rates-list__slide-btn-plug gl__main-btn">Подключить</button>
+                    <button type="button"
+                            data-tariff-name="{{ this.title }}"
+                            data-prise="{{ this.price }}"
+                            class="rates-list__slide-btn-plug gl__main-btn js-open-connects-tariff-modal">
+                      Подключить
+                    </button>
                     <div class="rates-list__slide-link-detailed-wrapper">
-                      <a href="" class="rates-list__slide-link-detailed">Подробнее о тарифе</a>
+                      <button class="rates-list__slide-link-detailed" data-tariff-name="{{ this.title }}">
+                        Подробнее о тарифе
+                      </button>
                     </div>
                   </div>
                 </div>

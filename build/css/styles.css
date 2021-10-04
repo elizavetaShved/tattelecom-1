@@ -2609,9 +2609,41 @@ button.swiper-pagination-bullet {
 
 .modal-thanks__text {
   font-weight: 300;
-  font-size: 2.2rem;
+  font-size: 1.9rem;
   line-height: 3.4rem;
-  letter-spacing: 0.015em; }
+  letter-spacing: 0.015em;
+  text-align: center; }
+
+.connect-tariff__info {
+  margin-top: 1.6rem;
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid var(--border-color); }
+
+.connect-tariff__price {
+  margin-bottom: 1.6rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem; }
+  .connect-tariff__price .number {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-right: .4rem; }
+
+.connect-tariff__info-hint {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.02em;
+  color: var(--grey-text); }
+
+.connect-tariff__form-inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-top: 3.2rem;
+  margin-bottom: 2.4rem; }
+
+.connect-tariff__content-checkbox-wrapper {
+  margin-bottom: 4rem; }
 
 .rates-preview {
   position: relative;
@@ -2821,6 +2853,8 @@ button.swiper-pagination-bullet {
     .rates-list__slide-hit .rates-list__slide-btn-plug:hover {
       background-color: var(--main-hover);
       color: #fff; }
+  .rates-list__slide-hit .rates-list__slide-link-detailed {
+    color: #fff; }
 
 .rates-list__slide-up {
   padding-bottom: 1.8rem; }
