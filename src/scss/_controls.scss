@@ -11,7 +11,7 @@
   white-space: nowrap;
 
   &:hover {
-    background: var(--main-hover);
+    background: var(--main-color-hover);
   }
 
   &.mod-transparent {
@@ -22,6 +22,17 @@
     &:hover {
       background: var(--main-color);
       border-color: transparent;
+    }
+  }
+
+  &.mod-orange-transparent {
+    background-color: transparent;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+
+    &:hover {
+      background-color: var(--main-color);
+      color: #fff;
     }
   }
 

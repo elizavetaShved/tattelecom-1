@@ -1,0 +1,102 @@
+<section class="phone-list" id="phone-list">
+  <div class="gl__page-content">
+    <h2 class="gl__title">Красивые номера</h2>
+
+    <div class="phone-list__subtitle">Выберите свой уникальный номер</div>
+
+    <div class="phone-list__filter-container">
+      <div class="phone-list__filter-wrapper">
+        {{#each filters }}
+          <label class="phone-list__filter-item-wrapper">
+            <input type="radio" class="phone-list__input" name="phone-list-filter">
+            <span class="phone-list__filter-item-content">{{ this }}</span>
+          </label>
+        {{/each}}
+      </div>
+    </div>
+
+    <ul class="phone-list__list">
+      {{#each phones }}
+        <li class="phone-list__item">
+          <button type="button" class="phone-list__item-btn">
+            <span class="phone-list__item-phone">{{ this }}</span>
+            <img src="img/beautiful-phone-page/buy.svg" alt="" class="phone-list__item-icon">
+          </button>
+        </li>
+      {{/each}}
+    </ul>
+
+    <div class="phone-list__pagination-wrapper">
+      <div class="phone-list__select-block gl__sm-hide">
+        <span style="white-space: nowrap">Загружено:</span>
+        <div class="phone-list__select-container">
+          <label class="phone-list__select-wrapper">
+            <select class="phone-list__select js-custom-select">
+              <option value="1-20">1-20</option>
+              <option value="21-30">21-30</option>
+              <option value="21-30">31-40</option>
+              <option value="21-30">41-50</option>
+              <option value="21-30">51-60</option>
+              <option value="21-30">61-70</option>
+              <option value="21-30">71-80</option>
+              <option value="21-30">81-90</option>
+              <option value="21-30">91-100</option>
+              <option value="21-30">101-110</option>
+              <option value="21-30">111-120</option>
+            </select>
+          </label>
+        </div>
+        <span style="white-space: nowrap">из 120</span>
+      </div>
+
+      <div class="phone-list__pages-main-container gl__sm-hide">
+        <button type="button" class="phone-list__pages-btn phone-list__btn-nav mod-prev js-slider-btn-prev">
+          <span class="phone-list__btn-nav-content"></span>
+        </button>
+        <div class="swiper-container js-swiper-container-custom">
+          <div class="phone-list__pages-wrapper swiper-wrapper">
+            <label class="phone-list__pages-item swiper-slide">
+              <input type="radio" class="phone-list__pages-radio" name="phone-list-page">
+              <span class="phone-list__pages-btn phone-list__pages-radio-content">1</span>
+            </label>
+            <label class="phone-list__pages-item swiper-slide">
+              <input type="radio" class="phone-list__pages-radio" name="phone-list-page">
+              <span class="phone-list__pages-btn phone-list__pages-radio-content">2</span>
+            </label>
+            <label class="phone-list__pages-item swiper-slide">
+              <input type="radio" class="phone-list__pages-radio" name="phone-list-page">
+              <span class="phone-list__pages-btn phone-list__pages-radio-content">2</span>
+            </label>
+            <label class="phone-list__pages-item swiper-slide">
+              <input type="radio" class="phone-list__pages-radio" name="phone-list-page">
+              <span class="phone-list__pages-btn phone-list__pages-radio-content">3</span>
+            </label>
+            <label class="phone-list__pages-item swiper-slide">
+              <input type="radio" class="phone-list__pages-radio" name="phone-list-page">
+              <span class="phone-list__pages-btn phone-list__pages-radio-content">4</span>
+            </label>
+            <label class="phone-list__pages-item swiper-slide">
+              <input type="radio" class="phone-list__pages-radio" name="phone-list-page">
+              <span class="phone-list__pages-btn phone-list__pages-radio-content">5</span>
+            </label>
+            <label class="phone-list__pages-item swiper-slide">
+              <input type="radio" class="phone-list__pages-radio" name="phone-list-page">
+              <span class="phone-list__pages-btn phone-list__pages-radio-content">6</span>
+            </label>
+            <label class="phone-list__pages-item swiper-slide">
+              <input type="radio" class="phone-list__pages-radio" name="phone-list-page">
+              <span class="phone-list__pages-btn phone-list__pages-radio-content">7</span>
+            </label>
+          </div>
+        </div>
+        <button type="button" class="phone-list__pages-btn phone-list__btn-nav mod-next js-slider-btn-next">
+          <span class="phone-list__btn-nav-content"></span>
+        </button>
+      </div>
+
+      <button type="button" class="phone-list__upload-btn gl__main-btn mod-orange-transparent gl__sm-show">
+        Загрузить еще
+      </button>
+    </div>
+  </div>
+</section>

@@ -109,23 +109,7 @@ input, select, button, textarea {
 }
 
 textarea {
-  &::-webkit-scrollbar {
-    background-color: white;
-    width: 0.6rem;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color:var(--main-color);
-    border-radius: 4px;
-  }
-
-  &::-webkit-scrollbar-button {
-    display: none;
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: var(--border-color);
-  }
+  @extend %scroll;
 }
 
 input[type='checkbox'] {
