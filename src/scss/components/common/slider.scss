@@ -74,6 +74,7 @@
 .gl-slider__pagination-wrapper {
   &.swiper-pagination {
     bottom: -5.4rem;
+    z-index: 1;
   }
 
   .swiper-pagination-bullet {

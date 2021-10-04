@@ -1,10 +1,15 @@
-.connect-tariff__info {
+.send-request__info {
   margin-top: 1.6rem;
   padding-bottom: 2.4rem;
   border-bottom: 1px solid var(--border-color);
+
+  @include for-sm-down {
+    margin-top: .6rem;
+    padding-bottom: 2rem;
+  }
 }
 
-.connect-tariff__price {
+.send-request__price {
   margin-bottom: 1.6rem;
   font-size: 1.8rem;
   line-height: 2.4rem;
@@ -13,10 +18,15 @@
     font-size: 4rem;
     line-height: 5rem;
     margin-right: .4rem;
+
+    @include for-sm-down {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
   }
 }
 
-.connect-tariff__info-hint {
+.send-request__info-hint {
   font-weight: 300;
   font-size: 1.4rem;
   line-height: 2.2rem;
@@ -24,14 +34,23 @@
   color: var(--grey-text);
 }
 
-.connect-tariff__form-inputs {
+.send-request__form-inputs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
   margin-top: 3.2rem;
   margin-bottom: 2.4rem;
+
+  @include for-sm-down {
+    grid-template-columns: 1fr;
+    margin: 2rem 0;
+  }
 }
 
-.connect-tariff__content-checkbox-wrapper {
+.send-request__content-checkbox-wrapper {
   margin-bottom: 4rem;
+
+  @include for-sm-down {
+    margin-bottom: 3rem;
+  }
 }

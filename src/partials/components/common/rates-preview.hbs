@@ -9,7 +9,10 @@
       {{/if}}
       <div class="rates-preview__content-subtitle">{{ ratesName }}</div>
       <div class="rates-preview__content-caption">{{ ratesCaption }}</div>
-      <button type="button" class="gl__main-btn rates-preview__btn">{{ btnText }}</button>
+      <button type="button" class="gl__main-btn rates-preview__btn js-open-send-request-modal"
+              data-tariff-name="Заявка на кешбек">
+        {{ btnText }}
+      </button>
     </div>
 
     <div class="rates-preview__img-wrapper">

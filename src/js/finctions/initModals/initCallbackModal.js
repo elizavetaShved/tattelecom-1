@@ -1,22 +1,27 @@
 // модалка "Оставьте свой номер, мы перезвоним Вам в течение 15 минут."
 // __классы для кнопок__
 // .js-open-callback-modal - на кнопки открывания модалки
-// .js-close-modal - на кнопку закрывания модалки
-// #modal-callback-host - компонент модалки
-// .js-modal-container - окно модалки
-// .js-form-modal - форма в модалке
-// .js-btn-submit - кнопка сабмита в форме додалки
+// .js-close-callback-modal - на кнопку закрывания модалки
 
 import { Modal } from '../../components/modal';
 
 export default function initCallbackModal() {
   const btnsOpen = document.querySelectorAll('.js-open-callback-modal');
+  const btnsClose = document.querySelectorAll('.js-close-callback-modal');
   const modalElem = document.querySelector('#modal-callback-host');
+
+  let modalComponent;
 
   btnsOpen.forEach(btn => {
     btn.onclick = () => {
-      const modal = new Modal(modalElem);
-      modal.onOpenModal();
+      modalComponent = new Modal(modalElem);
+      modalComponent.onOpenModal();
     };
+  })
+
+  btnsClose.forEach(btn => {
+    btn.onclick = () => {
+      modalComponent.onCloseModal();
+    }
   })
 }

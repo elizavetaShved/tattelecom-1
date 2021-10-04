@@ -13,6 +13,11 @@
   background-color: #fff;
   box-shadow: 0 0.266004px 20px rgba(153, 152, 168, 0.17);
   border-radius: 10px;
+  margin: 0 1rem;
+
+  @include for-sm-down {
+    padding: 2rem;
+  }
 
   &.mod-small {
     width: 48.2rem;
@@ -40,6 +45,7 @@
   justify-content: center;
   margin-top: -1.8rem;
   margin-right: -1.8rem;
+  flex: 0 0 5rem;
 
   &:hover {
     .modal__close-icon {
@@ -65,6 +71,11 @@
   font-size: 2.6rem;
   line-height: 3.4rem;
   letter-spacing: 0.015em;
+
+  @include for-sm-down {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
 }
 
 .modal__btn-submit {

@@ -2,7 +2,8 @@ import common from '../common';
 import initSlider from '../finctions/initSlider';
 import validation from '../finctions/validation';
 import phoneMask from '../finctions/phoneMask';
-import initConnectsTariffModal from '../finctions/initModals/initConnectsTariffModal';
+import initSendRequestModal from '../finctions/initModals/initSendRequestModal';
+import initAboutTariffModal from '../finctions/initModals/initAboutTariffModal';
 
 document.addEventListener('DOMContentLoaded', () => {
   common();
@@ -10,7 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initSlider(4);
   initSlider(3);
   initSlider(2);
-  initConnectsTariffModal();
+  initSendRequestModal();
+  initAboutTariffModal();
 
   validation();
   phoneMask();

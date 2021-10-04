@@ -18,26 +18,23 @@ export class Modal {
     this.modalContainerElem = this.modalElem.querySelector('.js-modal-container');
     const btnSubmitForm = this.modalElem.querySelector('.js-btn-submit');
     const formModal = this.modalElem.querySelector('.js-form-modal');
-    const btnsClose = this.modalElem.querySelector('.js-close-modal');
 
     this.modalThanksElem = document.querySelector('#modal-thanks');
     this.modalThanksContainerElem = document.querySelector('#modal-thanks-container');
     this.modalThanksCloseBtn = document.querySelector('#close-thanks-modal');
-
-    btnsClose.onclick = () => {
-      this.onCloseModal();
-    }
 
     this.modalThanksCloseBtn.onclick = () => {
       this.onCloseModalThanks();
     }
 
     // todo убрать с фронта
-    btnSubmitForm.onclick = () => {
-      if ($(formModal).parsley().isValid()) {
-        this.onCloseModal();
-        this.modalThanksElem.classList.add('mod-show');
-        document.addEventListener('click', this.checkClickByModalThanks);
+    if (btnSubmitForm) {
+      btnSubmitForm.onclick = () => {
+        if ($(formModal).parsley().isValid()) {
+          this.onCloseModal();
+          this.modalThanksElem.classList.add('mod-show');
+          document.addEventListener('click', this.checkClickByModalThanks);
+        }
       }
     }
 

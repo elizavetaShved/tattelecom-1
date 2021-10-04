@@ -1564,7 +1564,8 @@ button.swiper-pagination-bullet {
           justify-content: center; }
 
 .gl-slider__pagination-wrapper.swiper-pagination {
-  bottom: -5.4rem; }
+  bottom: -5.4rem;
+  z-index: 1; }
 
 .gl-slider__pagination-wrapper .swiper-pagination-bullet {
   width: 12px;
@@ -2508,7 +2509,11 @@ button.swiper-pagination-bullet {
   background-color: #fff;
   -webkit-box-shadow: 0 0.266px 20px rgba(153, 152, 168, 0.17);
           box-shadow: 0 0.266px 20px rgba(153, 152, 168, 0.17);
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin: 0 1rem; }
+  @media screen and (max-width: 767px) {
+    .modal__container {
+      padding: 2rem; } }
   .modal__container.mod-small {
     width: 48.2rem; }
   .modal__container.mod-middle {
@@ -2537,7 +2542,10 @@ button.swiper-pagination-bullet {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: -1.8rem;
-  margin-right: -1.8rem; }
+  margin-right: -1.8rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 5rem;
+          flex: 0 0 5rem; }
   .modal__btn-close:hover .modal__close-icon {
     fill: var(--main-color); }
     .modal__btn-close:hover .modal__close-icon.mod-white {
@@ -2553,15 +2561,25 @@ button.swiper-pagination-bullet {
   font-size: 2.6rem;
   line-height: 3.4rem;
   letter-spacing: 0.015em; }
+  @media screen and (max-width: 767px) {
+    .modal__title {
+      font-size: 2.4rem;
+      line-height: 3rem; } }
 
 .modal__btn-submit {
   width: 100%; }
 
-.callback__content {
+.callback__form {
   margin-top: 4rem; }
+  @media screen and (max-width: 767px) {
+    .callback__form {
+      margin-top: 2rem; } }
 
 .callback__content-checkbox-wrapper {
   margin: 2.4rem 0 4rem; }
+  @media screen and (max-width: 767px) {
+    .callback__content-checkbox-wrapper {
+      margin: 2rem 0; } }
 
 .modal-thanks__container {
   background-color: var(--main-color);
@@ -2614,36 +2632,106 @@ button.swiper-pagination-bullet {
   letter-spacing: 0.015em;
   text-align: center; }
 
-.connect-tariff__info {
+.send-request__info {
   margin-top: 1.6rem;
   padding-bottom: 2.4rem;
   border-bottom: 1px solid var(--border-color); }
+  @media screen and (max-width: 767px) {
+    .send-request__info {
+      margin-top: .6rem;
+      padding-bottom: 2rem; } }
 
-.connect-tariff__price {
+.send-request__price {
   margin-bottom: 1.6rem;
   font-size: 1.8rem;
   line-height: 2.4rem; }
-  .connect-tariff__price .number {
+  .send-request__price .number {
     font-size: 4rem;
     line-height: 5rem;
     margin-right: .4rem; }
+    @media screen and (max-width: 767px) {
+      .send-request__price .number {
+        font-size: 3rem;
+        line-height: 4rem; } }
 
-.connect-tariff__info-hint {
+.send-request__info-hint {
   font-weight: 300;
   font-size: 1.4rem;
   line-height: 2.2rem;
   letter-spacing: 0.02em;
   color: var(--grey-text); }
 
-.connect-tariff__form-inputs {
+.send-request__form-inputs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
   margin-top: 3.2rem;
   margin-bottom: 2.4rem; }
+  @media screen and (max-width: 767px) {
+    .send-request__form-inputs {
+      grid-template-columns: 1fr;
+      margin: 2rem 0; } }
 
-.connect-tariff__content-checkbox-wrapper {
+.send-request__content-checkbox-wrapper {
   margin-bottom: 4rem; }
+  @media screen and (max-width: 767px) {
+    .send-request__content-checkbox-wrapper {
+      margin-bottom: 3rem; } }
+
+.about-tariff__list {
+  margin-top: 4.6rem; }
+
+.about-tariff__item + .about-tariff__item {
+  margin-top: 2rem; }
+
+.about-tariff__item-link {
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%; }
+  .about-tariff__item-link:hover .about-tariff__item-title, .about-tariff__item-link:hover .about-tariff__item-subtitle {
+    color: var(--main-color); }
+
+.about-tariff__item-link-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start; }
+
+.about-tariff__item-title {
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 1.6rem;
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
+  display: block; }
+
+.about-tariff__item-subtitle {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  color: var(--grey-text);
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
+  display: block; }
+
+.about-tariff__item-btn-icon {
+  height: 4.2rem; }
 
 .rates-preview {
   position: relative;

@@ -1,7 +1,15 @@
-.callback__content {
+.callback__form {
   margin-top: 4rem;
+
+  @include for-sm-down {
+    margin-top: 2rem;
+  }
 }
 
 .callback__content-checkbox-wrapper {
   margin: 2.4rem 0 4rem;
+
+  @include for-sm-down {
+    margin: 2rem 0;
+  }
 }

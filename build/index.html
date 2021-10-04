@@ -80,10 +80,10 @@
         <div class="header__bottom-block">
           <div class="gl__page-content header__bottom-block-content">
             <div class="header__logo-wrapper">
-              <a href="" class="header__logo-link">
+              <a href="/" class="header__logo-link">
                 <img src="img/header/logo-tat.svg" alt="" class="header__logo mod-tat">
               </a>
-              <a href="" class="header__logo-link">
+              <a href="/" class="header__logo-link">
                 <img src="img/header/logo-fly.svg" alt="" class="header__logo mod-fly">
               </a>
             </div>
@@ -315,7 +315,10 @@
               <div class="rates-preview__content-title">Тариф «Летай.Оранжевый»</div>
             <div class="rates-preview__content-subtitle">Выжми скорость</div>
             <div class="rates-preview__content-caption">Мощный интернет + ТВ 160 каналов</div>
-            <button type="button" class="gl__main-btn rates-preview__btn">Подробнее</button>
+            <button type="button" class="gl__main-btn rates-preview__btn js-open-send-request-modal"
+                    data-tariff-name="Заявка на кешбек">
+              Подробнее
+            </button>
           </div>
       
           <div class="rates-preview__img-wrapper">
@@ -352,19 +355,23 @@
       
                         <ul class="rates-list__slide-conditions-list">
                             <li class="rates-list__slide-condition-item">
-                              <img src="img/main-page/rates-list/unlimited.svg" alt="" class="rates-list__slide-condition-item-icon">
+                              <img src="img/main-page/rates-list/unlimited.svg" alt=""
+                                   class="rates-list__slide-condition-item-icon">
                               <div class="rates-list__slide-condition-item-text">Безлимитный интернет</div>
                             </li>
                             <li class="rates-list__slide-condition-item">
-                              <img src="img/main-page/rates-list/phone-1.svg" alt="" class="rates-list__slide-condition-item-icon">
+                              <img src="img/main-page/rates-list/phone-1.svg" alt=""
+                                   class="rates-list__slide-condition-item-icon">
                               <div class="rates-list__slide-condition-item-text">500 мин. звонки по РТ</div>
                             </li>
                             <li class="rates-list__slide-condition-item">
-                              <img src="img/main-page/rates-list/phone-1.svg" alt="" class="rates-list__slide-condition-item-icon">
+                              <img src="img/main-page/rates-list/phone-1.svg" alt=""
+                                   class="rates-list__slide-condition-item-icon">
                               <div class="rates-list__slide-condition-item-text">300 мин. звонки по РФ</div>
                             </li>
                             <li class="rates-list__slide-condition-item">
-                              <img src="img/main-page/rates-list/phone-1.svg" alt="" class="rates-list__slide-condition-item-icon">
+                              <img src="img/main-page/rates-list/phone-1.svg" alt=""
+                                   class="rates-list__slide-condition-item-icon">
                               <div class="rates-list__slide-condition-item-text">Безлимитные звонки на Летай</div>
                             </li>
                         </ul>
@@ -387,11 +394,11 @@
                           <button type="button"
                                   data-tariff-name="Интернет + ТВ за 0 минут"
                                   data-prise="333"
-                                  class="rates-list__slide-btn-plug gl__main-btn js-open-connects-tariff-modal">
+                                  class="rates-list__slide-btn-plug gl__main-btn js-open-send-request-modal">
                             Подключить
                           </button>
                           <div class="rates-list__slide-link-detailed-wrapper">
-                            <button class="rates-list__slide-link-detailed" data-tariff-name="Интернет + ТВ за 0 минут">
+                            <button class="rates-list__slide-link-detailed js-open-about-tariff-modal">
                               Подробнее о тарифе
                             </button>
                           </div>
@@ -407,11 +414,13 @@
       
                         <ul class="rates-list__slide-conditions-list">
                             <li class="rates-list__slide-condition-item">
-                              <img src="img/main-page/rates-list/unlimited.svg" alt="" class="rates-list__slide-condition-item-icon">
+                              <img src="img/main-page/rates-list/unlimited.svg" alt=""
+                                   class="rates-list__slide-condition-item-icon">
                               <div class="rates-list__slide-condition-item-text">Безлимитный интернет</div>
                             </li>
                             <li class="rates-list__slide-condition-item">
-                              <img src="img/main-page/rates-list/phone-1.svg" alt="" class="rates-list__slide-condition-item-icon">
+                              <img src="img/main-page/rates-list/phone-1.svg" alt=""
+                                   class="rates-list__slide-condition-item-icon">
                               <div class="rates-list__slide-condition-item-text">200 мин. звонки по РТ</div>
                             </li>
                         </ul>
@@ -434,11 +443,11 @@
                           <button type="button"
                                   data-tariff-name="Много интернета"
                                   data-prise="240"
-                                  class="rates-list__slide-btn-plug gl__main-btn js-open-connects-tariff-modal">
+                                  class="rates-list__slide-btn-plug gl__main-btn js-open-send-request-modal">
                             Подключить
                           </button>
                           <div class="rates-list__slide-link-detailed-wrapper">
-                            <button class="rates-list__slide-link-detailed" data-tariff-name="Много интернета">
+                            <button class="rates-list__slide-link-detailed js-open-about-tariff-modal">
                               Подробнее о тарифе
                             </button>
                           </div>
@@ -454,19 +463,23 @@
       
                         <ul class="rates-list__slide-conditions-list">
                             <li class="rates-list__slide-condition-item">
-                              <img src="img/main-page/rates-list/unlimited.svg" alt="" class="rates-list__slide-condition-item-icon">
+                              <img src="img/main-page/rates-list/unlimited.svg" alt=""
+                                   class="rates-list__slide-condition-item-icon">
                               <div class="rates-list__slide-condition-item-text">Безлимитный интернет</div>
                             </li>
                             <li class="rates-list__slide-condition-item">
-                              <img src="img/main-page/rates-list/phone-1.svg" alt="" class="rates-list__slide-condition-item-icon">
+                              <img src="img/main-page/rates-list/phone-1.svg" alt=""
+                                   class="rates-list__slide-condition-item-icon">
                               <div class="rates-list__slide-condition-item-text">500 мин. звонки по РТ</div>
                             </li>
                             <li class="rates-list__slide-condition-item">
-                              <img src="img/main-page/rates-list/phone-1.svg" alt="" class="rates-list__slide-condition-item-icon">
+                              <img src="img/main-page/rates-list/phone-1.svg" alt=""
+                                   class="rates-list__slide-condition-item-icon">
                               <div class="rates-list__slide-condition-item-text">300 мин. звонки по РФ</div>
                             </li>
                             <li class="rates-list__slide-condition-item">
-                              <img src="img/main-page/rates-list/phone-1.svg" alt="" class="rates-list__slide-condition-item-icon">
+                              <img src="img/main-page/rates-list/phone-1.svg" alt=""
+                                   class="rates-list__slide-condition-item-icon">
                               <div class="rates-list__slide-condition-item-text">Безлимитные звонки на Летай</div>
                             </li>
                         </ul>
@@ -489,11 +502,11 @@
                           <button type="button"
                                   data-tariff-name="Много минут"
                                   data-prise="350"
-                                  class="rates-list__slide-btn-plug gl__main-btn js-open-connects-tariff-modal">
+                                  class="rates-list__slide-btn-plug gl__main-btn js-open-send-request-modal">
                             Подключить
                           </button>
                           <div class="rates-list__slide-link-detailed-wrapper">
-                            <button class="rates-list__slide-link-detailed" data-tariff-name="Много минут">
+                            <button class="rates-list__slide-link-detailed js-open-about-tariff-modal">
                               Подробнее о тарифе
                             </button>
                           </div>
@@ -509,11 +522,13 @@
       
                         <ul class="rates-list__slide-conditions-list">
                             <li class="rates-list__slide-condition-item">
-                              <img src="img/main-page/rates-list/unlimited.svg" alt="" class="rates-list__slide-condition-item-icon">
+                              <img src="img/main-page/rates-list/unlimited.svg" alt=""
+                                   class="rates-list__slide-condition-item-icon">
                               <div class="rates-list__slide-condition-item-text">Безлимитный интернет</div>
                             </li>
                             <li class="rates-list__slide-condition-item">
-                              <img src="img/main-page/rates-list/phone-1.svg" alt="" class="rates-list__slide-condition-item-icon">
+                              <img src="img/main-page/rates-list/phone-1.svg" alt=""
+                                   class="rates-list__slide-condition-item-icon">
                               <div class="rates-list__slide-condition-item-text">200 мин. звонки по РТ</div>
                             </li>
                         </ul>
@@ -536,11 +551,11 @@
                           <button type="button"
                                   data-tariff-name="Много интернета"
                                   data-prise="240"
-                                  class="rates-list__slide-btn-plug gl__main-btn js-open-connects-tariff-modal">
+                                  class="rates-list__slide-btn-plug gl__main-btn js-open-send-request-modal">
                             Подключить
                           </button>
                           <div class="rates-list__slide-link-detailed-wrapper">
-                            <button class="rates-list__slide-link-detailed" data-tariff-name="Много интернета">
+                            <button class="rates-list__slide-link-detailed js-open-about-tariff-modal">
                               Подробнее о тарифе
                             </button>
                           </div>
@@ -556,19 +571,23 @@
       
                         <ul class="rates-list__slide-conditions-list">
                             <li class="rates-list__slide-condition-item">
-                              <img src="img/main-page/rates-list/unlimited.svg" alt="" class="rates-list__slide-condition-item-icon">
+                              <img src="img/main-page/rates-list/unlimited.svg" alt=""
+                                   class="rates-list__slide-condition-item-icon">
                               <div class="rates-list__slide-condition-item-text">Безлимитный интернет</div>
                             </li>
                             <li class="rates-list__slide-condition-item">
-                              <img src="img/main-page/rates-list/phone-1.svg" alt="" class="rates-list__slide-condition-item-icon">
+                              <img src="img/main-page/rates-list/phone-1.svg" alt=""
+                                   class="rates-list__slide-condition-item-icon">
                               <div class="rates-list__slide-condition-item-text">500 мин. звонки по РТ</div>
                             </li>
                             <li class="rates-list__slide-condition-item">
-                              <img src="img/main-page/rates-list/phone-1.svg" alt="" class="rates-list__slide-condition-item-icon">
+                              <img src="img/main-page/rates-list/phone-1.svg" alt=""
+                                   class="rates-list__slide-condition-item-icon">
                               <div class="rates-list__slide-condition-item-text">300 мин. звонки по РФ</div>
                             </li>
                             <li class="rates-list__slide-condition-item">
-                              <img src="img/main-page/rates-list/phone-1.svg" alt="" class="rates-list__slide-condition-item-icon">
+                              <img src="img/main-page/rates-list/phone-1.svg" alt=""
+                                   class="rates-list__slide-condition-item-icon">
                               <div class="rates-list__slide-condition-item-text">Безлимитные звонки на Летай</div>
                             </li>
                         </ul>
@@ -591,11 +610,11 @@
                           <button type="button"
                                   data-tariff-name="Много минут"
                                   data-prise="350"
-                                  class="rates-list__slide-btn-plug gl__main-btn js-open-connects-tariff-modal">
+                                  class="rates-list__slide-btn-plug gl__main-btn js-open-send-request-modal">
                             Подключить
                           </button>
                           <div class="rates-list__slide-link-detailed-wrapper">
-                            <button class="rates-list__slide-link-detailed" data-tariff-name="Много минут">
+                            <button class="rates-list__slide-link-detailed js-open-about-tariff-modal">
                               Подробнее о тарифе
                             </button>
                           </div>
@@ -1330,78 +1349,76 @@
         <div class="modal__title">
           Оставьте свой номер, мы перезвоним Вам в течение 15 минут.
         </div>
-        <button type="button" class="modal__btn-close js-close-modal">
+        <button type="button" class="modal__btn-close js-close-callback-modal">
           <svg width="32" height="32" aria-hidden="true" class="modal__close-icon">
             <use xlink:href="#close"></use>
           </svg>
         </button>
       </div>
   
-      <form class="js-form-modal">
-        <div class="callback__content">
+      <form class="js-form-modal callback__form">
+        <!--
+          ___Обязательные поля___
+          type - html-тип инута
+          name - обязательно префикс - род.компонент (н-р services-tel)
+          placeholder
+        
+          ___Необязательные поля___
+          required (true/false) - обязательно для заполнения
+          inputTitle - заголовок НАД инпутом
+          phoneMask (true/false) - маска для телефона
+          minLength - деф-2
+          maxLength - деф-none
+          id - обычный id, например для первого пароля
+          parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
+          parsleyType - для валидации (н-р email)
+        -->
+        
+        <label class="gl-input__wrapper js-input-tel">
+          <input type="tel"
+                 class="gl-input__input js-phone-input"
+                 placeholder="+7 (___) ___-__-__"
+                 name="modal-callback-tel"
+        
+                 data-parsley-required=""
+        
+                 data-parsley-minlength="2"
+        
+        
+        
+        
+          >
+        </label>
+  
+        <div class="callback__content-checkbox-wrapper">
           <!--
             ___Обязательные поля___
-            type - html-тип инута
             name - обязательно префикс - род.компонент (н-р services-tel)
-            placeholder
           
             ___Необязательные поля___
             required (true/false) - обязательно для заполнения
-            inputTitle - заголовок НАД инпутом
-            phoneMask (true/false) - маска для телефона
-            minLength - деф-2
-            maxLength - деф-none
-            id - обычный id, например для первого пароля
-            parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
-            parsleyType - для валидации (н-р email)
+            caption - пояснение чекбокса справа
+            isChecked - нужен ли checked изначально
+            isModal - чекбокс для модалки
           -->
           
-          <label class="gl-input__wrapper js-input-tel">
-            <input type="tel"
-                   class="gl-input__input js-phone-input"
-                   placeholder="+7 (___) ___-__-__"
-                   name="modal-callback-tel"
-          
+          <label class="checkbox__wrapper">
+            <input type="checkbox"
+                   class="checkbox" name="modal-callback-agree"
                    data-parsley-required=""
-          
-                   data-parsley-minlength="2"
-          
-          
-          
-          
             >
+            <span class="checkbox__content mod-modal">
+              <svg width="16" height="16" aria-hidden="true" class="checkbox__content-icon">
+                <use xlink:href="#checkbox-checked"></use>
+              </svg>
+            </span>
+            <span class="checkbox__text mod-modal">Я согласен на обработку своих персональных данных</span>
           </label>
-  
-          <div class="callback__content-checkbox-wrapper">
-            <!--
-              ___Обязательные поля___
-              name - обязательно префикс - род.компонент (н-р services-tel)
-            
-              ___Необязательные поля___
-              required (true/false) - обязательно для заполнения
-              caption - пояснение чекбокса справа
-              isChecked - нужен ли checked изначально
-              isModal - чекбокс для модалки
-            -->
-            
-            <label class="checkbox__wrapper">
-              <input type="checkbox"
-                     class="checkbox" name="modal-callback-agree"
-                     data-parsley-required=""
-              >
-              <span class="checkbox__content mod-modal">
-                <svg width="16" height="16" aria-hidden="true" class="checkbox__content-icon">
-                  <use xlink:href="#checkbox-checked"></use>
-                </svg>
-              </span>
-              <span class="checkbox__text mod-modal">Я согласен на обработку своих персональных данных</span>
-            </label>
-          </div>
-  
-          <button type="button" class="gl__main-btn modal__btn-submit js-btn-submit">
-            Жду звонка
-          </button>
         </div>
+  
+        <button type="button" class="gl__main-btn modal__btn-submit js-btn-submit">
+          Жду звонка
+        </button>
       </form>
     </div>
   </div>
@@ -1431,25 +1448,25 @@
       </div>
     </div>
   </div>
-  <div class="modal" id="modal-connect-tariff-host">
+  <div class="modal" id="modal-send-request-host">
     <div class="modal__container mod-middle js-modal-container">
       <div class="modal__head">
         <div class="modal__title">
           Тариф “Много интернета”
         </div>
-        <button type="button" class="modal__btn-close js-close-modal">
+        <button type="button" class="modal__btn-close js-close-send-request-modal">
           <svg width="32" height="32" aria-hidden="true" class="modal__close-icon">
             <use xlink:href="#close"></use>
           </svg>
         </button>
       </div>
   
-      <div class="connect-tariff__content">
-        <div class="connect-tariff__info">
-          <div class="connect-tariff__price">
+      <div class="send-request__content">
+        <div class="send-request__info">
+          <div class="send-request__price">
             <span class="number">240</span>₽/мес
           </div>
-          <div class="connect-tariff__info-hint">
+          <div class="send-request__info-hint">
             <div>Укажите имя и контактный номер телефона.</div>
             <div>Мы перезвоним Вам в течение 15 минут.</div>
             <div>Клиентская служба работает с 08-00 до 20-00.</div>
@@ -1457,7 +1474,7 @@
         </div>
   
         <form class="js-form-modal">
-          <div class="connect-tariff__form-inputs">
+          <div class="send-request__form-inputs">
             <!--
               ___Обязательные поля___
               type - html-тип инута
@@ -1479,7 +1496,7 @@
               <input type="text"
                      class="gl-input__input "
                      placeholder="Ваше имя"
-                     name="modal-connect-tariff-name"
+                     name="modal-send-request-name"
             
                      data-parsley-required=""
             
@@ -1511,7 +1528,7 @@
               <input type="tel"
                      class="gl-input__input js-phone-input"
                      placeholder="+7 (___) ___-__-__"
-                     name="modal-connect-tariff-tel"
+                     name="modal-send-request-tel"
             
                      data-parsley-required=""
             
@@ -1524,7 +1541,7 @@
             </label>
           </div>
   
-          <div class="connect-tariff__content-checkbox-wrapper">
+          <div class="send-request__content-checkbox-wrapper">
             <!--
               ___Обязательные поля___
               name - обязательно префикс - род.компонент (н-р services-tel)
@@ -1538,7 +1555,7 @@
             
             <label class="checkbox__wrapper">
               <input type="checkbox"
-                     class="checkbox" name="modal-connect-tariff-agree"
+                     class="checkbox" name="modal-send-request-agree"
                      data-parsley-required=""
               >
               <span class="checkbox__content mod-modal">
@@ -1555,6 +1572,66 @@
           </button>
         </form>
       </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-about-tariff-host">
+    <div class="modal__container mod-middle js-modal-container">
+      <div class="modal__head">
+        <div class="modal__title">
+          Тариф “Много интернета”
+        </div>
+        <button type="button" class="modal__btn-close js-close-about-tariff-modal">
+          <svg width="32" height="32" aria-hidden="true" class="modal__close-icon">
+            <use xlink:href="#close"></use>
+          </svg>
+        </button>
+      </div>
+  
+      <ul class="about-tariff__list">
+        <li class="about-tariff__item gl__white-container">
+          <a href="" class="about-tariff__item-link">
+            <div class="about-tariff__item-link-content">
+              <div class="about-tariff__item-title">Купить SIM-карту</div>
+              <div class="about-tariff__item-subtitle">Для новых клиентов</div>
+            </div>
+  
+            <span class="about-tariff__item-btn">
+              <svg width="42" height="42" aria-hidden="true" class="about-tariff__item-btn-icon">
+                <use xlink:href="#arrow-line-right"></use>
+              </svg>
+            </span>
+          </a>
+        </li>
+        <li class="about-tariff__item gl__white-container">
+          <a href="" class="about-tariff__item-link">
+            <div class="about-tariff__item-link-content">
+              <div class="about-tariff__item-title">Перейти на “Летай” со своим номером</div>
+              <div class="about-tariff__item-subtitle">Для абонентов других операторов</div>
+            </div>
+  
+            <div class="about-tariff__item-btn">
+              <svg width="42" height="42" aria-hidden="true" class="about-tariff__item-btn-icon">
+                <use xlink:href="#arrow-line-right"></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+  
+        <li class="about-tariff__item gl__white-container">
+          <a href="" class="about-tariff__item-link">
+            <div class="about-tariff__item-link-content">
+              <div class="about-tariff__item-title">Сменить тариф</div>
+              <div class="about-tariff__item-subtitle">Для абонентов “Летай”</div>
+            </div>
+  
+            <div class="about-tariff__item-btn">
+              <svg width="42" height="42" aria-hidden="true" class="about-tariff__item-btn-icon">
+                <use xlink:href="#arrow-line-right"></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 

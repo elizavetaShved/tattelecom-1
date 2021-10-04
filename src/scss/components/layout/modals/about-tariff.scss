@@ -1,0 +1,52 @@
+.about-tariff__list {
+  margin-top: 4.6rem;
+}
+
+.about-tariff__item {
+  & + & {
+    margin-top: 2rem;
+  }
+}
+
+.about-tariff__item-link {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  &:hover {
+    .about-tariff__item-title, .about-tariff__item-subtitle {
+      color: var(--main-color);
+    }
+  }
+}
+
+.about-tariff__item-link-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.about-tariff__item-title {
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 1.6rem;
+  transition: color 250ms;
+  display: block;
+}
+
+.about-tariff__item-subtitle {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  color: var(--grey-text);
+  transition: color 250ms;
+  display: block;
+}
+
+.about-tariff__item-btn-icon {
+  height: 4.2rem;
+}
