@@ -6,6 +6,7 @@
   required (true/false) - обязательно для заполнения
   caption - пояснение чекбокса справа
   isChecked - нужен ли checked изначально
+  isModal - чекбокс для модалки
 -->
 
 <label class="checkbox__wrapper">
@@ -18,6 +19,10 @@
          checked
     {{/if}}
   >
-  <span class="checkbox__content"></span>
-  <span class="checkbox__text">{{ caption }}</span>
+  <span class="checkbox__content {{#if isModal}}mod-modal{{else}}mod-main{{/if}}">
+    <svg width="16" height="16" aria-hidden="true" class="checkbox__content-icon">
+      <use xlink:href="#checkbox-checked"></use>
+    </svg>
+  </span>
+  <span class="checkbox__text {{#if isModal}}mod-modal{{else}}mod-main{{/if}}">{{ caption }}</span>
 </label>

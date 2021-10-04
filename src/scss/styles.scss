@@ -18,6 +18,10 @@
 @import 'components/layout/header';
 @import 'components/layout/footer';
 
+@import 'components/layout/modals/modal';
+@import 'components/layout/modals/modal-callback';
+@import 'components/layout/modals/modal-thanks';
+
 @import 'components/common/rates-preview';
 @import 'components/common/rates-list';
 @import 'components/common/services';
