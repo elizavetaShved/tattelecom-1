@@ -867,19 +867,19 @@
   </div>
 
   <div class="modal" id="modal-callback-host">
-    <div class="modal__container mod-small">
+    <div class="modal__container mod-small js-modal-container">
       <div class="modal__head">
         <div class="modal__title">
           Оставьте свой номер, мы перезвоним Вам в течение 15 минут.
         </div>
-        <button type="button" class="modal__btn-close js-close-callback-modal">
+        <button type="button" class="modal__btn-close js-close-modal">
           <svg width="32" height="32" aria-hidden="true" class="modal__close-icon">
             <use xlink:href="#close"></use>
           </svg>
         </button>
       </div>
   
-      <form>
+      <form class="js-form-modal">
         <div class="callback__content">
           <!--
             ___Обязательные поля___
@@ -940,19 +940,19 @@
             </label>
           </div>
   
-          <button type="submit" class="gl__main-btn modal__btn-submit">
+          <button type="button" class="gl__main-btn modal__btn-submit js-btn-submit">
             Жду звонка
           </button>
         </div>
       </form>
     </div>
   </div>
-  <div class="modal">
-    <div class="modal-thanks__container modal__container mod-small">
+  <div class="modal" id="modal-thanks">
+    <div class="modal-thanks__container modal__container mod-small" id="modal-thanks-container">
       <img src="img/modals/background.svg" alt="" class="modal-thanks__background">
   
       <div class="modal-thanks__head">
-        <button type="button" class="modal__btn-close mod-modal-thanks">
+        <button type="button" class="modal__btn-close mod-modal-thanks" id="close-thanks-modal">
           <svg width="32" height="32" aria-hidden="true" class="modal__close-icon mod-white">
             <use xlink:href="#close"></use>
           </svg>
