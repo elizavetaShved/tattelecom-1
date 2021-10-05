@@ -1,0 +1,122 @@
+.applications-list {
+  padding: 4rem 0 16rem;
+
+  @include for-sm-down {
+    padding: 2rem 0 8rem;
+  }
+}
+
+.applications-list__block {
+  & + & {
+    margin-top: 8.8rem;
+  }
+}
+
+.applications-list__grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 3rem;
+
+  @include for-md-down {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include for-sm-down {
+    grid-gap: 2rem;
+  }
+
+  @include for-xs-down {
+    grid-gap: 3rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+.applications-list__item {
+  box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 16px rgba(51, 51, 51, 0.08);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 34.6rem;
+  width: 100%;
+
+  @include for-md-down {
+    min-height: 28rem;
+  }
+
+  @include for-sm-down {
+    padding: 2rem;
+  }
+}
+
+.applications-list__item-logo {
+  height: 8rem;
+  object-fit: contain;
+  margin-bottom: 2rem;
+
+  @include for-sm-down {
+    height: 6.4rem;
+    margin-bottom: 1.6rem;
+  }
+}
+
+.applications-list__item-title {
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 1.4rem;
+
+  @include for-sm-down {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.applications-list__item-subtitle {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+
+  @include for-sm-down {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+}
+
+.applications-list__item-links-wrapper {
+  margin-top: 1.4rem;
+  display: flex;
+
+  @include for-sm-down {
+    margin-top: 1rem;
+  }
+}
+
+.applications-list__item-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: min-content;
+
+  & + & {
+    margin-left: 1.2rem;
+  }
+}
+
+.applications-list__item-link-icon {
+  height: 5rem;
+  max-width: 100%;
+  object-fit: contain;
+
+  @include for-sm-down {
+    height: 4rem;
+  }
+
+  @include for-xxs-down {
+    height: 5rem;
+  }
+}

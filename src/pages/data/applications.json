@@ -1,0 +1,88 @@
+{
+  "title": "Приложения",
+  "script": "applications-page",
+  "bread-crumbs": [
+    {
+      "name": "Частным клиентам"
+    },
+    {
+      "name": "Мобильная связь"
+    },
+    {
+      "name": "Приложения",
+      "noLink": true
+    }
+  ],
+  "applications-list": [
+    {
+      "blockTitle": "Приложения Таттелеком и мобильной связи \"Летай\"",
+      "list": [
+        {
+          "img": "img/applications-page/logo-1.png",
+          "title": "Летай - Личный кабинет",
+          "subtitle": "Управляйте всеми услугами связи прямо на телефоне"
+        },
+        {
+          "img": "img/applications-page/logo-2.png",
+          "title": "Мой дом Таттелеком",
+          "subtitle": "Открывайте входную дверь со смартфона в любой точке мире"
+        },
+        {
+          "img": "img/applications-page/logo-3.png",
+          "title": "Таттелеком ТВ",
+          "subtitle": "Превратите смартфон или планшет в «мобильный» телевизор"
+        },
+        {
+          "img": "img/applications-page/logo-4.png",
+          "title": "Дом под контролем",
+          "subtitle": "Для контроля помещений датчиками движения, открывания двери и других"
+        },
+        {
+          "img": "img/applications-page/logo-5.png",
+          "title": "Качество связи (бета)",
+          "subtitle": "Позволяет протестировать качество связи и скорость интернет соединения"
+        },
+        {
+          "img": "img/applications-page/logo-4.png",
+          "title": "Видеонаблюдение",
+          "subtitle": "Домашнее видеонаблюдение в любое время из любой точки мира"
+        },
+        {
+          "img": "img/applications-page/logo-6.png",
+          "title": "Видеоконференцсвязь",
+          "subtitle": "Современный способ видео и аудио связи для территориально удаленных пользователей"
+        }
+      ]
+    },
+    {
+      "blockTitle": "Другие рекомендуемые мобильные приложения",
+      "list": [
+        {
+          "img": "img/applications-page/logo-4.png",
+          "title": "SIP телефония",
+          "subtitle": "Телефон нового поколения для абонентов Таттелеком"
+        },
+        {
+          "img": "img/applications-page/logo-7.png",
+          "title": "Speedtest.net",
+          "subtitle": "Для тестирования скорости мобильного интернета"
+        },
+        {
+          "img": "img/applications-page/logo-8.png",
+          "title": "Акбарс Онлайн 3.0",
+          "subtitle": "Для управления банковскими картами и счетами в банке Ак Барс"
+        },
+        {
+          "img": "img/applications-page/logo-9.png",
+          "title": "Safe Kids",
+          "subtitle": "Защита детей в Интернете, определение местоположения и времени пользования смартфоном"
+        },
+        {
+          "img": "img/applications-page/logo-10.png",
+          "title": "Кинотеатр Megogo",
+          "subtitle": "Тысячи фильмов и ТВ для всей семьи и многое другое"
+        }
+      ]
+    }
+  ]
+}

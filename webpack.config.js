@@ -10,7 +10,8 @@ module.exports = {
     ['roaming-page']: './src/js/pages/roaming-page.js',
     ['ussd-requests-page']: './src/js/pages/ussd-requests-page.js',
     ['fly-old-number-page']: './src/js/pages/fly-old-number-page.js',
-    ['beautiful-phone-page']: './src/js/pages/beautiful-phone-page.js'
+    ['beautiful-phone-page']: './src/js/pages/beautiful-phone-page.js',
+    ['applications-page']: './src/js/pages/applications-page.js'
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

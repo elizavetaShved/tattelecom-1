@@ -1,0 +1,35 @@
+<section class="applications-list" id="applications-list">
+  <div class="gl__page-content">
+
+    {{#each applications-list }}
+      <div class="applications-list__block">
+        <h2 class="gl__title">{{ this.blockTitle }}</h2>
+
+        <ul class="applications-list__grid-wrapper">
+          {{#each this.list }}
+            <li class="applications-list__item">
+              <div>
+                <img src="{{ this.img }}" alt="" class="applications-list__item-logo">
+                <div class="applications-list__item-title">
+                  {{ this.title }}
+                </div>
+                <div class="applications-list__item-subtitle">
+                  {{ this.subtitle }}
+                </div>
+              </div>
+
+              <div class="applications-list__item-links-wrapper">
+                <a href="" class="applications-list__item-link">
+                  <img src="img/common/google-play.svg" alt="" class="applications-list__item-link-icon">
+                </a>
+                <a href="" class="applications-list__item-link">
+                  <img src="img/common/app-store.svg" alt="" class="applications-list__item-link-icon">
+                </a>
+              </div>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    {{/each}}
+  </div>
+</section>
