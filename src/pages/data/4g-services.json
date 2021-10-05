@@ -1,0 +1,12 @@
+{
+  "title": "4G улуги",
+  "script": "4g-services-page",
+  "bread-crumbs": [
+    {
+      "name": "Частным клиентам"
+    },
+    {
+      "name": "4G Устройства"
+    }
+  ]
+}

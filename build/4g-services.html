@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/styles.min.css"/>
   <link type="image/png" href="img/common/tattelecom-small-logo.png" rel="icon">
   <title>
-    Перейти на летай со своим номером
+    4G улуги
   </title>
 </head>
 <body class="no-touch">
@@ -320,372 +320,33 @@
             </li>
             <li class="bread-crumbs__item">
                 <a href="" class="bread-crumbs__link">
-                  Мобильная связь
+                  4G Устройства
                   <svg width="16" height="16" aria-hidden="true" class="bread-crumbs__link-icon">
                     <use xlink:href="#arrow-right"></use>
                   </svg>
                 </a>
             </li>
-            <li class="bread-crumbs__item">
-                <span class="bread-crumbs__link">
-                  Перейти на Летай
-                </span>
-            </li>
         </ul>
       </div>
     </section>
 
-    <section class="fly-top-block rates-preview" id="fly-top-block-host">
+    <section class="rates-preview mod-4g-services"
+             
+             id="rates-preview-host">
     
-      <div class="gl__page-content rates-preview__content-wrapper fly-top-block__content-wrapper">
-        <div class="rates-preview__content fly-top-block__content-wrapper__content">
-          <h2 class="gl__title mod-white">Перейти на Летай со своим номером</h2>
-          <div class="fly-top-block__subtitle">
-            Станьте абонентом Таттелеком, сохранив номер своего мобильного телефона!
-          </div>
-    
-          <form class="fly-top-block__form">
-            <!--
-              ___Обязательные поля___
-              type - html-тип инута
-              name - обязательно префикс - род.компонент (н-р services-tel)
-              placeholder
-            
-              ___Необязательные поля___
-              required (true/false) - обязательно для заполнения
-              inputTitle - заголовок НАД инпутом
-              phoneMask (true/false) - маска для телефона
-              minLength - деф-2
-              maxLength - деф-none
-              id - обычный id, например для первого пароля
-              parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
-              parsleyType - для валидации (н-р email)
-            -->
-            
-            <label class="gl-input__wrapper js-input-tel">
-                <span class="gl-input__title mod-white">Введите номер переноса</span>
-              <input type="tel"
-                     class="gl-input__input js-phone-input"
-                     placeholder="+7 (___) ___-__-__"
-                     name="fly-top-block-tel"
-            
-                     data-parsley-required=""
-            
-                     data-parsley-minlength="2"
-            
-            
-            
-            
-              >
-            </label>
-    
-            <!--
-              __Обязательные поля__
-              name - input name
-              options - опции
-            
-              __Необязательные поля__
-              selectTitle - заголовок
-              required - обязательно для заполнения
-              placeholder
-            -->
-              <div class="select">
-                  <span class="gl-input__title mod-white">Укажите город проживания</span>
-            
-                <div class="select__container" id="fly-top-block-city">
-                  <label class="select__wrapper mod-city">
-                      <span class="gl__input-mark-required"></span>
-                    <select class="gl__select js-custom-select"
-                            data-parsley-class-handler="#fly-top-block-city"
-                            name="fly-top-block-city"
-                            data-parsley-required="" data-parsley-trigger="change"
-                    >
-                        <option placeholder value="">город</option>
-                          <option value="Казань">Казань</option>
-                          <option value="Чебоксары">Чебоксары</option>
-                          <option value="Набережные Челны">Набережные Челны</option>
-                    </select>
-                  </label>
-            
-                    <svg width="16" height="16" aria-hidden="true" class="select__search-icon">
-                      <use xlink:href="#search"></use>
-                    </svg>
-                </div>
-              </div>
-    
-            <button type="submit" class="fly-top-block__btn gl__main-btn mod-black">
-              Начать перенос
-            </button>
-    
-            <div class="fly-top-block__checkbox-wrapper">
-              <!--
-                ___Обязательные поля___
-                name - обязательно префикс - род.компонент (н-р services-tel)
-              
-                ___Необязательные поля___
-                required (true/false) - обязательно для заполнения
-                caption - пояснение чекбокса справа
-                isChecked - нужен ли checked изначально
-                isModal - чекбокс для модалки
-              -->
-              
-              <label class="checkbox__wrapper">
-                <input type="checkbox"
-                       class="checkbox" name="fly-top-block-approval"
-                       data-parsley-required=""
-                >
-                <span class="checkbox__content mod-main">
-                  <svg width="16" height="16" aria-hidden="true" class="checkbox__content-icon">
-                    <use xlink:href="#checkbox-checked"></use>
-                  </svg>
-                </span>
-                <span class="checkbox__text mod-main">Я соглашаюсь на получение консультации по переносу номера</span>
-              </label>
-            </div>
-          </form>
+      <div class="gl__page-content rates-preview__content-wrapper">
+        <div class="rates-preview__content ">
+          <div class="rates-preview__content-subtitle">Разбавляем жару освежающими скидками</div>
+          <div class="rates-preview__content-caption">Смартфоны Redmi со скидкой до 4 000 руб.</div>
+          <button type="button" class="gl__main-btn rates-preview__btn js-open-send-request-modal"
+                  data-tariff-name="Заявка на кешбек">
+            Подробнее
+          </button>
         </div>
     
-        <div class="rates-preview__img-wrapper fly-top-block__img-wrapper">
-          <img src="img/fly-old-number-page/cards.png" alt="" class="rates-preview__img fly-top-block__image">
-        </div>
-      </div>
-    </section>
-
-    <section class="how-receive" id="transition-host">
-      <div class="gl__page-content">
-        <h2 class="gl__title">
-          Переход в Летай от другого оператора с сохранением номера
-        </h2>
-    
-        <ul class="how-receive__steps-wrapper">
-          <li class="how-receive__step-item mod-flex">
-            <div class="how-receive__step-item-num">1</div>
-            <div>
-              <div class="how-receive__step-item-caption">
-                Заявка
-              </div>
-              <div class="how-receive__step-item-value">
-                Оставьте заявку на сайте, и мы поможем вам подобрать тариф. Скоро позвоним!
-              </div>
-            </div>
-          </li>
-          <li class="how-receive__step-item mod-flex">
-            <div class="how-receive__step-item-num">2</div>
-            <div>
-              <div class="how-receive__step-item-caption">
-                Доставка
-              </div>
-              <div class="how-receive__step-item-value">
-                Доставим SIM-карту с временным номером бесплатно в удобное для вас время
-              </div>
-            </div>
-          </li>
-          <li class="how-receive__step-item mod-flex">
-            <div class="how-receive__step-item-num">3</div>
-            <div>
-              <div class="how-receive__step-item-caption">
-                Готово
-              </div>
-              <div class="how-receive__step-item-value">
-                Через 8 дней бесплатно переключим ваш текущий номер на SIM-карту
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="order-call mod-giv-month-section" id="order-call-host">
-      <div class="gl__page-content">
-        <div class="order-call__content">
-          <div class="order-call__content-wrapper">
-            <div>
-              <h2 class="gl__title mod-white">Дарим месяц без абонентской платы</h2>
-              <p class="order-call__text">
-                Стоимость перехода – 0 рублей.
-              </p>
-            </div>
-            <button type="button" class="gl__main-btn mod-white">Перейти</button>
-          </div>
-    
-          <img src="img/fly-old-number-page/smiling-people.png" alt="" class="order-call__img">
-        </div>
-      </div>
-    </section>
-
-    <section class="faq" id="faq-host">
-      <div class="gl__page-content">
-          <h2 class="gl__title">Вопросы и ответы</h2>
-    
-        <ul class="faq__list-wrapper">
-            <li class="faq__item">
-              <button type="button" class="faq__item-btn-wrapper gl__drop-menu-btn js-drop-menu-btn">
-                <svg width="24" height="24" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
-                  <use xlink:href="#arrow-down"></use>
-                </svg>
-                Как перенести свой номер на «Летай»?
-              </button>
-          
-                <div class="faq__item-content-wrapper gl__drop-menu">
-                    <p class="faq__item-content-text">Для настройки Интернет и MMS в телефоне:</p>
-                    <p class="faq__item-content-text">1. пункт 1</p>
-                    <p class="faq__item-content-text">2. пункт 2</p>
-                    <p class="faq__item-content-text">3. пункт 3</p>
-                </div>
-          
-            </li>
-            <li class="faq__item">
-              <button type="button" class="faq__item-btn-wrapper gl__drop-menu-btn js-drop-menu-btn">
-                <svg width="24" height="24" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
-                  <use xlink:href="#arrow-down"></use>
-                </svg>
-                Что проверить перед переходом на «Летай»?
-              </button>
-          
-                <div class="faq__item-content-wrapper gl__drop-menu">
-                    <p class="faq__item-content-text">Для настройки Интернет и MMS в телефоне:</p>
-                    <p class="faq__item-content-text">1. пункт 1</p>
-                    <p class="faq__item-content-text">2. пункт 2</p>
-                    <p class="faq__item-content-text">3. пункт 3</p>
-                </div>
-          
-            </li>
-            <li class="faq__item">
-              <button type="button" class="faq__item-btn-wrapper gl__drop-menu-btn js-drop-menu-btn">
-                <svg width="24" height="24" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
-                  <use xlink:href="#arrow-down"></use>
-                </svg>
-                Что проверить перед переходом на «Летай»?
-              </button>
-          
-                <div class="faq__item-content-wrapper gl__drop-menu">
-                    <p class="faq__item-content-text">Для настройки Интернет и MMS в телефоне:</p>
-                    <p class="faq__item-content-text">1. пункт 1</p>
-                    <p class="faq__item-content-text">2. пункт 2</p>
-                    <p class="faq__item-content-text">3. пункт 3</p>
-                </div>
-          
-            </li>
-        </ul>
-    
-          <a href="" class="faq__link-show-all">
-            Все вопросы и ответы
-            <svg width="20" height="20" aria-hidden="true" class="faq__link-show-all-icon">
-              <use xlink:href="#arrow-right"></use>
-            </svg>
-          </a>
-      </div>
-    </section>
-
-    <section class="application" id="application-host">
-      <img src="img/main-page/application/background.svg" alt="" class="application__background">
-      <div class="gl__page-content">
-        <div class="application__content">
-    
-            <h2 class="gl__title application__title">Не нашли ответа на свой вопрос?</h2>
-    
-            <div class="application__subtitle mod-no-answer">
-              Напишите нам или позвоните по телефону
-            </div>
-    
-            <a href="tel:+78432222222" class="application__tel">(843) 222-22-22</a>
-    
-            <form class="application__form mod-no-answer" data-need-validation data-parsley-validate data-parsley-focus="none">
-              <div class="application__form-item mod-no-answer">
-                <!--
-                  ___Обязательные поля___
-                  type - html-тип инута
-                  name - обязательно префикс - род.компонент (н-р services-tel)
-                  placeholder
-                
-                  ___Необязательные поля___
-                  required (true/false) - обязательно для заполнения
-                  inputTitle - заголовок НАД инпутом
-                  phoneMask (true/false) - маска для телефона
-                  minLength - деф-2
-                  maxLength - деф-none
-                  id - обычный id, например для первого пароля
-                  parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
-                  parsleyType - для валидации (н-р email)
-                -->
-                
-                <label class="gl-input__wrapper js-input-text">
-                  <input type="text"
-                         class="gl-input__input "
-                         placeholder="Ваше имя"
-                         name="application-name"
-                
-                         data-parsley-required=""
-                
-                         data-parsley-minlength="2"
-                
-                
-                
-                
-                  >
-                </label>
-              </div>
-              <div class="application__form-item mod-no-answer">
-                <!--
-                  ___Обязательные поля___
-                  type - html-тип инута
-                  name - обязательно префикс - род.компонент (н-р services-tel)
-                  placeholder
-                
-                  ___Необязательные поля___
-                  required (true/false) - обязательно для заполнения
-                  inputTitle - заголовок НАД инпутом
-                  phoneMask (true/false) - маска для телефона
-                  minLength - деф-2
-                  maxLength - деф-none
-                  id - обычный id, например для первого пароля
-                  parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
-                  parsleyType - для валидации (н-р email)
-                -->
-                
-                <label class="gl-input__wrapper js-input-tel">
-                  <input type="tel"
-                         class="gl-input__input js-phone-input"
-                         placeholder="+7 (___) ___-__-__"
-                         name="application-tel"
-                
-                         data-parsley-required=""
-                
-                         data-parsley-minlength="2"
-                
-                
-                
-                
-                  >
-                </label>
-              </div>
-              <div class="application__form-item mod-no-answer">
-                <!--
-                  ___Обязательные поля___
-                  name - обязательно префикс - род.компонент (н-р services-tel)
-                  placeholder
-                
-                  ___Необязательные поля___
-                  required (true/false) - обязательно для заполнения
-                  minLength - деф-2
-                  maxLength - деф-none
-                -->
-                
-                <label>
-                  <textarea class="gl-input__input mod-textarea"
-                            placeholder="Ваш вопрос"
-                            name="application-question"
-                            data-parsley-required=""
-                
-                            data-parsley-minlength="2"
-                
-                ></textarea>
-                </label>
-              </div>
-              <div class="application__btn-wrapper mod-no-answer">
-                <button type="submit" class="gl__main-btn application__btn">Отправить</button>
-              </div>
-            </form>
+        <div class="rates-preview__img-wrapper">
+            <img src="img/4g-services/rates-preview/rates-preview-desk.jpg" alt="" class="rates-preview__img gl__sm-hide">
+            <img src="img/4g-services/rates-preview/rates-preview-tablet.jpg" alt="" class="rates-preview__img gl__sm-show">
         </div>
       </div>
     </section>
@@ -1160,7 +821,7 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/fly-old-number-page.js"></script>
+  <script src="js/4g-services-page.js"></script>
   <script src="assets/js/backend.js"></script>
 </div>
 </body>

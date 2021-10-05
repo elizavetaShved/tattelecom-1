@@ -2812,6 +2812,32 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
         right: 0;
         height: calc(100% + 2rem * 2);
         max-width: 60%; } }
+  .rates-preview.mod-4g-services {
+    background-color: #CEA06C;
+    z-index: 1; }
+    @media screen and (max-width: 767px) {
+      .rates-preview.mod-4g-services .rates-preview__img-wrapper {
+        height: 20.2rem; } }
+    .rates-preview.mod-4g-services .rates-preview__img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      z-index: -1; }
+      @media screen and (max-width: 767px) {
+        .rates-preview.mod-4g-services .rates-preview__img {
+          height: 20.2rem; } }
+    .rates-preview.mod-4g-services .rates-preview__content-subtitle {
+      text-transform: none; }
+      @media screen and (min-width: 768px) {
+        .rates-preview.mod-4g-services .rates-preview__content-subtitle {
+          text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.54); } }
+    @media screen and (min-width: 768px) {
+      .rates-preview.mod-4g-services .rates-preview__content-caption {
+        text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.54); } }
 
 .rates-preview__img-wrapper {
   display: -webkit-box;

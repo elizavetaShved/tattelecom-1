@@ -19,6 +19,9 @@
       {{#if imgMobile}}
         <img src="{{ img }}" alt="" class="rates-preview__img gl__xxs-hide">
         <img src="{{ imgMobile }}" alt="" class="rates-preview__img gl__xxs-show">
+      {{else if imgTablet}}
+        <img src="{{ img }}" alt="" class="rates-preview__img gl__sm-hide">
+        <img src="{{ imgTablet }}" alt="" class="rates-preview__img gl__sm-show">
       {{else}}
         <img src="{{ img }}" alt="" class="rates-preview__img">
       {{/if}}

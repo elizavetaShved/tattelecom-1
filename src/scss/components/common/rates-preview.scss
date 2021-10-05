@@ -92,6 +92,45 @@ $padding-content: 2rem;
       }
     }
   }
+
+  &.mod-4g-services {
+    background-color: #CEA06C;
+    z-index: 1;
+
+    .rates-preview__img-wrapper {
+      @include for-sm-down {
+        height: 20.2rem;
+      }
+    }
+
+    .rates-preview__img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+
+      @include for-sm-down {
+        height: 20.2rem;
+      }
+    }
+
+    .rates-preview__content-subtitle {
+      text-transform: none;
+
+      @include for-sm-up {
+        text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.54);
+      }
+    }
+
+    .rates-preview__content-caption {
+      @include for-sm-up {
+        text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.54);
+      }
+    }
+  }
 }
 
 .rates-preview__img-wrapper {

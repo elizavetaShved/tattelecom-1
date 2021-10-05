@@ -13,7 +13,8 @@ module.exports = {
     ['beautiful-phone-page']: './src/js/pages/beautiful-phone-page.js',
     ['applications-page']: './src/js/pages/applications-page.js',
     ['tv-online-page']: './src/js/pages/tv-online-page.js',
-    ['child-nearby-page']: './src/js/pages/child-nearby-page.js'
+    ['child-nearby-page']: './src/js/pages/child-nearby-page.js',
+    ['4g-services-page']: './src/js/pages/4g-services-page.js'
   },
   output: {
     path: path.resolve(__dirname, './build/js'),
