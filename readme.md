@@ -11,6 +11,7 @@
   <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/fly-old-number.html">Перейти на Летай со своим номером</a>
   <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/beautiful-phone.html">Красивые номера</a>
   <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/applications.html">Приложения Таттелеком</a>
+  <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/tv-online.html">ТВ онлайн</a>
 </div>
 </body>
 

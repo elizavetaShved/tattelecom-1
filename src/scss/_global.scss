@@ -35,8 +35,8 @@ button {
   margin-right: auto;
 
   @include for-bg-down {
-    padding-left: var(--page-content-padding-bg-down);
-    padding-right: var(--page-content-padding-bg-down);
+    padding-left: var(--page-content-padding-bg);
+    padding-right: var(--page-content-padding-bg);
   }
 
   @include for-sm-down {

@@ -12,7 +12,7 @@
   }
 
   @include for-bg-down {
-    margin-right: calc(var(--page-content-padding-bg-down) * -1);
+    margin-right: calc(var(--page-content-padding-bg) * -1);
   }
 
   @include for-sm-down {
@@ -28,7 +28,7 @@
   display: flex;
 
   @include for-bg-down {
-    margin-right: var(--page-content-padding-bg-down);
+    margin-right: var(--page-content-padding-bg);
   }
 
   @include for-sm-down {

@@ -11,7 +11,8 @@ module.exports = {
     ['ussd-requests-page']: './src/js/pages/ussd-requests-page.js',
     ['fly-old-number-page']: './src/js/pages/fly-old-number-page.js',
     ['beautiful-phone-page']: './src/js/pages/beautiful-phone-page.js',
-    ['applications-page']: './src/js/pages/applications-page.js'
+    ['applications-page']: './src/js/pages/applications-page.js',
+    ['tv-online-page']: './src/js/pages/tv-online-page.js'
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

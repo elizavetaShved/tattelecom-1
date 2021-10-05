@@ -1,0 +1,53 @@
+{
+  "title": "ТВ онлайн",
+  "script": "tv-online-page",
+  "bread-crumbs": [
+    {
+      "name": "Частным клиентам"
+    },
+    {
+      "name": "Телевидение",
+      "noLink": true
+    }
+  ],
+  "useful-information": [
+    {
+      "img": "img/main-page/useful-information/image-1.jpg",
+      "title": "информация 1"
+    },
+    {
+      "img": "img/main-page/useful-information/image-2.jpg",
+      "title": "информация 2"
+    },
+    {
+      "img": "img/main-page/useful-information/image-3.jpg",
+      "title": "информация 3"
+    }
+  ],
+  "tv-list": [
+    {
+      "name": "TMTV",
+      "img": "img/tv-online-page/logo-1.png"
+    },
+    {
+      "name": "Кунел",
+      "img": "img/tv-online-page/logo-2.png"
+    },
+    {
+      "name": "ТНВ",
+      "img": "img/tv-online-page/logo-3.png"
+    },
+    {
+      "name": "Татарстан 24",
+      "img": "img/tv-online-page/logo-4.png"
+    },
+    {
+      "name": "ЭФИР",
+      "img": "img/tv-online-page/logo-5.png"
+    },
+    {
+      "name": "Майдан",
+      "img": "img/tv-online-page/logo-6.png"
+    }
+  ]
+}

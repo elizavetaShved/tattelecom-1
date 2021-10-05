@@ -1,0 +1,165 @@
+.tv-online {
+  padding: 4rem 0;
+
+  @include for-sm-down {
+    padding: 2rem 0 0;
+    margin-bottom: 4rem;
+  }
+}
+
+.tv-online__list-container {
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  overflow: auto;
+  margin-bottom: 3.2rem;
+
+  @include for-md-down {
+    border: none;
+    width: 100vw;
+    margin: 0 calc(var(--page-content-padding-bg) * -1);
+    padding: 0 var(--page-content-padding-bg);
+  }
+
+  @include for-sm-down {
+    margin: 0 calc(var(--page-content-padding-small) * -1);
+    padding: 0 var(--page-content-padding-small);
+  }
+}
+
+.tv-online__list-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.tv-online__item-link {
+  padding: 1.8rem 3.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 14rem;
+  transition: transform 300ms;
+
+  @include for-sm-down {
+    padding: 1.2rem 1.6rem;
+    height: 11rem;
+  }
+
+  &:hover {
+    transform: translateY(-1.6rem);
+  }
+}
+
+.tv-online__item-image {
+  max-height: 6.2rem;
+  margin-bottom: 1.2rem;
+
+  @include for-sm-down {
+    max-height: 5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.tv-online__item-caption {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.tv-online__broadcast-container {
+  display: flex;
+
+  @include for-md-down {
+    flex-direction: column-reverse;
+  }
+
+  @include for-sm-down {
+    margin: 0 calc(var(--page-content-padding-small) * -1);
+    background-color: var(--border-color);
+    padding-bottom: 3.6rem;
+  }
+}
+
+.tv-online__broadcast-iframe {
+  width: 70%;
+  height: 55rem;
+  flex: 0 0 70%;
+
+  @include for-mx-down {
+    height: calc((100vw - var(--page-content-padding-fl) * 2) * .38);
+  }
+
+  @include for-bg-down {
+    height: calc((100vw - var(--page-content-padding-bg) * 2) * .38);
+  }
+
+  @include for-md-down {
+    width: 100%;
+    flex: auto;
+    height: calc((100vw - var(--page-content-padding-bg) * 2) * .56);
+  }
+
+  @include for-sm-down {
+    height: calc((100vw - var(--page-content-padding-small) * 2) * .56);
+    padding: 0 var(--page-content-padding-small);
+  }
+
+  @include for-xxs-down {
+    height: calc((100vw - var(--page-content-padding-xxs) * 2) * .56);
+    padding: 0 var(--page-content-padding-xxs)
+  }
+}
+
+.tv-online__broadcast-hint-wrapper {
+  background-color: var(--border-color);
+  padding: 3rem 3.2rem;
+  width: 30%;
+  flex: 1 1 30%;
+
+  @include for-md-down {
+    width: 100%;
+    flex: auto;
+  }
+}
+
+.tv-online__broadcast-logo {
+  height: 7.6rem;
+  margin-bottom: 4.2rem;
+}
+
+.tv-online__broadcast-mark {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  text-transform: uppercase;
+  margin-bottom: 2.8rem;
+  padding-left: 2.4rem;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #E84735;
+  }
+}
+
+.tv-online__broadcast-caption {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  margin-bottom: .6rem;
+}
+
+.tv-online__broadcast-time {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+  color: var(--main-grey-color);
+}
