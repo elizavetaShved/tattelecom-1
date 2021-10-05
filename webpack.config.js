@@ -12,7 +12,8 @@ module.exports = {
     ['fly-old-number-page']: './src/js/pages/fly-old-number-page.js',
     ['beautiful-phone-page']: './src/js/pages/beautiful-phone-page.js',
     ['applications-page']: './src/js/pages/applications-page.js',
-    ['tv-online-page']: './src/js/pages/tv-online-page.js'
+    ['tv-online-page']: './src/js/pages/tv-online-page.js',
+    ['child-nearby-page']: './src/js/pages/child-nearby-page.js'
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

@@ -1,0 +1,50 @@
+<section class="child-nearby" id="child-nearby-host">
+  <div class="gl__page-content">
+    <h2 class="gl__title">Ребенок рядом (Kaspersky Safe Kids)</h2>
+
+    <div class="child-nearby__grid-container">
+      <div class="child-nearby__what-block">
+        <h3 class="child-nearby__subtitle">
+          Что такое услуга "Ребенок рядом"?
+        </h3>
+        <div class="child-nearby__what-text">
+          Это услуга на базе приложения Kaspersky Safe Kids, которая обеспечивает безопасность детей в интернете и
+          помогает родителям ограничить доступ ребенка к нежелательным программам, сайтам и информации, регулировать
+          время, которое он проводит за экраном компьютера или мобильного устройства (смартфон, планшет), быть в курсе,
+          где находится ребенок, а также получать отчеты о том, какие сайты он посещает и что ищет в интернете.
+        </div>
+      </div>
+
+      <div class="child-nearby__how-block">
+        <h3 class="child-nearby__subtitle">
+          Как услуга "Ребенок рядом" помогает Вам?
+        </h3>
+
+        <ul class="child-nearby__how-list">
+          {{#each how-list }}
+            <li class="child-nearby__how-item">
+              <img src="{{ this.img }}" alt="" class="child-nearby__how-item-icon">
+              <div class="child-nearby__how-item-text">{{ this.text }}</div>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="child-nearby__price-block">
+        <h3 class="child-nearby__subtitle">
+          Стоимость услуги
+        </h3>
+        <ul class="child-nearby__price-list">
+          {{#each price-list }}
+            <li class="child-nearby__price-item">
+              <div class="child-nearby__price-item-caption">{{ this.caption }}</div>
+              <div class="child-nearby__price-item-value">
+                <span class="number">{{ this.valueNum }}</span> {{this.valueUnit }}
+              </div>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

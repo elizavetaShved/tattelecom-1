@@ -12,6 +12,7 @@
   <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/beautiful-phone.html">Красивые номера</a>
   <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/applications.html">Приложения Таттелеком</a>
   <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/tv-online.html">ТВ онлайн</a>
+  <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/child-nearby.html">Ребенок рядом</a>
 </div>
 </body>
 
