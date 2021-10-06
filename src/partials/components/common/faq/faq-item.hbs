@@ -8,22 +8,26 @@
     </button>
 
     {{#if this.text }}
-      <div class="faq__item-content-wrapper gl__drop-menu">
-        {{#each this.text }}
-          <p class="faq__item-content-text">{{ this }}</p>
-        {{/each}}
+      <div class="faq__item-content-wrapper gl__drop-menu-container js-drop-menu-container">
+        <div class="gl__drop-menu js-drop-menu">
+          {{#each this.text }}
+            <p class="faq__item-content-text">{{ this }}</p>
+          {{/each}}
+        </div>
       </div>
     {{/if}}
 
     {{#if this.flexs }}
-      <ul class="faq__flexs-list gl__drop-menu">
-        {{#each this.flexs }}
-          <li class="faq__flexs-item">
-            <div class="faq__flexs-item-caption">{{ this.caption }}</div>
-            <div class="faq__flexs-item-value">{{ this.value }}</div>
-          </li>
-        {{/each}}
-      </ul>
+      <div class="faq__flexs-list gl__drop-menu-container js-drop-menu-container">
+        <ul class="gl__drop-menu js-drop-menu">
+          {{#each this.flexs }}
+            <li class="faq__flexs-item">
+              <div class="faq__flexs-item-caption">{{ this.caption }}</div>
+              <div class="faq__flexs-item-value">{{ this.value }}</div>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
     {{/if}}
   </li>
 {{/each}}

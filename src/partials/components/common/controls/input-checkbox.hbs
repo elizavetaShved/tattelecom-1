@@ -19,10 +19,27 @@
          checked
     {{/if}}
   >
-  <span class="checkbox__content {{#if isModal}}mod-modal{{else}}mod-main{{/if}}">
+  <span class="checkbox__content
+    {{#if isModal}}
+      mod-modal
+    {{else if isFilter}}
+      mod-filter
+    {{else}}
+      mod-main
+    {{/if}}">
+
     <svg width="16" height="16" aria-hidden="true" class="checkbox__content-icon">
       <use xlink:href="#checkbox-checked"></use>
     </svg>
   </span>
-  <span class="checkbox__text {{#if isModal}}mod-modal{{else}}mod-main{{/if}}">{{ caption }}</span>
+  <span class="checkbox__text
+    {{#if isModal}}
+      mod-modal
+    {{else if isFilter}}
+      mod-filter
+    {{else}}
+      mod-main
+    {{/if}}">
+    {{ caption }}
+  </span>
 </label>

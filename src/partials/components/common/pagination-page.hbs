@@ -1,0 +1,18 @@
+<div class="pagination-page__pages-main-container js-pagination-page">
+  <button type="button" class="pagination-page__pages-btn pagination-page__btn-nav mod-prev js-slider-btn-prev">
+    <span class="pagination-page__btn-nav-content"></span>
+  </button>
+  <div class="swiper-container js-swiper-container-custom">
+    <div class="pagination-page__pages-wrapper swiper-wrapper">
+      {{#each pageNumbers }}
+        <label class="pagination-page__pages-item swiper-slide">
+          <input type="radio" class="pagination-page__pages-radio" name="phone-list-page">
+          <span class="pagination-page__pages-btn pagination-page__pages-radio-content">{{ this }}</span>
+        </label>
+      {{/each}}
+    </div>
+  </div>
+  <button type="button" class="pagination-page__pages-btn pagination-page__btn-nav mod-next js-slider-btn-next">
+    <span class="pagination-page__btn-nav-content"></span>
+  </button>
+</div>

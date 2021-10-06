@@ -7,6 +7,10 @@
       border-color: var(--main-color);
     }
   }
+
+  & + & {
+    margin-top: 2.2rem;
+  }
 }
 
 .checkbox {
@@ -45,6 +49,15 @@
       fill: #007BC3;;
     }
   }
+
+  &.mod-filter {
+    width: 1.4rem;
+    flex: 0 0 1.4rem;
+    height: 1.4rem;
+    border-radius: 2px;
+    border: 1px solid var(--main-grey-color);
+    margin-right: 1.4rem;
+  }
 }
 
 .checkbox__content-icon {
@@ -64,7 +77,7 @@
   font-size: 14px;
   line-height: 2.2rem;
   letter-spacing: 0.02em;
-  padding-top: .2rem;
+  padding-top: 2px;
   user-select: none;
 
   &.mod-main {
@@ -73,5 +86,11 @@
 
   &.mod-modal {
     color: var(--grey-text);
+  }
+
+  &.mod-filter {
+    line-height: 1.6rem;
+    user-select: auto;
+    padding-top: 0;
   }
 }

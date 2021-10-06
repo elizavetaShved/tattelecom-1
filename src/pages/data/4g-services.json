@@ -8,5 +8,213 @@
     {
       "name": "4G Устройства"
     }
+  ],
+  "filters": [
+    {
+      "title": "Цена",
+      "isSlider": true,
+      "inputName": "price",
+      "from": "2990",
+      "to": "21490",
+      "placeholderFrom": "от 2 990",
+      "placeholderTo": "до 21 490"
+    },
+    {
+      "title": "Бренд",
+      "isCheckboxList": true,
+      "checkboxList": [
+        {
+          "caption": "HUAWEI",
+          "inputName": "filter-brand"
+        },
+        {
+          "caption": "SAMSUNG",
+          "inputName": "filter-brand"
+        },
+        {
+          "caption": "XIAOMI",
+          "inputName": "filter-brand"
+        },
+        {
+          "caption": "OPPO",
+          "inputName": "filter-brand"
+        },
+        {
+          "caption": "HONOR",
+          "inputName": "filter-brand"
+        },
+        {
+          "caption": "другое",
+          "inputName": "filter-brand"
+        }
+      ]
+    },
+    {
+      "title": "Тип устройства",
+      "isCheckboxList": true,
+      "checkboxList": [
+        {
+          "caption": "Смартфоны",
+          "inputName": "filter-device-type"
+        },
+        {
+          "caption": "Планшеты",
+          "inputName": "filter-device-type"
+        },
+        {
+          "caption": "Телефоны",
+          "inputName": "filter-device-type"
+        },
+        {
+          "caption": "другое",
+          "inputName": "filter-device-type"
+        }
+      ]
+    },
+    {
+      "title": "Диагональ экрана",
+      "titleHint": "(дюймы)",
+      "isSlider": true,
+      "inputName": "diagonal",
+      "from": "1.6",
+      "to": "3.5",
+      "placeholderFrom": "от 1.6",
+      "placeholderTo": "до 3.5"
+    },
+    {
+      "title": "Объем встроенной памяти",
+      "titleHint": "(ГБ)",
+      "isSlider": true,
+      "inputName": "memory-capacity",
+      "from": "4",
+      "to": "128",
+      "placeholderFrom": "от 4",
+      "placeholderTo": "до 128"
+    },
+    {
+      "title": "Объем оперативной памяти",
+      "titleHint": "(ГБ)",
+      "isSlider": true,
+      "inputName": "memory-capacity",
+      "from": "0.5",
+      "to": "8",
+      "placeholderFrom": "от 0.5",
+      "placeholderTo": "до 8"
+    },
+    {
+      "title": "Емкость аккумулятора",
+      "titleHint": "(мАч)",
+      "isSlider": true,
+      "inputName": "battery-capacity",
+      "from": "10000",
+      "to": "10000",
+      "placeholderFrom": "от 1 000",
+      "placeholderTo": "до 10 000"
+    },
+    {
+      "title": "Количество SIM-карт",
+      "isCheckboxList": true,
+      "checkboxList": [
+        {
+          "caption": "1 SIM",
+          "inputName": "sim-cards"
+        },
+        {
+          "caption": "2 SIM",
+          "inputName": "sim-cards"
+        }
+      ]
+    },
+    {
+      "title": "Количество камер",
+      "isCheckboxList": true,
+      "checkboxList": [
+        {
+          "caption": "1 камера",
+          "inputName": "cameras"
+        },
+        {
+          "caption": "2 камеры",
+          "inputName": "cameras"
+        },
+        {
+          "caption": "3 камеры",
+          "inputName": "cameras"
+        },
+        {
+          "caption": "4 камеры",
+          "inputName": "cameras"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "img": "img/catalog/phone-1.png",
+      "isNew": true,
+      "price": "7 990",
+      "isInstallments": true,
+      "name": "Samsung Galaxy A01 (A015)"
+    },
+    {
+      "img": "img/catalog/phone-2.png",
+      "price": "17 490",
+      "isInstallments": true,
+      "name": "Samsung Galaxy M21 (M215)"
+    },
+    {
+      "img": "img/catalog/phone-3.png",
+      "price": "20 490",
+      "isInstallments": true,
+      "name": "Samsung A315 Galaxy A31 128GB 2020"
+    },
+    {
+      "img": "img/catalog/phone-1.png",
+      "price": "7 990",
+      "isInstallments": true,
+      "name": "Samsung Galaxy A01 (A015)"
+    },
+    {
+      "img": "img/catalog/phone-2.png",
+      "price": "17 490",
+      "isInstallments": true,
+      "name": "Samsung Galaxy M21 (M215)"
+    },
+    {
+      "img": "img/catalog/phone-3.png",
+      "price": "20 490",
+      "isInstallments": true,
+      "name": "Samsung A315 Galaxy A31 128GB 2020"
+    },
+    {
+      "img": "img/catalog/phone-1.png",
+      "price": "7 990",
+      "isInstallments": true,
+      "name": "Samsung Galaxy A01 (A015)"
+    },
+    {
+      "img": "img/catalog/phone-2.png",
+      "price": "17 490",
+      "isInstallments": true,
+      "name": "Samsung Galaxy M21 (M215)"
+    },
+    {
+      "img": "img/catalog/phone-3.png",
+      "price": "20 490",
+      "isInstallments": true,
+      "name": "Samsung A315 Galaxy A31 128GB 2020"
+    }
+  ],
+  "pageNumbers": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
   ]
 }

@@ -108,34 +108,32 @@ button {
 }
 
 .gl__drop-menu-btn {
-  + .gl__drop-menu {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 500ms;
-  }
-
-  .gl__drop-menu-icon {
-    transform: rotate(0);
-    transition: transform 250ms;
-  }
-
   &.mod-open {
-    + .gl__drop-menu {
-      max-height: 50rem; // todo костыль анимации
-      pointer-events: auto;
-    }
-
     .gl__drop-menu-icon {
       transform: rotate(-180deg);
     }
   }
+}
+
+.gl__drop-menu-icon {
+  transform: rotate(0);
+  transition: transform 250ms;
+}
+
+.gl__drop-menu-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 400ms;
+
+  &.mod-open {
+    //max-height: ??; // высчитывается через js
+    pointer-events: auto;
+  }
 
   &:not(.mod-open) {
-    + .gl__drop-menu {
-      padding-top: 0;
-      padding-bottom: 0;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }

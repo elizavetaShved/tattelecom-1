@@ -57,6 +57,28 @@
       color: #000;
     }
   }
+
+  &.mod-grey {
+    background-color: var(--border-color);
+    color: var(--main-text-color);
+
+    &:hover {
+      background-color: var(--main-grey-color);
+      color: #fff;
+    }
+  }
+}
+
+.gl__secondary-btn {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  padding: 1.4rem;
+  display: block;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .gl__link-show-all {

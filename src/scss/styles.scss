@@ -7,13 +7,22 @@
 @import 'vendor';
 @import 'extends';
 
-@import 'components/common/bread-crumbs';
-@import 'components/common/slider';
 @import 'components/common/controls/menu-tabs';
 @import 'components/common/controls/checkbox';
 @import 'components/common/controls/input-main';
 @import 'components/common/controls/select';
+@import 'components/common/controls/filter-controls';
+
+@import 'components/common/bread-crumbs';
+@import 'components/common/slider';
 @import 'components/common/instructions';
+@import 'components/common/rates-preview';
+@import 'components/common/rates-list';
+@import 'components/common/services';
+@import 'components/common/useful-information';
+@import 'components/common/application';
+@import 'components/common/faq';
+@import 'components/common/pagination-page';
 
 @import 'components/layout/header';
 @import 'components/layout/footer';
@@ -23,13 +32,6 @@
 @import 'components/layout/modals/modal-thanks';
 @import 'components/layout/modals/send-request';
 @import 'components/layout/modals/about-tariff';
-
-@import 'components/common/rates-preview';
-@import 'components/common/rates-list';
-@import 'components/common/services';
-@import 'components/common/useful-information';
-@import 'components/common/application';
-@import 'components/common/faq';
 
 @import 'components/main-page/news-list';
 
@@ -60,3 +62,5 @@
 @import 'components/tv-online-page/tv-online';
 
 @import 'components/child-nearby-page/child-nearby';
+
+@import 'components/4g-services-page/catalog';

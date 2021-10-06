@@ -1,0 +1,36 @@
+<!--
+  __Обязательные поля__
+  name - для инпута
+  from - минимальное число
+  to - максимальное число
+
+  __Необязательные поля__
+  placeholderFrom, placeholderTo - для инпутов
+-->
+
+<div class="filter-uislider">
+
+  <div class="filter-uislider__inputs">
+    <label class="filter-uislider__input-wrapper">
+      <input type="number"
+             class="filter-uislider__input js-filter-input-from"
+             name="{{ name }}-filter-from"
+             data-from="{{ from }}"
+        {{#if placeholderFrom }}
+             placeholder="{{ placeholderFrom }}"
+        {{/if}}>
+    </label>
+
+    <label class="filter-uislider__input-wrapper">
+      <input type="number"
+             class="filter-uislider__input js-filter-input-to"
+             name="{{ name }}-filter-to"
+             data-to="{{ to }}"
+        {{#if placeholderTo }}
+             placeholder="{{ placeholderTo }}"
+        {{/if}}>
+    </label>
+  </div>
+
+  <div class="filter-uislider__uislider js-filter-uislider"></div>
+</div>

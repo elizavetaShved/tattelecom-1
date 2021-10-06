@@ -1,0 +1,109 @@
+<section class="catalog" id="catalog-host">
+  <div class="gl__page-content">
+    <h2 class="gl__title">Каталог товаров</h2>
+
+    <div class="catalog__content">
+      <form class="catalog__form gl__hg-hide">
+        <ul class="catalog__filter-list">
+          {{#each filters }}
+            <li class="catalog__filter-item">
+              <button type="button"
+                      class="catalog__filter-title-wrapper gl__drop-menu-btn js-drop-menu-btn js-drop-menu-leave-open">
+            <span class="catalog__filter-title">
+              {{ this.title }}
+              {{#if titleHint }}
+                <span class="hint">
+                  {{ titleHint }}
+                </span>
+              {{/if}}
+            </span>
+                <svg width="24" height="24" aria-hidden="true" class="gl__drop-menu-icon">
+                  <use xlink:href="#arrow-down"></use>
+                </svg>
+              </button>
+
+              <div class="gl__drop-menu-container js-drop-menu-container">
+                <div class="catalog__filter-item-content gl__drop-menu js-drop-menu">
+                  {{#if isSlider }}
+                    {{> common/controls/filter-uislider
+                      name=this.inputName
+                      from=this.from
+                      to=this.to
+                      placeholderFrom=this.placeholderFrom
+                      placeholdeTo=this.placeholdeTo }}
+
+                  {{ else if isCheckboxList }}
+                    {{#each this.checkboxList }}
+                      {{> common/controls/input-checkbox caption=this.caption name=this.inputName isFilter=true }}
+                    {{/each}}
+                  {{/if}}
+                </div>
+              </div>
+            </li>
+          {{/each}}
+        </ul>
+
+        <button type="submit" class="catalog__form-btn gl__main-btn">
+          подобрать
+        </button>
+
+        <button type="button" class="catalog__form-btn gl__main-btn mod-grey">
+          Сбросить фильтр
+        </button>
+      </form>
+
+      <button type="button" class="catalog__filter-btn gl__hg-show">
+        <svg width="20" height="20" aria-hidden="true" class="catalog__filter-btn-icon">
+          <use xlink:href="#settigs"></use>
+        </svg>
+        Фильтровать
+      </button>
+
+      <div class="catalog__products-container">
+        <ul class="catalog__products-list">
+          {{#each products }}
+            <li class="catalog__products-item">
+              {{#if isNew}}
+                <div class="catalog__products-item-mark">
+                  <div class="catalog__products-item-mark-content">
+                    Новинка
+                  </div>
+                </div>
+              {{/if}}
+              <div class="catalog__products-item-image-wrapper">
+                <img src="{{ this.img }}" alt="" class="catalog__products-item-image">
+              </div>
+              <div>
+                <div class="catalog__products-item-price">
+                  <span class="number">{{ this.price }}</span> ₽
+                </div>
+                <div class="catalog__products-item-name-wrapper">
+                  {{#if isInstallments }}
+                    <div class="catalog__products-item-installments">Доступно в рассрочку</div>
+                  {{/if}}
+                  <div class="catalog__products-item-name">
+                    {{ this.name }}
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog__products-btns-wrapper">
+                <button type="button" class="catalog__products-btn gl__main-btn">Заказать</button>
+                <button type="button" class="catalog__products-btn gl__secondary-btn gl__sm-hide">Подробнее</button>
+              </div>
+            </li>
+          {{/each}}
+        </ul>
+
+        <div class="catalog__products-pagination-wrapper">
+          <div class="gl__sm-hide">
+            {{> common/pagination-page pageNumbers=pageNumbers }}
+          </div>
+          <button type="button" class="catalog__products-pagination-btn gl__main-btn gl__sm-show">
+            Загрузить еще
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

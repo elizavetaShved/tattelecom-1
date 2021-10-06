@@ -42,23 +42,8 @@
         <span>из 120</span>
       </div>
 
-      <div class="phone-list__pages-main-container gl__sm-hide">
-        <button type="button" class="phone-list__pages-btn phone-list__btn-nav mod-prev js-slider-btn-prev">
-          <span class="phone-list__btn-nav-content"></span>
-        </button>
-        <div class="swiper-container js-swiper-container-custom">
-          <div class="phone-list__pages-wrapper swiper-wrapper">
-            {{#each pageNumbers }}
-              <label class="phone-list__pages-item swiper-slide">
-                <input type="radio" class="phone-list__pages-radio" name="phone-list-page">
-                <span class="phone-list__pages-btn phone-list__pages-radio-content">{{ this }}</span>
-              </label>
-            {{/each}}
-          </div>
-        </div>
-        <button type="button" class="phone-list__pages-btn phone-list__btn-nav mod-next js-slider-btn-next">
-          <span class="phone-list__btn-nav-content"></span>
-        </button>
+      <div class="gl__sm-hide">
+        {{> common/pagination-page pageNumbers=pageNumbers }}
       </div>
 
       <button type="button" class="phone-list__upload-btn gl__main-btn mod-orange-transparent gl__sm-show">

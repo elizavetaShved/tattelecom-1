@@ -1,0 +1,75 @@
+.filter-uislider {
+  padding-bottom: 5px;
+}
+
+.filter-uislider__inputs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.filter-uislider__input {
+  padding: .3rem 1rem;
+  border: 1px solid rgba(166, 166, 166, 0.3);
+  border-radius: 2px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.02em;
+  width: 100%;
+
+  &::placeholder {
+    color: var(--main-grey-color);
+  }
+}
+
+.filter-uislider__uislider {
+  // весь слайдер
+  &.noUi-horizontal {
+    height: 2px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+
+    // линия
+    .noUi-connects, .noUi-connect {
+      background: var(--main-text-color);
+    }
+
+    // бегунки
+    .noUi-handle {
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background: var(--main-text-color);
+      box-shadow: none;
+      border: none;
+      top: -4px;
+      cursor: pointer;
+      &:before {
+        content: none;
+      }
+      &:after {
+        content: none;
+      }
+
+      // левый
+      &.noUi-handle-lower {
+        right: -10px;
+      }
+
+      // правый
+      &.noUi-handle-upper {
+        right: 0;
+      }
+    }
+
+    // кнопка бегунка
+    .noUi-touch-area {
+      padding: 20px;
+      transform: translate(-25%, -25%);
+    }
+  }
+}
