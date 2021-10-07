@@ -21,11 +21,18 @@
   height: 35.6rem;
 
   @include for-md-down {
-    height: 20rem;
+    height: 22rem;
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+
+  @include for-sm-down {
+    height: 16rem;
   }
 
   @include for-xs-down {
-    height: 9.4rem;
+    height: 13rem;
   }
 }
 
@@ -35,6 +42,12 @@
   @include for-md-down {
     width: 100%;
     justify-content: flex-end;
+    position: relative;
+    height: 13rem;
+  }
+
+  @include for-xs-down {
+    height: 9.4rem;
   }
 }
 
@@ -46,6 +59,7 @@
 
 .fly-top-block__content-wrapper__content {
   max-width: 50%;
+  overflow: hidden;
 
   @include for-hg-down {
     max-width: 70%;
@@ -85,12 +99,16 @@
   @include for-md-down {
     grid-template-columns: 3fr 2fr;
   }
+
+  @include for-sm-down {
+    grid-template-columns: 1fr;
+  }
 }
 
 .fly-top-block__btn {
   @include for-md-down {
     width: min-content;
-    grid-row: 3;
+    grid-row: 4;
     margin-top: 1rem;
   }
 }
@@ -100,7 +118,11 @@
   margin-top: 4rem;
 
   @include for-md-down {
-    grid-row: 2;
+    grid-row: 3;
     margin-top: 1rem;
+  }
+
+  @include for-sm-down {
+    grid-column: 1;
   }
 }

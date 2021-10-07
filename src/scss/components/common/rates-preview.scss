@@ -2,6 +2,7 @@ $padding-content: 2rem;
 
 .rates-preview {
   position: relative;
+  z-index: 1;
   height: 47rem;
   color: #fff;
   padding: $padding-content 0;
@@ -37,11 +38,49 @@ $padding-content: 2rem;
   &.mod-cashback {
     background-color: #FDDD66;
 
+    .rates-preview__content {
+      max-width: 56%;
+    }
+
+    .rates-preview__content-subtitle {
+      font-size: 5.6rem;
+      font-weight: 900;
+      line-height: 6.6rem;
+      max-width: 30rem;
+      margin-bottom: 3.4rem;
+
+      @include for-sm-down {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+    }
+
+    .rates-preview__content-caption-wrapper {
+      margin-bottom: 5rem;
+    }
+
+    .rates-preview__content-caption {
+      font-size: 4rem;
+      line-height: 5.2rem;
+
+      @include for-sm-down {
+        font-size: 2rem;
+        line-height: 2.6rem;
+      }
+    }
+
+    .rates-preview__img-wrapper {
+      @include for-sm-down {
+        margin-bottom: 0;
+      }
+    }
+
     @include for-sm-up {
       .rates-preview__img {
         position: absolute;
         bottom: 0;
         height: 100%;
+        z-index: -1;
       }
     }
 
@@ -195,7 +234,7 @@ $padding-content: 2rem;
 }
 
 .rates-preview__content-subtitle {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 4.4rem;
   line-height: 5.4rem;
   margin-bottom: 1.2rem;
@@ -208,16 +247,22 @@ $padding-content: 2rem;
   }
 }
 
+.rates-preview__content-caption-wrapper {
+  margin-bottom: 5.2rem;
+
+  @include for-sm-down {
+    margin-bottom: 2.8rem;
+  }
+}
+
 .rates-preview__content-caption {
   font-weight: 300;
   font-size: 2rem;
   line-height: 2.4rem;
-  margin-bottom: 5.2rem;
 
   @include for-sm-down {
     font-size: 1.4rem;
     line-height: 1.8rem;
-    margin-bottom: 2.8rem;
   }
 }
 

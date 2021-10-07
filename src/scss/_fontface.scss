@@ -1,26 +1,35 @@
 @font-face {
-  font-family: 'Golos';
-  src: url('../assets/fonts/subset-GolosText-Bold.woff2') format('woff2'),
-  url('../assets/fonts/subset-GolosText-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'MuseoSansCyrl';
+    src: url('../assets/fonts/subset-MuseoSansCyrl-900.woff2') format('woff2'),
+    url('../assets/fonts/subset-MuseoSansCyrl-900.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'Golos';
-  src: url('../assets/fonts/subset-GolosText-Medium.woff2') format('woff2'),
-  url('../assets/fonts/subset-GolosText-Medium.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'MuseoSansCyrl';
+    src: url('../assets/fonts/subset-MuseoSansCyrl-700.woff2') format('woff2'),
+    url('../assets/fonts/subset-MuseoSansCyrl-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'Golos';
-  src: url('../assets/fonts/subset-GolosText-Regular.woff2') format('woff2'),
-  url('../assets/fonts/subset-GolosText-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'MuseoSansCyrl';
+    src: url('../assets/fonts/subset-MuseoSansCyrl-500.woff2') format('woff2'),
+    url('../assets/fonts/subset-MuseoSansCyrl-500.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: url('../assets/fonts/subset-MuseoSansCyrl-300.woff2') format('woff2'),
+    url('../assets/fonts/subset-MuseoSansCyrl-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }

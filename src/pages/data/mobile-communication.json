@@ -10,6 +10,15 @@
       "noLink": true
     }
   ],
+  "rates-preview": [
+    {
+      "pageName": "mobile-communication",
+      "img": "img/mobile-communication/rates-preview/rates-preview-1.jpg",
+      "ratesName": "БЕЗЛИМИТНЫЙ ИНТЕРНЕТ 4G",
+      "ratesCaption": ["за 240 руб/мес"],
+      "btnText": "Подробнее"
+    }
+  ],
   "cashback": [
     {
       "title": "Вместе выгодно",

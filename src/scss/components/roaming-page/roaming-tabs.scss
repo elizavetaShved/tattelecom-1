@@ -1,9 +1,8 @@
 .roaming-tabs {
-  height: 13.6rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10.6rem;
 
   @include for-sm-down {
-    height: auto;
+    margin-bottom: 0;
   }
 }
 

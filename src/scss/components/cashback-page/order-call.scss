@@ -36,10 +36,14 @@
     .order-call__img {
       position: absolute;
       bottom: 0;
-      right: 0;
+      right: 7rem;
       height: 48rem;
       margin-bottom: 0;
       z-index: -1;
+
+      @include for-mx-down {
+        right: 0;
+      }
 
       @include for-sm-down {
         height: 27.6rem;
@@ -49,8 +53,10 @@
 }
 
 .order-call-page-content {
-  padding: 0;
-  margin: 0;
+  @include for-sm-down {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .order-call__content {

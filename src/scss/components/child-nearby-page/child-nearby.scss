@@ -64,6 +64,7 @@
 .child-nearby__how-item {
   display: flex;
   padding: 1.2rem 0;
+  padding-left: 1rem;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -110,7 +111,7 @@
 }
 
 .child-nearby__price-item-value {
-  font-weight: 600;
+  font-weight: 700;
   margin-left: 2rem;
 
   .number {

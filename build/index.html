@@ -307,26 +307,28 @@
 
   <main class="gl__layout-content">
     
-      <section class="rates-preview mod-main-page"
-               style="background-image: url(img/main-page/rates-preview/rates-preview-1.jpg)"
-               id="rates-preview-host">
+        <section class="rates-preview mod-main-page"
+                 style="background-image: url(img/main-page/rates-preview/rates-preview-1.jpg)"
+                 id="rates-preview-host">
       
-        <div class="gl__page-content rates-preview__content-wrapper">
-          <div class="rates-preview__content ">
-              <div class="rates-preview__content-title">Тариф «Летай.Оранжевый»</div>
-            <div class="rates-preview__content-subtitle">Выжми скорость</div>
-            <div class="rates-preview__content-caption">Мощный интернет + ТВ 160 каналов</div>
-            <button type="button" class="gl__main-btn rates-preview__btn js-open-send-request-modal"
-                    data-tariff-name="Заявка на кешбек">
-              Подробнее
-            </button>
+          <div class="gl__page-content rates-preview__content-wrapper">
+            <div class="rates-preview__content ">
+                <div class="rates-preview__content-title">ТТариф “Летай.Оранжевый”</div>
+              <div class="rates-preview__content-subtitle">Выжми скорость</div>
+              <div class="rates-preview__content-caption-wrapper">
+                  <div class="rates-preview__content-caption">Мощный интернет + ТВ 160 каналов</div>
+              </div>
+              <button type="button" class="gl__main-btn rates-preview__btn js-open-send-request-modal"
+                      data-tariff-name="Заявка на кешбек">
+                Подробнее
+              </button>
+            </div>
+      
+            <div class="rates-preview__img-wrapper">
+                <img src="img/main-page/rates-preview/rates-preview-2.jpg" alt="" class="rates-preview__img">
+                    </div>
           </div>
-      
-          <div class="rates-preview__img-wrapper">
-              <img src="img/main-page/rates-preview/rates-preview-2.jpg" alt="" class="rates-preview__img">
-                </div>
-        </div>
-      </section>
+        </section>
       <section class="rates-list" id="rates-list-host">
         <div class="gl__page-content">
           <div class="gl__title-head">
@@ -351,7 +353,7 @@
                       <img src="img/main-page/rates-list/hit-mark.svg" alt="" class="rates-list__slide-hit-mark">
                     <div class="rates-list__slide-content">
                       <div class="rates-list__slide-up">
-                        <div class="rates-list__slide-title">Интернет + ТВ за 0 минут</div>
+                        <div class="rates-list__slide-title">Интернет + ТВ за 0 рублей</div>
                         <div class="rates-list__slide-subtitle">Перейти по USSD *116*201#</div>
       
                         <ul class="rates-list__slide-conditions-list">
@@ -393,13 +395,14 @@
       
                         <div class="rates-list__slide-btns-wrapper">
                           <button type="button"
-                                  data-tariff-name="Интернет + ТВ за 0 минут"
+                                  data-tariff-name="Интернет + ТВ за 0 рублей"
                                   data-prise="333"
                                   class="rates-list__slide-btn-plug gl__main-btn js-open-send-request-modal">
                             Подключить
                           </button>
                           <div class="rates-list__slide-link-detailed-wrapper">
-                            <button class="gl__secondary-btn js-open-about-tariff-modal">
+                            <button class="gl__secondary-btn js-open-about-tariff-modal
+                              mod-white">
                               Подробнее о тарифе
                             </button>
                           </div>
@@ -448,7 +451,8 @@
                             Подключить
                           </button>
                           <div class="rates-list__slide-link-detailed-wrapper">
-                            <button class="gl__secondary-btn js-open-about-tariff-modal">
+                            <button class="gl__secondary-btn js-open-about-tariff-modal
+                              ">
                               Подробнее о тарифе
                             </button>
                           </div>
@@ -507,7 +511,8 @@
                             Подключить
                           </button>
                           <div class="rates-list__slide-link-detailed-wrapper">
-                            <button class="gl__secondary-btn js-open-about-tariff-modal">
+                            <button class="gl__secondary-btn js-open-about-tariff-modal
+                              ">
                               Подробнее о тарифе
                             </button>
                           </div>
@@ -556,7 +561,8 @@
                             Подключить
                           </button>
                           <div class="rates-list__slide-link-detailed-wrapper">
-                            <button class="gl__secondary-btn js-open-about-tariff-modal">
+                            <button class="gl__secondary-btn js-open-about-tariff-modal
+                              ">
                               Подробнее о тарифе
                             </button>
                           </div>
@@ -615,7 +621,8 @@
                             Подключить
                           </button>
                           <div class="rates-list__slide-link-detailed-wrapper">
-                            <button class="gl__secondary-btn js-open-about-tariff-modal">
+                            <button class="gl__secondary-btn js-open-about-tariff-modal
+                              ">
                               Подробнее о тарифе
                             </button>
                           </div>
@@ -1074,19 +1081,20 @@
               </ul>
             </div>
       
-      <!--      <div class="gl__bg-hide">
-        <button type="button" class="gl-slider__slider-btn mod-prev js-slider-btn-prev">
-          <svg width="26" height="26" aria-hidden="true" class="gl-slider__slider-btn-icon">
-            <use xlink:href="#arrow-left"></use>
-          </svg>
-        </button>
-        <button type="button" class="gl-slider__slider-btn mod-next js-slider-btn-next">
-          <svg width="26" height="26" aria-hidden="true" class="gl-slider__slider-btn-icon">
-            <use xlink:href="#arrow-right"></use>
-          </svg>
-        </button>
-      </div>
-      -->
+            <div class="gl__hg-show">
+              <div class="gl__bg-hide">
+                <button type="button" class="gl-slider__slider-btn mod-prev js-slider-btn-prev">
+                  <svg width="26" height="26" aria-hidden="true" class="gl-slider__slider-btn-icon">
+                    <use xlink:href="#arrow-left"></use>
+                  </svg>
+                </button>
+                <button type="button" class="gl-slider__slider-btn mod-next js-slider-btn-next">
+                  <svg width="26" height="26" aria-hidden="true" class="gl-slider__slider-btn-icon">
+                    <use xlink:href="#arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1189,8 +1197,8 @@
                   <use xlink:href="#arrow-down"></use>
                 </svg>
               </div>
-              <div class="gl__drop-menu-container js-drop-menu-container">
-                <ul class="footer__links-list gl__drop-menu js-drop-menu">
+              <div class="footer__links-list gl__drop-menu-container js-drop-menu-container">
+                <ul class="gl__drop-menu js-drop-menu">
                   <li class="footer__link-item">
                     <a href="" class="footer__link">О компании</a>
                   </li>
@@ -1220,8 +1228,8 @@
                   <use xlink:href="#arrow-down"></use>
                 </svg>
               </div>
-              <div class="gl__drop-menu-container js-drop-menu-container">
-                <ul class="footer__links-list gl__drop-menu js-drop-menu">
+              <div class="footer__links-list gl__drop-menu-container js-drop-menu-container">
+                <ul class="gl__drop-menu js-drop-menu">
                   <li class="footer__link-item">
                     <a href="" class="footer__link">Мобильная связь</a>
                   </li>
@@ -1251,8 +1259,8 @@
                   <use xlink:href="#arrow-down"></use>
                 </svg>
               </div>
-              <div class="gl__drop-menu-container js-drop-menu-container">
-                <ul class="footer__links-list gl__drop-menu js-drop-menu">
+              <div class="footer__links-list gl__drop-menu-container js-drop-menu-container">
+                <ul class="gl__drop-menu js-drop-menu">
                   <li class="footer__link-item">
                     <a href="" class="footer__link">Решения для бизнеса</a>
                   </li>
@@ -1282,8 +1290,8 @@
                   <use xlink:href="#arrow-down"></use>
                 </svg>
               </div>
-              <div class="gl__drop-menu-container js-drop-menu-container">
-                <ul class="footer__links-list gl__drop-menu js-drop-menu">
+              <div class="footer__links-list gl__drop-menu-container js-drop-menu-container">
+                <ul class="gl__drop-menu js-drop-menu">
                   <li class="footer__link-item">
                     <a href="" class="footer__link">Поставщикам</a>
                   </li>
@@ -1347,7 +1355,7 @@
           <div class="footer__bottom-block-agreement-wrapper">
             <div class="footer__agreement-text">
               Продолжая использовать наш сайт, вы даете согласие на обработку файлов Cookies и других пользовательских
-              данных, в соответствии с Политикой конфиденциальности.
+              данных, в соответствии с <a href="" class="footer__agreement-link">Политикой конфиденциальности</a>.
             </div>
     
             <div class="footer__copyright">

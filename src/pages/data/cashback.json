@@ -13,6 +13,17 @@
       "noLink": true
     }
   ],
+  "rates-preview": [
+    {
+      "pageName": "cashback",
+      "img": "img/cashback-page/rates-preview/rates-preview-desk.jpg",
+      "imgMobile": "img/cashback-page/rates-preview/rates-preview-mobile.jpg",
+      "isWhiteBackground": true,
+      "ratesName": "КЭШБЭК 20%",
+      "ratesCaption": ["НА МОБИЛЬНУЮ СВЯЗЬ", "по программе «Вместе выгодно 2.0»"],
+      "btnText": "Заказать кэшбэк"
+    }
+  ],
   "faq": [
     {
       "title": "Как получить автоматические настройки Интернет и MMS?",

@@ -40,6 +40,17 @@
 .footer__top-grid-item {
   grid-row: 1 / 3;
 
+  @include for-xs-down {
+    grid-column: auto !important;
+    border-bottom: 1px solid var(--border-color);
+
+    &:first-child {
+      .footer__top-grid-item {
+        border-top: 1px solid var(--border-color);
+      }
+    }
+  }
+
   &.mod-first-half-row {
     grid-row: 1 / 2;
   }
@@ -61,16 +72,6 @@
 
   @include for-bg-down {
     grid-row: auto !important;
-  }
-
-  @include for-xs-down {
-    grid-column: auto !important;
-
-    &:first-child {
-      .footer__link-title {
-        border-top: 1px solid var(--border-color);
-      }
-    }
   }
 }
 
@@ -95,7 +96,6 @@
   @include for-xs-down {
     margin-bottom: 0;
     padding: 2rem 0;
-    border-bottom: 1px solid var(--border-color);
     position: relative;
   }
 }
@@ -118,7 +118,7 @@
 .footer__links-list {
   margin: -.7rem;
 
-  @include for-sm-up {
+  @include for-xs-up {
     max-height: none !important;
   }
 
@@ -186,6 +186,10 @@
     line-height: 2.2rem;
     padding: 1rem;
   }
+}
+
+.footer__bottom-block-agreement-wrapper {
+  max-width: 76.2rem;
 }
 
 .footer__agreement-text {
@@ -262,4 +266,13 @@
 .footer__contact-social-icon {
   height: 4rem;
   fill: var(--main-grey-color);
+}
+
+.footer__agreement-link {
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
 }

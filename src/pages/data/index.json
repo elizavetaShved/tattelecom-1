@@ -1,10 +1,21 @@
-{
+ {
   "title": "Таттелеком",
   "script": "main-page",
+   "rates-preview": [
+     {
+       "pageName": "main-page",
+       "imgBackgroundDesk": "img/main-page/rates-preview/rates-preview-1.jpg",
+       "img": "img/main-page/rates-preview/rates-preview-2.jpg",
+       "ratesSecondName": "ТТариф “Летай.Оранжевый”",
+       "ratesName": "Выжми скорость",
+       "ratesCaption": ["Мощный интернет + ТВ 160 каналов"],
+       "btnText": "Подробнее"
+     }
+   ],
   "rates-list": [
     {
       "isHit": true,
-      "title": "Интернет + ТВ за 0 минут",
+      "title": "Интернет + ТВ за 0 рублей",
       "subtitle": "Перейти по USSD *116*201#",
       "unlimited": true,
       "calls": [

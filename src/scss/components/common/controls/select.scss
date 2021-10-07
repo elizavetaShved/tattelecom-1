@@ -3,6 +3,10 @@
   position: relative;
   width: 100%;
 
+  .parsley-errors-list {
+    display: none;
+  }
+
   &.parsley-error {
     .choices__inner {
       border-color: red !important;
@@ -38,7 +42,7 @@
     }
     .choices__inner {
       border-radius: 4px;
-      padding: 1.4rem !important;
+      padding: 1.2rem !important;
       min-height: auto;
     }
 
@@ -93,6 +97,14 @@
         opacity: 1;
       }
     }
+
+    // открытый селект
+    &.is-open {
+      .choices__inner {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
   }
 
   // placeholder
@@ -101,7 +113,8 @@
     padding: 2rem !important;
     box-shadow: 0 0.266004px 20px rgba(153, 152, 168, 0.17);
     border-radius: 10px;
-    border: none;
+    border: 2px solid transparent;
+    transition: border-color 250ms;
   }
 
   // options-list

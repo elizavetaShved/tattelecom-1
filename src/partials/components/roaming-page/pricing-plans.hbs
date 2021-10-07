@@ -7,7 +7,11 @@
           {{#each pricing-plans}}
           <li class="pricing-plans__item">
             <div class="pricing-plans__item-title">{{ this.title }}</div>
-            <div class="pricing-plans__item-subtitle">{{ subtitle }}</div>
+            <div class="pricing-plans__item-subtitle">
+              {{#each subtitle }}
+                <div>{{ this }}</div>
+              {{/each}}
+            </div>
 
             {{#each this.plans}}
               <ul class="pricing-plans__item-plans-list">

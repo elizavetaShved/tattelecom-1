@@ -2,6 +2,10 @@
   background-color: var(--border-color);
   padding: 8rem 0;
 
+  ::selection {
+    @extend %select-white-background;
+  }
+
   .gl-input__input, .services__btn-submit {
     height: 5.4rem;
   }
@@ -30,6 +34,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: initial;
 
   @include for-xs-down {
     padding: 2rem
@@ -97,6 +102,11 @@
 .services__item-info-title-icon {
   height: 6rem;
   margin-right: 2rem;
+}
+
+.services__form-wrapper {
+  color: var(--main-text-color);
+  z-index: 2;
 }
 
 .services__form-inputs-wrapper {

@@ -27,10 +27,14 @@
   width: 100%;
 
   & + & {
-    margin-left: 2rem;
+    margin-top: 4rem;
   }
 
   &.mod-flex {
+    & + & {
+      margin-left: 2rem;
+    }
+
     @include for-md-down {
       display: flex;
 
@@ -62,7 +66,7 @@
   margin-bottom: 3rem;
 
   &.mod-orange {
-    background-color: var(--main-color);
+    background: linear-gradient(99.54deg, #FA7007 3.54%, #FA4907 73.5%);
     color: #fff;
   }
 
@@ -82,6 +86,7 @@
   letter-spacing: 0.015em;
   margin-bottom: 1.6rem;
   color: var(--main-color);
+  font-weight: 700;
 
   @include for-md-down {
     font-size: 2rem;

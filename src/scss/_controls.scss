@@ -1,6 +1,6 @@
 .gl__main-btn {
   padding: 1.4rem 4.4rem;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.6rem;
   line-height: 2rem;
   background: var(--main-color);
@@ -76,6 +76,10 @@
   padding: 1.4rem;
   display: block;
 
+  &.mod-white {
+    color: #fff;
+  }
+
   &:hover {
     text-decoration: underline;
   }
@@ -102,6 +106,7 @@
 
 .gl__link-arrow-container {
   display: block;
+
   &:hover {
     .gl__link-arrow-link {
       opacity: 1;

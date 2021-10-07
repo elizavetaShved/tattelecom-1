@@ -19,6 +19,7 @@
 
 .pricing-plans__list {
   max-width: 87.6rem;
+  width: 100%;
 
   @include for-md-down {
     max-width: none;
@@ -55,6 +56,7 @@
   letter-spacing: 0.015em;
   color: var(--main-grey-color);
   margin-bottom: 1.4rem;
+  max-width: 77.2rem;
 
   @include for-sm-down {
     font-size: 1.6rem;
