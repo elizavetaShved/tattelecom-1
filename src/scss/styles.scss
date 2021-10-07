@@ -23,6 +23,7 @@
 @import 'components/common/application';
 @import 'components/common/faq';
 @import 'components/common/pagination-page';
+@import 'components/common/product-item';
 
 @import 'components/layout/header';
 @import 'components/layout/footer';
@@ -64,3 +65,6 @@
 @import 'components/child-nearby-page/child-nearby';
 
 @import 'components/4g-services-page/catalog';
+
+@import 'components/product-page/product-features';
+@import 'components/product-page/recommend';

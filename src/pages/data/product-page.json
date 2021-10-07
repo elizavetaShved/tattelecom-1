@@ -1,0 +1,113 @@
+{
+  "title": "4G услуги / Samsung Galaxy A51 (A515)",
+  "script": "product-page",
+  "bread-crumbs": [
+    {
+      "name": "Частным клиентам"
+    },
+    {
+      "name": "4G Устройства"
+    },
+    {
+      "name": "Samsung Galaxy A51 (A515)",
+      "noLink": true
+    }
+  ],
+  "product-features-list": [
+    {
+      "caption": "Версия ОС",
+      "value": "Android"
+    },
+    {
+      "caption": "Количество SIM-карт",
+      "value": "2"
+    },
+    {
+      "caption": "Размеры (ШxВxТ)",
+      "value": "73.60x158.50x7.90 мм"
+    },
+    {
+      "caption": "Объем встроенной памяти",
+      "value": "64 Гб"
+    },
+    {
+      "caption": "Объем оперативной памяти",
+      "value": "4 Гб"
+    },
+    {
+      "caption": "Стандарт",
+      "value": "3G, 4G LTE, Wi-Fi, Bluetooth, NFC"
+    },
+    {
+      "caption": "Емкость аккумулятора",
+      "value": "4000 мА/ч"
+    },
+    {
+      "caption": "Экран",
+      "value": "6.5, 2400x1080"
+    },
+    {
+      "caption": "Четыре камеры",
+      "value": "48 МП/12 МП/5 МП/5 МП"
+    }
+  ],
+  "products": [
+    {
+      "img": "img/catalog/phone-1.png",
+      "isNew": true,
+      "price": "20 490",
+      "isInstallments": true,
+      "name": "Samsung A315 Galaxy A31 128GB 2020"
+    },
+    {
+      "img": "img/catalog/phone-2.png",
+      "isHit": true,
+      "price": "7 990",
+      "isInstallments": true,
+      "name": "Samsung Galaxy A01 (A015)"
+    },
+    {
+      "img": "img/catalog/phone-3.png",
+      "isNew": true,
+      "price": "17 490",
+      "isInstallments": true,
+      "name": "Samsung Galaxy M21 (M215)"
+    },
+    {
+      "img": "img/catalog/phone-1.png",
+      "price": "Samsung A315 Galaxy A31 128GB 2020",
+      "isInstallments": true,
+      "name": "Samsung A315 Galaxy A31 128GB 2020"
+    },
+    {
+      "img": "img/catalog/phone-2.png",
+      "price": "17 490",
+      "isInstallments": true,
+      "name": "Samsung Galaxy M21 (M215)"
+    },
+    {
+      "img": "img/catalog/phone-3.png",
+      "price": "20 490",
+      "isInstallments": true,
+      "name": "Samsung A315 Galaxy A31 128GB 2020"
+    },
+    {
+      "img": "img/catalog/phone-1.png",
+      "price": "7 990",
+      "isInstallments": true,
+      "name": "Samsung Galaxy A01 (A015)"
+    },
+    {
+      "img": "img/catalog/phone-2.png",
+      "price": "17 490",
+      "isInstallments": true,
+      "name": "Samsung Galaxy M21 (M215)"
+    },
+    {
+      "img": "img/catalog/phone-3.png",
+      "price": "20 490",
+      "isInstallments": true,
+      "name": "Samsung A315 Galaxy A31 128GB 2020"
+    }
+  ]
+}

@@ -1,5 +1,12 @@
 import { Slider } from '../components/slider';
 
+// 1ур. gl-slider + js-swiper-4 - общая обертка:
+// 2ур. gl-slider__container + swiper-container + js-swiper-container-4
+// 3ур. gl-slider__wrapper + swiper-wrapper
+// 4ур. swiper-slide
+// 2ур. {{> common/controls/btns-slider }} - кнопки
+
+
 export default function initSlider(numSlide) {
   const sliderContainerElements = Array.from(document.querySelectorAll(`.js-swiper-container-${ numSlide }`));
 

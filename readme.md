@@ -14,6 +14,7 @@
   <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/tv-online.html">ТВ онлайн</a>
   <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/child-nearby.html">Ребенок рядом</a>
   <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/4g-services.html">4G услуги</a>
+  <a class="hint__link" style="display: block; padding: 4px; font-size: 20px" href="/tattelecom-1/build/product-page.html">Samsung Galaxy A51 (A515)</a>
 </div>
 </body>
 

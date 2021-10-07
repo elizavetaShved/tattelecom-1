@@ -1,0 +1,53 @@
+<section class="recommend" id="recommend-host">
+  <div class="gl__page-content">
+    <h2 class="gl__title">Рекомендум также</h2>
+
+    <div class="gl-slider js-swiper-4">
+      <div class="gl-slider__container swiper-container js-swiper-container-4">
+        <ul class="gl-slider__wrapper swiper-wrapper">
+          {{#each products }}
+            <li class="product-item mod-no-adapt swiper-slide">
+              {{#if isNew}}
+                <div class="product-item__mark mod-no-adapt">
+                  <div class="product-item__mark-content mod-new mod-no-adapt">
+                    Новинка
+                  </div>
+                </div>
+              {{/if}}
+              {{#if isHit }}
+                <div class="product-item__mark mod-no-adapt">
+                  <div class="product-item__mark-content mod-hit mod-no-adapt">
+                    ХИТ
+                  </div>
+                </div>
+              {{/if}}
+              <div class="product-item__image-wrapper mod-no-adapt">
+                <img src="{{ this.img }}" alt="" class="product-item__image mod-no-adapt">
+              </div>
+              <div>
+                <div class="product-item__price mod-no-adapt">
+                  <span class="number mod-no-adapt">{{ this.price }}</span> ₽
+                </div>
+                <div class="product-item__name-wrapper mod-no-adapt">
+                  {{#if isInstallments }}
+                    <div class="product-item__installments mod-no-adapt">Доступно в рассрочку</div>
+                  {{/if}}
+                  <div class="product-item__name mod-no-adapt">
+                    {{ this.name }}
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-item__btn-wrapper">
+                <button type="button" class="product-item__btn gl__main-btn mod-no-adapt">Заказать</button>
+                <button type="button" class="product-item__btn gl__secondary-btn gl__sm-hide">Подробнее</button>
+              </div>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      {{> common/controls/btns-slider }}
+    </div>
+  </div>
+</section>

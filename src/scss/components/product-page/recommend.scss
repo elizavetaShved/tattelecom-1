@@ -1,0 +1,11 @@
+.recommend {
+  padding: 6rem 0 8rem;
+
+  @include for-sm-down {
+    padding: 3rem 0 4rem;
+  }
+}
+
+.recommend__products-list {
+
+}
