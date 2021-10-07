@@ -109,5 +109,16 @@
       "isInstallments": true,
       "name": "Samsung A315 Galaxy A31 128GB 2020"
     }
+  ],
+  "modal-point-issue-select": [
+    {
+      "name": "point-issue-select",
+      "isCity": true,
+      "required": true,
+      "placeholder": "Пункт выдачи",
+      "options": [
+        "Пункт 1", "Пункт 2", "Пункт 3"
+      ]
+    }
   ]
 }

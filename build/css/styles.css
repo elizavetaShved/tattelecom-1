@@ -4220,17 +4220,57 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
   margin-top: 3.2rem;
-  margin-bottom: 2.4rem; }
+  margin-bottom: 1.8rem; }
   @media screen and (max-width: 767px) {
     .send-request__form-inputs {
       grid-template-columns: 1fr;
       margin: 2rem 0; } }
 
+.send-request__form-select-wrapper {
+  margin-bottom: 2rem;
+  margin-top: .6rem; }
+
 .send-request__content-checkbox-wrapper {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  margin-top: .6rem; }
   @media screen and (max-width: 767px) {
     .send-request__content-checkbox-wrapper {
       margin-bottom: 3rem; } }
+
+.send-request__product-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.6rem 0 3rem;
+  border-bottom: 1px solid var(--border-color); }
+  .send-request__product-wrapper:not(.mod-show) {
+    display: none; }
+
+.send-request__product-img {
+  height: 16.4rem;
+  margin-right: 2rem; }
+
+.send-request__product-caption {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--main-grey-color);
+  margin-bottom: .4rem; }
+
+.send-request__product-value {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.015em;
+  margin-bottom: .4rem; }
+
+.send-request__product-price-wrapper {
+  font-size: 1.8rem;
+  line-height: 2.2rem; }
+
+.send-request__product-price {
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  margin-right: .4rem; }
 
 .about-tariff__list {
   margin-top: 4.6rem; }

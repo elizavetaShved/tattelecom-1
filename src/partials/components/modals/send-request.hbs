@@ -23,6 +23,17 @@
         </div>
       </div>
 
+      <div class="send-request__product-wrapper">
+        <img src="img" alt="" class="send-request__product-img">
+        <div>
+          <div class="send-request__product-caption">тип</div>
+          <div class="send-request__product-value">модель</div>
+          <div class="send-request__product-price-wrapper">
+            <span class="send-request__product-price">0</span>₽
+          </div>
+        </div>
+      </div>
+
       <form class="js-form-modal">
         <div class="send-request__form-inputs">
           {{> common/controls/input-main
@@ -38,6 +49,10 @@
             placeholder="+7 (___) ___-__-__"
             name="modal-send-request-tel"
           }}
+        </div>
+
+        <div class="send-request__form-select-wrapper">
+          {{> common/controls/select selects=modal-point-issue-select }}
         </div>
 
         <div class="send-request__content-checkbox-wrapper">

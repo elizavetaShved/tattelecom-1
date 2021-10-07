@@ -349,7 +349,13 @@
     
           <div class="product-features__price">21 490р.</div>
     
-          <button type="button" class="gl__main-btn product-features-btn-main">
+          <button type="button" class="gl__main-btn product-features-btn-main js-open-send-request-modal"
+                  data-tariff-name="Оформление заказа"
+                  data-product-img="img/product-page/tel.png"
+                  data-product-caption="Смартфон"
+                  data-product-value="Samsung Galaxy A51 (A515)"
+                  data-product-price="20 490"
+                  data-point-issue>
             Заказать
           </button>
     
@@ -956,6 +962,17 @@
           </div>
         </div>
   
+        <div class="send-request__product-wrapper">
+          <img src="img" alt="" class="send-request__product-img">
+          <div>
+            <div class="send-request__product-caption">тип</div>
+            <div class="send-request__product-value">модель</div>
+            <div class="send-request__product-price-wrapper">
+              <span class="send-request__product-price">0</span>₽
+            </div>
+          </div>
+        </div>
+  
         <form class="js-form-modal">
           <div class="send-request__form-inputs">
             <!--
@@ -1022,6 +1039,41 @@
             
               >
             </label>
+          </div>
+  
+          <div class="send-request__form-select-wrapper">
+            <!--
+              __Обязательные поля__
+              name - input name
+              options - опции
+            
+              __Необязательные поля__
+              selectTitle - заголовок
+              required - обязательно для заполнения
+              placeholder
+            -->
+              <div class="select">
+            
+                <div class="select__container" id="point-issue-select">
+                  <label class="select__wrapper mod-city">
+                      <span class="gl__input-mark-required"></span>
+                    <select class="gl__select js-custom-select"
+                            data-parsley-class-handler="#point-issue-select"
+                            name="point-issue-select"
+                            data-parsley-required="" data-parsley-trigger="change"
+                    >
+                        <option placeholder value="">Пункт выдачи</option>
+                          <option value="Пункт 1">Пункт 1</option>
+                          <option value="Пункт 2">Пункт 2</option>
+                          <option value="Пункт 3">Пункт 3</option>
+                    </select>
+                  </label>
+            
+                    <svg width="16" height="16" aria-hidden="true" class="select__search-icon">
+                      <use xlink:href="#search"></use>
+                    </svg>
+                </div>
+              </div>
           </div>
   
           <div class="send-request__content-checkbox-wrapper">
