@@ -8,17 +8,25 @@
       <img src="img/roaming/background-small.svg" alt="" class="roaming__background gl__sm-show">
     </div>
 
-    {{> roaming-page/roaming-tabs }}
+    <div class="js-menu-tabs-container">
+      {{> roaming-page/roaming-tabs }}
 
-    {{> roaming-page/pricing-plans }}
+      <div class="js-menu-tab-content gl__menu-tab-content" data-menu-russia>
+        {{> roaming-page/pricing-plans }}
 
-    {{> common/instructions }}
+        {{> common/instructions }}
 
-    {{> roaming-page/international-calls }}
+        {{> roaming-page/international-calls }}
 
-    {{> common/faq/section-faq }}
+        {{> common/faq/section-faq }}
 
-    {{> common/application noAnswer=true }}
+        {{> common/application noAnswer=true }}
+      </div>
+
+      <div class="js-menu-tab-content gl__menu-tab-content" data-menu-world>
+        world
+      </div>
+    </div>
 
   {{/content}}
 {{/extend}}

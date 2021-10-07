@@ -76,15 +76,18 @@
       "items": [
         {
           "itemName": "Мобильная связь",
+          "value": "mobile",
           "name": "services-adding-funds-account",
           "isChecked": true
         },
         {
           "itemName": "Интернет",
+          "value": "internet",
           "name": "services-adding-funds-account"
         },
         {
           "itemName": "Телевидение",
+          "value": "tv",
           "name": "services-adding-funds-account"
         }
       ]

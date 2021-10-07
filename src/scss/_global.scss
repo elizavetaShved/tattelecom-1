@@ -141,3 +141,9 @@ button {
 .gl__drop-menu {
   padding-bottom: 2rem;
 }
+
+.gl__menu-tab-content {
+  &:not(.mod-show) {
+    display: none;
+  }
+}

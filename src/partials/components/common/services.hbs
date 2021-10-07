@@ -1,39 +1,49 @@
 <section class="services" id="services-host">
   <div class="gl__page-content">
-    <ul class="services__list">
+    <ul class="services__list js-menu-tabs-container">
       <li class="services__item-wrapper gl__white-container">
-        <h3 class="services__item-info-title">Быстрое пополнение счета</h3>
+        <div>
+          <h3 class="services__item-info-title">Быстрое пополнение счета</h3>
 
-        {{> common/controls/menu-tabs menu-tabs=services-menu-tabs }}
+          {{> common/controls/menu-tabs menu-tabs=services-menu-tabs }}
 
-        <form class="services__form-wrapper" data-need-validation data-parsley-validate data-parsley-focus="none">
-          <div class="services__form-inputs-wrapper">
-            {{> common/controls/input-main
-              required=true
-              type="tel"
-              phoneMask=true
-              placeholder="+7 (___) ___-__-__"
-              inputTitle="Введите номер"
-              name="services-tel"
-            }}
-            {{> common/controls/input-main
-              required=true
-              type="number"
-              minLength="10"
-              maxLength="30000"
-              inputTitle="От 10 до 30 000 Р"
-              placeholder="Сумма"
-              name="services-summ"
-            }}
-            <div class="services__btn-submit-wrapper">
-              <button type="submit" class="gl__main-btn services__btn-submit">Продолжить</button>
+          <form class="services__form-wrapper gl__menu-tab-content js-menu-tab-content" data-menu-mobile data-need-validation data-parsley-validate data-parsley-focus="none">
+            <div class="services__form-inputs-wrapper">
+              {{> common/controls/input-main
+                required=true
+                type="tel"
+                phoneMask=true
+                placeholder="+7 (___) ___-__-__"
+                inputTitle="Введите номер"
+                name="services-tel"
+              }}
+              {{> common/controls/input-main
+                required=true
+                type="number"
+                minLength="10"
+                maxLength="30000"
+                inputTitle="От 10 до 30 000 Р"
+                placeholder="Сумма"
+                name="services-summ"
+              }}
+              <div class="services__btn-submit-wrapper">
+                <button type="submit" class="gl__main-btn services__btn-submit">Продолжить</button>
+              </div>
             </div>
-          </div>
+          </form>
 
-          <div class="services__form-hint">
-            Нажимая кнопку «Продолжить», вы принимаете условия пользовательского соглашения.
-          </div>
-        </form>
+          <form class="services__form-wrapper gl__menu-tab-content js-menu-tab-content" data-menu-internet data-need-validation data-parsley-validate data-parsley-focus="none">
+            Интернет
+          </form>
+
+          <form class="services__form-wrapper gl__menu-tab-content js-menu-tab-content" data-menu-tv data-need-validation data-parsley-validate data-parsley-focus="none">
+           Телевидение
+          </form>
+        </div>
+
+        <div class="services__form-hint">
+          Нажимая кнопку «Продолжить», вы принимаете условия пользовательского соглашения.
+        </div>
       </li>
 
       <li class="services__item-wrapper gl__white-container">

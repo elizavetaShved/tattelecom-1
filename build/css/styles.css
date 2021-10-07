@@ -480,6 +480,9 @@ button:hover svg {
 .gl__drop-menu {
   padding-bottom: 2rem; }
 
+.gl__menu-tab-content:not(.mod-show) {
+  display: none; }
+
 /**
  * Swiper 6.8.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -4626,9 +4629,10 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
   margin-bottom: 0; }
 
 .roaming-tabs {
-  margin-bottom: 10.6rem; }
+  height: 14rem; }
   @media screen and (max-width: 767px) {
     .roaming-tabs {
+      height: auto;
       margin-bottom: 0; } }
 
 .roaming-tabs__content {

@@ -19,11 +19,13 @@
       "items": [
         {
           "itemName": "Роуминг по России",
+          "value": "russia",
           "name": "roaming",
           "isChecked": true
         },
         {
           "itemName": "Роуминг по всему миру",
+          "value": "world",
           "name": "roaming"
         }
       ]
