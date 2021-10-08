@@ -1,0 +1,35 @@
+<section class="info-links" id="info-links-host">
+  <div class="gl__page-content">
+    <ul class="info-links__list">
+      {{#each info-links}}
+        <li class="info-links__item gl__white-container cashback__slide gl__link-arrow-container">
+          {{#if imgBackground }}
+            <img src="{{ this.imgBackground }}" alt="" class="cashback__slide-background">
+          {{/if}}
+          {{#if img }}
+            <img src="{{ this.img }}" alt="" class="cashback__slide-img info-links__slide-img">
+          {{/if}}
+          <div class="cashback__slide-content-wrapper">
+            <div class="cashback__slide-title info-links__slide-title {{#if blackTitle}}mod-black{{/if}} {{#if whiteTitle}}mod-white{{/if}}">
+              {{#each this.title }}
+                <div>{{ this }}</div>
+              {{/each}}
+            </div>
+
+            <div class="cashback__slide-text info-links__slide-text {{#if
+              whiteText}}mod-white{{/if}}">{{ this.text }}</div>
+          </div>
+
+          <a href="" class="cashback__slide-link {{#if whiteLink}}mod-white{{/if}}{{#if blackLink}}mod-black{{/if}}">
+            {{ linkText }}
+            {{#if linkWithArrow }}
+              <svg width="40" height="40" aria-hidden="true" class="cashback__slide-link-icon">
+                <use xlink:href="#arrow-line-right"></use>
+              </svg>
+            {{/if}}
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

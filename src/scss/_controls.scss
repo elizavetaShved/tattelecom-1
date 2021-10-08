@@ -155,3 +155,31 @@
   height: 3.2rem;
   fill: var(--main-color);
 }
+
+.gl__btn-settings {
+  padding: .6rem 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.02em;
+  background-color: var(--border-color);
+  color: var(--grey-text);
+  width: min-content;
+  margin-bottom: 2rem;
+  white-space: nowrap;
+
+  &.mod-right-icon {
+    flex-direction: row-reverse;
+
+    .gl__btn-settings-icon {
+      margin-right: 1.2rem;
+    }
+  }
+
+  .gl__btn-settings-icon {
+    margin-left: 1.2rem;
+    height: 2rem;
+    fill: var(--grey-text);
+  }
+}

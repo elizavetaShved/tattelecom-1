@@ -9,7 +9,11 @@
             <li class="swiper-slide gl__white-container cashback__slide gl__link-arrow-container">
               <img src="{{ this.img }}" alt="" class="cashback__slide-background">
               <div class="cashback__slide-content-wrapper">
-                <div class="cashback__slide-title">{{ this.title }}</div>
+                <div class="cashback__slide-title">
+                  {{#each this.title }}
+                    <div>{{this}}</div>
+                  {{/each}}
+                </div>
                 <div class="cashback__slide-text">{{ this.text }}</div>
               </div>
 

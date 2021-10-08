@@ -95,25 +95,6 @@
   }
 }
 
-.catalog__filter-btn {
-  padding: .6rem 1rem;
-  display: flex;
-  align-items: center;
-  font-size: 1.6rem;
-  line-height: 2.2rem;
-  letter-spacing: 0.02em;
-  background-color: var(--border-color);
-  color: var(--grey-text);
-  width: min-content;
-  margin-bottom: 2rem;
-}
-
-.catalog__filter-btn-icon {
-  height: 2rem;
-  margin-right: 1.2rem;
-  fill: var(--grey-text);
-}
-
 .catalog__products-pagination-btn {
   padding: 1rem 7.2rem;
 }

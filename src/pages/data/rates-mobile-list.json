@@ -1,0 +1,118 @@
+{
+  "title": "Тарифы мобильной связи",
+  "script": "rates-mobile-list-page",
+  "bread-crumbs": [
+    {
+      "name": "Частным клиентам"
+    },
+    {
+      "name": "Мобильная связь"
+    },
+    {
+      "name": "Тарифы",
+      "noLink": true
+    }
+  ],
+  "menuBtns": [
+    "Домашний интернет + ТВ + мобильная связь",
+    "Безлимитный интернет",
+    "Много звонков",
+    "Все и сразу",
+    "Детский",
+    "Для модемов",
+    "Для умных устройств"
+  ],
+  "rates-list": [
+    {
+      "isHit": true,
+      "title": "Интернет + ТВ за 0 рублей",
+      "subtitle": "Перейти по USSD *116*201#",
+      "unlimited": true,
+      "calls": [
+        "500 мин. звонки по РТ",
+        "300 мин. звонки по РФ",
+        "Безлимитные звонки на Летай"
+      ],
+      "opportunities": "Смартфоны в рассрочку Кешбек 20%",
+      "price": "333"
+    },
+    {
+      "title": "Много интернета",
+      "subtitle": "Перейти по USSD *116*204#",
+      "unlimited": true,
+      "calls": [
+        "200 мин. звонки по РТ"
+      ],
+      "opportunities": "Смартфоны в рассрочку Кешбек 20%",
+      "price": "240"
+    },
+    {
+      "title": "Много минут",
+      "subtitle": "Перейти по USSD *116*201#",
+      "unlimited": true,
+      "calls": [
+        "500 мин. звонки по РТ",
+        "300 мин. звонки по РФ",
+        "Безлимитные звонки на Летай"
+      ],
+      "opportunities": "Смартфоны в рассрочку Кешбек 20%",
+      "price": "350"
+    },
+    {
+      "title": "Много интернета",
+      "subtitle": "Перейти по USSD *116*204#",
+      "unlimited": true,
+      "calls": [
+        "200 мин. звонки по РТ"
+      ],
+      "opportunities": "Смартфоны в рассрочку Кешбек 20%",
+      "price": "240"
+    },
+    {
+      "title": "Много минут",
+      "subtitle": "Перейти по USSD *116*201#",
+      "unlimited": true,
+      "calls": [
+        "500 мин. звонки по РТ",
+        "300 мин. звонки по РФ",
+        "Безлимитные звонки на Летай"
+      ],
+      "opportunities": "Смартфоны в рассрочку Кешбек 20%",
+      "price": "350"
+    }
+  ],
+  "info-links": [
+    {
+      "title": ["Смартфоны в рассрочку"],
+      "text": "Рассрочка на приобретение мобильных устройств с поддержкой 4G.",
+      "img": "img/rates-mobile-list-page/img-2.png",
+      "linkText": "Выбрать смартфон",
+      "linkWithArrow": true,
+      "blackTitle": true,
+      "blackLink": true
+    },
+    {
+      "title": ["Вместе выгодно", "2.0"],
+      "text": "Подключите «Летай» и получайте кэшбэк 20%!",
+      "imgBackground": "img/rates-mobile-list-page/img-3.jpg",
+      "linkText": "Подробнее"
+    },
+    {
+      "title": ["Доставка SIM-карты бесплатно на дом"],
+      "text": "Рассрочка на приобретение мобильных устройств с поддержкой 4G.",
+      "imgBackground": "img/rates-mobile-list-page/img-1.jpg",
+      "linkText": "Заказать сим-карту",
+      "whiteTitle": true,
+      "whiteText": true,
+      "whiteLink": true
+    },
+    {
+      "title": ["Выбирайте красивые номера"],
+      "text": "Серебрянный, Золотой, Бронзовый",
+      "img": "img/rates-mobile-list-page/img-4.png",
+      "linkText": "Подобрать",
+      "linkWithArrow": true,
+      "blackLink": true
+    }
+  ]
+}

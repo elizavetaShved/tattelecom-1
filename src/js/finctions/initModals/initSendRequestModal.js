@@ -24,7 +24,7 @@ export default function initSendRequestModal() {
   const modalElem = document.querySelector('#modal-send-request-host');
   const dataTitleElem = modalElem.querySelector('.modal__title');
   const modalPriceWrapperElem = modalElem.querySelector('.send-request__price');
-  const modalPriceElem = modalElem.querySelector('.connect-tariff__price .number');
+  const modalPriceElem = modalElem.querySelector('.send-request__price .number');
 
   const modalProductWrapperElem = modalElem.querySelector('.send-request__product-wrapper');
   const modalProductImgElem = modalProductWrapperElem.querySelector('.send-request__product-img');

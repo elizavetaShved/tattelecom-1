@@ -3,7 +3,7 @@
     <h2 class="gl__title">Каталог товаров</h2>
 
     <div class="catalog__content">
-      <form class="catalog__form gl__hg-hide">
+      <form class="catalog__form gl__lg-hide">
         <ul class="catalog__filter-list">
           {{#each filters }}
             <li class="catalog__filter-item">
@@ -52,12 +52,9 @@
         </button>
       </form>
 
-      <button type="button" class="catalog__filter-btn gl__hg-show">
-        <svg width="20" height="20" aria-hidden="true" class="catalog__filter-btn-icon">
-          <use xlink:href="#settigs"></use>
-        </svg>
-        Фильтровать
-      </button>
+      <div class="gl__hg-show">
+        {{> common/btn-settings text="Фильтровать" iconIsRight=true }}
+      </div>
 
       <div class="catalog__products-container">
         <ul class="catalog__products-list">

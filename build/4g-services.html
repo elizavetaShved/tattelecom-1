@@ -358,7 +358,7 @@
         <h2 class="gl__title">Каталог товаров</h2>
     
         <div class="catalog__content">
-          <form class="catalog__form gl__hg-hide">
+          <form class="catalog__form gl__lg-hide">
             <ul class="catalog__filter-list">
                 <li class="catalog__filter-item">
                   <button type="button"
@@ -1166,12 +1166,19 @@
             </button>
           </form>
     
-          <button type="button" class="catalog__filter-btn gl__hg-show">
-            <svg width="20" height="20" aria-hidden="true" class="catalog__filter-btn-icon">
-              <use xlink:href="#settigs"></use>
-            </svg>
-            Фильтровать
-          </button>
+          <div class="gl__hg-show">
+            <!--
+              text - текст кнопки
+              iconIsRight - деф., иконка справа
+            -->
+            
+            <button type="button" class="gl__btn-settings mod-right-icon">
+              Фильтровать
+              <svg width="20" height="20" aria-hidden="true" class="gl__btn-settings-icon">
+                <use xlink:href="#settigs"></use>
+              </svg>
+            </button>
+          </div>
     
           <div class="catalog__products-container">
             <ul class="catalog__products-list">

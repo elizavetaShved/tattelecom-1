@@ -15,7 +15,8 @@ module.exports = {
     ['tv-online-page']: './src/js/pages/tv-online-page.js',
     ['child-nearby-page']: './src/js/pages/child-nearby-page.js',
     ['4g-services-page']: './src/js/pages/4g-services-page.js',
-    ['product-page']: './src/js/pages/product-page.js'
+    ['product-page']: './src/js/pages/product-page.js',
+    ['rates-mobile-list-page']: './src/js/pages/rates-mobile-list-page.js'
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

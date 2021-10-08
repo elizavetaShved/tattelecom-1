@@ -19,11 +19,22 @@
 .cashback__slide-background {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   height: 100%;
   min-width: 100%;
   object-fit: cover;
   z-index: -1;
+}
+
+.cashback__slide-img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3.6rem;
+  object-fit: contain;
+  z-index: -1;
+  height: 80%;
 }
 
 .cashback__slide-title {
@@ -32,15 +43,28 @@
   line-height: 3.6rem;
   color: var(--main-color);
   margin-bottom: 3.6rem;
-  max-width: 42%;
+  max-width: 52%;
+
+  &.mod-black {
+    color: var(--main-text-color);
+  }
+
+  &.mod-white {
+    color: #fff;
+  }
 }
 
 .cashback__slide-text {
+  font-weight: 300;
   font-size: 2rem;
   line-height: 2.6rem;
   letter-spacing: 0.015em;
   color: var(--grey-text);
-  max-width: 72%;
+  max-width: 56%;
+
+  &.mod-white {
+    color: #fff;
+  }
 }
 
 .cashback__slide-link {
@@ -48,9 +72,32 @@
   padding: 1.4rem;
   margin: -1.4rem;
   margin-top: 2rem;
-  display: block;
+  display: flex;
+  align-items: center;
 
   &:hover {
     text-decoration: underline;
   }
+
+  &.mod-white {
+    color: #fff;
+
+    .cashback__slide-link-icon {
+      fill: #fff;
+    }
+  }
+
+  &.mod-black {
+    color: var(--main-text-color);
+
+    .cashback__slide-link-icon {
+      fill: var(--main-text-color);
+    }
+  }
+}
+
+.cashback__slide-link-icon {
+  height: 3.8rem;
+  margin-left: .4rem;
+  fill: var(--main-color);
 }
