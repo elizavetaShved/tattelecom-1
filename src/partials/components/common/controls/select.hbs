@@ -7,6 +7,8 @@
   selectTitle - заголовок
   required - обязательно для заполнения
   placeholder
+  isSearch - дизайн с лупой
+  isSmallChoicesList - укороченный список options
 -->
 {{#each selects }}
   <div class="select">
@@ -15,7 +17,7 @@
     {{/if}}
 
     <div class="select__container" id="{{ this.name }}">
-      <label class="select__wrapper {{#if isCity}}mod-city{{/if}}">
+      <label class="select__wrapper {{#if isSearch}}mod-city{{/if}} {{#if isSmallChoicesList }}mod-small-choices-list{{/if}}">
         {{#if this.required }}
           <span class="gl__input-mark-required"></span>
         {{/if}}
@@ -36,7 +38,7 @@
         </select>
       </label>
 
-      {{#if isCity}}
+      {{#if isSearch}}
         <svg width="16" height="16" aria-hidden="true" class="select__search-icon">
           <use xlink:href="#search"></use>
         </svg>

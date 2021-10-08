@@ -359,6 +359,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 nav ul {
   list-style: none; }
 
+body.mod-no-scroll {
+  overflow: hidden;
+  height: 100vh; }
+
 a {
   cursor: pointer;
   -webkit-transition: color 250ms;
@@ -2016,6 +2020,9 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
+
+.select__wrapper.mod-small-choices-list .choices__list {
+  max-height: 150px; }
 
 .select__wrapper .choices {
   font-size: 1.6rem;
@@ -4059,21 +4066,23 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
 .modal__container {
   max-height: 100vh;
   overflow: auto;
-  padding: 4rem;
   background-color: #fff;
   -webkit-box-shadow: 0 0.266px 20px rgba(153, 152, 168, 0.17);
           box-shadow: 0 0.266px 20px rgba(153, 152, 168, 0.17);
   border-radius: 10px;
   margin: 0 1rem; }
-  @media screen and (max-width: 767px) {
-    .modal__container {
-      padding: 2rem; } }
   .modal__container.mod-small {
     width: 48.2rem; }
   .modal__container.mod-middle {
     width: 60.6rem; }
   .modal__container.mod-large {
     width: 70rem; }
+
+.modal__content {
+  padding: 4rem; }
+  @media screen and (max-width: 767px) {
+    .modal__content {
+      padding: 2rem; } }
 
 .modal__head {
   display: -webkit-box;
@@ -4229,6 +4238,8 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
 .send-request__form-select-wrapper {
   margin-bottom: 2rem;
   margin-top: .6rem; }
+  .send-request__form-select-wrapper:not(.mod-show) {
+    display: none; }
 
 .send-request__content-checkbox-wrapper {
   margin-bottom: 4rem;

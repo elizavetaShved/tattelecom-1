@@ -50,6 +50,10 @@
 .send-request__form-select-wrapper {
   margin-bottom: 2rem;
   margin-top: .6rem;
+
+  &:not(.mod-show) {
+    display: none;
+  }
 }
 
 .send-request__content-checkbox-wrapper {

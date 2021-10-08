@@ -40,6 +40,7 @@
         }
       }
     }
+
     .choices__inner {
       border-radius: 4px;
       padding: 1.2rem !important;
@@ -52,6 +53,12 @@
 
     .choices__item {
       justify-content: flex-start;
+    }
+  }
+
+  &.mod-small-choices-list {
+    .choices__list {
+      max-height: 150px;
     }
   }
 

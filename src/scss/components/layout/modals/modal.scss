@@ -9,15 +9,10 @@
 .modal__container {
   max-height: 100vh;
   overflow: auto;
-  padding: 4rem;
   background-color: #fff;
   box-shadow: 0 0.266004px 20px rgba(153, 152, 168, 0.17);
   border-radius: 10px;
   margin: 0 1rem;
-
-  @include for-sm-down {
-    padding: 2rem;
-  }
 
   &.mod-small {
     width: 48.2rem;
@@ -29,6 +24,14 @@
 
   &.mod-large {
     width: 70rem;
+  }
+}
+
+.modal__content {
+  padding: 4rem;
+
+  @include for-sm-down {
+    padding: 2rem;
   }
 }
 

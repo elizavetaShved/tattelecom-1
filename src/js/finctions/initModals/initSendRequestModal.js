@@ -3,9 +3,18 @@
 // .js-open-send-request-modal - на кнопки открывания модалки
 // .js-close-send-request-modal - на кнопку закрывания модалки
 
-// __Атрибуты для кнопки открытия
+// __Атрибуты для кнопки открытия__
 //  data-tariff-name="title" - заголовок
 //  data-prise="250" - цена, необяз
+
+// __если есть продукт__
+// data-product-img
+// data-product-caption
+// data-product-value
+// data-product-price
+
+// __если есть селект пункт выдачи__
+// data-point-issue
 
 import { Modal } from '../../components/modal';
 
@@ -23,13 +32,12 @@ export default function initSendRequestModal() {
   const modalProductValueElem = modalProductWrapperElem.querySelector('.send-request__product-value');
   const modalProductPriceElem = modalProductWrapperElem.querySelector('.send-request__product-price');
 
+  const modalPointIssueSelectElem = modalElem.querySelector('.send-request__form-select-wrapper');
+
   let modalComponent;
 
   btnsOpen.forEach(btn => {
     btn.addEventListener('click', () => {
-      modalComponent = new Modal(modalElem);
-      modalComponent.onOpenModal();
-
       const dataTitle = btn.getAttribute('data-tariff-name');
       const dataPrise = btn.getAttribute('data-prise');
 
@@ -47,7 +55,7 @@ export default function initSendRequestModal() {
       }
 
 
-      if (dataProductImg || dataProductCaption || dataProductValue || modalProductPrice) {
+      if (dataProductImg || dataProductCaption || dataProductValue || dataProductPrice) {
         modalProductWrapperElem.classList.add('mod-show');
 
         if (dataProductImg) {
@@ -68,8 +76,11 @@ export default function initSendRequestModal() {
       }
 
       if (dataPointIssue) {
-
+        modalPointIssueSelectElem.classList.add('mod-show');
       }
+
+      modalComponent = new Modal(modalElem);
+      modalComponent.onOpenModal();
     });
   })
 

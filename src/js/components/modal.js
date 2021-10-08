@@ -1,8 +1,11 @@
 import { checkExistParent } from '../finctions/checkExistParent';
 
 export class Modal {
+  bodyElem;
+
   modalElem;
   modalContainerElem;
+  modalContentElem;
   isOpenModal = false;
   isOpenThanksModal = false;
 
@@ -14,14 +17,18 @@ export class Modal {
     this.checkClickByModal = this.checkClickByModal.bind(this);
     this.checkClickByModalThanks = this.checkClickByModalThanks.bind(this);
 
+    this.bodyElem = document.querySelector('body');
+
     this.modalElem = modalElem;
     this.modalContainerElem = this.modalElem.querySelector('.js-modal-container');
+    this.modalContentElem = this.modalElem.querySelector('.js-modal-content');
     const btnSubmitForm = this.modalElem.querySelector('.js-btn-submit');
     const formModal = this.modalElem.querySelector('.js-form-modal');
 
     this.modalThanksElem = document.querySelector('#modal-thanks');
     this.modalThanksContainerElem = document.querySelector('#modal-thanks-container');
     this.modalThanksCloseBtn = document.querySelector('#close-thanks-modal');
+
 
     this.modalThanksCloseBtn.onclick = () => {
       this.onCloseModalThanks();
@@ -43,12 +50,15 @@ export class Modal {
 
   onOpenModal() {
     this.modalElem.classList.add('mod-show');
+    this.modalContainerElem.style.height = `${ this.modalContentElem.scrollHeight }px`;
+    this.bodyElem.classList.add('mod-no-scroll');
   }
 
   onCloseModal() {
     this.modalElem.classList.remove('mod-show');
     this.isOpenModal = false;
     document.removeEventListener('click', this.checkClickByModal);
+    this.bodyElem.classList.remove('mod-no-scroll');
   }
 
   checkClickByModal(event) {

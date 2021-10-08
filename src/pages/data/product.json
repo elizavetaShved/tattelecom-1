@@ -113,12 +113,13 @@
   "modal-point-issue-select": [
     {
       "name": "point-issue-select",
-      "isCity": true,
+      "isSearch": true,
       "required": true,
       "placeholder": "Пункт выдачи",
       "options": [
-        "Пункт 1", "Пункт 2", "Пункт 3"
-      ]
+        "Пункт 1", "Пункт 2", "Пункт 3", "Пункт 4"
+      ],
+      "isSmallChoicesList": true
     }
   ]
 }

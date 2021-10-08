@@ -47,7 +47,7 @@
       "name": "fly-top-block-city",
       "selectTitle": "Укажите город проживания",
       "isWhiteTitle": true,
-      "isCity": true,
+      "isSearch": true,
       "required": true,
       "placeholder": "город",
       "options": [

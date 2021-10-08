@@ -1,73 +1,75 @@
 <div class="modal" id="modal-send-request-host">
   <div class="modal__container mod-middle js-modal-container">
-    <div class="modal__head">
-      <div class="modal__title">
-        Тариф “Много интернета”
-      </div>
-      <button type="button" class="modal__btn-close js-close-send-request-modal">
-        <svg width="32" height="32" aria-hidden="true" class="modal__close-icon">
-          <use xlink:href="#close"></use>
-        </svg>
-      </button>
-    </div>
-
-    <div class="send-request__content">
-      <div class="send-request__info">
-        <div class="send-request__price">
-          <span class="number">240</span>₽/мес
+    <div class="modal__content js-modal-content">
+      <div class="modal__head">
+        <div class="modal__title">
+          Тариф “Много интернета”
         </div>
-        <div class="send-request__info-hint">
-          <div>Укажите имя и контактный номер телефона.</div>
-          <div>Мы перезвоним Вам в течение 15 минут.</div>
-          <div>Клиентская служба работает с 08-00 до 20-00.</div>
-        </div>
+        <button type="button" class="modal__btn-close js-close-send-request-modal">
+          <svg width="32" height="32" aria-hidden="true" class="modal__close-icon">
+            <use xlink:href="#close"></use>
+          </svg>
+        </button>
       </div>
 
-      <div class="send-request__product-wrapper">
-        <img src="img" alt="" class="send-request__product-img">
-        <div>
-          <div class="send-request__product-caption">тип</div>
-          <div class="send-request__product-value">модель</div>
-          <div class="send-request__product-price-wrapper">
-            <span class="send-request__product-price">0</span>₽
+      <div class="send-request__content">
+        <div class="send-request__info">
+          <div class="send-request__price">
+            <span class="number">240</span>₽/мес
+          </div>
+          <div class="send-request__info-hint">
+            <div>Укажите имя и контактный номер телефона.</div>
+            <div>Мы перезвоним Вам в течение 15 минут.</div>
+            <div>Клиентская служба работает с 08-00 до 20-00.</div>
           </div>
         </div>
+
+        <div class="send-request__product-wrapper">
+          <img src="img" alt="" class="send-request__product-img">
+          <div>
+            <div class="send-request__product-caption">тип</div>
+            <div class="send-request__product-value">модель</div>
+            <div class="send-request__product-price-wrapper">
+              <span class="send-request__product-price">0</span>₽
+            </div>
+          </div>
+        </div>
+
+        <form class="js-form-modal">
+          <div class="send-request__form-inputs">
+            {{> common/controls/input-main
+              required=true
+              type="text"
+              placeholder="Ваше имя"
+              name="modal-send-request-name"
+            }}
+            {{> common/controls/input-main
+              required=true
+              type="tel"
+              phoneMask=true
+              placeholder="+7 (___) ___-__-__"
+              name="modal-send-request-tel"
+            }}
+          </div>
+
+          <div class="send-request__form-select-wrapper">
+            {{> common/controls/select selects=modal-point-issue-select }}
+          </div>
+
+          <div class="send-request__content-checkbox-wrapper">
+            {{> common/controls/input-checkbox
+              required=true
+              caption="Я согласен на обработку своих персональных данных"
+              name="modal-send-request-agree"
+              isModal=true
+            }}
+          </div>
+
+          <button type="button" class="gl__main-btn modal__btn-submit js-btn-submit">
+            Отправить заявку
+          </button>
+        </form>
       </div>
-
-      <form class="js-form-modal">
-        <div class="send-request__form-inputs">
-          {{> common/controls/input-main
-            required=true
-            type="text"
-            placeholder="Ваше имя"
-            name="modal-send-request-name"
-          }}
-          {{> common/controls/input-main
-            required=true
-            type="tel"
-            phoneMask=true
-            placeholder="+7 (___) ___-__-__"
-            name="modal-send-request-tel"
-          }}
-        </div>
-
-        <div class="send-request__form-select-wrapper">
-          {{> common/controls/select selects=modal-point-issue-select }}
-        </div>
-
-        <div class="send-request__content-checkbox-wrapper">
-          {{> common/controls/input-checkbox
-            required=true
-            caption="Я согласен на обработку своих персональных данных"
-            name="modal-send-request-agree"
-            isModal=true
-          }}
-        </div>
-
-        <button type="button" class="gl__main-btn modal__btn-submit js-btn-submit">
-          Отправить заявку
-        </button>
-      </form>
     </div>
   </div>
 </div>
