@@ -139,7 +139,11 @@
   }
 
   &.mod-fly {
-    height: 4rem;
+    height: 6.2rem;
+
+    &.mot-two-logos {
+      height: 4rem;
+    }
 
     @include for-hg-down {
       height: 3.4rem;

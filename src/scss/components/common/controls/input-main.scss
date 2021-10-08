@@ -4,7 +4,12 @@
   position: relative;
 
   .parsley-errors-list {
-    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    color: red;
+    font-size: 1.2rem;
   }
 }
 

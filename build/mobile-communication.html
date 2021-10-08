@@ -82,10 +82,7 @@
           <div class="gl__page-content header__bottom-block-content">
             <div class="header__logo-wrapper">
               <a href="/" class="header__logo-link">
-                <img src="img/header/logo-tat.svg" alt="" class="header__logo mod-tat">
-              </a>
-              <a href="/" class="header__logo-link">
-                <img src="img/header/logo-fly.svg" alt="" class="header__logo mod-fly">
+                <img src="img/header/logo-fly.svg" alt="" class="header__logo mod-fly ">
               </a>
             </div>
     
@@ -704,6 +701,8 @@
                     phoneMask (true/false) - маска для телефона
                     minLength - деф-2
                     maxLength - деф-none
+                    minNumber - минимальное число
+                    maxNumber - максимальное число
                     id - обычный id, например для первого пароля
                     parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
                     parsleyType - для валидации (н-р email)
@@ -716,9 +715,10 @@
                            placeholder="+7 (___) ___-__-__"
                            name="services-tel"
                   
+                  
+                  
                            data-parsley-required=""
                   
-                           data-parsley-minlength="2"
                   
                   
                   
@@ -737,6 +737,8 @@
                     phoneMask (true/false) - маска для телефона
                     minLength - деф-2
                     maxLength - деф-none
+                    minNumber - минимальное число
+                    maxNumber - максимальное число
                     id - обычный id, например для первого пароля
                     parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
                     parsleyType - для валидации (н-р email)
@@ -749,11 +751,13 @@
                            placeholder="Сумма"
                            name="services-summ"
                   
+                           min="10"
+                  
+                           max="30000"
+                  
                            data-parsley-required=""
                   
-                           data-parsley-minlength="10"
                   
-                           data-parsley-maxlength="30000"
                   
                   
                   
@@ -835,6 +839,8 @@
                   phoneMask (true/false) - маска для телефона
                   minLength - деф-2
                   maxLength - деф-none
+                  minNumber - минимальное число
+                  maxNumber - максимальное число
                   id - обычный id, например для первого пароля
                   parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
                   parsleyType - для валидации (н-р email)
@@ -847,9 +853,10 @@
                          placeholder="+7 (___) ___-__-__"
                          name="services-tel-transfer"
                 
+                
+                
                          data-parsley-required=""
                 
-                         data-parsley-minlength="2"
                 
                 
                 
@@ -935,7 +942,7 @@
                         <div>Вместе выгодно</div>
                         <div>2.0</div>
                     </div>
-                    <div class="cashback__slide-text">Подключите «Летай» и получайте кэшбэк 20%</div>
+                    <div class="cashback__slide-text">Подключите «Летай» и получайте кeшбэк 20%</div>
                   </div>
     
                   <a href="" class="cashback__slide-link">Подробнее</a>
@@ -1121,6 +1128,8 @@
                   phoneMask (true/false) - маска для телефона
                   minLength - деф-2
                   maxLength - деф-none
+                  minNumber - минимальное число
+                  maxNumber - максимальное число
                   id - обычный id, например для первого пароля
                   parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
                   parsleyType - для валидации (н-р email)
@@ -1132,9 +1141,10 @@
                          placeholder="Ваше имя"
                          name="application-name"
                 
+                
+                
                          data-parsley-required=""
                 
-                         data-parsley-minlength="2"
                 
                 
                 
@@ -1155,6 +1165,8 @@
                   phoneMask (true/false) - маска для телефона
                   minLength - деф-2
                   maxLength - деф-none
+                  minNumber - минимальное число
+                  maxNumber - максимальное число
                   id - обычный id, например для первого пароля
                   parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
                   parsleyType - для валидации (н-р email)
@@ -1166,9 +1178,10 @@
                          placeholder="+7 (___) ___-__-__"
                          name="application-tel"
                 
+                
+                
                          data-parsley-required=""
                 
-                         data-parsley-minlength="2"
                 
                 
                 
@@ -1419,6 +1432,8 @@
             phoneMask (true/false) - маска для телефона
             minLength - деф-2
             maxLength - деф-none
+            minNumber - минимальное число
+            maxNumber - максимальное число
             id - обычный id, например для первого пароля
             parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
             parsleyType - для валидации (н-р email)
@@ -1430,9 +1445,10 @@
                    placeholder="+7 (___) ___-__-__"
                    name="modal-callback-tel"
           
+          
+          
                    data-parsley-required=""
           
-                   data-parsley-minlength="2"
           
           
           
@@ -1559,6 +1575,8 @@
                 phoneMask (true/false) - маска для телефона
                 minLength - деф-2
                 maxLength - деф-none
+                minNumber - минимальное число
+                maxNumber - максимальное число
                 id - обычный id, например для первого пароля
                 parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
                 parsleyType - для валидации (н-р email)
@@ -1570,9 +1588,10 @@
                        placeholder="Ваше имя"
                        name="modal-send-request-name"
               
+              
+              
                        data-parsley-required=""
               
-                       data-parsley-minlength="2"
               
               
               
@@ -1591,6 +1610,8 @@
                 phoneMask (true/false) - маска для телефона
                 minLength - деф-2
                 maxLength - деф-none
+                minNumber - минимальное число
+                maxNumber - максимальное число
                 id - обычный id, например для первого пароля
                 parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
                 parsleyType - для валидации (н-р email)
@@ -1602,9 +1623,10 @@
                        placeholder="+7 (___) ___-__-__"
                        name="modal-send-request-tel"
               
+              
+              
                        data-parsley-required=""
               
-                       data-parsley-minlength="2"
               
               
               

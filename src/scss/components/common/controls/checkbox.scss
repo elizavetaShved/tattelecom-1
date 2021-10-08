@@ -3,8 +3,18 @@
   cursor: pointer;
 
   &.parsley-error {
+
     .checkbox__content {
-      border-color: var(--main-color);
+      border-color: red;
+    }
+
+    .checkbox__text {
+      color: red;
+    }
+
+
+    +.parsley-errors-list {
+      display: none;
     }
   }
 

@@ -10,6 +10,8 @@
   phoneMask (true/false) - маска для телефона
   minLength - деф-2
   maxLength - деф-none
+  minNumber - минимальное число
+  maxNumber - максимальное число
   id - обычный id, например для первого пароля
   parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
   parsleyType - для валидации (н-р email)
@@ -24,14 +26,20 @@
          placeholder="{{ placeholder }}"
          name="{{ name }}"
 
+    {{#if minNumber }}
+         min="{{ minNumber }}"
+    {{/if}}
+
+    {{#if minNumber }}
+         max="{{ maxNumber }}"
+    {{/if}}
+
     {{#if required }}
          data-parsley-required=""
     {{/if}}
 
     {{#if minLength }}
          data-parsley-minlength="{{ minLength }}"
-    {{else}}
-         data-parsley-minlength="2"
     {{/if}}
 
     {{#if maxLength }}

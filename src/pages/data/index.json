@@ -1,17 +1,20 @@
- {
+{
   "title": "Таттелеком",
+  "two-logos": true,
   "script": "main-page",
-   "rates-preview": [
-     {
-       "pageName": "main-page",
-       "imgBackgroundDesk": "img/main-page/rates-preview/rates-preview-1.jpg",
-       "img": "img/main-page/rates-preview/rates-preview-2.jpg",
-       "ratesSecondName": "Тариф “Летай.Оранжевый”",
-       "ratesName": "Выжми скорость",
-       "ratesCaption": ["Мощный интернет + ТВ 160 каналов"],
-       "btnText": "Подробнее"
-     }
-   ],
+  "rates-preview": [
+    {
+      "pageName": "main-page",
+      "imgBackgroundDesk": "img/main-page/rates-preview/rates-preview-1.jpg",
+      "img": "img/main-page/rates-preview/rates-preview-2.jpg",
+      "ratesSecondName": "Тариф “Летай.Оранжевый”",
+      "ratesName": "Выжми скорость",
+      "ratesCaption": [
+        "Мощный интернет + ТВ 160 каналов"
+      ],
+      "btnText": "Подробнее"
+    }
+  ],
   "rates-list": [
     {
       "isHit": true,
@@ -102,7 +105,9 @@
       "required": true,
       "placeholder": "город",
       "options": [
-        "Казань", "Чебоксары", "Набережные Челны"
+        "Казань",
+        "Чебоксары",
+        "Набережные Челны"
       ]
     }
   ],

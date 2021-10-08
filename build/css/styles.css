@@ -1890,7 +1890,11 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
   display: flex;
   cursor: pointer; }
   .checkbox__wrapper.parsley-error .checkbox__content {
-    border-color: var(--main-color); }
+    border-color: red; }
+  .checkbox__wrapper.parsley-error .checkbox__text {
+    color: red; }
+  .checkbox__wrapper.parsley-error + .parsley-errors-list {
+    display: none; }
   .checkbox__wrapper + .checkbox__wrapper {
     margin-top: 2.2rem; }
 
@@ -1972,7 +1976,13 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
           flex-direction: column;
   position: relative; }
   .gl-input__wrapper .parsley-errors-list {
-    display: none; }
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    color: red;
+    font-size: 1.2rem; }
 
 .gl-input__title {
   font-weight: 300;
@@ -2018,7 +2028,13 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
   position: relative;
   width: 100%; }
   .select__container .parsley-errors-list {
-    display: none; }
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    color: red;
+    font-size: 1.2rem; }
   .select__container.parsley-error .choices__inner {
     border-color: red !important; }
   .select__container:hover .select__search-icon {
@@ -2486,6 +2502,12 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
         height: 28.4rem; } }
   .rates-preview.mod-together-profitable {
     background: linear-gradient(99.54deg, #D5DDDF 3.54%, #D5DDDF 73.5%); }
+    .rates-preview.mod-together-profitable .rates-preview__content-subtitle {
+      text-transform: initial; }
+      @media screen and (min-width: 768px) {
+        .rates-preview.mod-together-profitable .rates-preview__content-subtitle {
+          font-size: 5.4rem;
+          line-height: 6.4rem; } }
     .rates-preview.mod-together-profitable .rates-preview__content-wrapper {
       position: relative; }
     @media screen and (max-width: 767px) {
@@ -2815,6 +2837,10 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
     color: #fff; }
     .services__item-wrapper.mod-painted .gl-input__title {
       color: #fff; }
+    .services__item-wrapper.mod-painted .parsley-required, .services__item-wrapper.mod-painted .checkbox__wrapper.parsley-error .checkbox__text {
+      color: var(--main-text-color); }
+    .services__item-wrapper.mod-painted .parsley-error, .services__item-wrapper.mod-painted .select__container.parsley-error .choices__inner, .services__item-wrapper.mod-painted .checkbox__wrapper.parsley-error .checkbox__content {
+      border-color: var(--main-text-color) !important; }
   .services__item-wrapper:nth-child(1) {
     grid-column: 1 / 8; }
     @media screen and (max-width: 959px) {
@@ -3673,7 +3699,9 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
       height: 1.2rem; } }
 
 .header__logo.mod-fly {
-  height: 4rem; }
+  height: 6.2rem; }
+  .header__logo.mod-fly.mot-two-logos {
+    height: 4rem; }
   @media screen and (max-width: 1199px) {
     .header__logo.mod-fly {
       height: 3.4rem; } }

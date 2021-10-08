@@ -1,5 +1,5 @@
 {
-  "title": "Кэшбэк 20%",
+  "title": "Кешбэк 20%",
   "script": "cashback-page",
   "bread-crumbs": [
     {
@@ -19,7 +19,7 @@
       "img": "img/cashback-page/rates-preview/rates-preview-desk.jpg",
       "imgMobile": "img/cashback-page/rates-preview/rates-preview-mobile.jpg",
       "isWhiteBackground": true,
-      "ratesName": "КЭШБЭК 20%",
+      "ratesName": "КЕШБЭК 20%",
       "ratesCaption": ["НА МОБИЛЬНУЮ СВЯЗЬ", "по программе «Вместе выгодно 2.0»"],
       "btnText": "Заказать кэшбэк"
     }

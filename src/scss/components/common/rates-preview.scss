@@ -99,6 +99,15 @@ $padding-content: 2rem;
   &.mod-together-profitable {
     background: linear-gradient(99.54deg, #D5DDDF 3.54%, #D5DDDF 73.5%);
 
+    .rates-preview__content-subtitle {
+      text-transform: initial;
+
+      @include for-sm-up {
+        font-size: 5.4rem;
+        line-height: 6.4rem;
+      }
+    }
+
     .rates-preview__content-wrapper {
       position: relative;
     }

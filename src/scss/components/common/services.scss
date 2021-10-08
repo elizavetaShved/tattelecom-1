@@ -47,6 +47,14 @@
     .gl-input__title {
       color: #fff;
     }
+
+    .parsley-required, .checkbox__wrapper.parsley-error .checkbox__text {
+      color: var(--main-text-color);
+    }
+
+    .parsley-error, .select__container.parsley-error .choices__inner, .checkbox__wrapper.parsley-error .checkbox__content {
+      border-color: var(--main-text-color) !important;
+    }
   }
 
   &:nth-child(1) {
