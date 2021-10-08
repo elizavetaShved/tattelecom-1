@@ -4338,6 +4338,15 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
 .about-tariff__item-btn-icon {
   height: 4.2rem; }
 
+.modal-installments__content {
+  padding-top: 2.6rem; }
+
+.modal-installments__content-text {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.02em; }
+
 .news-list {
   padding: 8rem 0; }
   @media screen and (max-width: 767px) {

@@ -15,6 +15,7 @@ export class Modal {
 
   constructor(modalElem) {
     this.checkClickByModal = this.checkClickByModal.bind(this);
+    this.setHeightModalContainer = this.setHeightModalContainer.bind(this);
     this.checkClickByModalThanks = this.checkClickByModalThanks.bind(this);
 
     this.bodyElem = document.querySelector('body');
@@ -48,16 +49,23 @@ export class Modal {
     document.addEventListener('click', this.checkClickByModal);
   }
 
+  setHeightModalContainer() {
+    this.modalContainerElem.style.height = `${ this.modalContentElem.scrollHeight }px`;
+  }
+
   onOpenModal() {
     this.modalElem.classList.add('mod-show');
-    this.modalContainerElem.style.height = `${ this.modalContentElem.scrollHeight }px`;
+    this.setHeightModalContainer();
     this.bodyElem.classList.add('mod-no-scroll');
+
+    window.addEventListener('resize', this.setHeightModalContainer);
   }
 
   onCloseModal() {
     this.modalElem.classList.remove('mod-show');
     this.isOpenModal = false;
     document.removeEventListener('click', this.checkClickByModal);
+    window.removeEventListener('resize', this.setHeightModalContainer);
     this.bodyElem.classList.remove('mod-no-scroll');
   }
 
