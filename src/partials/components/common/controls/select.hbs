@@ -8,7 +8,12 @@
   required - обязательно для заполнения
   placeholder
   isSearch - дизайн с лупой
+  isSimpleDesign - упрощенный дизайн
   isSmallChoicesList - укороченный список options
+
+  iconSearchRight (true/false)
+  iconSearchLeft (true/false)
+  iconSimLeft (true/false)
 -->
 {{#each selects }}
   <div class="select">
@@ -16,8 +21,26 @@
       <span class="gl-input__title {{#if isWhiteTitle}}mod-white{{/if}}">{{ selectTitle }}</span>
     {{/if}}
 
-    <div class="select__container" id="{{ this.name }}">
-      <label class="select__wrapper {{#if isSearch}}mod-city{{/if}} {{#if isSmallChoicesList }}mod-small-choices-list{{/if}}">
+    <div class="select__container
+      {{#if isSearch}}mod-search{{/if}}
+      {{#if isSmallChoicesList }}mod-small-choices-list{{/if}}
+      {{#if isSimpleDesign}}mod-simple-design{{/if}}
+      {{#if iconSearchLeft}}mod-padding-left{{/if}}
+      {{#if iconSimLeft}}mod-padding-left{{/if}}
+      {{#if iconSearchRight}}mod-padding-left{{/if}}" id="{{ this.name }}">
+      {{#if iconSearchLeft}}
+        <svg width="16" height="16" aria-hidden="true" class="select__search-icon mod-left">
+          <use xlink:href="#search"></use>
+        </svg>
+      {{/if}}
+
+      {{#if iconSimLeft}}
+        <svg width="12" height="16" aria-hidden="true" class="select__search-icon mod-left">
+          <use xlink:href="#sim-card"></use>
+        </svg>
+      {{/if}}
+
+      <label class="select__wrapper">
         {{#if this.required }}
           <span class="gl__input-mark-required"></span>
         {{/if}}
@@ -38,8 +61,8 @@
         </select>
       </label>
 
-      {{#if isSearch}}
-        <svg width="16" height="16" aria-hidden="true" class="select__search-icon">
+      {{#if iconSearchRight}}
+        <svg width="16" height="16" aria-hidden="true" class="select__search-icon mod-right">
           <use xlink:href="#search"></use>
         </svg>
       {{/if}}

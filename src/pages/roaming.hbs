@@ -4,8 +4,8 @@
     <div class="roaming__top-wrapper">
       {{> bread-crumbs isOrangeBackground=true}}
       {{> roaming-page/top-block }}
-      <img src="img/roaming/background.svg" alt="" class="roaming__background gl__sm-hide">
-      <img src="img/roaming/background-small.svg" alt="" class="roaming__background gl__sm-show">
+      <img src="img/roaming-page/background.svg" alt="" class="roaming__background gl__sm-hide">
+      <img src="img/roaming-page/background-small.svg" alt="" class="roaming__background gl__sm-show">
     </div>
 
     <div class="js-menu-tabs-container">
@@ -14,17 +14,25 @@
       <div class="js-menu-tab-content gl__menu-tab-content" data-menu-russia>
         {{> roaming-page/pricing-plans }}
 
-        {{> common/instructions }}
+        {{> roaming-page/instructions instructions=instructions-russia }}
 
         {{> roaming-page/international-calls }}
 
-        {{> common/faq/section-faq }}
+        {{> common/faq/section-faq faq=faq-russia }}
 
         {{> common/application noAnswer=true }}
       </div>
 
       <div class="js-menu-tab-content gl__menu-tab-content" data-menu-world>
-        world
+        {{> roaming-page/roaming-without-worries }}
+
+        {{> roaming-page/instructions instructions=instructions-world}}
+
+        {{> roaming-page/connection-options }}
+
+        {{> ussd-requests-page/ussd-faq faq=ussd-faq }}
+
+        {{> common/faq/section-faq faq=faq-world }}
       </div>
     </div>
 

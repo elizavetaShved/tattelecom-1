@@ -8,9 +8,11 @@ export default function initMenuTabs() {
     const menuTabs = menuTabsContainer.querySelectorAll('.js-menu-tab');
     const contentElems = menuTabsContainer.querySelectorAll('.js-menu-tab-content');
 
-    contentElems[0].classList.add('mod-show');
+    menuTabs.forEach((tab, index) => {
+      if (tab.hasAttribute('checked')) {
+        contentElems[index].classList.add('mod-show');
+      }
 
-    menuTabs.forEach(tab => {
       tab.onclick = () => {
         contentElems.forEach(contentElem => {
           if (contentElem.hasAttribute(`data-menu-${ tab.value }`)) {

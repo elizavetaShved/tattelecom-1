@@ -114,6 +114,7 @@
     {
       "name": "point-issue-select",
       "isSearch": true,
+      "iconSearchRight": true,
       "required": true,
       "placeholder": "Пункт выдачи",
       "options": [

@@ -1,0 +1,34 @@
+<section class="connection-options" id="options-host">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      Опции для подключения
+    </h2>
+
+    <ul class="connection-options__list">
+      {{#each connection-options }}
+        <li class="connection-options__item gl__white-container">
+          <img src="{{ this.backgroundImage }}" alt="" class="connection-options__item-background">
+          <div>
+            <div class="connection-options__item-caption">
+              {{ this.title }}
+            </div>
+            <div class="connection-options__item-value">
+              <span class="number">{{ this.valuePrice }}</span>{{ valueUnit }}
+            </div>
+          </div>
+
+          <div class="connection-options__item-btn-wrapper">
+            <button type="button" class="connection-options__item-btn">
+              <span class="connection-options__item-btn-content">
+                     Подробнее
+                <svg width="38" height="38" aria-hidden="true" class="connection-options__item-btn-icon">
+                  <use xlink:href="#arrow-line-right"></use>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

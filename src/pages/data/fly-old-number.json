@@ -48,6 +48,7 @@
       "selectTitle": "Укажите город проживания",
       "isWhiteTitle": true,
       "isSearch": true,
+      "iconSearchRight": true,
       "required": true,
       "placeholder": "город",
       "options": [
