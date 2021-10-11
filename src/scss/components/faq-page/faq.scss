@@ -1,0 +1,17 @@
+.faq {
+  &__field {
+    border-bottom: 1px solid var(--main-grey-color);
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    padding: 2.6rem;
+    transition: border-color .25s ease;
+    width: 100%;
+    &::placeholder {
+      color: var(--main-grey-color);
+    }
+    &:focus {
+      border-bottom: 1px solid var(--main-color);
+    }
+  }
+}

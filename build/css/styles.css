@@ -6081,3 +6081,25 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
   @media screen and (max-width: 767px) {
     .recommend {
       padding: 3rem 0 4rem; } }
+
+.faq__field {
+  border-bottom: 1px solid var(--main-grey-color);
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  padding: 2.6rem;
+  -webkit-transition: border-color .25s ease;
+  transition: border-color .25s ease;
+  width: 100%; }
+  .faq__field::-webkit-input-placeholder {
+    color: var(--main-grey-color); }
+  .faq__field::-moz-placeholder {
+    color: var(--main-grey-color); }
+  .faq__field:-ms-input-placeholder {
+    color: var(--main-grey-color); }
+  .faq__field::-ms-input-placeholder {
+    color: var(--main-grey-color); }
+  .faq__field::placeholder {
+    color: var(--main-grey-color); }
+  .faq__field:focus {
+    border-bottom: 1px solid var(--main-color); }
