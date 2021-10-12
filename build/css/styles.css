@@ -1809,11 +1809,11 @@ button.swiper-pagination-bullet {
     z-index: var(--z-index-header);
     pointer-events: auto; }
 
-::-moz-selection, .bread-crumbs__container.mod-orange ::-moz-selection, .services ::-moz-selection, .order-call ::-moz-selection, .fly-top-block ::-moz-selection {
+::-moz-selection, .bread-crumbs__container.mod-orange ::-moz-selection, .services__item-wrapper.mod-painted ::-moz-selection, .order-call ::-moz-selection, .fly-top-block ::-moz-selection {
   background-color: #fff;
   color: var(--main-color); }
 
-::selection, .bread-crumbs__container.mod-orange ::selection, .services ::selection, .order-call ::selection, .fly-top-block ::selection {
+::selection, .bread-crumbs__container.mod-orange ::selection, .services__item-wrapper.mod-painted ::selection, .order-call ::selection, .fly-top-block ::selection {
   background-color: #fff;
   color: var(--main-color); }
 
@@ -3891,8 +3891,7 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
 .footer {
   padding: 6.2rem 0;
   color: #fff;
-  background-color: var(--main-text-color);
-  font-weight: 300; }
+  background-color: var(--main-text-color); }
   @media screen and (max-width: 767px) {
     .footer {
       padding: 4.4rem 0; } }
@@ -3947,9 +3946,11 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
     .footer__top-grid-item {
       grid-row: auto !important; } }
 
-@media screen and (max-width: 559px) {
-  .footer__btn {
-    width: 100%; } }
+.footer__btn {
+  font-weight: 300; }
+  @media screen and (max-width: 559px) {
+    .footer__btn {
+      width: 100%; } }
 
 .footer__link-title {
   font-size: 2rem;
@@ -3995,7 +3996,8 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
   font-size: 1.6rem;
   line-height: 2.6rem;
   letter-spacing: 0.02em;
-  display: inline-block; }
+  display: inline-block;
+  font-weight: 300; }
   @media screen and (max-width: 1023px) {
     .footer__link {
       font-size: 1.4rem;
@@ -4053,11 +4055,13 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
   font-size: 1.6rem;
   line-height: 2rem;
   color: var(--main-grey-color);
-  margin-bottom: 3.6rem; }
+  margin-bottom: 3.6rem;
+  font-weight: 300; }
 
 .footer__copyright {
   font-size: 1.4rem;
-  line-height: 1.8rem; }
+  line-height: 1.8rem;
+  font-weight: 300; }
 
 .footer__bottom-block-contacts {
   grid-column: 2;

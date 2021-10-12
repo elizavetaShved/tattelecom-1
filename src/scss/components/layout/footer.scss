@@ -2,7 +2,6 @@
   padding: 6.2rem 0;
   color: #fff;
   background-color: var(--main-text-color);
-  font-weight: 300;
 
   @include for-sm-down {
     padding: 4.4rem 0;
@@ -74,6 +73,7 @@
 }
 
 .footer__btn {
+  font-weight: 300;
   @include for-xs-down {
     width: 100%;
   }
@@ -131,6 +131,7 @@
   line-height: 2.6rem;
   letter-spacing: 0.02em;
   display: inline-block;
+  font-weight: 300;
 
   @include for-bg-down {
     font-size: 1.4rem;
@@ -195,11 +196,13 @@
   line-height: 2rem;
   color: var(--main-grey-color);
   margin-bottom: 3.6rem;
+  font-weight: 300;
 }
 
 .footer__copyright {
   font-size: 1.4rem;
   line-height: 1.8rem;
+  font-weight: 300;
 }
 
 .footer__bottom-block-contacts {
