@@ -18,7 +18,8 @@ module.exports = {
     ['product-page']: './src/js/pages/product-page.js',
     ['rates-mobile-list-page']: './src/js/pages/rates-mobile-list-page.js',
     ['instructions']: './src/js/pages/instructions.js',
-    ['rates-mobile-item-page']: './src/js/pages/rates-mobile-item-page.js'
+    ['rates-mobile-item-page']: './src/js/pages/rates-mobile-item-page.js',
+    ['rates-internet-list-page']: './src/js/pages/rates-internet-list-page.js',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

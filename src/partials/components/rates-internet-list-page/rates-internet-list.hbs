@@ -1,0 +1,83 @@
+<section class="rates-mobile-list" id="rates-internet-list-page-host">
+  <div class="gl__page-content">
+
+    <div class="rates-list__content">
+      <h2 class="rates-list__title gl__title">Тарифы интернета</h2>
+
+      <ul class="rates-list__menu-wrapper gl__lg-hide">
+        {{#each menuBtns }}
+          <li class="rates-list__menu-item">
+            <button type="button" class="rates-list__menu-btn">
+              {{ this }}
+              <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
+                <use xlink:href="#arrow-right"></use>
+              </svg>
+            </button>
+          </li>
+        {{/each}}
+      </ul>
+
+      <div class="gl__lg-show">
+        {{> common/btn-settings text="Безлимитный интернет" }}
+      </div>
+
+      <div class="rates-list__list-wrapper">
+        <ul class="rates-list__list">
+          {{#each rates-list}}
+            <li class="rates-list-internet__item {{#if isOrange}}mod-orange{{/if}} gl__white-container">
+              {{#if isOrange}}
+                <img src="img/rates-internet-list-page/background-mark.svg" alt="" class="rates-list-internet__item-background">
+              {{/if}}
+              <div class="rates-list-internet__item-up">
+                <div class="rates-list-internet__item-block">
+                  <div class="rates-list-internet__item-title">
+                    {{ this.title }}
+                  </div>
+                  <div class="rates-list-internet__item-subtitle">
+                    {{ this.subtitle }}
+                  </div>
+                </div>
+                <div class="rates-list-internet__item-block">
+                  <div class="rates-list-internet__item-internet">
+                    <img src="img/rates-internet-list-page/receiver{{#if isOrange}}-white{{/if}}.svg" alt="" class="rates-list-internet__item-internet-img">
+                    <div class="rates-list-internet__item-internet-caption">
+                      {{ this.internetLvl }}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rates-list-internet__item-block">
+                  <div class="rates-list-internet__item-wifi-wrapper">
+                    <div class="rates-list-internet__item-wifi">
+                      {{ this.wifi }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rates-list-internet__item-down">
+                <div class="rates-list-internet__item-price-wrapper">
+                  <div class="rates-list-internet__item-price">
+                    <span class="number">{{ this.price.number }}</span> {{ this.price.unit }}
+                  </div>
+                </div>
+
+                <div class="rates-list__slide-btns-wrapper">
+                  <button type="button" class="rates-list__slide-btn-plug gl__main-btn {{#if isOrange}}mod-white{{/if}} js-open-send-request-modal">
+                    Подключить
+                  </button>
+
+                  <div class="rates-list__slide-link-detailed-wrapper">
+                    <button type="button" class="gl__secondary-btn {{#if isOrange}}mod-white{{/if}} js-open-about-tariff-modal">
+                      Подробнее о тарифе
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

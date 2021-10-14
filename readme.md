@@ -17,6 +17,7 @@
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/product">Samsung Galaxy A51 (A515)</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/rates-mobile-list">Тарифы мобильной связи</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/rates-mobile-item">Тариф «Много минут»</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/rates-internet-list">Тарифы интернета</a><br>
 </div>
 </body>
 
