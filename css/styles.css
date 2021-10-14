@@ -1841,11 +1841,11 @@ button.swiper-pagination-bullet {
     z-index: var(--z-index-header);
     pointer-events: auto; }
 
-::-moz-selection, .bread-crumbs__container.mod-orange ::-moz-selection, .services__item-wrapper.mod-painted ::-moz-selection, .order-call ::-moz-selection, .fly-top-block ::-moz-selection {
+::-moz-selection, .bread-crumbs__container.mod-orange ::-moz-selection, .services__item-wrapper.mod-painted ::-moz-selection, .order-call ::-moz-selection, .fly-top-block ::-moz-selection, .rates-list-internet__item.mod-orange ::-moz-selection {
   background-color: #fff;
   color: var(--main-color); }
 
-::selection, .bread-crumbs__container.mod-orange ::selection, .services__item-wrapper.mod-painted ::selection, .order-call ::selection, .fly-top-block ::selection {
+::selection, .bread-crumbs__container.mod-orange ::selection, .services__item-wrapper.mod-painted ::selection, .order-call ::selection, .fly-top-block ::selection, .rates-list-internet__item.mod-orange ::selection {
   background-color: #fff;
   color: var(--main-color); }
 
@@ -6548,42 +6548,42 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
     .recommend {
       padding: 3rem 0 4rem; } }
 
-.rates-mobile-list {
+.rates-list {
   padding: 4rem 0; }
   @media screen and (max-width: 767px) {
-    .rates-mobile-list {
+    .rates-list {
       padding: 2rem 0; } }
 
-.rates-mobile-list__content {
+.rates-list__content {
   display: grid;
   grid-template-columns: 30rem 1fr;
   grid-gap: 0 3rem; }
   @media screen and (max-width: 1399px) {
-    .rates-mobile-list__content {
+    .rates-list__content {
       grid-template-columns: 26rem 1fr;
       grid-gap: 0 2rem; } }
   @media screen and (max-width: 1159px) {
-    .rates-mobile-list__content {
+    .rates-list__content {
       grid-template-columns: 1fr;
       grid-gap: 2rem; } }
 
 @media screen and (min-width: 1160px) {
-  .rates-mobile-list__title {
+  .rates-list__title {
     grid-row: 1;
     grid-column: 2; } }
 
 @media screen and (min-width: 1160px) {
-  .rates-mobile-list__menu-wrapper {
+  .rates-list__menu-wrapper {
     grid-row: 2;
     grid-column: 1; } }
 
-.rates-mobile-list__menu-item {
+.rates-list__menu-item {
   border: 1px solid transparent;
   border-top-color: var(--border-color); }
-  .rates-mobile-list__menu-item:last-child {
+  .rates-list__menu-item:last-child {
     border-bottom-color: var(--border-color); }
 
-.rates-mobile-list__menu-btn {
+.rates-list__menu-btn {
   padding: 1.4rem 0;
   width: 100%;
   display: -webkit-box;
@@ -6602,10 +6602,10 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
   letter-spacing: 0.02em;
   -webkit-transition: color 250ms;
   transition: color 250ms; }
-  .rates-mobile-list__menu-btn:hover {
+  .rates-list__menu-btn:hover {
     color: var(--main-color); }
 
-.rates-mobile-list__menu-btn-icon {
+.rates-list__menu-btn-icon {
   height: 2.6rem;
   width: 2.6rem;
   -webkit-box-flex: 0;
@@ -6614,21 +6614,123 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
   margin-right: 1.6rem; }
 
 @media screen and (min-width: 1160px) {
-  .rates-mobile-list__list-wrapper {
+  .rates-list__list-wrapper {
     grid-row: 2;
     grid-column: 2; } }
 
-.rates-mobile-list__list {
+.rates-list__list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-gap: 3rem; }
   @media screen and (max-width: 1399px) {
-    .rates-mobile-list__list {
+    .rates-list__list {
       grid-gap: 2rem; } }
   @media screen and (max-width: 767px) {
-    .rates-mobile-list__list {
+    .rates-list__list {
       grid-template-columns: repeat(1, minmax(0, 1fr));
       grid-gap: 2rem; } }
+
+.rates-list-internet__item {
+  padding: 2.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 44.2rem;
+  z-index: 1; }
+  .rates-list-internet__item.mod-orange {
+    background-color: var(--main-color);
+    color: #fff;
+    position: relative; }
+    .rates-list-internet__item.mod-orange .rates-list-internet__item-wifi {
+      color: #fff;
+      border-color: #fff; }
+
+.rates-list-internet__item-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 46rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1; }
+
+.rates-list-internet__item-up {
+  margin-bottom: 2rem; }
+
+.rates-list-internet__item-block + .rates-list-internet__item-block {
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--border-color); }
+
+.rates-list-internet__item-title {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  margin-bottom: .6rem; }
+
+.rates-list-internet__item-subtitle {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-bottom: 2rem; }
+
+.rates-list-internet__item-internet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.rates-list-internet__item-internet-img {
+  height: 3.2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 2.4rem; }
+
+.rates-list-internet__item-internet-caption {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 1.6rem; }
+
+.rates-list-internet__item-wifi-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.rates-list-internet__item-wifi {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--main-color);
+  letter-spacing: 0.02em;
+  border-bottom: 1px dashed var(--main-color); }
+
+.rates-list-internet__item-price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 1.4rem; }
+
+.rates-list-internet__item-price {
+  font-size: 1.8rem;
+  line-height: 2.2rem; }
+  .rates-list-internet__item-price .number {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-right: .4rem; }
 
 .info-links {
   padding: 4rem 0 10rem; }
