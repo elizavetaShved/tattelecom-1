@@ -24,6 +24,7 @@
 @import 'components/common/faq';
 @import 'components/common/pagination-page';
 @import 'components/common/product-item';
+@import 'components/common/documents-list';
 
 @import 'components/layout/header';
 @import 'components/layout/footer';
@@ -74,3 +75,6 @@
 
 @import 'components/rates-mobile-list-page/rates-mobile-list';
 @import 'components/rates-mobile-list-page/info-links';
+
+@import 'components/instructions/instructions';
+@import 'components/instructions/errors-list';
