@@ -1,0 +1,156 @@
+{
+  "title": "Тариф «Много минут»",
+  "script": "rates-mobile-item-page",
+  "bread-crumbs": [
+    {
+      "name": "Частным клиентам"
+    },
+    {
+      "name": "Мобильная связь"
+    },
+    {
+      "name": "Тарифы",
+      "noLink": true
+    }
+  ],
+  "preview-list": [
+    {
+      "caption": "Интернет",
+      "rowsList": [
+        {
+          "caption": "Мобильный интернет",
+          "value": "Безлимит"
+        }
+      ]
+    },
+    {
+      "caption": "Звонки",
+      "rowsList": [
+        {
+          "caption": "Исходящие вызовы на мобильные и городские номера РТ (за исключением номеров «Летай»)",
+          "value": "500 мин./мес."
+        },
+        {
+          "caption": "Исходящие вызовы на мобильные и городские номера РФ",
+          "value": "300 мин./мес."
+        },
+        {
+          "caption": "Исходящие вызовы на номера оператора «Летай»",
+          "value": "Без ограничений"
+        }
+      ]
+    },
+    {
+      "caption": "Сообщения",
+      "rowsList": [
+        {
+          "caption": "Исходящие SMS на номера мобильных операторов РТ (в том числе на номера оператора «Летай»)",
+          "value": "100 SMS/мес."
+        }
+      ]
+    },
+    {
+      "caption": "Дополнительно",
+      "rowsList": [
+        {
+          "caption": "Кэшбэк ",
+          "value": "20%"
+        }
+      ]
+    }
+  ],
+  "additional-list": [
+    {
+      "caption": "Соцсети",
+      "text": "Вконтакте, Instagram, Facebook, Twitter и Одноклассники",
+      "actualPrice": "50 ₽",
+      "oldPrice": "60 ₽",
+      "toggleName": "option-social-network",
+      "appsList": [
+        "vk",
+        "inst",
+        "facebook",
+        "twitter",
+        "ok"
+      ]
+    },
+    {
+      "caption": "Мессенжеры",
+      "text": "WhatsApp, Telegram, Viber, Discord, Skype и ICQ",
+      "actualPrice": "Бесплатно",
+      "toggleName": "option-messengers",
+      "appsList": [
+        "wp",
+        "telegram",
+        "viber",
+        "discord",
+        "skype",
+        "icq"
+      ]
+    },
+    {
+      "caption": "Развлечения",
+      "text": "YouTube, Twitch и TikTok",
+      "actualPrice": "85 ₽",
+      "oldPrice": "100 ₽",
+      "toggleName": "option-entertainments",
+      "appsList": [
+        "youTube",
+        "twitch",
+        "tikTok"
+      ]
+    }
+  ],
+  "drop-menu": [
+    {
+      "title": "Сверх абонентской платы",
+      "text": [
+        "1. пункт 1",
+        "2. пункт 2",
+        "3. пункт 3"
+      ]
+    },
+    {
+      "title": "Примечания",
+      "text": [
+        "1. пункт 1",
+        "2. пункт 2",
+        "3. пункт 3"
+      ]
+    }
+  ],
+  "info-links": [
+    {
+      "title": ["Смартфоны в рассрочку"],
+      "text": "Рассрочка на приобретение мобильных устройств с поддержкой 4G.",
+      "img": "img/rates-mobile-list-page/img-2.png",
+      "linkText": "Выбрать смартфон",
+      "linkWithArrow": true,
+      "blackTitle": true,
+      "blackLink": true
+    },
+    {
+      "title": ["Вместе выгодно", "2.0"],
+      "text": "Подключите «Летай» и получайте кешбэк 20%!",
+      "imgBackground": "img/rates-mobile-list-page/img-3.jpg",
+      "linkText": "Подробнее"
+    },
+    {
+      "title": ["Доставка SIM-карты бесплатно на дом"],
+      "text": "Рассрочка на приобретение мобильных устройств с поддержкой 4G.",
+      "imgBackground": "img/rates-mobile-list-page/img-1.jpg",
+      "linkText": "Заказать сим-карту",
+      "whiteTitle": true,
+      "whiteText": true,
+      "whiteLink": true
+    },
+    {
+      "title": ["Выбирайте красивые номера"],
+      "text": "Серебрянный, Золотой, Бронзовый",
+      "img": "img/rates-mobile-list-page/img-4.png",
+      "linkText": "Подобрать",
+      "linkWithArrow": true,
+      "blackLink": true
+    }
+  ]
+}

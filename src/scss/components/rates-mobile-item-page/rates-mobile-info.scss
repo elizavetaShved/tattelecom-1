@@ -1,0 +1,236 @@
+.rates-mobile-info {
+  padding: 4rem 0 3rem;
+
+  @include for-sm-up {
+    padding: 2rem 0 1.6rem;
+  }
+}
+
+.rates-mobile-info__content {
+  display: flex;
+
+  @include for-md-down {
+    display: block;
+  }
+}
+
+.rates-mobile-info__preview {
+  background: var(--border-color);
+  border-radius: 10px;
+  padding: 4.2rem 7.8rem;
+  width: 70%;
+  flex: 1 1 70%;
+
+  @include for-lg-down {
+    padding: 3rem 2rem;
+  }
+
+  @include for-md-down {
+    width: 100%;
+  }
+}
+
+.rates-mobile-info__title {
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 3.2rem;
+
+  @include for-md-down {
+    margin-bottom: 3rem;
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+  }
+}
+
+.rates-mobile-info__subtitle {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--main-grey-color);
+  margin-bottom: 3.2rem;
+
+  @include for-md-down {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.rates-mobile-info__preview-list {
+  &:not(:last-child) {
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.rates-mobile-info__preview-item {
+  padding: 2rem 0;
+
+  & + & {
+    border-top: 1px solid #fff;
+  }
+}
+
+.rates-mobile-info__preview-caption {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  margin-bottom: .6rem;
+}
+
+.rates-mobile-info__preview-row {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+
+  & + & {
+    margin-top: 2rem;
+  }
+}
+
+.rates-mobile-info__preview-rows-caption {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding-right: 2.8rem;
+  display: flex;
+}
+
+.rates-mobile-info__preview-rows-btn {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rates-mobile-info__preview-rows-btn-icon {
+  height: 1.6rem;
+  fill: #A6A6A6;
+}
+
+.rates-mobile-info__preview-rows-caption-value {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: end;
+  margin-left: 2rem;
+  white-space: nowrap;
+}
+
+.rates-mobile-info__preview-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.rates-mobile-info__preview-price-wrapper {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+
+  .number {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-right: .4rem;
+  }
+}
+
+.rates-mobile-info__preview-btn {
+  padding: 1.6rem 6rem;
+}
+
+.rates-mobile-info__additional {
+  margin-left: 10.2rem;
+  width: 30%;
+  flex: 0 0 30%;
+
+  @include for-lg-down {
+    margin-left: 5rem;
+  }
+
+  @include for-md-down {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 5rem;
+  }
+}
+
+.rates-mobile-info__additional-item {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border-color);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+
+  &:first-child {
+    padding-top: 0;
+  }
+}
+
+.rates-mobile-info__additional-caption {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-bottom: 1.6rem;
+  font-weight: 600;
+}
+
+.rates-mobile-info__additional-text {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-bottom: 1.6rem;
+  color: var(--main-grey-color);
+}
+
+.rates-mobile-info__additional-apps-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.rates-mobile-info__additional-apps-img {
+  height: 3rem;
+
+  & + & {
+    margin-left: .8rem;
+  }
+}
+
+.rates-mobile-info__additional-control-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.rates-mobile-info__additional-actual-price-wrapper {
+  margin-bottom: 1rem;
+}
+
+.rates-mobile-info__additional-actual-price {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.rates-mobile-info__additional-old-price {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--main-grey-color);
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 1px;
+    background-color: #e30000;
+    transform: translate(-50%, -50%) rotate(156deg);
+  }
+}
+
+.rates-mobile-info__drop-menu-wrapper {
+  margin-top: 6rem;
+
+  @include for-md-down {
+    margin-top: 4;
+  }
+}

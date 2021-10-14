@@ -17,7 +17,8 @@ module.exports = {
     ['4g-services-page']: './src/js/pages/4g-services-page.js',
     ['product-page']: './src/js/pages/product-page.js',
     ['rates-mobile-list-page']: './src/js/pages/rates-mobile-list-page.js',
-    ['instructions']: './src/js/pages/instructions.js'
+    ['instructions']: './src/js/pages/instructions.js',
+    ['rates-mobile-item-page']: './src/js/pages/rates-mobile-item-page.js'
   },
   output: {
     path: path.resolve(__dirname, './build/js'),
