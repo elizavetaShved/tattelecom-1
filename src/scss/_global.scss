@@ -1,4 +1,6 @@
 body {
+  color: var(--main-text-color);
+  
   &.mod-no-scroll {
     overflow: hidden;
     height: 100vh;
