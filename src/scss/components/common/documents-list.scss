@@ -1,0 +1,118 @@
+.documents-list {
+
+  // По неймингу: dl - document-list
+  // на всякий случай, чтобы не было коллизий
+  --dl-left-padding: 7.4rem;
+
+  &__item {
+    &:first-of-type {
+      .documents-list__item-btn {
+        border-top: 1px solid var(--border-color);
+      }
+    }
+  }
+
+  &__item-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding-left: var(--dl-left-padding);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2.4rem;
+
+    // background-color: var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+
+    transition: background-color 0.3s;
+
+    &:focus,
+    &:hover {
+      background-color: var(--border-color);
+
+      .documents-list__item-btn-label {
+        color: var(--main-color);
+      }
+    }
+
+    &.mod-open {
+      background-color: var(--border-color);
+
+      .documents-list__item-btn-label {
+        color: var(--main-color);
+      }
+
+      .documents-list__item-btn-icon {
+        stroke: var(--main-color);
+      }
+    }
+  }
+
+  &__item-btn-label {
+    font-size: var(--fs-h3);
+    transition: color 0.25s;
+  }
+
+  &__item-btn-icon {
+  }
+
+  &__item-content-wrapper {
+  }
+
+  &__item-content {
+    padding: 4rem 0;
+  }
+
+  &__item-content-unit {
+    margin-bottom: 4rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-content-unit-link {
+    position: relative;
+
+    display: flex;
+
+    padding-left: var(--dl-left-padding);
+
+    &:hover,
+    &:focus {
+      .documents-list__item-content-unit-icon {
+        stroke: var(--main-color);
+        fill: none;
+      }
+    }
+  }
+
+  &__item-content-unit-icon {
+    position: absolute;
+    left: 4rem;
+    top: 0;
+
+    width: 2.4rem;
+    height: 2.4rem;
+
+    stroke: var(--grey-text);
+    fill: none;
+    transition: stroke 250ms;
+  }
+
+  &__item-content-unit-text {
+  }
+
+  &__item-content-unit-name {
+    margin-bottom: 0.4rem;
+
+    font-size: var(--fs-t2);
+  }
+
+  &__item-content-unit-description {
+    font-size: var(--fs-t2);
+    font-weight: 300;
+  }
+}

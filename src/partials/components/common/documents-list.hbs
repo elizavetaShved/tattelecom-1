@@ -1,0 +1,36 @@
+{{!-- Список документов в виде аккордиона --}}
+{{!-- Используется как минимум в двух местах: --}}
+{{!-- 1. Инструкции --}}
+{{!-- 2. Бланки и Документы --}}
+
+<ul class="documents-list">
+  {{#each documentsList }}
+  <li class="documents-list__item">
+    <button type="button" class="gl__drop-menu-btn documents-list__item-btn js-drop-menu-btn">
+      <span class="documents-list__item-btn-label">{{this.title}}</span>
+      <svg class="gl__drop-menu-icon documents-list__item-btn-icon" width="24" height="24" aria-hidden="true">
+        <use xlink:href="#arrow-down"></use>
+      </svg>
+    </button>
+    <div class="documents-list__item-content-wrapper gl__drop-menu-container js-drop-menu-container">
+      <ul class="documents-list__item-content gl__drop-menu js-drop-menu">
+        {{#each this.documents}}
+        <li class="documents-list__item-content-unit">
+          <a class="documents-list__item-content-unit-link" title="Скачать" href="assets/documents/{{this.fileName}}"
+            download>
+            <svg class="documents-list__item-content-unit-icon" aria-hidden="true">
+              <use xlink:href="#download"></use>
+            </svg>
+
+            <div class="documents-list__item-content-unit-text">
+              <h4 class="documents-list__item-content-unit-name">{{this.name}}</h4>
+              <span class="documents-list__item-content-unit-description">{{this.description}}</span>
+            </div>
+          </a>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </li>
+  {{/each}}
+</ul>

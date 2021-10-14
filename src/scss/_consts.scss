@@ -24,4 +24,45 @@
   // z-index
   --z-index-header: 3;
   --z-index-roaming-top-block: 2;
+
+  //font size
+  // ! Используется не на всём сайте
+  // и это уже не _consts
+  --fs-h1: 3.8rem;
+  --fs-h2: 2.8rem;
+  --fs-h3: 2rem;
+
+  --fs-t1: 1.8rem;
+  --fs-t2: 1.6rem;
+  --fs-t3: 1.4rem;
+
+  @include for-bg-down {
+    --fs-h1: 3.2rem;
+    --fs-h2: 2.4rem;
+    --fs-h3: 1.8rem;
+
+    --fs-t1: 1.6rem;
+    --fs-t2: 1.5rem;
+    --fs-t3: 1.4rem;
+  }
+
+  @include for-sm-down {
+    --fs-h1: 2.6rem;
+    --fs-h2: 2.2rem;
+    --fs-h3: 1.7rem;
+
+    --fs-t1: 1.5rem;
+    --fs-t2: 1.4rem;
+    --fs-t3: 1.3rem;
+  }
+
+  @include for-xs-down {
+    --fs-h1: 2.2rem;
+    --fs-h2: 1.8rem;
+    --fs-h3: 1.6rem;
+
+    --fs-t1: 1.4rem;
+    --fs-t2: 1.3rem;
+    --fs-t3: 1.2rem;
+  }
 }

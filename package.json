@@ -1,11 +1,21 @@
 {
-  "name": "handlebars-boilerplate",
-  "version": "3.0.0",
-  "description": "Modern boilerplate with Gulp and Webpack",
+  "name": "tattelecom-1",
+  "version": "1.0.0",
+  "description": "Tattelecom",
   "main": "main.js",
+  "bugs": {
+    "url": "https://github.com/elizavetaShved/tattelecom-1/issues"
+  },
+  "homepage": "https://github.com/elizavetaShved/tattelecom-1#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elizavetaShved/tattelecom-1.git"
+  },
   "scripts": {
     "build": "gulp build-production",
-    "dev": "gulp build && gulp serve"
+    "dev": "gulp build && gulp serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "Artem Safin",
@@ -43,6 +53,7 @@
     "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.3",
     "del": "^6.0.0",
+    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-cached": "^1.1.1",
