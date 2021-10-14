@@ -85,10 +85,6 @@
     .choices__inner {
       border-radius: 3px;
       min-height: auto;
-
-      @include for-sm-down {
-
-      }
     }
 
     .choices__inner, .choices__item--choice {

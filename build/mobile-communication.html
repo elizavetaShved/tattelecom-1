@@ -66,7 +66,7 @@
                     </svg>
                     Казань
                   </a>
-                  <a href="" class="header__top-menu-items-link mod-with-icons gl__bg-hide">
+                  <a href="" class="header__top-menu-items-link mod-with-icons">
                     <svg width="20" height="20" aria-hidden="true" class="header__top-menu-items-link-icon">
                       <use xlink:href="#lk"></use>
                     </svg>
@@ -686,6 +686,20 @@
             <div>
               <h3 class="services__item-info-title">Быстрое пополнение счета</h3>
     
+                <div class="menu-tabs__radio-btns-container ">
+                    <label class="menu-tabs__radio-wrapper">
+                      <input type="radio" class="menu-tabs__radio js-menu-tab" name="services-adding-funds-account" checked value="mobile">
+                      <span class="menu-tabs__radio-content">Мобильная связь</span>
+                    </label>
+                    <label class="menu-tabs__radio-wrapper">
+                      <input type="radio" class="menu-tabs__radio js-menu-tab" name="services-adding-funds-account"  value="internet">
+                      <span class="menu-tabs__radio-content">Интернет</span>
+                    </label>
+                    <label class="menu-tabs__radio-wrapper">
+                      <input type="radio" class="menu-tabs__radio js-menu-tab" name="services-adding-funds-account"  value="tv">
+                      <span class="menu-tabs__radio-content">Телевидение</span>
+                    </label>
+                </div>
     
               <form class="services__form-wrapper gl__menu-tab-content js-menu-tab-content" data-menu-mobile data-need-validation data-parsley-validate data-parsley-focus="none">
                 <div class="services__form-inputs-wrapper">
@@ -880,6 +894,37 @@
                   iconSearchLeft (true/false)
                   iconSimLeft (true/false)
                 -->
+                  <div class="select">
+                      <span class="gl-input__title mod-white">Укажите город проживания</span>
+                
+                    <div class="select__container
+                      mod-search
+                      
+                      
+                      
+                      
+                      mod-padding-right" id="fly-top-block-city">
+                
+                
+                      <label class="select__wrapper">
+                          <span class="gl__input-mark-required"></span>
+                        <select class="gl__select js-custom-select"
+                                data-parsley-class-handler="#fly-top-block-city"
+                                name="fly-top-block-city"
+                                data-parsley-required="" data-parsley-trigger="change"
+                        >
+                            <option placeholder value="">город</option>
+                              <option value="Казань">Казань</option>
+                              <option value="Чебоксары">Чебоксары</option>
+                              <option value="Набережные Челны">Набережные Челны</option>
+                        </select>
+                      </label>
+                
+                        <svg width="16" height="16" aria-hidden="true" class="select__search-icon mod-right">
+                          <use xlink:href="#search"></use>
+                        </svg>
+                    </div>
+                  </div>
                 <div class="services__btn-submit-wrapper">
                   <button type="submit" class="gl__main-btn mod-transparent services__btn-submit">Начать перенос</button>
                 </div>
@@ -926,6 +971,10 @@
       <div class="gl__page-content">
         <h2 class="gl__title">Выберите свой кэшбэк до 25%</h2>
     
+        <div class="cashback__subtitle">
+          Пользуйтесь домашними услугами Таттелеком и мобильной связью "Летай" и получайте каждый месяц реальный кэшбэк на свой лицевой счет!
+        </div>
+    
         <div class="gl-slider js-swiper-2">
           <div class="gl-slider__container swiper-container js-swiper-container-2">
             <ul class="gl-slider__wrapper swiper-wrapper">
@@ -969,58 +1018,6 @@
     </div>
     -->
         </div>
-      </div>
-    </section>
-    <section class="faq" id="faq-host">
-      <div class="gl__page-content">
-          <h2 class="gl__title">Вопросы и ответы</h2>
-    
-        <ul class="faq__list-wrapper">
-            <li class="faq__item">
-              <button type="button" class="faq__item-btn-wrapper gl__drop-menu-btn js-drop-menu-btn">
-                <svg width="24" height="24" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
-                  <use xlink:href="#arrow-down"></use>
-                </svg>
-                Как получить автоматические настройки Интернет и MMS?
-              </button>
-          
-                <div class="faq__item-content-wrapper gl__drop-menu-container js-drop-menu-container">
-                  <div class="gl__drop-menu js-drop-menu">
-                      <p class="faq__item-content-text">Для получения настроек Интернет и/или MMS мобильной связи «Летай»:</p>
-                      <p class="faq__item-content-text">1. отправьте любой текст на номер 116111 для получения настроек Internet и MMS;</p>
-                      <p class="faq__item-content-text">2. отправьте текст «111» на 116111 для получения настроек Internet;</p>
-                      <p class="faq__item-content-text">3. отправьте текст «222» на 116111 для получения настроек MMS.</p>
-                      <p class="faq__item-content-text">Далее Вам будет доставлено конфигурационное сообщение с настройками, которое необходимо установить на телефоне, в поле запрашиваемого PIN введите «1234». При невозможности установки конфигурационного SMS, произведите ручную настройку.</p>
-                  </div>
-                </div>
-          
-            </li>
-            <li class="faq__item">
-              <button type="button" class="faq__item-btn-wrapper gl__drop-menu-btn js-drop-menu-btn">
-                <svg width="24" height="24" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
-                  <use xlink:href="#arrow-down"></use>
-                </svg>
-                Как вручную настроить Интернет и MMS в телефоне?
-              </button>
-          
-                <div class="faq__item-content-wrapper gl__drop-menu-container js-drop-menu-container">
-                  <div class="gl__drop-menu js-drop-menu">
-                      <p class="faq__item-content-text">Для настройки Интернет и MMS в телефоне:</p>
-                      <p class="faq__item-content-text">1. пункт 1</p>
-                      <p class="faq__item-content-text">2. пункт 2</p>
-                      <p class="faq__item-content-text">3. пункт 3</p>
-                  </div>
-                </div>
-          
-            </li>
-        </ul>
-    
-          <a href="" class="faq__link-show-all">
-            Все вопросы и ответы
-            <svg width="20" height="20" aria-hidden="true" class="faq__link-show-all-icon">
-              <use xlink:href="#arrow-right"></use>
-            </svg>
-          </a>
       </div>
     </section>
     <section class="useful-information" id="useful-information-host">
@@ -1104,6 +1101,58 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="faq" id="faq-host">
+      <div class="gl__page-content">
+          <h2 class="gl__title">Вопросы и ответы</h2>
+    
+        <ul class="faq__list-wrapper">
+            <li class="faq__item">
+              <button type="button" class="faq__item-btn-wrapper gl__drop-menu-btn js-drop-menu-btn">
+                <svg width="24" height="24" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
+                  <use xlink:href="#arrow-down"></use>
+                </svg>
+                Как получить автоматические настройки Интернет и MMS?
+              </button>
+          
+                <div class="faq__item-content-wrapper gl__drop-menu-container js-drop-menu-container">
+                  <div class="gl__drop-menu js-drop-menu">
+                      <p class="faq__item-content-text">Для получения настроек Интернет и/или MMS мобильной связи «Летай»:</p>
+                      <p class="faq__item-content-text">1. отправьте любой текст на номер 116111 для получения настроек Internet и MMS;</p>
+                      <p class="faq__item-content-text">2. отправьте текст «111» на 116111 для получения настроек Internet;</p>
+                      <p class="faq__item-content-text">3. отправьте текст «222» на 116111 для получения настроек MMS.</p>
+                      <p class="faq__item-content-text">Далее Вам будет доставлено конфигурационное сообщение с настройками, которое необходимо установить на телефоне, в поле запрашиваемого PIN введите «1234». При невозможности установки конфигурационного SMS, произведите ручную настройку.</p>
+                  </div>
+                </div>
+          
+            </li>
+            <li class="faq__item">
+              <button type="button" class="faq__item-btn-wrapper gl__drop-menu-btn js-drop-menu-btn">
+                <svg width="24" height="24" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
+                  <use xlink:href="#arrow-down"></use>
+                </svg>
+                Как вручную настроить Интернет и MMS в телефоне?
+              </button>
+          
+                <div class="faq__item-content-wrapper gl__drop-menu-container js-drop-menu-container">
+                  <div class="gl__drop-menu js-drop-menu">
+                      <p class="faq__item-content-text">Для настройки Интернет и MMS в телефоне:</p>
+                      <p class="faq__item-content-text">1. пункт 1</p>
+                      <p class="faq__item-content-text">2. пункт 2</p>
+                      <p class="faq__item-content-text">3. пункт 3</p>
+                  </div>
+                </div>
+          
+            </li>
+        </ul>
+    
+          <a href="" class="faq__link-show-all">
+            Все вопросы и ответы
+            <svg width="20" height="20" aria-hidden="true" class="faq__link-show-all-icon">
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+          </a>
       </div>
     </section>
     <section class="application" id="application-host">

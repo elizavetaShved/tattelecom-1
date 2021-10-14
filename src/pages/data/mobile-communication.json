@@ -124,5 +124,43 @@
         "3. пункт 3"
       ]
     }
+  ],
+  "services-menu-tabs": [
+    {
+      "items": [
+        {
+          "itemName": "Мобильная связь",
+          "value": "mobile",
+          "name": "services-adding-funds-account",
+          "isChecked": true
+        },
+        {
+          "itemName": "Интернет",
+          "value": "internet",
+          "name": "services-adding-funds-account"
+        },
+        {
+          "itemName": "Телевидение",
+          "value": "tv",
+          "name": "services-adding-funds-account"
+        }
+      ]
+    }
+  ],
+  "city-select": [
+    {
+      "name": "fly-top-block-city",
+      "selectTitle": "Укажите город проживания",
+      "isWhiteTitle": true,
+      "isSearch": true,
+      "iconSearchRight": true,
+      "required": true,
+      "placeholder": "город",
+      "options": [
+        "Казань",
+        "Чебоксары",
+        "Набережные Челны"
+      ]
+    }
   ]
 }

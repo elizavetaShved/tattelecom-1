@@ -4457,6 +4457,15 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
     .cashback {
       padding: 4rem 0 2rem; } }
 
+.cashback__subtitle {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+  color: var(--grey-text);
+  margin-bottom: 5.2rem;
+  max-width: 60rem; }
+
 .cashback__slide {
   padding: 3.6rem 3.2rem;
   position: relative;
@@ -4563,7 +4572,10 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
               flex-direction: column; } }
 
 .what-is__block + .what-is__block {
-  margin-left: 4rem; }
+  margin-left: 23rem; }
+  @media screen and (max-width: 1023px) {
+    .what-is__block + .what-is__block {
+      margin-left: 4rem; } }
   @media screen and (max-width: 767px) {
     .what-is__block + .what-is__block {
       margin-left: 0;
