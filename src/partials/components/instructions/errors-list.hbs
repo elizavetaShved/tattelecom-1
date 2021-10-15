@@ -2,6 +2,25 @@
 {{!-- На странице "Инструкции" --}}
 {{!-- Сделано через аккордион --}}
 
-<ul class="errors-list">
-
-</ul>
+<div class="errors-list">
+  <h3 class="errors-list__title">Список ошибок</h3>
+  <ul class="errors-list__list">
+    {{#each errorsList}}
+    <li class="errors-list__list-item">
+      <button class="errors-list__error-btn gl__drop-menu-btn js-drop-menu-btn" type="button">
+        <span class="errors-list__error-btn-label">{{this.name}}</span>
+        <svg class="gl__drop-menu-icon errors-list__error-btn-icon" width="24" height="24" aria-hidden="true">
+          <use xlink:href="#arrow-down"></use>
+        </svg>
+      </button>
+      <div class="errors-list__error-content-wrapper gl__drop-menu-container js-drop-menu-container">
+        <div class="errors-list__error-content gl__drop-menu js-drop-menu">
+          <div class="errors-list__error-content-text">
+            ???
+          </div>
+        </div>
+      </div>
+    </li>
+    {{/each}}
+  </ul>
+</div>

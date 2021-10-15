@@ -4,6 +4,10 @@
   // на всякий случай, чтобы не было коллизий
   --dl-left-padding: 7.4rem;
 
+  @include for-hg-down {
+    --dl-left-padding: 4rem;
+  }
+
   &__item {
     &:first-of-type {
       .documents-list__item-btn {
@@ -23,9 +27,8 @@
     padding-bottom: 2rem;
     padding-right: 2.4rem;
 
-    // background-color: var(--border-color);
     border-bottom: 1px solid var(--border-color);
-
+    text-align: left;
     transition: background-color 0.3s;
 
     &:focus,
@@ -45,7 +48,7 @@
       }
 
       .documents-list__item-btn-icon {
-        stroke: var(--main-color);
+        fill: var(--main-color);
       }
     }
   }
@@ -100,6 +103,10 @@
     stroke: var(--grey-text);
     fill: none;
     transition: stroke 250ms;
+
+    @include for-hg-down {
+      left: 1rem;
+    }
   }
 
   &__item-content-unit-text {
