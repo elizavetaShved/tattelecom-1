@@ -18,7 +18,10 @@
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/rates-mobile-list">Тарифы мобильной связи</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/rates-mobile-item">Тариф Мобильный «Много минут»</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/rates-internet-list">Тарифы интернета</a><br>
-    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/rates-internet-item">Тариф Интернета «Летай. Оранжевый Профит»</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/rates-internet-item">Тариф Интернета «Летай. Оранжевый Профит»</a><br><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/instructions">Инструкции</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/documents">Бланки и документы</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/third-parties">Третьи лица</a><br>
 </div>
 </body>
 
