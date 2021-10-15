@@ -1,15 +1,15 @@
-<section class="rates-mobile-list" id="rates-mobile-list-page-host">
+<section class="rates-list" id="rates-mobile-list-page-host">
   <div class="gl__page-content">
 
-    <div class="rates-mobile-list__content">
-      <h2 class="rates-mobile-list__title gl__title">Тарифы мобильной связи</h2>
+    <div class="rates-list__content">
+      <h2 class="rates-list__title gl__title">Тарифы мобильной связи</h2>
 
-      <ul class="rates-mobile-list__menu-wrapper gl__lg-hide">
+      <ul class="rates-list__menu-wrapper gl__lg-hide">
         {{#each menuBtns }}
-          <li class="rates-mobile-list__menu-item">
-            <button type="button" class="rates-mobile-list__menu-btn">
+          <li class="rates-list__menu-item">
+            <button type="button" class="rates-list__menu-btn">
               {{ this }}
-              <svg width="26" height="26" aria-hidden="true" class="rates-mobile-list__menu-btn-icon">
+              <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
                 <use xlink:href="#arrow-right"></use>
               </svg>
             </button>
@@ -21,8 +21,8 @@
         {{> common/btn-settings text="Безлимитный интернет" }}
       </div>
 
-      <div class="rates-mobile-list__list-wrapper">
-        <ul class="rates-mobile-list__list">
+      <div class="rates-list__list-wrapper">
+        <ul class="rates-list__list">
           {{#each rates-list}}
             {{> common/rates/rates-item }}
           {{/each}}

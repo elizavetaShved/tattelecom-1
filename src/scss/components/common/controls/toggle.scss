@@ -1,0 +1,40 @@
+$toggle-width: 34px;
+$toggle-height: 18px;
+$toggle-padding: 2px;
+
+.toggle__input {
+  appearance: none;
+  position: relative;
+  display: inline-block;
+  width: $toggle-width;
+  height: $toggle-height;
+  margin: 0;
+  vertical-align: top;
+  background: var(--grey-text);
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: $toggle-padding;
+    top: $toggle-padding;
+    width: calc(#{$toggle-height} - #{$toggle-padding} * 2);
+    height: calc(#{$toggle-height} - #{$toggle-padding} * 2);
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translateX(0);
+    transition: transform 300ms;
+  }
+
+  &:checked {
+    background-color: var(--main-color);
+
+    &:after {
+      transform: translateX(calc(#{$toggle-width} - #{$toggle-height}));
+      background-color: #fff;
+    }
+  }
+}
