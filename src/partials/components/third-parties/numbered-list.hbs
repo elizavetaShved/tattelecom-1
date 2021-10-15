@@ -1,0 +1,14 @@
+<div class="numbered-list">
+  <div class="numbered-list__header numbered-list__container">
+    <span>Наименование организации</span>
+    <span>Адрес</span>
+  </div>
+  <ul class="numbered-list__list">
+    {{#each thirdParties }}
+    <li class="numbered-list__item numbered-list__container">
+      <span>{{this.name}}</span>
+      <span>{{this.address}}</span>
+    </li>
+    {{/each}}
+  </ul>
+</div>

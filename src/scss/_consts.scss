@@ -45,7 +45,6 @@
     --fs-t2: 1.5rem;
     --fs-t3: 1.4rem;
   }
-
   @include for-sm-down {
     --fs-h1: 2.6rem;
     --fs-h2: 2.2rem;
@@ -55,7 +54,6 @@
     --fs-t2: 1.4rem;
     --fs-t3: 1.3rem;
   }
-
   @include for-xs-down {
     --fs-h1: 2.2rem;
     --fs-h2: 1.8rem;
@@ -64,5 +62,25 @@
     --fs-t1: 1.4rem;
     --fs-t2: 1.3rem;
     --fs-t3: 1.2rem;
+  }
+
+  // numbered-list
+  // хотел оставить внутри компонента, но почему-то выдает ошибку
+  --nl-left-padding: 11rem;
+  --nl-vertical-padding: 2rem;
+  --nl-right-padding: 2.5rem;
+
+  @include for-bg-down {
+    --nl-left-padding: 8rem;
+  }
+  @include for-sm-down {
+    --nl-left-padding: 6rem;
+    --nl-vertical-padding: 1.5rem;
+    --nl-right-padding: 2rem;
+  }
+  @include for-xs-down {
+    --nl-left-padding: 4rem;
+    --nl-vertical-padding: 1.2rem;
+    --nl-right-padding: 1.2rem;
   }
 }

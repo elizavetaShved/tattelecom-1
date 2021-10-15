@@ -1,0 +1,114 @@
+.numbered-list {
+  overflow-x: scroll;
+
+  padding-bottom: 0.8rem;
+  margin-bottom: 6rem;
+
+  @include for-sm-down {
+    margin-bottom: 4rem;
+  }
+  @include for-xs-down {
+    margin-bottom: 2rem;
+  }
+
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    height: 0.2rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color:var(--main-color);
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: minmax(180px, 18fr) minmax(130px, 13fr);
+    column-gap: 4rem;
+    align-items: center;
+
+    min-width: calc(180px + 130px + 4rem + var(--nl-left-padding) + var(--nl-right-padding));
+
+    @include for-sm-down {
+      column-gap: 3rem;
+
+      min-width: calc(180px + 130px + 3rem + var(--nl-left-padding) + var(--nl-right-padding));
+    }
+    @include for-xs-down {
+      column-gap: 2rem;
+
+      min-width: calc(180px + 130px + 2rem + var(--nl-left-padding) + var(--nl-right-padding));
+    }
+  }
+
+  &__list {
+    counter-reset: num;
+  }
+
+  &__header {
+    position: relative;
+
+    padding-top: var(--nl-vertical-padding);
+    padding-bottom: var(--nl-vertical-padding);
+    padding-left: var(--nl-left-padding);
+    padding-right: var(--nl-right-padding);
+
+    background-color: var(--main-color);
+    color: white;
+    font-size: var(--fs-h3);
+    letter-spacing: 0.015em;
+    line-height: 1.2;
+
+    &::before {
+      content: "№";
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 2.5rem;
+
+      @include for-xs-down {
+        left: 1.2rem;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    padding-top: var(--nl-vertical-padding);
+    padding-bottom: var(--nl-vertical-padding);
+    padding-left: var(--nl-left-padding);
+    padding-right: var(--nl-right-padding);
+
+    border-left: solid 0.1rem var(--border-color);
+    border-right: solid 0.1rem var(--border-color);
+    border-bottom: solid 0.1rem var(--border-color);
+
+    font-size: var(--fs-t2);
+    letter-spacing: 0.015em;
+    line-height: 1.2;
+
+    &::before {
+      content: counter(num);
+      counter-increment: num;
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 2.5rem;
+
+      @include for-xs-down {
+        left: 1.2rem;
+      }
+    }
+  }
+}
