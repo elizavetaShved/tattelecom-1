@@ -7,7 +7,9 @@
 }
 
 .faq__item {
-  border-bottom: 2px solid var(--border-color);
+  &:not(.mod-no-border) {
+    border-bottom: 2px solid var(--border-color);
+  }
 }
 
 .faq__item-btn-wrapper {

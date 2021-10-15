@@ -1,0 +1,102 @@
+<form class="rates-info__content">
+  <div class="rates-info__preview">
+    <div class="rates-info__title">
+      {{ preview-list-title }}
+    </div>
+
+    <ul class="rates-info__preview-list">
+      {{#each preview-list }}
+        <li class="rates-info__preview-item">
+          {{#if this.caption }}
+            <div class="rates-info__preview-caption">
+              {{ this.caption }}
+            </div>
+          {{/if}}
+          <ul class="rates-info__preview-rows-list">
+            {{#each this.rowsList }}
+              <li class="rates-info__preview-row">
+                <div class="rates-info__preview-rows-caption-wrapper">
+                  <div class="rates-info__preview-rows-caption">
+                    {{ this.caption }}
+                    {{#if info-btn }}
+                      <button type="button" class="rates-info__preview-rows-btn">
+                        <svg width="16" height="16" aria-hidden="true" class="rates-info__preview-rows-btn-icon">
+                          <use xlink:href="#info-ellipse"></use>
+                        </svg>
+                      </button>
+                    {{/if}}
+                  </div>
+                </div>
+
+                <div class="rates-info__preview-rows-caption-value">
+                  {{ this.value }}
+                </div>
+              </li>
+            {{/each}}
+          </ul>
+        </li>
+      {{/each}}
+    </ul>
+
+    <div class="rates-info__preview-bottom">
+      <div class="rates-info__preview-price-wrapper">
+        <span class="number">350</span>₽/мес
+      </div>
+
+      <button type="submit" class="rates-info__preview-btn gl__main-btn">
+        Подключить
+      </button>
+    </div>
+  </div>
+
+  <div class="rates-info__additional">
+    <div class="rates-info__title">
+      Дополнительные опции
+    </div>
+
+    <div>
+      {{#if rates-info-subtitle }}
+        <div class="rates-info__subtitle">
+          {{ rates-info-subtitle }}
+        </div>
+      {{/if}}
+
+      <ul class="rates-info__additional-list">
+        {{#each additional-list }}
+          <li class="rates-info__additional-item">
+            <div>
+              <div class="rates-info__additional-caption">
+                {{ this.caption }}
+              </div>
+
+              <div class="rates-info__additional-text">
+                {{ this.text }}
+              </div>
+
+              <div class="rates-info__additional-apps-wrapper">
+                {{#each appsList }}
+                  <img src="img/common/apps/{{ this }}.svg" alt="" class="rates-info__additional-apps-img">
+                {{/each}}
+              </div>
+            </div>
+
+            <div class="rates-info__additional-control-wrapper">
+              <div class="rates-info__additional-actual-price-wrapper">
+                <div class="rates-info__additional-actual-price">
+                  {{ this.actualPrice }}
+                </div>
+                {{#if oldPrice }}
+                  <div class="rates-info__additional-old-price">
+                    {{ this.oldPrice }}
+                  </div>
+                {{/if}}
+              </div>
+
+              {{> common/controls/toggle name=this.toggleName }}
+            </div>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</form>

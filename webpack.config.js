@@ -20,6 +20,7 @@ module.exports = {
     ['instructions']: './src/js/pages/instructions.js',
     ['rates-mobile-item-page']: './src/js/pages/rates-mobile-item-page.js',
     ['rates-internet-list-page']: './src/js/pages/rates-internet-list-page.js',
+    ['rates-internet-item-page']: './src/js/pages/rates-internet-item-page.js',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

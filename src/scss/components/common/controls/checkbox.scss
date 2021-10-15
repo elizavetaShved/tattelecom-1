@@ -98,6 +98,10 @@
     color: var(--grey-text);
   }
 
+  &.mod-grey-dark {
+    color: var(--main-grey-color);
+  }
+
   &.mod-filter {
     line-height: 1.6rem;
     user-select: auto;

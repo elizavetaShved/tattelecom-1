@@ -1,4 +1,4 @@
-.rates-mobile-info {
+.rates-info {
   padding: 4rem 0 3rem;
 
   @include for-sm-up {
@@ -6,7 +6,7 @@
   }
 }
 
-.rates-mobile-info__content {
+.rates-info__content {
   display: flex;
 
   @include for-md-down {
@@ -14,7 +14,7 @@
   }
 }
 
-.rates-mobile-info__preview {
+.rates-info__preview {
   background: var(--border-color);
   border-radius: 10px;
   padding: 4.2rem 7.8rem;
@@ -30,7 +30,7 @@
   }
 }
 
-.rates-mobile-info__title {
+.rates-info__title {
   font-weight: 600;
   font-size: 2.6rem;
   line-height: 3.4rem;
@@ -44,7 +44,7 @@
   }
 }
 
-.rates-mobile-info__subtitle {
+.rates-info__subtitle {
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: var(--main-grey-color);
@@ -57,13 +57,13 @@
   }
 }
 
-.rates-mobile-info__preview-list {
+.rates-info__preview-list {
   &:not(:last-child) {
     border-bottom: 1px solid #fff;
   }
 }
 
-.rates-mobile-info__preview-item {
+.rates-info__preview-item {
   padding: 2rem 0;
 
   & + & {
@@ -71,14 +71,14 @@
   }
 }
 
-.rates-mobile-info__preview-caption {
+.rates-info__preview-caption {
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 0.015em;
   margin-bottom: .6rem;
 }
 
-.rates-mobile-info__preview-row {
+.rates-info__preview-row {
   display: grid;
   grid-template-columns: 4fr 1fr;
 
@@ -87,7 +87,7 @@
   }
 }
 
-.rates-mobile-info__preview-rows-caption {
+.rates-info__preview-rows-caption {
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -95,7 +95,7 @@
   display: flex;
 }
 
-.rates-mobile-info__preview-rows-btn {
+.rates-info__preview-rows-btn {
   width: 2.4rem;
   height: 2.4rem;
   display: flex;
@@ -103,12 +103,12 @@
   justify-content: center;
 }
 
-.rates-mobile-info__preview-rows-btn-icon {
+.rates-info__preview-rows-btn-icon {
   height: 1.6rem;
   fill: #A6A6A6;
 }
 
-.rates-mobile-info__preview-rows-caption-value {
+.rates-info__preview-rows-caption-value {
   font-size: 1.6rem;
   line-height: 2.4rem;
   text-align: end;
@@ -116,14 +116,14 @@
   white-space: nowrap;
 }
 
-.rates-mobile-info__preview-bottom {
+.rates-info__preview-bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 3rem;
 }
 
-.rates-mobile-info__preview-price-wrapper {
+.rates-info__preview-price-wrapper {
   font-size: 1.8rem;
   line-height: 2.2rem;
 
@@ -134,11 +134,11 @@
   }
 }
 
-.rates-mobile-info__preview-btn {
+.rates-info__preview-btn {
   padding: 1.6rem 6rem;
 }
 
-.rates-mobile-info__additional {
+.rates-info__additional {
   margin-left: 10.2rem;
   width: 30%;
   flex: 0 0 30%;
@@ -154,7 +154,7 @@
   }
 }
 
-.rates-mobile-info__additional-item {
+.rates-info__additional-item {
   padding: 2rem 0;
   border-bottom: 1px solid var(--border-color);
   display: grid;
@@ -166,26 +166,26 @@
   }
 }
 
-.rates-mobile-info__additional-caption {
+.rates-info__additional-caption {
   font-size: 1.6rem;
   line-height: 2rem;
   margin-bottom: 1.6rem;
   font-weight: 600;
 }
 
-.rates-mobile-info__additional-text {
+.rates-info__additional-text {
   font-size: 1.4rem;
   line-height: 1.8rem;
   margin-bottom: 1.6rem;
   color: var(--main-grey-color);
 }
 
-.rates-mobile-info__additional-apps-wrapper {
+.rates-info__additional-apps-wrapper {
   display: flex;
   align-items: center;
 }
 
-.rates-mobile-info__additional-apps-img {
+.rates-info__additional-apps-img {
   height: 3rem;
 
   & + & {
@@ -193,23 +193,23 @@
   }
 }
 
-.rates-mobile-info__additional-control-wrapper {
+.rates-info__additional-control-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.rates-mobile-info__additional-actual-price-wrapper {
+.rates-info__additional-actual-price-wrapper {
   margin-bottom: 1rem;
 }
 
-.rates-mobile-info__additional-actual-price {
+.rates-info__additional-actual-price {
   font-size: 1.6rem;
   line-height: 2rem;
   font-weight: 600;
 }
 
-.rates-mobile-info__additional-old-price {
+.rates-info__additional-old-price {
   font-size: 1.4rem;
   line-height: 1.8rem;
   color: var(--main-grey-color);
@@ -227,7 +227,7 @@
   }
 }
 
-.rates-mobile-info__drop-menu-wrapper {
+.rates-info__drop-menu-wrapper {
   margin-top: 6rem;
 
   @include for-md-down {

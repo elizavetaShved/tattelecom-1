@@ -174,7 +174,8 @@
   .choices__inner {
     background: #fff !important;
     padding: 2rem !important;
-    box-shadow: 0 0.266004px 20px rgba(153, 152, 168, 0.17);
+    box-shadow: var(--box-shadow-input); // как у инпута стандартного
+    //box-shadow: 0 0.266004px 20px rgba(153, 152, 168, 0.17);
     border-radius: 10px;
     border: 2px solid transparent;
     transition: border-color 250ms;
@@ -185,7 +186,8 @@
     &--dropdown {
       border: none;
       border-radius: 0 0 10px 10px;
-      box-shadow: 0 0.266004px 20px rgba(153, 152, 168, 0.17);
+      box-shadow: var(--box-shadow-input); // как у инпута стандартного
+      //box-shadow: 0 0.266004px 20px rgba(153, 152, 168, 0.17);
     }
 
     // в placeholder

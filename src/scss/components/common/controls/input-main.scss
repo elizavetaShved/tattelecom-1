@@ -27,7 +27,7 @@
 
 .gl-input__input {
   background-color: #fff;
-  box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 16px rgba(51, 51, 51, 0.08);
+  box-shadow: var(--box-shadow-input);
   border-radius: 4px;
   padding: 1.2rem 1.4rem; // -2px в счёт border-а
   font-weight: 300;

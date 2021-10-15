@@ -1,107 +1,12 @@
-<section class="rates-mobile-info" id="rates-mobile-info-host">
+<section class="rates-info" id="rates-mobile-info-host">
   <div class="gl__page-content">
     <h2 class="gl__title">
       Тариф «Много минут»
     </h2>
 
-    <form class="rates-mobile-info__content">
-      <div class="rates-mobile-info__preview">
-        <div class="rates-mobile-info__title">
-          Включено в абонентскую плату:
-        </div>
+    {{> common/rates-info-form }}
 
-        <ul class="rates-mobile-info__preview-list">
-          {{#each preview-list }}
-            <li class="rates-mobile-info__preview-item">
-              <div class="rates-mobile-info__preview-caption">
-                {{ this.caption }}
-              </div>
-              <ul class="rates-mobile-info__preview-rows-list">
-                {{#each this.rowsList }}
-                  <li class="rates-mobile-info__preview-row">
-                    <div class="rates-mobile-info__preview-rows-caption-wrapper">
-                      <div class="rates-mobile-info__preview-rows-caption">
-                        {{ this.caption }}
-                        <button type="button" class="rates-mobile-info__preview-rows-btn">
-                          <svg width="16" height="16" aria-hidden="true" class="rates-mobile-info__preview-rows-btn-icon">
-                            <use xlink:href="#info-ellipse"></use>
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-
-                    <div class="rates-mobile-info__preview-rows-caption-value">
-                      {{ this.value }}
-                    </div>
-                  </li>
-                {{/each}}
-              </ul>
-            </li>
-          {{/each}}
-        </ul>
-
-        <div class="rates-mobile-info__preview-bottom">
-          <div class="rates-mobile-info__preview-price-wrapper">
-            <span class="number">350</span>₽/мес
-          </div>
-
-          <button type="submit" class="rates-mobile-info__preview-btn gl__main-btn">
-            Подключить
-          </button>
-        </div>
-      </div>
-
-      <div class="rates-mobile-info__additional">
-        <div class="rates-mobile-info__title">
-          Дополнительные опции
-        </div>
-
-        <div>
-          <div class="rates-mobile-info__subtitle">
-            Безлимитный трафик
-          </div>
-
-          <ul class="rates-mobile-info__additional-list">
-            {{#each additional-list }}
-              <li class="rates-mobile-info__additional-item">
-                <div>
-                  <div class="rates-mobile-info__additional-caption">
-                    {{ this.caption }}
-                  </div>
-
-                  <div class="rates-mobile-info__additional-text">
-                    {{ this.text }}
-                  </div>
-
-                  <div class="rates-mobile-info__additional-apps-wrapper">
-                    {{#each appsList }}
-                      <img src="img/common/apps/{{ this }}.svg" alt="" class="rates-mobile-info__additional-apps-img">
-                    {{/each}}
-                  </div>
-                </div>
-
-                <div class="rates-mobile-info__additional-control-wrapper">
-                  <div class="rates-mobile-info__additional-actual-price-wrapper">
-                    <div class="rates-mobile-info__additional-actual-price">
-                      {{ this.actualPrice }}
-                    </div>
-                    {{#if oldPrice }}
-                      <div class="rates-mobile-info__additional-old-price">
-                        {{ this.oldPrice }}
-                      </div>
-                    {{/if}}
-                  </div>
-
-                  {{> common/controls/toggle name=this.toggleName }}
-                </div>
-              </li>
-            {{/each}}
-          </ul>
-        </div>
-      </div>
-    </form>
-
-    <ul class="rates-mobile-info__drop-menu-wrapper">
+    <ul class="rates-info__drop-menu-wrapper">
       {{> common/faq/faq-item faq=drop-menu }}
     </ul>
   </div>

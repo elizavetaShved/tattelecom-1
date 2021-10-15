@@ -1,0 +1,57 @@
+<section class="rates-internet-application" id="rates-internet-application-host">
+  <div class="gl__page-content">
+    <h2 class="gl__title">Тариф «Летай. Оранжевый Профит»</h2>
+
+    <form class="rates-internet-application__form">
+      <div class="gl__title">
+        Заявка на подключение
+      </div>
+
+      <div class="rates-internet-application__form-subtitle">
+        Проверьте возможность подключения по вашему адресу:
+      </div>
+
+      <div class="rates-internet-application__form-controls">
+        {{> common/controls/select selects=city-select }}
+
+        {{> common/controls/select selects=street-select }}
+
+        {{> common/controls/input-main
+          required=true
+          type="number"
+          placeholder="дом"
+          name="house"
+        }}
+
+        {{> common/controls/input-main
+          required=true
+          type="number"
+          placeholder="Квартира"
+          name="flat"
+        }}
+
+        <div class="rates-internet-application__form-btn-wrapper">
+          <button type="submit" class="gl__main-btn rates-internet-application__form-btn">
+            Проверить
+          </button>
+        </div>
+
+        <div class="rates-internet-application__form-checkbox-wrapper">
+          {{> common/controls/input-checkbox
+            caption="Частный дом"
+            captionGreyDark=true
+            name="private-house"
+          }}
+        </div>
+      </div>
+    </form>
+
+    <div class="rates-internet-application__info-form-wrapper">
+      {{> common/rates-info-form }}
+    </div>
+
+    <ul class="rates-info__drop-menu-wrapper">
+      {{> common/faq/faq-item faq=drop-menu }}
+    </ul>
+  </div>
+</section>

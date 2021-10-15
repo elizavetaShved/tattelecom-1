@@ -1,0 +1,94 @@
+{
+  "title": "Тариф «Летай. Оранжевый Профит»",
+  "script": "rates-internet-item-page",
+  "bread-crumbs": [
+    {
+      "name": "Частным клиентам"
+    },
+    {
+      "name": "Интернет"
+    },
+    {
+      "name": "Тарифы",
+      "noLink": true
+    }
+  ],
+  "city-select": [
+    {
+      "name": "city",
+      "required": true,
+      "isSearch": true,
+      "placeholder": "город",
+      "options": [
+        "Казань",
+        "Чебоксары",
+        "Набережные Челны"
+      ]
+    }
+  ],
+  "street-select": [
+    {
+      "name": "street",
+      "required": true,
+      "isSearch": true,
+      "placeholder": "Улица",
+      "options": [
+        "Ленина",
+        "Московская",
+        "Воровского"
+      ]
+    }
+  ],
+  "preview-list-title": "Подключение по технологии Ethernet",
+  "preview-list": [
+    {
+      "rowsList": [
+        {
+          "caption": "Абонентская плата с 4 мес",
+          "value": "500 ₽/мес"
+        }
+      ]
+    },
+    {
+      "rowsList": [
+        {
+          "caption": "Интернет",
+          "value": "до 100 МБит/сек"
+        }
+      ]
+    },
+    {
+      "rowsList": [
+        {
+          "caption": "Телевидение",
+          "value": "более 160 телеканалов"
+        }
+      ]
+    }
+  ],
+  "additional-list": [
+    {
+      "caption": "Развлечения",
+      "text": "YouTube, Twitch и TikTok",
+      "actualPrice": "85 ₽",
+      "oldPrice": "100 ₽",
+      "toggleName": "option-entertainments",
+      "appsList": [
+        "youTube",
+        "twitch",
+        "tikTok"
+      ]
+    }
+  ],
+  "drop-menu": [
+    {
+      "title": "Примечания",
+      "noBorder": true,
+      "text": [
+        "1. пункт 1",
+        "2. пункт 2",
+        "3. пункт 3"
+      ]
+    }
+  ]
+}
