@@ -1,0 +1,74 @@
+<section class="support" id="support-host">
+  <div class="gl__page-content">
+    <h2 class="gl__title">Служба поддержки</h2>
+
+    <div class="support__subtitle">
+      Для оперативной связи со службой поддержки рекомендуем обращаться одним из удобных способов:
+    </div>
+
+    <a href="tel:+78432222222" class="support__tel">
+      (843)222-22-22
+    </a>
+
+    <ul class="support__messages-list">
+      {{#each messagesList }}
+        <li class="support__messages-item">
+          <a href="" class="support__messages-link">
+            <img src="img/common/apps/{{ this }}" alt="" class="support__messages-icon">
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+
+    <ul class="support__links-list">
+      {{#each linksList }}
+        <li class="support__link-item  gl__white-container">
+          <div class="support__link-item-title">
+            {{ this }}
+          </div>
+
+          <a href="" class="support__link">
+            Подробнее
+            <svg width="38" height="38" aria-hidden="true" class="support__link-icon">
+              <use xlink:href="#arrow-line-right"></use>
+            </svg>
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+
+    <div class="support__input-block">
+      <div class="support__input-container">
+        <label class="support__input-wrapper">
+          <input type="text" class="support__input" placeholder="Что будем искать?">
+          <svg width="24" height="24" aria-hidden="true" class="support__input-icon">
+            <use xlink:href="#search"></use>
+          </svg>
+        </label>
+
+        <div class="support__input-hint">
+          Например: <span class="mark">Платеж мобильной связи</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="support__info-links-container">
+      {{#each infoLinksList }}
+        <div class="support__info-links-wrapper">
+          <div class="support__info-links-caption">
+            {{ this.caption }}
+          </div>
+          <ul class="support__info-link-item-list">
+            {{#each links }}
+              <li class="support__info-link-item">
+                <a href="" class="support__info-link">
+                  {{ this }}
+                </a>
+              </li>
+            {{/each}}
+          </ul>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

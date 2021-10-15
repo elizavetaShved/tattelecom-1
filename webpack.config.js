@@ -22,7 +22,8 @@ module.exports = {
     ['third-parties']: './src/js/pages/third-parties.js',
     ['rates-mobile-item-page']: './src/js/pages/rates-mobile-item-page.js',
     ['rates-internet-item-page']: './src/js/pages/rates-internet-item-page.js',
-    ['rates-internet-list-page']: './src/js/pages/rates-internet-list-page.js'
+    ['rates-internet-list-page']: './src/js/pages/rates-internet-list-page.js',
+    ['support-page']: './src/js/pages/support-page.js',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),
