@@ -3,5 +3,13 @@
   &__content {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    align-items: flex-start;
+    column-gap: 3rem;
+
+    @include for-md-down {
+      grid-template-columns: 1fr;
+      column-gap: 0;
+      row-gap: 2rem;
+    }
   }
 }

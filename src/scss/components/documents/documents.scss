@@ -1,0 +1,15 @@
+.documents {
+  &__content {
+    margin-bottom: 12.4rem;
+
+    @include for-bg-down {
+      margin-bottom: 8rem;
+    }
+    @include for-sm-down {
+      margin-bottom: 6rem;
+    }
+    @include for-xs-down {
+      margin-bottom: 4rem;
+    }
+  }
+}

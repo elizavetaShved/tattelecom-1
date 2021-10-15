@@ -1,0 +1,41 @@
+.third-parties {
+  &__content {
+
+    margin-bottom: 12.4rem;
+
+    @include for-bg-down {
+      margin-bottom: 8rem;
+    }
+    @include for-sm-down {
+      margin-bottom: 6rem;
+    }
+    @include for-xs-down {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__more-link {
+    display: block;
+
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.75rem 5.45rem;
+
+    border: 0.1rem solid var(--main-color);
+    border-radius: 0.3rem;
+    color: var(--main-color);
+    font-size: var(--fs-t2);
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+
+    transition: background-color 0.25s, color 0.25s, border-color 0.25s;
+
+    &:hover,
+    &:focus {
+      background-color: var(--main-color-hover);
+      border-color: var(--main-color-hover);
+      color: white;
+    }
+  }
+}

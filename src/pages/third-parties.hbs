@@ -1,0 +1,19 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+{{> bread-crumbs }}
+
+<section class="third-parties">
+  <div class="gl__page-content">
+    <h2 class="gl__title">Информация о третьих лицах, осуществляющих обработку персональных данных</h2>
+
+    <div class="third-parties__content">
+      {{> third-parties/numbered-list }}
+
+      <a class="third-parties__more-link" href="#">Загрузить еще</a>
+    </div>
+  </div>
+</section>
+
+{{/content}}
+{{/extend}}

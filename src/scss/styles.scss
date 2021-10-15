@@ -26,6 +26,7 @@
 @import 'components/common/pagination-page';
 @import 'components/common/product-item';
 @import 'components/common/documents-list';
+@import 'components/common/rates-info';
 
 @import 'components/layout/header';
 @import 'components/layout/footer';
@@ -80,6 +81,9 @@
 @import 'components/instructions/instructions';
 @import 'components/instructions/errors-list';
 
-@import 'components/common/rates-info';
-
 @import 'components/rates-internet-item-page/rates-internet-application';
+
+@import 'components/documents/documents';
+
+@import 'components/third-parties/third-parties';
+@import 'components/third-parties/numbered-list';
