@@ -1,0 +1,17 @@
+<section class="promo-internet-info" id="promo-internet-info-host">
+  <div class="gl__page-content">
+    <ul class="promo-internet-info__list">
+      {{#each promo-internet-info-list}}
+        <li class="promo-internet-info__item">
+          <img src="{{ this.img }}" alt="" class="promo-internet-info__item-image">
+          <div class="promo-internet-info__item-caption">
+            {{ this.caption }}
+          </div>
+          <div class="promo-internet-info__item-text">
+            {{ this.text }}
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

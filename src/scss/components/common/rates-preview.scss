@@ -179,6 +179,75 @@ $padding-content: 2rem;
       }
     }
   }
+
+  &.mod-promo-internet {
+    background-color: var(--main-color);
+
+    .rates-preview__content-subtitle {
+      text-transform: initial;
+      margin-bottom: 2.8rem;
+      color: #fff !important;
+    }
+
+    .rates-preview__content-caption {
+      padding: 1rem 3.2rem;
+      background-color: #fff;
+      color: var(--main-color) !important;
+      font-weight: bold;
+      font-size: 4.4rem;
+      line-height: 4.4rem;
+      display: inline-block;
+
+      &::selection {
+        @extend %select-orange-background;
+      }
+    }
+
+    .rates-preview__btn {
+      background-color: #fff;
+      color: var(--main-color);
+    }
+
+    .rates-preview__img-wrapper {
+      @include for-sm-down {
+        margin-bottom: 0;
+      }
+    }
+
+    @include for-md-up {
+      .rates-preview__img {
+        height: 41.8rem;
+      }
+    }
+
+    @include for-sm-up {
+      .rates-preview__img {
+        height: 34rem;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+      }
+    }
+
+    @include for-sm-down {
+      .rates-preview__content-wrapper {
+        flex-direction: column;
+      }
+
+      .rates-preview__img-wrapper {
+        margin-top: 2.2rem;
+      }
+
+      .rates-preview__img {
+        margin-bottom: -$padding-content;
+        height: 20rem;
+      }
+    }
+
+    ::selection {
+      @extend %select-white-background;
+    }
+  }
 }
 
 .rates-preview__img-wrapper {
