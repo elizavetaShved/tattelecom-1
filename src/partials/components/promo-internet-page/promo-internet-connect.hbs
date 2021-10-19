@@ -1,0 +1,27 @@
+<section class="promo-internet-connect" id="promo-internet-connect-host">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      Подключиться к мобильной связи Летай легко
+    </h2>
+
+    <ul class="promo-internet-connect__steps-list">
+      {{#each steps-list }}
+        <li class="promo-internet-connect__step-item">
+          <img src="{{ this.img }}" alt="" class="promo-internet-connect__step-image">
+          <div class="promo-internet-connect__step-caption">
+            {{ this.caption }}
+          </div>
+          <div class="promo-internet-connect__step-text">
+            {{ this.text }}
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+
+    <div class="promo-internet-connect-btn-wrapper">
+      <button class="gl__main-btn">
+        Оставить заявку на подключение
+      </button>
+    </div>
+  </div>
+</section>

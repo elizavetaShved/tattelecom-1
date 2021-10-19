@@ -1,0 +1,21 @@
+<section class="promo-internet-advantages" id="promo-internet-advantages-host">
+  <div class="gl__page-content">
+  <ul class="promo-internet-advantages__list">
+    {{#each promo-internet-advantages-list }}
+      <li class="promo-internet-advantages__item">
+        <img src="{{ this.img }}" alt="" class="promo-internet-advantages__image">
+        <div class="promo-internet-advantages__content">
+          <div class="promo-internet-advantages__caption">
+            {{ this.caption }}
+          </div>
+          {{#if this.value }}
+            <div class="promo-internet-advantages__value">
+              {{ this.value }}
+            </div>
+          {{/if}}
+        </div>
+      </li>
+    {{/each}}
+  </ul>
+  </div>
+</section>

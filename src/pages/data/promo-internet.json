@@ -80,5 +80,43 @@
       "opportunities": "Смартфоны в рассрочку Кешбек 20%",
       "price": "350"
     }
+  ],
+  "promo-internet-advantages-list": [
+    {
+      "img": "img/promo-internet-page/sim-cards.png",
+      "caption": "Доставка SIM-карты бесплатно на дом",
+      "value": "Курьер бесконтактно привезет SIM-карту в удобное для Вас место"
+    },
+    {
+      "img": "img/promo-internet-page/coins.png",
+      "caption": "Простые и честные цены",
+      "value": "Вам не нужно «собирать» тариф по частям или искать скрытые условия. Тарифы линейки «МНОГО» очень простые и прозрачные"
+    },
+    {
+      "img": "img/promo-internet-page/phone.png",
+      "caption": "Раздача интернета со смартфона"
+    }
+  ],
+  "steps-list": [
+    {
+      "img": "img/promo-internet-page/connect/finger.png",
+      "caption": "Шаг 1",
+      "text": "Нажмите кнопку «Оставить заявку»"
+    },
+    {
+      "img": "img/promo-internet-page/connect/operator.png",
+      "caption": "Шаг 2",
+      "text": "Оператор связывается с Вами в течении 15 минут"
+    },
+    {
+      "img": "img/promo-internet-page/connect/truck.png",
+      "caption": "Шаг 3",
+      "text": "Определяете дату и адрес доставки SIM-карты"
+    },
+    {
+      "img": "img/promo-internet-page/connect/check-mark.png",
+      "caption": "Готово!",
+      "text": "Пользуетесь мобильной связью Летай"
+    }
   ]
 }

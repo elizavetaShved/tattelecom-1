@@ -1,0 +1,81 @@
+.promo-internet-connect {
+  padding: 8rem 0 6rem;
+
+  @include for-sm-down {
+    padding: 4rem 0 3rem;
+  }
+}
+
+.promo-internet-connect__steps-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 3rem;
+  margin-bottom: 6.2rem;
+
+  @include for-sm-down {
+  }
+
+  @include for-md-down {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include for-sm-down {
+    grid-gap: 1.6rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+.promo-internet-connect__step-item {
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 16px rgba(51, 51, 51, 0.08);
+  border-radius: 20px;
+  padding: 2.4rem 0;
+  min-height: 30rem;
+
+  @include for-sm-down {
+    padding: 1.6rem 0;
+  }
+}
+
+.promo-internet-connect__step-image, .promo-internet-connect__step-text {
+  padding: 0 2.4rem;
+}
+
+.promo-internet-connect__step-image {
+  height: 6rem;
+  margin-bottom: 2.6rem;
+  display: block;
+
+  @include for-sm-down {
+    margin-bottom: 1.6rem;
+  }
+}
+
+.promo-internet-connect__step-caption {
+  display: inline-block;
+  padding: 1.4rem 2.8rem;
+  min-width: 19.2rem;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 2.2rem;
+}
+
+.promo-internet-connect__step-text {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+
+  @include for-sm-down {
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+  }
+}
+
+.promo-internet-connect-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}

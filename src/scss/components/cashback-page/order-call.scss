@@ -66,12 +66,13 @@
   padding: 8.2rem 4rem 4.2rem 18.2rem;
 
   @include for-lg-down {
-    padding: 2rem;
+    padding: 6.2rem 2rem;
   }
 
   @include for-sm-down {
     flex-direction: column-reverse;
     border-radius: 0;
+    padding: 2rem;
   }
 }
 

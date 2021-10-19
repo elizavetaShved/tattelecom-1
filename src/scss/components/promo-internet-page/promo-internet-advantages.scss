@@ -1,0 +1,60 @@
+.promo-internet-advantages {
+  margin: 4rem 0;
+  background-color: var(--border-color);
+  padding: 5.2rem 0;
+
+  @include for-sm-down {
+    margin: 2rem 0;
+  }
+}
+
+.promo-internet-advantages__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 5rem;
+
+  @include for-bg-down {
+    grid-gap: 2.6rem;
+  }
+
+  @include for-sm-down {
+    grid-template-columns: 1fr;
+  }
+}
+
+.promo-internet-advantages__item {
+  display: flex;
+}
+
+.promo-internet-advantages__image {
+  height: 8rem;
+  margin-right: 3rem;
+
+  @include for-bg-down {
+    height: 5.2rem;
+    margin-right: 1.2rem;
+  }
+}
+
+.promo-internet-advantages__caption {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  margin-bottom: .6rem;
+
+  @include for-bg-down {
+    line-height: 2.8rem;
+  }
+}
+
+.promo-internet-advantages__value {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+
+  @include for-bg-down {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+}

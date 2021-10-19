@@ -2,6 +2,10 @@
   padding: 4rem 0 8rem 0;
 
   @include for-sm-down {
+    padding-top: 2rem;
+  }
+
+  @include for-xs-down {
     padding: 2rem 0;
   }
 }
