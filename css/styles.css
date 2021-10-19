@@ -1859,19 +1859,19 @@ button.swiper-pagination-bullet {
     z-index: var(--z-index-header);
     pointer-events: auto; }
 
-::-moz-selection, .bread-crumbs__container.mod-orange ::-moz-selection, .services__item-wrapper.mod-painted ::-moz-selection, .order-call ::-moz-selection, .fly-top-block ::-moz-selection, .rates-list-internet__item.mod-orange ::-moz-selection {
+::-moz-selection, .bread-crumbs__container.mod-orange ::-moz-selection, .rates-preview.mod-promo-internet ::-moz-selection, .services__item-wrapper.mod-painted ::-moz-selection, .order-call ::-moz-selection, .fly-top-block ::-moz-selection, .rates-list-internet__item.mod-orange ::-moz-selection {
   background-color: #fff;
   color: var(--main-color); }
 
-::selection, .bread-crumbs__container.mod-orange ::selection, .services__item-wrapper.mod-painted ::selection, .order-call ::selection, .fly-top-block ::selection, .rates-list-internet__item.mod-orange ::selection {
+::selection, .bread-crumbs__container.mod-orange ::selection, .rates-preview.mod-promo-internet ::selection, .services__item-wrapper.mod-painted ::selection, .order-call ::selection, .fly-top-block ::selection, .rates-list-internet__item.mod-orange ::selection {
   background-color: #fff;
   color: var(--main-color); }
 
-::-moz-selection, .top-block ::-moz-selection, .fly-top-block__form ::-moz-selection {
+::-moz-selection, .rates-preview.mod-promo-internet .rates-preview__content-caption::-moz-selection, .top-block ::-moz-selection, .fly-top-block__form ::-moz-selection {
   background-color: var(--main-color);
   color: #fff; }
 
-::selection, .top-block ::selection, .fly-top-block__form ::selection {
+::selection, .rates-preview.mod-promo-internet .rates-preview__content-caption::selection, .top-block ::selection, .fly-top-block__form ::selection {
   background-color: var(--main-color);
   color: #fff; }
 
@@ -2661,6 +2661,46 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
     @media screen and (min-width: 768px) {
       .rates-preview.mod-4g-services .rates-preview__content-caption {
         text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.54); } }
+  .rates-preview.mod-promo-internet {
+    background-color: var(--main-color); }
+    .rates-preview.mod-promo-internet .rates-preview__content-subtitle {
+      text-transform: initial;
+      margin-bottom: 2.8rem;
+      color: #fff !important; }
+    .rates-preview.mod-promo-internet .rates-preview__content-caption {
+      padding: 1rem 3.2rem;
+      background-color: #fff;
+      color: var(--main-color) !important;
+      font-weight: bold;
+      font-size: 4.4rem;
+      line-height: 4.4rem;
+      display: inline-block; }
+    .rates-preview.mod-promo-internet .rates-preview__btn {
+      background-color: #fff;
+      color: var(--main-color); }
+    @media screen and (max-width: 767px) {
+      .rates-preview.mod-promo-internet .rates-preview__img-wrapper {
+        margin-bottom: 0; } }
+    @media screen and (min-width: 960px) {
+      .rates-preview.mod-promo-internet .rates-preview__img {
+        height: 41.8rem; } }
+    @media screen and (min-width: 768px) {
+      .rates-preview.mod-promo-internet .rates-preview__img {
+        height: 34rem;
+        position: absolute;
+        bottom: 0;
+        z-index: -1; } }
+    @media screen and (max-width: 767px) {
+      .rates-preview.mod-promo-internet .rates-preview__content-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+      .rates-preview.mod-promo-internet .rates-preview__img-wrapper {
+        margin-top: 2.2rem; }
+      .rates-preview.mod-promo-internet .rates-preview__img {
+        margin-bottom: -2rem;
+        height: 20rem; } }
 
 .rates-preview__img-wrapper {
   display: -webkit-box;
@@ -6795,7 +6835,7 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
       padding: 3rem 0 4rem; } }
 
 .rates-list {
-  padding: 4rem 0; }
+  padding: 4rem 0 8rem 0; }
   @media screen and (max-width: 767px) {
     .rates-list {
       padding: 2rem 0; } }
@@ -7504,3 +7544,79 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
   @media screen and (max-width: 767px) {
     .support__info-link {
       padding: .4rem; } }
+
+.promo-internet-info {
+  padding: 10rem 0 4rem; }
+  @media screen and (max-width: 767px) {
+    .promo-internet-info {
+      padding: 5rem 0 2rem; } }
+
+.promo-internet-info__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 3rem; }
+  @media screen and (max-width: 1023px) {
+    .promo-internet-info__list {
+      grid-gap: 1.6rem; } }
+  @media screen and (max-width: 767px) {
+    .promo-internet-info__list {
+      grid-template-columns: 1fr; } }
+
+.promo-internet-info__item {
+  background: var(--border-color);
+  border-radius: 20px;
+  padding: 2.6rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 2.2rem 1.6rem; }
+  @media screen and (max-width: 1023px) {
+    .promo-internet-info__item {
+      grid-gap: 1.6rem;
+      padding: 1.6rem; } }
+  @media screen and (max-width: 559px) {
+    .promo-internet-info__item {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+
+.promo-internet-info__item-image {
+  height: 10rem;
+  grid-column: 1;
+  grid-row: 1 / 3; }
+  @media screen and (max-width: 1023px) {
+    .promo-internet-info__item-image {
+      height: 8.8rem; } }
+  @media screen and (max-width: 559px) {
+    .promo-internet-info__item-image {
+      grid-column: auto;
+      grid-row: auto; } }
+
+.promo-internet-info__item-caption {
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.015em;
+  color: var(--main-color); }
+  @media screen and (max-width: 1023px) {
+    .promo-internet-info__item-caption {
+      font-size: 2.4rem;
+      line-height: 2.6rem; } }
+  @media screen and (max-width: 767px) {
+    .promo-internet-info__item-caption {
+      font-size: 2rem;
+      line-height: 2rem; } }
+
+.promo-internet-info__item-text {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em; }
+  @media screen and (max-width: 1023px) {
+    .promo-internet-info__item-text {
+      font-size: 1.8rem;
+      line-height: 2.6rem; } }
+  @media screen and (max-width: 767px) {
+    .promo-internet-info__item-text {
+      font-size: 1.4rem;
+      line-height: 2.2rem; } }
+  @media screen and (max-width: 559px) {
+    .promo-internet-info__item-text {
+      grid-column: 1 / 3; } }
