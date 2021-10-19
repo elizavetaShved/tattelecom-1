@@ -1,0 +1,146 @@
+{
+  "title": "Промо GPON",
+  "script": "promo-gpon-page",
+  "rates-list": [
+    {
+      "title": "GPON 50+ТВ",
+      "subtitle": "Оборудование включено",
+      "proposalTv": [
+        {
+          "caption": "Более 160",
+          "value": "телеканалов"
+        }
+      ],
+      "proposalInternet": [
+        {
+          "caption": "Интернет",
+          "value": "до 50 Мбит/сек."
+        }
+      ],
+      "price": {
+        "number": "1099",
+        "unit": "₽/мес"
+      }
+    },
+    {
+      "title": "GPON 50+ТВ",
+      "subtitle": "Оборудование включено",
+      "proposalTv": [
+        {
+          "caption": "Более 160",
+          "value": "телеканалов"
+        }
+      ],
+      "proposalInternet": [
+        {
+          "caption": "Интернет",
+          "value": "до 50 Мбит/сек."
+        }
+      ],
+      "price": {
+        "number": "1299",
+        "unit": "₽/мес"
+      }
+    },
+    {
+      "title": "GPON 50+ТВ",
+      "subtitle": "Оборудование включено",
+      "proposalTv": [
+        {
+          "caption": "Более 160",
+          "value": "телеканалов"
+        }
+      ],
+      "proposalInternet": [
+        {
+          "caption": "Интернет",
+          "value": "до 50 Мбит/сек."
+        }
+      ],
+      "price": {
+        "number": "1499",
+        "unit": "₽/мес"
+      }
+    },
+    {
+      "title": "GPON 50+ТВ",
+      "subtitle": "Оборудование включено",
+      "proposalTv": [
+        {
+          "caption": "Более 160",
+          "value": "телеканалов"
+        }
+      ],
+      "proposalInternet": [
+        {
+          "caption": "Интернет",
+          "value": "до 50 Мбит/сек."
+        }
+      ],
+      "price": {
+        "number": "1499",
+        "unit": "₽/мес"
+      }
+    },
+    {
+      "title": "GPON 50+ТВ",
+      "subtitle": "Оборудование включено",
+      "proposalTv": [
+        {
+          "caption": "Более 160",
+          "value": "телеканалов"
+        }
+      ],
+      "proposalInternet": [
+        {
+          "caption": "Интернет",
+          "value": "до 50 Мбит/сек."
+        }
+      ],
+      "price": {
+        "number": "1099",
+        "unit": "₽/мес"
+      }
+    },
+    {
+      "title": "GPON 50+ТВ",
+      "subtitle": "Оборудование включено",
+      "proposalTv": [
+        {
+          "caption": "Более 160",
+          "value": "телеканалов"
+        }
+      ],
+      "proposalInternet": [
+        {
+          "caption": "Интернет",
+          "value": "до 50 Мбит/сек."
+        }
+      ],
+      "price": {
+        "number": "1099",
+        "unit": "₽/мес"
+      }
+    },
+    {
+      "title": "GPON 50+ТВ",
+      "subtitle": "Оборудование включено",
+      "proposalTv": [
+        {
+          "caption": "Более 160",
+          "value": "телеканалов"
+        }
+      ],
+      "proposalInternet": [
+        {
+          "caption": "Интернет",
+          "value": "до 50 Мбит/сек."
+        }
+      ],
+      "price": {
+        "number": "1099",
+        "unit": "₽/мес"
+      }
+    }
+  ]
+}

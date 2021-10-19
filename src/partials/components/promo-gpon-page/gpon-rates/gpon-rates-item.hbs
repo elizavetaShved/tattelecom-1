@@ -1,0 +1,72 @@
+<li class="swiper-slide rates-list-internet__item {{#if isOrange}}mod-orange{{/if}} gl__white-container">
+  {{#if isOrange}}
+    <img src="img/rates-internet-list-page/background-mark.svg" alt="" class="rates-list-internet__item-background">
+  {{/if}}
+  <div class="rates-list-internet__item-up">
+    <div class="rates-list-internet__item-block">
+      <div class="rates-list-internet__item-title">
+        {{ this.title }}
+      </div>
+      <div class="rates-list-internet__item-subtitle mod-orange">
+        {{ this.subtitle }}
+      </div>
+    </div>
+    <ul class="rates-list-internet__item-block rates-list-internet__proposal-list">
+      <li class="rates-list-internet__item-proposal">
+        {{#each proposalTv }}
+          <img src="img/promo-gpon-page/tv.svg" alt="" class="rates-list-internet__item-proposal-img">
+          <div>
+            <div class="gpon-rates-list__caption">
+              {{ this.caption }}
+            </div>
+            <div class="gpon-rates-list__caption-value">
+              {{ this.value }}
+            </div>
+          </div>
+        {{/each}}
+      </li>
+      <li class="rates-list-internet__item-proposal">
+      {{#each proposalInternet }}
+        <img src="img/promo-gpon-page/receiver.svg" alt="" class="rates-list-internet__item-proposal-img">
+        <div>
+          <div class="gpon-rates-list__caption">
+            {{ this.caption }}
+          </div>
+          <div class="gpon-rates-list__caption-value">
+            {{ this.value }}
+          </div>
+        </div>
+      {{/each}}
+      </li>
+    </ul>
+
+    <div class="rates-list-internet__item-block">
+      <!--      <div class="rates-list-internet__item-wifi-wrapper">-->
+      <!--        <div class="rates-list-internet__item-wifi">-->
+      <!--          {{ this.wifi }}-->
+      <!--        </div>-->
+      <!--      </div>-->
+    </div>
+  </div>
+
+  <div class="rates-list-internet__item-down">
+    <div class="rates-list-internet__item-price-wrapper">
+      <div class="rates-list-internet__item-price">
+        <span class="number">{{ this.price.number }}</span> {{ this.price.unit }}
+      </div>
+    </div>
+
+    <div class="rates-list__slide-btns-wrapper">
+      <button type="button" class="rates-list__slide-btn-plug gl__main-btn {{#if
+        isOrange}}mod-white{{/if}} js-open-send-request-modal">
+        Подключить
+      </button>
+
+      <div class="rates-list__slide-link-detailed-wrapper">
+        <button type="button" class="gl__secondary-btn {{#if isOrange}}mod-white{{/if}} js-open-about-tariff-modal">
+          Подробнее о тарифе
+        </button>
+      </div>
+    </div>
+  </div>
+</li>

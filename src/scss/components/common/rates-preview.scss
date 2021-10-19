@@ -248,6 +248,44 @@ $padding-content: 2rem;
       @extend %select-white-background;
     }
   }
+
+  &.mod-gpon {
+    background-color: #F9FAFB;
+    color: var(--main-text-color);
+    overflow: hidden;
+
+    .rates-preview__content {
+      @include for-sm-up {
+        max-width: 46%;
+      }
+    }
+
+    .rates-preview__img {
+      height: 46.8rem;
+      position: absolute;
+      bottom: 0;
+      z-index: -1;
+
+      @include for-lg-down {
+        height: 36rem;
+      }
+    }
+
+    @include for-sm-down {
+      .rates-preview__content-wrapper {
+        flex-direction: column;
+      }
+
+      .rates-preview__img-wrapper {
+        margin-bottom: 0;
+      }
+
+      .rates-preview__img {
+        margin-bottom: -$padding-content;
+        height: 26rem;
+      }
+    }
+  }
 }
 
 .rates-preview__img-wrapper {
@@ -346,4 +384,87 @@ $padding-content: 2rem;
 
 .rates-preview__btn {
   padding: 1.4rem 5.8rem;
+}
+
+.rates-preview__gpon-title {
+  font-size: 4.4rem;
+  line-height: 5.8rem;
+  margin-bottom: 2rem;
+
+  @include for-sm-down {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+  }
+}
+
+.rates-preview__gpon-subtitle {
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 5.4rem;
+
+  @include for-sm-down {
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+    margin-bottom: 2.4rem;
+  }
+}
+
+.rates-preview__gpon-advantages-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 5.4rem;
+  grid-gap: 9rem;
+
+  @include for-lg-down {
+    grid-gap: 6rem;
+  }
+
+  @include for-bg-down {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  @include for-sm-down {
+    margin-bottom: 14rem;
+  }
+}
+
+.rates-preview__gpon-advantages-item {
+  padding-left: 2rem;
+  border-left: 1px solid var(--main-grey-color);
+}
+
+.rates-preview__gpon-advantages-item-caption {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.015em;
+  margin-bottom: .2rem;
+
+  @include for-sm-down {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+}
+
+.rates-preview__gpon-advantages-item-value {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+
+  @include for-sm-down {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
+.rates-preview__gpon-btn {
+  @include for-sm-down {
+    margin-bottom: 2.6rem;
+  }
+
+  @include for-xs-down {
+    width: 100%;
+  }
 }

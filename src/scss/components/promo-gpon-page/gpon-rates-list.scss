@@ -1,0 +1,20 @@
+.gpon-rates-list {
+  padding-top: 8rem;
+
+
+  @include for-sm-down {
+    padding-top: 4rem;
+  }
+}
+
+.gpon-rates-list__caption {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.gpon-rates-list__caption-value {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}

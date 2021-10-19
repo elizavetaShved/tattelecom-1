@@ -25,6 +25,7 @@ module.exports = {
     ['rates-internet-list-page']: './src/js/pages/rates-internet-list-page.js',
     ['support-page']: './src/js/pages/support-page.js',
     ['promo-internet-page']: './src/js/pages/promo-internet-page.js',
+    ['promo-gpon-page']: './src/js/pages/promo-gpon-page.js',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

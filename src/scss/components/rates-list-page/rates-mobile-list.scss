@@ -140,6 +140,10 @@
   }
 }
 
+.rates-list-internet__proposal-list {
+  margin-bottom: 1.6rem;
+}
+
 .rates-list-internet__item-title {
   font-weight: 600;
   font-size: 2rem;
@@ -151,24 +155,33 @@
   font-size: 1.4rem;
   line-height: 1.8rem;
   margin-bottom: 2rem;
+
+  &.mod-orange {
+    color: var(--main-color);
+    border-bottom: 1px dashed var(--main-color);
+    display: inline-block;
+  }
 }
 
-.rates-list-internet__item-internet {
+.rates-list-internet__item-proposal {
   display: flex;
   align-items: center;
+
+  & + & {
+    margin-top: 2.4rem;
+  }
 }
 
-.rates-list-internet__item-internet-img {
+.rates-list-internet__item-proposal-img {
   height: 3.2rem;
-  object-fit: cover;
+  object-fit: contain;
   margin-right: 2.4rem;
 }
 
-.rates-list-internet__item-internet-caption {
+.rates-list-internet__item-proposal-caption {
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 0.015em;
-  margin-bottom: 1.6rem;
 }
 
 .rates-list-internet__item-wifi-wrapper {

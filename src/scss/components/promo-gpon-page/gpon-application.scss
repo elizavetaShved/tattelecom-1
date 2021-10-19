@@ -1,0 +1,74 @@
+.gpon-application {
+  padding: 4rem 0;
+
+  @include for-sm-down {
+    padding: 2rem 0;
+  }
+}
+
+.gpon-application__content {
+  background: linear-gradient(99.54deg, #FA7007 3.54%, #FA4907 37.96%);
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  padding: 4rem 1.2rem;
+  min-height: 30.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gpon-application__background {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  min-height: 25.4rem;
+  width: 120%;
+}
+
+.gpon-application__title {
+  font-size: 3.8rem;
+  line-height: 5rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 5.6rem;
+  color: #fff;
+  text-align: center;
+
+  @include for-sm-down {
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+    margin-bottom: 2.8rem;
+  }
+}
+
+.gpon-application__form {
+  display: grid;
+  grid-template-columns: 3fr 3fr 1fr;
+  grid-gap: 1rem;
+  max-width: 83rem;
+
+  @include for-sm-down {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  .gl-input__input {
+    &.parsley-error {
+      border-color: #000;
+    }
+  }
+
+  .gl-input__wrapper {
+    .parsley-errors-list {
+      color: #fff;
+
+      @include for-sm-down {
+        display: none;
+      }
+    }
+  }
+}

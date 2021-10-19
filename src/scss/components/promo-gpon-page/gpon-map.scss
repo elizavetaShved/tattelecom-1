@@ -1,0 +1,7 @@
+.gpon-map {
+  padding: 4rem 8rem;
+
+  @include for-sm-down {
+    padding: 2rem 0 4rem;
+  }
+}

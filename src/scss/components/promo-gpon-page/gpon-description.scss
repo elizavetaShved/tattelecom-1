@@ -1,0 +1,103 @@
+.gpon-description {
+  padding: 4rem 0;
+
+  @include for-sm-down {
+    padding: 2rem 0;
+  }
+}
+
+.gpon-description__content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 7.2rem;
+
+  @include for-lg-down {
+    grid-gap: 5rem;
+  }
+
+  @include for-sm-down {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gpon-description__caption {
+  font-weight: 300;
+  font-size: 3.8rem;
+  line-height: 5.4rem;
+  letter-spacing: 0.015em;
+  padding: 3.4rem;
+  border-left: 2px solid var(--main-color);
+  height: min-content;
+
+  @include for-bg-down {
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+  }
+
+  @include for-sm-down {
+    padding: 0 3.4rem;
+  }
+}
+
+.gpon-description__reminder-wrapper {
+  padding: 2.8rem 5rem;
+  background-color: var(--border-color);
+
+  @include for-sm-down {
+    padding: 2.8rem 2rem;
+  }
+}
+
+.gpon-description__reminder-caption {
+  font-size: 3.8rem;
+  line-height: 5rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 6rem;
+
+  @include for-bg-down {
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+    margin-bottom: 3.2rem;
+  }
+}
+
+.gpon-description__reminder-item {
+  display: flex;
+  align-items: center;
+
+  & + & {
+    margin-top: 2.4rem;
+
+    @include for-sm-down {
+      margin-top: 3.6rem;
+    }
+  }
+}
+
+.gpon-description__reminder-item-image {
+  height: 10rem;
+  margin-right: 4rem;
+
+  @include for-bg-down {
+    height: 6rem;
+  }
+
+  @include for-sm-down {
+    margin-right: .8rem;
+  }
+}
+
+.gpon-description__reminder-item-text {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+
+  @include for-bg-down {
+    line-height: 2.4rem;
+  }
+
+  @include for-sm-down {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+}
