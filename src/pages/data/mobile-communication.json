@@ -15,18 +15,25 @@
       "pageName": "mobile-communication",
       "img": "img/mobile-communication/rates-preview/rates-preview-1.jpg",
       "ratesName": "БЕЗЛИМИТНЫЙ ИНТЕРНЕТ 4G",
-      "ratesCaption": ["за 240 руб/мес"],
+      "ratesCaption": [
+        "за 240 руб/мес"
+      ],
       "btnText": "Подробнее"
     }
   ],
   "cashback": [
     {
-      "title": ["Вместе выгодно"],
+      "title": [
+        "Вместе выгодно"
+      ],
       "text": "25% от начислений за мобильную связь ежемесячно будет зачисляться на Ваш лицевой счет проводных услуг",
       "img": "img/mobile-communication/cashback/img-1.jpg"
     },
     {
-      "title": ["Вместе выгодно", "2.0"],
+      "title": [
+        "Вместе выгодно",
+        "2.0"
+      ],
       "text": "Подключите «Летай» и получайте кeшбэк 20%",
       "img": "img/mobile-communication/cashback/img-2.jpg"
     }

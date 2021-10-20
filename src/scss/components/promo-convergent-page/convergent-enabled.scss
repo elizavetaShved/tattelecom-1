@@ -1,0 +1,88 @@
+.convergent-enabled {
+  padding: 10rem 0;
+  background-color: var(--border-color);
+
+  @include for-sm-down {
+    padding: 5rem 0;
+  }
+}
+
+.convergent-enabled__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+
+  @include for-sm-down {
+    grid-template-columns: 1fr;
+    grid-gap: 3.6rem;
+  }
+}
+
+.convergent-enabled__item-image {
+  height: 10rem;
+  margin-bottom: 3.2rem;
+
+  @include for-sm-down {
+    height: 6rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.convergent-enabled__item-caption {
+  font-size: 2.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 1rem;
+
+  @include for-bg-down {
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: 0.015em;
+    margin-bottom: 2rem;
+  }
+
+  @include for-sm-down {
+    margin-bottom: .4rem;
+  }
+}
+
+.convergent-enabled__value {
+  display: flex;
+  align-items: center;
+  margin: -.2rem 0;
+
+  @include for-bg-down {
+    margin: -1rem 0;
+  }
+
+  @include for-sm-down {
+    margin: 0;
+  }
+}
+
+.convergent-enabled__value-text {
+  font-weight: 300;
+  font-size: 2.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.015em;
+
+  @include for-bg-down {
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: 0.015em;
+  }
+}
+
+.convergent-enabled__btn-info {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.convergent-enabled__btn-info-icon {
+  height: 2rem;
+  fill: var(--main-grey-color);
+  flex: 0 0 2rem;
+}

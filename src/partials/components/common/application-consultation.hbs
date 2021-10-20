@@ -1,0 +1,38 @@
+{{#each application-consultation }}
+  <section class="application-consultation" id="application-consultation-host">
+    <div class="gl__page-content">
+      <div class="application-consultation__content {{#if isBlack}}mod-black{{/if}}">
+        <img src="img/promo-gpon-page/application-background.svg" alt="" class="application-consultation__background">
+        <div class="application-consultation__title">
+          {{ this.title }}
+        </div>
+        {{#if subtitle }}
+          <div class="application-consultation__subtitle">
+            {{ this.subtitle }}
+          </div>
+        {{/if}}
+
+        <form data-need-validation data-parsley-validate data-parsley-focus="none"
+              class="application-consultation__form">
+          {{> common/controls/input-main
+            required=true
+            type="text"
+            placeholder="Ваше имя"
+            name="application-consultation-name"
+          }}
+          {{> common/controls/input-main
+            required=true
+            type="tel"
+            phoneMask=true
+            placeholder="+7 (___) ___-__-__"
+            name="application-consultation-tel"
+          }}
+
+          <button type="submit" class="gl__main-btn {{#if isBlack}}{{else}}mod-black{{/if}}">
+            {{ this.btnContent }}
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+{{/each}}

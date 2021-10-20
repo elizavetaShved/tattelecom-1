@@ -321,6 +321,65 @@ $padding-content: 2rem;
       }
     }
   }
+
+  &.mod-promo-convergent {
+    background-color: #030608;
+    overflow: hidden;
+
+    .rates-preview__content-subtitle {
+      text-transform: initial;
+    }
+
+    .rates-preview__content-caption {
+      font-size: 2.6rem;
+      line-height: 3.4rem;
+
+      @include for-sm-down {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+      }
+    }
+
+    .rates-preview__content {
+      @include for-sm-up {
+        max-width: 46%;
+      }
+    }
+
+    .rates-preview__img-wrapper {
+      @include for-sm-down {
+        margin-bottom: 0;
+      }
+    }
+
+    .rates-preview__img {
+      @include for-sm-up {
+        transform: translateX(12rem);
+        height: 100%;
+      }
+
+      @include for-bg-up {
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+      }
+    }
+
+    @include for-sm-down {
+      .rates-preview__content-wrapper {
+        flex-direction: column;
+      }
+
+      .rates-preview__img-wrapper {
+        margin-top: 2.2rem;
+      }
+
+      .rates-preview__img {
+        margin-bottom: -$padding-content;
+        height: 20rem;
+      }
+    }
+  }
 }
 
 .rates-preview__img-wrapper {

@@ -1,0 +1,46 @@
+<section class="convergent-you-get" id="convergent-you-get-host">
+  <div class="gl__page-content">
+    <div class="convergent-you-get__price-container">
+      <div class="convergent-you-get__price-wrapper">
+        <div class="convergent-you-get__price-old">
+          400
+        </div>
+        <div class="convergent-you-get__price-current">
+          <span class="number">333</span>₽/мес
+        </div>
+        <button type="button" class="convergent-you-get__price-btn gl__main-btn">
+          Подключить
+        </button>
+      </div>
+    </div>
+
+    <h2 class="gl__title">
+      Также вы получаете:
+    </h2>
+
+    <div class="convergent-you-get__advantages-wrapper">
+      {{#each you-get-list }}
+        <div class="convergent-you-get__advantage">
+          <div class="convergent-you-get__advantage-header">
+            <img src="{{ this.img }}" alt="" class="convergent-you-get__advantage-image">
+            <div class="convergent-you-get__advantage-caption">
+              {{ this.caption }}
+            </div>
+          </div>
+          <ul class="convergent-you-get__advantage-list">
+            {{#each valueList }}
+              <li class="convergent-you-get__advantage-item">
+                <svg width="32" height="32" aria-hidden="true" class="convergent-you-get__advantage-item-icon">
+                  <use xlink:href="#check-mark"></use>
+                </svg>
+                <div class="convergent-you-get__advantage-item-caption">
+                  {{ this }}
+                </div>
+              </li>
+            {{/each}}
+          </ul>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

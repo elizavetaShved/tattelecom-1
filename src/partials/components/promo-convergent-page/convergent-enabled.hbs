@@ -1,0 +1,32 @@
+<section class="convergent-enabled" id="convergent-enabled-host">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      Все включено:
+    </h2>
+
+    <ul class="convergent-enabled__list">
+      {{#each convergent-enabled-list }}
+        <li class="convergent-enabled__item">
+          <img src="{{ this.img }}" alt="" class="convergent-enabled__item-image">
+          <div class="convergent-enabled__item-caption">
+            {{ this.caption }}
+          </div>
+          <div class="convergent-enabled__values">
+            {{#each this.values }}
+              <div class="convergent-enabled__value">
+                <div class="convergent-enabled__value-text">
+                  {{ this }}
+                </div>
+                <button type="button" class="convergent-enabled__btn-info">
+                  <svg width="24" height="24" aria-hidden="true" class="convergent-enabled__btn-info-icon">
+                    <use xlink:href="#info-ellipse"></use>
+                  </svg>
+                </button>
+              </div>
+            {{/each}}
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

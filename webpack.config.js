@@ -27,6 +27,7 @@ module.exports = {
     ['promo-internet-page']: './src/js/pages/promo-internet-page.js',
     ['promo-gpon-page']: './src/js/pages/promo-gpon-page.js',
     ['promo-intercom-page']: './src/js/pages/promo-intercom-page.js',
+    ['promo-convergent-page']: './src/js/pages/promo-convergent-page.js',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),
