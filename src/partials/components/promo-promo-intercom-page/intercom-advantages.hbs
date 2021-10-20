@@ -1,0 +1,17 @@
+<section class="intercom-advantages" id="intercom-advantages-host">
+  <div class="gl__page-content">
+    <ul class="intercom-advantages__list">
+      {{#each intercom-advantages }}
+        <li class="intercom-advantages__item mod-{{ this.color }}">
+          <div class="intercom-advantages__image-wrapper">
+            <img src="{{ this.img }}" alt="" class="intercom-advantages__img">
+          </div>
+
+          <div class="intercom-advantages__text">
+            {{ this.text }}
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

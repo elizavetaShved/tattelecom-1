@@ -286,6 +286,41 @@ $padding-content: 2rem;
       }
     }
   }
+
+  &.mod-intercom {
+    background-color: #F9FAFB;
+    color: var(--main-text-color);
+
+    .rates-preview__content-wrapper {
+      display: grid;
+      grid-template-columns: 3fr 4fr;
+      grid-gap: 10rem;
+
+      @include for-bg-down {
+        grid-gap: 5rem;
+      }
+
+      @include for-md-down {
+        grid-gap: 2rem;
+      }
+
+      @include for-sm-down {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .rates-preview__content {
+      max-width: none;
+    }
+
+    .rates-preview__video-wrapper {
+      @include for-sm-down {
+        margin-bottom: 0;
+        margin-top: 3rem;
+      }
+    }
+  }
 }
 
 .rates-preview__img-wrapper {
@@ -300,10 +335,32 @@ $padding-content: 2rem;
   }
 }
 
+.rates-preview__video-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  align-items: center;
+
+  @include for-sm-down {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2.6rem;
+  }
+}
+
 .rates-preview__img {
   height: 27.6rem;
   max-width: 100%;
   object-fit: contain;
+}
+
+.rates-preview__video {
+  max-width: 100%;
+
+  @include for-sm-down {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .rates-preview__content-wrapper {
@@ -466,5 +523,30 @@ $padding-content: 2rem;
 
   @include for-xs-down {
     width: 100%;
+  }
+}
+
+.rates-preview__intercom-title {
+  font-size: 4.4rem;
+  line-height: 6.2rem;
+  margin-bottom: 3rem;
+
+  @include for-sm-down {
+    font-size: 3.2rem;
+    line-height: 2.8rem;
+  }
+}
+
+.rates-preview__intercom-subtitle {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 6rem;
+
+  @include for-sm-down {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    margin-bottom: 3rem;
   }
 }

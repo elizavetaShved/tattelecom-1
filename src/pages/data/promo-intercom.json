@@ -1,0 +1,43 @@
+{
+  "title": "Промо Домофон",
+  "script": "promo-intercom-page",
+  "intercom-advantages": [
+    {
+      "img": "img/promo-intercom/advantages/tools.svg",
+      "color": "pink",
+      "text": "Бесплатная установка"
+    },
+    {
+      "img": "img/promo-intercom/advantages/wallet.svg",
+      "color": "blue",
+      "text": "Стоимость домофона не меняется"
+    }
+  ],
+  "intercom-functions": [
+    "Управление через смартфон, включая открывание двери",
+    "Вы видите все, что происходит за дверью в режиме онлайн",
+    "Электронные ключи, привязанные к конкретной квартире"
+  ],
+  "steps-list": [
+    {
+      "img": "img/promo-intercom/connect/step-1.png",
+      "caption": "Шаг 1",
+      "text": "Найдите желающих, кто хочет установить умный домофон в вашем доме"
+    },
+    {
+      "img": "img/promo-intercom/connect/step-2.png",
+      "caption": "Шаг 2",
+      "text": "Обратитесь в управляющую компанию, обслуживающую ваш дом, чтобы провести собрание и оформить необходимые документы"
+    },
+    {
+      "img": "img/promo-intercom/connect/step-3.png",
+      "caption": "Шаг 3",
+      "text": "Бесплатно установим умный видеодомофон и предоставим ключи доступа"
+    },
+    {
+      "img": "img/promo-intercom/connect/step-4.png",
+      "caption": "Готово!",
+      "text": "Установите мобильное приложение и управляйте доступом!"
+    }
+  ]
+}
