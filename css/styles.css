@@ -8025,3 +8025,8 @@ textarea::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-
   @media screen and (max-width: 767px) {
     .gpon-map {
       padding: 2rem 0 4rem; } }
+
+.gpon-map__map {
+  height: 55.2rem;
+  background-color: lightgrey;
+  width: 100%; }

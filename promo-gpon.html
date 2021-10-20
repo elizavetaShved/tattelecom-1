@@ -974,8 +974,15 @@
           многие поселки нашей республики
         </h2>
     
-        <div class="gpon-map__map">
-          (карта)
+        <div class="gpon-map__map js-map"
+             data-center="[55.8, 49.39]"
+             data-mark-coords='
+             [[55.88, 49.36, "Инеш"],
+             [55.75, 49.65, "Пестрецы"],
+             [55.71, 49.35, "Куюки"],
+             [55.82, 49.94, "Пановка"]]
+    '
+        >
         </div>
       </div>
     </section>
@@ -1663,6 +1670,7 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=978d9dde-738d-4b87-8d8a-1de67b511402&lang=ru_RU" type="text/javascript"></script>
   <script src="js/promo-gpon-page.js"></script>
   <script src="assets/js/backend.js"></script>
 </div>
