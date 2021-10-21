@@ -56,5 +56,27 @@
         }
       ]
     }
+  ],
+  "payment-menu-tabs": [
+    {
+      "items": [
+        {
+          "itemName": "Мобильная связь",
+          "value": "mobile",
+          "name": "payment-tab",
+          "isChecked": true
+        },
+        {
+          "itemName": "По номеру лицевого счета",
+          "value": "personal-account",
+          "name": "payment-tab"
+        },
+        {
+          "itemName": "Стационарный телефон",
+          "value": "landline-phone",
+          "name": "payment-tab"
+        }
+      ]
+    }
   ]
 }

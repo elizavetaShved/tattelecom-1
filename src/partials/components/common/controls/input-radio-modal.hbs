@@ -1,0 +1,25 @@
+<!--
+  ___Обязательные поля___
+  name - обязательно префикс - род.компонент (н-р services-tel)
+
+  ___Необязательные поля___
+  required (true/false) - обязательно для заполнения
+  caption - пояснение радио справа
+  isChecked - нужен ли checked изначально
+-->
+
+<label class="radio__wrapper">
+  <input type="radio"
+         class="radio" name="{{ name }}"
+    {{#if required }}
+         data-parsley-required=""
+    {{/if}}
+    {{#if isChecked }}
+         checked
+    {{/if}}
+  >
+  <span class="radio__content"></span>
+  <span class="radio__text">
+    {{ caption }}
+  </span>
+</label>

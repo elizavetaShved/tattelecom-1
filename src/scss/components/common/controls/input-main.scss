@@ -24,6 +24,15 @@
   &.mod-white {
     color: #fff;
   }
+
+  &.mod-simple-design {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 1.8rem;
+    color: var(--main-text-color);
+  }
 }
 
 .gl-input__input {
@@ -50,5 +59,11 @@
 
   &.parsley-error {
     border-color: red;
+  }
+
+  &.mod-simple-design {
+    padding: .8rem 1rem;
+    border: 1px solid var(--main-grey-color);
+    box-shadow: none
   }
 }

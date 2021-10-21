@@ -28,7 +28,8 @@
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/promo-gpon">Промо GPON</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/promo-intercom">Промо Домофон</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/promo-convergent">Промо Конверген</a><br>
-    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/error">Ошибка 404</a><br>
+    не доделана:<br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/payment-services">Оплата услуг</a><br>
 </div>
 </body>
 

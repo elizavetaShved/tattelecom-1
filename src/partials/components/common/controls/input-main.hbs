@@ -8,6 +8,7 @@
   required (true/false) - обязательно для заполнения
   inputTitle - заголовок НАД инпутом
   phoneMask (true/false) - маска для телефона
+  rubMask (true/false) - маска для ₽ в конце
   minLength - деф-2
   maxLength - деф-none
   minNumber - минимальное число
@@ -15,14 +16,20 @@
   id - обычный id, например для первого пароля
   parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
   parsleyType - для валидации (н-р email)
+  isSimpleDesign - упрощенный дизайн
 -->
 
 <label class="gl-input__wrapper js-input-{{ type }}">
   {{#if inputTitle}}
-    <span class="gl-input__title {{#if isWhiteTitle}}mod-white{{/if}}">{{ inputTitle }}</span>
+    <span class="gl-input__title {{#if isWhiteTitle}}mod-white{{/if}} {{#if isSimpleDesign}}mod-simple-design{{/if}}">
+      {{ inputTitle }}
+    </span>
   {{/if}}
   <input type="{{ type }}"
-         class="gl-input__input {{#if phoneMask }}js-phone-input{{/if}}"
+         class="gl-input__input
+           {{#if phoneMask }}js-phone-mask{{/if}}
+           {{#if rubMask }}js-rub-mask{{/if}}
+           {{#if isSimpleDesign}}mod-simple-design{{/if}}"
          placeholder="{{ placeholder }}"
          name="{{ name }}"
     {{#if minNumber }}

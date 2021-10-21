@@ -53,6 +53,7 @@
   cursor: pointer;
   user-select: none;
   display: block;
+  text-align: center;
 
   @include for-xs-down {
     font-size: 1.4rem;
