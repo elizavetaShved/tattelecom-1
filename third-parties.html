@@ -576,6 +576,7 @@
             required (true/false) - обязательно для заполнения
             inputTitle - заголовок НАД инпутом
             phoneMask (true/false) - маска для телефона
+            rubMask (true/false) - маска для ₽ в конце
             minLength - деф-2
             maxLength - деф-none
             minNumber - минимальное число
@@ -583,14 +584,17 @@
             id - обычный id, например для первого пароля
             parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
             parsleyType - для валидации (н-р email)
+            isSimpleDesign - упрощенный дизайн
           -->
           
           <label class="gl-input__wrapper js-input-tel">
             <input type="tel"
-                   class="gl-input__input js-phone-input"
+                   class="gl-input__input
+                     js-phone-mask
+                     
+                     "
                    placeholder="+7 (___) ___-__-__"
                    name="modal-callback-tel"
-          
           
           
                    data-parsley-required=""
@@ -676,7 +680,7 @@
       <div class="modal__content js-modal-content">
         <div class="modal__head">
           <div class="modal__title">
-            Тариф “Много интернета”
+            Тариф «Много интернета»
           </div>
           <button type="button" class="modal__btn-close js-close-send-request-modal">
             <svg width="32" height="32" aria-hidden="true" class="modal__close-icon">
@@ -719,6 +723,7 @@
                 required (true/false) - обязательно для заполнения
                 inputTitle - заголовок НАД инпутом
                 phoneMask (true/false) - маска для телефона
+                rubMask (true/false) - маска для ₽ в конце
                 minLength - деф-2
                 maxLength - деф-none
                 minNumber - минимальное число
@@ -726,14 +731,17 @@
                 id - обычный id, например для первого пароля
                 parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
                 parsleyType - для валидации (н-р email)
+                isSimpleDesign - упрощенный дизайн
               -->
               
               <label class="gl-input__wrapper js-input-text">
                 <input type="text"
-                       class="gl-input__input "
+                       class="gl-input__input
+                         
+                         
+                         "
                        placeholder="Ваше имя"
                        name="modal-send-request-name"
-              
               
               
                        data-parsley-required=""
@@ -754,6 +762,7 @@
                 required (true/false) - обязательно для заполнения
                 inputTitle - заголовок НАД инпутом
                 phoneMask (true/false) - маска для телефона
+                rubMask (true/false) - маска для ₽ в конце
                 minLength - деф-2
                 maxLength - деф-none
                 minNumber - минимальное число
@@ -761,14 +770,17 @@
                 id - обычный id, например для первого пароля
                 parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
                 parsleyType - для валидации (н-р email)
+                isSimpleDesign - упрощенный дизайн
               -->
               
               <label class="gl-input__wrapper js-input-tel">
                 <input type="tel"
-                       class="gl-input__input js-phone-input"
+                       class="gl-input__input
+                         js-phone-mask
+                         
+                         "
                        placeholder="+7 (___) ___-__-__"
                        name="modal-send-request-tel"
-              
               
               
                        data-parsley-required=""
@@ -924,6 +936,230 @@
           <p class="modal-installments__content-text">Ежемесячный платеж - 2 012 руб.</p>
           <p class="modal-installments__content-text">Срок рассрочки - 11 мес.</p>
           <p class="modal-installments__content-text">Общая сумма рассрочки - 24 591 руб.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="top-up-account modal" id="modal-top-up-account-host">
+    <div class="modal__container mod-large js-modal-container">
+      <div class="modal__content js-modal-content">
+        <div class="modal__head">
+          <div class="top-up-account__title modal__title">
+            Пополнить счет
+          </div>
+          <button type="button" class="modal__btn-close js-close-top-up-account-modal">
+            <svg width="32" height="32" aria-hidden="true" class="modal__close-icon">
+              <use xlink:href="#close"></use>
+            </svg>
+          </button>
+        </div>
+  
+        <div class="js-menu-tabs-container">
+  
+          <div class="js-menu-tab-content gl__menu-tab-content" data-menu-mobile>
+            <form data-need-validation data-parsley-validate data-parsley-focus="none"
+                  class="top-up-account__form-wrapper">
+              <div class="top-up-account__form-input">
+                <!--
+                  ___Обязательные поля___
+                  type - html-тип инута
+                  name - обязательно префикс - род.компонент (н-р services-tel)
+                  placeholder
+                
+                  ___Необязательные поля___
+                  required (true/false) - обязательно для заполнения
+                  inputTitle - заголовок НАД инпутом
+                  phoneMask (true/false) - маска для телефона
+                  rubMask (true/false) - маска для ₽ в конце
+                  minLength - деф-2
+                  maxLength - деф-none
+                  minNumber - минимальное число
+                  maxNumber - максимальное число
+                  id - обычный id, например для первого пароля
+                  parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
+                  parsleyType - для валидации (н-р email)
+                  isSimpleDesign - упрощенный дизайн
+                -->
+                
+                <label class="gl-input__wrapper js-input-tel">
+                    <span class="gl-input__title  mod-simple-design">
+                      Номер телефона:
+                    </span>
+                  <input type="tel"
+                         class="gl-input__input
+                           js-phone-mask
+                           
+                           mod-simple-design"
+                         placeholder="+7 (___) ___-__-__"
+                         name="top-up-account-tel"
+                
+                
+                         data-parsley-required=""
+                
+                
+                
+                
+                
+                  >
+                </label>
+              </div>
+              <div class="top-up-account__form-input">
+                <!--
+                  ___Обязательные поля___
+                  type - html-тип инута
+                  name - обязательно префикс - род.компонент (н-р services-tel)
+                  placeholder
+                
+                  ___Необязательные поля___
+                  required (true/false) - обязательно для заполнения
+                  inputTitle - заголовок НАД инпутом
+                  phoneMask (true/false) - маска для телефона
+                  rubMask (true/false) - маска для ₽ в конце
+                  minLength - деф-2
+                  maxLength - деф-none
+                  minNumber - минимальное число
+                  maxNumber - максимальное число
+                  id - обычный id, например для первого пароля
+                  parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
+                  parsleyType - для валидации (н-р email)
+                  isSimpleDesign - упрощенный дизайн
+                -->
+                
+                <label class="gl-input__wrapper js-input-text">
+                    <span class="gl-input__title  mod-simple-design">
+                      Сумма платежа: 
+                    </span>
+                  <input type="text"
+                         class="gl-input__input
+                           
+                           js-rub-mask
+                           mod-simple-design"
+                         placeholder="500₽"
+                         name="top-up-account-sum"
+                
+                
+                         data-parsley-required=""
+                
+                
+                
+                
+                
+                  >
+                </label>
+              </div>
+  
+              <div class="top-up-account__form-radio-caption">
+                Способ оплаты
+              </div>
+  
+              <div class="top-up-account__form-radio-wrapper mod-card-pay">
+                <!--
+                  ___Обязательные поля___
+                  name - обязательно префикс - род.компонент (н-р services-tel)
+                
+                  ___Необязательные поля___
+                  required (true/false) - обязательно для заполнения
+                  caption - пояснение радио справа
+                  isChecked - нужен ли checked изначально
+                -->
+                
+                <label class="radio__wrapper">
+                  <input type="radio"
+                         class="radio" name="top-up-account-radio"
+                         data-parsley-required=""
+                         checked
+                  >
+                  <span class="radio__content"></span>
+                  <span class="radio__text">
+                    Банковская карта
+                  </span>
+                </label>
+  
+                <div class="top-up-account__form-card-pay-wrapper">
+                  <div class="card-pay__container">
+                    <label class="card-pay__input-wrapper">
+                      <input type="text" class="card-pay__input js-pay-card-number-mask"
+                             placeholder="XXXX XXXX XXXX XXXX">
+                    </label>
+                    <label class="card-pay__input-wrapper">
+                      <input type="text" class="card-pay__input js-pay-card-date-mask"
+                             placeholder="ММ/ГГ">
+                    </label>
+                    <label class="card-pay__input-wrapper">
+                      <input type="text" class="card-pay__input js-pay-card-code-mask"
+                             placeholder="CVC/CVV">
+                    </label>
+                  
+                    <div class="card-pay__payment-systems-wrapper">
+                      <img src="img/common/pay/mastercard.svg" alt="" class="card-pay__payment-system">
+                      <img src="img/common/pay/mir.svg" alt="" class="card-pay__payment-system">
+                      <img src="img/common/pay/visa.svg" alt="" class="card-pay__payment-system">
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="top-up-account__form-radio-wrapper">
+                <!--
+                  ___Обязательные поля___
+                  name - обязательно префикс - род.компонент (н-р services-tel)
+                
+                  ___Необязательные поля___
+                  required (true/false) - обязательно для заполнения
+                  caption - пояснение радио справа
+                  isChecked - нужен ли checked изначально
+                -->
+                
+                <label class="radio__wrapper">
+                  <input type="radio"
+                         class="radio" name="top-up-account-radio"
+                         data-parsley-required=""
+                  >
+                  <span class="radio__content"></span>
+                  <span class="radio__text">
+                    Google Pay
+                  </span>
+                </label>
+              </div>
+  
+              <div class="top-up-account__form-radio-wrapper">
+                <!--
+                  ___Обязательные поля___
+                  name - обязательно префикс - род.компонент (н-р services-tel)
+                
+                  ___Необязательные поля___
+                  required (true/false) - обязательно для заполнения
+                  caption - пояснение радио справа
+                  isChecked - нужен ли checked изначально
+                -->
+                
+                <label class="radio__wrapper">
+                  <input type="radio"
+                         class="radio" name="top-up-account-radio"
+                         data-parsley-required=""
+                  >
+                  <span class="radio__content"></span>
+                  <span class="radio__text">
+                    другое
+                  </span>
+                </label>
+              </div>
+  
+              <div class="top-up-account__form-btn-wrapper">
+                <button type="button" class="top-up-account__form-btn gl__main-btn">
+                  Пополнить
+                </button>
+              </div>
+            </form>
+          </div>
+  
+          <div class="js-menu-tab-content gl__menu-tab-content" data-menu-personal-account>
+            По номеру лицевого счета
+          </div>
+  
+          <div class="js-menu-tab-content gl__menu-tab-content" data-menu-landline-phone>
+            Стационарный телефон
+          </div>
         </div>
       </div>
     </div>
