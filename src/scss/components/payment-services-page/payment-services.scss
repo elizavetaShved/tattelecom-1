@@ -1,0 +1,163 @@
+.payment-services {
+  padding: 4rem 0 6rem;
+
+  @include for-sm-down {
+    padding: 2rem 0 3rem;
+  }
+}
+
+.payment-services__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+
+  @include for-bg-down {
+    grid-gap: 2rem;
+  }
+
+  @include for-sm-down {
+    grid-template-columns: 1fr;
+  }
+}
+
+.payment-services__item {
+  padding: 2.6rem 3.6rem;
+  display: flex;
+  flex-direction: column;
+
+  @include for-bg-down {
+    padding: 2.2rem;
+  }
+
+  @include for-sm-down {
+    padding: 2.2rem 1.6rem;
+  }
+
+  &:nth-child(1) {
+    .payment-services__form-inputs-wrapper {
+      width: 80%;
+      grid-template-columns: 5fr 2fr;
+
+      @include for-lg-down {
+        width: 86%;
+      }
+
+      @include for-bg-down {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+      }
+
+      @include for-sm-down {
+        width: 86%;
+        grid-template-columns: 5fr 2fr;
+      }
+
+      @include for-xs-down {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+      }
+    }
+  }
+}
+
+.payment-services__item-title {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  margin-bottom: .6rem;
+
+  @include for-sm-down {
+    line-height: 2.4rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.payment-services__item-subtitle {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.6rem;
+}
+
+.payment-services__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 auto;
+}
+
+.payment-services__form-inputs-wrapper {
+  display: grid;
+  grid-gap: 1.4rem;
+  margin-bottom: 2.4rem;
+  width: 70%;
+  grid-template-columns: 1fr;
+
+  @include for-sm-down {
+    width: 100%;
+  }
+}
+
+.payment-services__form-hint-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 1.6rem;
+
+  @include for-bg-down {
+    display: block;
+  }
+}
+
+.payment-services__form-hint-text {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--main-grey-color);
+  margin-right: 2rem;
+
+  @include for-bg-down {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.payment-services__form-hint-icons-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.payment-services__form-hint-icon {
+  &:nth-child(1) {
+    height: 2.6rem;
+  }
+
+  &:nth-child(2) {
+    height: 1.4rem;
+  }
+
+  &:nth-child(3) {
+    height: 1.6rem;
+  }
+
+  & + & {
+    margin-left: 1.2rem;
+  }
+}
+
+.payment-services__form-link {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.01em;
+  color: var(--main-grey-color);
+  text-decoration: underline;
+  padding: 2rem;
+  margin: -2rem;
+  transition: color 250ms;
+  flex: 0 0 auto;
+
+  &:hover {
+    color: var(--main-color);
+  }
+}

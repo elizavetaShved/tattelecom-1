@@ -1,16 +1,5 @@
 :root {
   --font-museo-sans-cyrl: 'MuseoSansCyrl';
-  --header-height-top-block-desk: 4rem;
-  --header-height-bottom-block-desk: 10rem;
-  --header-height-desk: calc(var(--header-height-top-block-desk) + var(--header-height-bottom-block-desk));
-  --header-height-top-block-mobile: 3rem;
-  --header-height-bottom-block-mobile: 6rem;
-  --header-height-mobile: calc(var(--header-height-top-block-mobile) + var(--header-height-bottom-block-mobile));
-
-  --page-content-padding-fl: 8rem;
-  --page-content-padding-bg: 5rem;
-  --page-content-padding-small: 2rem;
-  --page-content-padding-xxs: 1.6rem;
 
   //colors
   --main-color: #FA4907;
@@ -25,6 +14,31 @@
   // z-index
   --z-index-header: 3;
   --z-index-roaming-top-block: 2;
+
+  // высота header
+  --header-height: calc(var(--header-height-top-block) + var(--header-height-bottom-block));
+  --header-height-top-block: 4rem;
+  --header-height-bottom-block: 10rem;
+
+  @include for-bg-down {
+    --header-height-top-block: 3rem;
+    --header-height-bottom-block: 6rem;
+  }
+
+  // padding content
+  --page-content-padding: 8rem;
+
+  @include for-bg-down {
+    --page-content-padding: 5rem;
+  }
+
+  @include for-sm-down {
+    --page-content-padding: 2rem;
+  }
+
+  @include for-xxs-down {
+    --page-content-padding: 1.6rem;
+  }
 
   //font size
   // ! Используется не на всём сайте

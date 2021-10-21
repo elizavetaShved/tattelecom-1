@@ -1,0 +1,84 @@
+<section class="payment-services" id="payment-services-host">
+  <div class="gl__page-content">
+    <h2 class="gl__title">Оплата услуг</h2>
+
+    <div class="payment-services__content">
+      {{#each payment-services }}
+        <div class="payment-services__item gl__white-container">
+          <div class="payment-services__item-title">
+            {{ this.title }}
+          </div>
+          <div class="payment-services__item-subtitle">
+            {{ this.subtitle }}
+          </div>
+
+          <form data-need-validation data-parsley-validate data-parsley-focus="none"
+                class="payment-services__form">
+            <div class="payment-services__form-inputs-wrapper">
+              {{#each inputsList }}
+                {{#if isTel }}
+                  {{> common/controls/input-main
+                    required=true
+                    type="tel"
+                    phoneMask=true
+                    inputTitle=this.title
+                    placeholder="+7 (___) ___-__-__"
+                    name="payment-tel"
+                  }}
+                {{/if}}
+
+                {{#if isSum }}
+                  {{> common/controls/input-main
+                    required=true
+                    type="number"
+                    minNumber="10"
+                    maxNumber="30000"
+                    inputTitle=this.title
+                    placeholder="Сумма"
+                    name="payment-sum"
+                  }}
+                {{/if}}
+
+                {{#if isAccountNumber }}
+                  {{> common/controls/input-main
+                    required=true
+                    type="text"
+                    inputTitle=this.title
+                    placeholder="Номер лицевого счета"
+                    name="payment-personal-account"
+                  }}
+                {{/if}}
+              {{/each}}
+            </div>
+
+            <div>
+              <div class="payment-services__form-btn-wrapper">
+                <button type="submit" class="payment-services__form-btn gl__main-btn">
+                  Продолжить
+                </button>
+              </div>
+
+              <div class="payment-services__form-hint-wrapper">
+                <div class="payment-services__form-hint-text">
+                  Нажимая кнопку «Продолжить», вы принимаете условия пользовательского соглашения.
+                </div>
+                {{#if isCards }}
+                  <div class="payment-services__form-hint-icons-wrapper">
+                    <img src="img/common/pay/mastercard.svg" alt="" class="payment-services__form-hint-icon">
+                    <img src="img/common/pay/mir.svg" alt="" class="payment-services__form-hint-icon">
+                    <img src="img/common/pay/visa.svg" alt="" class="payment-services__form-hint-icon">
+                  </div>
+
+                {{ else }}
+                  <button type="button" class="payment-services__form-link">
+                    Подробнее об услуге
+                  </button>
+                {{/if}}
+              </div>
+            </div>
+          </form>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

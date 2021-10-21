@@ -118,8 +118,8 @@ $padding-content: 2rem;
       }
 
       .rates-preview__img-wrapper {
-        margin-left: calc(var(--page-content-padding-small) * -1);
-        margin-right: calc(var(--page-content-padding-small) * -1);
+        margin-left: calc(var(--page-content-padding) * -1);
+        margin-right: calc(var(--page-content-padding) * -1);
         margin-bottom: -$padding-content;
         width: 100vw;
       }

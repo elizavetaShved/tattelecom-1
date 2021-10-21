@@ -12,15 +12,7 @@
   }
 
   @include for-bg-down {
-    margin-right: calc(var(--page-content-padding-bg) * -1);
-  }
-
-  @include for-sm-down {
-    margin-right: calc(var(--page-content-padding-small) * -1);
-  }
-
-  @include for-xxs-down {
-    margin-right: calc(var(--page-content-padding-xxs) * -1);
+    margin-right: calc(var(--page-content-padding) * -1);
   }
 }
 
@@ -28,15 +20,7 @@
   display: flex;
 
   @include for-bg-down {
-    margin-right: var(--page-content-padding-bg);
-  }
-
-  @include for-sm-down {
-    margin-right: var(--page-content-padding-small);
-  }
-
-  @include for-xxs-down {
-    margin-right: var(--page-content-padding-xxs);
+    margin-right: var(--page-content-padding);
   }
 }
 

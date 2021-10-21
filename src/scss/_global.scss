@@ -1,6 +1,6 @@
 body {
   color: var(--main-text-color);
-  
+
   &.mod-no-scroll {
     overflow: hidden;
     height: 100vh;
@@ -37,26 +37,11 @@ button {
 }
 
 .gl__page-content {
-  padding-left: var(--page-content-padding-fl);
-  padding-right: var(--page-content-padding-fl);
+  padding-left: var(--page-content-padding);
+  padding-right: var(--page-content-padding);
   max-width: 1560px;
   margin-left: auto;
   margin-right: auto;
-
-  @include for-bg-down {
-    padding-left: var(--page-content-padding-bg);
-    padding-right: var(--page-content-padding-bg);
-  }
-
-  @include for-sm-down {
-    padding-left: var(--page-content-padding-small);
-    padding-right: var(--page-content-padding-small);
-  }
-
-  @include for-xxs-down {
-    padding-left: var(--page-content-padding-xxs);
-    padding-right: var(--page-content-padding-xxs);
-  }
 }
 
 .gl__layout-wrapper {
@@ -68,11 +53,7 @@ button {
 
 .gl__layout-content {
   flex: 1 1 100%;
-  margin-top: var(--header-height-desk);
-
-  @include for-bg-down {
-    margin-top: var(--header-height-mobile);
-  }
+  margin-top: var(--header-height);
 }
 
 .gl__title-head {

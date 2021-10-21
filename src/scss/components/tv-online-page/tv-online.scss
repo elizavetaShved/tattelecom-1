@@ -16,13 +16,8 @@
   @include for-md-down {
     border: none;
     width: 100vw;
-    margin: 0 calc(var(--page-content-padding-bg) * -1);
-    padding: 0 var(--page-content-padding-bg);
-  }
-
-  @include for-sm-down {
-    margin: 0 calc(var(--page-content-padding-small) * -1);
-    padding: 0 var(--page-content-padding-small);
+    margin: 0 calc(var(--page-content-padding) * -1);
+    padding: 0 var(--page-content-padding);
   }
 }
 
@@ -75,7 +70,7 @@
   }
 
   @include for-sm-down {
-    margin: 0 calc(var(--page-content-padding-small) * -1);
+    margin: 0 calc(var(--page-content-padding) * -1);
     background-color: var(--border-color);
     padding-bottom: 3.6rem;
   }
@@ -87,27 +82,17 @@
   flex: 0 0 70%;
 
   @include for-mx-down {
-    height: calc((100vw - var(--page-content-padding-fl) * 2) * .38);
-  }
-
-  @include for-bg-down {
-    height: calc((100vw - var(--page-content-padding-bg) * 2) * .38);
+    height: calc((100vw - var(--page-content-padding) * 2) * .38);
   }
 
   @include for-md-down {
     width: 100%;
     flex: auto;
-    height: calc((100vw - var(--page-content-padding-bg) * 2) * .56);
+    height: calc((100vw - var(--page-content-padding) * 2) * .56);
   }
 
   @include for-sm-down {
-    height: calc((100vw - var(--page-content-padding-small) * 2) * .56);
-    padding: 0 var(--page-content-padding-small);
-  }
-
-  @include for-xxs-down {
-    height: calc((100vw - var(--page-content-padding-xxs) * 2) * .56);
-    padding: 0 var(--page-content-padding-xxs)
+    padding: 0 var(--page-content-padding);
   }
 }
 

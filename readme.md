@@ -33,7 +33,7 @@
 </body>
 
 # Handlebars Boilerplate
-
+ 
 Бойлерплейт на основе связки Gulp + Webpack с поддержкой SVG спрайтов и SCSS
 
 ## Установка
