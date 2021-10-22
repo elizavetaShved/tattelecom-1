@@ -27,21 +27,19 @@
   width: 100%;
 
   & + & {
-    margin-top: 4rem;
+    margin-left: 2rem;
+  }
+
+  @include for-md-down {
+    & + & {
+      margin-left: 0;
+      margin-top: 4rem;
+    }
   }
 
   &.mod-flex {
-    & + & {
-      margin-left: 2rem;
-    }
-
     @include for-md-down {
       display: flex;
-
-      & + & {
-        margin-left: 0;
-        margin-top: 4rem;
-      }
 
       .how-receive__step-item-num {
         margin-right: 2.6rem;
