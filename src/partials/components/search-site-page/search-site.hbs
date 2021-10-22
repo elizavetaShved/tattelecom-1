@@ -1,0 +1,40 @@
+<section class="search-site" id="search-site-host">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      Поиск по сайту
+    </h2>
+
+    <div class="search-site__input-wrapper">
+      {{> common/controls/input-search }}
+    </div>
+
+    <div class="search-site__hint">
+      Найдено 11675 результатов:
+    </div>
+
+    <ul class="search-site__list">
+      {{#each articles-list }}
+        <li class="search-site__item">
+          <div class="search-site__item-title">
+            {{ this.title }}
+          </div>
+
+          <div class="search-site__item-preview">
+            {{ this.preview }}
+          </div>
+
+          <a href="" class="search-site__item-link">
+            <span class="search-site__item-link-content">
+            Подробнее
+            <svg width="16" height="16" aria-hidden="true" class="search-site__item-icon">
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+            </span>
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+
+    {{> common/pagination-page pageNumbers=pageNumbers }}
+  </div>
+</section>

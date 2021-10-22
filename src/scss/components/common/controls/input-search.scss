@@ -1,0 +1,25 @@
+.input-search__wrapper {
+  position: relative;
+}
+
+.input-search {
+  width: 100%;
+  padding: 2rem 3.4rem 2rem 0;
+  border-bottom: 1px solid var(--main-text-color);
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2rem;
+
+  &::placeholder {
+    color: var(--main-grey-color);
+  }
+}
+
+.input-search__icon {
+  position: absolute;
+  height: 2.4rem;
+  fill: var(--main-text-color);
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
