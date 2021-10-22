@@ -8,5 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initSendRequestModal();
   initAboutTariffModal();
+  initSendRequestModal();
   initFilterMobile();
 });
