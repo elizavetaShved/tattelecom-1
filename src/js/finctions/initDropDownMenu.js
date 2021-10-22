@@ -5,7 +5,7 @@
 // gl__drop-menu и js-drop-menu - на само меню
 // gl__drop-menu-icon- на иконку стрелки
 
-export default function initDropDownMenu() {
+  export default function initDropDownMenu() {
   const linksTitleElements = Array.from(document.querySelectorAll('.js-drop-menu-btn'));
   const menuContainerElements = Array.from(document.querySelectorAll('.js-drop-menu-container'));
   const menuElements = Array.from(document.querySelectorAll('.js-drop-menu'));

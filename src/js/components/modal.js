@@ -50,7 +50,9 @@ export class Modal {
   }
 
   setHeightModalContainer() {
-    this.modalContainerElem.style.height = `${ this.modalContentElem.scrollHeight }px`;
+    if (this.modalContentElem) {
+      this.modalContainerElem.style.height = `${ this.modalContentElem.scrollHeight }px`;
+    }
   }
 
   onOpenModal() {

@@ -137,3 +137,43 @@ button {
     display: none;
   }
 }
+
+.gl__filter-container {
+  @include for-bg-down {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: 400ms opacity;
+    background-color: rgba(0, 0, 0, .4);
+    pointer-events: none;
+
+    &.mod-show {
+      opacity: 1;
+      z-index: var(--z-index-header);
+      pointer-events: auto;
+    }
+  }
+}
+
+.gl__filter {
+  @include for-bg-down {
+    width: auto !important;
+    margin: 1rem var(--page-content-padding);
+    padding-top: 8rem !important;
+    position: relative;
+    max-height: calc(100vh - 1rem);
+    overflow: auto;
+  }
+}
+
+.gl__filter-modal-close {
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 7rem !important;
+  width: 7rem !important;
+}
