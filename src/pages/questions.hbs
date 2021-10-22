@@ -1,0 +1,72 @@
+{{#extend "layout"}}
+  {{#content "main"}}
+
+    {{> bread-crumbs }}
+
+    <section class="questions" id="questionsPage">
+      <div class="gl__page-content">
+        <h2 class="gl__title">Часто задаваемые вопросы</h2>
+
+        <div class="questions__content">
+
+        {{> common/controls/input-search }}
+
+        <div class="questions__tabs-container">
+          <nav class="questions__nav">
+            <ul class="questions__tabs-header">
+              {{#each tabs}}
+                <li class="questions__tab-nav">
+                  <button class="questions__tab-nav-btn gl__drop-menu-btn js-drop-menu-btn" type="button" data-hash="{{this.hash}}">
+                    <span class="questions__tab-nav-btn-label">{{this.header}}</span>
+                    <svg class="gl__drop-menu-icon questions__tab-nav-btn-icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="#arrow-down"></use>
+                    </svg>
+                  </button>
+                  <div class="questions__tab-nav-content-wrapper gl__drop-menu-container js-drop-menu-container">
+                    <ul class="questions__tab-nav-content gl__drop-menu js-drop-menu">
+                      {{#each this.content}}
+                        <li class="questions__tab-nav-content-unit">
+                          <a class="questions__tab-nav-content-unit-link" href="#{{this.hash}}">{{this.name}}</a>
+                        </li>
+                      {{/each}}
+                    </ul>
+                  </div>
+                </li>
+              {{/each}}
+            </ul>
+          </nav>
+          <div class="questions__tabs-content">
+            {{#each tabs}}
+              <article class="questions-content" id="{{this.hash}}">
+                {{#each this.content}}
+                  <section class="questions-content__item" id="{{this.hash}}">
+                    <span class="questions-content__name">{{this.name}}</span>
+                    <ul class="questions-content__questions">
+                      {{#each this.questions}}
+                        <li class="question-content">
+                          <button class="question-content__question gl__drop-menu-btn js-drop-menu-btn" type="button">
+                            <span class="question-content__question-label">{{this.question}}</span>
+                            <svg class="gl__drop-menu-icon question-content__question-icon" width="24" height="24" aria-hidden="true">
+                              <use xlink:href="#arrow-down"></use>
+                            </svg>
+                          </button>
+                          <div class="question-content__answer-wrapper gl__drop-menu-container js-drop-menu-container">
+                            <div class="question-content__answer gl__drop-menu js-drop-menu">
+                              {{{this.answer}}}
+                            </div>
+                          </div>
+                        </li>
+                      {{/each}}
+                    </ul>
+                  </section>
+                {{/each}}
+              </article>
+            {{/each}}
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+  {{/content}}
+{{/extend}}
