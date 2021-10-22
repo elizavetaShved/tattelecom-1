@@ -30,6 +30,7 @@
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/promo-convergent">Промо Конверген</a><br>
     не доделана:<br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/payment-services">Оплата услуг</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/search-site">Поиск по сайту</a><br>
 </div>
 </body>
 
