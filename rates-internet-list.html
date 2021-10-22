@@ -35,9 +35,6 @@
                   <a href="" class="header__top-menu-items-link">Бизнесу</a>
                 </li>
                 <li class="header__top-menu-items">
-                  <a href="" class="header__top-menu-items-link">Акции</a>
-                </li>
-                <li class="header__top-menu-items">
                   <button type="button" class="header__top-menu-items-link">Ещё</button>
                 </li>
               </ul>
@@ -339,40 +336,49 @@
         <div class="rates-list__content">
           <h2 class="rates-list__title gl__title">Тарифы интернета</h2>
     
-          <ul class="rates-list__menu-wrapper gl__lg-hide">
-              <li class="rates-list__menu-item">
-                <button type="button" class="rates-list__menu-btn">
-                  Домашний интернет
-                  <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
-                    <use xlink:href="#arrow-right"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="rates-list__menu-item">
-                <button type="button" class="rates-list__menu-btn">
-                  Домашний интернет + ТВ
-                  <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
-                    <use xlink:href="#arrow-right"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="rates-list__menu-item">
-                <button type="button" class="rates-list__menu-btn">
-                  Домашний интернет + ТВ + мобильная связь
-                  <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
-                    <use xlink:href="#arrow-right"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="rates-list__menu-item">
-                <button type="button" class="rates-list__menu-btn">
-                  Интернет + ТВ для частного дома
-                  <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
-                    <use xlink:href="#arrow-right"></use>
-                  </svg>
-                </button>
-              </li>
-          </ul>
+          <div class="rates-list__menu-container gl__filter-container--lg js-filter-container">
+            <ul class="rates-list__menu-wrapper gl__filter--lg js-modal-container">
+              <button type="button"
+                      class="rates-list__menu-btn-close gl__lg-show gl__filter-modal-close modal__btn-close js-filter-close"
+                      id="close-thanks-modal">
+                <svg width="32" height="32" aria-hidden="true" class="modal__close-icon">
+                  <use xlink:href="#close"></use>
+                </svg>
+              </button>
+                <li class="rates-list__menu-item">
+                  <button type="button" class="rates-list__menu-btn">
+                    Домашний интернет + ТВ + мобильная связь
+                    <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="rates-list__menu-item">
+                  <button type="button" class="rates-list__menu-btn">
+                    Домашний интернет
+                    <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="rates-list__menu-item">
+                  <button type="button" class="rates-list__menu-btn">
+                    Домашний интернет + ТВ
+                    <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="rates-list__menu-item">
+                  <button type="button" class="rates-list__menu-btn">
+                    Интернет + ТВ для частного дома
+                    <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+            </ul>
+          </div>
     
           <div class="gl__lg-show">
             <!--
@@ -382,13 +388,17 @@
             
             <button type="button" class="gl__btn-settings  js-open-filter-modal">
               Безлимитный интернет
+              <svg width="20" height="20" aria-hidden="true" class="gl__btn-settings-icon">
+                <use xlink:href="#settigs"></use>
+              </svg>
             </button>
           </div>
     
           <div class="rates-list__list-wrapper">
             <ul class="rates-list__list">
                 <li class="rates-list-internet__item mod-orange gl__white-container">
-                    <img src="img/rates-internet-list-page/background-mark.svg" alt="" class="rates-list-internet__item-background">
+                    <img src="img/rates-internet-list-page/background-mark.svg" alt=""
+                         class="rates-list-internet__item-background">
                   <div class="rates-list-internet__item-up">
                     <div class="rates-list-internet__item-block">
                       <div class="rates-list-internet__item-title">
@@ -400,7 +410,8 @@
                     </div>
                     <div class="rates-list-internet__item-block">
                       <div class="rates-list-internet__item-proposal">
-                        <img src="img/rates-internet-list-page/receiver-white.svg" alt="" class="rates-list-internet__item-proposal-img">
+                        <img src="img/rates-internet-list-page/receiver-white.svg" alt=""
+                             class="rates-list-internet__item-proposal-img">
                         <div class="rates-list-internet__item-proposal-caption">
                           Интернет до 100 Мбит/сек
                         </div>
@@ -424,12 +435,15 @@
                     </div>
     
                     <div class="rates-list__slide-btns-wrapper">
-                      <button type="button" class="rates-list__slide-btn-plug gl__main-btn mod-white js-open-send-request-modal">
+                      <button type="button" class="rates-list__slide-btn-plug gl__main-btn mod-white js-open-send-request-modal"
+                              data-tariff-name="Летай. Оранжевый Профит"
+                              data-prise="395">
                         Подключить
                       </button>
     
                       <div class="rates-list__slide-link-detailed-wrapper">
-                        <button type="button" class="gl__secondary-btn mod-white js-open-about-tariff-modal">
+                        <button type="button"
+                                class="gl__secondary-btn mod-white js-open-about-tariff-modal">
                           Подробнее о тарифе
                         </button>
                       </div>
@@ -448,7 +462,8 @@
                     </div>
                     <div class="rates-list-internet__item-block">
                       <div class="rates-list-internet__item-proposal">
-                        <img src="img/rates-internet-list-page/receiver.svg" alt="" class="rates-list-internet__item-proposal-img">
+                        <img src="img/rates-internet-list-page/receiver.svg" alt=""
+                             class="rates-list-internet__item-proposal-img">
                         <div class="rates-list-internet__item-proposal-caption">
                           Интернет до 500 Мбит/сек
                         </div>
@@ -472,12 +487,15 @@
                     </div>
     
                     <div class="rates-list__slide-btns-wrapper">
-                      <button type="button" class="rates-list__slide-btn-plug gl__main-btn  js-open-send-request-modal">
+                      <button type="button" class="rates-list__slide-btn-plug gl__main-btn  js-open-send-request-modal"
+                              data-tariff-name="Летай. Оранжевый 500"
+                              data-prise="270">
                         Подключить
                       </button>
     
                       <div class="rates-list__slide-link-detailed-wrapper">
-                        <button type="button" class="gl__secondary-btn  js-open-about-tariff-modal">
+                        <button type="button"
+                                class="gl__secondary-btn  js-open-about-tariff-modal">
                           Подробнее о тарифе
                         </button>
                       </div>
@@ -496,7 +514,8 @@
                     </div>
                     <div class="rates-list-internet__item-block">
                       <div class="rates-list-internet__item-proposal">
-                        <img src="img/rates-internet-list-page/receiver.svg" alt="" class="rates-list-internet__item-proposal-img">
+                        <img src="img/rates-internet-list-page/receiver.svg" alt=""
+                             class="rates-list-internet__item-proposal-img">
                         <div class="rates-list-internet__item-proposal-caption">
                           Интернет до 250 Мбит/сек
                         </div>
@@ -520,12 +539,15 @@
                     </div>
     
                     <div class="rates-list__slide-btns-wrapper">
-                      <button type="button" class="rates-list__slide-btn-plug gl__main-btn  js-open-send-request-modal">
+                      <button type="button" class="rates-list__slide-btn-plug gl__main-btn  js-open-send-request-modal"
+                              data-tariff-name="Летай. Оранжевый 250"
+                              data-prise="380">
                         Подключить
                       </button>
     
                       <div class="rates-list__slide-link-detailed-wrapper">
-                        <button type="button" class="gl__secondary-btn  js-open-about-tariff-modal">
+                        <button type="button"
+                                class="gl__secondary-btn  js-open-about-tariff-modal">
                           Подробнее о тарифе
                         </button>
                       </div>
@@ -544,7 +566,8 @@
                     </div>
                     <div class="rates-list-internet__item-block">
                       <div class="rates-list-internet__item-proposal">
-                        <img src="img/rates-internet-list-page/receiver.svg" alt="" class="rates-list-internet__item-proposal-img">
+                        <img src="img/rates-internet-list-page/receiver.svg" alt=""
+                             class="rates-list-internet__item-proposal-img">
                         <div class="rates-list-internet__item-proposal-caption">
                           Интернет до 500 Мбит/сек
                         </div>
@@ -568,12 +591,15 @@
                     </div>
     
                     <div class="rates-list__slide-btns-wrapper">
-                      <button type="button" class="rates-list__slide-btn-plug gl__main-btn  js-open-send-request-modal">
+                      <button type="button" class="rates-list__slide-btn-plug gl__main-btn  js-open-send-request-modal"
+                              data-tariff-name="Летай. Оранжевый 500"
+                              data-prise="270">
                         Подключить
                       </button>
     
                       <div class="rates-list__slide-link-detailed-wrapper">
-                        <button type="button" class="gl__secondary-btn  js-open-about-tariff-modal">
+                        <button type="button"
+                                class="gl__secondary-btn  js-open-about-tariff-modal">
                           Подробнее о тарифе
                         </button>
                       </div>
@@ -592,7 +618,8 @@
                     </div>
                     <div class="rates-list-internet__item-block">
                       <div class="rates-list-internet__item-proposal">
-                        <img src="img/rates-internet-list-page/receiver.svg" alt="" class="rates-list-internet__item-proposal-img">
+                        <img src="img/rates-internet-list-page/receiver.svg" alt=""
+                             class="rates-list-internet__item-proposal-img">
                         <div class="rates-list-internet__item-proposal-caption">
                           Интернет до 250 Мбит/сек
                         </div>
@@ -616,12 +643,15 @@
                     </div>
     
                     <div class="rates-list__slide-btns-wrapper">
-                      <button type="button" class="rates-list__slide-btn-plug gl__main-btn  js-open-send-request-modal">
+                      <button type="button" class="rates-list__slide-btn-plug gl__main-btn  js-open-send-request-modal"
+                              data-tariff-name="Летай. Оранжевый 250"
+                              data-prise="380">
                         Подключить
                       </button>
     
                       <div class="rates-list__slide-link-detailed-wrapper">
-                        <button type="button" class="gl__secondary-btn  js-open-about-tariff-modal">
+                        <button type="button"
+                                class="gl__secondary-btn  js-open-about-tariff-modal">
                           Подробнее о тарифе
                         </button>
                       </div>
@@ -640,7 +670,8 @@
                     </div>
                     <div class="rates-list-internet__item-block">
                       <div class="rates-list-internet__item-proposal">
-                        <img src="img/rates-internet-list-page/receiver.svg" alt="" class="rates-list-internet__item-proposal-img">
+                        <img src="img/rates-internet-list-page/receiver.svg" alt=""
+                             class="rates-list-internet__item-proposal-img">
                         <div class="rates-list-internet__item-proposal-caption">
                           Интернет до 500 Мбит/сек
                         </div>
@@ -664,12 +695,15 @@
                     </div>
     
                     <div class="rates-list__slide-btns-wrapper">
-                      <button type="button" class="rates-list__slide-btn-plug gl__main-btn  js-open-send-request-modal">
+                      <button type="button" class="rates-list__slide-btn-plug gl__main-btn  js-open-send-request-modal"
+                              data-tariff-name="Летай. Оранжевый 500"
+                              data-prise="270">
                         Подключить
                       </button>
     
                       <div class="rates-list__slide-link-detailed-wrapper">
-                        <button type="button" class="gl__secondary-btn  js-open-about-tariff-modal">
+                        <button type="button"
+                                class="gl__secondary-btn  js-open-about-tariff-modal">
                           Подробнее о тарифе
                         </button>
                       </div>
@@ -688,7 +722,8 @@
                     </div>
                     <div class="rates-list-internet__item-block">
                       <div class="rates-list-internet__item-proposal">
-                        <img src="img/rates-internet-list-page/receiver.svg" alt="" class="rates-list-internet__item-proposal-img">
+                        <img src="img/rates-internet-list-page/receiver.svg" alt=""
+                             class="rates-list-internet__item-proposal-img">
                         <div class="rates-list-internet__item-proposal-caption">
                           Интернет до 250 Мбит/сек
                         </div>
@@ -712,12 +747,15 @@
                     </div>
     
                     <div class="rates-list__slide-btns-wrapper">
-                      <button type="button" class="rates-list__slide-btn-plug gl__main-btn  js-open-send-request-modal">
+                      <button type="button" class="rates-list__slide-btn-plug gl__main-btn  js-open-send-request-modal"
+                              data-tariff-name="Летай. Оранжевый 250"
+                              data-prise="380">
                         Подключить
                       </button>
     
                       <div class="rates-list__slide-link-detailed-wrapper">
-                        <button type="button" class="gl__secondary-btn  js-open-about-tariff-modal">
+                        <button type="button"
+                                class="gl__secondary-btn  js-open-about-tariff-modal">
                           Подробнее о тарифе
                         </button>
                       </div>
