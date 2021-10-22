@@ -4,18 +4,26 @@
     <div class="rates-list__content">
       <h2 class="rates-list__title gl__title">Тарифы мобильной связи</h2>
 
-      <ul class="rates-list__menu-wrapper gl__lg-hide">
-        {{#each menuBtns }}
-          <li class="rates-list__menu-item">
-            <button type="button" class="rates-list__menu-btn">
-              {{ this }}
-              <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
-                <use xlink:href="#arrow-right"></use>
-              </svg>
-            </button>
-          </li>
-        {{/each}}
-      </ul>
+      <div class="rates-list__menu-container gl__filter-container--lg js-filter-container">
+        <ul class="rates-list__menu-wrapper gl__filter--lg js-modal-container">
+          <button type="button" class="rates-list__menu-btn-close gl__lg-show gl__filter-modal-close modal__btn-close js-filter-close" id="close-thanks-modal">
+            <svg width="32" height="32" aria-hidden="true" class="modal__close-icon">
+              <use xlink:href="#close"></use>
+            </svg>
+          </button>
+
+          {{#each menuBtns }}
+            <li class="rates-list__menu-item">
+              <button type="button" class="rates-list__menu-btn">
+                {{ this }}
+                <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </button>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
 
       <div class="gl__lg-show">
         {{> common/btn-settings text="Безлимитный интернет" }}

@@ -6,8 +6,8 @@
     <div class="pagination-page__pages-wrapper swiper-wrapper">
       {{#each pageNumbers }}
         <label class="pagination-page__pages-item swiper-slide">
-          <input type="radio" class="pagination-page__pages-radio" name="phone-list-page">
-          <span class="pagination-page__pages-btn pagination-page__pages-radio-content">{{ this }}</span>
+          <input type="radio" class="pagination-page__pages-radio" name="phone-list-page" {{#if isChecked }}checked{{/if}}>
+          <span class="pagination-page__pages-btn pagination-page__pages-radio-content">{{ this.pageNum }}</span>
         </label>
       {{/each}}
     </div>

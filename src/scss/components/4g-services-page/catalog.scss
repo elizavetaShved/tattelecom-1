@@ -8,22 +8,27 @@
 
 .catalog__content {
   display: flex;
+  position: relative;
 
   @include for-bg-down {
     flex-direction: column;
   }
 }
 
-.catalog__form {
-  width: 30rem;
-  flex: 0 0 30rem;
+.catalog__form-container {
   margin-right: 3rem;
-  padding: 4rem 2rem;
-  border: 1px solid var(--border-color);
 
   @include for-hg-down {
     margin-right: 1.6rem;
   }
+}
+
+.catalog__form {
+  width: 30rem;
+  flex: 0 0 30rem;
+  padding: 4rem 2rem;
+  border: 1px solid var(--border-color);
+  background-color: #fff;
 }
 
 .catalog__filter-list {

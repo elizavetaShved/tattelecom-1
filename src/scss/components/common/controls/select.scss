@@ -106,6 +106,29 @@
     }
   }
 
+  &.mod-border-bottom {
+    .choices__inner {
+      box-shadow: none;
+      border-bottom: 1px solid var(--main-text-color);
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    .choices__list--dropdown {
+      box-shadow: none;
+      border: 1px solid var(--border-color-2);
+      border-top: 1px solid var(--main-text-color);
+    }
+
+    .choices {
+      &[data-type*=select-one] {
+        &:after, &:before {
+          right: 0;
+        }
+      }
+    }
+  }
+
   &.mod-padding-left {
     .choices__inner {
       padding-left: 4.4rem !important;
@@ -183,11 +206,11 @@
 
   // options-list
   .choices__list {
+    @extend %scroll;
     &--dropdown {
       border: none;
       border-radius: 0 0 10px 10px;
       box-shadow: var(--box-shadow-input); // как у инпута стандартного
-      //box-shadow: 0 0.266004px 20px rgba(153, 152, 168, 0.17);
     }
 
     // в placeholder

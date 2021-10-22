@@ -62,8 +62,10 @@
     &.mod-new {
       &:before {
         @include for-sm-down {
-          border-left: #219653;
-          border-top: #219653;
+          border-left-color: #219653;
+          border-top-color: #219653;
+          border-right-color: transparent;
+          border-bottom-color: transparent;
         }
       }
     }
@@ -71,8 +73,10 @@
     &.mod-hit {
       &:before {
         @include for-sm-down {
-          border-left: #2F80ED;
-          border-top: #2F80ED;
+          border-left-color: #2F80ED;
+          border-top-color: #2F80ED;
+          border-right-color: transparent;
+          border-bottom-color: transparent;
         }
       }
     }

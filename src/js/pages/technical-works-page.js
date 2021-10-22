@@ -1,12 +1,10 @@
 import common from '../common';
-import initFilterUislider from '../finctions/initFilterUislider';
+import initSelects from '../finctions/initSelects';
 import initPaginationPage from '../finctions/initPaginationPage';
-import initFilterMobile from '../finctions/initFilterMobile';
 
 document.addEventListener('DOMContentLoaded', () => {
   common();
 
-  initFilterUislider();
+  initSelects();
   initPaginationPage();
-  initFilterMobile();
 });

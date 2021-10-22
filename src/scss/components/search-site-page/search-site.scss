@@ -24,7 +24,7 @@
 }
 
 .search-site__item {
-  padding: 2.4rem;
+  padding: 2.4rem 0;
   border-top: 1px solid var(--border-color);
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -64,4 +64,9 @@
   height: 1.6rem;
   fill: var(--main-color);
   margin-left: .2rem;
+}
+
+.search-site__pagination-wrapper {
+  display: flex;
+  justify-content: flex-end;
 }

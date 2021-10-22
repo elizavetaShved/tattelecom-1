@@ -14,13 +14,9 @@ export class Uislider {
       this.updateTo = sliderValue[1];
     });
 
-    this.slider.on('update', (valuesTo, handle, unencoded) => {
-
-      if (handle === 0) {
-        inputFromElem.value = unencoded[handle];
-      } else if (handle === 1) {
-        inputToElem.value = unencoded[handle];
-      }
+    this.slider.on('update', (valuesTo) => {
+      inputFromElem.value = +valuesTo[0];
+      inputToElem.value = +valuesTo[1];
     });
 
     inputFromElem.onchange = () => {

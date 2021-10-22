@@ -3,12 +3,19 @@
     <h2 class="gl__title">Каталог товаров</h2>
 
     <div class="catalog__content">
-      <form class="catalog__form gl__lg-hide">
-        <ul class="catalog__filter-list">
-          {{#each filters }}
-            <li class="catalog__filter-item">
-              <button type="button"
-                      class="catalog__filter-title-wrapper gl__drop-menu-btn js-drop-menu-btn js-drop-menu-leave-open">
+      <div class="catalog__form-container gl__filter-container js-filter-container">
+        <form class="catalog__form gl__filter js-modal-container">
+          <button type="button" class="gl__bg-show gl__filter-modal-close modal__btn-close js-filter-close" id="close-thanks-modal">
+            <svg width="32" height="32" aria-hidden="true" class="modal__close-icon">
+              <use xlink:href="#close"></use>
+            </svg>
+          </button>
+
+          <ul class="catalog__filter-list">
+            {{#each filters }}
+              <li class="catalog__filter-item">
+                <button type="button"
+                        class="catalog__filter-title-wrapper gl__drop-menu-btn js-drop-menu-btn js-drop-menu-leave-open">
             <span class="catalog__filter-title">
               {{ this.title }}
               {{#if titleHint }}
@@ -17,42 +24,43 @@
                 </span>
               {{/if}}
             </span>
-                <svg width="24" height="24" aria-hidden="true" class="gl__drop-menu-icon">
-                  <use xlink:href="#arrow-down"></use>
-                </svg>
-              </button>
+                  <svg width="24" height="24" aria-hidden="true" class="gl__drop-menu-icon">
+                    <use xlink:href="#arrow-down"></use>
+                  </svg>
+                </button>
 
-              <div class="gl__drop-menu-container js-drop-menu-container">
-                <div class="catalog__filter-item-content gl__drop-menu js-drop-menu">
-                  {{#if isSlider }}
-                    {{> common/controls/filter-uislider
-                      name=this.inputName
-                      from=this.from
-                      to=this.to
-                      placeholderFrom=this.placeholderFrom
-                      placeholdeTo=this.placeholdeTo }}
+                <div class="gl__drop-menu-container js-drop-menu-container">
+                  <div class="catalog__filter-item-content gl__drop-menu js-drop-menu">
+                    {{#if isSlider }}
+                      {{> common/controls/filter-uislider
+                        name=this.inputName
+                        from=this.from
+                        to=this.to
+                        placeholderFrom=this.placeholderFrom
+                        placeholdeTo=this.placeholdeTo }}
 
-                  {{ else if isCheckboxList }}
-                    {{#each this.checkboxList }}
-                      {{> common/controls/input-checkbox caption=this.caption name=this.inputName isFilter=true }}
-                    {{/each}}
-                  {{/if}}
+                    {{ else if isCheckboxList }}
+                      {{#each this.checkboxList }}
+                        {{> common/controls/input-checkbox caption=this.caption name=this.inputName isFilter=true }}
+                      {{/each}}
+                    {{/if}}
+                  </div>
                 </div>
-              </div>
-            </li>
-          {{/each}}
-        </ul>
+              </li>
+            {{/each}}
+          </ul>
 
-        <button type="submit" class="catalog__form-btn gl__main-btn">
-          подобрать
-        </button>
+          <button type="submit" class="catalog__form-btn gl__main-btn">
+            подобрать
+          </button>
 
-        <button type="button" class="catalog__form-btn gl__main-btn mod-grey">
-          Сбросить фильтр
-        </button>
-      </form>
+          <button type="button" class="catalog__form-btn gl__main-btn mod-grey">
+            Сбросить фильтр
+          </button>
+        </form>
+      </div>
 
-      <div class="gl__hg-show">
+      <div class="gl__bg-show">
         {{> common/btn-settings text="Фильтровать" iconIsRight=true }}
       </div>
 
@@ -62,7 +70,7 @@
             <li class="product-item">
               {{#if isNew}}
                 <div class="product-item__mark">
-                  <div class="product-item__mark-content">
+                  <div class="product-item__mark-content mod-new">
                     Новинка
                   </div>
                 </div>

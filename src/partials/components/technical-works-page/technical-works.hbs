@@ -1,0 +1,46 @@
+<section class="technical-works" id="technical-works-host">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      Технические работы
+    </h2>
+
+    <div class="technical-works__select-wrapper">
+      {{> common/controls/select selects=year-select }}
+      {{> common/controls/select selects=mouth-select }}
+    </div>
+
+    <ul class="search-site__list">
+      {{#each articles-list }}
+        <li class="search-site__item">
+          <div class="technical-works__item-wrapper">
+            <div class="technical-works__item-date">
+              {{ this.date }}
+            </div>
+            <div>
+              <div class="search-site__item-title">
+                {{ this.title }}
+              </div>
+
+              <div class="search-site__item-preview">
+                {{ this.preview }}
+              </div>
+
+              <a href="" class="search-site__item-link">
+            <span class="search-site__item-link-content">
+            Подробнее
+            <svg width="16" height="16" aria-hidden="true" class="search-site__item-icon">
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+            </span>
+              </a>
+            </div>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+
+    <div class="search-site__pagination-wrapper">
+      {{> common/pagination-page pageNumbers=pageNumbers }}
+    </div>
+  </div>
+</section>

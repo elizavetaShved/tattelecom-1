@@ -31,7 +31,8 @@ module.exports = {
         ['error-page']: './src/js/pages/error-page.js',
         ['payment-services-page']: './src/js/pages/payment-services-page.js',
         ['search-site-page']: './src/js/pages/search-site-page-page.js',
-        ['questions']: './src/js/pages/questions.js'
+        ['questions']: './src/js/pages/questions.js',
+        ['technical-works-page']: './src/js/pages/technical-works-page.js',
     },
     output: {
         path: path.resolve(__dirname, './build/js'),
