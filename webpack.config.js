@@ -30,9 +30,9 @@ module.exports = {
         ['promo-convergent-page']: './src/js/pages/promo-convergent-page.js',
         ['error-page']: './src/js/pages/error-page.js',
         ['payment-services-page']: './src/js/pages/payment-services-page.js',
-        ['search-site-page']: './src/js/pages/search-site-page-page.js',
+        ['search-site-page']: './src/js/pages/search-site-page.js',
         ['questions']: './src/js/pages/questions.js',
-        ['technical-works-page']: './src/js/pages/technical-works-page.js',
+        ['technical-works-page']: './src/js/pages/technical-works-page.js'
     },
     output: {
         path: path.resolve(__dirname, './build/js'),
