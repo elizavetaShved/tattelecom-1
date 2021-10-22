@@ -33,11 +33,31 @@
   }
 }
 
-.rates-list__menu-wrapper {
+.rates-list__menu-container {
   @include for-lg-up {
     grid-row: 2;
     grid-column: 1;
   }
+
+  @include for-lg-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.rates-list__menu-wrapper {
+  background-color: #fff;
+
+  @include for-lg-down {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.rates-list__menu-btn-close {
+  right: 1rem;
 }
 
 .rates-list__menu-item {
@@ -61,6 +81,11 @@
   line-height: 3rem;
   letter-spacing: 0.02em;
   transition: color 250ms;
+  padding-right: 1.6rem;
+
+  @include for-lg-down {
+    padding-right: 0;
+  }
 
   &:hover {
     color: var(--main-color);
@@ -71,7 +96,10 @@
   height: 2.6rem;
   width: 2.6rem;
   flex: 0 0 2.6rem;
-  margin-right: 1.6rem;
+
+  @include for-lg-down {
+    margin-left: 3rem;
+  }
 }
 
 .rates-list__list-wrapper {
