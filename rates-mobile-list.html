@@ -70,7 +70,8 @@
                     <svg width="20" height="20" aria-hidden="true" class="header__top-menu-items-link-icon">
                       <use xlink:href="#lk"></use>
                     </svg>
-                    Личный кабинет
+                    <span class="gl__xs-hide">Личный кабинет</span>
+                    <span class="gl__xs-show">ЛК</span>
                   </a>
                 </div>
               </div>
@@ -338,64 +339,72 @@
         <div class="rates-list__content">
           <h2 class="rates-list__title gl__title">Тарифы мобильной связи</h2>
     
-          <ul class="rates-list__menu-wrapper gl__lg-hide">
-              <li class="rates-list__menu-item">
-                <button type="button" class="rates-list__menu-btn">
-                  Домашний интернет + ТВ + мобильная связь
-                  <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
-                    <use xlink:href="#arrow-right"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="rates-list__menu-item">
-                <button type="button" class="rates-list__menu-btn">
-                  Безлимитный интернет
-                  <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
-                    <use xlink:href="#arrow-right"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="rates-list__menu-item">
-                <button type="button" class="rates-list__menu-btn">
-                  Много звонков
-                  <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
-                    <use xlink:href="#arrow-right"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="rates-list__menu-item">
-                <button type="button" class="rates-list__menu-btn">
-                  Все и сразу
-                  <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
-                    <use xlink:href="#arrow-right"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="rates-list__menu-item">
-                <button type="button" class="rates-list__menu-btn">
-                  Детский
-                  <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
-                    <use xlink:href="#arrow-right"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="rates-list__menu-item">
-                <button type="button" class="rates-list__menu-btn">
-                  Для модемов
-                  <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
-                    <use xlink:href="#arrow-right"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="rates-list__menu-item">
-                <button type="button" class="rates-list__menu-btn">
-                  Для умных устройств
-                  <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
-                    <use xlink:href="#arrow-right"></use>
-                  </svg>
-                </button>
-              </li>
-          </ul>
+          <div class="rates-list__menu-container gl__filter-container--lg js-filter-container">
+            <ul class="rates-list__menu-wrapper gl__filter--lg js-modal-container">
+              <button type="button" class="rates-list__menu-btn-close gl__lg-show gl__filter-modal-close modal__btn-close js-filter-close" id="close-thanks-modal">
+                <svg width="32" height="32" aria-hidden="true" class="modal__close-icon">
+                  <use xlink:href="#close"></use>
+                </svg>
+              </button>
+    
+                <li class="rates-list__menu-item">
+                  <button type="button" class="rates-list__menu-btn">
+                    Домашний интернет + ТВ + мобильная связь
+                    <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="rates-list__menu-item">
+                  <button type="button" class="rates-list__menu-btn">
+                    Безлимитный интернет
+                    <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="rates-list__menu-item">
+                  <button type="button" class="rates-list__menu-btn">
+                    Много звонков
+                    <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="rates-list__menu-item">
+                  <button type="button" class="rates-list__menu-btn">
+                    Все и сразу
+                    <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="rates-list__menu-item">
+                  <button type="button" class="rates-list__menu-btn">
+                    Детский
+                    <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="rates-list__menu-item">
+                  <button type="button" class="rates-list__menu-btn">
+                    Для модемов
+                    <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="rates-list__menu-item">
+                  <button type="button" class="rates-list__menu-btn">
+                    Для умных устройств
+                    <svg width="26" height="26" aria-hidden="true" class="rates-list__menu-btn-icon">
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+            </ul>
+          </div>
     
           <div class="gl__lg-show">
             <!--
@@ -403,11 +412,8 @@
               iconIsRight - деф., иконка справа
             -->
             
-            <button type="button" class="gl__btn-settings ">
+            <button type="button" class="gl__btn-settings  js-open-filter-modal">
               Безлимитный интернет
-              <svg width="20" height="20" aria-hidden="true" class="gl__btn-settings-icon">
-                <use xlink:href="#settigs"></use>
-              </svg>
             </button>
           </div>
     
@@ -1209,6 +1215,7 @@
                 placeholder
                 isSearch - дизайн с лупой
                 isSimpleDesign - упрощенный дизайн
+                isBorderBottom - упрощенный дизайн
                 isSmallChoicesList - укороченный список options
               
                 iconSearchRight (true/false)
