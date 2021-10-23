@@ -2,6 +2,10 @@
   height: 14rem;
 
   @include for-sm-down {
+    height: 6rem;
+  }
+
+  @include for-xs-down {
     height: auto;
     margin-bottom: 0;
   }

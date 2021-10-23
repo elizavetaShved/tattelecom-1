@@ -175,6 +175,7 @@ $padding-content: 2rem;
 
     .rates-preview__content-caption {
       @include for-sm-up {
+        font-weight: 600;
         text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.54);
       }
     }
