@@ -9,14 +9,74 @@
 
         margin-top: 8rem;
         margin-bottom: 10rem;
+
+        @include for-lg-down {
+            margin-top: 6rem;
+            margin-bottom: 6rem;
+        }
+        @include for-bg-down {
+            column-gap: 2.4rem;
+
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+        @include for-sm-down {
+            grid-template-columns: 1fr;
+            column-gap: 0;
+        }
     }
 
     &__nav {
+        @include for-sm-down {
+            position: fixed;
+            top: calc(var(--header-height) + 2rem);
+            left: -50%;
+            z-index: 2;
+
+            padding: 2rem;
+            width: 50%;
+
+            border-radius: 0 0 1rem 0;
+            background-color: white;
+            box-shadow: 0 0 0.4rem rgba(85, 87, 89, 0.4);
+
+            transition: left 0.5s ease;
+        }
+        @include for-sm-down {
+            left: -60%;
+
+            width: 60%;
+        }
+
+        &.opened {
+            left: 0;
+        }
+    }
+
+    &__nav-mobile-btn {
+        display: none;
+
+        @include for-sm-down {
+            position: absolute;
+            top: 0;
+            right: -4rem;
+            z-index: 1;
+
+            display: block;
+
+            width: 4rem;
+            height: 4rem;
+
+            border-radius: 0 1rem 1rem 0;
+            background-color: white;
+            box-shadow: 0.4rem 0 0.4rem rgba(85, 87, 89, 0.3);
+            cursor: pointer;
+        }
     }
 
     &__tabs-header {
         position: sticky;
-        top: 16rem;
+        top: calc(var(--header-height) + 2rem);
         left: 0;
     }
 
@@ -28,6 +88,10 @@
         &:last-of-type {
             border-bottom: none;
         }
+
+        @include for-lg-down {
+            padding: 0.8rem 0;
+        }
     }
 
     &__tab-nav-btn {
@@ -36,6 +100,8 @@
         justify-content: space-between;
 
         width: 100%;
+
+        text-align: left;
 
         &:hover,
         &:focus {
@@ -66,6 +132,8 @@
     }
 
     &__tab-nav-btn-label {
+        flex-shrink: 0;
+
         margin-right: 1rem;
 
         font-size: var(--fs-t2);
@@ -74,6 +142,7 @@
     }
 
     &__tab-nav-btn-icon {
+        flex-shrink: 0;
     }
 
     &__tab-nav-content-wrapper {
@@ -83,6 +152,14 @@
         padding-top: 1rem;
         padding-left: 3rem;
         padding-bottom: 0;
+
+        @include for-lg-down {
+            padding-top: 0.5rem;
+            padding-left: 2rem;
+        }
+        @include for-bg-down {
+            padding-left: 1rem;
+        }
     }
 
     &__tab-nav-content-unit {
@@ -90,6 +167,7 @@
     }
 
     &__tab-nav-content-unit-link {
+        font-size: var(--fs-t2);
         font-weight: 300;
         line-height: 1.5;
         letter-spacing: 0.02em;

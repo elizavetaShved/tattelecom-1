@@ -7,12 +7,18 @@
         border-bottom: none;
     }
 
+    @include for-lg-down {
+        padding: 0.8rem 0;
+    }
+
     &__question {
         display: flex;
         align-items: center;
         justify-content: space-between;
 
         width: 100%;
+
+        text-align: left;
 
         &.mod-open {
             .question-content__question-label {
@@ -51,6 +57,14 @@
         a {
             text-decoration: underline;
             color: var(--main-color-hover);
+        }
+
+        @include for-lg-down {
+            padding-top: 0.5rem;
+            padding-left: 2rem;
+        }
+        @include for-bg-down {
+            padding-left: 1rem;
         }
     }
 }

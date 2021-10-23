@@ -1,12 +1,39 @@
 .questions-content {
-    display: none;
+    padding-top: var(--header-height);
+    margin-top: calc(var(--header-height) * -1);
+    margin-bottom: 8rem;
 
-    &.active {
-        display: block;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    @include for-lg-down {
+        margin-bottom: 4rem;
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+
+        font-size: var(--fs-h1);
+        line-height: 1.5;
+        letter-spacing: 0.015em;
+        font-weight: 500;
+
+        @include for-lg-down {
+            margin-bottom: 1rem;
+        }
     }
 
     &__item {
         margin-bottom: 6rem;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        @include for-lg-down {
+            margin-bottom: 2rem;
+        }
     }
 
     &__name {
@@ -17,6 +44,10 @@
         font-size: var(--fs-h2);
         line-height: 1.5;
         letter-spacing: 0.015em;
+
+        @include for-lg-down {
+            margin-bottom: 0.5rem;
+        }
     }
 
     &__questions {
