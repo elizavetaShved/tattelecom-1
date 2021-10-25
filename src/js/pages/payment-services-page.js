@@ -6,17 +6,19 @@ import payCardNumberMask from '../finctions/masks/payCardNumberMask';
 import payCardDateMask from '../finctions/masks/payCardDateMask';
 import payCardCodeMask from '../finctions/masks/payCardCodeMask';
 import initMenuTabs from '../finctions/initMenuTabs';
-import initTopUpAccount from '../finctions/initModals/initTopUpAccount';
+import initTopUpAccountModal from '../finctions/initModals/initTopUpAccountModal';
+import initSelects from '../finctions/initSelects';
 
 document.addEventListener('DOMContentLoaded', () => {
   common();
 
   validation();
   initMenuTabs();
+  initSelects();
 
   phoneMask();
   rubMask();
-  initTopUpAccount();
+  initTopUpAccountModal();
   payCardNumberMask();
   payCardDateMask();
   payCardCodeMask();

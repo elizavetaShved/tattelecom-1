@@ -10,6 +10,7 @@
   isSearch - дизайн с лупой
   isSimpleDesign - упрощенный дизайн
   isBorderBottom - упрощенный дизайн
+  isPayOther - селект для "Оплата Другое"
   isSmallChoicesList - укороченный список options
 
   iconSearchRight (true/false)
@@ -29,6 +30,7 @@
       {{#if isBorderBottom}}mod-border-bottom{{/if}}
       {{#if iconSearchLeft}}mod-padding-left{{/if}}
       {{#if iconSimLeft}}mod-padding-left{{/if}}
+      {{#if isPayOther}}mod-pay-other{{/if}}
       {{#if iconSearchRight}}mod-padding-right{{/if}}" id="{{ this.name }}">
       {{#if iconSearchLeft}}
         <svg width="16" height="16" aria-hidden="true" class="select__search-icon mod-left">

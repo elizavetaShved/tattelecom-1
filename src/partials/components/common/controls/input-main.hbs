@@ -17,6 +17,7 @@
   parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
   parsleyType - для валидации (н-р email)
   isSimpleDesign - упрощенный дизайн
+  numberNoArrows - (true / false) - убрать стрелочки с number
 -->
 
 <label class="gl-input__wrapper js-input-{{ type }}">
@@ -29,7 +30,8 @@
          class="gl-input__input
            {{#if phoneMask }}js-phone-mask{{/if}}
            {{#if rubMask }}js-rub-mask{{/if}}
-           {{#if isSimpleDesign}}mod-simple-design{{/if}}"
+           {{#if isSimpleDesign}}mod-simple-design{{/if}}
+           {{#if numberNoArrows}}mod-no-arrow{{/if}}"
          placeholder="{{ placeholder }}"
          name="{{ name }}"
     {{#if minNumber }}

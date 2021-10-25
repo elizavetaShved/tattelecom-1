@@ -12,6 +12,7 @@
   ],
   "payment-services": [
     {
+      "typeModal": "mobile",
       "title": "С банковской карты, Apple Pay или Google Pay",
       "subtitle": "Мгновенное зачисление денег на счёт телефона без комиссий",
       "inputsList": [
@@ -27,6 +28,7 @@
       "isCards": true
     },
     {
+      "typeModal": "personal-account",
       "title": "По Номеру лицевого счета",
       "subtitle": "Сумма платежа будет доступна уже сейчас, а пополнить баланс можно будет позже",
       "inputsList": [
@@ -76,6 +78,20 @@
           "value": "landline-phone",
           "name": "payment-tab"
         }
+      ]
+    }
+  ],
+  "pay-other-select": [
+    {
+      "isPayOther": true,
+      "name": "pay-other",
+      "placeholder": "другое",
+      "options": [
+        "другое 1",
+        "другое 2",
+        "другое 3",
+        "другое 4",
+        "другое 5"
       ]
     }
   ]

@@ -53,6 +53,15 @@
     resize: none;
   }
 
+  &.mod-no-arrow {
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      display: none;
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
   &::placeholder {
     color: var(--main-grey-color);
   }

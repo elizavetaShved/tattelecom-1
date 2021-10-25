@@ -1,0 +1,44 @@
+<div class="top-up-account__form-radio-wrapper js-payment-method">
+  <div class="top-up-account__form-radio-caption">
+    Способ оплаты
+  </div>
+
+  <div class="top-up-account__form-radio-wrapper mod-card-pay">
+    {{> common/controls/input-radio-modal
+      required=true
+      name="top-up-account-radio-personal-account"
+      caption="Банковская карта"
+      isChecked=true
+      value="card"
+    }}
+
+    <div class="top-up-account__form-card-pay-wrapper">
+      {{> common/controls/card-pay }}
+    </div>
+  </div>
+
+  <div class="top-up-account__form-radio-wrapper">
+    {{> common/controls/input-radio-modal
+      required=true
+      name="top-up-account-radio-personal-account"
+      caption="Google Pay"
+      value="google-pay"
+    }}
+  </div>
+
+  <div class="top-up-account__form-radio-wrapper mod-with-select">
+    {{> common/controls/input-radio-modal
+      required=true
+      name="top-up-account-radio-personal-account"
+      value="other"
+    }}
+
+    {{> common/controls/select selects=pay-other-select }}
+  </div>
+
+  <div class="top-up-account__form-btn-wrapper">
+    <button type="button" class="top-up-account__form-btn gl__main-btn">
+      Пополнить
+    </button>
+  </div>
+</div>

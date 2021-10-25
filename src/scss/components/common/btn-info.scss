@@ -1,0 +1,44 @@
+.btn-info__container {
+  position: relative;
+}
+
+.btn-info__btn {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    + .btn-info__content {
+      opacity: 1;
+      pointer-events: initial;
+    }
+  }
+}
+
+.btn-info__icon {
+  height: 2rem;
+  fill: var(--main-grey-color);
+  flex: 0 0 2rem;
+}
+
+.btn-info__content {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  transform: translate(-10%, -100%);
+  padding: .6rem 1rem;
+  background-color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  box-shadow: var(--box-shadow-input);
+  border-radius: 4px;
+  min-width: 12rem;
+  max-width: 16rem;
+  word-break: break-word;
+  transition: opacity 300ms;
+  opacity: 0;
+  pointer-events: none;
+}

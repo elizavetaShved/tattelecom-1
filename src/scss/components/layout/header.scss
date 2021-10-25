@@ -175,7 +175,7 @@
   margin: -1.4rem;
 }
 
-.header__bottom-menu-btn {
+.header__bottom-menu-link {
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -327,6 +327,7 @@
   letter-spacing: 0.02em;
   -moz-border-radius-bottomleft: .8rem;
   margin-bottom: .8rem;
+  display: block;
 }
 
 .header__popup-item-link {

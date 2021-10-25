@@ -17,23 +17,38 @@
       "img": "img/common/gadgets-squared/square-phone.png",
       "caption": "Мобильная связь",
       "values": [
-        "Безлимитный интернет",
-        "1000 минут",
-        "100 SMS"
+        {
+          "text": "Безлимитный интернет",
+          "btn-info": "Информация о Безлимитный интернет"
+        },
+        {
+          "text": "1000 минут",
+          "btn-info": "Информация о 1000 минут"
+        },
+        {
+          "text": "100 SMS",
+          "btn-info": "Информация о 100 SMS"
+        }
       ]
     },
     {
       "img": "img/common/gadgets-squared/square-wifi.png",
       "caption": "Домашний интернет",
       "values": [
-        "100 Мбит/сек."
+        {
+          "text": "100 Мбит/сек.",
+          "btn-info": "Информация о 100 Мбит/сек."
+        }
       ]
     },
     {
       "img": "img/common/gadgets-squared/square-tv.png",
       "caption": "Телевидение",
       "values": [
-        "160 каналов"
+        {
+          "text": "160 каналов",
+          "btn-info": "Информация о 160 каналов"
+        }
       ]
     }
   ],

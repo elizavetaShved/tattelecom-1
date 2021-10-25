@@ -15,13 +15,10 @@
             {{#each this.values }}
               <div class="convergent-enabled__value">
                 <div class="convergent-enabled__value-text">
-                  {{ this }}
+                  {{ this.text }}
                 </div>
-                <button type="button" class="convergent-enabled__btn-info">
-                  <svg width="24" height="24" aria-hidden="true" class="convergent-enabled__btn-info-icon">
-                    <use xlink:href="#info-ellipse"></use>
-                  </svg>
-                </button>
+
+                {{> common/btn-info content-info=this.btn-info }}
               </div>
             {{/each}}
           </div>

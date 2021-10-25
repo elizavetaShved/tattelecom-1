@@ -13,6 +13,7 @@
           </div>
 
           <form data-need-validation data-parsley-validate data-parsley-focus="none"
+                {{#if typeModal }}data-modal-type="{{ typeModal }}"{{/if}}
                 class="payment-services__form js-form-pre-modal-top-up-account">
             <div class="payment-services__form-inputs-wrapper">
               {{#each inputsList }}
@@ -42,10 +43,13 @@
                 {{#if isAccountNumber }}
                   {{> common/controls/input-main
                     required=true
-                    type="text"
+                    type="number"
                     inputTitle=this.title
+                    minLength=20
+                    maxLength=20
                     placeholder="Номер лицевого счета"
                     name="payment-personal-account"
+                    numberNoArrows=true
                   }}
                 {{/if}}
               {{/each}}

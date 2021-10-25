@@ -26,7 +26,7 @@
                 type="tel"
                 phoneMask=true
                 placeholder="+7 (___) ___-__-__"
-                name="top-up-account-tel"
+                name="top-up-account-tel-mobile"
               }}
             </div>
             <div class="top-up-account__form-input">
@@ -37,57 +37,94 @@
                 type="text"
                 rubMask=true
                 placeholder="500₽"
-                name="top-up-account-sum"
+                name="top-up-account-sum-mobile"
               }}
             </div>
 
-            <div class="top-up-account__form-radio-caption">
-              Способ оплаты
-            </div>
+            {{> modals/common/payment-method }}
 
-            <div class="top-up-account__form-radio-wrapper mod-card-pay">
-              {{> common/controls/input-radio-modal
-                required=true
-                name="top-up-account-radio"
-                caption="Банковская карта"
-                isChecked=true
-              }}
-
-              <div class="top-up-account__form-card-pay-wrapper">
-                {{> common/controls/card-pay }}
-              </div>
-            </div>
-
-            <div class="top-up-account__form-radio-wrapper">
-              {{> common/controls/input-radio-modal
-                required=true
-                name="top-up-account-radio"
-                caption="Google Pay"
-              }}
-            </div>
-
-            <div class="top-up-account__form-radio-wrapper">
-              {{> common/controls/input-radio-modal
-                required=true
-                name="top-up-account-radio"
-                caption="другое"
-              }}
-            </div>
-
-            <div class="top-up-account__form-btn-wrapper">
-              <button type="button" class="top-up-account__form-btn gl__main-btn">
-                Пополнить
-              </button>
-            </div>
           </form>
         </div>
 
         <div class="js-menu-tab-content gl__menu-tab-content" data-menu-personal-account>
-          По номеру лицевого счета
+          <form data-need-validation data-parsley-validate data-parsley-focus="none"
+                class="top-up-account__form-wrapper">
+            <div class="top-up-account__form-input">
+              {{> common/controls/input-main
+                required=true
+                isSimpleDesign=true
+                inputTitle="Номер лицевого счёта"
+                type="number"
+                minLength=20
+                maxLength=20
+                numberNoArrows=true
+                name="top-up-account-personal-account"
+              }}
+            </div>
+            <div class="top-up-account__form-input">
+              {{> common/controls/input-main
+                required=true
+                isSimpleDesign=true
+                inputTitle="Сумма платежа: "
+                type="text"
+                rubMask=true
+                placeholder="500₽"
+                name="top-up-account-sum-personal-account"
+              }}
+            </div>
+            <div class="top-up-account__form-input">
+              {{> common/controls/input-main
+                required=true
+                isSimpleDesign=true
+                inputTitle="Ваш email*"
+                type="email"
+                placeholder="Ваш email"
+                name="top-up-account-email-personal-account"
+              }}
+            </div>
+
+            {{> modals/common/payment-method }}
+          </form>
         </div>
 
         <div class="js-menu-tab-content gl__menu-tab-content" data-menu-landline-phone>
-          Стационарный телефон
+          <form data-need-validation data-parsley-validate data-parsley-focus="none"
+                class="top-up-account__form-wrapper">
+            <div class="top-up-account__form-input">
+              {{> common/controls/input-main
+                required=true
+                isSimpleDesign=true
+                inputTitle="Номер стационарного телефона:"
+                type="tel"
+                phoneMask=true
+                placeholder="+7 (___) ___-__-__"
+                name="top-up-account-landline-tel-mobile"
+              }}
+            </div>
+            <div class="top-up-account__form-input">
+              {{> common/controls/input-main
+                required=true
+                isSimpleDesign=true
+                inputTitle="Сумма платежа: "
+                type="text"
+                rubMask=true
+                placeholder="500₽"
+                name="top-up-account-sum-landline-tel"
+              }}
+            </div>
+            <div class="top-up-account__form-input">
+              {{> common/controls/input-main
+                required=true
+                isSimpleDesign=true
+                inputTitle="Ваш email*"
+                type="email"
+                placeholder="Ваш email"
+                name="top-up-account-email-landline-tel"
+              }}
+            </div>
+
+            {{> modals/common/payment-method }}
+          </form>
         </div>
       </div>
     </div>

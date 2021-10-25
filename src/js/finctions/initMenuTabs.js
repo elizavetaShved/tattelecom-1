@@ -13,7 +13,7 @@ export default function initMenuTabs() {
         contentElems[index].classList.add('mod-show');
       }
 
-      tab.onclick = () => {
+      tab.onchange = () => {
         contentElems.forEach(contentElem => {
           if (contentElem.hasAttribute(`data-menu-${ tab.value }`)) {
             contentElem.classList.add('mod-show');

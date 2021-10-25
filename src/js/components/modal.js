@@ -17,6 +17,7 @@ export class Modal {
     this.checkClickByModal = this.checkClickByModal.bind(this);
     this.setHeightModalContainer = this.setHeightModalContainer.bind(this);
     this.checkClickByModalThanks = this.checkClickByModalThanks.bind(this);
+    this.onCloseModal = this.onCloseModal.bind(this);
 
     this.bodyElem = document.querySelector('body');
 
@@ -47,6 +48,11 @@ export class Modal {
     }
 
     document.addEventListener('click', this.checkClickByModal);
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') {
+        this.onCloseModal();
+      }
+    });
   }
 
   setHeightModalContainer() {

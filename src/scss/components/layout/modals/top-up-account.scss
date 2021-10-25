@@ -28,6 +28,10 @@
   }
 }
 
+.top-up-account__form-radio-wrapper {
+  margin-top: 2rem;
+}
+
 .top-up-account__form-radio-caption {
   font-weight: 300;
   font-size: 1.4rem;
@@ -45,6 +49,11 @@
 
   &.mod-card-pay {
     margin-bottom: 3rem;
+  }
+
+  &.mod-with-select {
+    display: flex;
+    align-items: center;
   }
 }
 

@@ -1,0 +1,17 @@
+<div class="btn-info__container">
+  <button type="button" class="btn-info__btn">
+    {{#if iconQuestion }}
+      <svg width="24" height="24" aria-hidden="true" class="btn-info__icon">
+        <use xlink:href="#question"></use>
+      </svg>
+    {{ else }}
+      <svg width="24" height="24" aria-hidden="true" class="btn-info__icon">
+        <use xlink:href="#info-ellipse"></use>
+      </svg>
+    {{/if}}
+  </button>
+
+  <div class="btn-info__content">
+    {{ content-info }}
+  </div>
+</div>

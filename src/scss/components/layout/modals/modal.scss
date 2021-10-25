@@ -13,6 +13,8 @@
   box-shadow: 0 0.266004px 20px rgba(153, 152, 168, 0.17);
   border-radius: 10px;
   margin: 0 1rem;
+  margin-top: 3rem;
+  @extend %scroll;
 
   &.mod-small {
     width: 48.2rem;
