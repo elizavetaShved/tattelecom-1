@@ -1,5 +1,6 @@
 {
   "isBusiness": true,
+  "isBusinessMain": true,
   "title": "Бизнесу",
   "script": "b-main-page"
 }

@@ -28,5 +28,22 @@ export class Header {
         popupElem.classList.remove('mod-show');
       }
     })
+
+    const isBusinessMainPageHeader = !!document.querySelector('.js-business-main');
+
+    if (isBusinessMainPageHeader) {
+      const businessMainPageMenuHost = hostElem.querySelector('#header-b-main-page-menu-host');
+      const headerTopBlockElem = hostElem.querySelector('#header-top-block-host');
+      const headerBottomBlockElem = hostElem.querySelector('#header-b-bottom-block-host');
+
+      document.addEventListener('scroll', () => {
+        let headerHeight = headerTopBlockElem.offsetHeight + headerBottomBlockElem.offsetHeight;
+        if (window.innerWidth >= 1024 && window.pageYOffset >= headerHeight) {
+          businessMainPageMenuHost.classList.remove('mod-show');
+        } else {
+          businessMainPageMenuHost.classList.add('mod-show');
+        }
+      })
+    }
   }
 }

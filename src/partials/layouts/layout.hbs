@@ -20,11 +20,7 @@
 
 <div class="gl__layout-wrapper">
   <div class="gl__layout-header">
-    {{#if isBusiness }}
-      {{> b-layout-header }}
-    {{ else }}
-      {{> layout-header }}
-    {{/if}}
+    {{> layout-header/header }}
   </div>
 
   <main class="gl__layout-content">
@@ -32,11 +28,7 @@
   </main>
 
   <div class="gl__layout-footer">
-    {{#if isBusiness }}
-      {{> b-layout-footer }}
-    {{ else }}
-      {{> layout-footer }}
-    {{/if}}
+    {{> layout-footer }}
   </div>
 
   {{> modals/callback }}

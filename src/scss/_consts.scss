@@ -11,19 +11,23 @@
   --border-color-2: #DBDBDB;
   --box-shadow-input: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 16px rgba(51, 51, 51, 0.08);
 
+  --main-color-business: #007BC3;
+
   // z-index
   --z-index-header: 3;
   --z-index-roaming-top-block: 2;
   --z-index-select-open-list: 2;
 
-  // высота header
+  // высота layout-header
   --header-height: calc(var(--header-height-top-block) + var(--header-height-bottom-block));
   --header-height-top-block: 4rem;
   --header-height-bottom-block: 10rem;
+  --header-height-b-bottom-block: 9rem;
 
   @include for-bg-down {
     --header-height-top-block: 3rem;
     --header-height-bottom-block: 6rem;
+    --header-height-b-bottom-block: 5rem;
   }
 
   // padding content
