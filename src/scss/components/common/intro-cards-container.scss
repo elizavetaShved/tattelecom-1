@@ -1,0 +1,28 @@
+// Блок на страницах:
+// 1. Бизнесу / Мобильная связь
+// 2. Бизнесу / Интернет в офис
+
+// Основа для грид сетки, внутри лежат карточки
+
+.intro-cards-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3rem;
+
+  &__item {
+
+    &:nth-child(1) {
+      grid-column: span 6;
+    }
+    &:nth-child(2) {
+      grid-column: span 6;
+    }
+    &:nth-child(3) {
+      grid-column: span 5;
+    }
+    &:nth-child(4) {
+      grid-column: span 7;
+    }
+  }
+}
