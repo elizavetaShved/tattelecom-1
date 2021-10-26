@@ -22,24 +22,21 @@ export class Header {
     const menuLinkElements = this.hostElem.querySelectorAll('.header__bottom-menu-link');
     this.popupContentElements = Array.from(this.hostElem.querySelectorAll('.js-header-popup'));
 
+    // наведение на ссылку в меню нижнего блока
     menuLinkElements.forEach(link => {
       link.onmouseover = () => {
-        if (this.isBusinessMainPageHeader) {
-          this.openBusinessPopUp(false);
-        } else {
-          this.openPopUp(link);
-        }
+        this.openPopUp(link);
       }
     })
 
+    // удод с поп-ап
     document.addEventListener('mousemove', e => {
       if (!checkExistParent(e.target, popupWrapperElem) && !checkExistParent(e.target, bottomBlockElem)) {
+        this.closePopUp();
         if (this.isBusinessMainPageHeader) {
           if (window.pageYOffset > 0) {
             this.closeBusinessPopUp();
           }
-        } else {
-          this.closePopUp();
         }
       }
     })
@@ -60,27 +57,31 @@ export class Header {
             this.closeBusinessPopUp();
           } else {
             this.openBusinessPopUp(true);
+            this.closePopUp();
           }
         }
       });
     }
   }
 
+  // открыть поп-ап
   openPopUp(link) {
     this.popupElem.classList.add('mod-show');
-
     this.popupContentElements.forEach(popupContentElem => {
-      if (popupContentElem.className.includes(`mod-${ link.getAttribute('data-hover-value') }`) && !popupContentElem.className.includes('mod-show')) {
+      if ((popupContentElem.getAttribute('data-hover-value') === link.getAttribute('data-hover-value'))
+        && !popupContentElem.className.includes('mod-show')) {
         this.popupContentElements.map(elem => elem.classList.remove('mod-show'));
         popupContentElem.classList.add('mod-show');
       }
     })
   }
 
+  // закрыть поп-ап
   closePopUp() {
     this.popupElem.classList.remove('mod-show');
   }
 
+  // открыть бизнес поп-ап (со всей навигацией)
   openBusinessPopUp(isCloseMenu) {
     this.businessMainPageMenuHost.style.maxHeight = `${ this.businessMainPageMenuContent.offsetHeight }px`;
     this.businessMainPageMenuHost.style.overflow = 'initial';
@@ -89,6 +90,7 @@ export class Header {
     }
   }
 
+  // закрыть бизнес поп-ап (со всей навигацией)
   closeBusinessPopUp() {
     this.businessMainPageMenuHost.style.maxHeight = 0;
     this.businessMainPageMenuHost.style.overflow = 'hidden';
