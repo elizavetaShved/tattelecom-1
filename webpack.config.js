@@ -3,6 +3,7 @@ const MomentLocalesPlugin = require('moment-locales-webpack-plugin');
 
 module.exports = {
     entry: {
+        ['common']: './src/js/common.js',
         ['main-page']: './src/js/pages/main-page.js',
         ['mobile-communication-page']: './src/js/pages/mobile-communication-page.js',
         ['cashback-page']: './src/js/pages/cashback-page.js',
