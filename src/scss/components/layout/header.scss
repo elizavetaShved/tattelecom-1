@@ -15,10 +15,16 @@
       color: #fff;
 
       &:hover {
-        color: var(--main-color-hover);
+        &:not(.mod-with-icons) {
+          border-top-color: #fff;
+        }
 
-        .header__top-menu-items-link-icon {
-          fill: var(--main-color-hover);
+        &.mod-with-icons {
+          color: var(--header-hover-business);
+
+          .header__top-menu-items-link-icon {
+            fill: var(--header-hover-business);
+          }
         }
       }
     }
@@ -208,6 +214,14 @@
 .header__bottom-block-right {
   display: flex;
   align-items: center;
+  height: 100%;
+
+  &.mod-business {
+    &:not(.mod-show) {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
 }
 
 .header__bottom-menu-list {
@@ -231,6 +245,17 @@
 
   &:hover {
     color: var(--main-color);
+  }
+
+  &.mod-business {
+    color: #fff;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 250ms;
+
+    &:hover {
+      border-bottom-color: #fff;
+    }
   }
 }
 
@@ -262,7 +287,7 @@
     fill: #fff;
 
     &:hover {
-      fill: var(--main-color-hover);
+      fill: var(--header-hover-business);
     }
   }
 }
@@ -315,16 +340,16 @@
 
     &:hover {
       &:before {
-        border-color: var(--main-color-hover);
+        border-color: var(--header-hover-business);
       }
 
       &:after {
-        background-color: var(--main-color-hover);
+        background-color: var(--header-hover-business);
       }
 
       &.mod-open {
         &:before {
-          background: var(--main-color-hover);
+          background: var(--header-hover-business);
         }
       }
     }
@@ -431,22 +456,19 @@
 }
 
 .header__b-main-page-menu {
+  transition: max-height 300ms;
+
+  @include for-hg-down {
+    grid-gap: 2rem;
+  }
+}
+
+.header__b-main-page-menu-content {
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-gap: 4rem;
   padding-top: 5rem;
   padding-bottom: 6.4rem;
-  max-height: 50rem;
-  overflow: hidden;
-  transition: max-height 300ms;
-
-  &:not(.mod-show) {
-    max-height: 0;
-  }
-
-  @include for-hg-down {
-    grid-gap: 2rem;
-  }
 }
 
 .header__b-menu-item-caption {

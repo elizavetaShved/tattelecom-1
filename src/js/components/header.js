@@ -1,49 +1,97 @@
 import { checkExistParent } from '../finctions/checkExistParent';
 
 export class Header {
-  constructor() {
-    const hostElem = document.getElementById('header-host');
+  hostElem;
+  popupElem;
+  popupContentElements;
+  isBusinessMainPageHeader;
 
-    const popupElem = hostElem.querySelector('.header__popup-container');
-    const popupWrapperElem = hostElem.querySelector('.header__popup-wrapper');
-    const bottomBlockElem = hostElem.querySelector('.header__bottom-block-content');
-    const menuLinkElements = hostElem.querySelectorAll('.header__bottom-menu-link');
-    const popupContentElements = Array.from(hostElem.querySelectorAll('.header__popup-content'));
+  businessMainPageMenuHost
+  businessMainPageMenuContent
+  businessMainPageMenu
+
+  constructor() {
+    this.openBusinessPopUp = this.openBusinessPopUp.bind(this);
+    this.closeBusinessPopUp = this.closeBusinessPopUp.bind(this);
+
+    this.hostElem = document.getElementById('header-host');
+
+    this.popupElem = this.hostElem.querySelector('.js-header-popup-container');
+    const popupWrapperElem = this.hostElem.querySelector('.js-header-popup-wrapper');
+    const bottomBlockElem = this.hostElem.querySelector('.header__bottom-block-content');
+    const menuLinkElements = this.hostElem.querySelectorAll('.header__bottom-menu-link');
+    this.popupContentElements = Array.from(this.hostElem.querySelectorAll('.js-header-popup'));
 
     menuLinkElements.forEach(link => {
       link.onmouseover = () => {
-        popupElem.classList.add('mod-show');
-
-        popupContentElements.forEach(popupContentElem => {
-          if (popupContentElem.className.includes(`mod-${ link.getAttribute('data-hover-value') }`) && !popupContentElem.className.includes('mod-show')) {
-            popupContentElements.map(elem => elem.classList.remove('mod-show'));
-            popupContentElem.classList.add('mod-show');
-          }
-        })
+        if (this.isBusinessMainPageHeader) {
+          this.openBusinessPopUp(false);
+        } else {
+          this.openPopUp(link);
+        }
       }
     })
 
     document.addEventListener('mousemove', e => {
       if (!checkExistParent(e.target, popupWrapperElem) && !checkExistParent(e.target, bottomBlockElem)) {
-        popupElem.classList.remove('mod-show');
+        if (this.isBusinessMainPageHeader) {
+          if (window.pageYOffset > 0) {
+            this.closeBusinessPopUp();
+          }
+        } else {
+          this.closePopUp();
+        }
       }
     })
 
-    const isBusinessMainPageHeader = !!document.querySelector('.js-business-main');
+    this.isBusinessMainPageHeader = !!document.querySelector('.js-business-main');
 
-    if (isBusinessMainPageHeader) {
-      const businessMainPageMenuHost = hostElem.querySelector('#header-b-main-page-menu-host');
-      const headerTopBlockElem = hostElem.querySelector('#header-top-block-host');
-      const headerBottomBlockElem = hostElem.querySelector('#header-b-bottom-block-host');
+    // если это страница бизнеса (главная), то по скроллу убираем нижнее меню
+    if (this.isBusinessMainPageHeader) {
+      this.businessMainPageMenuHost = this.hostElem.querySelector('#header-b-main-page-menu-host');
+      this.businessMainPageMenuContent = this.businessMainPageMenuHost.querySelector('#header-b-main-page-menu-content');
+      this.businessMainPageMenu = this.hostElem.querySelector('.js-b-menu-header');
+
+      this.businessMainPageMenuHost.style.maxHeight = `${ this.businessMainPageMenuContent.offsetHeight }px`;
 
       document.addEventListener('scroll', () => {
-        let headerHeight = headerTopBlockElem.offsetHeight + headerBottomBlockElem.offsetHeight;
-        if (window.innerWidth >= 1024 && window.pageYOffset >= headerHeight) {
-          businessMainPageMenuHost.classList.remove('mod-show');
-        } else {
-          businessMainPageMenuHost.classList.add('mod-show');
+        if (window.innerWidth >= 1024) {
+          if (window.pageYOffset > 0) {
+            this.closeBusinessPopUp();
+          } else {
+            this.openBusinessPopUp(true);
+          }
         }
-      })
+      });
     }
+  }
+
+  openPopUp(link) {
+    this.popupElem.classList.add('mod-show');
+
+    this.popupContentElements.forEach(popupContentElem => {
+      if (popupContentElem.className.includes(`mod-${ link.getAttribute('data-hover-value') }`) && !popupContentElem.className.includes('mod-show')) {
+        this.popupContentElements.map(elem => elem.classList.remove('mod-show'));
+        popupContentElem.classList.add('mod-show');
+      }
+    })
+  }
+
+  closePopUp() {
+    this.popupElem.classList.remove('mod-show');
+  }
+
+  openBusinessPopUp(isCloseMenu) {
+    this.businessMainPageMenuHost.style.maxHeight = `${ this.businessMainPageMenuContent.offsetHeight }px`;
+    this.businessMainPageMenuHost.style.overflow = 'initial';
+    if (isCloseMenu) {
+      this.businessMainPageMenu.classList.remove('mod-show');
+    }
+  }
+
+  closeBusinessPopUp() {
+    this.businessMainPageMenuHost.style.maxHeight = 0;
+    this.businessMainPageMenuHost.style.overflow = 'hidden';
+    this.businessMainPageMenu.classList.add('mod-show');
   }
 }
