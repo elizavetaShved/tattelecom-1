@@ -1,4 +1,3 @@
-import common from '../common';
 import validation from '../finctions/validation';
 import phoneMask from '../finctions/masks/phoneMask';
 import rubMask from '../finctions/masks/rubMask';
@@ -10,8 +9,6 @@ import initTopUpAccountModal from '../finctions/initModals/initTopUpAccountModal
 import initSelects from '../finctions/initSelects';
 
 document.addEventListener('DOMContentLoaded', () => {
-  common();
-
   validation();
   initMenuTabs();
   initSelects();
