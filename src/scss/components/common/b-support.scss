@@ -1,0 +1,102 @@
+.b-support {
+
+  margin-bottom: 10rem;
+
+  @include for-lg-down {
+    margin-bottom: 6rem;
+  }
+  @include for-sm-down {
+    margin-bottom: 4rem;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3rem;
+
+    @include for-sm-down {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__block {
+    padding: 4.8rem 4.8rem 8rem 4.8rem;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+    border-radius: 2rem;
+
+    @include for-bg-down {
+      padding: 2.8rem 2rem;
+    }
+  }
+
+  &__form-block {
+    grid-column: span 7;
+
+    @include for-sm-down {
+      grid-column: unset;
+    }
+  }
+
+  &__form-title {
+    margin-bottom: 2.4rem;
+
+    font-size: var(--fs-h1);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.015em;
+    color: var(--main-color-business);
+  }
+
+  &__form-label {
+    display: block;
+    
+    max-width: 40rem;
+
+    font-size: var(--fs-t2);
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    color: var(--grey-text);
+  }
+
+  &__contacts-block {
+    grid-column: span 5;
+
+    @include for-sm-down {
+      grid-column: unset;
+    }
+  }
+
+  &__contacts-title {
+    margin-bottom: 2.4rem;
+
+    font-size: var(--fs-h1);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.015em;
+    color: var(--main-color);
+  }
+
+  &__contacts-label {
+    display: block;
+
+    margin-bottom: 2.8rem;
+
+    font-size: var(--fs-t2);
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    color: var(--grey-text);
+  }
+
+  &__contacts-tel {
+    display: block;
+
+    margin-bottom: 2.4rem;
+
+    color: var(--main-color);
+    font-size: var(--fs-h2);
+    line-height: 1.3;
+    letter-spacing: 0.015em;
+  }
+}

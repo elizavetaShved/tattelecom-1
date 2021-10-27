@@ -9,11 +9,29 @@
   color: white;
   background-color: var(--main-grey-color);
 
+  @include for-hg-down {
+    padding: 5rem 3rem 3rem 3rem;
+  }
+  @include for-sm-down {
+    padding: 5rem 2rem 2rem 2rem;
+  }
+
+  // Градиенты
   &:nth-child(odd) {
     background: linear-gradient(135deg, #FD6585 0%, #FFD3A5 100%);
+
+    .service-card-with-photo__icon {
+      top: -3rem;
+      right: -16rem;
+    }
   }
   &:nth-child(even) {
     background: linear-gradient(135deg, #FFD3A5 0%, #FD6585 100%);
+
+    .service-card-with-photo__icon {
+      top: -46rem;
+      right: 1rem;
+    }
   }
 
   // Градиенты для оверлея изображений. Задаются через json
@@ -53,6 +71,11 @@
     position: absolute;
     top: 0;
     right: 0;
+
+    width: 33.4rem;
+    height: 114.8rem;
+
+    user-select: none;
   }
 
   &__content {
@@ -73,6 +96,10 @@
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: 0.015em;
+
+    @include for-hg-down {
+      margin-bottom: 1.8rem;
+    }
   }
 
   &__subtitle {
@@ -81,50 +108,83 @@
     font-size: var(--fs-t2);
     line-height: 1.4;
     letter-spacing: 0.02em;
+
+    @include for-hg-down {
+      margin-bottom: 4rem;
+    }
+    @include for-sm-down {
+      margin-bottom: 2.8rem;
+    }
   }
 
   &__footer {
     display: flex;
     justify-content: space-between;
+
+    @include for-hg-down {
+      flex-direction: column;
+    }
   }
 
   &__cost-block {
+    display: flex;
+    align-items: flex-end;
+
     margin-right: 2rem;
+
+    @include for-hg-down {
+      margin-bottom: 1.2rem;
+      margin-right: 0;
+    }
   }
 
   &__cost-label {
-    display: inline-block;
+    flex-shrink: 0;
 
     font-size: var(--fs-t1);
     line-height: 1.2;
   }
 
   &__cost-value {
-    display: inline-block;
+    flex-shrink: 0;
+
+    margin: 0 0.5rem;
 
     font-size: 4rem;
+    line-height: 1;
   }
 
   &__btns {
+    display: flex;
+    align-items: center;
+
+    margin: 0 -1.2rem;
+
     font-size: var(--fs-t2);
+
+    @include for-hg-down {
+      align-self: stretch;
+      justify-content: space-between;
+    }
   }
 
   &__btn {
-    margin-right: 2.4rem;
+    margin: 0 1.2rem;
 
     font-size: var(--fs-t2);
     line-height: 1.2;
     letter-spacing: 0.01em;
-
-    &:last-of-type {
-      margin-right: 0;
-    }
   }
 
   &__details {
   }
 
   &__tariffs {
+    // На макете на мобилках эта кнопка исчезает
+    // Если ее оставить, то не понимаю как красиво адаптировать
+    @include for-sm-down {
+      display: none;
+    }
   }
 
   &__connect-btn {

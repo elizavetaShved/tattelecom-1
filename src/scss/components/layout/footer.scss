@@ -46,6 +46,10 @@
         border-top: 1px solid var(--border-color);
       }
     }
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 
   &.mod-first-half-row {
