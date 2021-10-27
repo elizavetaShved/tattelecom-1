@@ -1,0 +1,23 @@
+<section class="b-page-banner">
+  <div class="gl__page-content">
+    <h2 class="gl__title">{{title}}</h2>
+
+    <div class="b-page-banner__content">
+      <img class="b-page-banner__image" src="img/common/b-page-banners/{{banner.image}}" alt="{{title}}">
+      <div class="b-page-banner__text">
+        <h3 class="b-page-banner__title">
+          {{#if banner.accentTitle }}
+          <span class="b-page-banner__accent-title">{{{banner.accentTitle}}}</span>
+          {{/if}}
+          {{{banner.title}}}
+        </h3>
+        <div class="b-page-banner__cost-block">
+          <span class="b-page-banner__cost-label">от</span>
+          <span class="b-page-banner__cost">{{banner.cost}}</span>
+          <span class="b-page-banner__cost-label">₽/мес.</span>
+        </div>
+        <span class="b-page-banner__label">{{banner.label}}</span>
+      </div>
+    </div>
+  </div>
+</section>
