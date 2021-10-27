@@ -1,18 +1,23 @@
 <header class="header {{#if isBusiness}}mod-business{{/if}} {{#if isBusinessMain}}js-business-main{{/if}}" id="header-host">
-  <div class="header__main-content">
-    {{#if isBusiness}}
-      <img src="img/header/buliness-background.jpg" alt="" class="header__background">
-    {{/if}}
+  <div class="header__content" {{#if isBusiness}}style="background-image: url('img/header/buliness-background.jpg')"{{/if}}>
 
-    {{> layout-header/header-top-block }}
+    <div class="header__main-content">
+      {{> layout-header/header-top-block }}
 
-    {{#if isBusiness}}
-      {{> layout-header/header-b-bottom-block }}
-      {{> layout-header/header-b-menu-main-page }}
+      {{#if isBusiness}}
+        {{> layout-header/header-b-bottom-block }}
+        {{#if isBusinessMain }}
+          {{> layout-header/header-b-menu-main-page }}
+        {{/if}}
+      {{ else }}
+        {{> layout-header/header-bottom-block }}
+      {{/if}}
+    </div>
+
+    {{#if isBusiness }}
+      {{> layout-header/header-b-pop-up }}
     {{ else }}
-      {{> layout-header/header-bottom-block }}
+      {{> layout-header/header-pop-up }}
     {{/if}}
   </div>
-
-  {{> layout-header/header-pop-up }}
 </header>

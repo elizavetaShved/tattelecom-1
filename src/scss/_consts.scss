@@ -14,6 +14,7 @@
 
   --main-color-business: #007BC3;
   --main-color-business-hover: #3899D1; // #007BC3 + rgba(#fff, 0.2)
+  --header-hover-business: #d5cbcb;
 
   // z-index
   --z-index-header: 5;
@@ -24,6 +25,7 @@
   --header-height: calc(var(--header-height-top-block) + var(--header-height-bottom-block));
   --header-height-top-block: 4rem;
   --header-height-bottom-block: 10rem;
+  --header-height-b: calc(var(--header-height-top-block) + var(--header-height-b-bottom-block));
   --header-height-b-bottom-block: 9rem;
 
   @include for-bg-down {
