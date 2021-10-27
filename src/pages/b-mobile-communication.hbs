@@ -84,31 +84,7 @@
       </div>
     </section>
 
-    <section class="b-useful-articles">
-      <div class="gl__page-content">
-        <h2 class="gl__title">Полезные статьи для бизнеса</h2>
-      </div>
-
-      <div class="b-useful-articles__content">
-        <div class="gl-slider js-swiper-3">
-          {{> common/controls/b-btns-slider }}
-          <div class="gl__page-content">
-            <div class="gl-slider__container swiper-container js-swiper-container-3 b-useful-articles__slider">
-              <ul class="gl-slider__wrapper swiper-wrapper" id="js-align-heights">
-                {{#each usefulArticles }}
-                <li class="swiper-slide b-useful-article">
-                  <img class="b-useful-article__image" src="img/b-mobile-communication/useful-articles/{{this.image}}" alt="{{this.title}}">
-                  <div class="b-useful-article__overlay"></div>
-                  <h3 class="b-useful-article__title">{{this.title}}</h3>
-                  <p class="b-useful-article__description">{{this.description}}</p>
-                </li>
-                {{/each}}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    {{> common/b-useful-articles }}
 
     {{> common/faq/section-faq }}
 

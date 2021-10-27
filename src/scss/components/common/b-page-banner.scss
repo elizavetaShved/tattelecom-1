@@ -1,0 +1,90 @@
+.b-page-banner {
+
+  margin-bottom: 10rem;
+
+  @include for-lg-down {
+    margin-bottom: 6rem;
+  }
+  @include for-sm-down {
+    margin-bottom: 4rem;
+  }
+  
+  &__content {
+    overflow: hidden;
+
+    position: relative;
+
+    padding: 6rem 50% 6rem 9.2rem;
+    border-radius: 2rem;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    user-select: none;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    margin-bottom: 2.8rem;
+
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--main-color-business);
+  }
+
+  &__accent-title {
+    display: block;
+
+    font-size: 5.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  &__cost-block {
+    display: flex;
+    align-items: flex-end;
+
+    margin-bottom: 1.8rem;
+
+    color: var(--main-color-business);
+  }
+
+  &__cost-label {
+    flex-shrink: 0;
+
+    font-size: var(--fs-h2);
+    line-height: 1.2;
+    font-weight: 300;
+  }
+
+  &__cost {
+    flex-shrink: 0;
+
+    margin: 0 0.5rem;
+
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  &__label {
+    font-size: var(--fs-h2);
+    line-height: 1.2;
+    font-weight: 300;
+    color: var(--main-color-business);
+  }
+}
