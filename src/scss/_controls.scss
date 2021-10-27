@@ -78,6 +78,15 @@
       color: #fff;
     }
   }
+
+  &.mod-business {
+    background-color: var(--main-color-business);
+    color: #fff;
+
+    &:hover {
+      background-color: var(--main-color-business-hover);
+    }
+  }
 }
 
 .gl__secondary-btn {

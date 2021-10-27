@@ -1,0 +1,77 @@
+{{!-- ###### --}}
+{{!-- Стандартные данные для socials: --}}
+{{!-- "socials": [
+    {
+      "name": "Whatsapp",
+      "classMod": "whatsapp",
+      "iconName": "soc-whatsapp",
+      "iconWidth": "22",
+      "iconHeight": "22"
+    },
+    {
+      "name": "Telegram",
+      "classMod": "telegram",
+      "iconName": "soc-telegram",
+      "iconWidth": "23",
+      "iconHeight": "20"
+    },
+    {
+      "name": "VK",
+      "classMod": "vk",
+      "iconName": "soc-vk",
+      "iconWidth": "26",
+      "iconHeight": "15"
+    },
+    {
+      "name": "Facebook",
+      "classMod": "facebook",
+      "iconName": "soc-facebook",
+      "iconWidth": "10",
+      "iconHeight": "22"
+    }
+  ] --}}
+
+<section class="b-support">
+  <div class="gl__page-content">
+    <div class="b-support__content">
+      <div class="b-support__block b-support__form-block">
+        <h3 class="b-support__form-title">Хотите узнать больше?</h3>
+        <span class="b-support__form-label">Наши специалисты помогут подобрать решения, отталкиваясь от ваших бизнес-потребностей</span>
+        <form data-need-validation data-parsley-validate data-parsley-focus="none" class="application-consultation__form mod-business">
+          {{> common/controls/input-main
+            required=true
+            type="text"
+            placeholder="Ваше имя"
+            name="application-consultation-name"
+          }}
+          {{> common/controls/input-main
+            required=true
+            type="tel"
+            phoneMask=true
+            placeholder="+7 (___) ___-__-__"
+            name="application-consultation-tel"
+          }}
+          <button type="submit" class="gl__main-btn mod-business">Получить консльтацию</button>
+        </form>
+      </div>
+      <div class="b-support__block b-support__contacts-block">
+        <h3 class="b-support__contacts-title">Служба поддержки</h3>
+        <span class="b-support__contacts-label">Для оперативной связи со службой поддержки обращайтесь одним из удобных способов</span>
+
+        <a class="b-support__contacts-tel" title="Позвонить" href="tel:+78432222222">(843) 238-00-00</a>
+
+        <ul class="b-socials">
+          {{#each socials }}
+          <li class="b-socials__item">
+            <a class="b-socials__link {{this.classMod}}" title="Написать в {{this.name}}" href="#">
+              <svg width="{{this.iconWidth}}" height="{{this.iconHeight}}" aria-hidden="true" class="b-socials__link-icon">
+                <use xlink:href="#{{this.iconName}}"></use>
+              </svg>
+            </a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

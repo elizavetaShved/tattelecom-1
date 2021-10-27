@@ -7,22 +7,45 @@
 .intro-cards-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
   gap: 3rem;
+
+  @include for-hg-down {
+    gap: 2rem;
+  }
+  @include for-sm-down {
+    grid-template-columns: 1fr;
+  }
 
   &__item {
 
     &:nth-child(1) {
       grid-column: span 6;
+
+      @include for-sm-down {
+        grid-column: unset;
+      }
     }
     &:nth-child(2) {
       grid-column: span 6;
+      
+      @include for-sm-down {
+        grid-column: unset;
+      }
     }
     &:nth-child(3) {
       grid-column: span 5;
+
+      @include for-sm-down {
+        grid-column: unset;
+      }
     }
     &:nth-child(4) {
       grid-column: span 7;
+
+      @include for-sm-down {
+        grid-column: unset;
+      }
     }
   }
 }

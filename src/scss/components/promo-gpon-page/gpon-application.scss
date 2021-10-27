@@ -72,6 +72,15 @@
     width: 100%;
   }
 
+  &.mod-business {
+    @include for-hg-down {
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+      margin-top: 2.8rem;
+      width: 100%;
+    }
+  }
+
   .gl-input__input {
     &.parsley-error {
       border-color: #000;

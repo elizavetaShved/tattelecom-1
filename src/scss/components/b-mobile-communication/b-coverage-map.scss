@@ -1,4 +1,4 @@
-.b-mobile-communication {
+.b-coverage-map {
 
   margin-bottom: 10rem;
 
@@ -10,5 +10,14 @@
   }
 
   &__content {
+
+  }
+
+  &__map-image {
+    width: 100%;
+    height: auto;
+    min-height: 33.5rem;
+
+    object-fit: cover;
   }
 }

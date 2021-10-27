@@ -1,0 +1,97 @@
+// Слайдер
+.b-useful-articles {
+  overflow: hidden;
+
+  margin-bottom: 10rem;
+
+  @include for-lg-down {
+    margin-bottom: 6rem;
+  }
+  @include for-sm-down {
+    margin-bottom: 4rem;
+  }
+
+  &__content {
+  }
+
+  &__slider {
+    overflow: visible;
+  }
+}
+
+// Слайд
+.b-useful-article {
+  overflow: hidden;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  padding: 4rem 2rem;
+  height: 40rem;
+
+  border-radius: 2rem;
+  color: white;
+
+  @include for-sm-down {
+    padding: 2rem 1.6rem;
+    height: 30rem;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(180deg, rgba(37, 34, 40, 0) 36%, rgba(17, 8, 28, 0.84) 72.4%, #0D031A 100%);
+    mix-blend-mode: darken;
+    opacity: 0.72;
+  }
+
+  &__title {
+    z-index: 3;
+
+    margin-bottom: 1.2rem;
+
+    font-size: var(--fs-h3);
+    line-height: 1.6;
+    letter-spacing: 0.015em;
+    font-weight: 400;
+
+    @include for-sm-down {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  &__description {
+    z-index: 3;
+
+    font-size: var(--fs-t2);
+    line-height: 1.6;
+    letter-spacing: 0.015em;
+    font-weight: 300;
+
+    @include for-sm-down {
+      line-height: 1.2;
+    }
+  }
+}

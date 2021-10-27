@@ -46,6 +46,54 @@
   }
 }
 
+// Кнопки для слайдера в разделе Бизнес
+// Красный фон, белая иконка
+.gl-slider__b-slider-btn {
+  z-index: 2;
+
+  width: 12rem;
+  height: 12rem;
+
+  background-color: var(--main-color-2);
+  box-shadow: -2px 1px 14px rgba(232, 71, 53, 0.81), -6px 0px 33px rgba(78, 0, 0, 0.08);
+
+  transition: opacity 0.3s, visibility 0.3s ease;
+
+  &.swiper-button-disabled {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &.mod-prev {
+    left: -4rem;
+
+    border-radius: 0 50% 50% 0;
+
+    svg {
+      right: -2rem;
+    }
+  }
+
+  &.mod-next {
+    right: -4rem;
+
+    border-radius: 50% 0 0 50%;
+
+    svg {
+      left: -2rem;
+    }
+  }
+
+  svg {
+    position: relative;
+
+    height: 4rem;
+    width: 4rem;
+
+    fill: white;
+  }
+}
+
 .gl-slider__slider-btn-icon {
   height: 2.4rem;
 }

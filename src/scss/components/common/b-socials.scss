@@ -1,0 +1,41 @@
+// Социальные сети, блок содержится почти на всех страницах "Бизнеса", в составе блока b-support
+
+.b-socials {
+  display: flex;
+
+  margin: 0 -1rem;
+
+  &__item {
+    margin: 0 1rem;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    width: 40px;
+
+    border-radius: 50%;
+
+    &.whatsapp {
+      background-color: #29B100;
+    }
+
+    &.telegram {
+      background-color: #40B3E0;
+    }
+
+    &.vk {
+      background-color: #537599;
+    }
+
+    &.facebook {
+      background-color: #4E71A8;
+    }
+  }
+
+  &__link-icon {
+  }
+}
