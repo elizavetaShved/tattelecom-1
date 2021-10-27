@@ -10,7 +10,7 @@
           {{#each service-cards }}
             <li class="intro-cards-container__item service-card-with-photo">
               {{#if this.hasImage }}
-              <img class="service-card-with-photo__image" src="../img/b-mobile-communication/{{ this.hasImage.fileName }}" alt="Фото услуги">
+              <img class="service-card-with-photo__image" src="img/b-mobile-communication/{{ this.hasImage.fileName }}" alt="Фото услуги">
               <div class="service-card-with-photo__image-overlay {{ this.hasImage.gradientClass }}"></div>
               {{else}}
               <svg aria-hidden="true" class="service-card-with-photo__icon">
@@ -55,7 +55,7 @@
         <h2 class="gl__title">Карта покрытия 4G</h2>
 
         <div class="b-coverage-map__content">
-          <img class="b-coverage-map__map-image" src="../img/common/coverage-map.jpg" alt="Заглушка карты покрытия">
+          <img class="b-coverage-map__map-image" src="img/common/coverage-map.jpg" alt="Заглушка карты покрытия">
         </div>
       </div>
     </section>
@@ -97,7 +97,7 @@
               <ul class="gl-slider__wrapper swiper-wrapper" id="js-align-heights">
                 {{#each usefulArticles }}
                 <li class="swiper-slide b-useful-article">
-                  <img class="b-useful-article__image" src="../img/b-mobile-communication/useful-articles/{{this.image}}" alt="{{this.title}}">
+                  <img class="b-useful-article__image" src="img/b-mobile-communication/useful-articles/{{this.image}}" alt="{{this.title}}">
                   <div class="b-useful-article__overlay"></div>
                   <h3 class="b-useful-article__title">{{this.title}}</h3>
                   <p class="b-useful-article__description">{{this.description}}</p>
