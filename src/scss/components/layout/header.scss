@@ -492,8 +492,9 @@
   margin: -1.2rem;
 }
 
-.header__b-menu-item-control {
+.header__b-menu-item-control, .header__b-popup-caption-list {
   padding: 1.2rem;
+  margin: 0 -1.2rem;
   display: flex;
   align-items: center;
   font-size: 1.8rem;
@@ -504,7 +505,9 @@
   background-color: transparent;
   border-radius: 10px;
   transition: background-color 250ms;
+}
 
+.header__b-menu-item-control {
   &.mod-btn {
     white-space: nowrap;
     position: relative;
@@ -527,6 +530,10 @@
       fill: #fff;
     }
   }
+}
+
+.header__b-popup-caption-list {
+  margin-bottom: 3rem;
 }
 
 .header__b-menu-item-control-icon {
@@ -618,4 +625,37 @@
   font-size: 1.6rem;
   line-height: 2.4rem;
   padding: 1rem 1.4rem;
+}
+
+.header__b-popup-content {
+  padding: 3.2rem 0;
+  min-height: 32.6rem;
+  display: flex;
+
+  &:not(.mod-show) {
+    display: none;
+  }
+}
+
+.header__b-popup-list {
+  margin: -1rem;
+}
+
+.header__b-popup-item-link {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  padding: 1rem;
+  color: #fff;
+  display: block;
+
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+
+.header__b-popup-content-item {
+  & + & {
+    margin-left: 7.6rem;
+  }
 }

@@ -30,16 +30,16 @@ export class Header {
     })
 
     // удод с поп-ап
-    document.addEventListener('mousemove', e => {
-      if (!checkExistParent(e.target, popupWrapperElem) && !checkExistParent(e.target, bottomBlockElem)) {
-        this.closePopUp();
-        if (this.isBusinessMainPageHeader) {
-          if (window.pageYOffset > 0) {
-            this.closeBusinessPopUp();
-          }
-        }
-      }
-    })
+    // document.addEventListener('mousemove', e => {
+    //   if (!checkExistParent(e.target, popupWrapperElem) && !checkExistParent(e.target, bottomBlockElem)) {
+    //     this.closePopUp();
+    //     if (this.isBusinessMainPageHeader) {
+    //       if (window.pageYOffset > 0) {
+    //         this.closeBusinessPopUp();
+    //       }
+    //     }
+    //   }
+    // })
 
     this.isBusinessMainPageHeader = !!document.querySelector('.js-business-main');
 
