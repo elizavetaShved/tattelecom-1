@@ -1,0 +1,51 @@
+{{#extend "layout"}}
+  {{#content "main"}}
+
+    <section class="b-mobile-communication">
+      <div class="gl__page-content">
+        <h2 class="gl__title">Мобильная связь</h2>
+
+        <div class="b-mobile-communication__content">
+          <ul class="intro-cards-container">
+          {{#each service-cards }}
+            <li class="intro-cards-container__item service-card-with-photo">
+              {{#if this.hasImage }}
+                <img class="service-card-with-photo__image" src="../img/b-mobile-communication/{{ this.hasImage.fileName }}" alt="Фото услуги">
+                <div class="service-card-with-photo__image-overlay {{ this.hasImage.gradientClass }}"></div>
+              {{/if}}
+              <svg aria-hidden="true" class="service-card-with-photo__icon">
+                <use xlink:href="#service-card-with-photo-background"></use>
+              </svg>
+              <div class="service-card-with-photo__content">
+                <div class="service-card-with-photo__description">
+                  <h3 class="service-card-with-photo__title">{{ this.title }}</h3>
+                  <p class="service-card-with-photo__subtitle">{{{ this.subtitle }}}</p>
+                </div>
+                <div class="service-card-with-photo__footer">
+                  <div class="service-card-with-photo__cost-block">
+                    <span class="service-card-with-photo__cost-label">от</span>
+                    <span class="service-card-with-photo__cost-value">{{ this.cost }}</span>
+                    <span class="service-card-with-photo__cost-label">₽/мес</span>
+                  </div>
+                  <div class="service-card-with-photo__btns">
+                  {{#if this.detailBtn }}
+                    <a href="#" class="service-card-with-photo__btn service-card-with-photo__details">{{ this.detailBtn }}</a>
+                  {{/if}}
+                  {{#if this.tariffsBtn }}
+                    <a href="#" class="service-card-with-photo__btn service-card-with-photo__tariffs">{{ this.tariffsBtn }}</a>
+                  {{/if}}
+                  {{#if this.connectBtn }}
+                    <a href="" class="service-card-with-photo__btn gl__main-btn mod-b-transparent service-card-with-photo__connect-btn">{{ this.connectBtn }}</a>
+                  {{/if}}
+                  </div>
+                </div>
+              </div>
+            </li>
+          {{/each}}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  {{/content}}
+{{/extend}}

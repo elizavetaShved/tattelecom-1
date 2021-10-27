@@ -23,7 +23,8 @@ module.exports = {
     ['payment-services-page']: './src/js/pages/payment-services-page.js',
     ['search-site-page']: './src/js/pages/search-site-page.js',
     ['questions']: './src/js/pages/questions.js',
-    ['technical-works-page']: './src/js/pages/technical-works-page.js'
+    ['technical-works-page']: './src/js/pages/technical-works-page.js',
+    ['b-mobile-communication']: './src/js/pages/b-mobile-communication.js'
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

@@ -25,6 +25,17 @@
     }
   }
 
+  &.mod-b-transparent {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+
+    &:hover {
+      background: #fff;
+      color: var(--main-color-hover);
+    }
+  }
+
   &.mod-orange-transparent {
     background-color: transparent;
     color: var(--main-color);
