@@ -1,0 +1,30 @@
+<section class="b-request-for-connection">
+  <div class="gl__page-content">
+    <div class="b-request-for-connection__content">
+      <h3 class="b-request-for-connection__form-title">Оставить заявку на подключение</h3>
+        <span class="b-request-for-connection__form-label">Наши специалисты помогут подобрать решения, отталкиваясь от ваших бизнес-потребностей</span>
+        <form data-need-validation data-parsley-validate data-parsley-focus="none" class="b-request-for-connection__form mod-4-in-row">
+          {{> common/controls/input-main
+            required=true
+            type="text"
+            placeholder="Ваше имя"
+            name="application-consultation-name"
+          }}
+          {{> common/controls/input-main
+            required=true
+            type="tel"
+            phoneMask=true
+            placeholder="+7 (___) ___-__-__"
+            name="application-consultation-tel"
+          }}
+          {{> common/controls/input-main
+            required=true
+            type="email"
+            placeholder="E-mail"
+            name="application-consultation-email"
+          }}
+          <button type="submit" class="gl__main-btn">Продолжить</button>
+        </form>
+    </div>
+  </div>
+</section>

@@ -1,6 +1,6 @@
 .b-tariffs-list {
 
-  overflow: visible;
+  overflow: hidden;
 
   margin-bottom: 10rem;
 
@@ -20,6 +20,9 @@
 }
 
 .b-tariffs-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   padding: 2rem;
   
@@ -61,7 +64,15 @@
   }
 
   &__service-name {
+    display: block;
+
     padding-left: 3.6rem;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__cost-block {
@@ -87,5 +98,41 @@
     font-size: 1.8rem;
     line-height: 1.2;
     font-weight: 300;
+  }
+
+  &__btn {
+    width: 100%;
+  }
+
+  &__secondary-btn {
+    position: relative;
+
+    margin-top: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.2;
+
+    transition: opacity 0.3s ease;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+    
+    &::after {
+      content: '';
+
+      position: absolute;
+      bottom: -0.2rem;
+      left: 0;
+
+      width: 100%;
+      height: 1px;
+
+      background-color: var(--main-text-color);
+    }
   }
 }

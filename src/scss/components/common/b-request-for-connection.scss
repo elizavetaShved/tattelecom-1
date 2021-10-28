@@ -1,0 +1,54 @@
+.b-request-for-connection {
+
+  margin-bottom: 10rem;
+
+  @include for-lg-down {
+    margin-bottom: 6rem;
+  }
+  @include for-sm-down {
+    margin-bottom: 4rem;
+  }
+
+  &__content {
+    padding: 5rem 11rem 6rem 9rem;
+
+    background: linear-gradient(270deg, #44A3DB 36%, #007BC3 100%);
+    border-radius: 2rem;
+    color: white;
+
+    @include for-bg-down {
+      padding: 3.2rem 1.2rem 4.8rem;
+    }
+  }
+
+  &__form-title {
+    margin-bottom: 1.6rem;
+
+    font-size: var(--fs-h1);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.015em;
+  }
+
+  &__form-label {
+    font-size: var(--fs-t2);
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr auto;
+    grid-gap: 1rem;
+
+    max-width: unset;
+    margin-top: 3.6rem;
+
+    @include for-md-down {
+      grid-template-columns: 1fr;
+
+      margin-top: 2.4rem;
+    }
+  }
+}

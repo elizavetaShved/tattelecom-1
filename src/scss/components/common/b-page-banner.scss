@@ -1,3 +1,7 @@
+// ######
+// Внизу стили для мобильной версии
+// ######
+
 .b-page-banner {
 
   margin-bottom: 10rem;
@@ -16,6 +20,15 @@
 
     padding: 6rem 50% 6rem 9.2rem;
     border-radius: 2rem;
+    min-height: 21.5rem;
+
+    @include for-bg-down {
+      padding: 4rem;
+    }
+
+    @include for-sm-down {
+      padding: 2rem;
+    }
   }
 
   &__image {
@@ -40,10 +53,14 @@
   &__title {
     margin-bottom: 2.8rem;
 
-    font-size: 4rem;
+    font-size: var(--fs-h1);
     font-weight: 600;
     line-height: 1.2;
     color: var(--main-color-business);
+
+    @include for-sm-down {
+      margin-bottom: 1.2rem;
+    }
   }
 
   &__accent-title {
@@ -52,6 +69,15 @@
     font-size: 5.5rem;
     font-weight: 600;
     line-height: 1.2;
+
+    @include for-sm-down {
+      font-size: var(--fs-h1);
+    }
+  }
+
+  // Появляется на мобилке
+  &__mobile-title {
+    display: none;
   }
 
   &__cost-block {
@@ -61,6 +87,10 @@
     margin-bottom: 1.8rem;
 
     color: var(--main-color-business);
+
+    @include for-sm-down {
+      margin-bottom: 0.8rem;
+    }
   }
 
   &__cost-label {
@@ -69,6 +99,10 @@
     font-size: var(--fs-h2);
     line-height: 1.2;
     font-weight: 300;
+
+    @include for-sm-down {
+      font-size: var(--fs-t1);
+    }
   }
 
   &__cost {
@@ -79,6 +113,10 @@
     font-size: 5rem;
     line-height: 1;
     font-weight: 700;
+
+    @include for-sm-down {
+      font-size: 3.2rem;
+    }
   }
 
   &__label {
@@ -86,5 +124,30 @@
     line-height: 1.2;
     font-weight: 300;
     color: var(--main-color-business);
+
+    @include for-sm-down {
+      font-size: var(--fs-t1);
+    }
+  }
+}
+
+.b-page-banner.mobile-version-available {
+  @include for-xs-down {
+    // Показываем мобильный заголовок
+    .b-page-banner__mobile-title {
+      display: block;
+    }
+
+    // Изображение меняется через HTML (тег picture с медиа-запросом)
+
+    // Скрываем десктопные заголовки
+    // Скрываем цену
+    // Скрываем подпись под ценой
+    .b-page-banner__accent-title,
+    .b-page-banner__desktop-title,
+    .b-page-banner__cost-block,
+    .b-page-banner__label {
+      display: none;
+    }
   }
 }

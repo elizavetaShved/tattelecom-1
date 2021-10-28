@@ -26,6 +26,11 @@
   color: #fff;
 }
 
+%select-business-background {
+  background-color: var(--main-color-business);
+  color: #fff;
+}
+
 %scroll {
   &::-webkit-scrollbar {
     background-color: white;
