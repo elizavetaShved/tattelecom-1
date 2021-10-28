@@ -1,15 +1,37 @@
-<section class="b-page-banner">
+{{!-- Секция с баннеров в начале страницы с услугой --}}
+{{!-- Шаблон данных: --}}
+{{!-- "banner": {
+  "accentTitle": "Корпоративная",
+  "title": "мобильная связь",
+  "cost": 150,
+  "label": "Переходи на Летай за 0 руб",
+  "image": "b-rates-mobile-list.jpg",
+  "mobile": {
+    "title": "Тарифы <br /> мобильной <br /> связи",
+    "image": "b-rates-mobile-list--mobile.jpg"
+  }
+} --}}
+
+<section class="b-page-banner {{#if banner.mobile}}mobile-version-available{{/if}}">
   <div class="gl__page-content">
     <h2 class="gl__title">{{title}}</h2>
 
     <div class="b-page-banner__content">
-      <img class="b-page-banner__image" src="img/common/b-page-banners/{{banner.image}}" alt="{{title}}">
+      <picture>
+        {{#if banner.mobile.image}}
+        <source srcset="img/common/b-page-banners/{{banner.mobile.image}}" media="(max-width: 559px)">
+        {{/if}}
+        <img class="b-page-banner__image" src="img/common/b-page-banners/{{banner.image}}" alt="{{title}}">
+      </picture>
       <div class="b-page-banner__text">
         <h3 class="b-page-banner__title">
+          {{#if banner.mobile.title}}
+          <span class="b-page-banner__mobile-title">{{{banner.mobile.title}}}</span>
+          {{/if}}
           {{#if banner.accentTitle }}
           <span class="b-page-banner__accent-title">{{{banner.accentTitle}}}</span>
           {{/if}}
-          {{{banner.title}}}
+          <span class="b-page-banner__desktop-title">{{{banner.title}}}</span>
         </h3>
         <div class="b-page-banner__cost-block">
           <span class="b-page-banner__cost-label">от</span>

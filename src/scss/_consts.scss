@@ -70,10 +70,9 @@
   }
   @include for-sm-down {
     --fs-h1: 2.6rem;
-    --fs-h2: 2.2rem;
   }
   @include for-xs-down {
-    --fs-h1: 2.2rem;
+    --fs-h1: 22px;
   }
 
   // numbered-list
