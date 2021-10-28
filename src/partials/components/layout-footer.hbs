@@ -1,4 +1,4 @@
-<footer class="footer" id="footer-host">
+<footer class="footer {{#if isBusiness}}mod-business{{/if}}" id="footer-host">
   <div class="gl__page-content">
     <div class="footer__top-block">
       <div class="footer__top-grid-wrapper">
@@ -118,7 +118,7 @@
         </div>
 
         <div class="footer__top-grid-item mod-second-half-row">
-          <button type="button" class="gl__main-btn mod-transparent footer__btn">Перейти в Летай</button>
+          <button type="button" class="gl__main-btn mod-transparent footer__btn {{#if isBusiness }}mod-business-transparent{{/if}}">Перейти в Летай</button>
         </div>
       </div>
     </div>

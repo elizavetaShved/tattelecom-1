@@ -207,8 +207,20 @@
     }
   }
 
-  .mod-business {
+  &.mod-business {
     height: 3rem;
+
+    @include for-lg-down {
+      height: 2.6rem;
+    }
+
+    @include for-sm-down {
+      height: 2.2rem;
+    }
+
+    @include for-xs-down {
+      height: 1.8rem;
+    }
   }
 }
 
@@ -625,6 +637,11 @@
   font-size: 1.6rem;
   line-height: 2.4rem;
   padding: 1rem 1.4rem;
+
+  &:hover {
+    color: var(--main-color-business-hover);
+    text-decoration: underline;
+  }
 }
 
 .header__b-popup-content {

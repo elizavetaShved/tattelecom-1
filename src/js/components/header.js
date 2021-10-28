@@ -5,10 +5,11 @@ export class Header {
   popupElem;
   popupContentElements;
   isBusinessMainPageHeader;
+  menuLinkElements;
 
-  businessMainPageMenuHost
-  businessMainPageMenuContent
-  businessMainPageMenu
+  businessMainPageMenuHost;
+  businessMainPageMenuContent;
+  businessMainPageMenu;
 
   constructor() {
     this.openBusinessPopUp = this.openBusinessPopUp.bind(this);
@@ -19,27 +20,27 @@ export class Header {
     this.popupElem = this.hostElem.querySelector('.js-header-popup-container');
     const popupWrapperElem = this.hostElem.querySelector('.js-header-popup-wrapper');
     const bottomBlockElem = this.hostElem.querySelector('.header__bottom-block-content');
-    const menuLinkElements = this.hostElem.querySelectorAll('.header__bottom-menu-link');
+    this.menuLinkElements = this.hostElem.querySelectorAll('.header__bottom-menu-link');
     this.popupContentElements = Array.from(this.hostElem.querySelectorAll('.js-header-popup'));
 
     // наведение на ссылку в меню нижнего блока
-    menuLinkElements.forEach(link => {
+    this.menuLinkElements.forEach(link => {
       link.onmouseover = () => {
         this.openPopUp(link);
       }
     })
 
-    // удод с поп-ап
-    // document.addEventListener('mousemove', e => {
-    //   if (!checkExistParent(e.target, popupWrapperElem) && !checkExistParent(e.target, bottomBlockElem)) {
-    //     this.closePopUp();
-    //     if (this.isBusinessMainPageHeader) {
-    //       if (window.pageYOffset > 0) {
-    //         this.closeBusinessPopUp();
-    //       }
-    //     }
-    //   }
-    // })
+    // уход с поп-ап
+    document.addEventListener('mousemove', e => {
+      if (!checkExistParent(e.target, popupWrapperElem) && !checkExistParent(e.target, bottomBlockElem)) {
+        this.closePopUp();
+        if (this.isBusinessMainPageHeader) {
+          if (window.pageYOffset > 0) {
+            this.closeBusinessPopUp();
+          }
+        }
+      }
+    })
 
     this.isBusinessMainPageHeader = !!document.querySelector('.js-business-main');
 
@@ -70,8 +71,17 @@ export class Header {
     this.popupContentElements.forEach(popupContentElem => {
       if ((popupContentElem.getAttribute('data-hover-value') === link.getAttribute('data-hover-value'))
         && !popupContentElem.className.includes('mod-show')) {
-        this.popupContentElements.map(elem => elem.classList.remove('mod-show'));
+        this.popupContentElements.map(elem => {
+          elem.classList.remove('mod-show');
+          elem.style.marginLeft = 0;
+        });
         popupContentElem.classList.add('mod-show');
+
+        if (popupContentElem.hasAttribute('data-alignment')) {
+          const distanceXLink = this.menuLinkElements[popupContentElem.getAttribute('data-alignment')].getBoundingClientRect().x;
+          const distanceXContent = popupContentElem.getBoundingClientRect().x;
+          popupContentElem.style.marginLeft = `${ distanceXLink - distanceXContent }px`;
+        }
       }
     })
   }

@@ -6,6 +6,18 @@
   @include for-sm-down {
     padding: 4.4rem 0;
   }
+
+  &.mod-business {
+    a {
+      &:hover {
+        color: var(--main-color-business);
+
+        svg {
+          fill: var(--main-color-business);
+        }
+      }
+    }
+  }
 }
 
 .footer__top-block {

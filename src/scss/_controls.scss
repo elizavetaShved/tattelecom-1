@@ -87,6 +87,15 @@
       background-color: var(--main-color-business-hover);
     }
   }
+
+  &.mod-business-transparent {
+    background-color: transparent;
+    color: #fff;
+
+    &:hover {
+      background-color: var(--main-color-business);
+    }
+  }
 }
 
 .gl__secondary-btn {
