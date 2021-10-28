@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/styles.min.css"/>
   <link type="image/png" href="img/common/tattelecom-small-logo.png" rel="icon">
   <title>
-    Оплата услуг
+    Тарифы Мобильной связи
   </title>
 </head>
 <body class="no-touch">
@@ -19,8 +19,8 @@
 
 <div class="gl__layout-wrapper">
   <div class="gl__layout-header">
-    <header class="header  " id="header-host">
-      <div class="header__content" >
+    <header class="header mod-business " id="header-host">
+      <div class="header__content" style="background-image: url('img/header/buliness-background.jpg')">
     
         <div class="header__main-content">
           <div class="header__top-block">
@@ -78,192 +78,336 @@
             </div>
           </div>
     
-            <div class="header__bottom-block">
+            <div class="header__b-bottom-block">
               <div class="gl__page-content header__bottom-block-content">
                 <div class="header__logo-wrapper">
                   <a href="/" class="header__logo-link">
-                    <img src="img/header/logo-fly.svg" alt="" class="header__logo mod-fly ">
+                    <img src="img/header/logo-business.svg" alt="" class="header__logo mod-business">
                   </a>
                 </div>
             
-                <div class="header__bottom-block-right gl__bg-hide">
+                <div class="header__bottom-block-right mod-show mod-business gl__bg-hide js-b-menu-header">
                   <ul class="header__bottom-menu-list">
                     <li class="header__bottom-menu-item">
-                      <a href="/mobile-communication.html" class="header__bottom-menu-link" data-hover-value="mobile">Мобильная связь</a>
+                      <a href="" class="header__bottom-menu-link mod-business" data-hover-value="business-solutions">
+                        Комплексные решения для бизнеса
+                      </a>
                     </li>
                     <li class="header__bottom-menu-item">
-                      <a href="/" class="header__bottom-menu-link" data-hover-value="internet">Интернет</a>
+                      <a href="" class="header__bottom-menu-link mod-business" data-hover-value="connection">
+                        Связь
+                      </a>
                     </li>
                     <li class="header__bottom-menu-item">
-                      <a href="/tv-online.html" class="header__bottom-menu-link" data-hover-value="tv">Телевидение</a>
+                      <a href="" class="header__bottom-menu-link mod-business" data-hover-value="digital-services">
+                        Цифровые сервисы
+                      </a>
                     </li>
                     <li class="header__bottom-menu-item">
-                      <a href="/promo-intercom" class="header__bottom-menu-link" data-hover-value="doorphone">Домофон</a>
-                    </li>
-                    <li class="header__bottom-menu-item">
-                      <a href="/4g-services.html" class="header__bottom-menu-link" data-hover-value="catalog">Каталог устройств</a>
+                      <a href="" class="header__bottom-menu-link mod-business" data-hover-value="promotion">
+                        Продвижение
+                      </a>
                     </li>
                   </ul>
+                </div>
             
+                <div class="header__bottom-block-right">
                   <div class="header__btns-container">
+                    <button type="button" class="header__bottom-btn header__btn-burger gl__bg-show mod-business"></button>
+            
                     <button type="button" class="header__bottom-btn header__btn-search">
-                      <svg width="30" height="30" aria-hidden="true" class="header__btn-search-icon">
+                      <svg width="30" height="30" aria-hidden="true" class="header__btn-search-icon mod-business">
                         <use xlink:href="#search"></use>
                       </svg>
                     </button>
-                    <button type="button" class="header__bottom-btn header__btn-subscriber gl__main-btn js-open-callback-modal">
-                      Стать абонентом
-                    </button>
-                  </div>
-                </div>
-            
-                <div class="header__bottom-block-right gl__bg-show">
-                  <div class="header__btns-container">
-                    <button type="button" class="header__bottom-btn header__btn-lk">
-                      <svg width="30" height="30" aria-hidden="true" class="header__btn-lk-icon">
-                        <use xlink:href="#lk"></use>
-                      </svg>
-                    </button>
-            
-                    <button type="button" class="header__bottom-btn header__btn-burger"></button>
                   </div>
                 </div>
               </div>
             </div>
         </div>
     
-          <div class="header__popup-container js-header-popup-container">
-            <div class="header__popup-wrapper js-header-popup-wrapper">
+          <div class="header__popup-container mod-business js-header-popup-container">
+            <div class="header__popup-wrapper mod-business js-header-popup-wrapper"
+                 style="background-image: url('img/header/buliness-background.jpg')">
               <div class="gl__page-content">
-                <div class="header__popup-content js-header-popup" data-hover-value="mobile">
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Тарифы</a>
-                    <ul class="header__popup-item-list">
-                      <li><a href="" class="header__popup-item-link">Безлимитный интернет</a></li>
-                      <li><a href="" class="header__popup-item-link">Много звонков</a></li>
-                      <li><a href="" class="header__popup-item-link">Все и сразу</a></li>
-                      <li><a href="" class="header__popup-item-link">Детский</a></li>
-                      <li><a href="" class="header__popup-item-link">Для модемов</a></li>
-                      <li><a href="" class="header__popup-item-link">Для умных устройств</a></li>
+                <div class="header__b-popup-content js-header-popup js-b-popup-margin" data-alignment="0"  data-hover-value="business-solutions">
+                  <ul>
+                    <li>
+                      <a href="" class="header__b-menu-item-control">
+                        <img src="img/header/business-menu/squares.svg" alt="" class="header__b-menu-item-control-icon">
+                        Комплекс услуг связи (Единый бизнес)
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="header__b-menu-item-control">
+                        <img src="img/header/business-menu/tree.svg" alt="" class="header__b-menu-item-control-icon">
+                        Виртуальная АТС
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="header__b-menu-item-control">
+                        <img src="img/header/business-menu/files.svg" alt="" class="header__b-menu-item-control-icon">
+                        Таттелеком Коннект (ЭДокс)
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+          
+                <div class="header__b-popup-content js-header-popup js-b-popup-margin" data-alignment="0"  data-hover-value="connection">
+                  <div class="header__b-popup-content-item">
+                    <div class="header__b-popup-caption-list">
+                      <img src="img/header/business-menu/internet-things.svg" alt="" class="header__b-menu-item-control-icon">
+                      Интернет вещей
+                    </div>
+          
+                    <ul class="header__b-popup-list">
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          LoRaWAN
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          М2М решения для бизнеса
+                        </a>
+                      </li>
                     </ul>
                   </div>
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Стать абонентом Летай</a>
-                    <ul class="header__popup-item-list">
-                      <li><a href="" class="header__popup-item-link">Выбрать красивый номер</a></li>
-                      <li><a href="" class="header__popup-item-link">Перейти со своим номером</a></li>
-                      <li><a href="" class="header__popup-item-link">Заказать доставку сим-карты</a></li>
+          
+                  <div class="header__b-popup-content-item">
+                    <div class="header__b-popup-caption-list">
+                      <img src="img/header/business-menu/data-processing.svg" alt="" class="header__b-menu-item-control-icon">
+                      Обработка и хранение данных
+                    </div>
+          
+                    <ul class="header__b-popup-list">
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Colocation
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Виртуальный сервер
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Web–хостинг
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Регистрация доменов
+                        </a>
+                      </li>
                     </ul>
                   </div>
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Акции</a>
-                    <ul class="header__popup-item-list">
-                      <li><a href="" class="header__popup-item-link">Вместе выгодно 2.0</a></li>
-                      <li><a href="" class="header__popup-item-link">Вместе выгодно</a></li>
+          
+                  <div class="header__b-popup-content-item">
+                    <div class="header__b-popup-caption-list">
+                      <img src="img/header/business-menu/telephony.svg" alt="" class="header__b-menu-item-control-icon">
+                      Телефония
+                    </div>
+          
+                    <ul class="header__b-popup-list">
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Междугородная и международная связь
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Виртуальная АТС
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Цифровая Телефония
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Сервисы и услуги
+                        </a>
+                      </li>
                     </ul>
-                  </div>
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Роуминг</a>
-                    <ul class="header__popup-item-list">
-                      <li><a href="" class="header__popup-item-link">В поездках по России</a></li>
-                      <li><a href="" class="header__popup-item-link">В поездках за границей</a></li>
-                    </ul>
-                  </div>
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Оплата услуг</a>
-                  </div>
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Полезные команды</a>
                   </div>
                 </div>
           
-                <div class="header__popup-content js-header-popup" data-hover-value="internet">
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Тарифы</a>
-                    <ul class="header__popup-item-list">
-                      <li><a href="" class="header__popup-item-link">Домашний интернет + ТВ + мобильная связь</a></li>
-                      <li><a href="" class="header__popup-item-link">Домашний интернет</a></li>
-                      <li><a href="" class="header__popup-item-link">Домашний интернет + ТВ</a></li>
-                      <li><a href="" class="header__popup-item-link">Интернет + ТВ для частного дома</a></li>
+                <div class="header__b-popup-content js-header-popup js-b-popup-margin"  data-hover-value="digital-services">
+                  <div class="header__b-popup-content-item">
+                    <div class="header__b-popup-caption-list">
+                      <img src="img/header/business-menu/tel.svg" alt="" class="header__b-menu-item-control-icon">
+                      Мобильная связь
+                    </div>
+          
+                    <ul class="header__b-popup-list">
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Тарифы Мобильной связи
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Тарифы Мобильного интернета
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Роуминг
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          «Красивый» номер
+                        </a>
+                      </li>
                     </ul>
                   </div>
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Акции</a>
-                    <ul class="header__popup-item-list">
-                      <li><a href="" class="header__popup-item-link">Вместе выгодно 2.0</a></li>
-                      <li><a href="" class="header__popup-item-link">Вместе выгодно</a></li>
+          
+                  <div class="header__b-popup-content-item">
+                    <div class="header__b-popup-caption-list">
+                      <img src="img/header/business-menu/internet.svg" alt="" class="header__b-menu-item-control-icon">
+                      Интернет
+                    </div>
+          
+                    <ul class="header__b-popup-list">
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Интернет для офиса
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Интернет Wi-Fi
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Интернет по Радиоканалу
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Виртуальные сети IP VPN
+                        </a>
+                      </li>
                     </ul>
                   </div>
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Дополнительные услуги</a>
-                    <ul class="header__popup-item-list">
-                      <li><a href="" class="header__popup-item-link">Антивирус</a></li>
-                      <li><a href="" class="header__popup-item-link">Статичный IP</a></li>
+          
+                  <div class="header__b-popup-content-item">
+                    <div class="header__b-popup-caption-list">
+                      <img src="img/header/business-menu/telephony.svg" alt="" class="header__b-menu-item-control-icon">
+                      Телефония
+                    </div>
+          
+                    <ul class="header__b-popup-list">
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Междугородная и международная связь
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Виртуальная АТС
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Цифровая Телефония
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Сервисы и услуги
+                        </a>
+                      </li>
                     </ul>
                   </div>
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Оплата услуг</a>
+          
+                  <div class="header__b-popup-content-item">
+                    <div class="header__b-popup-caption-list">
+                      <img src="img/header/business-menu/control.svg" alt="" class="header__b-menu-item-control-icon">
+                      Контроль и видеонаблюдение
+                    </div>
+          
+                    <ul class="header__b-popup-list">
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Облачное видеонаблюдение
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          М2М Контроль
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Видеоаналитика
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Домофония
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+          
+                  <div class="header__b-popup-content-item">
+                    <div class="header__b-popup-caption-list">
+                      <img src="img/header/business-menu/telephony.svg" alt="" class="header__b-menu-item-control-icon">
+                      Телефония
+                    </div>
+          
+                    <ul class="header__b-popup-list">
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Междугородная и международная связь
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Виртуальная АТС
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Цифровая Телефония
+                        </a>
+                      </li>
+                      <li class="header__b-popup-item">
+                        <a href="" class="header__b-popup-item-link">
+                          Сервисы и услуги
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
           
-                <div class="header__popup-content js-header-popup" data-hover-value="tv">
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Тарифы</a>
-                    <ul class="header__popup-item-list">
-                      <li><a href="" class="header__popup-item-link">Базовый пакет каналов</a></li>
-                      <li><a href="" class="header__popup-item-link">Дополнительные пакеты каналов</a></li>
-                    </ul>
-                  </div>
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Акции</a>
-                    <ul class="header__popup-item-list">
-                      <li><a href="" class="header__popup-item-link">Вместе выгодно 2.0</a></li>
-                      <li><a href="" class="header__popup-item-link">Вместе выгодно</a></li>
-                    </ul>
-                  </div>
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Онлайн ТВ</a>
-                  </div>
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Оплата услуг</a>
-                  </div>
-                </div>
-          
-                <div class="header__popup-content js-header-popup" data-hover-value="doorphone">
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Тарифы</a>
-                  </div>
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Акции</a>
-                  </div>
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Онлайн ТВ</a>
-                  </div>
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Оплата услуг</a>
-                  </div>
-                </div>
-          
-                <div class="header__popup-content js-header-popup" data-hover-value="catalog">
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Смартфоны</a>
-                    <ul class="header__popup-item-list">
-                      <li><a href="" class="header__popup-item-link">Смартфоны Honor</a></li>
-                      <li><a href="" class="header__popup-item-link">Смартфоны Samsung</a></li>
-                      <li><a href="" class="header__popup-item-link">Смартфоны Oppo</a></li>
-                      <li><a href="" class="header__popup-item-link">Смартфоны Realme</a></li>
-                      <li><a href="" class="header__popup-item-link">Смартфон Xiaomi</a></li>
-                    </ul>
-                  </div>
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Смарт-часы и Фитнес-браслеты</a>
-                  </div>
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Наушники и колонки</a>
-                  </div>
-                  <div class="header__popup-item-wrapper">
-                    <a href="/" class="header__popup-item-caption">Аксессуары</a>
-                  </div>
+                <div class="header__b-popup-content js-header-popup js-b-popup-margin" data-alignment="3"  data-hover-value="promotion">
+                  <ul>
+                    <li>
+                      <a href="" class="header__b-menu-item-control">
+                        <img src="img/header/business-menu/sms.svg" alt="" class="header__b-menu-item-control-icon">
+                        SMS рассылка
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="header__b-menu-item-control">
+                        <img src="img/header/business-menu/call-center.svg" alt="" class="header__b-menu-item-control-icon">
+                        Услуги Call–центра
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="header__b-menu-item-control">
+                        <img src="img/header/business-menu/smart-wifi.svg" alt="" class="header__b-menu-item-control-icon">
+                        SMART Wi-Fi
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -274,405 +418,946 @@
 
   <main class="gl__layout-content">
     
-    <section class="bread-crumbs__container gl__sm-hide " id="bread-crumbs-host">
+    
+    <section class="b-page-banner mobile-version-available">
       <div class="gl__page-content">
-        <ul class="bread-crumbs__list">
-            <li class="bread-crumbs__item">
-                <a href="" class="bread-crumbs__link">
-                  Частным клиентам
-                  <svg width="16" height="16" aria-hidden="true" class="bread-crumbs__link-icon">
-                    <use xlink:href="#arrow-right"></use>
-                  </svg>
-                </a>
+        <h2 class="gl__title">Тарифы Мобильной связи</h2>
+    
+        <div class="b-page-banner__content">
+          <picture>
+            <source srcset="img/common/b-page-banners/b-rates-mobile-list--mobile.jpg" media="(max-width: 559px)">
+            <img class="b-page-banner__image" src="img/common/b-page-banners/b-rates-mobile-list.jpg" alt="Тарифы Мобильной связи">
+          </picture>
+          <div class="b-page-banner__text">
+            <h3 class="b-page-banner__title">
+              <span class="b-page-banner__mobile-title">Тарифы <br /> мобильной <br /> связи</span>
+              <span class="b-page-banner__accent-title">Корпоративная</span>
+              <span class="b-page-banner__desktop-title">мобильная связь</span>
+            </h3>
+            <div class="b-page-banner__cost-block">
+              <span class="b-page-banner__cost-label">от</span>
+              <span class="b-page-banner__cost">150</span>
+              <span class="b-page-banner__cost-label">₽/мес.</span>
+            </div>
+            <span class="b-page-banner__label">Переходи на Летай за 0 руб</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="b-tariffs-list">
+      <div class="gl__page-content">
+        <h2 class="gl__title">Тарифы</h2>
+      </div>
+    
+      <div class="b-tariffs-list__content">
+        <div class="gl-slider js-swiper-4">
+          <div class="gl__bg-hide">
+            <button type="button" class="gl-slider__slider-btn mod-prev js-slider-btn-prev gl-slider__b-slider-btn">
+              <svg class="gl-slider__slider-btn-icon" width="26" height="26" aria-hidden="true">
+                <use xlink:href="#arrow-left"></use>
+              </svg>
+            </button>
+            <button type="button" class="gl-slider__slider-btn mod-next js-slider-btn-next gl-slider__b-slider-btn">
+              <svg class="gl-slider__slider-btn-icon" width="26" height="26" aria-hidden="true">
+                <use xlink:href="#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="gl__page-content">
+            <div class="gl-slider__container swiper-container js-swiper-container-4 b-tariffs-list__slider">
+              <ul class="gl-slider__wrapper swiper-wrapper" id="js-align-tariffs-heights">
+                <li class="swiper-slide b-tariffs-item">
+                  <div>
+                    <h3 class="b-tariffs-item__name">Корпорация-150</h3>
+                    <ul class="b-tariffs-item__services-list">
+                      <li class="b-tariffs-item__service">
+                        <svg width="15" height="15" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-calls"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">Безлимитные звонки внутри корпоративной группы</span>
+                      </li>
+                      <li class="b-tariffs-item__service">
+                        <svg width="15" height="11" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-internet"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">5 ГБ 4G интернета</span>
+                      </li>
+                      <li class="b-tariffs-item__service">
+                        <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-calls-rt"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">250 мин на номера РТ</span>
+                      </li>
+                      <li class="b-tariffs-item__service">
+                        <svg width="15" height="15" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-sms"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">500 SMS</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="b-tariffs-item__footer">
+                    <div class="b-tariffs-item__cost-block">
+                      <span class="b-tariffs-item__cost">150</span>
+                      <span class="b-tariffs-item__cost-label">₽/мес</span>
+                    </div>
+                    <button class="gl__main-btn mod-business b-tariffs-item__btn" type="button">Подключить</button>
+                    <button class="b-tariffs-item__secondary-btn" type="button">Подробнее о тарифе</button>
+                  </div>
+                </li>
+                <li class="swiper-slide b-tariffs-item">
+                  <div>
+                    <h3 class="b-tariffs-item__name">Корпорация-250</h3>
+                    <ul class="b-tariffs-item__services-list">
+                      <li class="b-tariffs-item__service">
+                        <svg width="15" height="15" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-calls"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">Безлимитные звонки внутри корпоративной группы</span>
+                      </li>
+                      <li class="b-tariffs-item__service">
+                        <svg width="15" height="11" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-internet"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">10 ГБ 4G интернета</span>
+                      </li>
+                      <li class="b-tariffs-item__service">
+                        <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-calls-rt"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">600 мин на номера РТ</span>
+                      </li>
+                      <li class="b-tariffs-item__service">
+                        <svg width="15" height="15" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-sms"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">300 SMS</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="b-tariffs-item__footer">
+                    <div class="b-tariffs-item__cost-block">
+                      <span class="b-tariffs-item__cost">350</span>
+                      <span class="b-tariffs-item__cost-label">₽/мес</span>
+                    </div>
+                    <button class="gl__main-btn mod-business b-tariffs-item__btn" type="button">Подключить</button>
+                    <button class="b-tariffs-item__secondary-btn" type="button">Подробнее о тарифе</button>
+                  </div>
+                </li>
+                <li class="swiper-slide b-tariffs-item">
+                  <div>
+                    <h3 class="b-tariffs-item__name">Корпорация-350</h3>
+                    <ul class="b-tariffs-item__services-list">
+                      <li class="b-tariffs-item__service">
+                        <svg width="15" height="15" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-calls"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">Безлимитные звонки внутри корпоративной группы</span>
+                      </li>
+                      <li class="b-tariffs-item__service">
+                        <svg width="15" height="11" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-internet"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">1 ГБ 4G интернета</span>
+                      </li>
+                      <li class="b-tariffs-item__service">
+                        <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-calls-rt"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">1000 мин на номера РТ</span>
+                      </li>
+                      <li class="b-tariffs-item__service">
+                        <svg width="15" height="15" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-sms"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">300 SMS</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="b-tariffs-item__footer">
+                    <div class="b-tariffs-item__cost-block">
+                      <span class="b-tariffs-item__cost">150</span>
+                      <span class="b-tariffs-item__cost-label">₽/мес</span>
+                    </div>
+                    <button class="gl__main-btn mod-business b-tariffs-item__btn" type="button">Подключить</button>
+                    <button class="b-tariffs-item__secondary-btn" type="button">Подробнее о тарифе</button>
+                  </div>
+                </li>
+                <li class="swiper-slide b-tariffs-item">
+                  <div>
+                    <h3 class="b-tariffs-item__name">Корпорация-450</h3>
+                    <ul class="b-tariffs-item__services-list">
+                      <li class="b-tariffs-item__service">
+                        <svg width="15" height="15" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-calls"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">Безлимитные звонки внутри корпоративной группы</span>
+                      </li>
+                      <li class="b-tariffs-item__service">
+                        <svg width="15" height="11" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-internet"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">20 ГБ 4G интернета</span>
+                      </li>
+                      <li class="b-tariffs-item__service">
+                        <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-calls-rt"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">1000 мин на номера РТ</span>
+                      </li>
+                      <li class="b-tariffs-item__service">
+                        <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-calls-rf"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">100 мин на номера РФ</span>
+                      </li>
+                      <li class="b-tariffs-item__service">
+                        <svg width="15" height="15" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-sms"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">800 SMS</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="b-tariffs-item__footer">
+                    <div class="b-tariffs-item__cost-block">
+                      <span class="b-tariffs-item__cost">150</span>
+                      <span class="b-tariffs-item__cost-label">₽/мес</span>
+                    </div>
+                    <button class="gl__main-btn mod-business b-tariffs-item__btn" type="button">Подключить</button>
+                    <button class="b-tariffs-item__secondary-btn" type="button">Подробнее о тарифе</button>
+                  </div>
+                </li>
+                <li class="swiper-slide b-tariffs-item">
+                  <div>
+                    <h3 class="b-tariffs-item__name">Корпорация-450</h3>
+                    <ul class="b-tariffs-item__services-list">
+                      <li class="b-tariffs-item__service">
+                        <svg width="15" height="15" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-calls"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">Безлимитные звонки внутри корпоративной группы</span>
+                      </li>
+                      <li class="b-tariffs-item__service">
+                        <svg width="15" height="11" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-internet"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">20 ГБ 4G интернета</span>
+                      </li>
+                      <li class="b-tariffs-item__service">
+                        <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-calls-rt"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">1000 мин на номера РТ</span>
+                      </li>
+                      <li class="b-tariffs-item__service">
+                        <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-calls-rf"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">100 мин на номера РФ</span>
+                      </li>
+                      <li class="b-tariffs-item__service">
+                        <svg width="15" height="15" aria-hidden="true" class="b-tariffs-item__service-icon">
+                          <use xlink:href="#tariffs-sms"></use>
+                        </svg>
+                        <span class="b-tariffs-item__service-name">800 SMS</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="b-tariffs-item__footer">
+                    <div class="b-tariffs-item__cost-block">
+                      <span class="b-tariffs-item__cost">150</span>
+                      <span class="b-tariffs-item__cost-label">₽/мес</span>
+                    </div>
+                    <button class="gl__main-btn mod-business b-tariffs-item__btn" type="button">Подключить</button>
+                    <button class="b-tariffs-item__secondary-btn" type="button">Подробнее о тарифе</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="b-request-for-connection">
+      <div class="gl__page-content">
+        <div class="b-request-for-connection__content">
+          <h3 class="b-request-for-connection__form-title">Оставить заявку на подключение</h3>
+            <span class="b-request-for-connection__form-label">Наши специалисты помогут подобрать решения, отталкиваясь от ваших бизнес-потребностей</span>
+            <form data-need-validation data-parsley-validate data-parsley-focus="none" class="b-request-for-connection__form mod-4-in-row">
+              <!--
+                ___Обязательные поля___
+                type - html-тип инута
+                name - обязательно префикс - род.компонент (н-р services-tel)
+                placeholder
+              
+                ___Необязательные поля___
+                required (true/false) - обязательно для заполнения
+                inputTitle - заголовок НАД инпутом
+                phoneMask (true/false) - маска для телефона
+                rubMask (true/false) - маска для ₽ в конце
+                minLength - деф-2
+                maxLength - деф-none
+                minNumber - минимальное число
+                maxNumber - максимальное число
+                id - обычный id, например для первого пароля
+                parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
+                parsleyType - для валидации (н-р email)
+                isSimpleDesign - упрощенный дизайн
+                numberNoArrows - (true / false) - убрать стрелочки с number
+              -->
+              
+              <label class="gl-input__wrapper js-input-text">
+                <input type="text"
+                       class="gl-input__input
+                         
+                         
+                         
+                         "
+                       placeholder="Ваше имя"
+                       name="application-consultation-name"
+              
+              
+                       data-parsley-required=""
+              
+              
+              
+              
+              
+                >
+              </label>
+              <!--
+                ___Обязательные поля___
+                type - html-тип инута
+                name - обязательно префикс - род.компонент (н-р services-tel)
+                placeholder
+              
+                ___Необязательные поля___
+                required (true/false) - обязательно для заполнения
+                inputTitle - заголовок НАД инпутом
+                phoneMask (true/false) - маска для телефона
+                rubMask (true/false) - маска для ₽ в конце
+                minLength - деф-2
+                maxLength - деф-none
+                minNumber - минимальное число
+                maxNumber - максимальное число
+                id - обычный id, например для первого пароля
+                parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
+                parsleyType - для валидации (н-р email)
+                isSimpleDesign - упрощенный дизайн
+                numberNoArrows - (true / false) - убрать стрелочки с number
+              -->
+              
+              <label class="gl-input__wrapper js-input-tel">
+                <input type="tel"
+                       class="gl-input__input
+                         js-phone-mask
+                         
+                         
+                         "
+                       placeholder="+7 (___) ___-__-__"
+                       name="application-consultation-tel"
+              
+              
+                       data-parsley-required=""
+              
+              
+              
+              
+              
+                >
+              </label>
+              <!--
+                ___Обязательные поля___
+                type - html-тип инута
+                name - обязательно префикс - род.компонент (н-р services-tel)
+                placeholder
+              
+                ___Необязательные поля___
+                required (true/false) - обязательно для заполнения
+                inputTitle - заголовок НАД инпутом
+                phoneMask (true/false) - маска для телефона
+                rubMask (true/false) - маска для ₽ в конце
+                minLength - деф-2
+                maxLength - деф-none
+                minNumber - минимальное число
+                maxNumber - максимальное число
+                id - обычный id, например для первого пароля
+                parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
+                parsleyType - для валидации (н-р email)
+                isSimpleDesign - упрощенный дизайн
+                numberNoArrows - (true / false) - убрать стрелочки с number
+              -->
+              
+              <label class="gl-input__wrapper js-input-email">
+                <input type="email"
+                       class="gl-input__input
+                         
+                         
+                         
+                         "
+                       placeholder="E-mail"
+                       name="application-consultation-email"
+              
+              
+                       data-parsley-required=""
+              
+              
+              
+              
+              
+                >
+              </label>
+              <button type="submit" class="gl__main-btn">Продолжить</button>
+            </form>
+        </div>
+      </div>
+    </section>
+    <section class="b-additional-services">
+      <div class="gl__page-content">
+        <div class="b-additional-services__content">
+          <h2 class="gl__title">Дополнительные услуги</h2>
+          <ul class="b-additional-services__list">
+            <li class="b-additional-services__item">
+              <button class="gl__drop-menu-btn js-drop-menu-btn b-additional-services__btn">
+                <span class="b-additional-services__btn-label">Управление вызовами и контактами</span>
+                <svg class="gl__drop-menu-icon b-additional-services__btn-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#arrow-down"></use>
+                </svg>
+              </button>
+              <div class="gl__drop-menu-container js-drop-menu-container b-additional-services__wrapper">
+                <ul class="gl__drop-menu js-drop-menu b-additional-services__content-list">
+                  <li class="b-additional-services__content-item">
+                    <div class="b-additional-services__content-item-name-container">
+                      <span class="b-additional-services__content-item-name">Запрет определителя номера</span>
+                      <div class="btn-info__container">
+                        <button type="button" class="btn-info__btn">
+                            <svg width="24" height="24" aria-hidden="true" class="btn-info__icon">
+                              <use xlink:href="#info-ellipse"></use>
+                            </svg>
+                        </button>
+                      
+                        <div class="btn-info__content">
+                          Запрет определителя номера
+                        </div>
+                      </div>
+                    </div>
+                    <span class="b-additional-services__content-item-cost">В&nbsp;соответствии с тарифным планом</span>
+                  </li>
+                  <li class="b-additional-services__content-item">
+                    <div class="b-additional-services__content-item-name-container">
+                      <span class="b-additional-services__content-item-name">Запрет международных вызовов</span>
+                      <div class="btn-info__container">
+                        <button type="button" class="btn-info__btn">
+                            <svg width="24" height="24" aria-hidden="true" class="btn-info__icon">
+                              <use xlink:href="#info-ellipse"></use>
+                            </svg>
+                        </button>
+                      
+                        <div class="btn-info__content">
+                          Запрет международных вызовов
+                        </div>
+                      </div>
+                    </div>
+                    <span class="b-additional-services__content-item-cost">0 ₽</span>
+                  </li>
+                  <li class="b-additional-services__content-item">
+                    <div class="b-additional-services__content-item-name-container">
+                      <span class="b-additional-services__content-item-name">Запрет связи</span>
+                      <div class="btn-info__container">
+                        <button type="button" class="btn-info__btn">
+                            <svg width="24" height="24" aria-hidden="true" class="btn-info__icon">
+                              <use xlink:href="#info-ellipse"></use>
+                            </svg>
+                        </button>
+                      
+                        <div class="btn-info__content">
+                          Запрет связи
+                        </div>
+                      </div>
+                    </div>
+                    <span class="b-additional-services__content-item-cost">В&nbsp;соответствии с тарифным планом</span>
+                  </li>
+                  <li class="b-additional-services__content-item">
+                    <div class="b-additional-services__content-item-name-container">
+                      <span class="b-additional-services__content-item-name">Запрет роуминга</span>
+                      <div class="btn-info__container">
+                        <button type="button" class="btn-info__btn">
+                            <svg width="24" height="24" aria-hidden="true" class="btn-info__icon">
+                              <use xlink:href="#info-ellipse"></use>
+                            </svg>
+                        </button>
+                      
+                        <div class="btn-info__content">
+                          Запрет роуминга
+                        </div>
+                      </div>
+                    </div>
+                    <span class="b-additional-services__content-item-cost">0 ₽</span>
+                  </li>
+                  <li class="b-additional-services__content-item">
+                    <div class="b-additional-services__content-item-name-container">
+                      <span class="b-additional-services__content-item-name">Запрет доступа к GPRS</span>
+                      <div class="btn-info__container">
+                        <button type="button" class="btn-info__btn">
+                            <svg width="24" height="24" aria-hidden="true" class="btn-info__icon">
+                              <use xlink:href="#info-ellipse"></use>
+                            </svg>
+                        </button>
+                      
+                        <div class="btn-info__content">
+                          Запрет доступа к GPRS
+                        </div>
+                      </div>
+                    </div>
+                    <span class="b-additional-services__content-item-cost">0 ₽</span>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="bread-crumbs__item">
-                <span class="bread-crumbs__link">
-                  Оплата услуг
-                </span>
+            <li class="b-additional-services__item">
+              <button class="gl__drop-menu-btn js-drop-menu-btn b-additional-services__btn">
+                <span class="b-additional-services__btn-label">Услуги абонентского сервиса</span>
+                <svg class="gl__drop-menu-icon b-additional-services__btn-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#arrow-down"></use>
+                </svg>
+              </button>
+              <div class="gl__drop-menu-container js-drop-menu-container b-additional-services__wrapper">
+                <ul class="gl__drop-menu js-drop-menu b-additional-services__content-list">
+                  <li class="b-additional-services__content-item">
+                    <div class="b-additional-services__content-item-name-container">
+                      <span class="b-additional-services__content-item-name">Запрет определителя номера</span>
+                      <div class="btn-info__container">
+                        <button type="button" class="btn-info__btn">
+                            <svg width="24" height="24" aria-hidden="true" class="btn-info__icon">
+                              <use xlink:href="#info-ellipse"></use>
+                            </svg>
+                        </button>
+                      
+                        <div class="btn-info__content">
+                          Запрет определителя номера
+                        </div>
+                      </div>
+                    </div>
+                    <span class="b-additional-services__content-item-cost">В&nbsp;соответствии с тарифным планом</span>
+                  </li>
+                  <li class="b-additional-services__content-item">
+                    <div class="b-additional-services__content-item-name-container">
+                      <span class="b-additional-services__content-item-name">Запрет международных вызовов</span>
+                      <div class="btn-info__container">
+                        <button type="button" class="btn-info__btn">
+                            <svg width="24" height="24" aria-hidden="true" class="btn-info__icon">
+                              <use xlink:href="#info-ellipse"></use>
+                            </svg>
+                        </button>
+                      
+                        <div class="btn-info__content">
+                          Запрет международных вызовов
+                        </div>
+                      </div>
+                    </div>
+                    <span class="b-additional-services__content-item-cost">0 ₽</span>
+                  </li>
+                  <li class="b-additional-services__content-item">
+                    <div class="b-additional-services__content-item-name-container">
+                      <span class="b-additional-services__content-item-name">Запрет связи</span>
+                      <div class="btn-info__container">
+                        <button type="button" class="btn-info__btn">
+                            <svg width="24" height="24" aria-hidden="true" class="btn-info__icon">
+                              <use xlink:href="#info-ellipse"></use>
+                            </svg>
+                        </button>
+                      
+                        <div class="btn-info__content">
+                          Запрет связи
+                        </div>
+                      </div>
+                    </div>
+                    <span class="b-additional-services__content-item-cost">В&nbsp;соответствии с тарифным планом</span>
+                  </li>
+                  <li class="b-additional-services__content-item">
+                    <div class="b-additional-services__content-item-name-container">
+                      <span class="b-additional-services__content-item-name">Запрет роуминга</span>
+                      <div class="btn-info__container">
+                        <button type="button" class="btn-info__btn">
+                            <svg width="24" height="24" aria-hidden="true" class="btn-info__icon">
+                              <use xlink:href="#info-ellipse"></use>
+                            </svg>
+                        </button>
+                      
+                        <div class="btn-info__content">
+                          Запрет роуминга
+                        </div>
+                      </div>
+                    </div>
+                    <span class="b-additional-services__content-item-cost">0 ₽</span>
+                  </li>
+                  <li class="b-additional-services__content-item">
+                    <div class="b-additional-services__content-item-name-container">
+                      <span class="b-additional-services__content-item-name">Запрет доступа к GPRS</span>
+                      <div class="btn-info__container">
+                        <button type="button" class="btn-info__btn">
+                            <svg width="24" height="24" aria-hidden="true" class="btn-info__icon">
+                              <use xlink:href="#info-ellipse"></use>
+                            </svg>
+                        </button>
+                      
+                        <div class="btn-info__content">
+                          Запрет доступа к GPRS
+                        </div>
+                      </div>
+                    </div>
+                    <span class="b-additional-services__content-item-cost">0 ₽</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="b-additional-services__item">
+              <button class="gl__drop-menu-btn js-drop-menu-btn b-additional-services__btn">
+                <span class="b-additional-services__btn-label">Дополнительные платные услуги</span>
+                <svg class="gl__drop-menu-icon b-additional-services__btn-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#arrow-down"></use>
+                </svg>
+              </button>
+              <div class="gl__drop-menu-container js-drop-menu-container b-additional-services__wrapper">
+                <ul class="gl__drop-menu js-drop-menu b-additional-services__content-list">
+                  <li class="b-additional-services__content-item">
+                    <div class="b-additional-services__content-item-name-container">
+                      <span class="b-additional-services__content-item-name">Запрет определителя номера</span>
+                      <div class="btn-info__container">
+                        <button type="button" class="btn-info__btn">
+                            <svg width="24" height="24" aria-hidden="true" class="btn-info__icon">
+                              <use xlink:href="#info-ellipse"></use>
+                            </svg>
+                        </button>
+                      
+                        <div class="btn-info__content">
+                          Запрет определителя номера
+                        </div>
+                      </div>
+                    </div>
+                    <span class="b-additional-services__content-item-cost">В&nbsp;соответствии с тарифным планом</span>
+                  </li>
+                  <li class="b-additional-services__content-item">
+                    <div class="b-additional-services__content-item-name-container">
+                      <span class="b-additional-services__content-item-name">Запрет международных вызовов</span>
+                      <div class="btn-info__container">
+                        <button type="button" class="btn-info__btn">
+                            <svg width="24" height="24" aria-hidden="true" class="btn-info__icon">
+                              <use xlink:href="#info-ellipse"></use>
+                            </svg>
+                        </button>
+                      
+                        <div class="btn-info__content">
+                          Запрет международных вызовов
+                        </div>
+                      </div>
+                    </div>
+                    <span class="b-additional-services__content-item-cost">0 ₽</span>
+                  </li>
+                  <li class="b-additional-services__content-item">
+                    <div class="b-additional-services__content-item-name-container">
+                      <span class="b-additional-services__content-item-name">Запрет связи</span>
+                      <div class="btn-info__container">
+                        <button type="button" class="btn-info__btn">
+                            <svg width="24" height="24" aria-hidden="true" class="btn-info__icon">
+                              <use xlink:href="#info-ellipse"></use>
+                            </svg>
+                        </button>
+                      
+                        <div class="btn-info__content">
+                          Запрет связи
+                        </div>
+                      </div>
+                    </div>
+                    <span class="b-additional-services__content-item-cost">В&nbsp;соответствии с тарифным планом</span>
+                  </li>
+                  <li class="b-additional-services__content-item">
+                    <div class="b-additional-services__content-item-name-container">
+                      <span class="b-additional-services__content-item-name">Запрет роуминга</span>
+                      <div class="btn-info__container">
+                        <button type="button" class="btn-info__btn">
+                            <svg width="24" height="24" aria-hidden="true" class="btn-info__icon">
+                              <use xlink:href="#info-ellipse"></use>
+                            </svg>
+                        </button>
+                      
+                        <div class="btn-info__content">
+                          Запрет роуминга
+                        </div>
+                      </div>
+                    </div>
+                    <span class="b-additional-services__content-item-cost">0 ₽</span>
+                  </li>
+                  <li class="b-additional-services__content-item">
+                    <div class="b-additional-services__content-item-name-container">
+                      <span class="b-additional-services__content-item-name">Запрет доступа к GPRS</span>
+                      <div class="btn-info__container">
+                        <button type="button" class="btn-info__btn">
+                            <svg width="24" height="24" aria-hidden="true" class="btn-info__icon">
+                              <use xlink:href="#info-ellipse"></use>
+                            </svg>
+                        </button>
+                      
+                        <div class="btn-info__content">
+                          Запрет доступа к GPRS
+                        </div>
+                      </div>
+                    </div>
+                    <span class="b-additional-services__content-item-cost">0 ₽</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section class="b-useful-articles">
+      <div class="gl__page-content">
+        <h2 class="gl__title">Полезные статьи для бизнеса</h2>
+      </div>
+    
+      <div class="b-useful-articles__content">
+        <div class="gl-slider js-swiper-3">
+          <div class="gl__bg-hide">
+            <button type="button" class="gl-slider__slider-btn mod-prev js-slider-btn-prev gl-slider__b-slider-btn">
+              <svg class="gl-slider__slider-btn-icon" width="26" height="26" aria-hidden="true">
+                <use xlink:href="#arrow-left"></use>
+              </svg>
+            </button>
+            <button type="button" class="gl-slider__slider-btn mod-next js-slider-btn-next gl-slider__b-slider-btn">
+              <svg class="gl-slider__slider-btn-icon" width="26" height="26" aria-hidden="true">
+                <use xlink:href="#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="gl__page-content">
+            <div class="gl-slider__container swiper-container js-swiper-container-3 b-useful-articles__slider">
+              <ul class="gl-slider__wrapper swiper-wrapper" id="js-align-heights">
+                <li class="swiper-slide b-useful-article">
+                  <img class="b-useful-article__image" src="img/common/b-useful-articles/useful-article-1.jpg" alt="Название статьи">
+                  <div class="b-useful-article__overlay"></div>
+                  <h3 class="b-useful-article__title">Название статьи</h3>
+                  <p class="b-useful-article__description">Краткое описание в 2-3 строчки о сути статьи, Краткое описание в 2-3 строчки о сути статьи.</p>
+                </li>
+                <li class="swiper-slide b-useful-article">
+                  <img class="b-useful-article__image" src="img/common/b-useful-articles/useful-article-2.jpg" alt="Название статьи">
+                  <div class="b-useful-article__overlay"></div>
+                  <h3 class="b-useful-article__title">Название статьи</h3>
+                  <p class="b-useful-article__description">Краткое описание в 2-3 строчки b о сути статьи, Краткое описание в 2-3 строчки о сути статьи.</p>
+                </li>
+                <li class="swiper-slide b-useful-article">
+                  <img class="b-useful-article__image" src="img/common/b-useful-articles/useful-article-3.jpg" alt="Название статьи">
+                  <div class="b-useful-article__overlay"></div>
+                  <h3 class="b-useful-article__title">Название статьи</h3>
+                  <p class="b-useful-article__description">Краткое описание в 2-3 строчки о сути статьи, Краткое описание в 2-3 строчки о сути статьи.</p>
+                </li>
+                <li class="swiper-slide b-useful-article">
+                  <img class="b-useful-article__image" src="img/common/b-useful-articles/useful-article-4.jpg" alt="Название статьи">
+                  <div class="b-useful-article__overlay"></div>
+                  <h3 class="b-useful-article__title">Название статьи</h3>
+                  <p class="b-useful-article__description">Краткое описание в 2-3 строчки о сути статьи, Краткое описание в 2-3 строчки о сути статьи.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq" id="faq-host">
+      <div class="gl__page-content">
+          <h2 class="gl__title">Вопросы и ответы</h2>
+    
+        <ul class="faq__list-wrapper">
+            <li class="faq__item ">
+              <button type="button" class="faq__item-btn-wrapper gl__drop-menu-btn js-drop-menu-btn">
+                <svg width="24" height="24" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
+                  <use xlink:href="#arrow-down"></use>
+                </svg>
+                Как получить автоматические настройки Интернет и MMS?
+              </button>
+          
+                <div class="faq__item-content-wrapper gl__drop-menu-container js-drop-menu-container">
+                  <div class="gl__drop-menu js-drop-menu">
+                      <p class="faq__item-content-text">Для получения настроек Интернет и/или MMS мобильной связи «Летай»:</p>
+                      <p class="faq__item-content-text">1. отправьте любой текст на номер 116111 для получения настроек Internet и MMS;</p>
+                      <p class="faq__item-content-text">2. отправьте текст «111» на 116111 для получения настроек Internet;</p>
+                      <p class="faq__item-content-text">3. отправьте текст «222» на 116111 для получения настроек MMS.</p>
+                      <p class="faq__item-content-text">Далее Вам будет доставлено конфигурационное сообщение с настройками, которое необходимо установить на телефоне, в поле запрашиваемого PIN введите «1234». При невозможности установки конфигурационного SMS, произведите ручную настройку.</p>
+                  </div>
+                </div>
+          
+            </li>
+            <li class="faq__item ">
+              <button type="button" class="faq__item-btn-wrapper gl__drop-menu-btn js-drop-menu-btn">
+                <svg width="24" height="24" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
+                  <use xlink:href="#arrow-down"></use>
+                </svg>
+                Как вручную настроить Интернет и MMS в телефоне?
+              </button>
+          
+                <div class="faq__item-content-wrapper gl__drop-menu-container js-drop-menu-container">
+                  <div class="gl__drop-menu js-drop-menu">
+                      <p class="faq__item-content-text">Для настройки Интернет и MMS в телефоне:</p>
+                      <p class="faq__item-content-text">1. пункт 1</p>
+                      <p class="faq__item-content-text">2. пункт 2</p>
+                      <p class="faq__item-content-text">3. пункт 3</p>
+                  </div>
+                </div>
+          
             </li>
         </ul>
+    
+          <a href="" class="faq__link-show-all">
+            Все вопросы и ответы
+            <svg width="20" height="20" aria-hidden="true" class="faq__link-show-all-icon">
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+          </a>
       </div>
     </section>
 
-    <section class="payment-services" id="payment-services-host">
+    
+    <section class="b-support">
       <div class="gl__page-content">
-        <h2 class="gl__title">Оплата услуг</h2>
+        <div class="b-support__content">
+          <div class="b-support__block b-support__form-block">
+            <h3 class="b-support__form-title">Хотите узнать больше?</h3>
+            <span class="b-support__form-label">Наши специалисты помогут подобрать решения, отталкиваясь от ваших бизнес-потребностей</span>
+            <form data-need-validation data-parsley-validate data-parsley-focus="none" class="application-consultation__form mod-business">
+              <!--
+                ___Обязательные поля___
+                type - html-тип инута
+                name - обязательно префикс - род.компонент (н-р services-tel)
+                placeholder
+              
+                ___Необязательные поля___
+                required (true/false) - обязательно для заполнения
+                inputTitle - заголовок НАД инпутом
+                phoneMask (true/false) - маска для телефона
+                rubMask (true/false) - маска для ₽ в конце
+                minLength - деф-2
+                maxLength - деф-none
+                minNumber - минимальное число
+                maxNumber - максимальное число
+                id - обычный id, например для первого пароля
+                parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
+                parsleyType - для валидации (н-р email)
+                isSimpleDesign - упрощенный дизайн
+                numberNoArrows - (true / false) - убрать стрелочки с number
+              -->
+              
+              <label class="gl-input__wrapper js-input-text">
+                <input type="text"
+                       class="gl-input__input
+                         
+                         
+                         
+                         "
+                       placeholder="Ваше имя"
+                       name="application-consultation-name"
+              
+              
+                       data-parsley-required=""
+              
+              
+              
+              
+              
+                >
+              </label>
+              <!--
+                ___Обязательные поля___
+                type - html-тип инута
+                name - обязательно префикс - род.компонент (н-р services-tel)
+                placeholder
+              
+                ___Необязательные поля___
+                required (true/false) - обязательно для заполнения
+                inputTitle - заголовок НАД инпутом
+                phoneMask (true/false) - маска для телефона
+                rubMask (true/false) - маска для ₽ в конце
+                minLength - деф-2
+                maxLength - деф-none
+                minNumber - минимальное число
+                maxNumber - максимальное число
+                id - обычный id, например для первого пароля
+                parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
+                parsleyType - для валидации (н-р email)
+                isSimpleDesign - упрощенный дизайн
+                numberNoArrows - (true / false) - убрать стрелочки с number
+              -->
+              
+              <label class="gl-input__wrapper js-input-tel">
+                <input type="tel"
+                       class="gl-input__input
+                         js-phone-mask
+                         
+                         
+                         "
+                       placeholder="+7 (___) ___-__-__"
+                       name="application-consultation-tel"
+              
+              
+                       data-parsley-required=""
+              
+              
+              
+              
+              
+                >
+              </label>
+              <button type="submit" class="gl__main-btn mod-business">Получить консльтацию</button>
+            </form>
+          </div>
+          <div class="b-support__block b-support__contacts-block">
+            <h3 class="b-support__contacts-title">Служба поддержки</h3>
+            <span class="b-support__contacts-label">Для оперативной связи со службой поддержки обращайтесь одним из удобных способов</span>
     
-        <div class="payment-services__content">
-            <div class="payment-services__item gl__white-container">
-              <div class="payment-services__item-title">
-                С банковской карты, Apple Pay или Google Pay
-              </div>
-              <div class="payment-services__item-subtitle">
-                Мгновенное зачисление денег на счёт телефона без комиссий
-              </div>
+            <a class="b-support__contacts-tel" title="Позвонить" href="tel:+78432222222">(843) 238-00-00</a>
     
-              <form data-need-validation data-parsley-validate data-parsley-focus="none"
-                    data-modal-type="mobile"
-                    class="payment-services__form js-form-pre-modal-top-up-account">
-                <div class="payment-services__form-inputs-wrapper">
-                      <!--
-                        ___Обязательные поля___
-                        type - html-тип инута
-                        name - обязательно префикс - род.компонент (н-р services-tel)
-                        placeholder
-                      
-                        ___Необязательные поля___
-                        required (true/false) - обязательно для заполнения
-                        inputTitle - заголовок НАД инпутом
-                        phoneMask (true/false) - маска для телефона
-                        rubMask (true/false) - маска для ₽ в конце
-                        minLength - деф-2
-                        maxLength - деф-none
-                        minNumber - минимальное число
-                        maxNumber - максимальное число
-                        id - обычный id, например для первого пароля
-                        parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
-                        parsleyType - для валидации (н-р email)
-                        isSimpleDesign - упрощенный дизайн
-                        numberNoArrows - (true / false) - убрать стрелочки с number
-                      -->
-                      
-                      <label class="gl-input__wrapper js-input-tel">
-                          <span class="gl-input__title  ">
-                            Пополняемый номер
-                          </span>
-                        <input type="tel"
-                               class="gl-input__input
-                                 js-phone-mask
-                                 
-                                 
-                                 "
-                               placeholder="+7 (___) ___-__-__"
-                               name="payment-tel"
-                      
-                      
-                               data-parsley-required=""
-                      
-                      
-                      
-                      
-                      
-                        >
-                      </label>
-    
-    
-    
-                      <!--
-                        ___Обязательные поля___
-                        type - html-тип инута
-                        name - обязательно префикс - род.компонент (н-р services-tel)
-                        placeholder
-                      
-                        ___Необязательные поля___
-                        required (true/false) - обязательно для заполнения
-                        inputTitle - заголовок НАД инпутом
-                        phoneMask (true/false) - маска для телефона
-                        rubMask (true/false) - маска для ₽ в конце
-                        minLength - деф-2
-                        maxLength - деф-none
-                        minNumber - минимальное число
-                        maxNumber - максимальное число
-                        id - обычный id, например для первого пароля
-                        parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
-                        parsleyType - для валидации (н-р email)
-                        isSimpleDesign - упрощенный дизайн
-                        numberNoArrows - (true / false) - убрать стрелочки с number
-                      -->
-                      
-                      <label class="gl-input__wrapper js-input-number">
-                          <span class="gl-input__title  ">
-                            От 10 до 30 000 Р
-                          </span>
-                        <input type="number"
-                               class="gl-input__input
-                                 
-                                 
-                                 
-                                 "
-                               placeholder="Сумма"
-                               name="payment-sum"
-                               min="10"
-                      
-                               max="30000"
-                      
-                               data-parsley-required=""
-                      
-                      
-                      
-                      
-                      
-                        >
-                      </label>
-    
-                </div>
-    
-                <div>
-                  <div class="payment-services__form-btn-wrapper">
-                    <button type="submit" class="payment-services__form-btn gl__main-btn js-open-top-up-account-modal">
-                      Продолжить
-                    </button>
-                  </div>
-    
-                  <div class="payment-services__form-hint-wrapper">
-                    <div class="payment-services__form-hint-text">
-                      Нажимая кнопку «Продолжить», вы принимаете условия пользовательского соглашения.
-                    </div>
-                      <div class="payment-services__form-hint-icons-wrapper">
-                        <img src="img/common/pay/mastercard.svg" alt="" class="payment-services__form-hint-icon">
-                        <img src="img/common/pay/mir.svg" alt="" class="payment-services__form-hint-icon">
-                        <img src="img/common/pay/visa.svg" alt="" class="payment-services__form-hint-icon">
-                      </div>
-    
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="payment-services__item gl__white-container">
-              <div class="payment-services__item-title">
-                По Номеру лицевого счета
-              </div>
-              <div class="payment-services__item-subtitle">
-                Сумма платежа будет доступна уже сейчас, а пополнить баланс можно будет позже
-              </div>
-    
-              <form data-need-validation data-parsley-validate data-parsley-focus="none"
-                    data-modal-type="personal-account"
-                    class="payment-services__form js-form-pre-modal-top-up-account">
-                <div class="payment-services__form-inputs-wrapper">
-    
-    
-                      <!--
-                        ___Обязательные поля___
-                        type - html-тип инута
-                        name - обязательно префикс - род.компонент (н-р services-tel)
-                        placeholder
-                      
-                        ___Необязательные поля___
-                        required (true/false) - обязательно для заполнения
-                        inputTitle - заголовок НАД инпутом
-                        phoneMask (true/false) - маска для телефона
-                        rubMask (true/false) - маска для ₽ в конце
-                        minLength - деф-2
-                        maxLength - деф-none
-                        minNumber - минимальное число
-                        maxNumber - максимальное число
-                        id - обычный id, например для первого пароля
-                        parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
-                        parsleyType - для валидации (н-р email)
-                        isSimpleDesign - упрощенный дизайн
-                        numberNoArrows - (true / false) - убрать стрелочки с number
-                      -->
-                      
-                      <label class="gl-input__wrapper js-input-number">
-                          <span class="gl-input__title  ">
-                            Введите номер, чтобы выбрать сумму
-                          </span>
-                        <input type="number"
-                               class="gl-input__input
-                                 
-                                 
-                                 
-                                 mod-no-arrow"
-                               placeholder="Номер лицевого счета"
-                               name="payment-personal-account"
-                      
-                      
-                               data-parsley-required=""
-                      
-                               data-parsley-minlength="20"
-                      
-                               data-parsley-maxlength="20"
-                      
-                      
-                      
-                        >
-                      </label>
-                </div>
-    
-                <div>
-                  <div class="payment-services__form-btn-wrapper">
-                    <button type="submit" class="payment-services__form-btn gl__main-btn js-open-top-up-account-modal">
-                      Продолжить
-                    </button>
-                  </div>
-    
-                  <div class="payment-services__form-hint-wrapper">
-                    <div class="payment-services__form-hint-text">
-                      Нажимая кнопку «Продолжить», вы принимаете условия пользовательского соглашения.
-                    </div>
-                      <button type="button" class="payment-services__form-link">
-                        Подробнее об услуге
-                      </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="payment-services__item gl__white-container">
-              <div class="payment-services__item-title">
-                Обещанный платеж
-              </div>
-              <div class="payment-services__item-subtitle">
-                Если ваш баланс близок к нулю, а возможности пополнить счет в данный момент нет, воспользуйтесь «Обещанным платежом».
-              </div>
-    
-              <form data-need-validation data-parsley-validate data-parsley-focus="none"
-                    
-                    class="payment-services__form js-form-pre-modal-top-up-account">
-                <div class="payment-services__form-inputs-wrapper">
-                      <!--
-                        ___Обязательные поля___
-                        type - html-тип инута
-                        name - обязательно префикс - род.компонент (н-р services-tel)
-                        placeholder
-                      
-                        ___Необязательные поля___
-                        required (true/false) - обязательно для заполнения
-                        inputTitle - заголовок НАД инпутом
-                        phoneMask (true/false) - маска для телефона
-                        rubMask (true/false) - маска для ₽ в конце
-                        minLength - деф-2
-                        maxLength - деф-none
-                        minNumber - минимальное число
-                        maxNumber - максимальное число
-                        id - обычный id, например для первого пароля
-                        parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
-                        parsleyType - для валидации (н-р email)
-                        isSimpleDesign - упрощенный дизайн
-                        numberNoArrows - (true / false) - убрать стрелочки с number
-                      -->
-                      
-                      <label class="gl-input__wrapper js-input-tel">
-                          <span class="gl-input__title  ">
-                            Введите номер, чтобы выбрать сумму
-                          </span>
-                        <input type="tel"
-                               class="gl-input__input
-                                 js-phone-mask
-                                 
-                                 
-                                 "
-                               placeholder="+7 (___) ___-__-__"
-                               name="payment-tel"
-                      
-                      
-                               data-parsley-required=""
-                      
-                      
-                      
-                      
-                      
-                        >
-                      </label>
-    
-    
-                </div>
-    
-                <div>
-                  <div class="payment-services__form-btn-wrapper">
-                    <button type="submit" class="payment-services__form-btn gl__main-btn js-open-top-up-account-modal">
-                      Продолжить
-                    </button>
-                  </div>
-    
-                  <div class="payment-services__form-hint-wrapper">
-                    <div class="payment-services__form-hint-text">
-                      Нажимая кнопку «Продолжить», вы принимаете условия пользовательского соглашения.
-                    </div>
-                      <button type="button" class="payment-services__form-link">
-                        Подробнее об услуге
-                      </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="payment-services__item gl__white-container">
-              <div class="payment-services__item-title">
-                Подключите автоплатёж
-              </div>
-              <div class="payment-services__item-subtitle">
-                Счет будет автоматически пополняться с банковской карты на заданную сумму, при достижении определенного остатка на балансе.
-              </div>
-    
-              <form data-need-validation data-parsley-validate data-parsley-focus="none"
-                    
-                    class="payment-services__form js-form-pre-modal-top-up-account">
-                <div class="payment-services__form-inputs-wrapper">
-                      <!--
-                        ___Обязательные поля___
-                        type - html-тип инута
-                        name - обязательно префикс - род.компонент (н-р services-tel)
-                        placeholder
-                      
-                        ___Необязательные поля___
-                        required (true/false) - обязательно для заполнения
-                        inputTitle - заголовок НАД инпутом
-                        phoneMask (true/false) - маска для телефона
-                        rubMask (true/false) - маска для ₽ в конце
-                        minLength - деф-2
-                        maxLength - деф-none
-                        minNumber - минимальное число
-                        maxNumber - максимальное число
-                        id - обычный id, например для первого пароля
-                        parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
-                        parsleyType - для валидации (н-р email)
-                        isSimpleDesign - упрощенный дизайн
-                        numberNoArrows - (true / false) - убрать стрелочки с number
-                      -->
-                      
-                      <label class="gl-input__wrapper js-input-tel">
-                          <span class="gl-input__title  ">
-                            Введите номер, чтобы выбрать сумму
-                          </span>
-                        <input type="tel"
-                               class="gl-input__input
-                                 js-phone-mask
-                                 
-                                 
-                                 "
-                               placeholder="+7 (___) ___-__-__"
-                               name="payment-tel"
-                      
-                      
-                               data-parsley-required=""
-                      
-                      
-                      
-                      
-                      
-                        >
-                      </label>
-    
-    
-                </div>
-    
-                <div>
-                  <div class="payment-services__form-btn-wrapper">
-                    <button type="submit" class="payment-services__form-btn gl__main-btn js-open-top-up-account-modal">
-                      Продолжить
-                    </button>
-                  </div>
-    
-                  <div class="payment-services__form-hint-wrapper">
-                    <div class="payment-services__form-hint-text">
-                      Нажимая кнопку «Продолжить», вы принимаете условия пользовательского соглашения.
-                    </div>
-                      <button type="button" class="payment-services__form-link">
-                        Подробнее об услуге
-                      </button>
-                  </div>
-                </div>
-              </form>
-            </div>
+            <ul class="b-socials">
+              <li class="b-socials__item">
+                <a class="b-socials__link whatsapp" title="Написать в Whatsapp" href="#">
+                  <svg width="22" height="22" aria-hidden="true" class="b-socials__link-icon">
+                    <use xlink:href="#soc-whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="b-socials__item">
+                <a class="b-socials__link telegram" title="Написать в Telegram" href="#">
+                  <svg width="23" height="20" aria-hidden="true" class="b-socials__link-icon">
+                    <use xlink:href="#soc-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="b-socials__item">
+                <a class="b-socials__link vk" title="Написать в VK" href="#">
+                  <svg width="26" height="15" aria-hidden="true" class="b-socials__link-icon">
+                    <use xlink:href="#soc-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="b-socials__item">
+                <a class="b-socials__link facebook" title="Написать в Facebook" href="#">
+                  <svg width="10" height="22" aria-hidden="true" class="b-socials__link-icon">
+                    <use xlink:href="#soc-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-
   </main>
 
   <div class="gl__layout-footer">
-    <footer class="footer " id="footer-host">
+    <footer class="footer mod-business" id="footer-host">
       <div class="gl__page-content">
         <div class="footer__top-block">
           <div class="footer__top-grid-wrapper">
@@ -792,7 +1477,7 @@
             </div>
     
             <div class="footer__top-grid-item mod-second-half-row">
-              <button type="button" class="gl__main-btn mod-transparent footer__btn ">Перейти в Летай</button>
+              <button type="button" class="gl__main-btn mod-transparent footer__btn mod-business-transparent">Перейти в Летай</button>
             </div>
           </div>
         </div>
@@ -1265,20 +1950,6 @@
         </div>
   
         <div class="js-menu-tabs-container">
-            <div class="menu-tabs__radio-btns-container ">
-                <label class="menu-tabs__radio-wrapper">
-                  <input type="radio" class="menu-tabs__radio js-menu-tab" name="payment-tab" checked value="mobile">
-                  <span class="menu-tabs__radio-content">Мобильная связь</span>
-                </label>
-                <label class="menu-tabs__radio-wrapper">
-                  <input type="radio" class="menu-tabs__radio js-menu-tab" name="payment-tab"  value="personal-account">
-                  <span class="menu-tabs__radio-content">По номеру лицевого счета</span>
-                </label>
-                <label class="menu-tabs__radio-wrapper">
-                  <input type="radio" class="menu-tabs__radio js-menu-tab" name="payment-tab"  value="landline-phone">
-                  <span class="menu-tabs__radio-content">Стационарный телефон</span>
-                </label>
-            </div>
   
           <div class="js-menu-tab-content gl__menu-tab-content" data-menu-mobile>
             <form data-need-validation data-parsley-validate data-parsley-focus="none"
@@ -1495,35 +2166,6 @@
                     iconSearchLeft (true/false)
                     iconSimLeft (true/false)
                   -->
-                    <div class="select">
-                  
-                      <div class="select__container
-                        
-                        
-                        
-                        
-                        
-                        
-                        mod-pay-other
-                        " id="pay-other">
-                  
-                  
-                        <label class="select__wrapper">
-                          <select class="gl__select js-custom-select"
-                                  data-parsley-class-handler="#pay-other"
-                                  name="pay-other"
-                          >
-                              <option placeholder value="">другое</option>
-                                <option value="Сбербанк онлайн">Сбербанк онлайн</option>
-                                <option value="ЮMoney">ЮMoney</option>
-                                <option value="Альфа-Клик">Альфа-Клик</option>
-                                <option value="QIWI Кошелёк">QIWI Кошелёк</option>
-                                <option value="Webmoney">Webmoney</option>
-                          </select>
-                        </label>
-                  
-                      </div>
-                    </div>
                 </div>
               
                 <div class="top-up-account__form-btn-wrapper">
@@ -1799,35 +2441,6 @@
                     iconSearchLeft (true/false)
                     iconSimLeft (true/false)
                   -->
-                    <div class="select">
-                  
-                      <div class="select__container
-                        
-                        
-                        
-                        
-                        
-                        
-                        mod-pay-other
-                        " id="pay-other">
-                  
-                  
-                        <label class="select__wrapper">
-                          <select class="gl__select js-custom-select"
-                                  data-parsley-class-handler="#pay-other"
-                                  name="pay-other"
-                          >
-                              <option placeholder value="">другое</option>
-                                <option value="Сбербанк онлайн">Сбербанк онлайн</option>
-                                <option value="ЮMoney">ЮMoney</option>
-                                <option value="Альфа-Клик">Альфа-Клик</option>
-                                <option value="QIWI Кошелёк">QIWI Кошелёк</option>
-                                <option value="Webmoney">Webmoney</option>
-                          </select>
-                        </label>
-                  
-                      </div>
-                    </div>
                 </div>
               
                 <div class="top-up-account__form-btn-wrapper">
@@ -2100,35 +2713,6 @@
                     iconSearchLeft (true/false)
                     iconSimLeft (true/false)
                   -->
-                    <div class="select">
-                  
-                      <div class="select__container
-                        
-                        
-                        
-                        
-                        
-                        
-                        mod-pay-other
-                        " id="pay-other">
-                  
-                  
-                        <label class="select__wrapper">
-                          <select class="gl__select js-custom-select"
-                                  data-parsley-class-handler="#pay-other"
-                                  name="pay-other"
-                          >
-                              <option placeholder value="">другое</option>
-                                <option value="Сбербанк онлайн">Сбербанк онлайн</option>
-                                <option value="ЮMoney">ЮMoney</option>
-                                <option value="Альфа-Клик">Альфа-Клик</option>
-                                <option value="QIWI Кошелёк">QIWI Кошелёк</option>
-                                <option value="Webmoney">Webmoney</option>
-                          </select>
-                        </label>
-                  
-                      </div>
-                    </div>
                 </div>
               
                 <div class="top-up-account__form-btn-wrapper">
@@ -2148,7 +2732,7 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=978d9dde-738d-4b87-8d8a-1de67b511402&lang=ru_RU"
           type="text/javascript"></script>
   <script src="js/common.js"></script>
-  <script src="js/payment-services-page.js"></script>
+  <script src="js/b-rates-mobile-list.js"></script>
   <script src="assets/js/backend.js"></script>
 </div>
 </body>
