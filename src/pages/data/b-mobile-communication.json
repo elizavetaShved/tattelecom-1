@@ -1,6 +1,5 @@
 {
-  "isBusiness": false,
-  "isBusinessMain": false,
+  "isBusiness": true,
   "title": "Мобильная связь",
   "script": "b-mobile-communication",
   "service-cards": [

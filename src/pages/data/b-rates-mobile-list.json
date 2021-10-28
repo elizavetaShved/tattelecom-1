@@ -1,6 +1,5 @@
 {
-  "isBusiness": false,
-  "isBusinessMain": false,
+  "isBusiness": true,
   "title": "Тарифы Мобильной связи",
   "script": "b-rates-mobile-list",
   "banner": {
