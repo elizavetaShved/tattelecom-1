@@ -1,0 +1,14 @@
+<section class="b-steps">
+  <div class="gl__page-content">
+    <h2 class="gl__title">{{steps.title}}</h2>
+
+    <ul class="b-steps__list">
+      {{#each steps.list }}
+      <li class="b-steps__item">
+        <span class="b-steps__item-num">{{this.num}}</span>
+        <p class="b-steps__item-description">{{this.description}}</p>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>
