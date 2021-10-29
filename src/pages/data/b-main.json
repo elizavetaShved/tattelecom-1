@@ -2,12 +2,12 @@
   "isBusiness": true,
   "title": "Бизнесу",
   "script": "b-main-page",
-  "slidesList": [
+  "topSlider": [
     {
       "isLarge": true,
       "title": "Единый бизнес",
       "subtitle-down": "Все услуги связи в одном тарифе",
-      "img": "img/b-main-page/fractional-slider/img-1.jpg"
+      "img": "img/b-main-page/top-slider/img-1.jpg"
     },
     {
       "isFractionaleee": "www",
@@ -16,13 +16,13 @@
           "isMiddleHorizontal": true,
           "title": "Видеонаблюдение",
           "subtitle-down": "Удаленный контроль в режиме 24/7",
-          "img": "img/b-main-page/fractional-slider/img-2.jpg"
+          "img": "img/b-main-page/top-slider/img-2.jpg"
         },
         {
           "isMiddleHorizontal": true,
           "title": "Интернет в офис",
           "subtitle-down": "Надёжный интернет для бизнеса",
-          "img": "img/b-main-page/fractional-slider/img-3.jpg"
+          "img": "img/b-main-page/top-slider/img-3.jpg"
         }
       ]
     },
@@ -32,13 +32,41 @@
       "title": "Wi-fi Smart",
       "subtitle-up": "Управляемая сеть Wi-fi для гостей",
       "subtitle-down": "от 2700 ₽",
-      "img": "img/b-main-page/fractional-slider/img-4.jpg"
+      "img": "img/b-main-page/top-slider/img-4.jpg"
     },
     {
       "isLarge": true,
       "title": "Единый бизнес",
       "subtitle-down": "Все услуги связи в одном тарифе",
-      "img": "img/b-main-page/fractional-slider/img-1.jpg"
+      "img": "img/b-main-page/top-slider/img-1.jpg"
+    }
+  ],
+  "businessSolutions": [
+    {
+      "title": "Тарифы мобильной связи",
+      "img": "img/b-main-page/business-solutions/img-1.jpg"
+    },
+    {
+      "title": "Красивый номер в подарок",
+      "isWhiteTitle": true,
+      "subtitleDown": "при подключении мобильной связи",
+      "isWhiteSubtitle": true,
+      "img": "img/b-main-page/business-solutions/img-2.jpg"
+    },
+    {
+      "title": "Тарифы мобильного интернета",
+      "img": "img/b-main-page/business-solutions/img-3.jpg"
+    },
+    {
+      "title": "Sip телефония",
+      "isWhiteTitle": true,
+      "subtitleDown": "Современная телефония для офиса доступно и быстро",
+      "img": "img/b-main-page/business-solutions/img-4.jpg"
+    },
+    {
+      "title": "Таттелеком коннект",
+      "subtitleDown": "Сервис обмена документами с государственными органами",
+      "img": "img/b-main-page/business-solutions/img-5.jpg"
     }
   ]
 }

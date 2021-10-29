@@ -1,6 +1,6 @@
 import { Slider } from '../components/slider';
 
-// 1ур. gl-slider + js-swiper-4 - общая обертка:
+// 1ур. gl-slider + js-swiper-4 + data-swiper-gap="20"? - общая обертка:
 // 2ур. gl-slider__container + swiper-container + js-swiper-container-4
 // 3ур. gl-slider__wrapper + swiper-wrapper
 // 4ур. swiper-slide
@@ -19,6 +19,7 @@ export default function initSlider(numSlide) {
     numSlide,
     sliderWrapperElements[index].querySelector('.js-slider-btn-prev'),
     sliderWrapperElements[index].querySelector('.js-slider-btn-next'),
-    sliderWrapperElements[index].querySelector('.js-pagination-slider')
+    sliderWrapperElements[index].querySelector('.js-pagination-slider'),
+    sliderWrapperElements[index].getAttribute('data-swiper-gap')
   ));
 }

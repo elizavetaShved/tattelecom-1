@@ -4,7 +4,9 @@ Swiper.use([Navigation, Pagination]);
 
 export class Slider {
 
-  constructor(sliderElem, numSlide, btnPrev, btnNext, paginationElem) {
+  constructor(sliderElem, numSlide, btnPrev, btnNext, paginationElem, customGap) {
+
+    const gap = customGap ? +customGap : 30;
 
     new Swiper(sliderElem, {
       slidesPerView: 1.2,
@@ -22,14 +24,14 @@ export class Slider {
       breakpoints: {
         769: {
           slidesPerView: numSlide > 2 ? numSlide - 1 + 0.2: numSlide + 0.2,
-          spaceBetween: 20
+          spaceBetween: gap - 10 > 16 ? gap - 10 : 16
         },
         1025: {
           slidesPerView: numSlide > 2 ? numSlide - 1 : numSlide,
         },
         1201: {
           slidesPerView: numSlide,
-          spaceBetween: 30
+          spaceBetween: gap
         }
       }
     })
