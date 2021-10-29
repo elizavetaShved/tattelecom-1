@@ -4,7 +4,7 @@ import initSelects from '../finctions/initSelects';
 import initInstallmentsModal from '../finctions/initModals/initInstallmentsModal';
 
 document.addEventListener('DOMContentLoaded', () => {
-  initSlider(4);
+  initSlider();
   initSendRequestModal();
   initInstallmentsModal();
   initSelects();

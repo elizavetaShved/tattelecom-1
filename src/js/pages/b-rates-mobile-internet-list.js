@@ -4,8 +4,7 @@ import phoneMask from '../finctions/masks/phoneMask';
 import initDropDownMenu from "../finctions/initDropDownMenu";
 
 document.addEventListener('DOMContentLoaded', () => {
-  initSlider(3);
-  initSlider(4);
+  initSlider();
   validation();
   phoneMask();
   initDropDownMenu();

@@ -3,9 +3,7 @@ import validation from '../finctions/validation';
 import phoneMask from '../finctions/masks/phoneMask';
 
 document.addEventListener('DOMContentLoaded', () => {
-  initSlider(3);
-  initSlider(4);
-  initSlider(5);
+  initSlider();
   validation();
   phoneMask();
 });

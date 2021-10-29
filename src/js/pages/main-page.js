@@ -7,8 +7,7 @@ import initAboutTariffModal from '../finctions/initModals/initAboutTariffModal';
 import initMenuTabs from '../finctions/initMenuTabs';
 
 document.addEventListener('DOMContentLoaded', () => {
-  initSlider(4);
-  initSlider(3);
+  initSlider();
   initSelects();
   initSendRequestModal();
   initAboutTariffModal();
