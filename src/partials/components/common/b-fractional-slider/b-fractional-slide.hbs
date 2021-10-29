@@ -1,0 +1,16 @@
+<div class="b-fractional-slider__slide-card
+  {{ additionalClass }}
+  {{#if isLarge}}mod-large{{/if}}
+  {{#if isMiddleVertical}}mod-middle-vertical{{/if}}
+  {{#if isMiddleHorizontal}}mod-middle-horizontal{{/if}}
+  {{#if isMiddleSmall}}mod-small{{/if}}"
+>
+  <img src="{{ this.img }}" alt="" class="b-fractional-slider__card-background">
+  <div class="b-fractional-slider__card-title">
+    {{ this.title }}
+  </div>
+
+  <div class="b-fractional-slider__card-subtitle">
+    {{ this.subtitle-down }}
+  </div>
+</div>

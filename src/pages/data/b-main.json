@@ -1,6 +1,44 @@
 {
   "isBusiness": true,
-  "isBusinessMain": true,
   "title": "Бизнесу",
-  "script": "b-main-page"
+  "script": "b-main-page",
+  "slidesList": [
+    {
+      "isLarge": true,
+      "title": "Единый бизнес",
+      "subtitle-down": "Все услуги связи в одном тарифе",
+      "img": "img/b-main-page/fractional-slider/img-1.jpg"
+    },
+    {
+      "isFractionaleee": "www",
+      "isFractionalList": [
+        {
+          "isMiddleHorizontal": true,
+          "title": "Видеонаблюдение",
+          "subtitle-down": "Удаленный контроль в режиме 24/7",
+          "img": "img/b-main-page/fractional-slider/img-2.jpg"
+        },
+        {
+          "isMiddleHorizontal": true,
+          "title": "Интернет в офис",
+          "subtitle-down": "Надёжный интернет для бизнеса",
+          "img": "img/b-main-page/fractional-slider/img-3.jpg"
+        }
+      ]
+    },
+    {
+      "isLarge": true,
+      "additionalClass": "mod-price",
+      "title": "Wi-fi Smart",
+      "subtitle-up": "Управляемая сеть Wi-fi для гостей",
+      "subtitle-down": "от 2700 ₽",
+      "img": "img/b-main-page/fractional-slider/img-4.jpg"
+    },
+    {
+      "isLarge": true,
+      "title": "Единый бизнес",
+      "subtitle-down": "Все услуги связи в одном тарифе",
+      "img": "img/b-main-page/fractional-slider/img-1.jpg"
+    }
+  ]
 }
