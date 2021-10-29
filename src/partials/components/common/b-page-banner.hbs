@@ -24,19 +24,21 @@
         <img class="b-page-banner__image" src="img/common/b-page-banners/{{banner.image}}" alt="{{title}}">
       </picture>
       <div class="b-page-banner__text">
-        <h3 class="b-page-banner__title">
+        <h3 class="b-page-banner__title {{banner.title.colorClass}}">
           {{#if banner.mobile.title}}
           <span class="b-page-banner__mobile-title">{{{banner.mobile.title}}}</span>
           {{/if}}
-          {{#if banner.accentTitle }}
-          <span class="b-page-banner__accent-title">{{{banner.accentTitle}}}</span>
+          {{#if banner.title.accentText }}
+          <span class="b-page-banner__accent-title">{{{banner.title.accentText}}}</span>
           {{/if}}
-          <span class="b-page-banner__desktop-title">{{{banner.title}}}</span>
+          <span class="b-page-banner__desktop-title">{{{banner.title.text}}}</span>
         </h3>
         <div class="b-page-banner__cost-block">
           <span class="b-page-banner__cost-label">от</span>
-          <span class="b-page-banner__cost">{{banner.cost}}</span>
-          <span class="b-page-banner__cost-label">₽/мес.</span>
+          <div class="b-page-banner__cost-bottom">
+            <span class="b-page-banner__cost">{{banner.cost}}</span>
+            <span class="b-page-banner__cost-label">₽/мес.</span>
+          </div>
         </div>
         <span class="b-page-banner__label">{{banner.label}}</span>
       </div>

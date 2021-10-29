@@ -58,6 +58,10 @@
     line-height: 1.2;
     color: var(--main-color-business);
 
+    &.white {
+      color: white;
+    }
+ 
     @include for-sm-down {
       margin-bottom: 1.2rem;
     }
@@ -82,7 +86,7 @@
 
   &__cost-block {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
 
     margin-bottom: 1.8rem;
 
@@ -105,10 +109,15 @@
     }
   }
 
+  &__cost-bottom {
+    display: flex;
+    align-items: flex-end;
+  }
+
   &__cost {
     flex-shrink: 0;
 
-    margin: 0 0.5rem;
+    margin-right: 0.5rem;
 
     font-size: 5rem;
     line-height: 1;
