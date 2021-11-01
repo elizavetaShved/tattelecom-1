@@ -27,6 +27,16 @@
   }
 }
 
+.b-low-slider__slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &.mod-top-subtitle {
+    justify-content: flex-start;
+  }
+}
+
 .b-low-slider__background {
   position: absolute;
   z-index: -1;
@@ -49,6 +59,18 @@
   font-size: 1.8rem;
   line-height: 2.2rem;
   max-width: 80%;
+}
+
+.b-low-slider__price-subtitle {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  color: var(--main-color-business);
+
+  .number {
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+  }
 }
 
 .b-low-slider__title, .b-low-slider__subtitle {

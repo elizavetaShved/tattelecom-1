@@ -1,16 +1,17 @@
 {
   "isBusiness": true,
+  "isBusinessMain": true,
   "title": "Бизнесу",
   "script": "b-main-page",
   "topSlider": [
     {
       "isLarge": true,
       "title": "Единый бизнес",
+      "additionalClass": "mod-unified-business",
       "subtitle-down": "Все услуги связи в одном тарифе",
       "img": "img/b-main-page/top-slider/img-1.jpg"
     },
     {
-      "isFractionaleee": "www",
       "isFractionalList": [
         {
           "isMiddleHorizontal": true,
@@ -49,7 +50,7 @@
     {
       "title": "Красивый номер в подарок",
       "isWhiteTitle": true,
-      "subtitleDown": "при подключении мобильной связи",
+      "subtitle": "при подключении мобильной связи",
       "isWhiteSubtitle": true,
       "img": "img/b-main-page/business-solutions/img-2.jpg"
     },
@@ -60,13 +61,179 @@
     {
       "title": "Sip телефония",
       "isWhiteTitle": true,
-      "subtitleDown": "Современная телефония для офиса доступно и быстро",
+      "subtitle": "Современная телефония для офиса доступно и быстро",
       "img": "img/b-main-page/business-solutions/img-4.jpg"
     },
     {
       "title": "Таттелеком коннект",
-      "subtitleDown": "Сервис обмена документами с государственными органами",
+      "subtitle": "Сервис обмена документами с государственными органами",
       "img": "img/b-main-page/business-solutions/img-5.jpg"
+    }
+  ],
+  "connectionSlider": [
+    {
+      "isBig": true,
+      "additionalClass": "mod-center",
+      "title": "Роуминг",
+      "img": "img/b-main-page/connection-slider/img-1.jpg"
+    },
+    {
+      "isFractionalList": [
+        {
+          "isSmall": true,
+          "title": "Тарифы мобильной связи",
+          "subtitle-down": "от 200 ₽/мес"
+        },
+        {
+          "isSmall": true,
+          "title": "Тарифы мобильной связи",
+          "subtitle-down": "от 200 ₽/мес"
+        }
+      ]
+    },
+    {
+      "isMiddleVertical": true,
+      "title": "Красивый номер в подарок",
+      "subtitle-down": "при подключении мобильной связи",
+      "img": "img/b-main-page/connection-slider/img-2.jpg"
+    },
+    {
+      "isBig": true,
+      "additionalClass": "mod-center",
+      "title": "Переходи на Летай",
+      "subtitle-down": "с сохранением номера",
+      "img": "img/b-main-page/connection-slider/img-3.jpg"
+    }
+  ],
+  "digitalServices": [
+    {
+      "title": "LoRaWAN",
+      "isWhiteTitle": true,
+      "subtitleDown": "Инфраструктура беспроводной телекоммуникационной сети для Интернета вещей",
+      "isWhiteSubtitle": true,
+      "img": "img/b-main-page/digital-services/img-1.jpg"
+    },
+    {
+      "title": "М2М",
+      "isWhiteTitle": true,
+      "subtitleDown": "Технология беспроводной передачи данных между устройствами",
+      "isWhiteSubtitle": true,
+      "img": "img/b-main-page/digital-services/img-2.jpg"
+    },
+    {
+      "title": "Виртуальные сети IP VPN",
+      "isWhiteTitle": true,
+      "subtitleDown": "Единая корпоративная сеть надежно и быстро",
+      "isWhiteSubtitle": true,
+      "img": "img/b-main-page/digital-services/img-3.jpg"
+    },
+    {
+      "title": "Colocation",
+      "isWhiteTitle": true,
+      "subtitleDown": "Размещение оборудования на технологической площадке «Таттелеком»",
+      "isWhiteSubtitle": true,
+      "img": "img/b-main-page/digital-services/img-4.jpg"
+    },
+    {
+      "title": "Web-хостинг\n",
+      "isWhiteTitle": true,
+      "subtitleDown": "Предоставление определённого объёма пространства на виртуальном сервере",
+      "isWhiteSubtitle": true,
+      "img": "img/b-main-page/digital-services/img-5.jpg"
+    }
+  ],
+  "safetySlider": [
+    {
+      "title": "Видеонаблюдение",
+      "isWhiteTitle": true,
+      "subtitle": "Удаленный контроль в режиме 24/7",
+      "isTopSubtitle": true,
+      "isWhiteSubtitle": true,
+      "img": "img/b-main-page/safety/img-1.jpg"
+    },
+    {
+      "title": "Видеоаналитика",
+      "isWhiteTitle": true,
+      "subtitle": "Безопасность и контроль бизнеса на расстоянии",
+      "isTopSubtitle": true,
+      "img": "img/b-main-page/safety/img-2.jpg"
+    },
+    {
+      "title": "DDoS защита",
+      "subtitle": "Надежная защита от DDoS атак",
+      "isTopSubtitle": true,
+      "img": "img/b-main-page/safety/img-3.jpg"
+    },
+    {
+      "title": "Виртуальная АТС",
+      "additionalClass": "mod-price",
+      "isWhiteTitle": true,
+      "subtitle": "Умная телефония для вашего бизнеса",
+      "isTopSubtitle": true,
+      "subtitlePrice": 600,
+      "img": "img/b-main-page/safety/img-4.jpg"
+    },
+    {
+      "title": "М2М",
+      "subtitle": "Технология беспроводной передачи данных между устройствами",
+      "isTopSubtitle": true,
+      "img": "img/b-main-page/safety/img-5.jpg"
+    }
+  ],
+  "cases": [
+    {
+      "title": "Проект «Мобильный офис дистанционного сотрудника надомного обслуживания населения»",
+      "isWhiteTitle": true,
+      "img": "img/b-main-page/cases/img-1.jpg"
+    },
+    {
+      "title": "Таттелеком в проекте «Наш Двор»",
+      "isWhiteTitle": true,
+      "img": "img/b-main-page/cases/img-2.jpg"
+    }
+  ],
+  "usefulArticles": [
+    {
+      "image": "useful-article-1.jpg",
+      "title": "Название статьи",
+      "description": "Краткое описание в 2-3 строчки о сути статьи, Краткое описание в 2-3 строчки о сути статьи."
+    },
+    {
+      "image": "useful-article-2.jpg",
+      "title": "Название статьи",
+      "description": "Краткое описание в 2-3 строчки b о сути статьи, Краткое описание в 2-3 строчки о сути статьи."
+    },
+    {
+      "image": "useful-article-3.jpg",
+      "title": "Название статьи",
+      "description": "Краткое описание в 2-3 строчки о сути статьи, Краткое описание в 2-3 строчки о сути статьи."
+    },
+    {
+      "image": "useful-article-4.jpg",
+      "title": "Название статьи",
+      "description": "Краткое описание в 2-3 строчки о сути статьи, Краткое описание в 2-3 строчки о сути статьи."
+    }
+  ],
+  "news-list": [
+    {
+      "title": "22 май",
+      "text": "Провели праздник двора для жителей ЖК Салават Купере"
+    },
+    {
+      "title": "22 май",
+      "text": "Провели праздник двора для жителей ЖК Салават Купере"
+    },
+    {
+      "title": "22 май",
+      "text": "Провели праздник двора для жителей ЖК Салават Купере"
+    },
+    {
+      "title": "22 май",
+      "text": "Провели праздник двора для жителей ЖК Салават Купере"
+    },
+    {
+      "title": "22 май",
+      "text": "Провели праздник двора для жителей ЖК Салават Купере"
     }
   ]
 }

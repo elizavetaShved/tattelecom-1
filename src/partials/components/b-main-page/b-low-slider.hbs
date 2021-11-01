@@ -12,13 +12,21 @@
         <div class="gl-slider__wrapper swiper-wrapper">
           {{#each slidesList}}
             <div class="b-low-slider__slide swiper-slide">
-              <img src="{{ this.img }}" alt="" class="b-low-slider__background">
-              <div class="b-low-slider__title {{#if isWhiteTitle }}mod-white{{/if}}">
-                {{ this.title }}
+              <div class="b-low-slider__slide-content {{#if isTopSubtitle }}mod-top-subtitle{{/if}}">
+                <img src="{{ this.img }}" alt="" class="b-low-slider__background">
+                <div class="b-low-slider__title {{#if isWhiteTitle }}mod-white{{/if}}">
+                  {{ this.title }}
+                </div>
+                {{#if this.subtitle }}
+                  <div class="b-low-slider__subtitle {{#if isWhiteSubtitle }}mod-white{{/if}}">
+                    {{ this.subtitle }}
+                  </div>
+                {{/if}}
               </div>
-              {{#if this.subtitleDown }}
-                <div class="b-low-slider__subtitle {{#if isWhiteSubtitle }}mod-white{{/if}}">
-                  {{ this.subtitleDown }}
+
+              {{#if subtitlePrice }}
+                <div class="b-low-slider__price-subtitle">
+                  от <span class="number">{{ this.subtitlePrice }}</span>₽/мес
                 </div>
               {{/if}}
             </div>
