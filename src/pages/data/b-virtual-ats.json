@@ -1,0 +1,19 @@
+{
+  "isBusiness": true,
+  "title": "Виртуальная АТС",
+  "script": "b-virtual-ats-page",
+  "banner": {
+    "title": {
+      "accentText": "Единый бизнес",
+      "subtitle": "Все услуги связи в одном тарифе",
+      "colorClass": "white",
+      "colorSubtitleBlue": true,
+      "colorTextBlue": true
+    },
+    "image": "b-single-business.jpg",
+    "mobile": {
+      "title": "Тарифы <br /> мобильного <br /> интернета",
+      "image": "b-rates-mobile-internet-list--mobile.jpg"
+    }
+  }
+}

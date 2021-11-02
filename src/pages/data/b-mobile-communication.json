@@ -100,35 +100,5 @@
         "3. пункт 3"
       ]
     }
-  ],
-  "socials": [
-    {
-      "name": "Whatsapp",
-      "classMod": "whatsapp",
-      "iconName": "soc-whatsapp",
-      "iconWidth": "22",
-      "iconHeight": "22"
-    },
-    {
-      "name": "Telegram",
-      "classMod": "telegram",
-      "iconName": "soc-telegram",
-      "iconWidth": "23",
-      "iconHeight": "20"
-    },
-    {
-      "name": "VK",
-      "classMod": "vk",
-      "iconName": "soc-vk",
-      "iconWidth": "26",
-      "iconHeight": "15"
-    },
-    {
-      "name": "Facebook",
-      "classMod": "facebook",
-      "iconName": "soc-facebook",
-      "iconWidth": "10",
-      "iconHeight": "22"
-    }
   ]
 }

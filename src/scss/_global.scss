@@ -51,6 +51,8 @@ body {
   }
 
   &.mod-business {
+    background: var(--border-color);
+
     a {
       &:hover {
         color: var(--main-color-business);

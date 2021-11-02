@@ -29,6 +29,7 @@ module.exports = {
     ['b-rates-mobile-internet-list']: './src/js/pages/b-rates-mobile-internet-list.js',
     ['b-main-page']: './src/js/pages/b-main-page.js',
     ['b-single-business-page']: './src/js/pages/b-single-business-page.js',
+    ['b-virtual-ats-page']: './src/js/pages/b-virtual-ats-page.js',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),
