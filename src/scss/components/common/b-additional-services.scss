@@ -9,6 +9,18 @@
     margin-bottom: 4rem;
   }
 
+  &--single {
+    margin-bottom: 4rem;
+    
+    @include for-lg-down {
+      margin-bottom: 2rem;
+    }
+
+    .b-additional-services__btn-label {
+      font-size: var(--fs-h1);
+    }
+  }
+
   &__content {
   }
 
