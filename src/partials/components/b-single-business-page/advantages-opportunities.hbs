@@ -1,0 +1,30 @@
+<section class="advantages-opportunities" id="advantages-opportunities-host">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      Преимущества и возможности
+    </h2>
+  </div>
+
+  <div class="gl-slider js-swiper" data-swiper-slides-preview="3">
+    {{> common/controls/b-btns-slider }}
+    <div class="gl__page-content">
+      <div class="advantages-opportunities__container gl-slider__container swiper-container js-swiper-container">
+        <div class="gl-slider__wrapper swiper-wrapper">
+          {{#each advantages-opportunities }}
+            <div class="advantages-opportunities__slide swiper-slide">
+              <div class="advantages-opportunities__slide-header">
+                <img src="{{ this.img }}" alt="" class="advantages-opportunities__slide-img">
+                <div class="advantages-opportunities__slide-title">
+                  {{ this.title }}
+                </div>
+              </div>
+              <div class="advantages-opportunities__slide-content">
+                {{ this.text }}
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

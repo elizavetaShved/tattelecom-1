@@ -1,0 +1,74 @@
+.advantages-opportunities {
+  padding: 5rem 0;
+  overflow: hidden;
+
+  @include for-sm-down {
+    padding: 2.6rem 0;
+  }
+}
+
+.advantages-opportunities__container {
+  overflow: visible;
+}
+
+.advantages-opportunities__slide {
+  box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 16px rgba(51, 51, 51, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+
+  @include for-sm-down {
+    border-radius: 10px;
+  }
+}
+
+.advantages-opportunities__slide-header {
+  background: linear-gradient(269.55deg, #44A3DB 36.25%, #007BC3 100.97%);
+  border-radius: 20px;
+  padding: 2.2rem;
+  display: flex;
+  align-items: center;
+
+  @include for-sm-down {
+    border-radius: 10px;
+    padding: 1.6rem;
+  }
+}
+
+.advantages-opportunities__slide-img {
+  height: 5.4rem;
+  margin-right: 1.8rem;
+
+  @include for-sm-down {
+    height: 4rem;
+    margin-right: 1.2rem;
+  }
+}
+
+.advantages-opportunities__slide-title {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  color: var(--border-color);
+
+  @include for-sm-down {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.01em;
+  }
+}
+
+.advantages-opportunities__slide-content {
+  background-color: #fff;
+  padding: 3rem;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+
+  @include for-sm-down {
+    padding: 1.6rem 2.2rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+}
