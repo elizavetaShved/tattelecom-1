@@ -1,0 +1,16 @@
+<section class="b-check-items" id="b-check-items-host">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      {{ check-items.title }}
+    </h2>
+
+    <ul class="b-check-items__list">
+      {{#each check-items.list }}
+        <li class="b-check-items__item">
+          <img src="img/common/check-ellipse-blue.svg" alt="" class="b-check-items__item-image">
+          {{ this }}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

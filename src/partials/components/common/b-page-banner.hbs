@@ -12,7 +12,7 @@
   }
 } --}}
 
-<section class="b-page-banner {{#if banner.mobile}}mobile-version-available{{/if}}">
+<section class="b-page-banner {{#if banner.mobile}}mobile-version-available{{/if}} {{ banner.additionalClass }}">
   <div class="gl__page-content">
     <h2 class="gl__title">{{title}}</h2>
 
@@ -43,7 +43,7 @@
           {{/if}}
         </h3>
         {{#if banner.cost }}
-          <div class="b-page-banner__cost-block">
+          <div class="b-page-banner__cost-block {{#if banner.isConstantlyConst }}mod-no-hide{{/if}}">
             <span class="b-page-banner__cost-label">от</span>
             <div class="b-page-banner__cost-bottom">
               <span class="b-page-banner__cost">{{banner.cost}}</span>
@@ -51,7 +51,9 @@
             </div>
           </div>
         {{/if}}
-        <span class="b-page-banner__label">{{banner.label}}</span>
+        {{#if banner.label }}
+          <span class="b-page-banner__label">{{banner.label}}</span>
+        {{/if}}
       </div>
     </div>
   </div>

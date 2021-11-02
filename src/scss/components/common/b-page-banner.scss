@@ -9,6 +9,14 @@
     padding: 2.6rem 0 10rem;
   }
 
+  &.b-single-business {
+    .b-page-banner__title {
+      @include for-sm-down {
+        max-width: 50%;
+      }
+    }
+  }
+
   &__content {
     overflow: hidden;
 
@@ -16,7 +24,7 @@
 
     padding: 6rem 50% 6rem 9.2rem;
     border-radius: 2rem;
-    min-height: 35.4rem;
+    height: clamp(35.4rem, 38.4rem, 100000rem);
 
     @include for-bg-down {
       padding: 4rem;
@@ -44,10 +52,14 @@
   &__text {
     position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
 
   &__title {
-    margin-bottom: 2.8rem;
+    margin-bottom: 1rem;
 
     font-size: var(--fs-h1);
     font-weight: 600;
@@ -145,8 +157,14 @@
 
   &__desktop-subtitle {
     font-weight: 300;
-    font-size: 4rem;
+    font-size: 3.6rem;
     line-height: 1.2;
+
+    @include for-sm-down {
+      font-weight: normal;
+      font-size: 2rem;
+      line-height: 2.8rem;
+    }
 
     &.mod-blue {
       color: var(--main-color-business);
@@ -170,7 +188,9 @@
     .b-page-banner__desktop-title,
     .b-page-banner__cost-block,
     .b-page-banner__label {
-      display: none;
+      &:not(.mod-no-hide) {
+        display: none;
+      }
     }
   }
 }
