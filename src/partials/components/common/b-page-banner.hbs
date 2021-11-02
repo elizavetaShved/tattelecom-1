@@ -30,6 +30,8 @@
     {{/if}}
     {{!-- /КОСТЫЛЬ --}}
 
+    {{!-- Если заголовка нет, баннер вообще не выводим - КОСТЫЛЬ! --}}
+    {{#if banner.title}}
     <div class="b-page-banner__content">
       <picture>
         {{#if banner.mobile.image}}
@@ -71,5 +73,6 @@
         {{/if}}
       </div>
     </div>
+    {{/if }}
   </div>
 </section>

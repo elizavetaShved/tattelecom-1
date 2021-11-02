@@ -1,0 +1,92 @@
+.b-roaming-international-intro {
+
+  margin-bottom: 10rem;
+
+  @include for-bg-down {
+    margin-bottom: 6rem;
+  }
+  @include for-sm-down {
+    margin-bottom: 4rem;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    column-gap: 3.2rem;
+
+    @include for-fl-down {
+      .ghost {
+        display: none;
+      }
+    }
+
+    @include for-hg-down {
+      grid-template-columns: 1fr;
+      column-gap: 0;
+      row-gap: 4rem;
+    }
+  }
+
+  &__form-block {
+    grid-column: span 8;
+
+    @include for-hg-down {
+      grid-column: auto;
+    }
+
+    .roaming-without-worries__form {
+      box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+      background-color: white;
+
+      @include for-fl-down {
+        padding: 4rem;
+      }
+    }
+
+    .select__container .choices__inner {
+      background-color: var(--border-color) !important;
+    }
+    .select__container .choices__item--selectable {
+      background-color: var(--border-color);
+    }
+
+    .choices__item--choice {
+      &:hover {
+        background-color: #fff !important;
+      }
+    }
+  }
+
+  &__block-title {
+    margin-bottom: 5.3rem;
+
+    font-size: var(--fs-h2);
+    letter-spacing: 0.015em;
+    line-height: 1.5;
+    font-weight: 400;
+
+    @include for-bg-down {
+      margin-bottom: 3.2rem;
+    }
+    @include for-sm-down {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__list-block {
+    grid-column: span 7;
+
+    @include for-fl-down {
+      grid-column: span 8;
+    }
+
+    @include for-hg-down {
+      grid-column: auto;
+    }
+  }
+
+  &__list {
+    display: grid;
+    row-gap: 3rem;
+  }
+}
