@@ -52,6 +52,12 @@
     }
   }
 
+  &.mod-business {
+    .checkbox__content-icon {
+      fill: var(--main-color-business);
+    }
+  }
+
   &.mod-modal {
     background: var(--border-color);
 
