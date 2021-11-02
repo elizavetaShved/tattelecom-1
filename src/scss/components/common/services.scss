@@ -123,7 +123,7 @@
   align-items: end;
   grid-gap: 1.4rem;
 
-  @include for-hg-down {;
+  @include for-hg-down {
     grid-template-columns: repeat(2, 1fr);
   }
 }

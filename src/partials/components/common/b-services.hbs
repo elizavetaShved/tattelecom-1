@@ -1,0 +1,55 @@
+<section class="services b-services">
+  <div class="gl__page-content">
+    <ul class="services__list js-menu-tabs-container">
+      <li class="services__item-wrapper gl__white-container">
+        <div class="services__item-info-container">
+          <div class="services__item-info-content">
+            <h3 class="services__item-info-title">Выбирайте красивые номера</h3>
+            <div class="services__item-info-text">
+              Бронзовый,Серебрянный, Золотой, Бриллиантовый
+            </div>
+            <button type="button" class="services__item-info-btn">
+              <span class="services__item-info-btn-text">Подобрать</span>
+              <svg width="40" height="40" aria-hidden="true" class="services__item-info-btn-icon">
+                <use xlink:href="#arrow-line-right"></use>
+              </svg>
+            </button>
+          </div>
+          <img src="img/main-page/services/ellipse-image-2.svg" alt="" class="services__item-info-image">
+        </div>
+      </li>
+
+      <li class="services__item-wrapper gl__white-container mod-painted">
+        <h3 class="services__item-info-title">
+          Переходите со своим номером
+        </h3>
+        <span class="b-services__accent-label">бесплатно</span>
+
+        <form class="services__form-wrapper" data-need-validation data-parsley-validate data-parsley-focus="none">
+          <div class="services__form-inputs-wrapper">
+            {{> common/controls/input-main
+              required=true
+              type="tel"
+              phoneMask=true
+              placeholder="+7 (___) ___-__-__"
+              inputTitle="Введите номер переноса"
+              name="services-tel-transfer"
+            }}
+            <div class="services__btn-submit-wrapper">
+              <button type="submit" class="gl__main-btn mod-transparent services__btn-submit">Начать перенос</button>
+            </div>
+          </div>
+
+          <div class="services__checkbox">
+            {{> common/controls/input-checkbox
+              required=true
+              businessMod=true
+              caption="Я соглашаюсь на получение консультации по переносу номера"
+              name="services-approval"
+            }}
+          </div>
+        </form>
+      </li>
+    </ul>
+  </div>
+</section>

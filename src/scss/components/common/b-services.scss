@@ -1,0 +1,44 @@
+.b-services {
+  background-color: transparent;
+
+  &__accent-label {
+    display: block;
+
+    margin-bottom: 3rem;
+
+    font-weight: 600;
+    font-size: var(--fs-h1);
+    text-transform: uppercase;
+    line-height: 1.4;
+  }
+
+  .services__item-wrapper {
+    &:nth-child(1) {
+      grid-column: 1 / 6;
+  
+      @include for-md-down {
+        grid-column: 4 / 7;
+      }
+    }
+  
+    &:nth-child(2) {
+      grid-column: 6 / 13;
+  
+      @include for-md-down {
+        grid-column: 1 / 7;
+      }
+    }
+  }
+
+  .services__item-wrapper.mod-painted {
+    background: linear-gradient(135deg, #3C8CE7 0%, #00EAFF 100%);
+  }
+
+  .services__item-info-title {
+    margin-bottom: 0;
+  }
+
+  .services__item-info-text {
+    font-weight: 400;
+  }
+}
