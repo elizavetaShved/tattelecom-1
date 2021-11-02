@@ -2,53 +2,6 @@
   <div class="gl__page-content">
     <h2 class="gl__title">Красивые номера</h2>
 
-    <div class="phone-list__subtitle">Выберите свой уникальный номер</div>
-
-    <div class="phone-list__filter-container">
-      <div class="phone-list__filter-wrapper">
-        {{#each filters }}
-          <label class="phone-list__filter-item-wrapper">
-            <input type="radio" class="phone-list__input" name="phone-list-filter">
-            <span class="phone-list__filter-item-content">{{ this }}</span>
-          </label>
-        {{/each}}
-      </div>
-    </div>
-
-    <ul class="phone-list__list">
-      {{#each phones }}
-        <li class="phone-list__item">
-          <button type="button" class="phone-list__item-btn js-open-send-request-modal"
-                  data-tariff-name="Бронирование номера">
-            <span class="phone-list__item-phone">{{ this }}</span>
-            <img src="img/beautiful-phone-page/buy.svg" alt="" class="phone-list__item-icon">
-          </button>
-        </li>
-      {{/each}}
-    </ul>
-
-    <div class="phone-list__pagination-wrapper">
-      <div class="phone-list__select-block gl__sm-hide">
-        <span>Загружено:</span>
-        <div class="phone-list__select-container">
-          <label class="phone-list__select-wrapper">
-            <select class="phone-list__select js-custom-select">
-              {{#each page-groups }}
-                <option value="{{ this }}">{{ this }}</option>
-              {{/each}}
-            </select>
-          </label>
-        </div>
-        <span>из 120</span>
-      </div>
-
-      <div class="gl__sm-hide">
-        {{> common/pagination-page pageNumbers=pageNumbers }}
-      </div>
-
-      <button type="button" class="phone-list__upload-btn gl__main-btn mod-orange-transparent gl__sm-show">
-        Загрузить еще
-      </button>
-    </div>
+    {{> common/beautiful-phone }}
   </div>
 </section>
