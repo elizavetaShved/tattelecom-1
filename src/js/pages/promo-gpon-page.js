@@ -6,7 +6,7 @@ import { Map } from '../components/map';
 document.addEventListener('DOMContentLoaded', () => {
   const hostElem = document.querySelector('#gpon-map-host');
 
-  initSlider(4);
+  initSlider();
   validation();
   phoneMask();
 

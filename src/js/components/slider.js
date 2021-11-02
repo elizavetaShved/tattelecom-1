@@ -4,7 +4,28 @@ Swiper.use([Navigation, Pagination]);
 
 export class Slider {
 
-  constructor(sliderElem, numSlide, btnPrev, btnNext, paginationElem) {
+  constructor(sliderElem, numSlide, btnPrev, btnNext, paginationElem, customGap) {
+
+    const gap = customGap ? +customGap : 30;
+
+    let slidesPerView769;
+    let slidesPerView1025;
+
+    switch (true) {
+      case numSlide === 'auto':
+        slidesPerView769 = numSlide;
+        slidesPerView1025 = numSlide;
+        break;
+
+      case  numSlide > 2:
+        slidesPerView769 = numSlide - 1 + 0.2;
+        slidesPerView1025 = numSlide - 1;
+        break;
+
+      default:
+        slidesPerView769 = numSlide + 0.2;
+        slidesPerView1025 = numSlide;
+      }
 
     new Swiper(sliderElem, {
       slidesPerView: 1.2,
@@ -21,15 +42,15 @@ export class Slider {
       },
       breakpoints: {
         769: {
-          slidesPerView: numSlide > 2 ? numSlide - 1 + 0.2: numSlide + 0.2,
-          spaceBetween: 20
+          slidesPerView: slidesPerView769,
+          spaceBetween: gap - 10 > 16 ? gap - 10 : 16
         },
         1025: {
-          slidesPerView: numSlide > 2 ? numSlide - 1 : numSlide,
+          slidesPerView: slidesPerView1025,
         },
         1201: {
           slidesPerView: numSlide,
-          spaceBetween: 30
+          spaceBetween: gap
         }
       }
     })

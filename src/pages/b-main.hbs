@@ -2,7 +2,23 @@
   {{#content "main"}}
 
     <div class="b-main-page">
-      {{>common/b-fractional-slider/b-fractional-slider }}
+      {{> b-main-page/b-fractional-slider/b-fractional-slider slidesList=topSlider }}
+
+      {{> b-main-page/b-low-slider sectionTitle="Комплексные решения для бизнеса" slidesList=businessSolutions }}
+
+      {{> b-main-page/b-fractional-slider/b-fractional-slider sectionTitle="Связь" slidesList=connectionSlider }}
+
+      {{> b-main-page/b-high-slider sectionTitle="Цифровые сервисы" slidesList=digitalServices }}
+
+      {{> b-main-page/b-low-slider sectionTitle="Безопасность" slidesList=safetySlider }}
+
+      {{> b-main-page/b-normal-slider sectionTitle="Кейсы" slidesList=cases }}
+
+      {{> common/b-useful-articles sectionTitle="Кейсы" }}
+
+      {{> main-page/news-list }}
+
+      {{> common/b-support }}
     </div>
 
   {{/content}}

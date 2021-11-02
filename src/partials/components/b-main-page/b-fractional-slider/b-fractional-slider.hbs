@@ -1,17 +1,25 @@
 <section class="b-fractional-slider" id="b-fractional-slider-host">
-  <div class="gl-slider js-swiper-3">
+  {{#if sectionTitle }}
+    <div class="gl__page-content">
+      <h2 class="gl__title">
+        {{ this.sectionTitle }}
+      </h2>
+    </div>
+  {{/if}}
+
+  <div class="gl-slider js-swiper" data-swiper-slides-preview="auto" data-swiper-gap="20">
     {{> common/controls/b-btns-slider }}
     <div class="gl__page-content">
-      <div class="gl-slider__container swiper-container js-swiper-container-3">
+      <div class="b-fractional-slider__container gl-slider__container swiper-container js-swiper-container">
         <div class="gl-slider__wrapper swiper-wrapper">
           {{#each slidesList}}
             <div class="b-fractional-slider__slide swiper-slide">
               {{#if isFractionalList }}
                 {{#each isFractionalList }}
-                  {{>common/b-fractional-slider/b-fractional-slide }}
+                  {{>b-main-page/b-fractional-slider/b-fractional-slide }}
                 {{/each}}
               {{ else }}
-                {{>common/b-fractional-slider/b-fractional-slide }}
+                {{>b-main-page/b-fractional-slider/b-fractional-slide }}
               {{/if}}
             </div>
           {{/each}}
