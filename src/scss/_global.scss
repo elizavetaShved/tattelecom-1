@@ -7,35 +7,6 @@ body {
   }
 }
 
-a {
-  cursor: pointer;
-  transition: color 250ms;
-
-  &:hover {
-    color: var(--main-color);
-
-    svg {
-      fill: var(--main-color);
-    }
-  }
-}
-
-svg {
-  transition: fill 250ms;
-}
-
-button {
-  &:hover {
-    svg {
-      fill: var(--main-color);
-    }
-  }
-}
-
-::selection {
- @extend %select-orange-background;
-}
-
 .gl__page-content {
   padding-left: var(--page-content-padding);
   padding-right: var(--page-content-padding);
@@ -49,6 +20,67 @@ button {
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
+
+  a {
+    cursor: pointer;
+    transition: color 250ms;
+
+    &:hover {
+      color: var(--main-color);
+
+      svg {
+        fill: var(--main-color);
+      }
+    }
+  }
+
+  svg {
+    transition: fill 250ms;
+  }
+
+  button {
+    &:hover {
+      svg {
+        fill: var(--main-color);
+      }
+    }
+  }
+
+  ::selection {
+    @extend %select-orange-background;
+  }
+
+  &.mod-business {
+    a {
+      &:hover {
+        color: var(--main-color-business);
+
+        svg {
+          fill: var(--main-color-business);
+        }
+      }
+    }
+
+    button {
+      &:hover {
+        svg {
+          fill: var(--main-color-business);
+        }
+      }
+    }
+
+    textarea {
+      @extend %scroll;
+
+      &::-webkit-scrollbar-thumb {
+        background-color:var(--main-color-business);
+      }
+    }
+
+    ::selection {
+      @extend %select-business-background;
+    }
+  }
 }
 
 .gl__layout-content {

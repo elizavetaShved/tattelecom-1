@@ -25,10 +25,25 @@
   justify-content: space-between;
 
   padding: 2rem;
-  
+
   background: #FFFFFF;
-  box-shadow: 0px 0px 20px rgba(153, 152, 168, 0.17);
+  box-shadow: 0 0 20px rgba(153, 152, 168, 0.17);
   border-radius: 1rem;
+  transition: transform 300ms;
+
+  &:hover {
+    transform: translateY(-1rem);
+  }
+
+  &.mod-expanded {
+    .b-tariffs-item__services-list-container {
+      margin-bottom: .6rem;
+    }
+
+    .b-tariffs-item__cost-block {
+      margin-bottom: .6rem;
+    }
+  }
 
   &__name {
     margin-bottom: 3.2rem;
@@ -38,13 +53,39 @@
     line-height: 1.2;
   }
 
-  &__services-list {
+  &__caption {
+    margin-top: -2.6rem;
+    margin-bottom: 1.2rem;
+
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: normal;
+
+    color: var(--main-color-business);
+  }
+
+  &__services-list-container {
     margin-bottom: 2.8rem;
+  }
+
+  &__services-list-wrapper {
     padding-top: 1rem;
     padding-bottom: 2.4rem;
 
     border-top: solid 0.1rem var(--border-color);
-    border-bottom: solid 0.1rem var(--border-color);
+
+    &:last-child {
+      border-bottom: solid 0.1rem var(--border-color);
+    }
+  }
+
+  &__services-list-caption {
+    margin-bottom: 1rem;
+
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #ADADAD;
   }
 
   &__service {
@@ -67,6 +108,24 @@
     display: block;
 
     padding-left: 3.6rem;
+  }
+
+  &__plus {
+    padding: .6rem 1rem;
+    background-color: var(--border-color);
+    color: var(--main-color);
+    display: inline-block;
+
+    margin-bottom: 0.8rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__simple-signature {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
   }
 
   &__footer {
@@ -104,35 +163,35 @@
     width: 100%;
   }
 
-  &__secondary-btn {
-    position: relative;
-
-    margin-top: 1.4rem;
-    margin-left: auto;
-    margin-right: auto;
-
-    font-size: 1.6rem;
-    font-weight: 300;
-    line-height: 1.2;
-
-    transition: opacity 0.3s ease;
-
-    &:hover,
-    &:focus {
-      opacity: 0.8;
-    }
-    
-    &::after {
-      content: '';
-
-      position: absolute;
-      bottom: -0.2rem;
-      left: 0;
-
-      width: 100%;
-      height: 1px;
-
-      background-color: var(--main-text-color);
-    }
-  }
+  //&__secondary-btn {
+  //  position: relative;
+  //
+  //  margin-top: 1.4rem;
+  //  margin-left: auto;
+  //  margin-right: auto;
+  //
+  //  font-size: 1.6rem;
+  //  font-weight: 300;
+  //  line-height: 1.2;
+  //
+  //  transition: opacity 0.3s ease;
+  //
+  //  &:hover,
+  //  &:focus {
+  //    opacity: 0.8;
+  //  }
+  //
+  //  &::after {
+  //    content: '';
+  //
+  //    position: absolute;
+  //    bottom: -0.2rem;
+  //    left: 0;
+  //
+  //    width: 100%;
+  //    height: 1px;
+  //
+  //    background-color: var(--main-text-color);
+  //  }
+  //}
 }

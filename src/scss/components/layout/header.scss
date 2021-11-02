@@ -16,6 +16,7 @@
 
       &:hover {
         &:not(.mod-with-icons) {
+          color: #fff;
           border-top-color: #fff;
         }
 
@@ -261,7 +262,7 @@
   }
 
   &.mod-business {
-    color: #fff;
+    color: #fff !important;
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
     transition: border-bottom-color 250ms;
@@ -287,6 +288,14 @@
 .header__btn-search {
   padding: 1rem;
 
+  &:hover {
+    .header__btn-search-icon {
+      &.mod-business {
+        fill: var(--header-hover-business);
+      }
+    }
+  }
+
   @include for-fl-down {
     padding: .6rem;
   }
@@ -298,10 +307,6 @@
 
   &.mod-business {
     fill: #fff;
-
-    &:hover {
-      fill: var(--header-hover-business);
-    }
   }
 }
 
@@ -512,7 +517,7 @@
   font-size: 1.8rem;
   line-height: 2.4rem;
   letter-spacing: 0.01em;
-  color: #fff;
+  color: #fff !important;
   text-align: start;
   background-color: transparent;
   border-radius: 10px;
@@ -595,6 +600,10 @@
   margin-bottom: 3rem;
   display: block;
   white-space: nowrap;
+
+  &:hover {
+    color: var(--header-hover-business) !important;
+  }
 }
 
 .header__b-main-page-menu-btn {
@@ -662,7 +671,7 @@
   font-size: 1.6rem;
   line-height: 2.5rem;
   padding: 1rem;
-  color: #fff;
+  color: #fff !important;
   display: block;
 
   &:hover {

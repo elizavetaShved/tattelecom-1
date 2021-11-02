@@ -3,16 +3,12 @@
 // ######
 
 .b-page-banner {
+  padding: 5rem 0 10rem;
 
-  margin-bottom: 10rem;
-
-  @include for-lg-down {
-    margin-bottom: 6rem;
-  }
   @include for-sm-down {
-    margin-bottom: 4rem;
+    padding: 2.6rem 0 10rem;
   }
-  
+
   &__content {
     overflow: hidden;
 
@@ -20,7 +16,7 @@
 
     padding: 6rem 50% 6rem 9.2rem;
     border-radius: 2rem;
-    min-height: 21.5rem;
+    min-height: 35.4rem;
 
     @include for-bg-down {
       padding: 4rem;
@@ -61,7 +57,7 @@
     &.white {
       color: white;
     }
- 
+
     @include for-sm-down {
       margin-bottom: 1.2rem;
     }
@@ -74,6 +70,10 @@
     font-weight: 600;
     line-height: 1.2;
 
+    &.mod-blue {
+      color: var(--main-color-business);
+    }
+
     @include for-sm-down {
       font-size: var(--fs-h1);
     }
@@ -82,6 +82,10 @@
   // Появляется на мобилке
   &__mobile-title {
     display: none;
+
+    &.mod-blue {
+      color: var(--main-color-business);
+    }
   }
 
   &__cost-block {
@@ -136,6 +140,16 @@
 
     @include for-sm-down {
       font-size: var(--fs-t1);
+    }
+  }
+
+  &__desktop-subtitle {
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 1.2;
+
+    &.mod-blue {
+      color: var(--main-color-business);
     }
   }
 }

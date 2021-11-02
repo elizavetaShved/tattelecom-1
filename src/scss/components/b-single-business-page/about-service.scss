@@ -1,0 +1,15 @@
+.about-service {
+  padding-bottom: 5rem;
+
+  @include for-sm-down {
+    padding: 2.6rem 0;
+  }
+}
+
+.about-service__text {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+  max-width: 71rem;
+}

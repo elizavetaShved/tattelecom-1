@@ -1,0 +1,171 @@
+{
+  "isBusiness": true,
+  "title": "Комплекс услуг связи  (Единый бизнес)",
+  "script": "b-single-business-page",
+  "banner": {
+    "title": {
+      "accentText": "Единый бизнес",
+      "subtitle": "Все услуги связи в одном тарифе",
+      "colorClass": "white",
+      "colorSubtitleBlue": true,
+      "colorTextBlue": true
+    },
+    "image": "b-single-business.jpg",
+    "mobile": {
+      "title": "Тарифы <br /> мобильного <br /> интернета",
+      "image": "b-rates-mobile-internet-list--mobile.jpg"
+    }
+  },
+  "tariffs": [
+    {
+      "isExpandedCard": true,
+      "name": "Единый бизнес 1",
+      "caption": "Стоимость подключения по акции 1₽",
+      "conditionsList": [
+        {
+          "services": {
+            "caption": "Интернет",
+            "internet": "1 Мбит/с",
+            "plus": "+ Wi-Fi роутер"
+          }
+        },
+        {
+          "services": {
+            "caption": "Мобильная связь",
+            "internet": "5 ГБ 4G интернета",
+            "callsRT": "500 мин",
+            "SMS": "500 SMS",
+            "plus": "+ городской номер"
+          }
+        },
+        {
+          "services": {
+            "caption": "Мобильная связь",
+            "simpleSignature": "–"
+          }
+        }
+      ],
+      "cost": "1 500"
+    },
+    {
+      "isExpandedCard": true,
+      "name": "Единый бизнес 3",
+      "caption": "Стоимость подключения по акции 1₽",
+      "conditionsList": [
+        {
+          "services": {
+            "caption": "Интернет",
+            "internet": "3 Мбит/с",
+            "plus": "+ Wi-Fi роутер"
+          }
+        },
+        {
+          "services": {
+            "caption": "Мобильная связь",
+            "internet": "5 ГБ 4G интернета",
+            "callsRT": "500 мин",
+            "SMS": "500 SMS",
+            "plus": "+ городской номер"
+          }
+        },
+        {
+          "services": {
+            "caption": "Мобильная связь",
+            "simpleSignature": "1 номер"
+          }
+        }
+      ],
+      "cost": "2 300"
+    },
+    {
+      "isExpandedCard": true,
+      "name": "Единый бизнес 5",
+      "caption": "Стоимость подключения по акции 1₽",
+      "conditionsList": [
+        {
+          "services": {
+            "caption": "Интернет",
+            "internet": "5 Мбит/с",
+            "plus": "+ Wi-Fi роутер"
+          }
+        },
+        {
+          "services": {
+            "caption": "Мобильная связь",
+            "internet": "5 ГБ 4G интернета",
+            "callsRT": "500 мин",
+            "SMS": "500 SMS",
+            "plus": "+ городской номер"
+          }
+        },
+        {
+          "services": {
+            "caption": "Мобильная связь",
+            "simpleSignature": "1 номер"
+          }
+        }
+      ],
+      "cost": "3 000"
+    },
+    {
+      "isExpandedCard": true,
+      "name": "Единый бизнес 10",
+      "caption": "Стоимость подключения по акции 1₽",
+      "conditionsList": [
+        {
+          "services": {
+            "caption": "Интернет",
+            "internet": "10 Мбит/с",
+            "plus": "+ Wi-Fi роутер"
+          }
+        },
+        {
+          "services": {
+            "caption": "Мобильная связь",
+            "internet": "5 ГБ 4G интернета",
+            "callsRT": "500 мин",
+            "SMS": "500 SMS",
+            "plus": "+ городской номер"
+          }
+        },
+        {
+          "services": {
+            "caption": "Мобильная связь",
+            "simpleSignature": "1 номер"
+          }
+        }
+      ],
+      "cost": "4 000"
+    },
+    {
+      "isExpandedCard": true,
+      "name": "Единый бизнес 10",
+      "caption": "Стоимость подключения по акции 1₽",
+      "conditionsList": [
+        {
+          "services": {
+            "caption": "Интернет",
+            "internet": "10 Мбит/с",
+            "plus": "+ Wi-Fi роутер"
+          }
+        },
+        {
+          "services": {
+            "caption": "Мобильная связь",
+            "internet": "5 ГБ 4G интернета",
+            "callsRT": "500 мин",
+            "SMS": "500 SMS",
+            "plus": "+ городской номер"
+          }
+        },
+        {
+          "services": {
+            "caption": "Мобильная связь",
+            "simpleSignature": "1 номер"
+          }
+        }
+      ],
+      "cost": "4 000"
+    }
+  ]
+}
