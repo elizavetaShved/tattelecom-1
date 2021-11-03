@@ -1,3 +1,4 @@
+
 {{!-- Секция с баннеров в начале страницы с услугой --}}
 {{!-- Шаблон данных: --}}
 {{!-- "banner": {
@@ -58,8 +59,7 @@
               <p class="b-page-banner__subtitle {{banner.subtitle.colorClass}}">{{banner.subtitle.text}}</p>
             {{/if}}
             {{#if banner.largeSubtitle }}
-              <p
-                class="b-page-banner__large-subtitle {{banner.largeSubtitle.colorClass}}">{{{banner.largeSubtitle.text}}}</p>
+              <p class="b-page-banner__large-subtitle {{banner.largeSubtitle.colorClass}}">{{{banner.largeSubtitle.text}}}</p>
             {{/if}}
           </div>
           {{#if banner.cost }}
@@ -82,7 +82,6 @@
             </div>
           {{/if}}
         </div>
-        {{/if}}
         {{#if banner.label }}
         <span class="b-page-banner__label {{banner.title.colorClass}}">{{{banner.label}}}</span>
         {{/if}}
