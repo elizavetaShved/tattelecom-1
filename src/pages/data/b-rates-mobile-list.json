@@ -5,8 +5,7 @@
   "banner": {
     "title": {
       "accentText": "Корпоративная",
-      "text": "мобильная связь",
-      "colorClass": "white"
+      "text": "мобильная связь"
     },
     "cost": 150,
     "label": "Переходи на Летай за 0 руб",
@@ -19,54 +18,74 @@
   "tariffs": [
     {
       "name": "Корпорация-150",
-      "services": {
-        "calls": "Безлимитные звонки внутри корпоративной группы",
-        "internet": "5 ГБ 4G интернета",
-        "callsRT": "250 мин на номера РТ",
-        "SMS": "500 SMS"
-      },
+      "conditionsList": [
+        {
+          "services": {
+            "calls": "Безлимитные звонки внутри корпоративной группы",
+            "internet": "5 ГБ 4G интернета",
+            "callsRT": "250 мин на номера РТ",
+            "SMS": "500 SMS"
+          }
+        }
+      ],
       "cost": 150
     },
     {
       "name": "Корпорация-250",
-      "services": {
-        "calls": "Безлимитные звонки внутри корпоративной группы",
-        "internet": "10 ГБ 4G интернета",
-        "callsRT": "600 мин на номера РТ",
-        "SMS": "300 SMS"
-      },
+      "conditionsList": [
+        {
+          "services": {
+            "calls": "Безлимитные звонки внутри корпоративной группы",
+            "internet": "10 ГБ 4G интернета",
+            "callsRT": "600 мин на номера РТ",
+            "SMS": "300 SMS"
+          }
+        }
+      ],
       "cost": 350
     },
     {
       "name": "Корпорация-350",
-      "services": {
-        "calls": "Безлимитные звонки внутри корпоративной группы",
-        "internet": "1 ГБ 4G интернета",
-        "callsRT": "1000 мин на номера РТ",
-        "SMS": "300 SMS"
-      },
+      "conditionsList": [
+        {
+          "services": {
+            "calls": "Безлимитные звонки внутри корпоративной группы",
+            "internet": "1 ГБ 4G интернета",
+            "callsRT": "1000 мин на номера РТ",
+            "SMS": "300 SMS"
+          }
+        }
+      ],
       "cost": 150
     },
     {
       "name": "Корпорация-450",
-      "services": {
-        "calls": "Безлимитные звонки внутри корпоративной группы",
-        "internet": "20 ГБ 4G интернета",
-        "callsRT": "1000 мин на номера РТ",
-        "callsRF": "100 мин на номера РФ",
-        "SMS": "800 SMS"
-      },
+      "conditionsList": [
+        {
+          "services": {
+            "calls": "Безлимитные звонки внутри корпоративной группы",
+            "internet": "20 ГБ 4G интернета",
+            "callsRT": "1000 мин на номера РТ",
+            "callsRF": "100 мин на номера РФ",
+            "SMS": "800 SMS"
+          }
+        }
+      ],
       "cost": 150
     },
     {
       "name": "Корпорация-450",
-      "services": {
-        "calls": "Безлимитные звонки внутри корпоративной группы",
-        "internet": "20 ГБ 4G интернета",
-        "callsRT": "1000 мин на номера РТ",
-        "callsRF": "100 мин на номера РФ",
-        "SMS": "800 SMS"
-      },
+      "conditionsList": [
+        {
+          "services": {
+            "calls": "Безлимитные звонки внутри корпоративной группы",
+            "internet": "20 ГБ 4G интернета",
+            "callsRT": "1000 мин на номера РТ",
+            "callsRF": "100 мин на номера РФ",
+            "SMS": "800 SMS"
+          }
+        }
+      ],
       "cost": 150
     }
   ],
@@ -188,36 +207,6 @@
         "2. пункт 2",
         "3. пункт 3"
       ]
-    }
-  ],
-  "socials": [
-    {
-      "name": "Whatsapp",
-      "classMod": "whatsapp",
-      "iconName": "soc-whatsapp",
-      "iconWidth": "22",
-      "iconHeight": "22"
-    },
-    {
-      "name": "Telegram",
-      "classMod": "telegram",
-      "iconName": "soc-telegram",
-      "iconWidth": "23",
-      "iconHeight": "20"
-    },
-    {
-      "name": "VK",
-      "classMod": "vk",
-      "iconName": "soc-vk",
-      "iconWidth": "26",
-      "iconHeight": "15"
-    },
-    {
-      "name": "Facebook",
-      "classMod": "facebook",
-      "iconName": "soc-facebook",
-      "iconWidth": "10",
-      "iconHeight": "22"
     }
   ]
 }

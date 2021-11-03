@@ -18,37 +18,57 @@
   "tariffs": [
     {
       "name": "Бизнес Турбо 10Гб",
-      "services": {
-        "internet": "10 ГБ 4G интернета"
-      },
+      "conditionsList": [
+        {
+          "services": {
+            "internet": "10 ГБ 4G интернета"
+          }
+        }
+      ],
       "cost": 250
     },
     {
       "name": "Бизнес Турбо 20Гб",
-      "services": {
-        "internet": "20 ГБ 4G интернета"
-      },
+      "conditionsList": [
+        {
+          "services": {
+            "internet": "20 ГБ 4G интернета"
+          }
+        }
+      ],
       "cost": 350
     },
     {
       "name": "Бизнес Турбо 30Гб",
-      "services": {
-        "internet": "30 ГБ 4G интернета"
-      },
+      "conditionsList": [
+        {
+          "services": {
+            "internet": "30 ГБ 4G интернета"
+          }
+        }
+      ],
       "cost": 450
     },
     {
       "name": "Бизнес Турбо 40Гб",
-      "services": {
-        "internet": "40 ГБ 4G интернета"
-      },
+      "conditionsList": [
+        {
+          "services": {
+            "internet": "40 ГБ 4G интернета"
+          }
+        }
+      ],
       "cost": 550
     },
     {
       "name": "Бизнес Турбо 50Гб",
-      "services": {
-        "internet": "50 ГБ 4G интернета"
-      },
+      "conditionsList": [
+        {
+          "services": {
+            "internet": "50 ГБ 4G интернета"
+          }
+        }
+      ],
       "cost": 650
     }
   ],

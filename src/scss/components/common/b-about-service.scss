@@ -1,9 +1,8 @@
 .b-about-service {
+  padding-bottom: 5rem;
 
-  margin-bottom: 4rem;
-
-  @include for-bg-down {
-    margin-bottom: 2rem;
+  @include for-sm-down {
+    padding-bottom: 2.6rem;
   }
 
   &__content {
@@ -52,4 +51,12 @@
       padding-left: 4.2rem;
     }
   }
+}
+
+.b-about-service__text {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+  max-width: 71rem;
 }

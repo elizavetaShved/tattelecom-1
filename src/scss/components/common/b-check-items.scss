@@ -1,0 +1,44 @@
+.b-check-items {
+  padding: 5rem 0;
+
+  @include for-sm-down {
+    padding: 2.6rem 0;
+  }
+}
+
+.b-check-items__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem 3rem;
+
+  @include for-bg-down {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include for-sm-down {
+    grid-gap: 4rem 2rem;
+  }
+
+  @include for-xs-down {
+    grid-template-columns: 1fr;
+    grid-gap: 2.2rem;
+  }
+}
+
+.b-check-items__item {
+  display: flex;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+
+  @include for-sm-down {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+}
+
+.b-check-items__item-image {
+  height: 3.4rem;
+  margin-right: 2rem;
+}

@@ -11,6 +11,8 @@ export class Header {
   businessMainPageMenuContent;
   businessMainPageMenu;
 
+  isOpenPopup = false;
+
   constructor() {
     this.openBusinessPopUp = this.openBusinessPopUp.bind(this);
     this.closeBusinessPopUp = this.closeBusinessPopUp.bind(this);
@@ -32,7 +34,13 @@ export class Header {
 
     // уход с поп-ап
     document.addEventListener('mousemove', e => {
-      if (!checkExistParent(e.target, popupWrapperElem) && !checkExistParent(e.target, bottomBlockElem)) {
+      let isMovePopup = false;
+      this.popupContentElements.forEach(popup => {
+        if (checkExistParent(e.target, popup)) {
+          isMovePopup = true;
+        }
+      })
+      if (this.isOpenPopup && !isMovePopup && !checkExistParent(e.target, popupWrapperElem) && !checkExistParent(e.target, bottomBlockElem)) {
         this.closePopUp();
         if (this.isBusinessMainPageHeader) {
           if (window.pageYOffset > 0) {
@@ -84,11 +92,14 @@ export class Header {
         }
       }
     })
+
+    this.isOpenPopup = true;
   }
 
   // закрыть поп-ап
   closePopUp() {
     this.popupElem.classList.remove('mod-show');
+    this.isOpenPopup = false;
   }
 
   // открыть бизнес поп-ап (со всей навигацией)

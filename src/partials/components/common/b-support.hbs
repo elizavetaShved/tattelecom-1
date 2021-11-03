@@ -1,15 +1,3 @@
-{{!-- ###### --}}
-{{!-- Стандартные данные для socials: --}}
-{{!-- "socials": [
-    {
-      "name": "Whatsapp",
-      "classMod": "whatsapp",
-      "iconName": "soc-whatsapp",
-      "iconWidth": "22",
-      "iconHeight": "22"
-    }
-  ] --}}
-
 <section class="b-support">
   <div class="gl__page-content">
     <div class="b-support__content">
@@ -40,15 +28,42 @@
         <a class="b-support__contacts-tel" title="Позвонить" href="tel:+78432222222">(843) 238-00-00</a>
 
         <ul class="b-socials">
-          {{#each socials }}
           <li class="b-socials__item">
-            <a class="b-socials__link {{this.classMod}}" title="Написать в {{this.name}}" href="#">
-              <svg width="{{this.iconWidth}}" height="{{this.iconHeight}}" aria-hidden="true" class="b-socials__link-icon">
-                <use xlink:href="#{{this.iconName}}"></use>
+            <a class="b-socials__link" title="Написать в Whatsapp" href="#">
+              <span class="b-socials__link-content whatsapp">
+              <svg width="22" height="22" aria-hidden="true" class="b-socials__link-icon">
+                <use xlink:href="#soc-whatsapp"></use>
               </svg>
+              </span>
             </a>
           </li>
-          {{/each}}
+          <li class="b-socials__item">
+            <a class="b-socials__link" title="Написать в Telegram" href="#">
+              <span class="b-socials__link-content telegram">
+              <svg width="22" height="20" aria-hidden="true" class="b-socials__link-icon">
+                <use xlink:href="#soc-telegram"></use>
+              </svg>
+              </span>
+            </a>
+          </li>
+          <li class="b-socials__item">
+            <a class="b-socials__link" title="Написать в VK" href="#">
+              <span class="b-socials__link-content vk">
+              <svg width="26" height="16" aria-hidden="true" class="b-socials__link-icon">
+                <use xlink:href="#soc-vk"></use>
+              </svg>
+              </span>
+            </a>
+          </li>
+          <li class="b-socials__item">
+            <a class="b-socials__link" title="Написать в Facebook" href="#">
+              <span class="b-socials__link-content facebook">
+              <svg width="10" height="22" aria-hidden="true" class="b-socials__link-icon">
+                <use xlink:href="#soc-facebook"></use>
+              </svg>
+              </span>
+            </a>
+          </li>
         </ul>
       </div>
     </div>

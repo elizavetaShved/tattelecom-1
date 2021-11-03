@@ -12,7 +12,7 @@
   }
 } --}}
 
-<section class="b-page-banner {{#if banner.mobile}}mobile-version-available{{/if}}">
+<section class="b-page-banner {{#if banner.mobile}}mobile-version-available{{/if}} {{ banner.additionalClass }}">
   <div class="gl__page-content">
     <h2 class="gl__title">{{title}}</h2>
 
@@ -35,19 +35,28 @@
     <div class="b-page-banner__content">
       <picture>
         {{#if banner.mobile.image}}
-        <source srcset="img/common/b-page-banners/{{banner.mobile.image}}" media="(max-width: 559px)">
+          <source srcset="img/common/b-page-banners/{{banner.mobile.image}}" media="(max-width: 559px)">
         {{/if}}
         <img class="b-page-banner__image" src="img/common/b-page-banners/{{banner.image}}" alt="{{title}}">
       </picture>
       <div class="b-page-banner__text">
         <h3 class="b-page-banner__title {{banner.title.colorClass}}">
           {{#if banner.mobile.title}}
-          <span class="b-page-banner__mobile-title">{{{banner.mobile.title}}}</span>
+            <span class="b-page-banner__mobile-title {{#if
+              banner.title.colorTitleTextBlue }}mod-blue{{/if}}">{{{banner.mobile.title}}}</span>
           {{/if}}
           {{#if banner.title.accentText }}
-          <span class="b-page-banner__accent-title">{{{banner.title.accentText}}}</span>
+            <span class="b-page-banner__accent-title {{#if
+              banner.title.colorAccentTextBlue }}mod-blue{{/if}}">{{{banner.title.accentText}}}</span>
           {{/if}}
-          <span class="b-page-banner__desktop-title">{{{banner.title.text}}}</span>
+          {{#if banner.title.text }}
+            <span class="b-page-banner__desktop-title {{#if
+              banner.title.colorTextBlue }}mod-blue{{/if}}">{{{banner.title.text}}}</span>
+          {{/if}}
+          {{#if banner.title.subtitle }}
+            <span class="b-page-banner__desktop-subtitle {{#if
+              banner.title.colorSubtitleBlue }}mod-blue{{/if}}">{{{banner.title.subtitle}}}</span>
+          {{/if}}
         </h3>
         {{#if banner.subtitle}}
         <p class="b-page-banner__subtitle {{banner.subtitle.colorClass}}">{{banner.subtitle.text}}</p>
@@ -70,6 +79,18 @@
           <a href="" class="gl__main-btn mod-b-transparent {{this.classMod}}">{{this.text}}</a>
           {{/each}}
         </div>
+
+        {{#if banner.cost }}
+          <div class="b-page-banner__cost-block {{#if banner.isConstantlyConst }}mod-no-hide{{/if}}">
+            <span class="b-page-banner__cost-label">от</span>
+            <div class="b-page-banner__cost-bottom">
+              <span class="b-page-banner__cost">{{banner.cost}}</span>
+              <span class="b-page-banner__cost-label">₽/мес.</span>
+            </div>
+          </div>
+        {{/if}}
+        {{#if banner.label }}
+          <span class="b-page-banner__label">{{banner.label}}</span>
         {{/if}}
       </div>
     </div>

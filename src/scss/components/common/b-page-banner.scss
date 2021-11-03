@@ -3,16 +3,20 @@
 // ######
 
 .b-page-banner {
+  padding: 5rem 0 10rem;
 
-  margin-bottom: 10rem;
-
-  @include for-lg-down {
-    margin-bottom: 6rem;
-  }
   @include for-sm-down {
-    margin-bottom: 4rem;
+    padding: 2.6rem 0 10rem;
   }
-  
+
+  &.b-single-business {
+    .b-page-banner__title {
+      @include for-sm-down {
+        max-width: 50%;
+      }
+    }
+  }
+
   &__content {
     overflow: hidden;
 
@@ -20,7 +24,7 @@
 
     padding: 6rem 50% 6rem 9.2rem;
     border-radius: 2rem;
-    min-height: 21.5rem;
+    height: clamp(35.4rem, 38.4rem, 100000rem);
 
     @include for-bg-down {
       padding: 4rem;
@@ -48,10 +52,14 @@
   &__text {
     position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
 
   &__title {
-    margin-bottom: 2.8rem;
+    margin-bottom: 1rem;
 
     font-size: var(--fs-h1);
     font-weight: 600;
@@ -61,7 +69,7 @@
     &.white {
       color: white;
     }
- 
+
     @include for-sm-down {
       margin-bottom: 1.2rem;
     }
@@ -86,6 +94,10 @@
     font-weight: 600;
     line-height: 1.2;
 
+    &.mod-blue {
+      color: var(--main-color-business);
+    }
+
     @include for-sm-down {
       font-size: var(--fs-h1);
     }
@@ -94,6 +106,10 @@
   // Появляется на мобилке
   &__mobile-title {
     display: none;
+
+    &.mod-blue {
+      color: var(--main-color-business);
+    }
   }
 
   &__cost-block {
@@ -155,6 +171,21 @@
     display: flex;
 
     margin-top: 3.2rem;
+    
+  &__desktop-subtitle {
+    font-weight: 300;
+    font-size: 3.6rem;
+    line-height: 1.2;
+
+    @include for-sm-down {
+      font-weight: normal;
+      font-size: 2rem;
+      line-height: 2.8rem;
+    }
+
+    &.mod-blue {
+      color: var(--main-color-business);
+    }
   }
 }
 
@@ -174,11 +205,13 @@
     .b-page-banner__desktop-title,
     .b-page-banner__cost-block,
     .b-page-banner__label {
-      display: none;
+      &:not(.mod-no-hide) {
+        display: none;
+      }
     }
   }
 }
-
+ 
 // Костыль
 // Табы над баннером, есть на странице Роуминг
 .b-page-banner {
