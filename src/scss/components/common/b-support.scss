@@ -96,3 +96,13 @@
     letter-spacing: 0.015em;
   }
 }
+
+.b-support__form-block {
+  .application-consultation__form .gl-input__input.parsley-error {
+    border-color: var(--main-color);
+  }
+
+  .application-consultation__form .gl-input__wrapper .parsley-errors-list {
+    color: var(--main-color);
+  }
+}

@@ -20,7 +20,7 @@
 
     padding: 6rem 50% 6rem 9.2rem;
     border-radius: 2rem;
-    min-height: 21.5rem;
+    min-height: 30rem;
 
     @include for-bg-down {
       padding: 4rem;
@@ -94,6 +94,17 @@
   // Появляется на мобилке
   &__mobile-title {
     display: none;
+    max-width: 28rem;
+  }
+
+  &__mobile-label {
+    display: none;
+
+    margin-top: 4rem;
+
+    font-size: var(--fs-h2);
+    font-weight: 300;
+    line-height: 1.2;
   }
 
   &__cost-block {
@@ -149,6 +160,10 @@
     @include for-sm-down {
       font-size: var(--fs-t1);
     }
+
+    &.white {
+      color: white;
+    }
   }
 
   &__btns-container {
@@ -162,6 +177,10 @@
   @include for-xs-down {
     // Показываем мобильный заголовок
     .b-page-banner__mobile-title {
+      display: block;
+    }
+
+    .b-page-banner__mobile-label {
       display: block;
     }
 

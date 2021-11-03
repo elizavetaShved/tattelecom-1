@@ -47,6 +47,7 @@
 
     @include for-md-down {
       grid-template-columns: 1fr;
+      grid-gap: 2rem;
 
       margin-top: 2.4rem;
     }

@@ -42,3 +42,16 @@
     font-weight: 400;
   }
 }
+
+.b-services {
+  .services__item-wrapper.mod-painted .parsley-error {
+    --main-text-color: var(--main-color);
+  }
+  .gl-input__wrapper .parsley-errors-list {
+    --main-text-color: var(--main-color);
+
+    @include for-xs-down {
+      display: none;
+    }
+  }
+}
