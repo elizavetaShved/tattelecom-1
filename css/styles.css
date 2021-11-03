@@ -10106,6 +10106,12 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     line-height: 1.3;
     letter-spacing: 0.015em; }
 
+.b-support__form-block .application-consultation__form .gl-input__input.parsley-error {
+  border-color: var(--main-color); }
+
+.b-support__form-block .application-consultation__form .gl-input__wrapper .parsley-errors-list {
+  color: var(--main-color); }
+
 .b-socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10187,7 +10193,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
         padding: 4rem; } }
     @media screen and (max-width: 767px) {
       .b-page-banner__content {
-        padding: 2rem; } }
+        padding: 2rem;
+        min-height: 30rem; } }
   .b-page-banner__image {
     position: absolute;
     top: 0;
@@ -10256,7 +10263,14 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       .b-page-banner__accent-title {
         font-size: var(--fs-h1); } }
   .b-page-banner__mobile-title {
-    display: none; }
+    display: none;
+    max-width: 28rem; }
+  .b-page-banner__mobile-label {
+    display: none;
+    margin-top: 4rem;
+    font-size: var(--fs-h2);
+    font-weight: 300;
+    line-height: 1.2; }
   .b-page-banner__cost-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10306,6 +10320,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     @media screen and (max-width: 767px) {
       .b-page-banner__label {
         font-size: var(--fs-t1); } }
+    .b-page-banner__label.white {
+      color: white; }
   .b-page-banner__btns-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10314,6 +10330,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 
 @media screen and (max-width: 559px) {
   .b-page-banner.mobile-version-available .b-page-banner__mobile-title {
+    display: block; }
+  .b-page-banner.mobile-version-available .b-page-banner__mobile-label {
     display: block; }
   .b-page-banner.mobile-version-available .b-page-banner__accent-title:not(.no-hide-mobile),
   .b-page-banner.mobile-version-available .b-page-banner__desktop-title:not(.no-hide-mobile),
@@ -10525,6 +10543,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     @media screen and (max-width: 959px) {
       .b-request-for-connection__form {
         grid-template-columns: 1fr;
+        grid-gap: 2rem;
         margin-top: 2.4rem; } }
 
 .b-additional-services {
@@ -10734,6 +10753,15 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     margin-bottom: 0; }
   .b-services .services__item-info-text {
     font-weight: 400; }
+
+.b-services .services__item-wrapper.mod-painted .parsley-error {
+  --main-text-color: var(--main-color); }
+
+.b-services .gl-input__wrapper .parsley-errors-list {
+  --main-text-color: var(--main-color); }
+  @media screen and (max-width: 559px) {
+    .b-services .gl-input__wrapper .parsley-errors-list {
+      display: none; } }
 
 .b-about-service {
   padding-bottom: 5rem; }
