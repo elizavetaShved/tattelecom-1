@@ -10150,19 +10150,31 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       background-color: #4E71A8; }
 
 .b-page-banner {
-  margin-bottom: 10rem; }
+  padding: 5rem 0; }
   @media screen and (max-width: 1159px) {
     .b-page-banner {
-      margin-bottom: 6rem; } }
+      padding: 3rem 0; } }
   @media screen and (max-width: 767px) {
     .b-page-banner {
-      margin-bottom: 4rem; } }
+      padding: 2.6rem 0; } }
+  .b-page-banner.b-single-business .b-page-banner__title {
+    margin-bottom: 1rem; }
+  .b-page-banner.b-single-business .b-page-banner__mobile-title {
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    margin-bottom: 2rem;
+    max-width: 50%; }
+  .b-page-banner.b-virtual-ats .b-page-banner__title {
+    margin-bottom: 0.2rem; }
+  .b-page-banner.b-virtual-ats .b-page-banner__content {
+    padding-bottom: 2rem; }
   .b-page-banner__content {
     overflow: hidden;
     position: relative;
     padding: 6rem 50% 6rem 9.2rem;
     border-radius: 2rem;
-    min-height: 21.5rem; }
+    height: 36rem; }
     @media screen and (max-width: 1023px) {
       .b-page-banner__content {
         padding: 4rem; } }
@@ -10184,7 +10196,18 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
             user-select: none; }
   .b-page-banner__text {
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%; }
   .b-page-banner__title {
     margin-bottom: 2.8rem;
     font-size: var(--fs-h1);
@@ -10203,6 +10226,19 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     letter-spacing: 0.02em;
     line-height: 1.6; }
     .b-page-banner__subtitle.white {
+      color: white; }
+  .b-page-banner__large-subtitle {
+    color: var(--main-color-business);
+    font-size: 3rem;
+    line-height: 3.8rem;
+    font-weight: 300;
+    letter-spacing: 0.015em; }
+    @media screen and (max-width: 767px) {
+      .b-page-banner__large-subtitle {
+        font-size: 2rem;
+        line-height: 2.8rem;
+        font-weight: normal; } }
+    .b-page-banner__large-subtitle.white {
       color: white; }
   .b-page-banner__accent-title {
     display: block;
@@ -10227,6 +10263,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     @media screen and (max-width: 767px) {
       .b-page-banner__cost-block {
         margin-bottom: 0.8rem; } }
+    .b-page-banner__cost-block:last-child {
+      margin-bottom: 0; }
   .b-page-banner__cost-label {
     -ms-flex-negative: 0;
         flex-shrink: 0;
@@ -10270,10 +10308,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 @media screen and (max-width: 559px) {
   .b-page-banner.mobile-version-available .b-page-banner__mobile-title {
     display: block; }
-  .b-page-banner.mobile-version-available .b-page-banner__accent-title,
-  .b-page-banner.mobile-version-available .b-page-banner__desktop-title,
-  .b-page-banner.mobile-version-available .b-page-banner__cost-block,
-  .b-page-banner.mobile-version-available .b-page-banner__label {
+  .b-page-banner.mobile-version-available .b-page-banner__accent-title:not(.no-hide-mobile),
+  .b-page-banner.mobile-version-available .b-page-banner__desktop-title:not(.no-hide-mobile),
+  .b-page-banner.mobile-version-available .b-page-banner__cost-block:not(.no-hide-mobile),
+  .b-page-banner.mobile-version-available .b-page-banner__label:not(.no-hide-mobile) {
     display: none; } }
 
 .b-page-banner__tabs {
@@ -10322,13 +10360,13 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 
 .b-tariffs-list {
   overflow: hidden;
-  margin-bottom: 10rem; }
+  padding: 5rem 0; }
   @media screen and (max-width: 1159px) {
     .b-tariffs-list {
-      margin-bottom: 6rem; } }
+      padding: 3rem 0; } }
   @media screen and (max-width: 767px) {
     .b-tariffs-list {
-      margin-bottom: 4rem; } }
+      padding: 2.6rem 0; } }
   .b-tariffs-list__slider {
     overflow: visible; }
 
@@ -10444,13 +10482,13 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     width: 100%; }
 
 .b-request-for-connection {
-  margin-bottom: 10rem; }
+  padding: 5rem 0; }
   @media screen and (max-width: 1159px) {
     .b-request-for-connection {
-      margin-bottom: 6rem; } }
+      padding: 3rem 0; } }
   @media screen and (max-width: 767px) {
     .b-request-for-connection {
-      margin-bottom: 4rem; } }
+      padding: 2.6rem 0; } }
   .b-request-for-connection__content {
     padding: 5rem 11rem 6rem 9rem;
     background: -webkit-gradient(linear, right top, left top, color-stop(36%, #44A3DB), to(#007BC3));
@@ -10483,13 +10521,13 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
         margin-top: 2.4rem; } }
 
 .b-additional-services {
-  margin-bottom: 10rem; }
+  padding: 5rem 0; }
   @media screen and (max-width: 1159px) {
     .b-additional-services {
-      margin-bottom: 6rem; } }
+      padding: 3rem 0; } }
   @media screen and (max-width: 767px) {
     .b-additional-services {
-      margin-bottom: 4rem; } }
+      padding: 2.6rem 0; } }
   .b-additional-services--single {
     margin-bottom: 4rem; }
     @media screen and (max-width: 1159px) {
@@ -10858,12 +10896,15 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   margin-right: 2rem; }
 
 .b-mobile-communication {
+  margin-top: 5rem;
   margin-bottom: 10rem; }
   @media screen and (max-width: 1159px) {
     .b-mobile-communication {
+      margin-top: 3rem;
       margin-bottom: 6rem; } }
   @media screen and (max-width: 767px) {
     .b-mobile-communication {
+      margin-top: 2.5rem;
       margin-bottom: 4rem; } }
 
 .b-coverage-map {
@@ -10917,13 +10958,13 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 
 .b-useful-articles {
   overflow: hidden;
-  margin-bottom: 10rem; }
+  padding: 5rem 0; }
   @media screen and (max-width: 1159px) {
     .b-useful-articles {
-      margin-bottom: 6rem; } }
+      padding: 3rem 0; } }
   @media screen and (max-width: 767px) {
     .b-useful-articles {
-      margin-bottom: 4rem; } }
+      padding: 2.6rem 0; } }
   .b-useful-articles__slider {
     overflow: visible; }
 
