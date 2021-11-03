@@ -37,6 +37,28 @@
     }
   }
 
+  &.b-telephony {
+    .b-page-banner__content {
+      @include for-sm-up {
+        padding-right: 10%;
+      }
+    }
+
+    .b-page-banner__accent-title {
+      font-size: 3.8rem;
+      line-height: 5.6rem;
+
+      @include for-sm-down {
+        font-size: 2.8rem;
+        line-height: 4.6rem;
+      }
+    }
+
+    .b-page-banner__mobile-title {
+      max-width: none;
+    }
+  }
+
   &__content {
     overflow: hidden;
 
@@ -223,6 +245,14 @@
     display: flex;
 
     margin-top: 3.2rem;
+  }
+
+  &__btn {
+    @include for-xs-down {
+      width: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
   }
 }
 

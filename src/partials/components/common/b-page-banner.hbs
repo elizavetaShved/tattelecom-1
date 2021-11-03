@@ -74,10 +74,17 @@
           {{#if banner.label }}
             <span class="b-page-banner__label {{banner.title.colorClass}}">{{{banner.label}}}</span>
           {{/if}}
+          {{#if banner.links }}
+            <div class="b-page-banner__btns-container">
+              {{#each banner.links}}
+                <a href="" class="b-page-banner__btn gl__main-btn {{this.classMod}}">{{this.text}}</a>
+              {{/each}}
+            </div>
+          {{/if}}
           {{#if banner.btns }}
             <div class="b-page-banner__btns-container">
               {{#each banner.btns}}
-                <a href="" class="gl__main-btn mod-b-transparent {{this.classMod}}">{{this.text}}</a>
+                <button type="button" class="b-page-banner__btn gl__main-btn {{this.classMod}}">{{this.text}}</button>
               {{/each}}
             </div>
           {{/if}}

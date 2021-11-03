@@ -30,6 +30,17 @@
   box-shadow: 0 0 20px rgba(153, 152, 168, 0.17);
   border-radius: 1rem;
   transition: transform 300ms;
+  min-height: 41rem;
+
+  &.mod-select-card {
+    .b-tariffs-item__services-list-caption {
+      color: var(--main-text-color);
+    }
+
+    .b-tariffs-item__simple-signature {
+      font-weight: 600;
+    }
+  }
 
   &:hover {
     transform: translateY(-1rem);
@@ -74,8 +85,10 @@
 
     border-top: solid 0.1rem var(--border-color);
 
-    &:last-child {
-      border-bottom: solid 0.1rem var(--border-color);
+    &.border-bottom {
+      &:last-child {
+        border-bottom: solid 0.1rem var(--border-color);
+      }
     }
   }
 

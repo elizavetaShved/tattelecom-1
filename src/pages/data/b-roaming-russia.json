@@ -21,10 +21,10 @@
       "colorClass": "white"
     },
     "image": "b-roaming-russia.jpg",
-    "btns": [
+    "links": [
       {
         "text": "Подключить",
-        "classMod": ""
+        "classMod": "mod-b-transparent"
       }
     ],
     "mobile": {

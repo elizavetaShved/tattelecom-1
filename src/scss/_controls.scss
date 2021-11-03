@@ -9,6 +9,7 @@
   border: 1px solid transparent;
   transition: background-color 250ms, border-color 250ms, color 250ms !important;
   white-space: nowrap;
+  text-align: center;
 
   &:hover {
     background: var(--main-color-hover);
@@ -94,6 +95,16 @@
   &.mod-business-transparent {
     background-color: transparent;
     color: #fff;
+
+    &:hover {
+      background-color: var(--main-color-business);
+      color: #fff !important;
+    }
+  }
+
+  &.mod-business-white {
+    background-color: #fff;
+    color: var(--main-color-business);
 
     &:hover {
       background-color: var(--main-color-business);

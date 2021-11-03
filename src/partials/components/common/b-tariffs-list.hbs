@@ -1,21 +1,22 @@
 {{!-- Секция "Тарифы" --}}
 {{!-- Стандартный набор данных: --}}
 {{!-- "tariffs": [
-  {
-    "isExpandedCard": true, -- маргины у цену поменьше
-    "name": "Корпорация-150",
-    "conditionsList": [
       {
-        "services": {
-          "caption": "Мобильная связь", -- если есть заголово квсей группы
-          "calls": "Безлимитные звонки внутри корпоративной группы",
-          "internet": "5 ГБ 4G интернета",
-          "callsRT": "250 мин на номера РТ",
-          "simpleSignature": "text"
-       }
-    ],
-    "cost": 150
-  }
+        "isExpandedCard": true, -- маргины у цену поменьше
+        "isSelectCards": true, -- кнопка выбрать, вместо "подключить" и модификация шрифта
+        "name": "Корпорация-150",
+        "conditionsList": [
+          {
+            "services": {
+              "caption": "Мобильная связь", -- если есть заголово квсей группы
+              "calls": "Безлимитные звонки внутри корпоративной группы",
+              "internet": "5 ГБ 4G интернета",
+              "callsRT": "250 мин на номера РТ",
+              "simpleSignature": "text"
+           }
+        ],
+        "cost": 150
+      }
 ] --}}
 
 <section class="b-tariffs-list">
@@ -30,7 +31,7 @@
         <div class="gl-slider__container swiper-container js-swiper-container b-tariffs-list__slider">
           <ul class="gl-slider__wrapper swiper-wrapper" id="js-align-tariffs-heights">
             {{#each tariffs }}
-              <li class="swiper-slide b-tariffs-item {{#if isExpandedCard }}mod-expanded{{/if}}">
+              <li class="swiper-slide b-tariffs-item {{#if isExpandedCard }}mod-expanded{{/if}} {{#if this.isSelectCards }}mod-select-card{{/if}}">
                 <div class="b-tariffs-item__services-list-container">
                   <h3 class="b-tariffs-item__name">{{this.name}}</h3>
                   {{#if this.caption }}
@@ -38,7 +39,7 @@
                   {{/if}}
 
                   {{#each conditionsList }}
-                    <div class="b-tariffs-item__services-list-wrapper">
+                    <div class="b-tariffs-item__services-list-wrapper {{#if this.cost }}border-bottom{{/if}}">
                       {{#if this.services.caption}}
                         <div class="b-tariffs-item__services-list-caption">
                           {{ this.services.caption }}
@@ -100,20 +101,28 @@
                   {{/each}}
                 </div>
                 <div class="b-tariffs-item__footer">
-                  <div class="b-tariffs-item__cost-block">
-                    <span class="b-tariffs-item__cost">{{this.cost}}</span>
-                    <span class="b-tariffs-item__cost-label">₽/мес</span>
-                  </div>
-                  <button class="gl__main-btn mod-business b-tariffs-item__btn js-open-send-request-modal"
-                          type="button"
-                          data-tariff-name="{{this.name}}"
-                          data-prise="{{this.cost}}"
-                  >
-                    Подключить
-                  </button>
-                  <a href="/rates-mobile-item.html" class="gl__secondary-btn  {{#if this.isHit }}mod-white{{/if}}">
-                    Подробнее о тарифе
-                  </a>
+                  {{#if this.cost }}
+                    <div class="b-tariffs-item__cost-block">
+                      <span class="b-tariffs-item__cost">{{this.cost}}</span>
+                      <span class="b-tariffs-item__cost-label">₽/мес</span>
+                    </div>
+                  {{/if}}
+                  {{#if isSelectCards }}
+                    <button class="gl__main-btn mod-business b-tariffs-item__btn js-open-send-request-modal" type="button">
+                      Выбрать
+                    </button>
+                  {{ else }}
+                    <button class="gl__main-btn mod-business b-tariffs-item__btn js-open-send-request-modal"
+                            type="button"
+                            data-tariff-name="{{this.name}}"
+                            data-prise="{{this.cost}}"
+                    >
+                      Подключить
+                    </button>
+                    <a href="/rates-mobile-item.html" class="gl__secondary-btn  {{#if this.isHit }}mod-white{{/if}}">
+                      Подробнее о тарифе
+                    </a>
+                  {{/if}}
                 </div>
               </li>
             {{/each}}

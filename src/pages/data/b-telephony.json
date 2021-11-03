@@ -1,0 +1,87 @@
+{
+  "isBusiness": true,
+  "title": "Телефония ",
+  "script": "b-telephony-page",
+  "banner": {
+    "additionalClass": "b-telephony",
+    "title": {
+      "accentText": "Таттелеком – крупнейший оператор стационарной телефонной связи в Республике Татарстан"
+    },
+    "links": [
+      {
+        "text": "Оставить заявку на подключение",
+        "classMod": "mod-business-white"
+      }
+    ],
+    "image": "b-telephony.jpg",
+    "mobile": {
+      "title": "Таттелеком – крупнейший оператор стационарной телефонной связи в Республике Татарстан",
+      "image": "b-telephony--mobile.jpg"
+    }
+  },
+  "tariffs": [
+    {
+      "isExpandedCard": true,
+      "isSelectCards": true,
+      "name": "С повременной системой оплаты",
+      "conditionsList": [
+        {
+          "services": {
+            "caption": "абонентская плата за линию",
+            "simpleSignature": "288 ₽/мес."
+          }
+        },
+        {
+          "services": {
+            "caption": "стоимость минуты местного телефонного соединения",
+            "simpleSignature": "+ 0,84 ₽/мин."
+          }
+        }
+      ]
+    },
+    {
+      "isExpandedCard": true,
+      "isSelectCards": true,
+      "name": "С абонентской системой оплаты (Безлимитный)",
+      "conditionsList": [
+        {
+          "services": {
+            "caption": "абонентская плата за линию",
+            "simpleSignature": "288 ₽/мес."
+          }
+        },
+        {
+          "services": {
+            "caption": "абонентская плата за неограниченный объем местных соединений",
+            "simpleSignature": "+ 595,20 ₽/мес."
+          }
+        }
+      ]
+    },
+    {
+      "isExpandedCard": true,
+      "isSelectCards": true,
+      "name": "C комбинированной системой оплаты",
+      "conditionsList": [
+        {
+          "services": {
+            "caption": "исходящее SMS-сообщение",
+            "simpleSignature": "288 ₽/мес."
+          }
+        },
+        {
+          "services": {
+            "caption": "абонентская плата за 310 минут местных соединений (пакет)",
+            "simpleSignature": "+ 244,80 ₽/мес."
+          }
+        },
+        {
+          "services": {
+            "caption": "стоимость минуты местного телефонного соединения сверх пакета",
+            "simpleSignature": "+ 0,60 ₽/мин."
+          }
+        }
+      ]
+    }
+  ]
+}
