@@ -46,10 +46,6 @@ body {
     }
   }
 
-  ::selection {
-    @extend %select-orange-background;
-  }
-
   &.mod-business {
     background: var(--border-color);
 

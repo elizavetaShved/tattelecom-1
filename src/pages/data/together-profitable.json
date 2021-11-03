@@ -20,7 +20,10 @@
       "isWhiteBackground": true,
       "ratesName": "Вместе выгодно!",
       "ratesCaption": ["25% ежемесячно возвращаем на счет"],
-      "btnText": "Получить скидку"
+      "link": {
+        "text": "Получить скидку",
+        "url": "#steps-host"
+      }
     }
   ]
 }

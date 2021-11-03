@@ -148,7 +148,7 @@
     &:hover {
       border-color: #fff;
       background-color: #ffffff;
-      color: var(--main-color);
+      color: var(--main-color) !important;
     }
   }
 

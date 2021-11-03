@@ -7,11 +7,12 @@
   border-radius: 3px;
   color: #fff;
   border: 1px solid transparent;
-  transition: background-color 250ms, border-color 250ms;
+  transition: background-color 250ms, border-color 250ms, color 250ms !important;
   white-space: nowrap;
 
   &:hover {
     background: var(--main-color-hover);
+    color: #fff !important;
   }
 
   &.mod-transparent {
@@ -22,6 +23,7 @@
     &:hover {
       background: var(--main-color);
       border-color: transparent;
+      color: #fff !important;
     }
   }
 
@@ -32,7 +34,7 @@
 
     &:hover {
       background: #fff;
-      color: var(--main-color-hover);
+      color: var(--main-color-hover) !important;
     }
   }
 
@@ -43,7 +45,7 @@
 
     &:hover {
       background-color: var(--main-color);
-      color: #fff;
+      color: #fff !important;
     }
   }
 
@@ -54,7 +56,7 @@
 
     &:hover {
       background-color: transparent;
-      color: #fff;
+      color: #fff !important;
       border-color: #fff;
     }
   }
@@ -65,7 +67,7 @@
 
     &:hover {
       background-color: #fff;
-      color: #000;
+      color: #000 !important;
     }
   }
 
@@ -75,7 +77,7 @@
 
     &:hover {
       background-color: var(--main-grey-color);
-      color: #fff;
+      color: var(--main-text-color) !important;
     }
   }
 
@@ -85,6 +87,7 @@
 
     &:hover {
       background-color: var(--main-color-business-hover);
+      color: #fff !important;
     }
   }
 
@@ -94,6 +97,7 @@
 
     &:hover {
       background-color: var(--main-color-business);
+      color: #fff !important;
     }
   }
 }
@@ -105,6 +109,7 @@
   padding: 1.4rem;
   display: block;
   white-space: nowrap;
+  text-align: center;
 
   &.mod-white {
     color: #fff;

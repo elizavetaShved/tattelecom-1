@@ -15,8 +15,12 @@
       "img": "img/4g-services/rates-preview/rates-preview-desk.jpg",
       "imgTablet": "img/4g-services/rates-preview/rates-preview-tablet.jpg",
       "ratesName": "Разбавляем жару освежающими скидками",
-      "ratesCaption": ["Смартфоны Redmi со скидкой до 4 000 руб."],
-      "btnText": "Подробнее"
+      "ratesCaption": [
+        "Смартфоны Redmi со скидкой до 4 000 руб."
+      ],
+      "btn": {
+        "text": "Подробнее"
+      }
     }
   ],
   "filters": [

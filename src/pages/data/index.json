@@ -12,7 +12,10 @@
       "ratesCaption": [
         "Мощный интернет + ТВ 160 каналов"
       ],
-      "btnText": "Подробнее"
+      "link": {
+        "text": "Подробнее",
+        "url": "/rates-internet-item.html"
+      }
     }
   ],
   "rates-list": [

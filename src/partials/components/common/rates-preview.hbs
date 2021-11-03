@@ -14,10 +14,19 @@
             <div class="rates-preview__content-caption">{{ this }}</div>
           {{/each}}
         </div>
-        <button type="button" class="gl__main-btn rates-preview__btn js-open-send-request-modal"
-                data-tariff-name="Заявка на кешбек">
-          {{ this.btnText }}
-        </button>
+        {{#if this.link }}
+          <a href="{{ this.link.url }}" class="gl__main-btn rates-preview__btn">
+            {{ this.link.text }}
+          </a>
+        {{/if}}
+        {{#if this.btn }}
+          <button type="submit" class="gl__main-btn rates-preview__btn {{#if modal }}js-open-send-request-modal{{/if}}"
+                  {{#if this.modal.modalTitle }}data-tariff-name="{{ this.modal.modalTitle }}"{{/if}}
+                  {{#if this.modal.modalPrice }}data-prise="{{ this.modal.modalPrice }}"{{/if}}
+            >
+            {{ this.btn.text }}
+          </button>
+        {{/if}}
       </div>
 
       <div class="rates-preview__img-wrapper">

@@ -7,7 +7,9 @@
       "img": "img/promo-internet-page/rates-preview.png",
       "ratesName": "Безлимитный интернет 4G",
       "ratesCaption": ["за 240₽/мес"],
-      "btnText": "Подключить"
+      "btn": {
+        "text": "Подключить"
+      }
     }
   ],
   "promo-internet-info-list": [

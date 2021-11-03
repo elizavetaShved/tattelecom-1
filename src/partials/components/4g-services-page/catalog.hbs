@@ -5,7 +5,8 @@
     <div class="catalog__content">
       <div class="catalog__form-container gl__filter-container js-filter-container">
         <form class="catalog__form gl__filter js-modal-container">
-          <button type="button" class="gl__bg-show gl__filter-modal-close modal__btn-close js-filter-close" id="close-thanks-modal">
+          <button type="button" class="gl__bg-show gl__filter-modal-close modal__btn-close js-filter-close"
+                  id="close-thanks-modal">
             <svg width="32" height="32" aria-hidden="true" class="modal__close-icon">
               <use xlink:href="#close"></use>
             </svg>
@@ -93,8 +94,18 @@
               </div>
 
               <div class="product-item__btn-wrapper">
-                <button type="button" class="product-item__btn gl__main-btn">Заказать</button>
-                <button type="button" class="product-item__btn gl__secondary-btn gl__sm-hide">Подробнее</button>
+                <button type="button" class="product-item__btn gl__main-btn js-open-send-request-modal"
+                        data-tariff-name="Оформление заказа"
+                        data-product-img="{{ this.img }}"
+                        data-product-caption="Смартфон"
+                        data-product-value="{{ this.name }}"
+                        data-product-price="{{ this.price }}"
+                        data-point-issue>
+                  Заказать
+                </button>
+                <a href="/product.html" class="product-item__btn gl__secondary-btn gl__sm-hide">
+                  Подробнее
+                </a>
               </div>
             </li>
           {{/each}}
