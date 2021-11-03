@@ -53,6 +53,7 @@
 
     @include for-sm-down {
       padding: 2rem;
+      min-height: 30rem;
     }
   }
 
@@ -142,6 +143,17 @@
   // Появляется на мобилке
   &__mobile-title {
     display: none;
+    max-width: 28rem;
+  }
+
+  &__mobile-label {
+    display: none;
+
+    margin-top: 4rem;
+
+    font-size: var(--fs-h2);
+    font-weight: 300;
+    line-height: 1.2;
   }
 
   &__cost-block {
@@ -201,6 +213,10 @@
     @include for-sm-down {
       font-size: var(--fs-t1);
     }
+
+    &.white {
+      color: white;
+    }
   }
 
   &__btns-container {
@@ -214,6 +230,10 @@
   @include for-xs-down {
     // Показываем мобильный заголовок
     .b-page-banner__mobile-title {
+      display: block;
+    }
+
+    .b-page-banner__mobile-label {
       display: block;
     }
 
