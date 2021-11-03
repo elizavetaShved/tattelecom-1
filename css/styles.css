@@ -153,62 +153,66 @@
   border-radius: 3px;
   color: #fff;
   border: 1px solid transparent;
-  -webkit-transition: background-color 250ms, border-color 250ms;
-  transition: background-color 250ms, border-color 250ms;
+  -webkit-transition: background-color 250ms, border-color 250ms, color 250ms !important;
+  transition: background-color 250ms, border-color 250ms, color 250ms !important;
   white-space: nowrap; }
   .gl__main-btn:hover {
-    background: var(--main-color-hover); }
+    background: var(--main-color-hover);
+    color: #fff !important; }
   .gl__main-btn.mod-transparent {
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff; }
     .gl__main-btn.mod-transparent:hover {
       background: var(--main-color);
-      border-color: transparent; }
+      border-color: transparent;
+      color: #fff !important; }
   .gl__main-btn.mod-b-transparent {
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff; }
     .gl__main-btn.mod-b-transparent:hover {
       background: #fff;
-      color: var(--main-color-hover); }
+      color: var(--main-color-hover) !important; }
   .gl__main-btn.mod-orange-transparent {
     background-color: transparent;
     color: var(--main-color);
     border: 1px solid var(--main-color); }
     .gl__main-btn.mod-orange-transparent:hover {
       background-color: var(--main-color);
-      color: #fff; }
+      color: #fff !important; }
   .gl__main-btn.mod-white {
     background-color: #fff;
     color: var(--main-color);
     border: 1px solid transparent; }
     .gl__main-btn.mod-white:hover {
       background-color: transparent;
-      color: #fff;
+      color: #fff !important;
       border-color: #fff; }
   .gl__main-btn.mod-black {
     background-color: #000;
     color: #fff; }
     .gl__main-btn.mod-black:hover {
       background-color: #fff;
-      color: #000; }
+      color: #000 !important; }
   .gl__main-btn.mod-grey {
     background-color: var(--border-color);
     color: var(--main-text-color); }
     .gl__main-btn.mod-grey:hover {
       background-color: var(--main-grey-color);
-      color: #fff; }
+      color: var(--main-text-color) !important; }
   .gl__main-btn.mod-business {
     background-color: var(--main-color-business);
     color: #fff; }
     .gl__main-btn.mod-business:hover {
-      background-color: var(--main-color-business-hover); }
+      background-color: var(--main-color-business-hover);
+      color: #fff !important; }
   .gl__main-btn.mod-business-transparent {
     background-color: transparent;
     color: #fff; }
     .gl__main-btn.mod-business-transparent:hover {
-      background-color: var(--main-color-business); }
+      background-color: var(--main-color-business);
+      color: #fff !important; }
 
 .gl__secondary-btn {
   font-weight: 300;
@@ -216,7 +220,8 @@
   line-height: 1.8rem;
   padding: 1.4rem;
   display: block;
-  white-space: nowrap; }
+  white-space: nowrap;
+  text-align: center; }
   .gl__secondary-btn.mod-white {
     color: #fff; }
   .gl__secondary-btn:hover {
@@ -1945,19 +1950,19 @@ button.swiper-pagination-bullet {
     z-index: var(--z-index-header);
     pointer-events: auto; }
 
-::-moz-selection, .bread-crumbs__container.mod-orange ::-moz-selection, .rates-preview.mod-promo-internet ::-moz-selection, .services__item-wrapper.mod-painted ::-moz-selection, .order-call ::-moz-selection, .fly-top-block ::-moz-selection, .rates-list-internet__item.mod-orange ::-moz-selection {
+.bread-crumbs__container.mod-orange ::-moz-selection, .rates-preview.mod-promo-internet ::-moz-selection, .services__item-wrapper.mod-painted ::-moz-selection, .order-call ::-moz-selection, .fly-top-block ::-moz-selection, .rates-list-internet__item.mod-orange ::-moz-selection {
   background-color: #fff;
   color: var(--main-color); }
 
-::selection, .bread-crumbs__container.mod-orange ::selection, .rates-preview.mod-promo-internet ::selection, .services__item-wrapper.mod-painted ::selection, .order-call ::selection, .fly-top-block ::selection, .rates-list-internet__item.mod-orange ::selection {
+.bread-crumbs__container.mod-orange ::selection, .rates-preview.mod-promo-internet ::selection, .services__item-wrapper.mod-painted ::selection, .order-call ::selection, .fly-top-block ::selection, .rates-list-internet__item.mod-orange ::selection {
   background-color: #fff;
   color: var(--main-color); }
 
-.gl__layout-wrapper ::-moz-selection, .rates-preview.mod-promo-internet .rates-preview__content-caption::-moz-selection, .top-block ::-moz-selection, .fly-top-block__form ::-moz-selection {
+::-moz-selection, .rates-preview.mod-promo-internet .rates-preview__content-caption::-moz-selection, .top-block ::-moz-selection, .fly-top-block__form ::-moz-selection {
   background-color: var(--main-color);
   color: #fff; }
 
-.gl__layout-wrapper ::selection, .rates-preview.mod-promo-internet .rates-preview__content-caption::selection, .top-block ::selection, .fly-top-block__form ::selection {
+::selection, .rates-preview.mod-promo-internet .rates-preview__content-caption::selection, .top-block ::selection, .fly-top-block__form ::selection {
   background-color: var(--main-color);
   color: #fff; }
 
@@ -3590,7 +3595,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   .services__btn-submit.mod-transparent:hover {
     border-color: #fff;
     background-color: #ffffff;
-    color: var(--main-color); }
+    color: var(--main-color) !important; }
 
 @media screen and (max-width: 559px) {
   .services__btn-submit {
@@ -5822,11 +5827,13 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   font-size: 2rem;
   line-height: 2.4rem;
   letter-spacing: 0.015em;
-  margin-bottom: .4rem; }
+  margin-bottom: .4rem;
+  font-weight: 600; }
 
 .send-request__product-price-wrapper {
   font-size: 1.8rem;
-  line-height: 2.2rem; }
+  line-height: 2.2rem;
+  font-weight: 600; }
 
 .send-request__product-price {
   font-size: 2.6rem;

@@ -312,10 +312,9 @@
             <div class="rates-preview__content-caption-wrapper">
                 <div class="rates-preview__content-caption">25% ежемесячно возвращаем на счет</div>
             </div>
-            <button type="button" class="gl__main-btn rates-preview__btn js-open-send-request-modal"
-                    data-tariff-name="Заявка на кешбек">
-              Получить скидку
-            </button>
+              <a href="#steps-host" class="gl__main-btn rates-preview__btn">
+                Получить скидку
+              </a>
           </div>
     
           <div class="rates-preview__img-wrapper">
@@ -365,7 +364,8 @@
         </ul>
     
         <div class="steps__btn-wrapper">
-          <button type="button" class="gl__main-btn steps__btn">
+          <button type="button" class="gl__main-btn steps__btn js-open-send-request-modal"
+                  data-tariff-name="Заявка на кешбек">
             Оставить заявку на подключение
           </button>
         </div>
@@ -654,7 +654,7 @@
             </div>
     
             <div class="footer__top-grid-item mod-second-half-row">
-              <button type="button" class="gl__main-btn mod-transparent footer__btn ">Перейти в Летай</button>
+              <a href="/fly-old-number.html" class="gl__main-btn mod-transparent footer__btn ">Перейти в Летай</a>
             </div>
           </div>
         </div>
@@ -868,9 +868,11 @@
           </div>
   
           <div class="send-request__product-wrapper">
+            <!-- src добавится через js-->
+            <img src="" alt="" class="send-request__product-img">
             <div>
-              <div class="send-request__product-caption">тип</div>
-              <div class="send-request__product-value">модель</div>
+              <div class="send-request__product-caption"><!-- текст через js--></div>
+              <div class="send-request__product-value"><!-- текст через js--></div>
               <div class="send-request__product-price-wrapper">
                 <span class="send-request__product-price">0</span>₽
               </div>
