@@ -30,6 +30,7 @@ module.exports = {
     ['b-main-page']: './src/js/pages/b-main-page.js',
     ['b-roaming-russia']: './src/js/pages/b-roaming-russia.js',
     ['b-roaming-international']: './src/js/pages/b-roaming-international.js',
+    ['b-beautiful-phone']: './src/js/pages/b-beautiful-phone',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),
