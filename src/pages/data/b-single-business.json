@@ -6,15 +6,15 @@
     "additionalClass": "b-single-business",
     "title": {
       "accentText": "Единый бизнес",
-      "subtitle": "Все услуги связи в одном тарифе",
       "colorClass": "white",
-      "colorSubtitleBlue": true,
       "colorTextBlue": true
+    },
+    "largeSubtitle": {
+      "text": "Все услуги связи <br> в одном тарифе"
     },
     "image": "b-single-business.jpg",
     "mobile": {
       "title": "Единый бизнес",
-      "subtitle": "Все услуги связи в одном тарифе",
       "image": "b-single-business--mobile.jpg"
     }
   },

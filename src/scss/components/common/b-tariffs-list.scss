@@ -1,14 +1,14 @@
 .b-tariffs-list {
-
   overflow: hidden;
 
-  margin-bottom: 10rem;
+  padding: 5rem 0;
 
   @include for-lg-down {
-    margin-bottom: 6rem;
+    padding: 3rem 0;
   }
+
   @include for-sm-down {
-    margin-bottom: 4rem;
+    padding: 2.6rem 0;
   }
 
   &__content {

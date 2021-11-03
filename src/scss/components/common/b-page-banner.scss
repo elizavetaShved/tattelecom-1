@@ -3,16 +3,40 @@
 // ######
 
 .b-page-banner {
-
-  margin-bottom: 10rem;
+  padding: 5rem 0;
 
   @include for-lg-down {
-    margin-bottom: 6rem;
+    padding: 3rem 0;
   }
+
   @include for-sm-down {
-    margin-bottom: 4rem;
+    padding: 2.6rem 0;
   }
-  
+
+  &.b-single-business {
+    .b-page-banner__title {
+      margin-bottom: 1rem;
+    }
+
+    .b-page-banner__mobile-title {
+      font-weight: 600;
+      font-size: 3.2rem;
+      line-height: 3.8rem;
+      margin-bottom: 2rem;
+      max-width: 50%;
+    }
+  }
+
+  &.b-virtual-ats {
+    .b-page-banner__title {
+      margin-bottom: 0.2rem;
+    }
+
+    .b-page-banner__content {
+      padding-bottom: 2rem;
+    }
+  }
+
   &__content {
     overflow: hidden;
 
@@ -20,7 +44,8 @@
 
     padding: 6rem 50% 6rem 9.2rem;
     border-radius: 2rem;
-    min-height: 21.5rem;
+
+    height: 36rem;
 
     @include for-bg-down {
       padding: 4rem;
@@ -48,6 +73,11 @@
   &__text {
     position: relative;
     z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
 
   &__title {
@@ -61,7 +91,7 @@
     &.white {
       color: white;
     }
- 
+
     @include for-sm-down {
       margin-bottom: 1.2rem;
     }
@@ -73,6 +103,24 @@
     font-size: var(--fs-t2);
     letter-spacing: 0.02em;
     line-height: 1.6;
+
+    &.white {
+      color: white;
+    }
+  }
+
+  &__large-subtitle {
+    color: var(--main-color-business);
+    font-size: 3rem;
+    line-height: 3.8rem;
+    font-weight: 300;
+    letter-spacing: 0.015em;
+
+    @include for-sm-down {
+      font-size: 2rem;
+      line-height: 2.8rem;
+      font-weight: normal;
+    }
 
     &.white {
       color: white;
@@ -106,6 +154,10 @@
 
     @include for-sm-down {
       margin-bottom: 0.8rem;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
@@ -174,7 +226,9 @@
     .b-page-banner__desktop-title,
     .b-page-banner__cost-block,
     .b-page-banner__label {
-      display: none;
+      &:not(.no-hide-mobile) {
+        display: none;
+      }
     }
   }
 }
