@@ -58,7 +58,7 @@ export default function initSendRequestModal() {
       if (dataProductImg || dataProductCaption || dataProductValue || dataProductPrice) {
         modalProductWrapperElem.classList.add('mod-show');
 
-        if (dataProductImg) {
+        if (dataProductImg && modalProductImgElem) {
           modalProductImgElem.setAttribute('src', dataProductImg);
         }
 

@@ -18,7 +18,13 @@
       "ratesCaption": [
         "за 240 руб/мес"
       ],
-      "btnText": "Подробнее"
+      "btn": {
+        "text": "Подробнее"
+      },
+      "modal": {
+        "modalTitle": "Безлимитный интернет 4G",
+        "modalPrice": "240"
+      }
     }
   ],
   "cashback": [

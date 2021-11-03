@@ -37,12 +37,16 @@ export class Modal {
     }
 
     // todo убрать с фронта
-    if (btnSubmitForm) {
-      btnSubmitForm.onclick = () => {
+    if (formModal) {
+      formModal.onsubmit = event => {
+        event.preventDefault();
+
         if ($(formModal).parsley().isValid()) {
           this.onCloseModal();
           this.modalThanksElem.classList.add('mod-show');
           document.addEventListener('click', this.checkClickByModalThanks);
+
+          return false;
         }
       }
     }
