@@ -2,13 +2,18 @@
 {{!-- Стандартный набор данных: --}}
 {{!-- "tariffs": [
   {
+    "isExpandedCard": true, -- маргины у цену поменьше
     "name": "Корпорация-150",
-    "services": {
-      "calls": "Безлимитные звонки внутри корпоративной группы",
-      "internet": "5 ГБ 4G интернета",
-      "callsRT": "250 мин на номера РТ",
-      "SMS": "500 SMS"
-    },
+    "conditionsList": [
+      {
+        "services": {
+          "caption": "Мобильная связь", -- если есть заголово квсей группы
+          "calls": "Безлимитные звонки внутри корпоративной группы",
+          "internet": "5 ГБ 4G интернета",
+          "callsRT": "250 мин на номера РТ",
+          "simpleSignature": "text"
+       }
+    ],
     "cost": 150
   }
 ] --}}
@@ -87,7 +92,7 @@
                         {{/if}}
                         {{#if this.services.simpleSignature }}
                           <li class="b-tariffs-item__simple-signature">
-                            {{ this.services.simpleSignature }}
+                            {{{ this.services.simpleSignature }}}
                           </li>
                         {{/if}}
                       </ul>
