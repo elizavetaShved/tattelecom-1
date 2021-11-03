@@ -155,7 +155,8 @@
   border: 1px solid transparent;
   -webkit-transition: background-color 250ms, border-color 250ms, color 250ms !important;
   transition: background-color 250ms, border-color 250ms, color 250ms !important;
-  white-space: nowrap; }
+  white-space: nowrap;
+  text-align: center; }
   .gl__main-btn:hover {
     background: var(--main-color-hover);
     color: #fff !important; }
@@ -211,6 +212,12 @@
     background-color: transparent;
     color: #fff; }
     .gl__main-btn.mod-business-transparent:hover {
+      background-color: var(--main-color-business);
+      color: #fff !important; }
+  .gl__main-btn.mod-business-white {
+    background-color: #fff;
+    color: var(--main-color-business); }
+    .gl__main-btn.mod-business-white:hover {
       background-color: var(--main-color-business);
       color: #fff !important; }
 
@@ -10211,6 +10218,18 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     margin-bottom: 0.2rem; }
   .b-page-banner.b-virtual-ats .b-page-banner__content {
     padding-bottom: 2rem; }
+  @media screen and (min-width: 768px) {
+    .b-page-banner.b-telephony .b-page-banner__content {
+      padding-right: 10%; } }
+  .b-page-banner.b-telephony .b-page-banner__accent-title {
+    font-size: 3.8rem;
+    line-height: 5.6rem; }
+    @media screen and (max-width: 767px) {
+      .b-page-banner.b-telephony .b-page-banner__accent-title {
+        font-size: 2.8rem;
+        line-height: 4.6rem; } }
+  .b-page-banner.b-telephony .b-page-banner__mobile-title {
+    max-width: none; }
   .b-page-banner__content {
     overflow: hidden;
     position: relative;
@@ -10356,6 +10375,11 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     display: -ms-flexbox;
     display: flex;
     margin-top: 3.2rem; }
+  @media screen and (max-width: 559px) {
+    .b-page-banner__btn {
+      width: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem; } }
 
 @media screen and (max-width: 559px) {
   .b-page-banner.mobile-version-available .b-page-banner__mobile-title {
@@ -10443,7 +10467,12 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   -webkit-transition: -webkit-transform 300ms;
   transition: -webkit-transform 300ms;
   transition: transform 300ms;
-  transition: transform 300ms, -webkit-transform 300ms; }
+  transition: transform 300ms, -webkit-transform 300ms;
+  min-height: 41rem; }
+  .b-tariffs-item.mod-select-card .b-tariffs-item__services-list-caption {
+    color: var(--main-text-color); }
+  .b-tariffs-item.mod-select-card .b-tariffs-item__simple-signature {
+    font-weight: 600; }
   .b-tariffs-item:hover {
     -webkit-transform: translateY(-1rem);
             transform: translateY(-1rem); }
@@ -10469,7 +10498,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     padding-top: 1rem;
     padding-bottom: 2.4rem;
     border-top: solid 0.1rem var(--border-color); }
-    .b-tariffs-item__services-list-wrapper:last-child {
+    .b-tariffs-item__services-list-wrapper.border-bottom:last-child {
       border-bottom: solid 0.1rem var(--border-color); }
   .b-tariffs-item__services-list-caption {
     margin-bottom: 1rem;
