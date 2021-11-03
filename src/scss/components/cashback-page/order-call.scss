@@ -1,6 +1,4 @@
 .order-call {
-  color: #fff;
-
   ::selection {
     @extend %select-white-background;
   }
@@ -52,10 +50,34 @@
   }
 }
 
+.order-call__b-connect {
+  @include for-sm-up {
+    .order-call__content {
+      padding: 6rem 8.8rem;
+    }
+
+    .order-call__title {
+      font-size: 38px;
+      line-height: 49px;
+      letter-spacing: 0.015em;
+      max-width: 80%;
+
+      @include for-bg-down {
+        max-width: 70%;
+      }
+    }
+
+    .order-call__text {
+      max-width: 68%;
+    }
+  }
+}
+
 .order-call-page-content {
   @include for-sm-down {
     padding: 0;
     margin: 0;
+    border-radius: 0;
   }
 }
 
@@ -64,6 +86,17 @@
   background: linear-gradient(99.54deg, #FA7007 3.54%, #FA4907 73.5%);
   border-radius: 10px;
   padding: 8.2rem 4rem 4.2rem 18.2rem;
+  color: #fff;
+
+  &.mod-absolute-image-desk {
+    position: relative;
+    z-index: 1;
+  }
+
+  &.mod-grey {
+    background: #EAEBEB;
+    color: var(--main-text-color);
+  }
 
   @include for-lg-down {
     padding: 6.2rem 2rem;
@@ -71,7 +104,6 @@
 
   @include for-sm-down {
     flex-direction: column-reverse;
-    border-radius: 0;
     padding: 2rem;
   }
 }
@@ -107,6 +139,16 @@
   margin-left: 4rem;
   height: 39rem;
   object-fit: contain;
+
+  &.mod-absolute-desk {
+    @include for-sm-up {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      z-index: -1;
+    }
+  }
 
   @include for-md-down {
     height: 30rem;

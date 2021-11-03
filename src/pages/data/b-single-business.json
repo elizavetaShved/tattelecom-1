@@ -18,6 +18,9 @@
       "image": "b-single-business--mobile.jpg"
     }
   },
+  "about-service": {
+    "text": "Все услуги связи в одном тарифе. Интернет для бизнеса, корпоративная мобильная связь и телефония для обработки звонков клиентов."
+  },
   "tariffs": [
     {
       "isExpandedCard": true,

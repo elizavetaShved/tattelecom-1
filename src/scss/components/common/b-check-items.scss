@@ -8,8 +8,19 @@
 
 .b-check-items__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-gap: 4rem 3rem;
+
+  &.column-3 {
+    @include for-bg-up {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &.column-2 {
+    @include for-bg-up {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 
   @include for-bg-down {
     grid-template-columns: repeat(2, 1fr);
@@ -27,6 +38,9 @@
 
 .b-check-items__item {
   display: flex;
+}
+
+.b-check-items__item-text {
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 2.6rem;

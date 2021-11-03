@@ -35,6 +35,7 @@ module.exports = {
     ['b-beautiful-phone']: './src/js/pages/b-beautiful-phone',
     ['b-single-business-page']: './src/js/pages/b-single-business-page.js',
     ['b-virtual-ats-page']: './src/js/pages/b-virtual-ats-page.js',
+    ['b-connect-page']: './src/js/pages/b-connect-page.js',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

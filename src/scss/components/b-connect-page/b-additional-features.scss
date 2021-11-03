@@ -1,0 +1,45 @@
+.b-additional-features {
+  padding: 5rem 0;
+
+  @include for-lg-down {
+    padding: 3rem 0;
+  }
+
+  @include for-sm-down {
+    padding: 2.6rem 0;
+  }
+}
+
+.b-additional-features__file-link {
+  margin-top: 3.4rem;
+  display: inline-flex;
+  align-items: center;
+
+  &:hover {
+    .b-additional-features__file-link-title {
+      color: var(--main-color-business);
+    }
+  }
+}
+
+.b-additional-features__file-link-icon {
+  height: 4rem;
+  fill: var(--main-grey-color);
+  margin-right: 2.2rem;
+}
+
+.b-additional-features__file-link-title {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.02em;
+  color: var(--main-grey-color);
+  text-transform: uppercase;
+  transition: color 250ms;
+}
+
+.b-additional-features__file-link-subtitle {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+}
