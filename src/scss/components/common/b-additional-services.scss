@@ -44,6 +44,26 @@
     }
   }
 
+  &__header {
+    display: flex;
+
+    .b-additional-services__btn-label {
+      margin-right: 0;
+      margin-left: 3.2rem;
+
+      @include for-lg-down {
+        margin-left: 1.6rem;
+      }
+    }
+
+    .b-additional-services__btn {
+      @include for-lg-down {
+        width: 100%;
+        justify-content: flex-start;
+      }
+    }
+  }
+
   &__btn {
     display: flex;
     align-items: center;
@@ -117,6 +137,14 @@
 
     &:last-of-type {
       margin-bottom: 0;
+    }
+
+    &.mod-cost {
+      margin-bottom: 2.4rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
   }
 

@@ -1,0 +1,147 @@
+.b-roaming-international-options {
+
+  margin-bottom: 10rem;
+
+  @include for-bg-down {
+    margin-bottom: 6rem;
+  }
+
+  @include for-sm-down {
+    margin-bottom: 4rem;
+  }
+
+  &__inner {
+    margin-right: 6rem;
+
+    @include for-bg-down {
+      margin-right: 0;
+    }
+  }
+
+  &__slider {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+
+    @include for-bg-down {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  &__slide {
+    position: relative;
+    z-index: 1;
+
+    padding: 3.2rem;
+
+    box-shadow: 0 0 2rem rgba(153, 152, 168, 0.17);
+    border-radius: 1rem;
+
+    overflow: hidden;
+
+    @include for-sm-down {
+      padding: 1.2rem 1.6rem;
+    }
+
+    &:nth-child(3n + 1) .b-roaming-international-options__slide-icon {
+      top: -15.4rem;
+      right: -5.2rem;
+    }
+    &:nth-child(3n + 2) .b-roaming-international-options__slide-icon {
+      top: -12.4rem;
+      right: 1rem;
+    }
+    &:nth-child(3n + 3) .b-roaming-international-options__slide-icon {
+      top: -7.2rem;
+      right: -3rem;
+    }
+  }
+
+  &__slide-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 19.1rem;
+    height: 64.7rem;
+
+    stroke: rgba(0,0,0,0.5);
+  }
+
+  &__slide-title {
+    position: relative;
+    z-index: 3;
+
+    margin-bottom: 3rem;
+
+    font-size: var(--fs-h3);
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  &__slide-cost-block {
+    position: relative;
+    z-index: 3;
+
+    margin-bottom: 1rem;
+  }
+
+  &__slide-cost {
+    line-height: 1rem;
+    font-size: var(--fs-h1);
+    font-weight: 400;
+  }
+
+  &__slide-cost-label {
+    line-height: 1rem;
+    font-size: var(--fs-t1);
+    font-weight: 400;
+  }
+
+  &__slide-btn {
+    align-self: flex-end;
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+
+    &:focus,
+    &:hover {
+      .b-roaming-international-options__slide-btn-label {
+        color: var(--main-color-hover);
+      }
+
+      .b-roaming-international-options__slide-btn-icon {
+        fill: var(--main-color-hover);
+      }
+    }
+  }
+
+  &__slide-btn-label {
+    margin-right: 1rem;
+
+    font-size: var(--fs-t2);
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    font-weight: 400;
+    color: var(--main-color-2);
+
+    transition: color 0.3s ease;
+  }
+
+  &__slide-btn-icon {
+    width: 1.6rem;
+    height: 2.9rem;
+
+    fill: var(--main-color-2);
+
+    transition: fill 0.3s ease;
+  }
+}

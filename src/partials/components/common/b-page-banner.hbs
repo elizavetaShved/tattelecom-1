@@ -16,6 +16,22 @@
   <div class="gl__page-content">
     <h2 class="gl__title">{{title}}</h2>
 
+    {{!-- КОСТЫЛЬ --}}
+    {{!-- Табы над баннером, есть на странице Роуминг --}}
+    {{!-- Стили в конце файла b-page-banner.scss --}}
+    {{#if banner.tabs }}
+    <ul class="b-page-banner__tabs">
+      {{#each banner.tabs }}
+      <li class="b-page-banner__tab">
+        <a class="b-page-banner__tab-link {{#if this.active}}active{{/if}}" href="#">{{this.name}}</a>
+      </li>
+      {{/each}}
+    </ul>
+    {{/if}}
+    {{!-- /КОСТЫЛЬ --}}
+
+    {{!-- Если заголовка нет, баннер вообще не выводим - КОСТЫЛЬ! --}}
+    {{#if banner.title}}
     <div class="b-page-banner__content">
       <picture>
         {{#if banner.mobile.image}}
@@ -42,6 +58,28 @@
               banner.title.colorSubtitleBlue }}mod-blue{{/if}}">{{{banner.title.subtitle}}}</span>
           {{/if}}
         </h3>
+        {{#if banner.subtitle}}
+        <p class="b-page-banner__subtitle {{banner.subtitle.colorClass}}">{{banner.subtitle.text}}</p>
+        {{/if}}
+        {{#if banner.cost }}
+        <div class="b-page-banner__cost-block">
+          <span class="b-page-banner__cost-label">от</span>
+          <div class="b-page-banner__cost-bottom">
+            <span class="b-page-banner__cost">{{banner.cost}}</span>
+            <span class="b-page-banner__cost-label">₽/мес.</span>
+          </div>
+        </div>
+        {{/if}}
+        {{#if banner.label }}
+        <span class="b-page-banner__label">{{banner.label}}</span>
+        {{/if}}
+        {{#if banner.btns }}
+        <div class="b-page-banner__btns-container">
+          {{#each banner.btns}}
+          <a href="" class="gl__main-btn mod-b-transparent {{this.classMod}}">{{this.text}}</a>
+          {{/each}}
+        </div>
+
         {{#if banner.cost }}
           <div class="b-page-banner__cost-block {{#if banner.isConstantlyConst }}mod-no-hide{{/if}}">
             <span class="b-page-banner__cost-label">от</span>
@@ -56,5 +94,6 @@
         {{/if}}
       </div>
     </div>
+    {{/if }}
   </div>
 </section>

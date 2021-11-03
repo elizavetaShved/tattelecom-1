@@ -89,6 +89,22 @@
       }
     ]
   },
+  "city-select": [
+    {
+      "name": "fly-top-block-city",
+      "selectTitle": "Укажите город проживания",
+      "isWhiteTitle": true,
+      "isSearch": true,
+      "iconSearchRight": true,
+      "required": true,
+      "placeholder": "город",
+      "options": [
+        "Казань",
+        "Чебоксары",
+        "Набережные Челны"
+      ]
+    }
+  ],
   "additionalService": {
     "name": "Дополнительные услуги",
     "serviceList": [

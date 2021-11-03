@@ -1,0 +1,17 @@
+{
+  "isBusiness": true,
+  "title": "Красивый номер",
+  "script": "b-beautiful-phone",
+  "banner": {
+    "title": {
+      "accentText": "Красивый номер в подарок",
+      "text": "при подключении мобильной связи",
+      "colorClass": "white"
+    },
+    "image": "b-roaming-russia.jpg",
+    "mobile": {
+      "title": "Уникальная услуга «Мультироуминг» от Летай",
+      "image": "b-roaming-russia--mobile.jpg"
+    }
+  }
+}

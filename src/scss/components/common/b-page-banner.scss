@@ -75,6 +75,18 @@
     }
   }
 
+  &__subtitle {
+    color: var(--main-color-business);
+    font-weight: 300;
+    font-size: var(--fs-t2);
+    letter-spacing: 0.02em;
+    line-height: 1.6;
+
+    &.white {
+      color: white;
+    }
+  }
+
   &__accent-title {
     display: block;
 
@@ -155,6 +167,11 @@
     }
   }
 
+  &__btns-container {
+    display: flex;
+
+    margin-top: 3.2rem;
+    
   &__desktop-subtitle {
     font-weight: 300;
     font-size: 3.6rem;
@@ -191,6 +208,68 @@
       &:not(.mod-no-hide) {
         display: none;
       }
+    }
+  }
+}
+ 
+// Костыль
+// Табы над баннером, есть на странице Роуминг
+.b-page-banner {
+  &__tabs {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 4rem;
+
+    @include for-sm-down {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__tab {
+    flex-shrink: 0;
+
+    margin-right: 2.8rem;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @include for-sm-down {
+      margin-right: 1.4rem;
+    }
+  }
+
+  &__tab-link {
+    display: block;
+
+    padding: 2rem 7rem;
+    margin-bottom: 1.4rem;
+
+    border: 0.1rem solid var(--main-grey-color);
+    border-radius: 10px;
+
+    color: var(--main-grey-color);
+    font-size: var(--fs-h3);
+    line-height: 1.5;
+    letter-spacing: 0.015em;
+
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s ease;
+
+    @include for-sm-down {
+      padding: 1.4rem 1rem;
+    }
+
+    &.active {
+      background-color: var(--main-color-business);
+      color: white;
+    }
+
+    &:hover,
+    &:focus {
+      color: white;
+      background-color: var(--main-color-business-hover);
+      border-color: var(--main-color-business-hover);
     }
   }
 }
