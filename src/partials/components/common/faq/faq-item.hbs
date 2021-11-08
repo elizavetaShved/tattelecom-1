@@ -1,11 +1,20 @@
 {{#each faq }}
-  <li class="faq__item {{#if noBorder }}mod-no-border{{/if}}">
-    <button type="button" class="faq__item-btn-wrapper gl__drop-menu-btn js-drop-menu-btn">
-      <svg width="24" height="24" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
-        <use xlink:href="#arrow-down"></use>
-      </svg>
-      {{ this.title }}
-    </button>
+  <li class="faq__item {{#if noBorder }}mod-no-border{{/if}} mod-business">
+    {{#if singleQuestion }}
+      <button type="button" class="faq__item-btn-wrapper mod-single-question gl__drop-menu-btn js-drop-menu-btn">
+        {{ this.title }}
+        <svg width="32" height="32" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
+          <use xlink:href="#arrow-down"></use>
+        </svg>
+      </button>
+    {{else }}
+      <button type="button" class="faq__item-btn-wrapper gl__drop-menu-btn js-drop-menu-btn">
+        <svg width="24" height="24" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
+          <use xlink:href="#arrow-down"></use>
+        </svg>
+        {{ this.title }}
+      </button>
+    {{/if}}
 
     {{#if this.text }}
       <div class="faq__item-content-wrapper gl__drop-menu-container js-drop-menu-container">

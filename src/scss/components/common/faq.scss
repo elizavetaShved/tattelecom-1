@@ -35,6 +35,14 @@
   &:not(.mod-no-border) {
     border-bottom: 2px solid var(--border-color);
   }
+
+  &.mod-business {
+    .faq__item-btn-wrapper {
+      &:hover {
+        color: var(--main-color-business);
+      }
+    }
+  }
 }
 
 .faq__item-btn-wrapper {
@@ -46,9 +54,21 @@
   font-weight: 700;
   text-align: start;
   width: 100%;
+  transition: color 250ms;
 
   &:hover {
     color: var(--main-color);
+  }
+
+  &.mod-single-question {
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+
+    .faq__item-btn-icon {
+      height: 3.2rem;
+      margin-right: 0;
+      margin-left: 1.8rem;
+    }
   }
 }
 
