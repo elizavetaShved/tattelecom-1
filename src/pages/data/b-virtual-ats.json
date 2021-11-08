@@ -26,6 +26,7 @@
   },
   "advantages-opportunities": {
     "titleComponent": "Для кого",
+    "sliderNum": 3,
     "items": [
       {
         "title": "Стартап или новая компания",

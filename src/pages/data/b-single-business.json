@@ -175,6 +175,7 @@
   ],
   "advantages-opportunities": {
     "titleComponent": "Преимущества и возможности",
+    "sliderNum": 3,
     "items": [
       {
         "title": "Комплекс услуг от одного оператора",

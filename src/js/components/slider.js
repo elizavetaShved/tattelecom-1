@@ -6,6 +6,8 @@ export class Slider {
 
   constructor(sliderElem, numSlide, btnPrev, btnNext, paginationElem, customGap) {
 
+    numSlide = +numSlide;
+
     const gap = customGap ? +customGap : 30;
 
     let slidesPerView769;

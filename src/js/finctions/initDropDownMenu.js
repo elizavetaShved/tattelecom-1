@@ -1,6 +1,7 @@
 // добавить классы:
 // gl__drop-menu-btn и js-drop-menu-btn - на кнопку открытия
-// js-drop-menu-leave-open - на кнопку открытия, если НЕ нужно автозарываение неактивных
+// data-drop-menu-open - на кнопку открытия, если нужно, чтоб изначально меню было раскрыто
+// js-drop-menu-leave-open - на кнопку открытия, если НЕ нужно автозакрывание неактивных
 // gl__drop-menu-container и js-drop-menu-container - обернуть меню в этот класс (для max-height = 0)
 // gl__drop-menu и js-drop-menu - на само меню
 // gl__drop-menu-icon- на иконку стрелки
@@ -24,6 +25,10 @@
   }
 
   linksTitleElements.forEach((btn, i) => {
+    if (btn.hasAttribute('data-drop-menu-open')) {
+      onOpen(btn, menuContainerElements[i], menuElements[i]);
+    }
+
     btn.onclick = () => {
       if (btn.className.includes('mod-open')) {
         onClose(btn, menuContainerElements[i]);

@@ -1,0 +1,42 @@
+<section class="faq" id="faq-host">
+  <div class="gl__page-content">
+    <div class="faq__title-wrapper gl__title-head gl__drop-menu-btn js-drop-menu-btn" data-drop-menu-open>
+      <h2 class="faq__title gl__title">Дополнительные услуги</h2>
+
+      <svg width="24" height="24" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
+        <use xlink:href="#arrow-down"></use>
+      </svg>
+    </div>
+
+    <ul class="faq__list-wrapper">
+      {{#each faq }}
+        {{#if this.flexs }}
+          <li class="faq__item">
+            <div class="gl__drop-menu-container js-drop-menu-container">
+              <ul class="faq__services-wrapper gl__drop-menu js-drop-menu">
+                {{#each this.flexs }}
+                  <li class="faq__services-item">
+                    <div class="faq__services-caption">{{ this.caption }}</div>
+                    {{#if this.value }}
+                      <div class="faq__services-value">{{ this.value }}</div>
+                    {{/if}}
+                  </li>
+                {{/each}}
+              </ul>
+            </div>
+          </li>
+        {{/if}}
+
+        {{#if this.text }}
+          <div class="faq__item-content-wrapper mod-big-margin gl__drop-menu-container js-drop-menu-container">
+            <div class="gl__drop-menu js-drop-menu">
+              {{#each this.text }}
+                <p class="faq__item-content-text">{{ this }}</p>
+              {{/each}}
+            </div>
+          </div>
+        {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+</section>

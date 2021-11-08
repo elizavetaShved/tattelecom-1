@@ -1,0 +1,39 @@
+<section class="b-connection">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      Подключение
+    </h2>
+
+    <div class="b-connection__content-wrapper">
+      {{#each b-connection }}
+        <div class="b-connection__item-wrapper">
+          <div class="b-connection__item-caption">
+            {{ this.caption }}
+          </div>
+          <div class="b-connection__item-title">
+            {{ this.title }}
+          </div>
+
+          <ul class="b-connection__price-list">
+            {{#each rows }}
+              <li class="b-connection__price-item">
+                <div class="b-connection__price-item-caption">
+                  {{ this.caption }}
+                </div>
+                <div class="b-connection__price-item-value">
+                  {{ this.value }}
+                </div>
+              </li>
+            {{/each}}
+          </ul>
+
+          {{#if hint }}
+            <div class="b-connection__item-hint">
+              {{ this.hint }}
+            </div>
+          {{/if}}
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

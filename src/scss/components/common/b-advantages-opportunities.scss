@@ -30,6 +30,11 @@
   align-items: center;
   min-height: 17rem;
 
+  &.mod-narrow {
+    min-height: 10.6rem;
+    background: linear-gradient(101.01deg, #0396FF 8.09%, #25A4FF 51.47%, #7BC8FF 93.43%);
+  }
+
   @include for-sm-down {
     border-radius: 10px;
     padding: 1.6rem;

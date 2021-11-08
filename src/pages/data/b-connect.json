@@ -28,6 +28,7 @@
   ],
   "advantages-opportunities": {
     "titleComponent": "Для кого",
+    "sliderNum": 3,
     "items": [
       {
         "title": "100% и мгновенная доставка и получение документов",
