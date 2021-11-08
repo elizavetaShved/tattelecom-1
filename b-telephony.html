@@ -580,13 +580,14 @@
       </div>
     </section>
 
-
     <!--
     "advantages-opportunities": {
         "titleComponent": "Преимущества и возможности",
+        "sliderNum": "количество слайдов в превью",
         "items": [
           {
             "title": "Комплекс услуг от одного оператора",
+            "narrowHeader": true, - если нужна узкая и светлая шапка
             "img": "img/b-single-business/complex.svg",
                 // если обычный текст
             "text": "Один договор на все услуги связи и единый лицевой счет"
@@ -602,11 +603,11 @@
     <section class="b-advantages-opportunities" id="b-advantages-opportunities-host">
       <div class="gl__page-content">
         <h2 class="gl__title">
-          
+          Преимущества
         </h2>
       </div>
     
-      <div class="gl-slider js-swiper" data-swiper-slides-preview="3">
+      <div class="gl-slider js-swiper" data-swiper-slides-preview="2">
         <div class="gl__bg-hide">
           <button type="button" class="gl-slider__slider-btn mod-prev js-slider-btn-prev gl-slider__b-slider-btn">
             <svg class="gl-slider__slider-btn-icon" width="26" height="26" aria-hidden="true">
@@ -622,9 +623,680 @@
         <div class="gl__page-content">
           <div class="b-advantages-opportunities__container gl-slider__container swiper-container js-swiper-container">
             <div class="gl-slider__wrapper swiper-wrapper">
+                <div class="b-advantages-opportunities__slide swiper-slide">
+                  <div class="b-advantages-opportunities__slide-header mod-narrow">
+                    <img src="img/b-telephony-page/advantages-opportunities-1.png" alt="" class="b-advantages-opportunities__slide-img">
+                    <div class="b-advantages-opportunities__slide-title">
+                      Доступность и оперативность
+                    </div>
+                  </div>
+                  <div class="b-advantages-opportunities__slide-content">
+                      <ul class="b-advantages-opportunities__slide-list">
+                          <li class="b-advantages-opportunities__slide-item">
+                            <svg width="20" height="16" aria-hidden="true"
+                                 class="b-advantages-opportunities__slide-item-icon">
+                              <use xlink:href="#checkbox-checked"></use>
+                            </svg>
+                            Качественно и без задержек проводить работы по монтажу и настройке телефонных линий
+                          </li>
+                          <li class="b-advantages-opportunities__slide-item">
+                            <svg width="20" height="16" aria-hidden="true"
+                                 class="b-advantages-opportunities__slide-item-icon">
+                              <use xlink:href="#checkbox-checked"></use>
+                            </svg>
+                            Предоставлять услуги связи даже в самых отдаленных участках региона
+                          </li>
+                          <li class="b-advantages-opportunities__slide-item">
+                            <svg width="20" height="16" aria-hidden="true"
+                                 class="b-advantages-opportunities__slide-item-icon">
+                              <use xlink:href="#checkbox-checked"></use>
+                            </svg>
+                            Заботиться о развитии вашего бизнеса и постоянно совершенствовать услуги и сервисы
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="b-advantages-opportunities__slide swiper-slide">
+                  <div class="b-advantages-opportunities__slide-header mod-narrow">
+                    <img src="img/b-telephony-page/advantages-opportunities-2.png" alt="" class="b-advantages-opportunities__slide-img">
+                    <div class="b-advantages-opportunities__slide-title">
+                      Максимум возможностей
+                    </div>
+                  </div>
+                  <div class="b-advantages-opportunities__slide-content">
+                      <ul class="b-advantages-opportunities__slide-list">
+                          <li class="b-advantages-opportunities__slide-item">
+                            <svg width="20" height="16" aria-hidden="true"
+                                 class="b-advantages-opportunities__slide-item-icon">
+                              <use xlink:href="#checkbox-checked"></use>
+                            </svg>
+                            Надежность, быстрота соединений и высокое качество связи
+                          </li>
+                          <li class="b-advantages-opportunities__slide-item">
+                            <svg width="20" height="16" aria-hidden="true"
+                                 class="b-advantages-opportunities__slide-item-icon">
+                              <use xlink:href="#checkbox-checked"></use>
+                            </svg>
+                            Сокращение расходов на междугородную и международную связь
+                          </li>
+                          <li class="b-advantages-opportunities__slide-item">
+                            <svg width="20" height="16" aria-hidden="true"
+                                 class="b-advantages-opportunities__slide-item-icon">
+                              <use xlink:href="#checkbox-checked"></use>
+                            </svg>
+                            Сохранение телефонного номера при переезде
+                          </li>
+                          <li class="b-advantages-opportunities__slide-item">
+                            <svg width="20" height="16" aria-hidden="true"
+                                 class="b-advantages-opportunities__slide-item-icon">
+                              <use xlink:href="#checkbox-checked"></use>
+                            </svg>
+                            Выбор удобных дополнительных сервисов телефонии;
+                          </li>
+                          <li class="b-advantages-opportunities__slide-item">
+                            <svg width="20" height="16" aria-hidden="true"
+                                 class="b-advantages-opportunities__slide-item-icon">
+                              <use xlink:href="#checkbox-checked"></use>
+                            </svg>
+                            Возможность организации многоканальных городских номеров
+                          </li>
+                      </ul>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq-host">
+      <div class="gl__page-content">
+        <div class="faq__title-wrapper gl__title-head gl__drop-menu-btn js-drop-menu-btn" data-drop-menu-open>
+          <h2 class="faq__title gl__title">Дополнительные услуги</h2>
+    
+          <svg width="24" height="24" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
+            <use xlink:href="#arrow-down"></use>
+          </svg>
+        </div>
+    
+        <ul class="faq__list-wrapper">
+              <li class="faq__item">
+                <div class="gl__drop-menu-container js-drop-menu-container">
+                  <ul class="faq__services-wrapper gl__drop-menu js-drop-menu">
+                      <li class="faq__services-item">
+                        <div class="faq__services-caption">Бронирование телефонного номера, абонентской линии по заявлению абонента на срок не более 3 месяцев (с возможностью повторного бронирования)</div>
+                          <div class="faq__services-value">288 ₽/мес.</div>
+                      </li>
+                      <li class="faq__services-item">
+                        <div class="faq__services-caption">Приостановление оказания услуг местной телефонной связи по заявлению абонента (по истечению срока приостановления услуг местной телефонной связи подключение осуществляется без дополнительной платы)</div>
+                          <div class="faq__services-value">52,80 ₽</div>
+                      </li>
+                      <li class="faq__services-item">
+                        <div class="faq__services-caption">Постоянный запрет исходящей связи по заявлению абонента (услуга предоставляется при наличии технической возможности)</div>
+                          <div class="faq__services-value">50,40 ₽/мес.</div>
+                      </li>
+                      <li class="faq__services-item">
+                        <div class="faq__services-caption">Обеспечение постоянного ограничения исходящей МГ или МН телефонной связи</div>
+                          <div class="faq__services-value">50,40 ₽/мес.</div>
+                      </li>
+                      <li class="faq__services-item">
+                        <div class="faq__services-caption">Тарифы указаны с учетом НДС</div>
+                      </li>
+                  </ul>
+                </div>
+              </li>
+    
+        </ul>
+      </div>
+    </section>
+
+    <section class="b-services-links">
+      <div class="gl__page-content">
+    
+        <ul class="b-services-links__grid-wrapper">
+            <li class="b-services-links__grid-item">
+              <a href="" class="b-services-links__grid-link">
+                <span class="b-services-links__grid-link-text">
+                  Междугородная и международная связь
+                </span>
+              </a>
+            </li>
+            <li class="b-services-links__grid-item">
+              <a href="" class="b-services-links__grid-link">
+                <span class="b-services-links__grid-link-text">
+                  Виртуальная АТС
+                </span>
+              </a>
+            </li>
+            <li class="b-services-links__grid-item">
+              <a href="" class="b-services-links__grid-link">
+                <span class="b-services-links__grid-link-text">
+                  Сервисы телефонной связи
+                </span>
+              </a>
+            </li>
+            <li class="b-services-links__grid-item">
+              <a href="" class="b-services-links__grid-link">
+                <span class="b-services-links__grid-link-text">
+                  IP Телефония
+                </span>
+              </a>
+            </li>
+            <li class="b-services-links__grid-item">
+              <a href="" class="b-services-links__grid-link">
+                <span class="b-services-links__grid-link-text">
+                  SIP-телефония
+                </span>
+              </a>
+            </li>
+            <li class="b-services-links__grid-item">
+              <a href="" class="b-services-links__grid-link">
+                <span class="b-services-links__grid-link-text">
+                  SIP-trunk
+                </span>
+              </a>
+            </li>
+            <li class="b-services-links__grid-item">
+              <a href="" class="b-services-links__grid-link">
+                <span class="b-services-links__grid-link-text">
+                  Цифровые потоки Е1 ISDN PRI
+                </span>
+              </a>
+            </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--
+    "advantages-opportunities": {
+        "titleComponent": "Преимущества и возможности",
+        "sliderNum": "количество слайдов в превью",
+        "items": [
+          {
+            "title": "Комплекс услуг от одного оператора",
+            "narrowHeader": true, - если нужна узкая и светлая шапка
+            "img": "img/b-single-business/complex.svg",
+                // если обычный текст
+            "text": "Один договор на все услуги связи и единый лицевой счет"
+                // если список с галочками
+            "list": [
+              "элемент 1",
+              "элемент 2"
+            ]
+          }
+    }
+    -->
+    
+    <section class="b-advantages-opportunities" id="b-advantages-opportunities-host">
+      <div class="gl__page-content">
+        <h2 class="gl__title">
+          Преимущества
+        </h2>
+      </div>
+    
+      <div class="gl-slider js-swiper" data-swiper-slides-preview="2">
+        <div class="gl__bg-hide">
+          <button type="button" class="gl-slider__slider-btn mod-prev js-slider-btn-prev gl-slider__b-slider-btn">
+            <svg class="gl-slider__slider-btn-icon" width="26" height="26" aria-hidden="true">
+              <use xlink:href="#arrow-left"></use>
+            </svg>
+          </button>
+          <button type="button" class="gl-slider__slider-btn mod-next js-slider-btn-next gl-slider__b-slider-btn">
+            <svg class="gl-slider__slider-btn-icon" width="26" height="26" aria-hidden="true">
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="gl__page-content">
+          <div class="b-advantages-opportunities__container gl-slider__container swiper-container js-swiper-container">
+            <div class="gl-slider__wrapper swiper-wrapper">
+                <div class="b-advantages-opportunities__slide swiper-slide">
+                  <div class="b-advantages-opportunities__slide-header mod-narrow">
+                    <img src="img/b-telephony-page/advantages-opportunities-1.png" alt="" class="b-advantages-opportunities__slide-img">
+                    <div class="b-advantages-opportunities__slide-title">
+                      Доступность и оперативность
+                    </div>
+                  </div>
+                  <div class="b-advantages-opportunities__slide-content">
+                      <ul class="b-advantages-opportunities__slide-list">
+                          <li class="b-advantages-opportunities__slide-item">
+                            <svg width="20" height="16" aria-hidden="true"
+                                 class="b-advantages-opportunities__slide-item-icon">
+                              <use xlink:href="#checkbox-checked"></use>
+                            </svg>
+                            Качественно и без задержек проводить работы по монтажу и настройке телефонных линий
+                          </li>
+                          <li class="b-advantages-opportunities__slide-item">
+                            <svg width="20" height="16" aria-hidden="true"
+                                 class="b-advantages-opportunities__slide-item-icon">
+                              <use xlink:href="#checkbox-checked"></use>
+                            </svg>
+                            Предоставлять услуги связи даже в самых отдаленных участках региона
+                          </li>
+                          <li class="b-advantages-opportunities__slide-item">
+                            <svg width="20" height="16" aria-hidden="true"
+                                 class="b-advantages-opportunities__slide-item-icon">
+                              <use xlink:href="#checkbox-checked"></use>
+                            </svg>
+                            Заботиться о развитии вашего бизнеса и постоянно совершенствовать услуги и сервисы
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="b-advantages-opportunities__slide swiper-slide">
+                  <div class="b-advantages-opportunities__slide-header mod-narrow">
+                    <img src="img/b-telephony-page/advantages-opportunities-2.png" alt="" class="b-advantages-opportunities__slide-img">
+                    <div class="b-advantages-opportunities__slide-title">
+                      Максимум возможностей
+                    </div>
+                  </div>
+                  <div class="b-advantages-opportunities__slide-content">
+                      <ul class="b-advantages-opportunities__slide-list">
+                          <li class="b-advantages-opportunities__slide-item">
+                            <svg width="20" height="16" aria-hidden="true"
+                                 class="b-advantages-opportunities__slide-item-icon">
+                              <use xlink:href="#checkbox-checked"></use>
+                            </svg>
+                            Надежность, быстрота соединений и высокое качество связи
+                          </li>
+                          <li class="b-advantages-opportunities__slide-item">
+                            <svg width="20" height="16" aria-hidden="true"
+                                 class="b-advantages-opportunities__slide-item-icon">
+                              <use xlink:href="#checkbox-checked"></use>
+                            </svg>
+                            Сокращение расходов на междугородную и международную связь
+                          </li>
+                          <li class="b-advantages-opportunities__slide-item">
+                            <svg width="20" height="16" aria-hidden="true"
+                                 class="b-advantages-opportunities__slide-item-icon">
+                              <use xlink:href="#checkbox-checked"></use>
+                            </svg>
+                            Сохранение телефонного номера при переезде
+                          </li>
+                          <li class="b-advantages-opportunities__slide-item">
+                            <svg width="20" height="16" aria-hidden="true"
+                                 class="b-advantages-opportunities__slide-item-icon">
+                              <use xlink:href="#checkbox-checked"></use>
+                            </svg>
+                            Выбор удобных дополнительных сервисов телефонии;
+                          </li>
+                          <li class="b-advantages-opportunities__slide-item">
+                            <svg width="20" height="16" aria-hidden="true"
+                                 class="b-advantages-opportunities__slide-item-icon">
+                              <use xlink:href="#checkbox-checked"></use>
+                            </svg>
+                            Возможность организации многоканальных городских номеров
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq-host">
+      <div class="gl__page-content">
+        <div class="faq__title-wrapper gl__title-head gl__drop-menu-btn js-drop-menu-btn" data-drop-menu-open>
+          <h2 class="faq__title gl__title">Дополнительные услуги</h2>
+    
+          <svg width="24" height="24" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
+            <use xlink:href="#arrow-down"></use>
+          </svg>
+        </div>
+    
+        <ul class="faq__list-wrapper">
+    
+              <div class="faq__item-content-wrapper mod-big-margin gl__drop-menu-container js-drop-menu-container">
+                <div class="gl__drop-menu js-drop-menu">
+                    <p class="faq__item-content-text">Услуга местной телефонной связи с выделением в пользование номеров телефонной сети общего пользования.</p>
+                </div>
+              </div>
+        </ul>
+      </div>
+    </section>
+
+    <section class="b-connection">
+      <div class="gl__page-content">
+        <h2 class="gl__title">
+          Подключение
+        </h2>
+    
+        <div class="b-connection__content-wrapper">
+            <div class="b-connection__item-wrapper">
+              <div class="b-connection__item-caption">
+                Предоставление доступа к сети местной телефонной связи за каждый номер
+              </div>
+              <div class="b-connection__item-title">
+                Для населенных пунктов
+              </div>
+    
+              <ul class="b-connection__price-list">
+                  <li class="b-connection__price-item">
+                    <div class="b-connection__price-item-caption">
+                      Для населенных пунктов
+                    </div>
+                    <div class="b-connection__price-item-value">
+                      5 616 ₽
+                    </div>
+                  </li>
+                  <li class="b-connection__price-item">
+                    <div class="b-connection__price-item-caption">
+                      для поселков городского типа и райцентров
+                    </div>
+                    <div class="b-connection__price-item-value">
+                      5 616 ₽
+                    </div>
+                  </li>
+                  <li class="b-connection__price-item">
+                    <div class="b-connection__price-item-caption">
+                      для сельской местности
+                    </div>
+                    <div class="b-connection__price-item-value">
+                      4 960 ₽
+                    </div>
+                  </li>
+              </ul>
+    
+                <div class="b-connection__item-hint">
+                  Тарифы указаны с учетом НДС
+                </div>
+            </div>
+            <div class="b-connection__item-wrapper">
+              <div class="b-connection__item-caption">
+                При подключении более 10 номеров
+              </div>
+              <div class="b-connection__item-title">
+                Количество номеров
+              </div>
+    
+              <ul class="b-connection__price-list">
+                  <li class="b-connection__price-item">
+                    <div class="b-connection__price-item-caption">
+                      от 10 до 20 телефонов
+                    </div>
+                    <div class="b-connection__price-item-value">
+                      4 960 ₽
+                    </div>
+                  </li>
+                  <li class="b-connection__price-item">
+                    <div class="b-connection__price-item-caption">
+                      от 21 до 40 телефонов
+                    </div>
+                    <div class="b-connection__price-item-value">
+                      4 173,60 ₽
+                    </div>
+                  </li>
+                  <li class="b-connection__price-item">
+                    <div class="b-connection__price-item-caption">
+                      от 41 до 60 телефонов
+                    </div>
+                    <div class="b-connection__price-item-value">
+                      3386,40 ₽
+                    </div>
+                  </li>
+                  <li class="b-connection__price-item">
+                    <div class="b-connection__price-item-caption">
+                      от 61 до 100 телефонов
+                    </div>
+                    <div class="b-connection__price-item-value">
+                      2599,20 ₽
+                    </div>
+                  </li>
+                  <li class="b-connection__price-item">
+                    <div class="b-connection__price-item-caption">
+                      более 100 телефонов
+                    </div>
+                    <div class="b-connection__price-item-value">
+                      1 812 ₽
+                    </div>
+                  </li>
+              </ul>
+    
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="b-request-for-connection">
+      <div class="gl__page-content">
+        <div class="b-request-for-connection__content">
+          <h3 class="b-request-for-connection__form-title">Оставить заявку на подключение</h3>
+            <span class="b-request-for-connection__form-label">Наши специалисты помогут подобрать решения, отталкиваясь от ваших бизнес-потребностей</span>
+            <form data-need-validation data-parsley-validate data-parsley-focus="none" class="b-request-for-connection__form mod-4-in-row">
+              <!--
+                ___Обязательные поля___
+                type - html-тип инута
+                name - обязательно префикс - род.компонент (н-р services-tel)
+                placeholder
+              
+                ___Необязательные поля___
+                required (true/false) - обязательно для заполнения
+                inputTitle - заголовок НАД инпутом
+                phoneMask (true/false) - маска для телефона
+                rubMask (true/false) - маска для ₽ в конце
+                minLength - деф-2
+                maxLength - деф-none
+                minNumber - минимальное число
+                maxNumber - максимальное число
+                id - обычный id, например для первого пароля
+                parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
+                parsleyType - для валидации (н-р email)
+                isSimpleDesign - упрощенный дизайн
+                numberNoArrows - (true / false) - убрать стрелочки с number
+              -->
+              
+              <label class="gl-input__wrapper js-input-text">
+                <input type="text"
+                       class="gl-input__input
+                         
+                         
+                         
+                         "
+                       placeholder="Ваше имя"
+                       name="application-consultation-name"
+              
+              
+                       data-parsley-required=""
+              
+              
+              
+              
+              
+                >
+              </label>
+              <!--
+                ___Обязательные поля___
+                type - html-тип инута
+                name - обязательно префикс - род.компонент (н-р services-tel)
+                placeholder
+              
+                ___Необязательные поля___
+                required (true/false) - обязательно для заполнения
+                inputTitle - заголовок НАД инпутом
+                phoneMask (true/false) - маска для телефона
+                rubMask (true/false) - маска для ₽ в конце
+                minLength - деф-2
+                maxLength - деф-none
+                minNumber - минимальное число
+                maxNumber - максимальное число
+                id - обычный id, например для первого пароля
+                parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
+                parsleyType - для валидации (н-р email)
+                isSimpleDesign - упрощенный дизайн
+                numberNoArrows - (true / false) - убрать стрелочки с number
+              -->
+              
+              <label class="gl-input__wrapper js-input-tel">
+                <input type="tel"
+                       class="gl-input__input
+                         js-phone-mask
+                         
+                         
+                         "
+                       placeholder="+7 (___) ___-__-__"
+                       name="application-consultation-tel"
+              
+              
+                       data-parsley-required=""
+              
+              
+              
+              
+              
+                >
+              </label>
+              <!--
+                ___Обязательные поля___
+                type - html-тип инута
+                name - обязательно префикс - род.компонент (н-р services-tel)
+                placeholder
+              
+                ___Необязательные поля___
+                required (true/false) - обязательно для заполнения
+                inputTitle - заголовок НАД инпутом
+                phoneMask (true/false) - маска для телефона
+                rubMask (true/false) - маска для ₽ в конце
+                minLength - деф-2
+                maxLength - деф-none
+                minNumber - минимальное число
+                maxNumber - максимальное число
+                id - обычный id, например для первого пароля
+                parsleyEqualto - для повторного пароля, проверяет совпадение с предыдущим (у которого указали id)
+                parsleyType - для валидации (н-р email)
+                isSimpleDesign - упрощенный дизайн
+                numberNoArrows - (true / false) - убрать стрелочки с number
+              -->
+              
+              <label class="gl-input__wrapper js-input-email">
+                <input type="email"
+                       class="gl-input__input
+                         
+                         
+                         
+                         "
+                       placeholder="E-mail"
+                       name="application-consultation-email"
+              
+              
+                       data-parsley-required=""
+              
+              
+              
+              
+              
+                >
+              </label>
+              <button type="submit" class="gl__main-btn">Продолжить</button>
+            </form>
+        </div>
+      </div>
+    </section>
+    
+    <section class="b-useful-articles">
+      <div class="gl__page-content">
+        <h2 class="gl__title">Полезные статьи для бизнеса</h2>
+      </div>
+    
+      <div class="b-useful-articles__content">
+        <div class="gl-slider js-swiper" data-swiper-slides-preview="3">
+          <div class="gl__bg-hide">
+            <button type="button" class="gl-slider__slider-btn mod-prev js-slider-btn-prev gl-slider__b-slider-btn">
+              <svg class="gl-slider__slider-btn-icon" width="26" height="26" aria-hidden="true">
+                <use xlink:href="#arrow-left"></use>
+              </svg>
+            </button>
+            <button type="button" class="gl-slider__slider-btn mod-next js-slider-btn-next gl-slider__b-slider-btn">
+              <svg class="gl-slider__slider-btn-icon" width="26" height="26" aria-hidden="true">
+                <use xlink:href="#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="gl__page-content">
+            <div class="gl-slider__container swiper-container js-swiper-container b-useful-articles__slider">
+              <ul class="gl-slider__wrapper swiper-wrapper" id="js-align-heights">
+                <li class="swiper-slide b-useful-article">
+                  <img class="b-useful-article__image" src="img/common/b-useful-articles/useful-article-1.jpg" alt="Название статьи">
+                  <div class="b-useful-article__overlay"></div>
+                  <h3 class="b-useful-article__title">Название статьи</h3>
+                  <p class="b-useful-article__description">Краткое описание в 2-3 строчки о сути статьи, Краткое описание в 2-3 строчки о сути статьи.</p>
+                </li>
+                <li class="swiper-slide b-useful-article">
+                  <img class="b-useful-article__image" src="img/common/b-useful-articles/useful-article-2.jpg" alt="Название статьи">
+                  <div class="b-useful-article__overlay"></div>
+                  <h3 class="b-useful-article__title">Название статьи</h3>
+                  <p class="b-useful-article__description">Краткое описание в 2-3 строчки b о сути статьи, Краткое описание в 2-3 строчки о сути статьи.</p>
+                </li>
+                <li class="swiper-slide b-useful-article">
+                  <img class="b-useful-article__image" src="img/common/b-useful-articles/useful-article-3.jpg" alt="Название статьи">
+                  <div class="b-useful-article__overlay"></div>
+                  <h3 class="b-useful-article__title">Название статьи</h3>
+                  <p class="b-useful-article__description">Краткое описание в 2-3 строчки о сути статьи, Краткое описание в 2-3 строчки о сути статьи.</p>
+                </li>
+                <li class="swiper-slide b-useful-article">
+                  <img class="b-useful-article__image" src="img/common/b-useful-articles/useful-article-4.jpg" alt="Название статьи">
+                  <div class="b-useful-article__overlay"></div>
+                  <h3 class="b-useful-article__title">Название статьи</h3>
+                  <p class="b-useful-article__description">Краткое описание в 2-3 строчки о сути статьи, Краткое описание в 2-3 строчки о сути статьи.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq-host">
+      <div class="gl__page-content">
+          <h2 class="gl__title">Вопросы и ответы</h2>
+    
+        <ul class="faq__list-wrapper">
+            <li class="faq__item ">
+              <button type="button" class="faq__item-btn-wrapper gl__drop-menu-btn js-drop-menu-btn">
+                <svg width="24" height="24" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
+                  <use xlink:href="#arrow-down"></use>
+                </svg>
+                Вопрос 1. Что нибудь про АТС. Если есть таковы
+              </button>
+          
+                <div class="faq__item-content-wrapper gl__drop-menu-container js-drop-menu-container">
+                  <div class="gl__drop-menu js-drop-menu">
+                      <p class="faq__item-content-text">text 1</p>
+                      <p class="faq__item-content-text">text 2</p>
+                      <p class="faq__item-content-text">text 3</p>
+                      <p class="faq__item-content-text">text 4</p>
+                  </div>
+                </div>
+          
+            </li>
+            <li class="faq__item ">
+              <button type="button" class="faq__item-btn-wrapper gl__drop-menu-btn js-drop-menu-btn">
+                <svg width="24" height="24" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
+                  <use xlink:href="#arrow-down"></use>
+                </svg>
+                Вопрос 2. Что нибудь про АТС. Если есть таковы
+          
+              </button>
+          
+                <div class="faq__item-content-wrapper gl__drop-menu-container js-drop-menu-container">
+                  <div class="gl__drop-menu js-drop-menu">
+                      <p class="faq__item-content-text">text 1</p>
+                      <p class="faq__item-content-text">text 2</p>
+                      <p class="faq__item-content-text">text 3</p>
+                      <p class="faq__item-content-text">text 4</p>
+                  </div>
+                </div>
+          
+            </li>
+        </ul>
+    
+          <a href="" class="faq__link-show-all">
+            Все вопросы и ответы
+            <svg width="20" height="20" aria-hidden="true" class="faq__link-show-all-icon">
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+          </a>
       </div>
     </section>
 
