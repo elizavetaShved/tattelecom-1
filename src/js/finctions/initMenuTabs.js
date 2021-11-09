@@ -1,5 +1,5 @@
 // js-menu-tabs-container - на контейнер
-// js-menu-tab-content, data-menu-<tab-value> и gl__menu-tab-content - на подменяемый контент
+// js-menu-tab-content, data-menu="<tab-value>" и gl__menu-tab-content - на подменяемый контент
 
 export default function initMenuTabs() {
   const menuTabsContainerElems = document.querySelectorAll('.js-menu-tabs-container');
@@ -15,7 +15,7 @@ export default function initMenuTabs() {
 
       tab.onchange = () => {
         contentElems.forEach(contentElem => {
-          if (contentElem.hasAttribute(`data-menu-${ tab.value }`)) {
+          if (contentElem.getAttribute('data-menu') === tab.value) {
             contentElem.classList.add('mod-show');
           } else {
             contentElem.classList.remove('mod-show');

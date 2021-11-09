@@ -8,19 +8,19 @@
       <div class="menu-tabs__radio-btns-container">
         {{#each cityRatesTabs }}
           <label class="menu-tabs__radio-wrapper">
-            <input type="radio" class="menu-tabs__radio js-menu-tab" name="{{ this.name }}" {{#if this.isChecked}}checked{{/if}} value="{{ this.value }}">
-            <span class="gl__main-btn mod-business">{{ this.itemName }}</span>
+            <input type="radio" class="b-city-rates__tab menu-tabs__radio js-menu-tab" name="{{ this.name }}" {{#if this.isChecked}}checked{{/if}} value="{{ this.value }}">
+            <span class="b-city-rates__tab-content">{{ this.itemName }}</span>
           </label>
         {{/each}}
       </div>
 
-      <div class="js-menu-tab-content gl__menu-tab-content" data-menu-kazan>
+      <div class="js-menu-tab-content gl__menu-tab-content" data-menu="kazan">
         kazan
       </div>
-      <div class="js-menu-tab-content gl__menu-tab-content" data-menu-yelabuga>
+      <div class="js-menu-tab-content gl__menu-tab-content" data-menu="yelabuga">
         yelabuga
       </div>
-      <div class="js-menu-tab-content gl__menu-tab-content" data-menu-naberezhnye-chelny>
+      <div class="js-menu-tab-content gl__menu-tab-content" data-menu="naberezhnye-chelny">
         naberezhnye-chelny
       </div>
     </div>
