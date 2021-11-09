@@ -10365,7 +10365,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     @media screen and (max-width: 767px) {
       .b-page-banner__content {
         padding: 2rem;
-        min-height: 30rem; } }
+        height: auto;
+        height: 30rem; } }
   .b-page-banner__image {
     position: absolute;
     top: 0;
