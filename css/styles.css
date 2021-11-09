@@ -522,6 +522,8 @@ body {
       fill: var(--main-color-business); }
     .gl__layout-wrapper.mod-business textarea::-webkit-scrollbar-thumb {
       background-color: var(--main-color-business); }
+    .gl__layout-wrapper.mod-business .faq__item-btn-wrapper:hover, .gl__layout-wrapper.mod-business .faq__item-btn-hover:hover {
+      color: var(--main-color-business); }
 
 .gl__layout-content {
   -webkit-box-flex: 1;
@@ -1995,6 +1997,9 @@ textarea::-webkit-scrollbar-button, .gl__layout-wrapper.mod-business textarea::-
 textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-webkit-scrollbar-track, .select__container .choices__list::-webkit-scrollbar-track, .modal__container::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-webkit-scrollbar-track {
   background-color: var(--border-color); }
 
+.gl__layout-wrapper.mod-business .select__container .choices__list::-webkit-scrollbar-thumb {
+  background-color: var(--main-color-business); }
+
 .menu-tabs__radio-btns-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2268,6 +2273,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start; }
+    .select__container.mod-simple-design .choices__item--selectable {
+      background-color: transparent !important; }
+  .select__container.mod-simple-design .choices__inner {
+    background-color: transparent !important; }
   .select__container.mod-border-bottom .choices__inner {
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -3865,10 +3874,11 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       width: 100%; } }
 
 .faq {
-  padding: 4rem 0 8rem; }
+  padding: 5rem 0;
+  overflow: hidden; }
   @media screen and (max-width: 767px) {
     .faq {
-      padding: 2rem 0 4rem; } }
+      padding: 2.6rem 0; } }
 
 .faq__title-wrapper {
   -webkit-box-pack: start;
@@ -3888,11 +3898,21 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   -webkit-transition: color 250ms;
   transition: color 250ms; }
 
+.faq__small-title {
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 4rem;
+  font-weight: normal; }
+
 .faq__item:not(.mod-no-border) {
   border-bottom: 2px solid var(--border-color); }
 
-.faq__item.mod-business .faq__item-btn-wrapper:hover {
-  color: var(--main-color-business); }
+.faq__list-wrapper.mod-small-menu-items .faq__item-btn-wrapper {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: 0.015em; }
 
 .faq__item-btn-wrapper {
   display: -webkit-box;
@@ -3904,11 +3924,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   padding: 2rem 0;
   font-weight: 700;
   text-align: start;
-  width: 100%;
-  -webkit-transition: color 250ms;
-  transition: color 250ms; }
-  .faq__item-btn-wrapper:hover {
-    color: var(--main-color); }
+  width: 100%; }
   .faq__item-btn-wrapper.mod-single-question {
     font-size: 2.6rem;
     line-height: 3.4rem; }
@@ -3916,6 +3932,16 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       height: 3.2rem;
       margin-right: 0;
       margin-left: 1.8rem; }
+
+.faq__item-btn {
+  margin-bottom: 0;
+  padding: 2rem 0; }
+
+.faq__item-btn-hover {
+  -webkit-transition: color 250ms;
+  transition: color 250ms; }
+  .faq__item-btn-hover:hover {
+    color: var(--main-color); }
 
 .faq__item-content-wrapper {
   margin-left: 4.2rem;
@@ -4020,6 +4046,37 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   line-height: 2rem;
   letter-spacing: 0.01em;
   text-align: end; }
+
+.faq__download-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  padding: 2rem;
+  margin: -2rem;
+  margin-top: 4.4rem; }
+  .faq__download-link:hover {
+    text-decoration: underline; }
+
+.faq__download-link-icon {
+  height: 2.4rem;
+  margin-right: 2rem;
+  fill: var(--main-text-color);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 2.4rem;
+          flex: 0 0 2.4rem; }
+
+.faq__download-link-name {
+  color: var(--main-color-business);
+  margin-right: 1rem; }
+  @media screen and (max-width: 767px) {
+    .faq__download-link-name {
+      margin-right: .2rem; } }
 
 .pagination-page__pages-main-container {
   width: calc(6rem * 4 + 14px * 3);
@@ -10292,6 +10349,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
         line-height: 4.6rem; } }
   .b-page-banner.b-telephony .b-page-banner__mobile-title, .b-page-banner.b-ip-telephony .b-page-banner__mobile-title, .b-page-banner.b-communication .b-page-banner__mobile-title {
     max-width: none; }
+  .b-page-banner.b-sip-telephony .b-page-banner__text {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
   .b-page-banner__content {
     overflow: hidden;
     position: relative;
@@ -10987,6 +11048,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     .b-advantages-opportunities__slide-num {
       margin-right: 1.2rem; } }
 
+.b-advantages-opportunities__slide-fake-image {
+  width: 5.4rem; }
+
 .b-advantages-opportunities__slide-title {
   font-weight: 600;
   font-size: 2rem;
@@ -11028,6 +11092,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   margin-top: 0.6rem;
   margin-right: 2rem; }
 
+.b-advantages-opportunities__no-image-content {
+  padding-left: 8.6rem; }
+
 .b-check-items {
   padding: 5rem 0; }
   @media screen and (max-width: 767px) {
@@ -11037,6 +11104,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 .b-check-items__list {
   display: grid;
   grid-gap: 4rem 3rem; }
+  @media screen and (min-width: 1024px) {
+    .b-check-items__list.column-4 {
+      grid-template-columns: repeat(4, 1fr); } }
   @media screen and (min-width: 1024px) {
     .b-check-items__list.column-3 {
       grid-template-columns: repeat(3, 1fr); } }
@@ -11058,6 +11128,14 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.b-check-items__item-title {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 3rem; }
+  .b-check-items__item-title:last-child {
+    margin-bottom: 0; }
 
 .b-check-items__item-text {
   font-weight: 300;
@@ -12087,3 +12165,15 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 
 .b-codes-for-calls__item-value {
   text-align: end; }
+
+.b-sip-telephony-rates {
+  padding: 5rem 0 2rem; }
+  @media screen and (max-width: 1023px) {
+    .b-sip-telephony-rates {
+      padding: 3rem 0 2rem; } }
+  @media screen and (max-width: 767px) {
+    .b-sip-telephony-rates {
+      padding: 2.6rem 0 1rem; } }
+
+.b-sip-telephony-rates__select-wrapper {
+  width: 33rem; }
