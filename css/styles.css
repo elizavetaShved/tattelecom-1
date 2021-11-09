@@ -10281,16 +10281,16 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   .b-page-banner.b-virtual-ats .b-page-banner__content {
     padding-bottom: 2rem; }
   @media screen and (min-width: 768px) {
-    .b-page-banner.b-telephony .b-page-banner__content {
+    .b-page-banner.b-telephony .b-page-banner__content, .b-page-banner.b-ip-telephony .b-page-banner__content, .b-page-banner.b-communication .b-page-banner__content {
       padding-right: 10%; } }
-  .b-page-banner.b-telephony .b-page-banner__accent-title {
+  .b-page-banner.b-telephony .b-page-banner__accent-title, .b-page-banner.b-ip-telephony .b-page-banner__accent-title, .b-page-banner.b-communication .b-page-banner__accent-title {
     font-size: 3.8rem;
     line-height: 5.6rem; }
     @media screen and (max-width: 767px) {
-      .b-page-banner.b-telephony .b-page-banner__accent-title {
+      .b-page-banner.b-telephony .b-page-banner__accent-title, .b-page-banner.b-ip-telephony .b-page-banner__accent-title, .b-page-banner.b-communication .b-page-banner__accent-title {
         font-size: 2.8rem;
         line-height: 4.6rem; } }
-  .b-page-banner.b-telephony .b-page-banner__mobile-title {
+  .b-page-banner.b-telephony .b-page-banner__mobile-title, .b-page-banner.b-ip-telephony .b-page-banner__mobile-title, .b-page-banner.b-communication .b-page-banner__mobile-title {
     max-width: none; }
   .b-page-banner__content {
     overflow: hidden;
@@ -10839,8 +10839,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 2.4rem;
-    font-size: var(--fs-h3);
+    padding: 2.4rem 2rem;
+    font-size: var(--fs-t1);
     line-height: 1.2;
     font-weight: 400;
     letter-spacing: 0.015em; }
@@ -10960,7 +10960,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
           align-items: center;
   min-height: 17rem; }
   .b-advantages-opportunities__slide-header.mod-narrow {
-    min-height: 10.6rem;
+    min-height: 10.6rem; }
+  .b-advantages-opportunities__slide-header.mod-light {
     background: linear-gradient(101.01deg, #0396FF 8.09%, #25A4FF 51.47%, #7BC8FF 93.43%); }
   @media screen and (max-width: 767px) {
     .b-advantages-opportunities__slide-header {
@@ -10974,6 +10975,16 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   @media screen and (max-width: 767px) {
     .b-advantages-opportunities__slide-img {
       height: 4rem;
+      margin-right: 1.2rem; } }
+
+.b-advantages-opportunities__slide-num {
+  font-size: 3.8rem;
+  line-height: 5rem;
+  letter-spacing: 0.015em;
+  margin-right: 3.6rem;
+  color: #fff; }
+  @media screen and (max-width: 767px) {
+    .b-advantages-opportunities__slide-num {
       margin-right: 1.2rem; } }
 
 .b-advantages-opportunities__slide-title {
@@ -11972,3 +11983,107 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     .b-connection__item-hint {
       font-size: 1.6rem;
       line-height: 2rem; } }
+
+.b-ip-telephony-list {
+  padding: 2.6rem 0 5rem; }
+  @media screen and (max-width: 1159px) {
+    .b-ip-telephony-list {
+      padding: 2rem 0 3rem; } }
+  @media screen and (max-width: 767px) {
+    .b-ip-telephony-list {
+      padding: 1.2rem 0 2.6rem; } }
+
+.b-ip-telephony-list__title {
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 3rem; }
+
+.b-ip-telephony-list__item {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+  padding-left: 3.2rem;
+  counter-increment: num;
+  position: relative; }
+  .b-ip-telephony-list__item:before {
+    content: counter(num) ".";
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .b-ip-telephony-list__item + .b-ip-telephony-list__item {
+    margin-top: .4rem; }
+
+.b-codes-for-calls {
+  padding: 5rem 0; }
+  @media screen and (max-width: 1159px) {
+    .b-codes-for-calls {
+      padding: 3rem 0; } }
+  @media screen and (max-width: 767px) {
+    .b-codes-for-calls {
+      padding: 2.6rem 0; } }
+
+.b-codes-for-calls__bnt {
+  -webkit-transition: color 300ms;
+  transition: color 300ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .b-codes-for-calls__bnt:hover {
+    color: var(--main-color-business); }
+    .b-codes-for-calls__bnt:hover .b-codes-for-calls__icon {
+      fill: var(--main-color-business); }
+
+.b-codes-for-calls__icon {
+  height: 2.4rem;
+  fill: var(--main-text-color);
+  margin-left: 1.4rem; }
+
+.b-codes-for-calls__content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 9rem; }
+  @media screen and (max-width: 1023px) {
+    .b-codes-for-calls__content-wrapper {
+      grid-gap: 4rem; } }
+  @media screen and (max-width: 767px) {
+    .b-codes-for-calls__content-wrapper {
+      grid-template-columns: 1fr; } }
+
+.b-codes-for-calls__title {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  margin-bottom: 3rem; }
+  @media screen and (max-width: 767px) {
+    .b-codes-for-calls__title {
+      margin-bottom: 1.6rem; } }
+
+.b-codes-for-calls__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #fff;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.02em; }
+  .b-codes-for-calls__item:first-child {
+    border-top: 1px solid #fff; }
+
+.b-codes-for-calls__item-caption {
+  font-weight: 300; }
+
+.b-codes-for-calls__item-value {
+  text-align: end; }
