@@ -32,6 +32,9 @@
 
   &.mod-narrow {
     min-height: 10.6rem;
+  }
+
+  &.mod-light {
     background: linear-gradient(101.01deg, #0396FF 8.09%, #25A4FF 51.47%, #7BC8FF 93.43%);
   }
 
@@ -48,6 +51,18 @@
 
   @include for-sm-down {
     height: 4rem;
+    margin-right: 1.2rem;
+  }
+}
+
+.b-advantages-opportunities__slide-num {
+  font-size: 3.8rem;
+  line-height: 5rem;
+  letter-spacing: 0.015em;
+  margin-right: 3.6rem;
+  color: #fff;
+
+  @include for-sm-down {
     margin-right: 1.2rem;
   }
 }

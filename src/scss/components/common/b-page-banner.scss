@@ -37,7 +37,7 @@
     }
   }
 
-  &.b-telephony {
+  &.b-telephony, &.b-ip-telephony, &.b-communication {
     .b-page-banner__content {
       @include for-sm-up {
         padding-right: 10%;

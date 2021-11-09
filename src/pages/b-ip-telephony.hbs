@@ -1,0 +1,25 @@
+{{#extend "layout"}}
+  {{#content "main"}}
+
+    {{> common/b-page-banner }}
+
+    {{> common/b-tariffs-list }}
+
+    <section class="faq">
+      <div class="gl__page-content">
+        {{> common/faq/faq-item faq=faq-item }}
+      </div>
+    </section>
+
+    {{> b-ip-telephony-page/b-ip-telephony-list }}
+
+    {{> common/b-advantages-opportunities }}
+
+    {{> common/b-request-for-connection }}
+
+    {{> b-ip-telephony-page/b-codes-for-calls }}
+
+    {{> common/b-support }}
+
+  {{/content}}
+{{/extend}}

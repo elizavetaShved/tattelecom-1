@@ -4,7 +4,7 @@
 // js-drop-menu-leave-open - на кнопку открытия, если НЕ нужно автозакрывание неактивных
 // gl__drop-menu-container и js-drop-menu-container - обернуть меню в этот класс (для max-height = 0)
 // gl__drop-menu и js-drop-menu - на само меню
-// gl__drop-menu-icon- на иконку стрелки
+// gl__drop-menu-icon - на иконку стрелки
 
   export default function initDropDownMenu() {
   const linksTitleElements = Array.from(document.querySelectorAll('.js-drop-menu-btn'));

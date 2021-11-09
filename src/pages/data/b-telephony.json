@@ -126,6 +126,7 @@
       {
         "title": "Доступность и оперативность",
         "narrowHeader": true,
+        "lightHeader": true,
         "img": "img/b-telephony-page/advantages-opportunities-1.png",
         "list": [
           "Качественно и без задержек проводить работы по монтажу и настройке телефонных линий",
@@ -136,6 +137,7 @@
       {
         "title": "Максимум возможностей",
         "narrowHeader": true,
+        "lightHeader": true,
         "img": "img/b-telephony-page/advantages-opportunities-2.png",
         "list": [
           "Надежность, быстрота соединений и высокое качество связи",

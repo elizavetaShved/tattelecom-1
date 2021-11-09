@@ -4,10 +4,10 @@
 
     <ul class="b-steps__list">
       {{#each steps.list }}
-      <li class="b-steps__item">
-        <span class="b-steps__item-num">{{this.num}}</span>
-        <p class="b-steps__item-description">{{this.description}}</p>
-      </li>
+        <li class="b-steps__item">
+          <span class="b-steps__item-num">{{this.num}}</span>
+          <p class="b-steps__item-description">{{{this.description}}}</p>
+        </li>
       {{/each}}
     </ul>
   </div>

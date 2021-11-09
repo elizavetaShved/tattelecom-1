@@ -1,0 +1,37 @@
+<section class="b-codes-for-calls">
+  <div class="gl__page-content">
+    <button type="button" class="b-codes-for-calls__bnt gl__title gl__drop-menu-btn js-drop-menu-btn">
+      Коды для звонков
+      <svg width="24" height="24" aria-hidden="true" class="b-codes-for-calls__icon gl__drop-menu-icon">
+        <use xlink:href="#arrow-down"></use>
+      </svg>
+    </button>
+
+    <div class="gl__drop-menu-container js-drop-menu-container">
+      <div class="gl__drop-menu js-drop-menu">
+        <div class="b-codes-for-calls__content-wrapper">
+          {{#each b-codes-for-calls }}
+            <div class="b-codes-for-calls__list-wrapper">
+              <div class="b-codes-for-calls__title">
+                {{ this.title }}
+              </div>
+
+              <ul class="b-codes-for-calls__list">
+                {{#each list }}
+                  <li class="b-codes-for-calls__item">
+                    <div class="b-codes-for-calls__item-caption">
+                      {{ this.caption }}
+                    </div>
+                    <div class="b-codes-for-calls__item-value">
+                      {{ this.value }}
+                    </div>
+                  </li>
+                {{/each}}
+              </ul>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
