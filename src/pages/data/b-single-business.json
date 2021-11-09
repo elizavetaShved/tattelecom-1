@@ -13,6 +13,7 @@
       "text": "Все услуги связи <br> в одном тарифе"
     },
     "image": "b-single-business.jpg",
+    "changeSize": "568",
     "mobile": {
       "title": "Единый бизнес",
       "image": "b-single-business--mobile.jpg"

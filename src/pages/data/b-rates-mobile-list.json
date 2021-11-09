@@ -12,6 +12,7 @@
       "text": "Переходи на Летай за 0 руб"
     },
     "image": "b-rates-mobile-list.jpg",
+    "changeSize": "568",
     "mobile": {
       "title": "Тарифы <br /> мобильной <br /> связи",
       "image": "b-rates-mobile-list--mobile.jpg"

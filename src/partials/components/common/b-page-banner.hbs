@@ -42,7 +42,7 @@
       <div class="b-page-banner__content">
         <picture>
           {{#if banner.mobile.image}}
-            <source srcset="img/common/b-page-banners/{{banner.mobile.image}}" media="(max-width: 1024px)">
+            <source srcset="img/common/b-page-banners/{{banner.mobile.image}}" media="(max-width: {{#if banner.changeSize}}{{banner.changeSize}}{{else}}768{{/if}}px)">
           {{/if}}
 
           <img class="b-page-banner__image" src="img/common/b-page-banners/{{banner.image}}" alt="{{title}}">

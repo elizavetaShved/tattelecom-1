@@ -81,7 +81,8 @@
 
     @include for-sm-down {
       padding: 2rem;
-      min-height: 30rem;
+      height: auto;
+      height: 30rem;
     }
   }
 

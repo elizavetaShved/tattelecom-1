@@ -16,6 +16,7 @@
     "cost": 600,
     "isConstantlyConst": true,
     "image": "b-virtual-ats.jpg",
+    "changeSize": "568",
     "mobile": {
       "title": "Виртуальная АТС",
       "image": "b-virtual-ats--mobile.jpg"
