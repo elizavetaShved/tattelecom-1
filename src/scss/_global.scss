@@ -78,6 +78,18 @@ body {
     ::selection {
       @extend %select-business-background;
     }
+
+    .select__container {
+      .choices__list {
+        @extend %scroll-business;
+      }
+    }
+
+    .faq__item-btn-wrapper, .faq__item-btn-hover {
+      &:hover {
+        color: var(--main-color-business);
+      }
+    }
   }
 }
 

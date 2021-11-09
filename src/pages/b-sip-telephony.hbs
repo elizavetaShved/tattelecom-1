@@ -1,0 +1,45 @@
+{{#extend "layout"}}
+  {{#content "main"}}
+
+    {{> common/b-page-banner }}
+
+    <section class="faq">
+      <div class="gl__page-content">
+        {{> common/faq/faq-item faq=faq-item }}
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="gl__page-content">
+        <h2 class="gl__title">
+          При помощи цифровой телефонии «Таттелеком» вы сможете:
+        </h2>
+        {{> common/b-check-items check-items=check-items-opportunities }}
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="gl__page-content">
+        <h2 class="gl__title">
+          Преимущества технологии SIP
+        </h2>
+        {{> common/b-check-items check-items=check-items-advantages }}
+      </div>
+    </section>
+
+    {{> b-sip-telephony-page/b-sip-telephony-rates }}
+
+    {{> b-sip-telephony-page/faq faqSection=ratesForServices }}
+
+    {{> b-sip-telephony-page/faq faqSection=ratesForMaintenance }}
+
+    {{> common/b-advantages-opportunities }}
+
+    {{> common/b-request-for-connection }}
+
+    {{> common/faq/section-faq faq=mainFaq }}
+
+    {{> common/b-support }}
+
+  {{/content}}
+{{/extend}}

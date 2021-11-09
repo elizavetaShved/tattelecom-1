@@ -111,6 +111,14 @@
 
     .choices__item {
       justify-content: start;
+
+      &--selectable {
+        background-color: transparent !important;
+      }
+    }
+
+    .choices__inner {
+      background-color: transparent !important;
     }
   }
 

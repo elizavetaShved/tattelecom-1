@@ -50,3 +50,9 @@
     background-color: var(--border-color);
   }
 }
+
+%scroll-business {
+  &::-webkit-scrollbar-thumb {
+    background-color:var(--main-color-business);
+  }
+}

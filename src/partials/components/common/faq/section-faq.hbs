@@ -2,11 +2,13 @@
   <div class="gl__page-content">
     {{#if customTitle }}
       <h2 class="gl__title">{{ customTitle }}</h2>
+    {{else if castomSmallTitle }}
+      <h2 class="faq__small-title">{{ castomSmallTitle }}</h2>
     {{ else }}
       <h2 class="gl__title">Вопросы и ответы</h2>
     {{/if}}
 
-    <ul class="faq__list-wrapper">
+    <ul class="faq__list-wrapper {{#if smallMenuItems }}mod-small-menu-items{{/if}}">
       {{> common/faq/faq-item faq=faq }}
     </ul>
 

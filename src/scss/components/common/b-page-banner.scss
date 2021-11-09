@@ -59,6 +59,12 @@
     }
   }
 
+  &.b-sip-telephony {
+    .b-page-banner__text {
+      justify-content: flex-start;
+    }
+  }
+
   &__content {
     overflow: hidden;
 

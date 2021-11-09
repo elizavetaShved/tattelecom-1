@@ -7,7 +7,10 @@
       "accentText": "Красивый номер в подарок",
       "colorClass": "white"
     },
-    "label": "при подключении <br> мобильной связи",
+    "label": {
+      "text": "при подключении <br> мобильной связи",
+      "colorClass": "white"
+    },
     "image": "b-beautiful-phone.jpg",
     "mobile": {
       "title": "Красивый номер в подарок",

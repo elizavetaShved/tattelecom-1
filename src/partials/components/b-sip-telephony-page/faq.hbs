@@ -1,0 +1,21 @@
+<section class="faq" id="faq-host">
+  <div class="gl__page-content">
+    <h2 class="faq__small-title">{{ faqSection.titleFaqList }}</h2>
+
+    <ul class="faq__list-wrapper mod-small-menu-items">
+      {{> common/faq/faq-item faq=faqSection.faq }}
+    </ul>
+
+    {{#if faqSection.downloadLink }}
+      <a href="" download class="faq__download-link">
+        <svg width="24" height="24" aria-hidden="true" class="faq__download-link-icon">
+          <use xlink:href="#download-top"></use>
+        </svg>
+        <span>
+          <span class="faq__download-link-name">{{ faqSection.downloadLink.name }}</span>
+            {{ faqSection.downloadLink.size }}
+        </span>
+      </a>
+    {{/if}}
+  </div>
+</section>

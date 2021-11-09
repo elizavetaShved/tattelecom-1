@@ -1,8 +1,9 @@
 .faq {
-  padding: 4rem 0 8rem;
+  padding: 5rem 0;
+  overflow: hidden;
 
   @include for-sm-down {
-    padding: 2rem 0 4rem;
+    padding: 2.6rem 0;
   }
 }
 
@@ -31,16 +32,28 @@
   transition: color 250ms;
 }
 
+.faq__small-title {
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 4rem;
+  font-weight: normal
+}
+
+
 .faq__item {
   &:not(.mod-no-border) {
     border-bottom: 2px solid var(--border-color);
   }
+}
 
-  &.mod-business {
+.faq__list-wrapper {
+  &.mod-small-menu-items {
     .faq__item-btn-wrapper {
-      &:hover {
-        color: var(--main-color-business);
-      }
+      font-weight: 300;
+      font-size: 1.8rem;
+      line-height: 3rem;
+      letter-spacing: 0.015em;
     }
   }
 }
@@ -54,11 +67,6 @@
   font-weight: 700;
   text-align: start;
   width: 100%;
-  transition: color 250ms;
-
-  &:hover {
-    color: var(--main-color);
-  }
 
   &.mod-single-question {
     font-size: 2.6rem;
@@ -69,6 +77,19 @@
       margin-right: 0;
       margin-left: 1.8rem;
     }
+  }
+}
+
+.faq__item-btn {
+  margin-bottom: 0;
+  padding: 2rem 0;
+}
+
+.faq__item-btn-hover {
+  transition: color 250ms;
+
+  &:hover {
+    color: var(--main-color);
   }
 }
 
@@ -187,4 +208,35 @@
   line-height: 2rem;
   letter-spacing: 0.01em;
   text-align: end;
+}
+
+.faq__download-link {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  padding: 2rem;
+  margin: -2rem;
+  margin-top: 4.4rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.faq__download-link-icon {
+  height: 2.4rem;
+  margin-right: 2rem;
+  fill: var(--main-text-color);
+  flex: 0 0 2.4rem;
+}
+
+.faq__download-link-name {
+  color: var(--main-color-business);
+  margin-right: 1rem;
+
+  @include for-sm-down {
+    margin-right: .2rem;
+  }
 }

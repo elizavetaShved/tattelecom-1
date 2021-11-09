@@ -3,9 +3,15 @@
 {{!-- Шаблон данных: --}}
 {{!-- "banner": {
   "accentTitle": "Корпоративная",
-  "title": "мобильная связь",
+  "title": {
+      "accentText": "Sip телефония",
+      "colorClass": "white"
+    }
   "cost": 150,
-  "label": "Переходи на Летай за 0 руб",
+  "label": {
+      "text": "при подключении <br> мобильной связи",
+      "colorClass": "white"
+   },
   "image": "b-rates-mobile-list.jpg",
   "mobile": {
     "title": "Тарифы <br /> мобильной <br /> связи",
@@ -36,7 +42,7 @@
       <div class="b-page-banner__content">
         <picture>
           {{#if banner.mobile.image}}
-            <source srcset="img/common/b-page-banners/{{banner.mobile.image}}" media="(max-width: 559px)">
+            <source srcset="img/common/b-page-banners/{{banner.mobile.image}}" media="(max-width: 1024px)">
           {{/if}}
 
           <img class="b-page-banner__image" src="img/common/b-page-banners/{{banner.image}}" alt="{{title}}">
@@ -72,7 +78,7 @@
             </div>
           {{/if}}
           {{#if banner.label }}
-            <span class="b-page-banner__label {{banner.title.colorClass}}">{{{banner.label}}}</span>
+            <span class="b-page-banner__label {{banner.label.colorClass}}">{{{banner.label.text}}}</span>
           {{/if}}
           {{#if banner.links }}
             <div class="b-page-banner__btns-container">
@@ -90,7 +96,7 @@
           {{/if}}
         </div>
         {{#if banner.label }}
-        <span class="b-page-banner__label {{banner.title.colorClass}}">{{{banner.label}}}</span>
+        <span class="b-page-banner__label {{banner.label.colorClass}}">{{{banner.label.text}}}</span>
         {{/if}}
         {{#if banner.btns }}
         <div class="b-page-banner__btns-container">

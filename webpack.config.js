@@ -39,6 +39,7 @@ module.exports = {
     ['b-telephony-page']: './src/js/pages/b-telephony-page.js',
     ['b-communication-page']: './src/js/pages/b-communication-page.js',
     ['b-ip-telephony-page']: './src/js/pages/b-ip-telephony-page.js',
+    ['b-sip-telephony-page']: './src/js/pages/b-sip-telephony-page.js',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

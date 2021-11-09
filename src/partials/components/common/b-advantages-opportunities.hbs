@@ -9,6 +9,7 @@
         "lightHeader": true, - если нужная светлая шапка (светло-голубой)
         "img": "img/b-single-business/complex.svg",
         "numHeader": "1", - вместо изображения цифра
+        "noImage": true, - если нет изображения и нужны отступы больше
 
             // если обычный текст
         "text": "Один договор на все услуги связи и единый лицевой счет"
@@ -44,11 +45,11 @@
                     {{ this.numHeader }}
                   </div>
                 {{/if}}
-                <div class="b-advantages-opportunities__slide-title">
+                <div class="b-advantages-opportunities__slide-title {{#if noImage }}b-advantages-opportunities__no-image-content{{/if}}">
                   {{ this.title }}
                 </div>
               </div>
-              <div class="b-advantages-opportunities__slide-content">
+              <div class="b-advantages-opportunities__slide-content {{#if noImage }}b-advantages-opportunities__no-image-content{{/if}}">
                 {{#if this.text }}
                   {{{ this.text }}}
                 {{/if}}
