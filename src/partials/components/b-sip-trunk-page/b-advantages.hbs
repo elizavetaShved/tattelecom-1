@@ -1,0 +1,23 @@
+<section class="b-info">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      Преимущества услуги SIP-trunk
+    </h2>
+
+    <ul class="b-info__list-ellipse-mark">
+      {{#each advantages }}
+        <li class="b-info__item-ellipse-mark">
+          <img src="img/common/check-ellipse-blue.svg" alt="" class="b-info__item-ellipse-mark-icon">
+          <div>
+            <div class="b-info__item-ellipse-mark-caption">
+              {{ this.caption }}
+            </div>
+            <div class="b-info__item-ellipse-mark-value">
+              {{ this.value }}
+            </div>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

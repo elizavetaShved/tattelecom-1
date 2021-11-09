@@ -1,5 +1,5 @@
 // js-menu-tabs-container - на контейнер
-// js-menu-tab-content, data-menu-<mobile> и gl__menu-tab-content - на подменяемый контент
+// js-menu-tab-content, data-menu-<tab-value> и gl__menu-tab-content - на подменяемый контент
 
 export default function initMenuTabs() {
   const menuTabsContainerElems = document.querySelectorAll('.js-menu-tabs-container');

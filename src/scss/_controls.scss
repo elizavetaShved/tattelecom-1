@@ -10,6 +10,7 @@
   transition: background-color 250ms, border-color 250ms, color 250ms !important;
   white-space: nowrap;
   text-align: center;
+  cursor: pointer;
 
   &:hover {
     background: var(--main-color-hover);
