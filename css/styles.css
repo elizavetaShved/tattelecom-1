@@ -525,6 +525,8 @@ body {
       background-color: var(--main-color-business); }
     .gl__layout-wrapper.mod-business .faq__item-btn-wrapper:hover, .gl__layout-wrapper.mod-business .faq__item-btn-hover:hover {
       color: var(--main-color-business); }
+    .gl__layout-wrapper.mod-business .faq__item:not(.mod-no-border) {
+      border-bottom: 2px solid #fff; }
 
 .gl__layout-content {
   -webkit-box-flex: 1;
@@ -666,6 +668,14 @@ body {
   right: 0;
   height: 7rem !important;
   width: 7rem !important; }
+
+.gl__b-hint-nds {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.02em;
+  color: var(--main-grey-color);
+  padding-top: 1.8rem;
+  border-top: 1px solid #fff; }
 
 /**
  * Swiper 6.8.0
@@ -3914,6 +3924,12 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   font-size: 1.8rem;
   line-height: 3rem;
   letter-spacing: 0.015em; }
+
+.faq__list-wrapper.mod-small {
+  max-width: 89.6rem; }
+
+.faq__list-wrapper + .gl__b-hint-nds {
+  border-top: none; }
 
 .faq__item-btn-wrapper {
   display: -webkit-box;
@@ -10354,6 +10370,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
+  .b-page-banner.b-digital-streams .b-page-banner__content {
+    padding-right: 40%; }
   .b-page-banner__content {
     overflow: hidden;
     position: relative;
@@ -10366,7 +10384,6 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     @media screen and (max-width: 767px) {
       .b-page-banner__content {
         padding: 2rem;
-        height: auto;
         height: 30rem; } }
   .b-page-banner__image {
     position: absolute;
@@ -11181,6 +11198,13 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   margin-bottom: 3rem; }
   .b-info__list-width-line-mark:last-child, .b-info__list-ellipse-mark:last-child {
     margin-bottom: 0; }
+  .b-info__list-width-line-mark.mod-padding-left, .b-info__list-ellipse-mark.mod-padding-left {
+    padding-left: 6rem; }
+    @media screen and (max-width: 767px) {
+      .b-info__list-width-line-mark.mod-padding-left, .b-info__list-ellipse-mark.mod-padding-left {
+        padding-left: 0; } }
+  .b-info__list-width-line-mark.mod-min-content, .b-info__list-ellipse-mark.mod-min-content {
+    max-width: 89.6rem; }
 
 .b-info__item-line-mark {
   font-weight: 300;
@@ -12127,17 +12151,6 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   letter-spacing: 0.01em;
   text-align: end; }
 
-.b-connection__item-hint {
-  font-size: 1.4rem;
-  line-height: 2.2rem;
-  letter-spacing: 0.02em;
-  color: var(--main-grey-color);
-  margin-top: 1.4rem; }
-  @media screen and (max-width: 767px) {
-    .b-connection__item-hint {
-      font-size: 1.6rem;
-      line-height: 2rem; } }
-
 .b-ip-telephony-list {
   padding: 2.6rem 0 5rem; }
   @media screen and (max-width: 1159px) {
@@ -12342,14 +12355,6 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     .b-city-rates__content__price {
       margin-left: 0;
       margin-top: 2rem; } }
-
-.b-city-rates__content-mark {
-  font-size: 1.4rem;
-  line-height: 2.2rem;
-  letter-spacing: 0.02em;
-  color: var(--main-grey-color);
-  padding-top: 1.8rem;
-  border-top: 1px solid #fff; }
 
 .b-scheme-work {
   padding: 5rem 0; }
