@@ -27,16 +27,15 @@
     <h2 class="gl__title">
       {{ advantages-opportunities.titleComponent }}
     </h2>
-  </div>
 
-  <div class="gl-slider js-swiper" data-swiper-slides-preview="{{ advantages-opportunities.sliderNum }}">
-    {{> common/controls/b-btns-slider }}
-    <div class="gl__page-content">
-      <div class="b-advantages-opportunities__container gl-slider__container swiper-container js-swiper-container">
+    <div class="gl-slider js-swiper" data-swiper-slides-preview="{{ advantages-opportunities.sliderNum }}">
+      {{> common/controls/b-btns-slider }}
+      <div class="gl-slider__b-container gl-slider__container swiper-container js-swiper-container">
         <div class="gl-slider__wrapper swiper-wrapper">
           {{#each advantages-opportunities.items }}
             <div class="b-advantages-opportunities__slide swiper-slide">
-              <div class="b-advantages-opportunities__slide-header {{#if this.narrowHeader}}mod-narrow{{/if}} {{#if this.lightHeader}}mod-light{{/if}}">
+              <div class="b-advantages-opportunities__slide-header {{#if this.narrowHeader}}mod-narrow{{/if}} {{#if
+                this.lightHeader}}mod-light{{/if}}">
                 {{#if this.img }}
                   <img src="{{ this.img }}" alt="" class="b-advantages-opportunities__slide-img">
                 {{/if}}
@@ -45,11 +44,13 @@
                     {{ this.numHeader }}
                   </div>
                 {{/if}}
-                <div class="b-advantages-opportunities__slide-title {{#if noImage }}b-advantages-opportunities__no-image-content{{/if}}">
+                <div class="b-advantages-opportunities__slide-title {{#if
+                  noImage }}b-advantages-opportunities__no-image-content{{/if}}">
                   {{ this.title }}
                 </div>
               </div>
-              <div class="b-advantages-opportunities__slide-content {{#if noImage }}b-advantages-opportunities__no-image-content{{/if}}">
+              <div class="b-advantages-opportunities__slide-content {{#if
+                noImage }}b-advantages-opportunities__no-image-content{{/if}}">
                 {{#if this.text }}
                   {{{ this.text }}}
                 {{/if}}

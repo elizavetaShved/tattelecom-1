@@ -16,6 +16,12 @@
   }
 }
 
+.gl-slider__b-container {
+  @include for-mx-down {
+    overflow: visible;
+  }
+}
+
 .gl-slider__wrapper {
   display: flex;
 
@@ -36,6 +42,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: box-shadow 350ms !important;
+
+  &:hover {
+    box-shadow: none;
+  }
 
   &.mod-prev {
     left: -6.6rem;
@@ -59,7 +70,15 @@
 
   transition: opacity 0.3s, visibility 0.3s ease;
 
-  &:hover  {
+  border-radius: 50%;
+
+  @include for-fl-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:hover {
     svg {
       fill: white;
     }
@@ -71,22 +90,26 @@
   }
 
   &.mod-prev {
-    left: -4rem;
+    left: -6rem;
 
-    border-radius: 0 50% 50% 0;
+    @include for-mx-down {
+      left: -10rem;
 
-    svg {
-      right: -2rem;
+      svg {
+        right: -2rem;
+      }
     }
   }
 
   &.mod-next {
-    right: -4rem;
+    right: -6rem;
 
-    border-radius: 50% 0 0 50%;
+    @include for-mx-down {
+      right: -10rem;
 
-    svg {
-      left: -2rem;
+      svg {
+        left: -2rem;
+      }
     }
   }
 

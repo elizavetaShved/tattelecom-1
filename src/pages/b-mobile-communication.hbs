@@ -7,42 +7,46 @@
 
         <div class="b-mobile-communication__content">
           <ul class="intro-cards-container">
-          {{#each service-cards }}
-            <li class="intro-cards-container__item service-card-with-photo">
-              {{#if this.hasImage }}
-              <img class="service-card-with-photo__image" src="img/b-mobile-communication/{{ this.hasImage.fileName }}" alt="Фото услуги">
-              <div class="service-card-with-photo__image-overlay {{ this.hasImage.gradientClass }}"></div>
-              {{else}}
-              <svg aria-hidden="true" class="service-card-with-photo__icon">
-                <use xlink:href="#service-card-with-photo-background"></use>
-              </svg>
-              {{/if}}
-              <div class="service-card-with-photo__content">
-                <div class="service-card-with-photo__description">
-                  <h3 class="service-card-with-photo__title">{{ this.title }}</h3>
-                  <p class="service-card-with-photo__subtitle">{{{ this.subtitle }}}</p>
-                </div>
-                <div class="service-card-with-photo__footer">
-                  <div class="service-card-with-photo__cost-block">
-                    <span class="service-card-with-photo__cost-label">от</span>
-                    <span class="service-card-with-photo__cost-value">{{ this.cost }}</span>
-                    <span class="service-card-with-photo__cost-label">₽/мес</span>
+            {{#each service-cards }}
+              <li class="intro-cards-container__item service-card-with-photo">
+                {{#if this.hasImage }}
+                  <img class="service-card-with-photo__image"
+                       src="img/b-mobile-communication/{{ this.hasImage.fileName }}" alt="Фото услуги">
+                  <div class="service-card-with-photo__image-overlay {{ this.hasImage.gradientClass }}"></div>
+                {{else}}
+                  <svg aria-hidden="true" class="service-card-with-photo__icon">
+                    <use xlink:href="#service-card-with-photo-background"></use>
+                  </svg>
+                {{/if}}
+                <div class="service-card-with-photo__content">
+                  <div class="service-card-with-photo__description">
+                    <h3 class="service-card-with-photo__title">{{ this.title }}</h3>
+                    <p class="service-card-with-photo__subtitle">{{{ this.subtitle }}}</p>
                   </div>
-                  <div class="service-card-with-photo__btns">
-                  {{#if this.detailBtn }}
-                    <a href="#" class="service-card-with-photo__btn service-card-with-photo__details">{{ this.detailBtn }}</a>
-                  {{/if}}
-                  {{#if this.tariffsBtn }}
-                    <a href="#" class="service-card-with-photo__btn service-card-with-photo__tariffs">{{ this.tariffsBtn }}</a>
-                  {{/if}}
-                  {{#if this.connectBtn }}
-                    <a href="" class="service-card-with-photo__btn gl__main-btn mod-b-transparent service-card-with-photo__connect-btn">{{ this.connectBtn }}</a>
-                  {{/if}}
+                  <div class="service-card-with-photo__footer">
+                    <div class="service-card-with-photo__cost-block">
+                      <span class="service-card-with-photo__cost-label">от</span>
+                      <span class="service-card-with-photo__cost-value">{{ this.cost }}</span>
+                      <span class="service-card-with-photo__cost-label">₽/мес</span>
+                    </div>
+                    <div class="service-card-with-photo__btns">
+                      {{#if this.detailBtn }}
+                        <a href="#"
+                           class="service-card-with-photo__btn service-card-with-photo__details">{{ this.detailBtn }}</a>
+                      {{/if}}
+                      {{#if this.tariffsBtn }}
+                        <a href="#"
+                           class="service-card-with-photo__btn service-card-with-photo__tariffs">{{ this.tariffsBtn }}</a>
+                      {{/if}}
+                      {{#if this.connectBtn }}
+                        <a href=""
+                           class="service-card-with-photo__btn gl__main-btn mod-b-transparent service-card-with-photo__connect-btn">{{ this.connectBtn }}</a>
+                      {{/if}}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </li>
-          {{/each}}
+              </li>
+            {{/each}}
           </ul>
         </div>
       </div>
@@ -63,19 +67,19 @@
     <section class="b-promotions">
       <div class="gl__page-content">
         <h2 class="gl__title">Акции</h2>
-      </div>
 
-      <div class="b-promotions__content">
-        <div class="gl-slider js-swiper" data-swiper-slides-preview="3">
-          {{> common/controls/b-btns-slider }}
-          <div class="gl__page-content">
-            <div class="gl-slider__container swiper-container js-swiper-container b-promotions__slider">
+        <div class="b-promotions__content">
+          <div class="gl-slider js-swiper" data-swiper-slides-preview="3">
+            {{> common/controls/b-btns-slider }}
+            <div class="gl-slider__b-container gl-slider__container swiper-container js-swiper-container">
               <ul class="gl-slider__wrapper swiper-wrapper" id="js-align-heights">
                 {{#each promotions }}
-                <li class="swiper-slide b-promotion">
-                  <h3 class="b-promotion__title">{{this.title}}</h3>
-                  <p class="b-promotion__description">{{this.description}}</p>
-                </li>
+                  <li class="swiper-slide">
+                    <a href="" class="b-promotion gl__no-default-hover rates-list__slide">
+                      <h3 class="b-promotion__title">{{this.title}}</h3>
+                      <p class="b-promotion__description">{{this.description}}</p>
+                    </a>
+                  </li>
                 {{/each}}
               </ul>
             </div>

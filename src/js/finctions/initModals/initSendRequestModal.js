@@ -37,7 +37,8 @@ export default function initSendRequestModal() {
   let modalComponent;
 
   btnsOpen.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', event => {
+      event.preventDefault();
       const dataTitle = btn.getAttribute('data-tariff-name');
       const dataPrise = btn.getAttribute('data-prise');
 

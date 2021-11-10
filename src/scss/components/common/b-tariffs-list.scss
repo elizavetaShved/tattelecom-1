@@ -13,10 +13,6 @@
 
   &__content {
   }
-
-  &__slider {
-    overflow: visible;
-  }
 }
 
 .b-tariffs-item {
@@ -31,6 +27,7 @@
   border-radius: 1rem;
   transition: transform 300ms;
   min-height: 41rem;
+  height: 100%;
 
   &.mod-select-card {
     .b-tariffs-item__services-list-caption {

@@ -7,13 +7,9 @@
   }
 }
 
-.b-fractional-slider__container {
-  overflow: visible;
-}
-
 .b-fractional-slider__slide {
   min-height: 37rem;
-  width: min-content !important;
+  //width: min-content !important;
 }
 
 .b-fractional-slider__slide-card {
@@ -27,17 +23,17 @@
   z-index: 1;
 
   &.mod-big {
-    width: 66.4rem;
+    //width: 66.4rem;
     padding: 3.8rem;
     color: #fff;
 
-    @include for-bg-down {
-      width: 52.6rem;
-    }
-
-    @include for-xs-down {
-      width: 31.6rem;
-    }
+    //@include for-bg-down {
+    //  width: 52.6rem;
+    //}
+    //
+    //@include for-xs-down {
+    //  width: 31.6rem;
+    //}
 
     .b-fractional-slider__card-title {
       font-weight: 600;
@@ -53,15 +49,15 @@
 
   &.mod-large {
     padding: 3rem 3.2rem;
-    width: 56rem;
+    //width: 56rem;
 
-    @include for-bg-down {
-      width: 43.8rem;
-    }
-
-    @include for-xs-down {
-      width: 31.6rem;
-    }
+    //@include for-bg-down {
+    //  width: 43.8rem;
+    //}
+    //
+    //@include for-xs-down {
+    //  width: 31.6rem;
+    //}
 
     .b-fractional-slider__card-title {
       font-size: 4.4rem;
@@ -78,11 +74,11 @@
 
   &.mod-middle-horizontal {
     padding: 2.2rem;
-    width: 37rem;
+    //width: 37rem;
 
-    @include for-bg-down {
-      width: 29rem;
-    }
+    //@include for-bg-down {
+    //  width: 29rem;
+    //}
 
     & + & {
       margin-top: 2rem;
@@ -91,7 +87,7 @@
 
   &.mod-middle-vertical {
     padding: 2rem 1.4rem;
-    width: 23.6rem;
+    //width: 23.6rem;
   }
 
   &.mod-middle-horizontal, &.mod-middle-vertical {
@@ -108,7 +104,7 @@
 
   &.mod-small {
     padding: 1.6rem;
-    width: 17rem;
+    //width: 17rem;
     background: linear-gradient(135deg, #E45620 0%, #E84735 100%);
     color: var(--border-color);
 
