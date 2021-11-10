@@ -1,5 +1,5 @@
 {{#each faq }}
-  <li class="faq__item {{#if noBorder }}mod-no-border{{/if}}">
+  <li class="faq__item {{#if noBorder }}mod-no-border{{/if}} {{#if isBusiness }}mod-business{{/if}}">
     {{#if singleQuestion }}
       <button type="button" class="{{#if globalTitleStyle }}gl__title{{else}} faq__item-btn-wrapper{{/if}} faq__item-btn-hover mod-single-question gl__drop-menu-btn js-drop-menu-btn">
         {{ this.title }}

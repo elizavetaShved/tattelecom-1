@@ -35,6 +35,18 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &.mod-padding-left {
+    padding-left: 6rem;
+
+    @include for-sm-down {
+      padding-left: 0;
+    }
+  }
+
+  &.mod-min-content {
+    max-width: 89.6rem;
+  }
 }
 
 .b-info__item-line-mark {

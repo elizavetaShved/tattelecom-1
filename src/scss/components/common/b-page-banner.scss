@@ -65,6 +65,12 @@
     }
   }
 
+  &.b-digital-streams {
+    .b-page-banner__content {
+      padding-right: 40%;
+    }
+  }
+
   &__content {
     overflow: hidden;
 
@@ -81,7 +87,6 @@
 
     @include for-sm-down {
       padding: 2rem;
-      height: auto;
       height: 30rem;
     }
   }

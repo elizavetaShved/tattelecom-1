@@ -90,6 +90,12 @@ body {
         color: var(--main-color-business);
       }
     }
+
+    .faq__item {
+      &:not(.mod-no-border) {
+        border-bottom: 2px solid #fff;
+      }
+    }
   }
 }
 
@@ -255,4 +261,13 @@ body {
   right: 0;
   height: 7rem !important;
   width: 7rem !important;
+}
+
+.gl__b-hint-nds {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.02em;
+  color: var(--main-grey-color);
+  padding-top: 1.8rem;
+  border-top: 1px solid #fff;
 }

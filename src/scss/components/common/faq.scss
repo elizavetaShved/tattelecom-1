@@ -56,6 +56,14 @@
       letter-spacing: 0.015em;
     }
   }
+
+  &.mod-small {
+    max-width: 89.6rem;
+  }
+
+  + .gl__b-hint-nds {
+    border-top: none;
+  }
 }
 
 .faq__item-btn-wrapper {

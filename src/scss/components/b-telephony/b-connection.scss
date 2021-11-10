@@ -76,16 +76,3 @@
   letter-spacing: 0.01em;
   text-align: end;
 }
-
-.b-connection__item-hint {
-  font-size: 1.4rem;
-  line-height: 2.2rem;
-  letter-spacing: 0.02em;
-  color: var(--main-grey-color);
-  margin-top: 1.4rem;
-
-  @include for-sm-down {
-    font-size: 1.6rem;
-    line-height: 2rem;
-  }
-}
