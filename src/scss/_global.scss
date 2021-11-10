@@ -50,7 +50,7 @@ body {
       @extend %scroll;
 
       &::-webkit-scrollbar-thumb {
-        background-color:var(--main-color-business);
+        background-color: var(--main-color-business);
       }
     }
 
@@ -249,4 +249,23 @@ body {
   color: var(--main-grey-color);
   padding-top: 1.8rem;
   border-top: 1px solid #fff;
+}
+
+.test-link__wrapper {
+  display: grid;
+  grid-template-columns: 20rem auto;
+  grid-gap: 2rem;
+
+  & + & {
+    margin-top: 2rem;
+  }
+}
+
+.test-links__link {
+  display: block;
+  font-size: 14px;
+}
+
+.test-links__img {
+  height: 10rem;
 }

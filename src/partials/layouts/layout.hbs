@@ -19,17 +19,23 @@
 </div>
 
 <div class="gl__layout-wrapper {{#if isBusiness }}mod-business{{/if}}">
-  <div class="gl__layout-header">
-    {{> layout-header/header }}
-  </div>
+  {{#if noLayout }}
+  {{else }}
+    <div class="gl__layout-header">
+      {{> layout-header/header }}
+    </div>
+  {{/if}}
 
   <main class="gl__layout-content">
     {{#block "main"}}{{/block}}
   </main>
 
-  <div class="gl__layout-footer">
-    {{> layout-footer }}
-  </div>
+  {{#if noLayout }}
+  {{else }}
+    <div class="gl__layout-footer">
+      {{> layout-footer }}
+    </div>
+  {{/if}}
 
   {{> modals/callback }}
   {{> modals/thanks }}
