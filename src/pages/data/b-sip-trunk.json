@@ -57,14 +57,49 @@
       "isChecked": true
     },
     {
-      "itemName": "yelabuga",
+      "itemName": "Елабуга",
       "value": "yelabuga",
       "name": "city-rates"
     },
     {
-      "itemName": "naberezhnye-chelny",
+      "itemName": "Набережные Челны",
       "value": "naberezhnye-chelny",
       "name": "city-rates"
+    }
+  ],
+  "cityRatesContentsList": [
+    {
+      "type": "kazan",
+      "text": "Предоставление в пользование одного виртуального канала по протоколу SIP v.2.0 (SIP-trunk) (включая неограниченный объем местных соединений), за месяц",
+      "price": "1 184,75 ₽/мес."
+    },
+    {
+      "type": "yelabuga",
+      "text": "Елабуга текст",
+      "price": "?? ₽/мес."
+    },
+    {
+      "type": "naberezhnye-chelny",
+      "text": "Набережные Челны текст",
+      "price": "??? ₽/мес."
+    }
+  ],
+  "faq": [
+    {
+      "title": "Вопрос 1. Что нибудь про  SIP-trunk. Если есть таковы",
+      "text": [
+        "text",
+        "text",
+        "text"
+      ]
+    },
+    {
+      "title": "Вопрос 2. Что нибудь про SIP-trunk. Если есть таковы",
+      "text": [
+        "text",
+        "text",
+        "text"
+      ]
     }
   ]
 }

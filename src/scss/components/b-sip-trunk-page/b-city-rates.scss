@@ -12,9 +12,7 @@
 
 .b-city-rates__tab {
   display: none;
-}
 
-.b-city-rates__tab {
   &:checked {
     + .b-city-rates__tab-content {
       background-color: var(--main-color-business);
@@ -27,7 +25,7 @@
   padding: 1.8rem;
   min-width: 22rem;
   border-radius: 3px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -36,4 +34,72 @@
   letter-spacing: 0.01em;
   background-color: #fff;
   transition: background-color 100ms, color 100ms;
+
+  @include for-bg-down {
+    min-width: 16rem;
+  }
+
+  @include for-sm-down {
+    padding: 1.4rem;
+    width: 100%;
+  }
+}
+
+.b-city-rates__radio-btns-container {
+  margin: -.8rem -.6rem;
+  margin-bottom: 3.8rem;
+}
+
+.b-city-rates__radio-wrapper {
+  display: inline-block;
+  margin: .8rem .6rem;
+
+  @include for-sm-down {
+    display: block;
+  }
+}
+
+.b-city-rates__content {
+  padding: 4rem 0 .7rem;
+  display: flex;
+  border-top: 1px solid var(--border-color-2);
+
+  @include for-xs-down {
+    padding-top: 2rem;
+    flex-direction: column;
+  }
+}
+
+.b-city-rates__content-text {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+  width: 68.6rem;
+  max-width: 100%;
+}
+
+.b-city-rates__content__price {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.01em;
+  margin-left: 6.4rem;
+
+  @include for-sm-down {
+    margin-left: 3rem;
+  }
+
+  @include for-xs-down {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
+
+.b-city-rates__content-mark {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.02em;
+  color: var(--main-grey-color);
+  padding-top: 1.8rem;
+  border-top: 1px solid #fff;
 }

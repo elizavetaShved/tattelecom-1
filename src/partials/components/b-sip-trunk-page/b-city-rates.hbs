@@ -5,24 +5,32 @@
     </h2>
 
     <div class="js-menu-tabs-container">
-      <div class="menu-tabs__radio-btns-container">
+      <div class="b-city-rates__radio-btns-container">
         {{#each cityRatesTabs }}
-          <label class="menu-tabs__radio-wrapper">
-            <input type="radio" class="b-city-rates__tab menu-tabs__radio js-menu-tab" name="{{ this.name }}" {{#if this.isChecked}}checked{{/if}} value="{{ this.value }}">
+          <label class="b-city-rates__radio-wrapper">
+            <input type="radio" class="b-city-rates__tab js-menu-tab" name="{{ this.name }}"
+                   {{#if this.isChecked}}checked{{/if}} value="{{ this.value }}">
             <span class="b-city-rates__tab-content">{{ this.itemName }}</span>
           </label>
         {{/each}}
       </div>
 
-      <div class="js-menu-tab-content gl__menu-tab-content" data-menu="kazan">
-        kazan
-      </div>
-      <div class="js-menu-tab-content gl__menu-tab-content" data-menu="yelabuga">
-        yelabuga
-      </div>
-      <div class="js-menu-tab-content gl__menu-tab-content" data-menu="naberezhnye-chelny">
-        naberezhnye-chelny
-      </div>
+      {{#each cityRatesContentsList }}
+        <div class="js-menu-tab-content gl__menu-tab-content" data-menu="{{ this.type }}">
+            <div class="b-city-rates__content">
+              <div class="b-city-rates__content-text">
+                {{ this.text }}
+              </div>
+              <div class="b-city-rates__content__price">
+                {{ this.price }}
+              </div>
+            </div>
+
+            <div class="b-city-rates__content-mark">
+              Тарифы указаны с учетом НДС
+            </div>
+          </div>
+      {{/each}}
     </div>
   </div>
 </section>
