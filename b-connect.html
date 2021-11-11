@@ -490,7 +490,6 @@
         "items": [
           {
             "title": "Комплекс услуг от одного оператора",
-            "narrowHeader": true, - если нужна узкая шапка
             "lightHeader": true, - если нужная светлая шапка (светло-голубой)
             "img": "img/b-single-business/complex.svg",
             "numHeader": "1", - вместо изображения цифра
@@ -529,7 +528,7 @@
           <div class="gl-slider__b-container gl-slider__container swiper-container js-swiper-container">
             <div class="gl-slider__wrapper swiper-wrapper">
                 <div class="b-advantages-opportunities__slide swiper-slide">
-                  <div class="b-advantages-opportunities__slide-header  ">
+                  <div class="b-advantages-opportunities__slide-header ">
                       <img src="img/common/check-ellipse.svg" alt="" class="b-advantages-opportunities__slide-img">
                     <div class="b-advantages-opportunities__slide-title ">
                       100% и мгновенная доставка и получение документов
@@ -540,7 +539,7 @@
                   </div>
                 </div>
                 <div class="b-advantages-opportunities__slide swiper-slide">
-                  <div class="b-advantages-opportunities__slide-header  ">
+                  <div class="b-advantages-opportunities__slide-header ">
                       <img src="img/common/check-ellipse.svg" alt="" class="b-advantages-opportunities__slide-img">
                     <div class="b-advantages-opportunities__slide-title ">
                       Контроль процесса рассмотрения документа
@@ -551,7 +550,7 @@
                   </div>
                 </div>
                 <div class="b-advantages-opportunities__slide swiper-slide">
-                  <div class="b-advantages-opportunities__slide-header  ">
+                  <div class="b-advantages-opportunities__slide-header ">
                       <img src="img/common/check-ellipse.svg" alt="" class="b-advantages-opportunities__slide-img">
                     <div class="b-advantages-opportunities__slide-title ">
                       Экономия бюджета и времени
@@ -629,13 +628,13 @@
             </li>
         </ul>
     
-        <a href="" download class="b-additional-features__file-link">
-          <svg width="30" height="40" aria-hidden="true" class="b-additional-features__file-link-icon">
+        <a href="" download class="dpf-file__file-link">
+          <svg width="30" height="40" aria-hidden="true" class="dpf-file__file-link-icon">
             <use xlink:href="#pdf-file"></use>
           </svg>
           <div>
-            <div class="b-additional-features__file-link-title">PDF 265 KB</div>
-            <div class="b-additional-features__file-link-subtitle">Подробнее о тарифных планах</div>
+            <div class="dpf-file__file-link-title">265 KB</div>
+            <div class="dpf-file__file-link-subtitle">Подробнее о тарифных планах</div>
           </div>
         </a>
       </div>
@@ -781,7 +780,8 @@
           <div class="b-support__block b-support__form-block">
             <h3 class="b-support__form-title">Хотите узнать больше?</h3>
             <span class="b-support__form-label">Наши специалисты помогут подобрать решения, отталкиваясь от ваших бизнес-потребностей</span>
-            <form data-need-validation data-parsley-validate data-parsley-focus="none" class="application-consultation__form mod-business">
+            <form data-need-validation data-parsley-validate data-parsley-focus="none"
+                  class="application-consultation__form mod-business">
               <!--
                 ___Обязательные поля___
                 type - html-тип инута
@@ -868,49 +868,51 @@
             </form>
           </div>
           <div class="b-support__block b-support__contacts-block">
-            <h3 class="b-support__contacts-title">Служба поддержки</h3>
-            <span class="b-support__contacts-label">Для оперативной связи со службой поддержки обращайтесь одним из удобных способов</span>
-    
-            <a class="b-support__contacts-tel" title="Позвонить" href="tel:+78432222222">(843) 238-00-00</a>
-    
-            <ul class="b-socials">
-              <li class="b-socials__item">
-                <a class="b-socials__link" title="Написать в Whatsapp" href="#">
-                  <span class="b-socials__link-content whatsapp">
-                  <svg width="22" height="22" aria-hidden="true" class="b-socials__link-icon">
-                    <use xlink:href="#soc-whatsapp"></use>
-                  </svg>
-                  </span>
-                </a>
-              </li>
-              <li class="b-socials__item">
-                <a class="b-socials__link" title="Написать в Telegram" href="#">
-                  <span class="b-socials__link-content telegram">
-                  <svg width="22" height="20" aria-hidden="true" class="b-socials__link-icon">
-                    <use xlink:href="#soc-telegram"></use>
-                  </svg>
-                  </span>
-                </a>
-              </li>
-              <li class="b-socials__item">
-                <a class="b-socials__link" title="Написать в VK" href="#">
-                  <span class="b-socials__link-content vk">
-                  <svg width="26" height="16" aria-hidden="true" class="b-socials__link-icon">
-                    <use xlink:href="#soc-vk"></use>
-                  </svg>
-                  </span>
-                </a>
-              </li>
-              <li class="b-socials__item">
-                <a class="b-socials__link" title="Написать в Facebook" href="#">
-                  <span class="b-socials__link-content facebook">
-                  <svg width="10" height="22" aria-hidden="true" class="b-socials__link-icon">
-                    <use xlink:href="#soc-facebook"></use>
-                  </svg>
-                  </span>
-                </a>
-              </li>
-            </ul>
+            <div>
+              <h3 class="b-support__contacts-title">Служба поддержки</h3>
+              <span class="b-support__contacts-label">Для оперативной связи со службой поддержки обращайтесь одним из удобных способов</span>
+            
+              <a class="b-support__contacts-tel" title="Позвонить" href="tel:+78432222222">(843) 238-00-00</a>
+            
+              <ul class="b-socials">
+                <li class="b-socials__item">
+                  <a class="b-socials__link" title="Написать в Whatsapp" href="#">
+                          <span class="b-socials__link-content whatsapp">
+                          <svg width="22" height="22" aria-hidden="true" class="b-socials__link-icon">
+                            <use xlink:href="#soc-whatsapp"></use>
+                          </svg>
+                          </span>
+                  </a>
+                </li>
+                <li class="b-socials__item">
+                  <a class="b-socials__link" title="Написать в Telegram" href="#">
+                          <span class="b-socials__link-content telegram">
+                          <svg width="22" height="20" aria-hidden="true" class="b-socials__link-icon">
+                            <use xlink:href="#soc-telegram"></use>
+                          </svg>
+                          </span>
+                  </a>
+                </li>
+                <li class="b-socials__item">
+                  <a class="b-socials__link" title="Написать в VK" href="#">
+                          <span class="b-socials__link-content vk">
+                          <svg width="26" height="16" aria-hidden="true" class="b-socials__link-icon">
+                            <use xlink:href="#soc-vk"></use>
+                          </svg>
+                          </span>
+                  </a>
+                </li>
+                <li class="b-socials__item">
+                  <a class="b-socials__link" title="Написать в Facebook" href="#">
+                          <span class="b-socials__link-content facebook">
+                          <svg width="10" height="22" aria-hidden="true" class="b-socials__link-icon">
+                            <use xlink:href="#soc-facebook"></use>
+                          </svg>
+                          </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

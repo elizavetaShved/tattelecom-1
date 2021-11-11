@@ -678,22 +678,6 @@ body {
   padding-top: 1.8rem;
   border-top: 1px solid #fff; }
 
-.test-link__wrapper {
-  display: grid;
-  grid-template-columns: 20rem auto;
-  grid-gap: 2rem; }
-  .test-link__wrapper + .test-link__wrapper {
-    margin-top: 3rem;
-    padding-top: 3rem;
-    border-top: 1px solid var(--main-grey-color); }
-
-.test-links__link {
-  display: block;
-  font-size: 14px; }
-
-.test-links__img {
-  height: 10rem; }
-
 /**
  * Swiper 6.8.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -2027,6 +2011,60 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 
 .gl__layout-wrapper.mod-business .select__container .choices__list::-webkit-scrollbar-thumb {
   background-color: var(--main-color-business); }
+
+.dev-link__wrapper {
+  display: grid;
+  grid-template-columns: 20rem auto;
+  grid-gap: 2rem; }
+  .dev-link__wrapper + .dev-link__wrapper {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--main-grey-color); }
+
+.dev-links__link {
+  display: block;
+  font-size: 14px; }
+
+.dev-links__img {
+  height: 10rem; }
+
+.dev-components__item {
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--main-grey-color);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem; }
+
+.dev-components__item-image {
+  height: 8rem;
+  -o-object-fit: contain;
+     object-fit: contain; }
+  .dev-components__item-image.mod-large {
+    height: 36rem; }
+  .dev-components__item-image.mod-big {
+    height: 16rem; }
+
+.dev-components__item-code {
+  background-color: rgba(233, 233, 233, 0.47);
+  padding: 2rem 10rem 2rem 4rem;
+  display: inline-block;
+  margin: 0;
+  font-size: 12px; }
+
+.dev-components__item-hbs, .dev-components__item-js, .dev-components__item-link-page {
+  font-size: 16px;
+  line-height: 1;
+  padding: .4rem;
+  display: inline-block; }
+
+.dev-components__item-hbs {
+  background-color: #ffe3af; }
+
+.dev-components__item-js {
+  background-color: #afcbff; }
+
+.dev-components__item-link-page {
+  background-color: #baffaf; }
 
 .menu-tabs__radio-btns-container {
   display: -webkit-box;
@@ -4956,6 +4994,37 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     padding: 1.5rem 3rem;
     border: 1px solid #FFFFFF;
     border-radius: 3px; }
+
+.dpf-file__file-link {
+  margin-top: 3.4rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .dpf-file__file-link:hover .dpf-file__file-link-title {
+    color: var(--main-color-business); }
+
+.dpf-file__file-link-icon {
+  height: 4rem;
+  fill: var(--main-grey-color);
+  margin-right: 2.2rem; }
+
+.dpf-file__file-link-title {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.02em;
+  color: var(--main-grey-color);
+  text-transform: uppercase;
+  -webkit-transition: color 250ms;
+  transition: color 250ms; }
+
+.dpf-file__file-link-subtitle {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em; }
 
 .header {
   position: fixed;
@@ -10809,19 +10878,12 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   @media screen and (max-width: 767px) {
     .b-additional-services {
       padding: 2.6rem 0; } }
-  .b-additional-services--single {
-    margin-bottom: 4rem; }
-    @media screen and (max-width: 1159px) {
-      .b-additional-services--single {
-        margin-bottom: 2rem; } }
-    .b-additional-services--single .b-additional-services__btn-label {
-      font-size: var(--fs-h1); }
   .b-additional-services__list {
     padding-left: 5rem; }
     @media screen and (max-width: 1159px) {
       .b-additional-services__list {
         padding-left: 3rem; } }
-    @media screen and (max-width: 1159px) {
+    @media screen and (max-width: 767px) {
       .b-additional-services__list {
         padding-left: 0; } }
   .b-additional-services__item {
@@ -10847,7 +10909,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: left; }
+    text-align: left;
+    margin-bottom: 2rem; }
     .b-additional-services__btn:hover .b-additional-services__btn-label, .b-additional-services__btn:focus .b-additional-services__btn-label {
       color: var(--main-color-business); }
     .b-additional-services__btn.mod-open .b-additional-services__btn-label {
@@ -10865,16 +10928,14 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   .b-additional-services__btn-icon {
     margin-right: 1.6rem; }
   .b-additional-services__content-list {
-    padding-left: 12rem;
-    padding-top: 5rem;
-    max-width: 112rem; }
+    padding-left: 6rem;
+    max-width: 92rem; }
     @media screen and (max-width: 1159px) {
       .b-additional-services__content-list {
-        padding-left: 5rem;
-        padding-top: 2rem; } }
+        padding-left: 4rem; } }
     @media screen and (max-width: 767px) {
       .b-additional-services__content-list {
-        padding-left: 4rem; } }
+        padding-left: 2rem; } }
   .b-additional-services__content-item {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -11054,9 +11115,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 17rem; }
-  .b-advantages-opportunities__slide-header.mod-narrow {
-    min-height: 10.6rem; }
+  min-height: 10.6rem; }
   .b-advantages-opportunities__slide-header.mod-light {
     background: linear-gradient(101.01deg, #0396FF 8.09%, #25A4FF 51.47%, #7BC8FF 93.43%); }
   @media screen and (max-width: 767px) {
@@ -11215,16 +11274,16 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   letter-spacing: 0.015em;
   margin-bottom: 3rem; }
 
-.b-info__list-width-line-mark, .b-info__list-ellipse-mark {
+.b-info__list-width-line-mark, .b-info__list-ellipse-mark, .b-info__list-number {
   margin-bottom: 3rem; }
-  .b-info__list-width-line-mark:last-child, .b-info__list-ellipse-mark:last-child {
+  .b-info__list-width-line-mark:last-child, .b-info__list-ellipse-mark:last-child, .b-info__list-number:last-child {
     margin-bottom: 0; }
-  .b-info__list-width-line-mark.mod-padding-left, .b-info__list-ellipse-mark.mod-padding-left {
+  .b-info__list-width-line-mark.mod-padding-left, .b-info__list-ellipse-mark.mod-padding-left, .b-info__list-number.mod-padding-left {
     padding-left: 6rem; }
     @media screen and (max-width: 767px) {
-      .b-info__list-width-line-mark.mod-padding-left, .b-info__list-ellipse-mark.mod-padding-left {
+      .b-info__list-width-line-mark.mod-padding-left, .b-info__list-ellipse-mark.mod-padding-left, .b-info__list-number.mod-padding-left {
         padding-left: 0; } }
-  .b-info__list-width-line-mark.mod-min-content, .b-info__list-ellipse-mark.mod-min-content {
+  .b-info__list-width-line-mark.mod-min-content, .b-info__list-ellipse-mark.mod-min-content, .b-info__list-number.mod-min-content {
     max-width: 89.6rem; }
 
 .b-info__item-line-mark {
@@ -11271,6 +11330,22 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   line-height: 2.2rem;
   letter-spacing: 0.015em;
   margin-top: .2rem; }
+
+.b-info__item-number {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+  padding-left: 3.2rem;
+  counter-increment: num;
+  position: relative; }
+  .b-info__item-number:before {
+    content: counter(num) ".";
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .b-info__item-number + .b-info__item-number {
+    margin-top: .4rem; }
 
 .b-mobile-communication {
   margin-top: 5rem;
@@ -11851,11 +11926,12 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    color: var(--main-color-hover); }
     .b-roaming-international-options__slide-btn:focus .b-roaming-international-options__slide-btn-label, .b-roaming-international-options__slide-btn:hover .b-roaming-international-options__slide-btn-label {
       color: var(--main-color-hover); }
     .b-roaming-international-options__slide-btn:focus .b-roaming-international-options__slide-btn-icon, .b-roaming-international-options__slide-btn:hover .b-roaming-international-options__slide-btn-icon {
-      fill: var(--main-color-hover); }
+      fill: var(--main-color-hover) !important; }
   .b-roaming-international-options__slide-btn-label {
     margin-right: 1rem;
     font-size: var(--fs-t2);
@@ -11933,37 +12009,6 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   @media screen and (max-width: 767px) {
     .b-additional-features {
       padding: 2.6rem 0; } }
-
-.b-additional-features__file-link {
-  margin-top: 3.4rem;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .b-additional-features__file-link:hover .b-additional-features__file-link-title {
-    color: var(--main-color-business); }
-
-.b-additional-features__file-link-icon {
-  height: 4rem;
-  fill: var(--main-grey-color);
-  margin-right: 2.2rem; }
-
-.b-additional-features__file-link-title {
-  font-weight: 300;
-  font-size: 1.4rem;
-  line-height: 2.2rem;
-  letter-spacing: 0.02em;
-  color: var(--main-grey-color);
-  text-transform: uppercase;
-  -webkit-transition: color 250ms;
-  transition: color 250ms; }
-
-.b-additional-features__file-link-subtitle {
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  letter-spacing: 0.02em; }
 
 .b-services-links {
   padding: 5rem 0; }
@@ -12133,37 +12178,6 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   line-height: 2rem;
   letter-spacing: 0.01em;
   text-align: end; }
-
-.b-ip-telephony-list {
-  padding: 2.6rem 0 5rem; }
-  @media screen and (max-width: 1159px) {
-    .b-ip-telephony-list {
-      padding: 2rem 0 3rem; } }
-  @media screen and (max-width: 767px) {
-    .b-ip-telephony-list {
-      padding: 1.2rem 0 2.6rem; } }
-
-.b-ip-telephony-list__title {
-  font-size: 2.6rem;
-  line-height: 3.4rem;
-  letter-spacing: 0.015em;
-  margin-bottom: 3rem; }
-
-.b-ip-telephony-list__item {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 2.6rem;
-  letter-spacing: 0.02em;
-  padding-left: 3.2rem;
-  counter-increment: num;
-  position: relative; }
-  .b-ip-telephony-list__item:before {
-    content: counter(num) ".";
-    position: absolute;
-    left: 0;
-    top: 0; }
-  .b-ip-telephony-list__item + .b-ip-telephony-list__item {
-    margin-top: .4rem; }
 
 .b-codes-for-calls {
   padding: 5rem 0; }
