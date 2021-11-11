@@ -15,7 +15,9 @@
               </svg>
               <span class="b-additional-services__btn-label">{{this.name}}</span>
             </button>
-            {{> common/btn-info content-info=this.name }}
+            <div class="b-additional-services__btn-info-wrapper">
+              {{> common/btn-info content-info=this.name }}
+            </div>
           </div>
           
           <div class="gl__drop-menu-container js-drop-menu-container b-additional-services__wrapper">

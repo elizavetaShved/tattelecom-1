@@ -2,10 +2,10 @@
   <li class="faq__item {{#if noBorder }}mod-no-border{{/if}} {{#if isBusiness }}mod-business{{/if}}">
     {{#if singleQuestion }}
       <button type="button" class="{{#if globalTitleStyle }}gl__title{{else}} faq__item-btn-wrapper{{/if}} faq__item-btn-hover mod-single-question gl__drop-menu-btn js-drop-menu-btn">
-        {{ this.title }}
         <svg width="32" height="32" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
           <use xlink:href="#arrow-down"></use>
         </svg>
+        {{ this.title }}
       </button>
     {{else }}
       <button type="button" class="faq__item-btn-wrapper faq__item-btn-hover gl__drop-menu-btn js-drop-menu-btn">

@@ -10,20 +10,6 @@
   }
 }
 
-.b-codes-for-calls__bnt {
-  transition: color 300ms;
-  display: flex;
-  align-items: center;
-
-  &:hover {
-    color: var(--main-color-business);
-
-    .b-codes-for-calls__icon {
-      fill: var(--main-color-business);
-    }
-  }
-}
-
 .b-codes-for-calls__icon {
   height: 2.4rem;
   fill: var(--main-text-color);

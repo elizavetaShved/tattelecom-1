@@ -20,6 +20,14 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &.mod-padding-left {
+    padding-left: 6rem;
+
+    @include for-sm-down {
+      padding-left: 0;
+    }
+  }
 }
 
 .b-info__subtitle {

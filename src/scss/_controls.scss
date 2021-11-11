@@ -36,6 +36,17 @@
 
     &:hover {
       background: #fff;
+      color: var(--main-color-business) !important;
+    }
+  }
+
+  &.mod-transparent-2 {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+
+    &:hover {
+      background: #fff;
       color: var(--main-color-hover) !important;
     }
   }

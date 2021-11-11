@@ -350,7 +350,7 @@
 
     &:hover,
     &:focus {
-      color: white;
+      color: white !important;
       background-color: var(--main-color-business-hover);
       border-color: var(--main-color-business-hover);
     }

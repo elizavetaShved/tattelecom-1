@@ -11,11 +11,6 @@
   justify-content: flex-start;
   cursor: pointer;
 
-  .faq__item-btn-icon {
-    margin-right: 0;
-    margin-left: 1.6rem;
-  }
-
   &:hover {
     .faq__title {
       color: var(--main-color-business);
@@ -44,6 +39,10 @@
 .faq__item {
   &:not(.mod-no-border) {
     border-bottom: 2px solid var(--border-color);
+
+    &:last-child {
+      border-bottom: none !important;
+    }
   }
 }
 
@@ -82,8 +81,6 @@
 
     .faq__item-btn-icon {
       height: 3.2rem;
-      margin-right: 0;
-      margin-left: 1.8rem;
     }
   }
 }
