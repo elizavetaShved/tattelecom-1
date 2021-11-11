@@ -197,6 +197,13 @@
     .gl__main-btn.mod-black:hover {
       background-color: #fff;
       color: #000 !important; }
+  .gl__main-btn.mod-white-grey {
+    background-color: #fff;
+    color: var(--main-text-color); }
+    .gl__main-btn.mod-white-grey:hover {
+      background-color: #f9f9f9;
+      border-color: transparent;
+      color: var(--main-color) !important; }
   .gl__main-btn.mod-grey {
     background-color: var(--border-color);
     color: var(--main-text-color); }
@@ -669,7 +676,9 @@ body {
   grid-template-columns: 20rem auto;
   grid-gap: 2rem; }
   .test-link__wrapper + .test-link__wrapper {
-    margin-top: 2rem; }
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--main-grey-color); }
 
 .test-links__link {
   display: block;
@@ -3050,6 +3059,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     .rates-preview.mod-promo-internet .rates-preview__btn {
       background-color: #fff;
       color: var(--main-color); }
+      .rates-preview.mod-promo-internet .rates-preview__btn:hover {
+        background-color: #f9f9f9;
+        border-color: transparent;
+        color: var(--main-text-color) !important; }
     @media screen and (max-width: 767px) {
       .rates-preview.mod-promo-internet .rates-preview__img-wrapper {
         margin-bottom: 0; } }
