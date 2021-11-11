@@ -6,6 +6,7 @@
 @import 'global';
 @import 'vendor';
 @import 'extends';
+@import 'dev';
 
 @import 'components/common/controls/menu-tabs';
 @import 'components/common/controls/checkbox';
@@ -33,6 +34,7 @@
 @import 'components/common/btn-info';
 @import 'components/common/intro-cards-container';
 @import 'components/common/service-card-with-photo';
+@import 'components/common/pdf-file';
 
 @import 'components/layout/header';
 @import 'components/layout/footer';

@@ -1,0 +1,49 @@
+{
+  "title": "Компоненты",
+  "noLayout": true,
+  "chapter3": [
+    {
+      "title": "Хлебные крошки",
+      "componentImg": "img/dev-components/img_7.png",
+      "hbs": "{{> bread-crumbs }}",
+      "json": "\"bread-crumbs\": [\n    {\n      \"name\": \"Частным клиентам\"\n    },\n    {\n      \"name\": \"Интернет\"\n    },\n    {\n      \"name\": \"Тарифы\",\n      \"noLink\": true\n    }\n  ]"
+    },
+    {
+      "title": "Select",
+      "componentImg": "img/dev-components/img.png",
+      "hbs": "{{> common/controls/select selects=years-select }}",
+      "json": "\"year-select\": [\n    {\n      \"name\": \"year-select\",\n      \"required\": true,\n      \"isSimpleDesign\": true,\n      \"isBorderBottom\": true,\n      \"placeholder\": \"Все года\",\n      \"options\": [\n        \"2021\",\n        \"2020\",\n        \"2019\"\n      ]\n    }\n  ]",
+      "js": "initSelects()"
+    },
+    {
+      "title": "PDF-файл",
+      "componentImg": "img/dev-components/img_2.png",
+      "hbs": "{{> common/pdf-file }}",
+      "json": "\"pdf-file\": {\n  \"size\": \"265 KB\",\n  \"caption\": \"Подробнее о тарифных планах\"\n}"
+    },
+    {
+      "title": "Список новостей",
+      "componentImg": "img/dev-components/img_3.png",
+      "hbs": "{{> common/news-list }}",
+      "json": "\"news-list\": {\n  \"title\": \"Новости\",\n  \"list\": [\n    {\n      \"title\": \"22 май\",\n      \"text\": \"Провели праздник двора для жителей ЖК Салават Купере\"\n    },\n    {\n      \"title\": \"22 май\",\n      \"text\": \"Провели праздник двора для жителей ЖК Салават Купере\"\n    },\n    {\n      \"title\": \"22 май\",\n      \"text\": \"Провели праздник двора для жителей ЖК Салават Купере\"\n    },\n    {\n      \"title\": \"22 май\",\n      \"text\": \"Провели праздник двора для жителей ЖК Салават Купере\"\n    },\n    {\n      \"title\": \"22 май\",\n      \"text\": \"Провели праздник двора для жителей ЖК Салават Купере\"\n    }\n  ]\n},"
+    },
+    {
+      "title": "Страница новостей. Есть почти такая же страница",
+      "componentImg": "img/dev-components/img_4.png",
+      "imgClass": "mod-large",
+      "linkPage": "technical-works.html"
+    },
+    {
+      "title": "Разные конторолы (типа инпута) можно найти в partials/components/common/controls",
+      "componentImg": "img/dev-components/img_5.png",
+      "hbs": "{{> common/controls/input-main\n            required=true\n            type=\"text\"\n            placeholder=\"Ваше имя\"\n            name=\"application-consultation-name\"\n          }}",
+      "js": "validation() + phoneMask()"
+    },
+    {
+      "title": "Служба поддержки",
+      "componentImg": "img/dev-components/img_6.png",
+      "imgClass": "mod-big",
+      "hbs": "{{> common/b-support-content }}"
+    }
+  ]
+}

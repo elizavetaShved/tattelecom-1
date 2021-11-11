@@ -21,6 +21,8 @@ export class Header {
 
     this.hostElem = document.getElementById('header-host');
 
+    if (!this.hostElem) return;
+
     this.popupElem = this.hostElem.querySelector('.js-header-popup-container');
     const popupWrapperElem = this.hostElem.querySelector('.js-header-popup-wrapper');
     const bottomBlockElem = this.hostElem.querySelector('.header__bottom-block-content');

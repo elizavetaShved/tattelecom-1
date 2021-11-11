@@ -1,0 +1,33 @@
+.dpf-file__file-link {
+  margin-top: 3.4rem;
+  display: inline-flex;
+  align-items: center;
+
+  &:hover {
+    .dpf-file__file-link-title {
+      color: var(--main-color-business);
+    }
+  }
+}
+
+.dpf-file__file-link-icon {
+  height: 4rem;
+  fill: var(--main-grey-color);
+  margin-right: 2.2rem;
+}
+
+.dpf-file__file-link-title {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.02em;
+  color: var(--main-grey-color);
+  text-transform: uppercase;
+  transition: color 250ms;
+}
+
+.dpf-file__file-link-subtitle {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+}
