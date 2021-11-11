@@ -73,6 +73,17 @@
     }
   }
 
+  &.mod-white-grey {
+    background-color: #fff;
+    color: var(--main-text-color);
+
+    &:hover {
+      background-color: #f9f9f9;
+      border-color: transparent;
+      color: var(--main-color) !important;
+    }
+  }
+
   &.mod-grey {
     background-color: var(--border-color);
     color: var(--main-text-color);

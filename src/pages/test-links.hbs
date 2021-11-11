@@ -3,11 +3,11 @@
     <div class="gl__page-content">
 
       {{#each links }}
-        <div class="test-link__wrapper">
-          <a class="test-links__link" target="_blank" href="{{ this.url }}">{{ this.name }}</a>
+        <a target="_blank" href="{{ this.url }}" class="test-link__wrapper">
+          <div class="test-links__link">{{ this.name }}</div>
 
           <img src="img/test-links/{{ this.img }}" alt="" class="test-links__img">
-        </div>
+        </a>
       {{/each}}
     </div>
 

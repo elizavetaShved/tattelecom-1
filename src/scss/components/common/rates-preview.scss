@@ -207,6 +207,12 @@ $padding-content: 2rem;
     .rates-preview__btn {
       background-color: #fff;
       color: var(--main-color);
+
+      &:hover {
+        background-color: #f9f9f9;
+        border-color: transparent;
+        color: var(--main-text-color) !important;
+      }
     }
 
     .rates-preview__img-wrapper {
