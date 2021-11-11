@@ -37,7 +37,7 @@
   margin-bottom: 3rem;
 }
 
-.b-info__list-width-line-mark, .b-info__list-ellipse-mark {
+.b-info__list-width-line-mark, .b-info__list-ellipse-mark, .b-info__list-number {
   margin-bottom: 3rem;
 
   &:last-child {
@@ -107,4 +107,25 @@
   line-height: 2.2rem;
   letter-spacing: 0.015em;
   margin-top: .2rem;
+}
+
+.b-info__item-number {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+  padding-left: 3.2rem;
+  counter-increment: num;
+  position: relative;
+
+  &:before {
+    content: counter(num) '.';
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  & + & {
+    margin-top: .4rem;
+  }
 }

@@ -20,7 +20,19 @@
       </div>
     </section>
 
-    {{> b-ip-telephony-page/b-ip-telephony-list }}
+    <section class="b-info">
+      <div class="gl__page-content">
+        <h2 class="b-info__subtitle">
+          При помощи IP-телефонии «Таттелеком» вы сможете:
+        </h2>
+
+        <ol class="b-info__list-number">
+          {{#each b-ip-telephony-list }}
+            <li class="b-info__item-number">{{ this }}</li>
+          {{/each}}
+        </ol>
+      </div>
+    </section>
 
     {{> common/b-advantages-opportunities }}
 

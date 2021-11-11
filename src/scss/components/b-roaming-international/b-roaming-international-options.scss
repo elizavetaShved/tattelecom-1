@@ -111,6 +111,7 @@
 
     display: flex;
     align-items: center;
+    color: var(--main-color-hover);
 
     &:focus,
     &:hover {
@@ -119,7 +120,7 @@
       }
 
       .b-roaming-international-options__slide-btn-icon {
-        fill: var(--main-color-hover);
+        fill: var(--main-color-hover) !important;
       }
     }
   }
