@@ -11,6 +11,8 @@ export class Header {
   businessMainPageMenuContent;
   businessMainPageMenu;
 
+  contentMainPageBusinessElem;
+
   isOpenPopup = false;
 
   constructor() {
@@ -24,6 +26,8 @@ export class Header {
     const bottomBlockElem = this.hostElem.querySelector('.header__bottom-block-content');
     this.menuLinkElements = this.hostElem.querySelectorAll('.header__bottom-menu-link');
     this.popupContentElements = Array.from(this.hostElem.querySelectorAll('.js-header-popup'));
+
+    this.contentMainPageBusinessElem = document.querySelector('#b-main-page-host');
 
     // наведение на ссылку в меню нижнего блока
     this.menuLinkElements.forEach(link => {
@@ -70,7 +74,11 @@ export class Header {
           }
         }
       });
+
+      window.addEventListener('resize', () => this.changePaddingMainContent(true));
     }
+
+    this.changePaddingMainContent(true);
   }
 
   // открыть поп-ап
@@ -109,6 +117,7 @@ export class Header {
     if (isCloseMenu) {
       this.businessMainPageMenu.classList.remove('mod-show');
     }
+    this.changePaddingMainContent(true);
   }
 
   // закрыть бизнес поп-ап (со всей навигацией)
@@ -116,5 +125,19 @@ export class Header {
     this.businessMainPageMenuHost.style.maxHeight = 0;
     this.businessMainPageMenuHost.style.overflow = 'hidden';
     this.businessMainPageMenu.classList.add('mod-show');
+    this.changePaddingMainContent(false)
+  }
+
+  changePaddingMainContent(isAdd) {
+    if (this.contentMainPageBusinessElem) {
+      if (isAdd) {
+        setTimeout(() => {
+          const headerHeight = this.hostElem.clientHeight;
+          this.contentMainPageBusinessElem.style.marginTop = `calc(${ headerHeight }px - var(--header-height))`;
+        }, 300) // todo костыль, потому что меню раскрывается через transition 300ms
+      } else {
+        this.contentMainPageBusinessElem.style.marginTop = `var(--header-height)`;
+      }
+    }
   }
 }

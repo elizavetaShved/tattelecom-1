@@ -1,20 +1,20 @@
 {{#extend "layout"}}
-{{#content "main"}}
+  {{#content "main"}}
 
-{{> bread-crumbs }}
+    {{> bread-crumbs }}
 
-<section class="instructions">
-  <div class="gl__page-content">
-    <h2 class="gl__title">Инструкции</h2>
+    <section class="instructions">
+      <div class="gl__page-content">
+        <h2 class="gl__title">Инструкции</h2>
 
-    <div class="instructions__content">
-      {{> common/documents-list }}
-      {{> instructions/errors-list}}
-    </div>
-  </div>
-</section>
+        <div class="instructions__content">
+          {{> common/documents-list }}
+          {{> instructions/errors-list}}
+        </div>
+      </div>
+    </section>
 
-{{> common/faq/section-faq }}
+    {{> common/faq/section-faq }}
 
-{{/content}}
+  {{/content}}
 {{/extend}}
