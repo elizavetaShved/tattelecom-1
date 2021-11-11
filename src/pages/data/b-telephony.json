@@ -126,7 +126,6 @@
     "items": [
       {
         "title": "Доступность и оперативность",
-        "narrowHeader": true,
         "lightHeader": true,
         "img": "img/b-telephony-page/advantages-opportunities-1.png",
         "list": [
@@ -137,7 +136,6 @@
       },
       {
         "title": "Максимум возможностей",
-        "narrowHeader": true,
         "lightHeader": true,
         "img": "img/b-telephony-page/advantages-opportunities-2.png",
         "list": [

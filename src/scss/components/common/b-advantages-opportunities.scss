@@ -24,11 +24,7 @@
   padding: 2.2rem;
   display: flex;
   align-items: center;
-  min-height: 17rem;
-
-  &.mod-narrow {
-    min-height: 10.6rem;
-  }
+  min-height: 10.6rem;
 
   &.mod-light {
     background: linear-gradient(101.01deg, #0396FF 8.09%, #25A4FF 51.47%, #7BC8FF 93.43%);
