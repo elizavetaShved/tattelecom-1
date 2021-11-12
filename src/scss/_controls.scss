@@ -194,11 +194,13 @@
 }
 
 .gl__link-arrow-wrapper {
-  margin: -2rem;
+  position: absolute;
+  z-index: -1;
 }
 
 .gl__link-arrow-link {
   padding: 2rem;
+  margin: -2rem;
   opacity: 0;
   transition: opacity 600ms;
   position: relative;

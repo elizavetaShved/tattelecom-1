@@ -226,6 +226,16 @@
       "url": "/b-digital-streams.html",
       "name": "Цифровые потоки Е1",
       "img": "img_44.png"
+    },
+    {
+      "url": "/b-telephone-services.html",
+      "name": "Сервисы и услуги телефонной связи",
+      "img": "img_45.png"
+    },
+    {
+      "url": "/b-telephone-service-item.html",
+      "name": "Определитель номера (АОН)",
+      "img": "img_46.png"
     }
   ]
 }

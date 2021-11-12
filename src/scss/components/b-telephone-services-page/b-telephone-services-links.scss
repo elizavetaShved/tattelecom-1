@@ -1,0 +1,107 @@
+$padding-item: 3.2rem;
+$padding-item-tablet: 2rem;
+
+.b-telephone-services-links {
+  padding: 3.6rem 0 5rem;
+
+  @include for-lg-down {
+    padding: 3rem 0;
+  }
+
+  @include for-sm-down {
+    padding: 1.6rem 0 2.6rem;
+  }
+
+  :root {
+    --padding-item: 3.2rem;
+  }
+}
+
+.b-telephone-services-links__link-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+
+  @include for-bg-down {
+    grid-gap: 2rem;
+  }
+
+  @include for-sm-down {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include for-xs-down {
+    grid-template-columns: 1fr;
+  }
+}
+
+.b-telephone-services-links__item {
+  border-radius: 20px;
+  padding: $padding-item $padding-item calc(#{ $padding-item } + 4.4rem);
+  min-height: 26rem;
+  position: relative;
+
+  @include for-bg-down {
+    padding: $padding-item-tablet $padding-item-tablet calc(#{ $padding-item-tablet } + 4.4rem);
+    min-height: 20rem;
+  }
+}
+
+.b-telephone-services-links__item-title {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 3rem;
+
+  @include for-sm-down {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.b-telephone-services-links__item-caption {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 2rem;
+
+  @include for-sm-down {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.b-telephone-services-links__item-link {
+  position: absolute;
+  bottom: $padding-item;
+  left: $padding-item;
+  display: flex;
+  align-items: center;
+  padding: 1.2rem;
+  margin: -1.2rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.01em;
+  color: var(--main-color-business);
+
+  @include for-bg-down {
+    bottom: $padding-item-tablet;
+    left: $padding-item-tablet;
+  }
+
+  &:hover {
+    color: var(--main-color) !important;
+
+    .b-telephone-services-links__item-link-icon {
+      fill: var(--main-color) !important;
+    }
+  }
+}
+
+.b-telephone-services-links__item-link-icon {
+  margin-left: 1rem;
+  fill: var(--main-color-business);
+}

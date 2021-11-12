@@ -1,0 +1,20 @@
+<section class="b-telephone-service-slider">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      Другие услуги
+    </h2>
+
+    <div class="gl-slider js-swiper" data-swiper-slides-preview="3">
+      {{> common/controls/b-btns-slider }}
+      <div class="gl-slider__container swiper-container js-swiper-container">
+        <div class="gl-slider__wrapper swiper-wrapper">
+          {{#each services }}
+            <div class="swiper-slide">
+              {{> b-telephone-services-page/b-telephone-services-link-item }}
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

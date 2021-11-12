@@ -42,6 +42,8 @@ module.exports = {
     ['b-sip-telephony-page']: './src/js/pages/b-sip-telephony-page.js',
     ['b-sip-trunk-page']: './src/js/pages/b-sip-trunk-page.js',
     ['b-digital-streams-page']: './src/js/pages/b-digital-streams-page.js',
+    ['b-telephone-services-page']: './src/js/pages/b-telephone-services-page.js',
+    ['b-telephone-service-item-page']: './src/js/pages/b-telephone-service-item-page',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

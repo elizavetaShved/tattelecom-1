@@ -30,6 +30,12 @@
   }
 }
 
+.b-info__block-wrapper {
+  & + & {
+    margin-top: 5rem;
+  }
+}
+
 .b-info__subtitle {
   font-size: 2.6rem;
   line-height: 3.4rem;
@@ -37,7 +43,14 @@
   margin-bottom: 3rem;
 }
 
-.b-info__list-width-line-mark, .b-info__list-ellipse-mark, .b-info__list-number {
+.b-info__list-title {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 3rem;
+}
+
+.b-info__list-width-line-mark, .b-info__list-ellipse-mark, .b-info__list-number, .b-b-info__list-flex {
   margin-bottom: 3rem;
 
   &:last-child {
@@ -111,7 +124,7 @@
 
 .b-info__item-number {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 2.6rem;
   letter-spacing: 0.02em;
   padding-left: 3.2rem;
@@ -128,4 +141,24 @@
   & + & {
     margin-top: .4rem;
   }
+}
+
+.b-b-info__item-flex {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  grid-gap: 2rem;
+  align-items: center;
+  padding: 1.2rem 0;
+
+  & + & {
+    border-top: 1px solid #fff;
+  }
+}
+
+.b-b-info__item-flex-value {
+  text-align: end;
 }

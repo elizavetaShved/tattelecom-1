@@ -1,0 +1,32 @@
+.b-link-back {
+  margin: 3rem 0 -2rem;
+
+  @include for-sm-down {
+    margin: 1.6rem 0 -2rem;
+  }
+}
+
+.b-link-back__link {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--main-grey-color);
+  display: flex;
+  align-items: center;
+  transition: color 250ms;
+  padding: 2rem;
+  margin: -2rem;
+
+  &:hover {
+    color: var(--main-color-business);
+
+    .b-link-back-icon {
+      fill: var(--main-color-business);
+    }
+  }
+}
+
+.b-link-back-icon {
+  margin-right: 1rem;
+  height: 2rem;
+  fill: var(--main-grey-color);
+}
