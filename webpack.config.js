@@ -44,6 +44,7 @@ module.exports = {
     ['b-digital-streams-page']: './src/js/pages/b-digital-streams-page.js',
     ['b-telephone-services-page']: './src/js/pages/b-telephone-services-page.js',
     ['b-telephone-service-item-page']: './src/js/pages/b-telephone-service-item-page',
+    ['b-internet-page']: './src/js/pages/b-internet-page',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

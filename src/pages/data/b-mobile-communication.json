@@ -9,20 +9,22 @@
       "cost": "333",
       "detailBtn": "Подробнее",
       "tariffsBtn": "Тарифы",
-      "connectBtn": "Подключить"
+      "connectBtn": "Подключить",
+      "cardColorClass": "red"
     },
     {
       "title": "Мобильный интернет",
       "subtitle": "Лучшее решение для интернета вне офиса",
       "cost": "333",
       "detailBtn": "Подробнее",
-      "connectBtn": "Подключить"
+      "connectBtn": "Подключить",
+      "cardColorClass": "red"
     },
     {
       "title": "Роуминг",
       "subtitle": "Входящие и исходящие звонки в поездках по России и миру",
       "hasImage": {
-        "fileName": "service-1.jpg",
+        "fileName": "img/b-mobile-communication/service-1.jpg",
         "gradientClass": "gradient-1"
       },
       "cost": "0",
@@ -32,7 +34,7 @@
       "title": "Красивый номер",
       "subtitle": "Номер для бизнеса, который легко запомнить клиентам",
       "hasImage": {
-        "fileName": "service-2.jpg",
+        "fileName": "img/b-mobile-communication/service-2.jpg",
         "gradientClass": "gradient-2"
       },
       "cost": "0",

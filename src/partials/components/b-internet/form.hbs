@@ -1,0 +1,31 @@
+<section class="b-request-for-connection">
+  <div class="gl__page-content">
+    <div class="b-request-for-connection__content">
+      <h3 class="b-request-for-connection__form-title">
+        Проверьте свой адрес на наличие технической возможности подключения к услугам Таттелеком
+      </h3>
+      <span class="b-request-for-connection__form-label">Наши специалисты помогут подобрать решения, отталкиваясь от ваших бизнес-потребностей</span>
+      <form data-need-validation data-parsley-validate data-parsley-focus="none" class="b-request-for-connection__form mod-4-in-row">
+        {{> common/controls/input-main
+          required=true
+          type="text"
+          placeholder="Город"
+          name="city"
+        }}
+        {{> common/controls/input-main
+          required=true
+          type="text"
+          placeholder="Улица"
+          name="street"
+        }}
+        {{> common/controls/input-main
+          required=true
+          type="text"
+          placeholder="Дом"
+          name="house"
+        }}
+        <button type="submit" class="gl__main-btn">Проверить</button>
+      </form>
+    </div>
+  </div>
+</section>

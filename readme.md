@@ -51,6 +51,7 @@
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/b-digital-streams">Цифровые потоки Е1</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/b-telephone-services">Сервисы и услуги телефонной связи</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/b-telephone-service-item">Определитель номера (АОН)</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/b-internet">Интернет</a><br>
 </div>
 </body>
 
