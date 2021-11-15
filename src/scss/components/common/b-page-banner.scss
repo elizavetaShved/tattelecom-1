@@ -79,6 +79,42 @@
     }
   }
 
+  &.b-internet-by-radio {
+    .b-page-banner__content {
+      padding-right: 9.2rem;
+      height: auto;
+      min-height: 3.6rem;
+
+      @include for-bg-down {
+        padding-right: 4rem;
+      }
+
+      @include for-sm-down {
+        padding-right: 2rem;
+      }
+    }
+
+    .b-page-banner__cost-block {
+      flex-direction: row;
+      color: #fff;
+      align-items: flex-end;
+      margin-bottom: 0;
+      margin-right: 4rem;
+
+      @include for-sm-down {
+        margin-right: 2rem;
+      }
+    }
+
+    .b-page-banner__cost-label {
+      margin-right: .6rem;
+    }
+
+    .b-page-banner__btns-container {
+      margin-top: 0;
+    }
+  }
+
   &__content {
     overflow: hidden;
 
@@ -143,7 +179,7 @@
   &__subtitle {
     color: var(--main-color-business);
     font-weight: 300;
-    font-size: var(--fs-t2);
+    font-size: 1.6rem;
     letter-spacing: 0.02em;
     line-height: 1.6;
 
@@ -272,6 +308,16 @@
       width: 100%;
       padding-left: 1rem;
       padding-right: 1rem;
+    }
+  }
+
+  &__cost-and-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 4.4rem;
+
+    @include for-sm-down {
+      justify-content: space-between;
     }
   }
 }

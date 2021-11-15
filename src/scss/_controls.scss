@@ -51,6 +51,18 @@
     }
   }
 
+  &.mod-b-transparent-white-business {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+
+    &:hover {
+      background: #fff;
+      border-color: #fff;
+      color: var(--main-color-business) !important;
+    }
+  }
+
   &.mod-orange-transparent {
     background-color: transparent;
     color: var(--main-color);
