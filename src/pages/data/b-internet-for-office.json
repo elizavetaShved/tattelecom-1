@@ -1,0 +1,203 @@
+{
+  "isBusiness": true,
+  "title": "Интернет для офиса  ",
+  "script": "b-internet-for-office-page",
+  "banner": {
+    "changeSize": 568,
+    "title": {
+      "accentText": "Интернет в офис",
+      "colorClass": "white"
+    },
+    "largeSubtitle": {
+      "text": "Надёжный интернет для бизнеса",
+      "colorClass": "white"
+    },
+    "image": "b-internet-for-office.jpg",
+    "mobile": {
+      "title": "Интернет в офис",
+      "image": "b-internet-for-office--mobile.jpg"
+    }
+  },
+  "tariffs": [
+    {
+      "name": "Деловой 5",
+      "conditionsList": [
+        {
+          "services": {
+            "internet": "до 5 Мб/c"
+          }
+        }
+      ],
+      "cost": "5 880"
+    },
+    {
+      "name": "Деловой 5",
+      "conditionsList": [
+        {
+          "services": {
+            "internet": "до 5 Мб/c"
+          }
+        }
+      ],
+      "cost": "5 880"
+    },
+    {
+      "name": "Деловой 10",
+      "conditionsList": [
+        {
+          "services": {
+            "internet": "до 10 Мб/c"
+          }
+        }
+      ],
+      "cost": "9 600"
+    },
+    {
+      "name": "Деловой 50",
+      "conditionsList": [
+        {
+          "services": {
+            "internet": "до 50 Мб/c"
+          }
+        }
+      ],
+      "cost": "30 000"
+    },
+    {
+      "name": "Деловой 30",
+      "conditionsList": [
+        {
+          "services": {
+            "internet": "до 30 Мб/c"
+          }
+        }
+      ],
+      "cost": "20 160"
+    },
+    {
+      "name": "Деловой 5",
+      "conditionsList": [
+        {
+          "services": {
+            "internet": "до 5 Мб/c"
+          }
+        }
+      ],
+      "cost": "5 880"
+    }
+  ],
+  "menu-tabs": [
+    {
+      "items": [
+        {
+          "itemName": "При подключении по технологии Ethernet до 500 Мбит/c",
+          "value": "ethernet",
+          "isBusiness": true,
+          "name": "connection-tabs",
+          "isChecked": true
+        },
+        {
+          "itemName": "При подключении по технологии xDSL до 24 Мбит/c",
+          "value": "xdsl",
+          "isBusiness": true,
+          "name": "connection-tabs"
+        },
+        {
+          "itemName": "Подключение по радиоканалу",
+          "value": "radio-channel",
+          "isBusiness": true,
+          "name": "connection-tabs"
+        }
+      ]
+    }
+  ],
+  "connectionContents": [
+    {
+      "type": "ethernet",
+      "title": "При подключении по технологии Ethernet до 500 Мбит/c",
+      "isOpen": true,
+      "list": [
+        {
+          "caption": "Подключение за одну точку",
+          "value": "2 300 Р без Wi-Fi маршрутизатора<br>2 700 Р с Wi-Fi маршрутизатором"
+        },
+        {
+          "caption": "Подключение за одну точку (при одновременном подключении к телефонии)**",
+          "value": "10 Р"
+        },
+        {
+          "caption": "Подключение (при переключении от другого оператора)***",
+          "value": "0 Р"
+        }
+      ]
+    },
+    {
+      "type": "xdsl",
+      "title": "При подключении по технологии xDSL до 24 Мбит/c",
+      "list": [
+        {
+          "caption": "xdsl ...",
+          "value": "0 Р"
+        },
+        {
+          "caption": "xdsl ...",
+          "value": "0 Р"
+        }
+      ]
+    },
+    {
+      "type": "radio-channel",
+      "title": "Подключение по радиоканалу",
+      "list": [
+        {
+          "caption": "radio-channel ...",
+          "value": "0 Р"
+        },
+        {
+          "caption": "radio-channel ...",
+          "value": "0 Р"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "title": "Вопрос 1. Что нибудь про АТС. Если есть таковы",
+      "text": [
+        "...",
+        "...",
+        "..."
+      ]
+    },
+    {
+      "title": "Вопрос 2. Что нибудь про АТС. Если есть таковы",
+      "text": [
+        "...",
+        "...",
+        "..."
+      ]
+    }
+  ],
+  "usefulArticles": [
+    {
+      "image": "useful-article-1.jpg",
+      "title": "Название статьи",
+      "description": "Краткое описание в 2-3 строчки о сути статьи, Краткое описание в 2-3 строчки о сути статьи."
+    },
+    {
+      "image": "useful-article-2.jpg",
+      "title": "Название статьи",
+      "description": "Краткое описание в 2-3 строчки b о сути статьи, Краткое описание в 2-3 строчки о сути статьи."
+    },
+    {
+      "image": "useful-article-3.jpg",
+      "title": "Название статьи",
+      "description": "Краткое описание в 2-3 строчки о сути статьи, Краткое описание в 2-3 строчки о сути статьи."
+    },
+    {
+      "image": "useful-article-4.jpg",
+      "title": "Название статьи",
+      "description": "Краткое описание в 2-3 строчки о сути статьи, Краткое описание в 2-3 строчки о сути статьи."
+    }
+  ]
+}

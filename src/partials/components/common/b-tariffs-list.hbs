@@ -21,7 +21,9 @@
 
 <section class="b-tariffs-list">
   <div class="gl__page-content">
-    <h2 class="gl__title">Тарифы</h2>
+    <h2 class="gl__title">
+      {{#if customTitle }}{{ customTitle }}{{else}}Тарифы{{/if}}
+    </h2>
 
     <div class="b-tariffs-list__content">
       <div class="gl-slider js-swiper" data-swiper-slides-preview="4">
