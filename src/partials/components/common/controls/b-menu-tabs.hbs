@@ -1,0 +1,9 @@
+<div class="b-menu-tabs">
+  {{#each menuTabs }}
+    <label class="b-menu-tabs__radio-wrapper">
+      <input type="radio" class="b-menu-tabs__tab js-menu-tab" name="{{ this.name }}"
+             {{#if this.isChecked}}checked{{/if}} value="{{ this.value }}">
+      <span class="b-menu-tabs__tab-content {{#if isRedBtn }}mod-red{{/if}}">{{ this.itemName }}</span>
+    </label>
+  {{/each}}
+</div>

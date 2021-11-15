@@ -10,7 +10,9 @@
 
 <section class="b-useful-articles">
   <div class="gl__page-content">
-    <h2 class="gl__title">Полезные статьи для бизнеса</h2>
+    <h2 class="gl__title">
+      {{#if customTitle}}{{customTitle}}{{else}}Полезные статьи для бизнеса{{/if}}
+    </h2>
 
     <div class="b-useful-articles__content">
       <div class="gl-slider js-swiper" data-swiper-slides-preview="3">

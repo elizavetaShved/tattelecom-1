@@ -1,0 +1,23 @@
+<section class="b-check">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      {{ title }}
+    </h2>
+
+    {{> common/b-check-items check-items=show-check-items }}
+
+    <button type="button" class="b-check__btn-more gl__drop-menu-btn js-drop-menu-btn">
+      <span class="gl__drop-menu-btn-content js-drop-menu-btn-content-hide mod-show">Ещё</span>
+      <span class="gl__drop-menu-btn-content js-drop-menu-btn-content-open">Скрыть</span>
+      <svg width="24" height="24" aria-hidden="true" class="b-check__btn-more-icon gl__drop-menu-icon">
+        <use xlink:href="#arrow-down"></use>
+      </svg>
+    </button>
+
+    <div class="gl__drop-menu-container js-drop-menu-container">
+      <div class="gl__drop-menu js-drop-menu">
+        {{> common/b-check-items check-items=hide-check-items }}
+      </div>
+    </div>
+  </div>
+</section>

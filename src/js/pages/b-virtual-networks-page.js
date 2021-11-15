@@ -1,9 +1,11 @@
+import initSlider from '../finctions/initSlider';
 import validation from '../finctions/validation';
 import phoneMask from '../finctions/masks/phoneMask';
-import initSelects from '../finctions/initSelects';
+import initMenuTabs from '../finctions/initMenuTabs';
 
 document.addEventListener('DOMContentLoaded', () => {
-  initSelects();
+  initSlider();
+  initMenuTabs();
   validation();
   phoneMask();
-});
+})

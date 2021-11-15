@@ -1,0 +1,28 @@
+<section class="b-tariffs-list">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      Тарифы
+    </h2>
+
+    <div class="js-menu-tabs-container">
+      {{> common/controls/b-menu-tabs menuTabs=ratesBtn }}
+
+      <p class="b-tariffs-list__text b-info__text">
+        Для передачи данных внутри одного населенного пункта. Например, все филиалы организации клиента находятся только
+        на территории г.Казань.
+      </p>
+
+      <div class="js-menu-tab-content gl__menu-tab-content mod-show" data-menu="city-vpn">
+        {{> common/b-tariffs-list/content tariffs=tariffsCityVpn }}
+      </div>
+
+      <div class="js-menu-tab-content gl__menu-tab-content mod-show" data-menu="region-vpn">
+        {{> common/b-tariffs-list/content tariffs=tariffsRegionVpn }}
+      </div>
+    </div>
+
+    <div class="gl__b-hint-nds mod-no-line">
+      Тарифы указаны с учетом НДС
+    </div>
+  </div>
+</section>

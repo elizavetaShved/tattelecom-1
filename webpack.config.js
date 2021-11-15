@@ -48,6 +48,7 @@ module.exports = {
     ['b-internet-for-office-page']: './src/js/pages/b-internet-for-office-page',
     ['b-internet-wi-fi-page']: './src/js/pages/b-internet-wi-fi-page',
     ['b-internet-by-radio-page']: './src/js/pages/b-internet-by-radio-page',
+    ['b-virtual-networks-page']: './src/js/pages/b-virtual-networks-page',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

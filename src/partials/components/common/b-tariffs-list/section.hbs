@@ -1,0 +1,30 @@
+{{!-- Секция "Тарифы" --}}
+{{!-- Стандартный набор данных: --}}
+{{!-- "tariffs": [
+      {
+        "isExpandedCard": true, -- маргины у цену поменьше
+        "isSelectCards": true, -- кнопка выбрать, вместо "подключить" и модификация шрифта
+        "name": "Корпорация-150",
+        "conditionsList": [
+          {
+            "services": {
+              "caption": "Мобильная связь", -- если есть заголово квсей группы
+              "calls": "Безлимитные звонки внутри корпоративной группы",
+              "internet": "5 ГБ 4G интернета",
+              "callsRT": "250 мин на номера РТ",
+              "simpleSignature": "text"
+           }
+        ],
+        "cost": 150
+      }
+] --}}
+
+<section class="b-tariffs-list">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      {{#if customTitle }}{{ customTitle }}{{else}}Тарифы{{/if}}
+    </h2>
+
+    {{> common/b-tariffs-list/content }}
+  </div>
+</section>

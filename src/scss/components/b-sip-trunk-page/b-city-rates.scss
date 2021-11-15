@@ -10,55 +10,6 @@
   }
 }
 
-.b-city-rates__tab {
-  display: none;
-
-  &:checked {
-    + .b-city-rates__tab-content {
-      background-color: var(--main-color-business);
-      color: #fff;
-    }
-  }
-}
-
-.b-city-rates__tab-content {
-  padding: 1.8rem;
-  min-width: 22rem;
-  border-radius: 3px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 1.6rem;
-  line-height: 2rem;
-  letter-spacing: 0.01em;
-  background-color: #fff;
-  transition: background-color 100ms, color 100ms;
-
-  @include for-bg-down {
-    min-width: 16rem;
-  }
-
-  @include for-sm-down {
-    padding: 1.4rem;
-    width: 100%;
-  }
-}
-
-.b-city-rates__radio-btns-container {
-  margin: -.8rem -.6rem;
-  margin-bottom: 3.8rem;
-}
-
-.b-city-rates__radio-wrapper {
-  display: inline-block;
-  margin: .8rem .6rem;
-
-  @include for-sm-down {
-    display: block;
-  }
-}
-
 .b-city-rates__content {
   padding: 4rem 0 .7rem;
   display: flex;

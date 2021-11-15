@@ -136,6 +136,12 @@ body {
   }
 }
 
+.gl__drop-menu-btn-content {
+  &:not(.mod-show) {
+    display: none;
+  }
+}
+
 .gl__drop-menu-icon {
   transform: rotate(0);
   transition: transform 250ms;
@@ -248,5 +254,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-grey-color);
   padding-top: 1.8rem;
-  border-top: 1px solid #fff;
+
+  &:not(.mod-no-line) {
+    border-top: 1px solid #fff;
+  }
 }

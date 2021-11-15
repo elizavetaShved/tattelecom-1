@@ -55,6 +55,7 @@
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/b-internet-for-office">Интернет для офиса</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/b-internet-wi-fi">Интернет Wi-Fi</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/b-internet-by-radio">Интернет по Радиоканалу</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/b-virtual-networks">Виртуальные сети IP VPN</a><br>
 </div>
 </body>
 
