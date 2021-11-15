@@ -236,6 +236,31 @@
       "url": "/b-telephone-service-item.html",
       "name": "Определитель номера (АОН)",
       "img": "img_46.png"
+    },
+    {
+      "url": "/b-internet.html",
+      "name": "Интернет",
+      "img": "img_47.png"
+    },
+    {
+      "url": "/b-internet-for-office.html",
+      "name": "Интернет для офиса",
+      "img": "img_48.png"
+    },
+    {
+      "url": "/b-internet-wi-fi.html",
+      "name": "Интернет Wi-Fi",
+      "img": "img_49.png"
+    },
+    {
+      "url": "/b-internet-by-radio.html",
+      "name": "Интернет по Радиоканалу",
+      "img": "img_50.png"
+    },
+    {
+      "url": "/b-virtual-networks.html",
+      "name": "Виртуальные сети IP VPN",
+      "img": "img_51.png"
     }
   ]
 }
