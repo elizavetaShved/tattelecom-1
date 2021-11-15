@@ -1,0 +1,67 @@
+<!--
+"title": "...",
+    "widthWrapper": true,
+    "list": [
+      {
+        "text": [
+          {
+            "caption": "...",
+            "value": "..."
+          }
+        ]
+      }
+-->
+
+
+<section class="info-drop-menu" id="info-drop-menu-host">
+  <div class="gl__page-content">
+    <button type="button" class="info-drop-menu__title gl__drop-menu-btn js-drop-menu-btn">
+      {{ paragraphs.title }}
+      <svg width="32" height="32" aria-hidden="true" class="info-drop-menu__title-icon gl__drop-menu-icon">
+        <use xlink:href="#arrow-down"></use>
+      </svg>
+    </button>
+
+    <div
+      class="{{#if paragraphs.widthWrapper }}gl__white-container{{/if}} gl__drop-menu-container js-drop-menu-container">
+      <div class="{{#if paragraphs.widthWrapper }}info-drop-menu__content {{/if}} gl__drop-menu js-drop-menu">
+        {{#each paragraphs.list }}
+          <div class="info-drop-menu__info-paragraph">
+            {{#if this.title }}
+              <h3 class="info-drop-menu__info-title">
+                {{ this.title }}
+              </h3>
+            {{/if}}
+
+            {{#each this.text }}
+              <p class="info-drop-menu__info-text">
+                {{#if this.caption }}
+                  <span class="info-drop-menu__info-text-caption">{{ this.caption }}</span>
+                {{/if}}
+                {{ this.value }}
+              </p>
+            {{/each}}
+
+            {{#each flexs }}
+              <div class="info-drop-menu__flex-list-wrapper">
+                {{#if this.title }}
+                  <h3 class="info-drop-menu__info-title">
+                    {{ this.title }}
+                  </h3>
+                {{/if}}
+                {{#each this.list }}
+                  <div class="info-drop-menu__flex">
+                    <div class="info-drop-menu__flex-caption">{{ this.caption }}</div>
+                    {{#if this.value }}
+                      <div class="info-drop-menu__flex-value">{{ this.value }}</div>
+                    {{/if}}
+                  </div>
+                {{/each}}
+              </div>
+            {{/each}}
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>

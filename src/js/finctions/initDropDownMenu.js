@@ -1,6 +1,6 @@
 // добавить классы:
 // .gl__drop-menu-btn.js-drop-menu-btn - на кнопку открытия
-// .data-drop-menu-open - на кнопку открытия, если нужно, чтоб изначально меню было раскрыто
+// data-drop-menu-open - на кнопку открытия, если нужно, чтоб изначально меню было раскрыто
 // .js-drop-menu-leave-open - на кнопку открытия, если НЕ нужно автозакрывание неактивных
 // .gl__drop-menu-container.js-drop-menu-container - обернуть меню в этот класс (для max-height = 0)
 // .gl__drop-menu.js-drop-menu - на само меню
