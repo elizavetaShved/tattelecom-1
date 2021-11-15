@@ -10528,6 +10528,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
             justify-content: flex-start; }
   .b-page-banner.b-digital-streams .b-page-banner__content {
     padding-right: 40%; }
+  @media screen and (max-width: 559px) {
+    .b-page-banner.b-internet-wi-fi .b-page-banner__text {
+      max-width: 80%; } }
   .b-page-banner__content {
     overflow: hidden;
     position: relative;
@@ -12716,3 +12719,16 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   -webkit-box-flex: 0;
       -ms-flex: 0 0 2.4rem;
           flex: 0 0 2.4rem; }
+
+.b-internet-wi-fi-opportunities {
+  padding: 5rem 0; }
+  @media screen and (max-width: 1159px) {
+    .b-internet-wi-fi-opportunities {
+      padding: 3rem 0; } }
+  @media screen and (max-width: 767px) {
+    .b-internet-wi-fi-opportunities {
+      padding: 2.6rem 0; } }
+
+.b-internet-wi-fi-opportunities__slide {
+  padding: 2rem;
+  min-height: 36.2rem; }
