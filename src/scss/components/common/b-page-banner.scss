@@ -71,6 +71,14 @@
     }
   }
 
+  &.b-internet-wi-fi {
+    .b-page-banner__text {
+      @include for-xs-down {
+        max-width: 80%;
+      }
+    }
+  }
+
   &__content {
     overflow: hidden;
 
