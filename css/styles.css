@@ -10672,9 +10672,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   .b-page-banner.b-internet-by-radio .b-page-banner__btns-container {
     margin-top: 0; }
   @media screen and (max-width: 559px) {
-    .b-page-banner.b-lorawan .b-page-banner__text {
+    .b-page-banner.b-lorawan .b-page-banner__text, .b-page-banner.b-m2m .b-page-banner__text {
       max-width: 60%; } }
-  .b-page-banner.b-lorawan .b-page-banner__content {
+  .b-page-banner.b-lorawan .b-page-banner__content, .b-page-banner.b-m2m .b-page-banner__content {
     height: auto;
     min-height: 36rem; }
   .b-page-banner__content {
@@ -10990,6 +10990,27 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   .b-tariffs-item__simple-signature {
     font-size: 1.4rem;
     line-height: 1.8rem; }
+  .b-tariffs-item__simple-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-bottom: 1.4rem; }
+    .b-tariffs-item__simple-flex:last-of-type {
+      margin-bottom: 0; }
+    .b-tariffs-item__simple-flex:first-of-type {
+      margin-top: 2rem; }
+  .b-tariffs-item__simple-flex-caption {
+    color: var(--grey-text);
+    margin-right: .4rem; }
   .b-tariffs-item__footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11608,6 +11629,31 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 
 .b-b-info__item-flex-value {
   text-align: end; }
+
+.b-info__icon-list.mod-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8rem; }
+  @media screen and (max-width: 1023px) {
+    .b-info__icon-list.mod-3 {
+      grid-gap: 4rem; } }
+  @media screen and (max-width: 767px) {
+    .b-info__icon-list.mod-3 {
+      grid-template-columns: 1fr;
+      grid-gap: 3rem; } }
+
+.b-info__icon-list-image {
+  height: 11.8rem;
+  margin-bottom: 1rem; }
+  @media screen and (max-width: 559px) {
+    .b-info__icon-list-image {
+      height: 10rem; } }
+
+.b-info__icon-list-text {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em; }
 
 .b-link-back {
   margin: 3rem 0 -2rem; }
