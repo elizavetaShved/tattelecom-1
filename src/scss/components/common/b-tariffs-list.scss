@@ -142,6 +142,29 @@
     line-height: 1.8rem;
   }
 
+  &__simple-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-bottom: 1.4rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &:first-of-type {
+      margin-top: 2rem;
+    }
+  }
+
+  &__simple-flex-caption {
+    color: var(--grey-text);
+    margin-right: .4rem;
+  }
+
   &__footer {
     display: flex;
     flex-direction: column;

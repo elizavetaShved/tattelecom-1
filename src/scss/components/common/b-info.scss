@@ -162,3 +162,36 @@
 .b-b-info__item-flex-value {
   text-align: end;
 }
+
+.b-info__icon-list {
+  &.mod-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8rem;
+
+    @include for-bg-down {
+      grid-gap: 4rem;
+    }
+
+    @include for-sm-down {
+      grid-template-columns: 1fr;
+      grid-gap: 3rem;
+    }
+  }
+}
+
+.b-info__icon-list-image {
+  height: 11.8rem;
+  margin-bottom: 1rem;
+
+  @include for-xs-down {
+    height: 10rem;
+  }
+}
+
+.b-info__icon-list-text {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+}

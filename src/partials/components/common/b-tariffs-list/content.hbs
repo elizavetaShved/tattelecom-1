@@ -72,6 +72,13 @@
                           {{{ this.services.simpleSignature }}}
                         </li>
                       {{/if}}
+
+                      {{#each this.services.simpleFlexsList }}
+                        <li class="b-tariffs-item__simple-flex">
+                          <div class="b-tariffs-item__simple-flex-caption">{{this.caption}}</div>
+                          <div class="b-tariffs-item__simple-flex-value">{{this.value}}</div>
+                        </li>
+                      {{/each}}
                     </ul>
                   </div>
                 {{/each}}

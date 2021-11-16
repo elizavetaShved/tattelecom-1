@@ -50,6 +50,7 @@ module.exports = {
     ['b-internet-by-radio-page']: './src/js/pages/b-internet-by-radio-page',
     ['b-virtual-networks-page']: './src/js/pages/b-virtual-networks-page',
     ['b-lorawan-page']: './src/js/pages/b-lorawan-page',
+    ['b-m2m-page']: './src/js/pages/b-m2m-page-page',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),
