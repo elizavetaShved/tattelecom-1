@@ -160,6 +160,12 @@
   @include for-xs-down {
     margin-left: 0;
   }
+
+  .info-drop-menu__flex {
+    &:last-child {
+      border-bottom: none;
+    }
+  }
 }
 
 .faq__flexs-item {

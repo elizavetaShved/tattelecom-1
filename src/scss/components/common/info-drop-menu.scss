@@ -1,8 +1,8 @@
 .info-drop-menu {
-  padding: 5rem 0 8rem;
+  margin: 5rem 0 8rem;
 
   @include for-sm-down {
-    padding: 2.6rem 0 4rem;
+    margin: 2.6rem 0 4rem;
   }
 }
 
@@ -12,7 +12,7 @@
   font-size: 3.8rem;
   line-height: 5rem;
   letter-spacing: 0.015em;
-  padding: 3rem 0;
+  padding-bottom: 3rem;
 
   &:hover {
     color: var(--main-color);
@@ -31,6 +31,14 @@
 .info-drop-menu__content {
   padding: 5rem;
   border-radius: 20px;
+}
+
+.info-drop-menu__flex-list-wrapper {
+  margin-bottom: 2.4rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .info-drop-menu__info-paragraph {
@@ -53,17 +61,6 @@
 
   & + & {
     margin-top: 1.2rem;
-  }
-}
-
-.info-drop-menu__info-text-caption {
-  font-weight: bold;
-  margin-right: .2rem;
-}
-
-.info-drop-menu__flex-list-wrapper {
-  & + & {
-    margin-top: 2.4rem;
   }
 }
 

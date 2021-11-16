@@ -1,17 +1,56 @@
 <!--
-"title": "...",
-    "widthWrapper": true,
-    "list": [
-      {
+  Текстовый "сборный" текст :
+      "paragraphs": {
+        "title": "...",
         "text": [
+          {
+            "value": "..."
+          },
           {
             "caption": "...",
             "value": "..."
+          },
+          {
+            "title": "..."
+          },
+          {
+            "olList": [
+              "...",
+              "..."
+            ]
+          },
+          {
+            "flexs": [
+                {
+                  "title": "...",
+                  "list": [
+                    {
+                      "caption": "...",
+                      "value": "... ₽/минута"
+                    }
+                  ]
+                }
+              ]
           }
         ]
-      }
--->
+     }
 
+  Флексы:
+  "paragraphs": {
+    "title": "...",
+      "flexs": [
+        {
+          "title": "...",
+          "list": [
+            {
+              "caption": "...",
+              "value": "... ₽/минута"
+            }
+          ]
+        }
+      ]
+  }
+-->
 
 <section class="info-drop-menu" id="info-drop-menu-host">
   <div class="gl__page-content">
@@ -22,33 +61,63 @@
       </svg>
     </button>
 
-    <div
-      class="{{#if paragraphs.widthWrapper }}gl__white-container{{/if}} gl__drop-menu-container js-drop-menu-container">
-      <div class="{{#if paragraphs.widthWrapper }}info-drop-menu__content {{/if}} gl__drop-menu js-drop-menu">
-        {{#each paragraphs.list }}
-          <div class="info-drop-menu__info-paragraph">
-            {{#if this.title }}
-              <h3 class="info-drop-menu__info-title">
-                {{ this.title }}
-              </h3>
-            {{/if}}
+    {{#if paragraphs.text }}
+      <div class="gl__white-container gl__drop-menu-container js-drop-menu-container">
+        <div class="info-drop-menu__content gl__drop-menu js-drop-menu">
+          <div class="gl__text">
+            {{#each paragraphs.text }}
+              {{#if this.title }}<h3>{{ this.title }}</h3>{{/if}}
 
-            {{#each this.text }}
-              <p class="info-drop-menu__info-text">
-                {{#if this.caption }}
-                  <span class="info-drop-menu__info-text-caption">{{ this.caption }}</span>
-                {{/if}}
-                {{ this.value }}
-              </p>
+              {{#if this.value }}
+                <p>{{#if this.caption }}<b>{{ this.caption }}</b><i>{{ this.captionI }}</i>{{#if brCaption}}<br>{{/if}}{{/if}}{{ this.value }}</p>
+              {{/if}}
+
+              {{#if brP}}<br>{{/if}}
+
+              {{#if this.olList }}
+                <ol>
+                  {{#each this.olList }}
+                    <li>{{ this }}</li>
+                  {{/each}}
+                </ol>
+              {{/if}}
+
+              {{#if brOlList}}<br>{{/if}}
+
+              {{#each this.flexs }}
+                <div class="info-drop-menu__info-paragraph">
+                  <div class="info-drop-menu__flex-list-wrapper">
+                    {{#if this.title }}
+                      <h2 class="info-drop-menu__info-title">{{ this.title }}</h2>
+                    {{/if}}
+
+                    {{#each this.list }}
+                      <div class="info-drop-menu__flex">
+                        <div class="info-drop-menu__flex-caption">{{ this.caption }}</div>
+                        {{#if this.value }}
+                          <div class="info-drop-menu__flex-value">{{ this.value }}</div>
+                        {{/if}}
+                      </div>
+                    {{/each}}
+                  </div>
+                </div>
+              {{/each}}
             {{/each}}
+          </div>
+        </div>
+      </div>
+    {{/if}}
 
-            {{#each flexs }}
+    {{#if paragraphs.flexs }}
+      <div class="gl__drop-menu-container js-drop-menu-container">
+        <div class="gl__drop-menu js-drop-menu">
+          {{#each paragraphs.flexs }}
+            <div class="info-drop-menu__info-paragraph">
               <div class="info-drop-menu__flex-list-wrapper">
                 {{#if this.title }}
-                  <h3 class="info-drop-menu__info-title">
-                    {{ this.title }}
-                  </h3>
+                  <h3 class="info-drop-menu__info-title">{{ this.title }}</h3>
                 {{/if}}
+
                 {{#each this.list }}
                   <div class="info-drop-menu__flex">
                     <div class="info-drop-menu__flex-caption">{{ this.caption }}</div>
@@ -58,10 +127,10 @@
                   </div>
                 {{/each}}
               </div>
-            {{/each}}
-          </div>
-        {{/each}}
+            </div>
+          {{/each}}
+        </div>
       </div>
-    </div>
+    {{/if}}
   </div>
 </section>
