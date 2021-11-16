@@ -115,6 +115,19 @@
     }
   }
 
+  &.b-lorawan {
+    .b-page-banner__text {
+      @include for-xs-down {
+        max-width: 60%;
+      }
+    }
+
+    .b-page-banner__content {
+      height: auto;
+      min-height: 36rem;
+    }
+  }
+
   &__content {
     overflow: hidden;
 

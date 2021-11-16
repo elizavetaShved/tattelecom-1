@@ -24,6 +24,7 @@
     {
       "isExpandedCard": true,
       "isSelectCards": true,
+      "noMore": true,
       "name": "С повременной системой оплаты",
       "conditionsList": [
         {
@@ -43,6 +44,7 @@
     {
       "isExpandedCard": true,
       "isSelectCards": true,
+      "noMore": true,
       "name": "С абонентской системой оплаты (Безлимитный)",
       "conditionsList": [
         {
@@ -62,6 +64,7 @@
     {
       "isExpandedCard": true,
       "isSelectCards": true,
+      "noMore": true,
       "name": "C комбинированной системой оплаты",
       "conditionsList": [
         {

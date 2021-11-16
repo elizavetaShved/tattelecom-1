@@ -1,0 +1,32 @@
+<section class="b-over-package">
+  <div class="gl__page-content">
+    <h2 class="gl__title">Сверх пакета</h2>
+
+    <div class="b-over-package__table-container">
+      <table class="b-over-package__table">
+        <thead>
+        <tr class="b-over-package__table-row">
+          <td class="b-over-package__table-caption"></td>
+          <td class="b-over-package__table-caption">Телеметрия LoRaWAN</td>
+          <td class="b-over-package__table-caption">Телеметрия LoRaWAN - АКТИВ</td>
+          <td class="b-over-package__table-caption">LoRaWAN Своя локация</td>
+        </tr>
+        <thead>
+
+        <tbody>
+        {{#each overPackage }}
+          <tr class="b-over-package__table-row">
+            <th class="b-over-package__table-item mod-caption">{{ this.caption }}</th>
+            {{#each this.value }}
+              <th class="b-over-package__table-item">{{ this }}</th>
+            {{/each}}
+          </tr>
+        {{/each}}
+        </tbody>
+      </table>
+    </div>
+    <div class="gl__b-hint-nds">
+      Тарифы указаны с учетом НДС
+    </div>
+  </div>
+</section>
