@@ -558,43 +558,387 @@
             </div>
           </div>
         </form>
+      </div>
+    </section>
+
+    <!--
+      Текстовый "сборный" текст :
+          "paragraphs": {
+            "title": "...",
+            "text": [
+              {
+                "value": "..."
+              },
+              {
+                "caption": "...",
+                "value": "..."
+              },
+              {
+                "title": "..."
+              },
+              {
+                "olList": [
+                  "...",
+                  "..."
+                ]
+              },
+              {
+                "flexs": [
+                    {
+                      "title": "...",
+                      "list": [
+                        {
+                          "caption": "...",
+                          "value": "... ₽/минута"
+                        }
+                      ]
+                    }
+                  ]
+              }
+            ]
+         }
     
-        <ul class="rates-info__drop-menu-wrapper">
-            <li class="faq__item mod-no-border ">
-                <button type="button" class="faq__item-btn-wrapper faq__item-btn-hover gl__drop-menu-btn js-drop-menu-btn">
-                  <svg width="24" height="24" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
-                    <use xlink:href="#arrow-down"></use>
-                  </svg>
-                  Сверх абонентской платы
-                </button>
-          
-                <div class="faq__item-content-wrapper gl__drop-menu-container js-drop-menu-container">
-                  <div class="gl__drop-menu js-drop-menu">
-                      <p class="faq__item-content-text">1. пункт 1</p>
-                      <p class="faq__item-content-text">2. пункт 2</p>
-                      <p class="faq__item-content-text">3. пункт 3</p>
+      Флексы:
+      "paragraphs": {
+        "title": "...",
+          "flexs": [
+            {
+              "title": "...",
+              "list": [
+                {
+                  "caption": "...",
+                  "value": "... ₽/минута"
+                }
+              ]
+            }
+          ]
+      }
+    -->
+    
+    <section class="info-drop-menu" id="info-drop-menu-host">
+      <div class="gl__page-content">
+        <button type="button" class="info-drop-menu__title gl__drop-menu-btn js-drop-menu-btn">
+          Сверх абонентской платы
+          <svg width="32" height="32" aria-hidden="true" class="info-drop-menu__title-icon gl__drop-menu-icon">
+            <use xlink:href="#arrow-down"></use>
+          </svg>
+        </button>
+    
+    
+          <div class="gl__drop-menu-container js-drop-menu-container">
+            <div class="gl__drop-menu js-drop-menu">
+                <div class="info-drop-menu__info-paragraph">
+                  <div class="info-drop-menu__flex-list-wrapper">
+                      <h3 class="info-drop-menu__info-title">Звонки, смс и другие услуги</h3>
+    
+                      <div class="info-drop-menu__flex">
+                        <div class="info-drop-menu__flex-caption">Исходящие вызовы на мобильные и городские номера РТ (за исключением номеров «Летай»), доступ к IP-телефонии</div>
+                          <div class="info-drop-menu__flex-value">1,5 ₽/минута</div>
+                      </div>
+                      <div class="info-drop-menu__flex">
+                        <div class="info-drop-menu__flex-caption">Исходящие вызовы на мобильные и городские номера РФ</div>
+                          <div class="info-drop-menu__flex-value">3 ₽/минута</div>
+                      </div>
+                      <div class="info-drop-menu__flex">
+                        <div class="info-drop-menu__flex-caption">Исходящие SMS на номера мобильных операторов РТ (в том числе на номера оператора «Летай»)</div>
+                          <div class="info-drop-menu__flex-value">1 ₽/SMS</div>
+                      </div>
+                      <div class="info-drop-menu__flex">
+                        <div class="info-drop-menu__flex-caption">Исходящие SMS на номера мобильных операторов РФ</div>
+                          <div class="info-drop-menu__flex-value">2 ₽/SMS</div>
+                      </div>
+                      <div class="info-drop-menu__flex">
+                        <div class="info-drop-menu__flex-caption">Исходящие местные вызовы на 01, 02, 03, 04, 112, 123, 118-08, 118-18, 118-88, 118-00,8-148, 8-128, (843)222-22-22, (843)238-00-00, (843)561-09-92</div>
+                          <div class="info-drop-menu__flex-value">0</div>
+                      </div>
+                      <div class="info-drop-menu__flex">
+                        <div class="info-drop-menu__flex-caption">Входящие вызовы при нахождении на территории РТ</div>
+                          <div class="info-drop-menu__flex-value">0</div>
+                      </div>
+                      <div class="info-drop-menu__flex">
+                        <div class="info-drop-menu__flex-caption">Определение номера</div>
+                          <div class="info-drop-menu__flex-value">0</div>
+                      </div>
+                      <div class="info-drop-menu__flex">
+                        <div class="info-drop-menu__flex-caption">Информирование абонентов посредством SMS, USSD</div>
+                          <div class="info-drop-menu__flex-value">0</div>
+                      </div>
+                      <div class="info-drop-menu__flex">
+                        <div class="info-drop-menu__flex-caption">Информационно-развлекательные услуги, Интерактивные SMS-услуги (информация, игры, развлечения, спорт, заказ мелодий и т. д.)</div>
+                          <div class="info-drop-menu__flex-value">по отдельным тарифам</div>
+                      </div>
+                      <div class="info-drop-menu__flex">
+                        <div class="info-drop-menu__flex-caption">Городской номер</div>
+                          <div class="info-drop-menu__flex-value">Городской номер</div>
+                      </div>
                   </div>
                 </div>
-          
-            </li>
-            <li class="faq__item mod-no-border ">
-                <button type="button" class="faq__item-btn-wrapper faq__item-btn-hover gl__drop-menu-btn js-drop-menu-btn">
-                  <svg width="24" height="24" aria-hidden="true" class="faq__item-btn-icon gl__drop-menu-icon">
-                    <use xlink:href="#arrow-down"></use>
-                  </svg>
-                  Примечания
-                </button>
-          
-                <div class="faq__item-content-wrapper gl__drop-menu-container js-drop-menu-container">
-                  <div class="gl__drop-menu js-drop-menu">
-                      <p class="faq__item-content-text">1. пункт 1</p>
-                      <p class="faq__item-content-text">2. пункт 2</p>
-                      <p class="faq__item-content-text">3. пункт 3</p>
+                <div class="info-drop-menu__info-paragraph">
+                  <div class="info-drop-menu__flex-list-wrapper">
+                      <h3 class="info-drop-menu__info-title">Условия смены тарифного плана</h3>
+    
+                      <div class="info-drop-menu__flex">
+                        <div class="info-drop-menu__flex-caption">В течение 30 дней включительно с момента первоначального подключения к услуге подвижной радиотелефонной связи «Летай» смена тарифного плана в личном кабинете и в офисах продаж и обслуживания не производится</div>
+                      </div>
+                      <div class="info-drop-menu__flex">
+                        <div class="info-drop-menu__flex-caption">Если с момента предыдущей смены тарифного плана прошло не более месяца (до 30 дней включительно)</div>
+                          <div class="info-drop-menu__flex-value">150 ₽</div>
+                      </div>
+                      <div class="info-drop-menu__flex">
+                        <div class="info-drop-menu__flex-caption">Если с момента подключения/предыдущей смены тарифного плана прошло более месяца (более 30 дней включительно)</div>
+                          <div class="info-drop-menu__flex-value">0 ₽</div>
+                      </div>
+                      <div class="info-drop-menu__flex">
+                        <div class="info-drop-menu__flex-caption">Переход на тарифный план возможно осуществить в Едином личном кабинете lk.letai.ru или набрать USSD-команду: *116*201#</div>
+                      </div>
                   </div>
                 </div>
-          
-            </li>
-        </ul>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!--
+      Текстовый "сборный" текст :
+          "paragraphs": {
+            "title": "...",
+            "text": [
+              {
+                "value": "..."
+              },
+              {
+                "caption": "...",
+                "value": "..."
+              },
+              {
+                "title": "..."
+              },
+              {
+                "olList": [
+                  "...",
+                  "..."
+                ]
+              },
+              {
+                "flexs": [
+                    {
+                      "title": "...",
+                      "list": [
+                        {
+                          "caption": "...",
+                          "value": "... ₽/минута"
+                        }
+                      ]
+                    }
+                  ]
+              }
+            ]
+         }
+    
+      Флексы:
+      "paragraphs": {
+        "title": "...",
+          "flexs": [
+            {
+              "title": "...",
+              "list": [
+                {
+                  "caption": "...",
+                  "value": "... ₽/минута"
+                }
+              ]
+            }
+          ]
+      }
+    -->
+    
+    <section class="info-drop-menu" id="info-drop-menu-host">
+      <div class="gl__page-content">
+        <button type="button" class="info-drop-menu__title gl__drop-menu-btn js-drop-menu-btn">
+          Примечания
+          <svg width="32" height="32" aria-hidden="true" class="info-drop-menu__title-icon gl__drop-menu-icon">
+            <use xlink:href="#arrow-down"></use>
+          </svg>
+        </button>
+    
+          <div class="gl__white-container gl__drop-menu-container js-drop-menu-container">
+            <div class="info-drop-menu__content gl__drop-menu js-drop-menu">
+              <div class="gl__text">
+                  
+    
+                    <p>На тарифном плане предоставляется федеральный или городской номер.</p>
+    
+                  
+    
+    
+                  
+    
+                  
+    
+                    <p>Система оплаты – авансовая.</p>
+    
+                  
+    
+    
+                  
+    
+                  
+    
+                    <p>Тарификация вызовов – поминутная.</p>
+    
+                  
+    
+    
+                  
+    
+                  
+    
+                    <p>Интервал тарификации услуг Интернет – 1 байт.</p>
+    
+                  
+    
+    
+                  
+    
+                  
+    
+                    <p>Соединения менее 3-х секунд не тарифицируются.</p>
+    
+                  
+    
+    
+                  
+    
+                  
+    
+                    <p>Тарифы приведены в рублях с учетом НДС в соответствии с налоговым кодексом РФ. Тарифы действительны при нахождении Абонента на территории Республики Татарстан. При нахождении на территории других субъектов Федерации или за пределами Российской Федерации, действуют роуминговые тарифы.</p>
+    
+                  
+    
+    
+                  
+    
+                  
+    
+                    <p>При подключении клиенту доступен следующий базовый пакет услуг: Местные вызовы, Междугородные вызовы из РТ, Национальный роуминг, Определитель номера, Переадресация вызова, Ожидание вызова, Удержание вызова, SMS, USSD-сервис, Мобильный интернет (пакетная передача данных), Уведомление о пропущенных вызовах.</p>
+    
+                  
+    
+    
+                  
+    
+                  
+    
+                    <p>Все услуги предоставляются при наличии технической возможности, оказываются конечным потребителям и не предназначены для перепродажи третьим лицам.</p>
+    
+                  
+    
+    
+                  
+    
+                  
+    
+                    <p>Тарифный план предназначен для использования на смартфоне/телефоне. Услуги не предоставляются при использовании SIM-карты на данном тарифном плане в модеме/роутере.</p>
+    
+                  
+    
+    
+                  
+    
+                  
+    
+                    <p>При недостаточности средств для списания абонентской платы за пользование пакетом услуг на тарифном плане, производится блокировка всех услуг абонемента (блокировка исходящей голосовой связи, исходящих SMS, входящего и исходящего интернет-трафика). Разблокировка услуг абонемента происходит после поступления денежных средств на лицевой счет Абонента, в результате списания абонентской платы.</p>
+    
+                  
+    
+    
+                  
+    
+                  
+    
+                    <p>При достижении порога отключения (нулевого баланса) производится блокировка услуг. Разблокировка услуг в этом случае наступает при положительном балансе.</p>
+    
+                  
+    
+    
+                  
+    
+                  
+    
+                    <p>При исчерпании пакета минут, включенных в тариф, исходящие звонки тарифицируются по базовой стоимости исходящего вызова сверх пакета.</p>
+    
+                  
+    
+    
+                  
+    
+                  
+    
+                    <p>При исчерпании пакета SMS, включенных в тариф, исходящие сообщения тарифицируются по базовой стоимости исходящего SMS сверх пакета.</p>
+    
+                  
+    
+    
+                  
+    
+                  
+    
+                    <p>При нулевом или отрицательном балансе абонентская плата по условиям тарифного плана и плата за дополнительные услуги не начисляются.</p>
+    
+                  
+    
+    
+                  
+    
+                  
+    
+                    <p>В случае отсутствия активности со стороны Абонента на номере (отсутствия исходящих голосовых вызовов, исходящих SMS, Интернет-трафика и платных услуг) в течение более 60 календарных дней подряд, начисляется абонентская плата за обслуживание номера в сети в размере 1 руб./сутки. Абонентская плата начисляется ежедневно до достижения нулевого баланса (порога отключения) или до возобновления абонентской активности на номере. При этом абонент, находящийся в принудительной блокировке, имеет возможность совершать исходящие вызовы на номера спец. служб, принимать все входящие вызовы и SMS, за исключением случаев нахождения Абонента в роуминге, а также иных случаев, предусмотренных условиями оказания услуг связи ООО «ТМТ».</p>
+    
+                  
+    
+    
+                  
+    
+                  
+    
+                    <p>Информацию о состоянии баланса можно получить через USSD запрос *100#. Справочную информацию об условиях обслуживания на тарифном плане можно получить по телефону 118-08, (843) 222-22-22 (вызовы не тарифицируются).</p>
+    
+                  
+    
+    
+                  
+    
+                  
+    
+                    <p>ООО «ТМТ» вправе в одностороннем порядке изменять условия обслуживания и стоимость услуг, уведомив об этом абонентов через СМИ и на сайте tattelecom.ru не позднее, чем за 10 дней до предполагаемой даты изменения условий.</p>
+    
+                  
+    
+    
+                  
+    
+                  
+    
+                    <p>Под мобильной связью и мобильными телефонами понимается подвижная радиотелефонная связь и телефонные номера абонентов операторов подвижной радиотелефонной связи. Городские телефоны – телефонные номера абонентов операторов фиксированной связи. РТ – Республика Татарстан, РФ – Российская Федерация. Под номерами «Летай» понимаются телефонные номера абонентов ООО «ТМТ».</p>
+    
+                  
+    
+    
+                  
+    
+                  
+    
+                    <p>Тарифы приведены в рублях с учетом НДС в соответствии с НК РФ.</p>
+    
+                  
+    
+    
+                  
+    
+              </div>
+            </div>
+          </div>
+    
       </div>
     </section>
 
