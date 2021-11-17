@@ -10671,14 +10671,14 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     margin-right: .6rem; }
   .b-page-banner.b-internet-by-radio .b-page-banner__btns-container {
     margin-top: 0; }
-  .b-page-banner.b-lorawan .b-page-banner__content, .b-page-banner.b-m2m .b-page-banner__content, .b-page-banner.b-colocation .b-page-banner__content, .b-page-banner.b-web-hosting .b-page-banner__content {
+  .b-page-banner.b-lorawan .b-page-banner__content, .b-page-banner.b-m2m .b-page-banner__content, .b-page-banner.b-colocation .b-page-banner__content, .b-page-banner.b-web-hosting .b-page-banner__content, .b-page-banner.b-cloud-video .b-page-banner__content {
     height: auto;
     min-height: 36rem; }
   @media screen and (max-width: 559px) {
     .b-page-banner.b-lorawan .b-page-banner__text, .b-page-banner.b-m2m .b-page-banner__text {
       max-width: 60%; } }
   @media screen and (max-width: 767px) {
-    .b-page-banner.b-colocation .b-page-banner__text {
+    .b-page-banner.b-colocation .b-page-banner__text, .b-page-banner.b-cloud-video .b-page-banner__text {
       max-width: 60%; } }
   @media screen and (max-width: 1023px) {
     .b-page-banner.b-web-hosting .b-page-banner__text {
@@ -11297,13 +11297,14 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
         -ms-flex-align: center;
             align-items: center;
     padding: 2.4rem 2rem;
-    font-size: var(--fs-t1);
+    font-size: 1.8rem;
     line-height: 1.2;
     font-weight: 400;
     letter-spacing: 0.015em; }
     @media screen and (max-width: 767px) {
       .b-steps__item-description {
-        padding: 1rem; } }
+        padding: 1rem;
+        font-size: 1.6rem; } }
 
 .b-services {
   background-color: transparent; }
@@ -11685,6 +11686,78 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   font-size: 1.6rem;
   line-height: 2.6rem;
   letter-spacing: 0.02em; }
+
+.b-info__directions-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media screen and (max-width: 1023px) {
+    .b-info__directions-list {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 2rem; } }
+  @media screen and (max-width: 559px) {
+    .b-info__directions-list {
+      grid-template-columns: repeat(2, 1fr); } }
+
+.b-info__directions-item {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  width: clamp(1rem, 15rem, 15rem);
+  min-height: 16rem; }
+  .b-info__directions-item + .b-info__directions-item {
+    margin-left: 3rem; }
+    @media screen and (max-width: 1023px) {
+      .b-info__directions-item + .b-info__directions-item {
+        margin-left: 2rem; } }
+    @media screen and (max-width: 767px) {
+      .b-info__directions-item + .b-info__directions-item {
+        margin-left: 0; } }
+  @media screen and (max-width: 767px) {
+    .b-info__directions-item {
+      width: auto; }
+      .b-info__directions-item:nth-child(1) {
+        grid-row: 1;
+        grid-column: 3 / 7; }
+      .b-info__directions-item:nth-child(2) {
+        grid-row: 1;
+        grid-column: 7 / 11; }
+      .b-info__directions-item:nth-child(3) {
+        grid-row: 2;
+        grid-column: 1 / 5; }
+      .b-info__directions-item:nth-child(4) {
+        grid-row: 2;
+        grid-column: 5 / 9; }
+      .b-info__directions-item:nth-child(5) {
+        grid-row: 2;
+        grid-column: 9 / 13; } }
+  @media screen and (max-width: 559px) {
+    .b-info__directions-item {
+      grid-row: auto !important;
+      grid-column: auto !important; } }
+
+.b-info__directions-item-icon {
+  height: 5rem;
+  margin-bottom: 2.4rem; }
+
+.b-info__directions-item-caption {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-align: center; }
 
 .b-link-back {
   margin: 3rem 0 -2rem; }
