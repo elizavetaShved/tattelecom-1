@@ -54,6 +54,7 @@ module.exports = {
     ['b-colocation-page']: './src/js/pages/b-colocation-page',
     ['b-virtual-server-page']: './src/js/pages/b-virtual-server-page',
     ['b-web-hosting-page']: './src/js/pages/b-web-hosting-page',
+    ['b-domain-registration-page']: './src/js/pages/b-domain-registration-page',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

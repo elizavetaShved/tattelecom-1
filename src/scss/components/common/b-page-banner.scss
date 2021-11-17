@@ -146,9 +146,8 @@
     }
   }
 
-  &.b-virtual-server {
+  &.b-virtual-server, &.b-domain-registration {
     .b-page-banner__background {
-      background: linear-gradient(135deg, #9213CF 0%, #6F66E4 29.69%, #43CBFF 100%);
       position: absolute;
       top: 0;
       left: 0;
@@ -156,6 +155,18 @@
       width: 100%;
       height: 100%;
       user-select: none;
+    }
+  }
+
+  &.b-virtual-server {
+    .b-page-banner__background {
+      background: linear-gradient(135deg, #9213CF 0%, #6F66E4 29.69%, #43CBFF 100%);
+    }
+  }
+
+  &.b-domain-registration {
+    .b-page-banner__background {
+      background: linear-gradient(135deg, #FF7AF5 0%, #513162 100%);
     }
   }
 
