@@ -1,0 +1,120 @@
+$padding-left: 6rem;
+$padding-right: 3.4rem;
+$icon-arrow: 2.4rem;
+
+$padding-left-right-bg: 2rem;
+
+.b-colocation-rates {
+  padding: 5rem 0;
+
+  @include for-lg-down {
+    padding: 3rem 0;
+  }
+
+  @include for-sm-down {
+    padding: 2.6rem 0;
+  }
+}
+
+.b-colocation-rates__rate {
+  & + & {
+    margin-top: 1.6rem;
+  }
+}
+
+.b-colocation-rates__rates-container {
+  margin-bottom: 5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.b-colocation-rates__btn {
+  padding: 1.2rem $padding-right 1.2rem $padding-left;
+  box-shadow: 0 0.266004px 20px rgba(153, 152, 168, 0.17);
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: start;
+  min-height: 9rem;
+  transition: background-color 250ms, color 250ms;
+  width: 100%;
+
+  @include for-bg-down {
+    padding: .8rem $padding-left-right-bg;
+  }
+
+  @include for-sm-down {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.01em;
+  }
+
+  &.mod-open {
+    background-color: var(--main-color-business);
+    color: #fff;
+
+    .b-colocation-rates__btn-icon {
+      fill: #fff !important;
+    }
+  }
+}
+
+.b-colocation-rates__btn-icon {
+  fill: var(--main-text-color) !important;
+  height: $icon-arrow;
+  flex: 0 0 $icon-arrow;
+  margin-left: 2rem;
+}
+
+.b-colocation-rates__content-list {
+  padding: 2rem calc(#{$padding-right} + #{$icon-arrow}) 2rem $padding-left;
+
+  @include for-bg-down {
+    padding: 2rem calc(#{$padding-left-right-bg} + #{$icon-arrow}) 2rem $padding-left-right-bg;
+  }
+
+  @include for-sm-down {
+    padding: 1rem $padding-left-right-bg 1rem;
+  }
+}
+
+.b-colocation-rates__content-item {
+  padding: 2rem 0;
+  border-bottom: 1px solid #fff;
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  grid-gap: 2rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+
+  @include for-xs-down {
+    padding: 1.2rem 0;
+    grid-template-columns: 1fr;
+    grid-gap: 1.2rem;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.b-colocation-rates__content-item-caption {
+  font-weight: 300;
+}
+
+.b-colocation-rates__content-item-value {
+  text-align: end;
+  white-space: nowrap;
+
+  @include for-xs-down {
+    text-align: start;
+  }
+}

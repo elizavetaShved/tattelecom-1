@@ -115,16 +115,26 @@
     }
   }
 
+  &.b-lorawan, &.b-m2m, &.b-colocation {
+    .b-page-banner__content {
+      height: auto;
+      min-height: 36rem;
+    }
+  }
+
   &.b-lorawan, &.b-m2m {
     .b-page-banner__text {
       @include for-xs-down {
         max-width: 60%;
       }
     }
+  }
 
-    .b-page-banner__content {
-      height: auto;
-      min-height: 36rem;
+  &.b-colocation {
+    .b-page-banner__text {
+      @include for-sm-down {
+        max-width: 60%;
+      }
     }
   }
 
