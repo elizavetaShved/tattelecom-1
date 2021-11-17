@@ -10680,6 +10680,18 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   @media screen and (max-width: 767px) {
     .b-page-banner.b-colocation .b-page-banner__text {
       max-width: 60%; } }
+  .b-page-banner.b-virtual-server .b-page-banner__background {
+    background: linear-gradient(135deg, #9213CF 0%, #6F66E4 29.69%, #43CBFF 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
   .b-page-banner__content {
     overflow: hidden;
     position: relative;
@@ -10825,11 +10837,23 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     display: -ms-flexbox;
     display: flex;
     margin-top: 3.2rem; }
+    @media screen and (max-width: 559px) {
+      .b-page-banner__btns-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
   @media screen and (max-width: 559px) {
     .b-page-banner__btn {
       width: 100%;
       padding-left: 1rem;
       padding-right: 1rem; } }
+  .b-page-banner__btn + .b-page-banner__btn {
+    margin-left: 3rem; }
+    @media screen and (max-width: 559px) {
+      .b-page-banner__btn + .b-page-banner__btn {
+        margin-left: 0;
+        margin-top: 2rem; } }
   .b-page-banner__cost-and-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -13318,3 +13342,54 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   @media screen and (max-width: 559px) {
     .b-colocation-rates__content-item-value {
       text-align: start; } }
+
+.b-advantages-list {
+  padding: 5rem 0; }
+  @media screen and (max-width: 1023px) {
+    .b-advantages-list {
+      padding: 3rem 0; } }
+  @media screen and (max-width: 767px) {
+    .b-advantages-list {
+      padding: 2.6rem 0; } }
+
+.b-advantages-list__list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 3rem; }
+  @media screen and (max-width: 1159px) {
+    .b-advantages-list__list {
+      grid-gap: 2rem; } }
+  @media screen and (max-width: 1023px) {
+    .b-advantages-list__list {
+      grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media screen and (max-width: 559px) {
+    .b-advantages-list__list {
+      grid-template-columns: 1fr;
+      grid-gap: 1.2rem; } }
+
+.b-advantages-list__item {
+  padding: 2rem .2rem 2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  min-height: 9.8rem; }
+  @media screen and (max-width: 1023px) {
+    .b-advantages-list__item {
+      padding: 2rem; } }
+
+.b-advantages-list__item-icon {
+  height: 4rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 2rem; }
+
+.b-advantages-list__item-caption {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em; }
