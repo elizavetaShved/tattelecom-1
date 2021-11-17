@@ -52,6 +52,7 @@ module.exports = {
     ['b-lorawan-page']: './src/js/pages/b-lorawan-page',
     ['b-m2m-page']: './src/js/pages/b-m2m-page-page',
     ['b-colocation-page']: './src/js/pages/b-colocation-page',
+    ['b-virtual-server-page']: './src/js/pages/b-virtual-server-page',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

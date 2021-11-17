@@ -138,6 +138,19 @@
     }
   }
 
+  &.b-virtual-server {
+    .b-page-banner__background {
+      background: linear-gradient(135deg, #9213CF 0%, #6F66E4 29.69%, #43CBFF 100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      user-select: none;
+    }
+  }
+
   &__content {
     overflow: hidden;
 
@@ -322,8 +335,11 @@
 
   &__btns-container {
     display: flex;
-
     margin-top: 3.2rem;
+
+    @include for-xs-down {
+      flex-direction: column;
+    }
   }
 
   &__btn {
@@ -331,6 +347,15 @@
       width: 100%;
       padding-left: 1rem;
       padding-right: 1rem;
+    }
+
+    & + & {
+      margin-left: 3rem;
+
+      @include for-xs-down {
+        margin-left: 0;
+        margin-top: 2rem;
+      }
     }
   }
 

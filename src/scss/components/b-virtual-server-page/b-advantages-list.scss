@@ -1,0 +1,56 @@
+.b-advantages-list {
+  padding: 5rem 0;
+
+  @include for-bg-down {
+    padding: 3rem 0;
+  }
+
+  @include for-sm-down {
+    padding: 2.6rem 0;
+  }
+}
+
+.b-advantages-list__list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 3rem;
+
+  @include for-lg-down {
+    grid-gap: 2rem;
+  }
+
+  @include for-bg-down {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include for-xs-down {
+    grid-template-columns: 1fr;
+    grid-gap: 1.2rem;
+  }
+}
+
+.b-advantages-list__item {
+  padding: 2rem .2rem 2rem 2rem;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  min-height: 9.8rem;
+
+  @include for-bg-down {
+    padding: 2rem;
+  }
+}
+
+.b-advantages-list__item-icon {
+  height: 4rem;
+  object-fit: contain;
+  margin-right: 2rem;
+}
+
+.b-advantages-list__item-caption {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+}
