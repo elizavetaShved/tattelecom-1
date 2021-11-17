@@ -1,0 +1,38 @@
+<section class="b-telephone-info">
+  <div class="gl__page-content">
+    <div class="b-telephone-info__content">
+      <div class="b-telephone-info__content-item">
+        <h2 class="gl__title">
+          Дополнительные услуги
+        </h2>
+
+        <ul class="b-b-info__list-flex">
+          {{#each infoFlexsList }}
+            <li class="b-b-info__item-flex">
+              <div class="b-b-info__item-flex-caption">
+                {{ this.caption }}
+              </div>
+              <div class="b-b-info__item-flex-value">
+                {{ this.value }}
+              </div>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="b-telephone-info__content-item">
+        <h2 class="gl__title">
+          Примечания
+        </h2>
+
+        <ol class="b-info__list-number">
+          {{#each infoNumberList }}
+            <li class="b-info__item-number">
+             {{ this }}
+            </li>
+          {{/each}}
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>

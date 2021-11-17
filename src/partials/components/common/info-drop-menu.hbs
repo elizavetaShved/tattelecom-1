@@ -1,0 +1,136 @@
+<!--
+  Текстовый "сборный" текст :
+      "paragraphs": {
+        "title": "...",
+        "text": [
+          {
+            "value": "..."
+          },
+          {
+            "caption": "...",
+            "value": "..."
+          },
+          {
+            "title": "..."
+          },
+          {
+            "olList": [
+              "...",
+              "..."
+            ]
+          },
+          {
+            "flexs": [
+                {
+                  "title": "...",
+                  "list": [
+                    {
+                      "caption": "...",
+                      "value": "... ₽/минута"
+                    }
+                  ]
+                }
+              ]
+          }
+        ]
+     }
+
+  Флексы:
+  "paragraphs": {
+    "title": "...",
+      "flexs": [
+        {
+          "title": "...",
+          "list": [
+            {
+              "caption": "...",
+              "value": "... ₽/минута"
+            }
+          ]
+        }
+      ]
+  }
+-->
+
+<section class="info-drop-menu {{#if smallMargin }}mod-small-margin{{/if}}" id="info-drop-menu-host">
+  <div class="gl__page-content">
+    <button type="button" class="info-drop-menu__title gl__drop-menu-btn js-drop-menu-btn">
+      <svg width="32" height="32" aria-hidden="true" class="info-drop-menu__title-icon gl__drop-menu-icon">
+        <use xlink:href="#arrow-down"></use>
+      </svg>
+      {{ paragraphs.title }}
+    </button>
+
+    {{#if paragraphs.text }}
+      <div class="gl__white-container gl__drop-menu-container js-drop-menu-container">
+        <div class="info-drop-menu__content gl__drop-menu js-drop-menu">
+          <div class="gl__text">
+            {{#each paragraphs.text }}
+              {{#if this.title }}<h3>{{ this.title }}</h3>{{/if}}
+
+              {{#if this.value }}
+                <p>{{#if this.caption }}<b>{{ this.caption }}</b><i>{{ this.captionI }}</i>{{#if brCaption}}<br>{{/if}}{{/if}}{{ this.value }}</p>
+              {{/if}}
+
+              {{#if brP}}<br>{{/if}}
+
+              {{#if this.olList }}
+                <ol>
+                  {{#each this.olList }}
+                    <li>{{ this }}</li>
+                  {{/each}}
+                </ol>
+              {{/if}}
+
+              {{#if brOlList}}<br>{{/if}}
+
+              {{#each this.flexs }}
+                <div class="info-drop-menu__info-paragraph">
+                  <div class="info-drop-menu__flex-list-wrapper">
+                    {{#if this.title }}
+                      <h2 class="info-drop-menu__info-title">{{ this.title }}</h2>
+                    {{/if}}
+
+                    {{#each this.list }}
+                      <div class="info-drop-menu__flex">
+                        <div class="info-drop-menu__flex-caption">{{ this.caption }}</div>
+                        {{#if this.value }}
+                          <div class="info-drop-menu__flex-value">{{ this.value }}</div>
+                        {{/if}}
+                      </div>
+                    {{/each}}
+                  </div>
+                </div>
+              {{/each}}
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    {{/if}}
+
+    {{#if paragraphs.flexs }}
+      <div class="gl__drop-menu-container js-drop-menu-container">
+        <div class="gl__drop-menu js-drop-menu">
+          {{#each paragraphs.flexs }}
+            <div class="info-drop-menu__info-paragraph">
+              <div class="info-drop-menu__flex-list-wrapper">
+                {{#if this.title }}
+                  <h3 class="info-drop-menu__info-title">{{ this.title }}</h3>
+                {{/if}}
+
+                {{#each this.list }}
+                  <div class="info-drop-menu__flex">
+                    <div class="info-drop-menu__flex-caption">{{ this.caption }}</div>
+                    {{#if this.value }}
+                      <div class="info-drop-menu__flex-value">{{ this.value }}</div>
+                    {{/if}}
+                  </div>
+                {{/each}}
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    {{/if}}
+  </div>
+</section>

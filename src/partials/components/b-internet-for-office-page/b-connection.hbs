@@ -1,0 +1,55 @@
+<section class="b-connection">
+  <div class="gl__page-content">
+    <div class="b-connection__container gl__white-container js-menu-tabs-container gl__sm-hide">
+      <h2 class="gl__title">Подключение</h2>
+
+      {{> common/controls/menu-tabs }}
+
+      {{#each connectionContents }}
+        <ul class="b-connection__container-content gl__menu-tab-content js-menu-tab-content"
+             data-menu="{{ this.type }}">
+          {{#each this.list }}
+            <li class="b-connection__container-content-item">
+              <div class="b-connection__container-caption">
+                {{ this.caption}}
+              </div>
+              <div class="b-connection__container-value">
+                {{{ this.value }}}
+              </div>
+            </li>
+          {{/each}}
+        </ul>
+      {{/each}}
+    </div>
+
+    <div class="b-connection__container gl__white-container gl__sm-show">
+      <h2 class="gl__title">Подключение</h2>
+
+      {{#each connectionContents }}
+        <button class="b-connection__container-btn gl__drop-menu-btn js-drop-menu-btn" {{#if this.isOpen }}data-drop-menu-open{{/if}}>
+          {{ this.title }}
+          <svg width="24" height="24" aria-hidden="true" class="b-connection__container-btn-icon gl__drop-menu-icon">
+            <use xlink:href="#arrow-down"></use>
+          </svg>
+        </button>
+
+        <div class="gl__drop-menu-container js-drop-menu-container">
+          <div class="gl__drop-menu js-drop-menu">
+            <ul class="b-connection__container-content">
+              {{#each this.list }}
+                <li class="b-connection__container-content-item">
+                  <div class="b-connection__container-caption">
+                    {{ this.caption}}
+                  </div>
+                  <div class="b-connection__container-value">
+                    {{{ this.value }}}
+                  </div>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

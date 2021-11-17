@@ -1,0 +1,220 @@
+{
+  "isBusiness": true,
+  "title": "Виртуальные сети IP VPN",
+  "script": "b-virtual-networks-page",
+  "banner": {
+    "changeSize": 768,
+    "title": {
+      "accentText": "Виртуальные сети IP VPN",
+      "colorClass": "white"
+    },
+    "largeSubtitle": {
+      "text": "Единая корпоративная сеть надежно и быстро"
+    },
+    "image": "b-virtual-networks.jpg",
+    "mobile": {
+      "title": "Виртуальные сети IP VPN",
+      "image": "b-virtual-networks--mobile.jpg"
+    }
+  },
+  "show-check-items": {
+    "column": 3,
+    "list": [
+      {
+        "text": "Построение единого корпоративного электронного бизнес-пространства"
+      },
+      {
+        "text": "Ускорение информационного обмена между офисами"
+      },
+      {
+        "text": "Оптимизация бизнес-процессов"
+      },
+      {
+        "text": "Сокращение затрат на управление компанией"
+      },
+      {
+        "text": "Защищенность передаваемой информации между офисами"
+      },
+      {
+        "text": "Создание внутренней телефонной сети с единой короткой нумерацией"
+      }
+    ]
+  },
+  "hide-check-items": {
+    "column": 3,
+    "list": [
+      {
+        "text": "Широкая география предоставления услуги (по всей РТ)"
+      },
+      {
+        "text": "Выбор полосы пропускания в зависимости от решаемой задачи"
+      },
+      {
+        "text": "Гибкая тарифная политика и выгодные ценовые предложения"
+      }
+    ]
+  },
+  "tariffsCityVpn": [
+    {
+      "name": "Сити VPN 1 000",
+      "conditionsList": [
+        {
+          "services": {
+            "caption": "Максимальная скорость передачи трафика внутри сети Таттелеком",
+            "internet": "1 Мбит/с"
+          }
+        }
+      ],
+      "from": true,
+      "cost": "1 440"
+    },
+    {
+      "name": "Сити VPN 5 000",
+      "conditionsList": [
+        {
+          "services": {
+            "caption": "Максимальная скорость передачи трафика внутри сети Таттелеком",
+            "internet": "50 Мб/c"
+          }
+        }
+      ],
+      "from": true,
+      "cost": "4 704"
+    },
+    {
+      "name": "Сити VPN 10 000",
+      "conditionsList": [
+        {
+          "services": {
+            "caption": "Максимальная скорость передачи трафика внутри сети Таттелеком",
+            "internet": "10 Мб/c"
+          }
+        }
+      ],
+      "from": true,
+      "cost": "7 680"
+    },
+    {
+      "name": "Сити VPN 50 000",
+      "conditionsList": [
+        {
+          "services": {
+            "caption": "Максимальная скорость передачи трафика внутри сети Таттелеком",
+            "internet": "50 Мб/c"
+          }
+        }
+      ],
+      "from": true,
+      "cost": "24 000"
+    },
+    {
+      "name": "Сити VPN 1 000",
+      "conditionsList": [
+        {
+          "services": {
+            "caption": "Максимальная скорость передачи трафика внутри сети Таттелеком",
+            "internet": "1 Мбит/с"
+          }
+        }
+      ],
+      "from": true,
+      "cost": "1 440"
+    }
+  ],
+  "tariffsRegionVpn": [
+    {
+      "name": "Регион VPN 1 000",
+      "conditionsList": [
+        {
+          "services": {
+            "caption": "Максимальная скорость передачи трафика внутри сети Таттелеком",
+            "internet": "1 Мбит/с"
+          }
+        }
+      ],
+      "from": true,
+      "cost": "1 440"
+    },
+    {
+      "name": "Регион VPN 5 000",
+      "conditionsList": [
+        {
+          "services": {
+            "caption": "Максимальная скорость передачи трафика внутри сети Таттелеком",
+            "internet": "50 Мб/c"
+          }
+        }
+      ],
+      "from": true,
+      "cost": "4 704"
+    },
+    {
+      "name": "Регион VPN 10 000",
+      "conditionsList": [
+        {
+          "services": {
+            "caption": "Максимальная скорость передачи трафика внутри сети Таттелеком",
+            "internet": "10 Мб/c"
+          }
+        }
+      ],
+      "from": true,
+      "cost": "7 680"
+    }
+  ],
+  "ratesBtn": [
+    {
+      "itemName": "Тариф «Сити VPN»",
+      "value": "city-vpn",
+      "name": "rates-btn",
+      "isRedBtn": true,
+      "isChecked": true
+    },
+    {
+      "itemName": "Тариф «Регион VPN»",
+      "value": "region-vpn",
+      "name": "rates-btn",
+      "isRedBtn": true
+    }
+  ],
+  "usefulArticles": [
+    {
+      "image": "useful-article-5.jpg",
+      "title": "Услуга 1",
+      "description": "Краткое описание в 2-3 строчки о сути статьи, Краткое описание в 2-3 строчки о сути статьи."
+    },
+    {
+      "image": "useful-article-5.jpg",
+      "title": "Услуга 2",
+      "description": "Краткое описание в 2-3 строчки b о сути статьи, Краткое описание в 2-3 строчки о сути статьи."
+    },
+    {
+      "image": "useful-article-5.jpg",
+      "title": "Услуга 3",
+      "description": "Краткое описание в 2-3 строчки о сути статьи, Краткое описание в 2-3 строчки о сути статьи."
+    },
+    {
+      "image": "useful-article-5.jpg",
+      "title": "Услуга 4",
+      "description": "Краткое описание в 2-3 строчки о сути статьи, Краткое описание в 2-3 строчки о сути статьи."
+    }
+  ],
+  "faq": [
+    {
+      "title": "Вопрос 1. Что нибудь про АТС. Если есть таковы",
+      "text": [
+        "text",
+        "text",
+        "text"
+      ]
+    },
+    {
+      "title": "Вопрос 2. Что нибудь про АТС. Если есть таковы\n",
+      "text": [
+        "text",
+        "text",
+        "text"
+      ]
+    }
+  ]
+}

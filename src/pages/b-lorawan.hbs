@@ -1,0 +1,51 @@
+{{#extend "layout"}}
+  {{#content "main"}}
+
+    {{> common/b-page-banner }}
+
+    <section class="b-info">
+      <div class="gl__page-content">
+        <h2 class="gl__title">
+          Об услуге
+        </h2>
+
+        <p class="b-info__text mod-padding-left">
+          ПАО «Таттелеком» с 2016 года выступает в качестве оператора решений Интернета вещей (IoT), обеспечивающего
+          полный цикл сбора и обработки данных с оборудования различного назначения, приборов учета и умных
+          телематических устройств. Для функционирования сети разработан и внедрен программно-аппаратный комплекс на
+          основе международной стандартизированной и открытой технологии LoRaWAN.
+        </p>
+      </div>
+    </section>
+
+    {{> common/faq/section-faq customTitle="Сферы применения" noLinkAllFaq=true faq=areasApplication }}
+
+    <section class="b-check-items" id="b-check-items-host">
+      <div class="gl__page-content">
+        <h2 class="gl__title">
+          Преимущества технологии LoRaWAN
+        </h2>
+
+        {{> common/b-check-items }}
+      </div>
+    </section>
+
+
+    {{> common/b-tariffs-list/section }}
+
+    {{> b-lorawan/b-over-package }}
+
+    {{> b-lorawan/b-lorawan-scheme }}
+
+    {{> common/b-steps }}
+
+    {{> common/b-request-for-connection }}
+
+    {{> common/b-useful-articles }}
+
+    {{> common/faq/section-faq }}
+
+    {{> common/b-support }}
+
+  {{/content}}
+{{/extend}}

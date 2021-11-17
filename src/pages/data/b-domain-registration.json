@@ -1,0 +1,33 @@
+{
+  "isBusiness": true,
+  "title": "Регистрация доменов",
+  "script": "b-domain-registration-page",
+  "advantagesList": [
+    {
+      "img": "img/common/b-advantages/advantage-16.png",
+      "caption": "Регистрация и поддержка доменов второго уровня"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-16.png",
+      "caption": "Регистрация и поддержка доменов третьего уровня"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-16.png",
+      "caption": "Регистрация и поддержка первичных и вторичных DNS"
+    }
+  ],
+  "tariffs": [
+    {
+      "name": "Регистрация доменов",
+      "conditionsList": [
+        {
+          "services": {
+            "simpleSignature": "Для клиентов Таттелеком, пользующихся Интернетом, один домен в зоне .016.ru, .kgts.ru выдается бесплатно"
+          }
+        }
+      ],
+      "from": true,
+      "cost": 50
+    }
+  ]
+}

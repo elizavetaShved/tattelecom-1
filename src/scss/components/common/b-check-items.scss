@@ -1,3 +1,15 @@
+.b-check {
+  padding: 5rem 0;
+
+  @include for-lg-down {
+    padding: 3rem 0;
+  }
+
+  @include for-sm-down {
+    padding: 2.6rem 0;
+  }
+}
+
 .b-check-items {
   padding: 5rem 0;
 
@@ -72,4 +84,30 @@
 .b-check-items__item-image {
   height: 3.4rem;
   margin-right: 2rem;
+}
+
+.b-check__btn-more {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  color: var(--main-color-business);
+  padding: 2rem;
+  margin: 1.8rem -2rem;
+
+  &:hover {
+    color: var(--main-color-business-hover);
+
+    .b-check__btn-more-icon {
+      fill: var(--main-color-business-hover) !important;
+    }
+  }
+}
+
+.b-check__btn-more-icon {
+  height: 2.4rem;
+  flex: 0 0 2.4rem;
+  fill: var(--main-color-business) !important;
+  margin-left: .4rem;
 }

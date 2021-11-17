@@ -6,6 +6,7 @@
 @import 'global';
 @import 'vendor';
 @import 'extends';
+@import 'dev';
 
 @import 'components/common/controls/menu-tabs';
 @import 'components/common/controls/checkbox';
@@ -33,6 +34,8 @@
 @import 'components/common/btn-info';
 @import 'components/common/intro-cards-container';
 @import 'components/common/service-card-with-photo';
+@import 'components/common/pdf-file';
+@import 'components/common/info-drop-menu';
 
 @import 'components/layout/header';
 @import 'components/layout/footer';
@@ -55,7 +58,6 @@
 
 @import 'components/together-profitable-page/how-works';
 @import 'components/together-profitable-page/steps';
-@import 'components/together-profitable-page/conditions';
 
 @import 'components/roaming-page/roaming';
 @import 'components/roaming-page/top-block';
@@ -137,6 +139,10 @@
 @import 'components/common/b-advantages-opportunities';
 @import 'components/common/b-check-items';
 @import 'components/common/b-info';
+@import 'components/common/b-bnt-back';
+@import 'components/common/b-advantages-list';
+
+@import 'components/common/controls/b-menu-tabs';
 
 @import 'components/b-mobile-communication/b-mobile-communication';
 @import 'components/b-mobile-communication/b-coverage-map';
@@ -171,3 +177,20 @@
 @import 'components/tattelekom-main/popular-sections';
 @import 'components/tattelekom-main/private-clients';
 @import 'components/tattelekom-main/buisness-clients';
+@import 'components/b-telephone-services-page/b-telephone-services-links';
+@import 'components/b-telephone-services-page/b-telephone-info';
+
+@import 'components/b-telephone-service-item/b-telephone-service-slider';
+
+@import 'components/b-internet/b-advantages';
+
+@import 'components/b-internet-for-office-page/b-connection';
+
+@import 'components/b-internet-wi-fi-page/b-internet-wi-fi-opportunities';
+
+@import 'components/b-internet-by-radio-page/b-your-benefit';
+
+@import 'components/b-lorawan/b-over-package';
+@import 'components/b-lorawan/b-lorawan-scheme';
+
+@import 'components/b-colocation/b-colocation-rates';

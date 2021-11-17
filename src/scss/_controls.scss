@@ -51,6 +51,18 @@
     }
   }
 
+  &.mod-b-transparent-white-business {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+
+    &:hover {
+      background: #fff;
+      border-color: #fff;
+      color: var(--main-color-business) !important;
+    }
+  }
+
   &.mod-orange-transparent {
     background-color: transparent;
     color: var(--main-color);
@@ -125,6 +137,17 @@
     }
   }
 
+  &.mod-business-grey-transparent {
+    background-color: transparent;
+    color: var(--main-grey-color);
+    border-color: var(--main-grey-color);
+
+    &:hover {
+      background-color: var(--main-grey-color);
+      color: #fff !important;
+    }
+  }
+
   &.mod-business-white {
     background-color: #fff;
     color: var(--main-color-business);
@@ -194,11 +217,13 @@
 }
 
 .gl__link-arrow-wrapper {
-  margin: -2rem;
+  position: absolute;
+  z-index: -1;
 }
 
 .gl__link-arrow-link {
   padding: 2rem;
+  margin: -2rem;
   opacity: 0;
   transition: opacity 600ms;
   position: relative;

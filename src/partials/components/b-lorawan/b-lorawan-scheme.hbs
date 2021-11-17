@@ -1,0 +1,24 @@
+<section class="b-lorawan-scheme">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      Схема работы
+    </h2>
+
+    <ul class="b-lorawan-scheme__list gl__white-container">
+      {{#each lorawanScheme }}
+        <li class="b-lorawan-scheme__item">
+          <div class="b-lorawan-scheme__item-content">
+            <div class="b-lorawan-scheme__item-caption-top">{{ this.captionTop }}</div>
+            <img src="{{ this.img }}" alt="" class="b-lorawan-scheme__item-image">
+            <div class="b-lorawan-scheme__item-caption-bottom">{{ this.captionBottom }}</div>
+          </div>
+          <div class="b-lorawan-scheme__item-arrow">
+            <svg width="26" height="26" aria-hidden="true" class="b-lorawan-scheme__item-arrow-icon">
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

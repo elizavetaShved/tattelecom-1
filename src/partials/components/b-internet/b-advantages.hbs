@@ -1,0 +1,18 @@
+<section class="b-advantages">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      {{ advantages.title }}
+    </h2>
+
+    <ul class="b-advantages__list">
+      {{#each advantages.list }}
+        <li class="b-advantages__item">
+          <img src="{{ this.img }}" alt="" class="b-advantages__item-image">
+          <div class="b-advantages__item-caption">
+            {{ this.caption }}
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

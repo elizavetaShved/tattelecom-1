@@ -1,0 +1,266 @@
+{
+  "title": "Линки",
+  "noLayout": true,
+  "links": [
+    {
+      "url": "/",
+      "name": "Главная",
+      "img": "img.png"
+    },
+    {
+      "url": "/mobile-communication.html",
+      "name": "Мобильная связь",
+      "img": "img_1.png"
+    },
+    {
+      "url": "/cashback.html",
+      "name": "Кэшбек 20 %",
+      "img": "img_2.png"
+    },
+    {
+      "url": "/together-profitable.html",
+      "name": "Вместе выгодно 2.0",
+      "img": "img_3.png"
+    },
+    {
+      "url": "/roaming.html",
+      "name": "Роуминг",
+      "img": "img_4.png"
+    },
+    {
+      "url": "/ussd-requests.html",
+      "name": "USSD запросы",
+      "img": "img_5.png"
+    },
+    {
+      "url": "/fly-old-number.html",
+      "name": "Перейти на «Летай» со своим номером",
+      "img": "img_6.png"
+    },
+    {
+      "url": "/beautiful-phone.html",
+      "name": "Красивые номера",
+      "img": "img_7.png"
+    },
+    {
+      "url": "/applications.html",
+      "name": "Приложения Таттелеком",
+      "img": "img_8.png"
+    },
+    {
+      "url": "/tv-online.html",
+      "name": "ТВ онлайн",
+      "img": "img_9.png"
+    },
+    {
+      "url": "/child-nearby.html",
+      "name": "Ребенок рядом",
+      "img": "img_10.png"
+    },
+    {
+      "url": "/4g-services.html",
+      "name": "Каталог товаров",
+      "img": "img_11.png"
+    },
+    {
+      "url": "/product.html",
+      "name": "Товар",
+      "img": "img_12.png"
+    },
+    {
+      "url": "/rates-mobile-list.html",
+      "name": "Тарифы мобильной связи",
+      "img": "img_13.png"
+    },
+    {
+      "url": "/rates-mobile-item.html",
+      "name": "Тариф Мобильный «Много минут»",
+      "img": "img_14.png"
+    },
+    {
+      "url": "/rates-internet-list.html",
+      "name": "Тарифы интернета",
+      "img": "img_15.png"
+    },
+    {
+      "url": "/rates-internet-item.html",
+      "name": "Тариф Интернета «Летай. Оранжевый Профит»",
+      "img": "img_16.png"
+    },
+    {
+      "url": "/instructions.html",
+      "name": "Инструкции",
+      "img": "img_17.png"
+    },
+    {
+      "url": "/documents.html",
+      "name": "Бланки и документы",
+      "img": "img_18.png"
+    },
+    {
+      "url": "/third-parties.html",
+      "name": "Третьи лица",
+      "img": "img_19.png"
+    },
+    {
+      "url": "/support.html",
+      "name": "Служба поддержки",
+      "img": "img_20.png"
+    },
+    {
+      "url": "/promo-internet.html",
+      "name": "Промо Много интернета",
+      "img": "img_21.png"
+    },
+    {
+      "url": "/promo-gpon.html",
+      "name": "Промо GPON",
+      "img": "img_22.png"
+    },
+    {
+      "url": "/promo-intercom.html",
+      "name": "Промо Домофон",
+      "img": "img_23.png"
+    },
+    {
+      "url": "/promo-convergent.html",
+      "name": "Промо Конверген",
+      "img": "img_24.png"
+    },
+    {
+      "url": "/payment-services.html",
+      "name": "Оплата услуг",
+      "img": "img_25.png"
+    },
+    {
+      "url": "/search-site.html",
+      "name": "Поиск по сайту",
+      "img": "img_26.png"
+    },
+    {
+      "url": "/technical-works.html",
+      "name": "Технические работы",
+      "img": "img_27.png"
+    },
+    {
+      "url": "/questions.html",
+      "name": "ЧаВо",
+      "img": "img_28.png"
+    },
+    {
+      "url": "/b-main.html",
+      "name": "Главная стр",
+      "img": "img_29.png"
+    },
+    {
+      "url": "/b-mobile-communication.html",
+      "name": "Мобильная связь",
+      "img": "img_30.png"
+    },
+    {
+      "url": "/b-rates-mobile-list.html",
+      "name": "Тарифы Мобильной связи",
+      "img": "img_31.png"
+    },
+    {
+      "url": "/b-rates-mobile-internet-list.html",
+      "name": "Тарифы мобильного интернета",
+      "img": "img_32.png"
+    },
+    {
+      "url": "/b-single-business.html",
+      "name": "Комплекс услуг связи (Единый бизнес)",
+      "img": "img_33.png"
+    },
+    {
+      "url": "/b-mobile-communication.html",
+      "name": "Мобильная связь",
+      "img": "img_34.png"
+    },
+    {
+      "url": "/b-roaming-international.html",
+      "name": "Роуминг",
+      "img": "img_35.png"
+    },
+    {
+      "url": "/b-roaming-russia.html",
+      "name": "Роуминг по России",
+      "img": "img_36.png"
+    },
+    {
+      "url": "/b-virtual-ats.html",
+      "name": "Виртуальная АТС",
+      "img": "img_37.png"
+    },
+    {
+      "url": "/b-connect.html",
+      "name": "Таттелеком Коннект (ЭДокс)",
+      "img": "img_38.png"
+    },
+    {
+      "url": "/b-telephony.html",
+      "name": "Телефония",
+      "img": "img_39.png"
+    },
+    {
+      "url": "/b-communication.html",
+      "name": "Междугородная и международная связь ",
+      "img": "img_40.png"
+    },
+    {
+      "url": "/b-ip-telephony.html",
+      "name": "IP-телефония",
+      "img": "img_41.png"
+    },
+    {
+      "url": "/b-sip-telephony.html",
+      "name": "SIP-Телефония",
+      "img": "img_42.png"
+    },
+    {
+      "url": "/b-sip-trunk.html",
+      "name": "SIP-trunk",
+      "img": "img_43.png"
+    },
+    {
+      "url": "/b-digital-streams.html",
+      "name": "Цифровые потоки Е1",
+      "img": "img_44.png"
+    },
+    {
+      "url": "/b-telephone-services.html",
+      "name": "Сервисы и услуги телефонной связи",
+      "img": "img_45.png"
+    },
+    {
+      "url": "/b-telephone-service-item.html",
+      "name": "Определитель номера (АОН)",
+      "img": "img_46.png"
+    },
+    {
+      "url": "/b-internet.html",
+      "name": "Интернет",
+      "img": "img_47.png"
+    },
+    {
+      "url": "/b-internet-for-office.html",
+      "name": "Интернет для офиса",
+      "img": "img_48.png"
+    },
+    {
+      "url": "/b-internet-wi-fi.html",
+      "name": "Интернет Wi-Fi",
+      "img": "img_49.png"
+    },
+    {
+      "url": "/b-internet-by-radio.html",
+      "name": "Интернет по Радиоканалу",
+      "img": "img_50.png"
+    },
+    {
+      "url": "/b-virtual-networks.html",
+      "name": "Виртуальные сети IP VPN",
+      "img": "img_51.png"
+    }
+  ]
+}

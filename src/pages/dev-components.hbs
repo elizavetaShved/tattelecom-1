@@ -1,0 +1,84 @@
+{{#extend "layout"}}
+  {{#content "main"}}
+    <div class="gl__page-content">
+      <h2 class="gl__title">Для 3-го раздела</h2>
+
+      {{#each chapter3 }}
+        <div class="dev-components__item">
+          <h3 class="gl__subtitle">{{ this.title }}</h3>
+
+          {{#if this.componentImg }}
+            <div><img src="{{ this.componentImg }}" alt="" class="dev-components__item-image {{imgClass}}"></div>
+          {{/if}}
+
+          {{#if this.hbs }}
+            <div>
+              <div class="dev-components__item-hbs">{{ this.hbs }}</div>
+            </div>
+          {{/if}}
+
+          {{#if this.json }}
+            <div>
+              <pre class="dev-components__item-code">
+                {{ this.json }}
+              </pre>
+            </div>
+          {{/if}}
+
+          {{#if this.js }}
+            <div>
+              <div class="dev-components__item-js">{{ this.js }}</div>
+            </div>
+          {{/if}}
+
+          {{#if this.linkPage }}
+            <div>
+              <div class="dev-components__item-link-page">{{ this.linkPage }}</div>
+            </div>
+          {{/if}}
+        </div>
+      {{/each}}
+    </div>
+
+  {{/content}}
+{{/extend}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -71,10 +71,239 @@
     }
   }
 
+  &.b-internet-wi-fi {
+    .b-page-banner__text {
+      @include for-xs-down {
+        max-width: 80%;
+      }
+    }
+  }
+
+  &.b-internet-by-radio {
+    .b-page-banner__content {
+      padding-right: 9.2rem;
+      height: auto;
+      min-height: 3.6rem;
+
+      @include for-bg-down {
+        padding-right: 4rem;
+      }
+
+      @include for-sm-down {
+        padding-right: 2rem;
+      }
+    }
+
+    .b-page-banner__cost-block {
+      flex-direction: row;
+      color: #fff;
+      align-items: flex-end;
+      margin-bottom: 0;
+      margin-right: 4rem;
+
+      @include for-sm-down {
+        margin-right: 2rem;
+      }
+    }
+
+    .b-page-banner__cost-label {
+      margin-right: .6rem;
+    }
+
+    .b-page-banner__btns-container {
+      margin-top: 0;
+    }
+  }
+
+  &.b-lorawan, &.b-m2m, &.b-colocation, &.b-web-hosting, &.b-cloud-video, &.b-video-analytics {
+    .b-page-banner__content {
+      height: auto;
+      min-height: 36rem;
+    }
+  }
+
+  &.b-lorawan, &.b-m2m {
+    .b-page-banner__text {
+      @include for-xs-down {
+        max-width: 60%;
+      }
+    }
+  }
+
+  &.b-colocation, &.b-cloud-video, &.b-video-analytics {
+    .b-page-banner__text {
+      @include for-sm-down {
+        max-width: 60%;
+      }
+    }
+  }
+
+  &.b-web-hosting  {
+    .b-page-banner__text {
+      @include for-bg-down {
+        max-width: 60%;
+      }
+    }
+  }
+
+  .b-page-banner__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+  }
+
+  &.b-virtual-server {
+    .b-page-banner__background {
+      background: linear-gradient(135deg, #9213CF 0%, #6F66E4 29.69%, #43CBFF 100%);
+    }
+  }
+
+  &.b-domain-registration {
+    .b-page-banner__background {
+      background: linear-gradient(135deg, #FF7AF5 0%, #513162 100%);
+    }
+  }
+
+  &.b-m2m-business-control {
+    .b-page-banner__background {
+      background-color: #fff;
+    }
+
+    .b-page-banner__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: auto;
+      padding: 3.2rem 15rem 3.2rem 7rem;
+
+      @include for-lg-down {
+        padding: 3rem 7rem;
+      }
+
+      @include for-bg-down {
+        padding: 3rem;
+      }
+
+      @include for-sm-down {
+        flex-direction: column;
+      }
+    }
+
+    .b-page-banner__right-image {
+      height: 41.8rem;
+      object-fit: cover;
+      margin-right: 10rem;
+
+      @include for-lg-down {
+        height: 36rem;
+        margin-right: 4rem;
+      }
+
+      @include for-bg-down {
+        height: 30rem;
+      }
+
+      @include for-sm-down {
+        margin-right: 0;
+        margin-bottom: 1.8rem;
+        height: 20rem;
+      }
+    }
+
+    .b-page-banner__m2m-title {
+      font-size: 3.8rem;
+      line-height: 5rem;
+      letter-spacing: 0.015em;
+      margin-bottom: 3.8rem;
+
+      @include for-sm-down {
+        font-weight: 600;
+        font-size: 2.6rem;
+        line-height: 3.4rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    .b-page-banner__m2m-subtitle {
+      font-weight: 300;
+      font-size: 2rem;
+      line-height: 3.2rem;
+      letter-spacing: 0.015em;
+      margin-bottom: 2rem;
+      color: var(--grey-text);
+
+      @include for-sm-down {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        margin-bottom: 1.4rem;
+      }
+    }
+
+    .b-page-banner__m2m-price-container {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-gap: 2rem;
+
+      @include for-bg-down {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .b-page-banner__m2m-price-caption {
+      grid-column: 1 / 3;
+      font-weight: 300;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      letter-spacing: 0.02em;
+      color: var(--main-grey-color);
+
+      @include for-bg-down {
+        grid-column: auto;
+      }
+    }
+
+    .b-page-banner__m2m-btn-container {
+      display: flex;
+      margin-left: 1.2rem;
+      width: 100%;
+
+      @include for-bg-down {
+        margin-left: 0;
+      }
+
+      @include for-xs-down {
+        flex-direction: column;
+      }
+    }
+
+    .b-page-banner__m2m-btn {
+      padding: 1.6rem;
+      margin-right: 1.2rem;
+
+      @include for-xs-down {
+        margin-right: 0;
+        margin-bottom: 1.2rem;
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        @include for-xs-down {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
   &__content {
     overflow: hidden;
 
     position: relative;
+    z-index: 1;
 
     padding: 6rem 50% 6rem 9.2rem;
     border-radius: 2rem;
@@ -135,7 +364,7 @@
   &__subtitle {
     color: var(--main-color-business);
     font-weight: 300;
-    font-size: var(--fs-t2);
+    font-size: 1.6rem;
     letter-spacing: 0.02em;
     line-height: 1.6;
 
@@ -202,6 +431,10 @@
       margin-bottom: 0.8rem;
     }
 
+    &.black {
+      color: var(--main-text-color)
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -216,6 +449,11 @@
 
     @include for-sm-down {
       font-size: var(--fs-t1);
+    }
+
+    &.mod-small {
+      font-size: 2rem;
+      line-height: 2.6rem;
     }
   }
 
@@ -255,8 +493,11 @@
 
   &__btns-container {
     display: flex;
-
     margin-top: 3.2rem;
+
+    @include for-xs-down {
+      flex-direction: column;
+    }
   }
 
   &__btn {
@@ -264,6 +505,25 @@
       width: 100%;
       padding-left: 1rem;
       padding-right: 1rem;
+    }
+
+    & + & {
+      margin-left: 3rem;
+
+      @include for-xs-down {
+        margin-left: 0;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  &__cost-and-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 4.4rem;
+
+    @include for-sm-down {
+      justify-content: space-between;
     }
   }
 }

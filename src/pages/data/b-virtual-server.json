@@ -1,0 +1,202 @@
+{
+  "isBusiness": true,
+  "title": "Виртуальный сервер",
+  "script": "b-virtual-server-page",
+  "advantagesList": [
+    {
+      "img": "img/common/b-advantages/advantage-1.png",
+      "caption": "Экономия средств за закупку серверов и их обслуживания"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-2.png",
+      "caption": "Экономия времени – сервер сразу готов к работе"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-3.png",
+      "caption": "Быстрый отклик серверов размещенных в г.Казань"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-4.png",
+      "caption": "DDoS – защита"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-5.png",
+      "caption": "Удаленное администрирование"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-6.png",
+      "caption": "Удаленный доступ для работы"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-7.png",
+      "caption": "Резервное копирование"
+    }
+  ],
+  "tariffs": [
+    {
+      "isExpandedCard": true,
+      "name": "Тариф 1.1024",
+      "conditionsList": [
+        {
+          "services": {
+            "simpleFlexsList": [
+              {
+                "caption": "Количество виртуальных процессоров",
+                "value": "1 vCpu"
+              },
+              {
+                "caption": "Скорость доступа к виртуальному серверу",
+                "value": "10 Мбит"
+              },
+              {
+                "caption": "Оперативная память",
+                "value": "1024 Мбайт"
+              },
+              {
+                "caption": "Количество IP - адресов",
+                "value": "1"
+              },
+              {
+                "caption": "Жесткий диск, Гбайт",
+                "value": "10 Гбайт"
+              }
+            ]
+          }
+        }
+      ],
+      "cost": 648
+    },
+    {
+      "isExpandedCard": true,
+      "name": "Тариф 1.2048",
+      "conditionsList": [
+        {
+          "services": {
+            "simpleFlexsList": [
+              {
+                "caption": "Количество виртуальных процессоров",
+                "value": "1 vCpu"
+              },
+              {
+                "caption": "Скорость доступа к виртуальному серверу",
+                "value": "10 Мбит"
+              },
+              {
+                "caption": "Оперативная память",
+                "value": "2048 Мбайт"
+              },
+              {
+                "caption": "Количество IP - адресов",
+                "value": "1"
+              },
+              {
+                "caption": "Жесткий диск, Гбайт",
+                "value": "20 Гбайт"
+              }
+            ]
+          }
+        }
+      ],
+      "cost": "1 224"
+    },
+    {
+      "isExpandedCard": true,
+      "name": "Тариф 2.2048",
+      "conditionsList": [
+        {
+          "services": {
+            "simpleFlexsList": [
+              {
+                "caption": "Количество виртуальных процессоров",
+                "value": "2 vCpu"
+              },
+              {
+                "caption": "Скорость доступа к виртуальному серверу",
+                "value": "10 Мбит"
+              },
+              {
+                "caption": "Оперативная память",
+                "value": "1024 Мбайт"
+              },
+              {
+                "caption": "Количество IP - адресов",
+                "value": "1"
+              },
+              {
+                "caption": "Жесткий диск, Гбайт",
+                "value": "50 Гбайт"
+              }
+            ]
+          }
+        }
+      ],
+      "cost": "3 024"
+    },
+    {
+      "isExpandedCard": true,
+      "name": "Тариф 2.4096",
+      "conditionsList": [
+        {
+          "services": {
+            "simpleFlexsList": [
+              {
+                "caption": "Количество виртуальных процессоров",
+                "value": "2 vCpu"
+              },
+              {
+                "caption": "Скорость доступа к виртуальному серверу",
+                "value": "10 Мбит"
+              },
+              {
+                "caption": "Оперативная память",
+                "value": "4096  Мбайт"
+              },
+              {
+                "caption": "Количество IP - адресов",
+                "value": "1"
+              },
+              {
+                "caption": "Жесткий диск, Гбайт",
+                "value": "50 Гбайт"
+              }
+            ]
+          }
+        }
+      ],
+      "cost": "3 816"
+    },
+    {
+      "isExpandedCard": true,
+      "name": "Тариф 3.4096",
+      "conditionsList": [
+        {
+          "services": {
+            "simpleFlexsList": [
+              {
+                "caption": "Количество виртуальных процессоров",
+                "value": "3 vCpu"
+              },
+              {
+                "caption": "Скорость доступа к виртуальному серверу",
+                "value": "10 Мбит"
+              },
+              {
+                "caption": "Оперативная память",
+                "value": "4096  Мбайт"
+              },
+              {
+                "caption": "Количество IP - адресов",
+                "value": "1"
+              },
+              {
+                "caption": "Жесткий диск, Гбайт",
+                "value": "50 Гбайт"
+              }
+            ]
+          }
+        }
+      ],
+      "cost": "3 816"
+    }
+  ]
+}

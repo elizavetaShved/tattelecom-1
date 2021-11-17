@@ -1,0 +1,23 @@
+<section class="b-info">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      Об услуге
+    </h2>
+
+    <p class="b-info__text mod-padding-left">
+      М2М (Machine-to-machine) - Технологии связи, которые позволяют устройствам (машинам) обмениваться информацией друг
+      с другом или передавать ее в одностороннем порядке посредством мобильной связи.
+    </p>
+
+    <ul class="b-info__icon-list mod-3">
+      {{#each aboutService }}
+        <li class="b-info__icon-list-item">
+          <img src="{{ this.img }}" alt="" class="b-info__icon-list-image">
+          <div class="b-info__icon-list-text">
+            {{ this.caption }}
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

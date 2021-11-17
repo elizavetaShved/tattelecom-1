@@ -1,0 +1,27 @@
+<section class="b-info">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      Об услуге
+    </h2>
+
+    <p class="b-info__text mod-padding-left">
+      Это интеллектуальная интегрированная система безопасности и видеонаблюдения с возможностью online трансляции
+      видеоизображения посредством закрытого канала Интернет – VPN и хранением архива на облачном сервере
+      «Таттелеком» до 30 дней. Архив можно просматривать со смартфона или компьютера из любой точки, где есть
+      интернет.
+    </p>
+
+    <h3 class="b-info__subtitle">
+      Направления применения камер видеонаблюдения
+    </h3>
+
+    <ul class="b-info__directions-list">
+      {{#each directionsList }}
+        <li class="b-info__directions-item gl__white-container">
+          <img src="{{ this.img }}" alt="" class="b-info__directions-item-icon">
+          <div class="b-info__directions-item-caption">{{ this.caption }}</div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

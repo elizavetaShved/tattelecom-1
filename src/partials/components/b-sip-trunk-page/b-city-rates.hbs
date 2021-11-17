@@ -5,15 +5,7 @@
     </h2>
 
     <div class="js-menu-tabs-container">
-      <div class="b-city-rates__radio-btns-container">
-        {{#each cityRatesTabs }}
-          <label class="b-city-rates__radio-wrapper">
-            <input type="radio" class="b-city-rates__tab js-menu-tab" name="{{ this.name }}"
-                   {{#if this.isChecked}}checked{{/if}} value="{{ this.value }}">
-            <span class="b-city-rates__tab-content">{{ this.itemName }}</span>
-          </label>
-        {{/each}}
-      </div>
+      {{> common/controls/b-menu-tabs menuTabs=cityRatesTabs }}
 
       {{#each cityRatesContentsList }}
         <div class="js-menu-tab-content gl__menu-tab-content" data-menu="{{ this.type }}">

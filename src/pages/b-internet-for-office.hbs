@@ -1,0 +1,42 @@
+{{#extend "layout"}}
+  {{#content "main"}}
+
+    {{> common/b-page-banner }}
+
+    {{> common/b-tariffs-list/section customTitle="Тариф «Деловой»" }}
+
+    {{>b-internet-for-office-page/b-connection }}
+
+    {{> common/b-request-for-connection }}
+
+    <section class="b-info">
+      <div class="gl__page-content">
+        <h2 class="gl__title">
+          Об услуге
+        </h2>
+
+        <p class="b-info__text mod-padding-left">
+          Здесь будет информация об услуге
+        </p>
+
+        <h3 class="b-info__subtitle">
+          Примечания
+        </h3>
+
+        <ul class="b-info__list-width-line-mark mod-padding-left">
+          <li class="b-info__item-line-mark">Примечание</li>
+          <li class="b-info__item-line-mark">Примечание</li>
+          <li class="b-info__item-line-mark">Примечание</li>
+          <li class="b-info__item-line-mark">Примечание</li>
+        </ul>
+      </div>
+    </section>
+
+    {{> common/b-useful-articles }}
+
+    {{> common/faq/section-faq }}
+
+    {{> common/b-support }}
+
+  {{/content}}
+{{/extend}}

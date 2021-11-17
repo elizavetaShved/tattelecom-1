@@ -11,6 +11,8 @@ export default function initMenuTabs() {
     menuTabs.forEach((tab, index) => {
       if (tab.hasAttribute('checked')) {
         contentElems[index].classList.add('mod-show');
+      } else {
+        contentElems[index].classList.remove('mod-show');
       }
 
       tab.onchange = () => {

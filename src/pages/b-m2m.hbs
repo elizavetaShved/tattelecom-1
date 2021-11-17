@@ -1,0 +1,39 @@
+{{#extend "layout"}}
+  {{#content "main"}}
+
+    {{> common/b-page-banner }}
+
+    {{> b-m2m-page/b-info }}
+
+    <section class="b-check-items" id="b-check-items-host">
+      <div class="gl__page-content">
+        <h2 class="gl__title">
+          Преимущества М2М
+        </h2>
+
+        {{> common/b-check-items check-items=check-items-blue }}
+      </div>
+    </section>
+
+    {{> common/b-tariffs-list/section }}
+
+    <section class="b-check-items" id="b-check-items-host">
+      <div class="gl__page-content">
+        <h2 class="gl__title">
+          С помощью Центра управления М2М Вы сможете
+        </h2>
+
+        {{> common/b-check-items check-items=check-items-red }}
+      </div>
+    </section>
+
+    {{> common/b-request-for-connection }}
+
+    {{> common/b-useful-articles }}
+
+    {{> common/faq/section-faq }}
+
+    {{> common/b-support }}
+
+  {{/content}}
+{{/extend}}

@@ -1,0 +1,151 @@
+{
+  "isBusiness": true,
+  "title": "Интернет",
+  "script": "b-internet-page",
+  "service-cards": [
+    {
+      "title": "Интернет для офиса",
+      "subtitle": "Скоростной интернет для любой задачи",
+      "cost": "333",
+      "hasImage": {
+        "fileName": "img/b-internet-page/service-1.jpg",
+        "gradientClass": "gradient-3"
+      },
+      "detailBtn": "Подробнее",
+      "tariffsBtn": "Тарифы",
+      "connectBtn": "Подключить"
+    },
+    {
+      "title": "Интерет WI-FI",
+      "subtitle": "Беспроводной интернет для сотрудников и гостей ",
+      "cost": "333",
+      "detailBtn": "Подробнее",
+      "connectBtn": "Подключить",
+      "cardColorClass": "blue"
+    },
+    {
+      "title": "Интернет по Радиоканалу",
+      "subtitle": "Скоростной интернет по беспроводной сети",
+      "cost": "333",
+      "detailBtn": "Подробнее",
+      "cardColorClass": "blue"
+    },
+    {
+      "title": "Виртуальные сети IP VPN",
+      "subtitle": "Объединение территориально разнесенных офисов в единую защищённую сеть",
+      "hasImage": {
+        "fileName": "img/b-internet-page/service-2.jpg",
+        "gradientClass": "gradient-4"
+      },
+      "cost": "444",
+      "detailBtn": "Подробнее",
+      "connectBtn": "Выбрать номер"
+    }
+  ],
+  "usefulArticles": [
+    {
+      "image": "useful-article-1.jpg",
+      "title": "Название статьи",
+      "description": "Краткое описание в 2-3 строчки о сути статьи, Краткое описание в 2-3 строчки о сути статьи."
+    },
+    {
+      "image": "useful-article-2.jpg",
+      "title": "Название статьи",
+      "description": "Краткое описание в 2-3 строчки b о сути статьи, Краткое описание в 2-3 строчки о сути статьи."
+    },
+    {
+      "image": "useful-article-3.jpg",
+      "title": "Название статьи",
+      "description": "Краткое описание в 2-3 строчки о сути статьи, Краткое описание в 2-3 строчки о сути статьи."
+    },
+    {
+      "image": "useful-article-4.jpg",
+      "title": "Название статьи",
+      "description": "Краткое описание в 2-3 строчки о сути статьи, Краткое описание в 2-3 строчки о сути статьи."
+    }
+  ],
+  "faq": [
+    {
+      "title": "Скорость не отличается от заявленной, но страницы загружаются медленно?",
+      "text": [
+        "...",
+        "...",
+        "..."
+      ]
+    },
+    {
+      "title": "Какие DNS-сервера необходимо указывать для Интернета?",
+      "text": [
+        "...",
+        "...",
+        "..."
+      ]
+    },
+    {
+      "title": "Будет ли свободен телефон во время использования Интернета xDSL?",
+      "text": [
+        "...",
+        "...",
+        "..."
+      ]
+    },
+    {
+      "title": "Как можно восстановить логин и пароль доступа к сети Интернет?",
+      "text": [
+        "...",
+        "...",
+        "..."
+      ]
+    },
+    {
+      "title": "В какой срок происходит подключение услуг Интернет в случае отключения за несвоевременную оплату?",
+      "text": [
+        "...",
+        "...",
+        "..."
+      ]
+    }
+  ],
+  "advantagesTop": {
+    "title": "Преимущества Интернет от Таттелеком",
+    "list": [
+      {
+        "img": "img/b-internet-page/advantages/advantages-1.png",
+        "caption": "Подключения даже в отдаленных районах РТ"
+      },
+      {
+        "img": "img/b-internet-page/advantages/advantages-2.png",
+        "caption": "Широкий выбор тарифных планов"
+      },
+      {
+        "img": "img/b-internet-page/advantages/advantages-3.png",
+        "caption": "Удобные дополнительные сервисы и функции"
+      },
+      {
+        "img": "img/b-internet-page/advantages/advantages-4.png",
+        "caption": "Индивидуальный подбор вариантов подключения"
+      }
+    ]
+  },
+  "advantagesBottom": {
+    "title": "Подключитесь к Интернету и получите",
+    "list": [
+      {
+        "img": "img/b-internet-page/advantages/advantages-5.png",
+        "caption": "Надежный доступ в сеть Интернет"
+      },
+      {
+        "img": "img/b-internet-page/advantages/advantages-6.png",
+        "caption": "Высокая скорость доступа до 1Гбит/с"
+      },
+      {
+        "img": "img/b-internet-page/advantages/advantages-7.png",
+        "caption": "Индивидуальный подход к каждому клиенту"
+      },
+      {
+        "img": "img/b-internet-page/advantages/advantages-8.png",
+        "caption": "Круглосуточная техническая поддержка"
+      }
+    ]
+  }
+}

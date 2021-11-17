@@ -39,6 +39,15 @@
       border-bottom-color: var(--main-color);
     }
   }
+
+  &.mod-business {
+    &:checked {
+      + .menu-tabs__radio-content {
+        color: var(--main-color-business);
+        border-bottom-color: var(--main-color-business);
+      }
+    }
+  }
 }
 
 .menu-tabs__radio-content {

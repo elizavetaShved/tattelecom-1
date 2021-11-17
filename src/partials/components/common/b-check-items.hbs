@@ -13,7 +13,11 @@
 <ul class="b-check-items__list column-{{ check-items.column }}">
   {{#each check-items.list }}
     <li class="b-check-items__item">
-      <img src="img/common/check-ellipse-blue.svg" alt="" class="b-check-items__item-image">
+      {{#if this.isRed }}
+        <img src="img/common/check-ellipse-red.svg" alt="" class="b-check-items__item-image">
+      {{else}}
+        <img src="img/common/check-ellipse-blue.svg" alt="" class="b-check-items__item-image">
+      {{/if}}
       <div>
         {{#if this.title }}
           <div class="b-check-items__item-title">

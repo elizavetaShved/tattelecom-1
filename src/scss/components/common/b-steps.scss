@@ -63,13 +63,14 @@
 
     padding: 2.4rem 2rem;
 
-    font-size: var(--fs-t1);
+    font-size: 1.8rem;
     line-height: 1.2;
     font-weight: 400;
     letter-spacing: 0.015em;
 
     @include for-sm-down {
       padding: 1rem;
+      font-size: 1.6rem;
     }
   }
 }

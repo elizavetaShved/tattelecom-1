@@ -1,0 +1,46 @@
+<section class="b-colocation-rates">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      Тарифы на размещение оборудования на площадях ПАО "Таттелеком"
+    </h2>
+
+    <ul class="b-colocation-rates__rates-container">
+      {{#each colocationRatesList }}
+        <li class="b-colocation-rates__rate">
+          <button type="button" class="b-colocation-rates__btn gl__drop-menu-btn js-drop-menu-btn data-drop-menu-open">
+            {{ this.title }}
+            <svg width="24" height="24" aria-hidden="true" class="b-colocation-rates__btn-icon gl__drop-menu-icon">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </button>
+
+          <div class="gl__drop-menu-container js-drop-menu-container">
+            <ul class="b-colocation-rates__content-list gl__drop-menu js-drop-menu">
+              {{#each flexs }}
+                <li class="b-colocation-rates__content-item">
+                  <div class="b-colocation-rates__content-item-caption">
+                    {{ this.caption }}
+                  </div>
+                  <div class="b-colocation-rates__content-item-value">
+                    {{ this.value }} ₽/мес
+                  </div>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+
+    <h3 class="b-info__subtitle">
+      Примечание:
+    </h3>
+
+    <ol class="b-info__list-number mod-padding-left">
+      <li class="b-info__item-number">Примечание</li>
+      <li class="b-info__item-number">Примечание</li>
+      <li class="b-info__item-number">Примечание</li>
+      <li class="b-info__item-number">Примечание</li>
+    </ol>
+  </div>
+</section>
