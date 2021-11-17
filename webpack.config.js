@@ -56,6 +56,7 @@ module.exports = {
     ['b-web-hosting-page']: './src/js/pages/b-web-hosting-page',
     ['b-domain-registration-page']: './src/js/pages/b-domain-registration-page',
     ['b-cloud-video-page']: './src/js/pages/b-cloud-video-page',
+    ['b-video-analytics-page']: './src/js/pages/b-video-analytics-page',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

@@ -43,6 +43,19 @@
     }
   }
 
+  &.mod-is-small-card {
+    min-height: 27.8rem;
+
+    .b-tariffs-item__name {
+      margin-bottom: 0;
+    }
+
+    .b-tariffs-item__services-list-container {
+      border-bottom: solid 0.1rem var(--border-color);
+      padding-bottom: 2.2rem;
+    }
+  }
+
   &:hover {
     transform: translateY(-1rem);
   }

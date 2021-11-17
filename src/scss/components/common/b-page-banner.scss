@@ -115,7 +115,7 @@
     }
   }
 
-  &.b-lorawan, &.b-m2m, &.b-colocation, &.b-web-hosting, &.b-cloud-video {
+  &.b-lorawan, &.b-m2m, &.b-colocation, &.b-web-hosting, &.b-cloud-video, &.b-video-analytics {
     .b-page-banner__content {
       height: auto;
       min-height: 36rem;
@@ -130,7 +130,7 @@
     }
   }
 
-  &.b-colocation, &.b-cloud-video {
+  &.b-colocation, &.b-cloud-video, &.b-video-analytics {
     .b-page-banner__text {
       @include for-sm-down {
         max-width: 60%;
