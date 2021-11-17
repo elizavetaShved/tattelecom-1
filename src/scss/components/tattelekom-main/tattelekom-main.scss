@@ -1,0 +1,123 @@
+.tatt-banner {
+    height: 52.6rem;
+    margin-bottom: 7.7rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @include for-fl-down {
+        height: 38rem;
+    }
+
+    @include for-xs-down {
+        height: 22rem;
+        margin-bottom: 5rem;
+    }
+}
+
+.tatt-main-section {
+    &__heading-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__heading-logo {
+        height: 5.9rem;
+        margin-bottom: 2rem;
+
+        @include for-lg-down {
+            height: 5rem;
+        }
+    }
+
+    &__heading {
+        font-weight: 400;
+        font-size: 2.6rem;
+        line-height: 130%;
+        letter-spacing: 0.015em;
+        margin-bottom: 6.4rem;
+
+        @include for-xs-down {
+            font-size: 2.6rem;
+            margin-bottom: 3.5rem;
+        }
+    }
+    
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        @include for-md-down {
+            flex-wrap: wrap;
+            margin: -1.75rem;
+        }
+    }
+
+    &__item {
+        width: 20%;
+        height: 14.4rem;
+    
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @include for-lg-down {
+            height: 13rem;
+        }
+
+        @include for-md-down {
+            width: calc(33.3% - 3.5rem);
+            margin: 1.75rem;
+        }
+
+        @include for-xs-down {
+            width: calc(50% - 3.5rem);
+        }
+    }
+
+    &__item-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        height: 100%;
+
+        &.mod-buisness {
+            &:hover {
+                color: var(--main-color-business);
+
+                .tatt-main-section__item-icon {
+                    fill: var(--main-color-business);
+                }
+            }
+        }
+    }
+
+    &__item-icon {
+        display: block;
+        fill: var(--main-grey-color);
+
+        @include for-lg-down {
+            width: 6rem;
+            height: 6rem;
+        }
+        
+    }
+
+    &__item-name {
+        display: inline-block;
+        margin-top: auto;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 160.5%;
+        text-align: center;
+        letter-spacing: 0.015em;
+
+        @include for-xs-down {
+            font-size: 1.8rem;
+        }
+    }
+}

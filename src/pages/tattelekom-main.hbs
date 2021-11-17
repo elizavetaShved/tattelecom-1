@@ -1,0 +1,30 @@
+{{#extend "layout"}}
+{{#content "main"}}
+<section class="tatt-banner" style="background-image: url(img/tattelekom-main/rates-preview/rates-preview-1.jpg)">
+</section>
+{{> tattelekom-main/popular-block }}
+<section class="private-clients">
+  <div class="gl__page-content">
+    <div class="tatt-main-section__heading-container">
+      <img src="img/header/logo-fly.svg" alt="" class="tatt-main-section__heading-logo private-clients__section-heading-img">
+      <h2 class="tatt-main-section__heading private-clients__heading">
+        Частным клиентам
+      </h2>
+    </div>
+    {{> tattelekom-main/private-list }}
+  </div>
+</section>
+<section class="buisness-clients">
+  <div class="gl__page-content">
+    <div class="tatt-main-section__heading-container">
+      <img src="img/tattelekom-main/tatt-buisness.svg" alt="" class="tatt-main-section__heading-logo buisness-clients__section-heading-img">
+      <h2 class="tatt-main-section__heading private-clients__heading">
+        Услуги Бизнесу
+      </h2>
+    </div>
+    {{> tattelekom-main/buisness-list }}
+  </div>
+</section>
+{{> main-page/news-list }}
+{{/content}}
+{{/extend}}

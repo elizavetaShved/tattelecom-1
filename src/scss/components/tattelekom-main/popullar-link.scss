@@ -1,0 +1,55 @@
+.popullar-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 23rem;
+    height: 23rem;
+    padding: 2.3rem 3rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    &__icon {
+        fill: var(--main-color-business);
+        margin-bottom: 4.6rem;
+
+        @include for-lg-down {
+            width: 8rem;
+            height: 8rem;
+        }
+
+        @include for-xs-down {
+            width: 6rem;
+            height: 6rem;
+        }
+    }
+
+    &__heading {
+        display: inline-block;
+        font-size: 1.6rem;
+        line-height: 160%;
+        text-align: center;
+        transition: color 200ms;
+    }
+
+    &:hover {
+        box-shadow: 0px 0.266004px 20px rgba(153, 152, 168, 0.17);
+
+        .popullar-link__heading {
+            color: var(--main-color-business);
+        }
+
+        .popullar-link__icon {
+            fill: var(--main-color-business);
+        }
+    }
+
+    @include for-lg-down {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    @include for-xs-down {
+        width: calc(50% - 2.5rem);
+    }
+}

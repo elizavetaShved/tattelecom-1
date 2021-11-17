@@ -1,0 +1,41 @@
+<section class="tatt-poppular">
+  <div class="gl__page-content">
+    <h2 class="tatt-poppular__heading gl__title">
+      Популярные страницы
+    </h2>
+    <div class="tatt-poppular__list">
+      {{#each popularLinkList }}
+        <a href="{{ this.link }}" class="tatt-poppular__item popullar-link">
+          <svg width="86" height="86" aria-hidden="true" class="popullar-link__icon">
+            <use xlink:href="#{{ this.iconName }}"></use>
+          </svg>
+
+          <span class="popullar-link__heading">
+            {{ this.name }}
+          </span>
+        </a>
+      {{/each}}
+    </div>
+    <div class="tatt-poppular-sections">
+      {{#each popularSectionList }}
+        <div class="tatt-poppular-sections__item">
+          <span class="tatt-poppular-sections__heading">
+            {{ this.heading }}
+          </span>
+          <div class="tatt-poppular-sections__link-container">
+            {{#each this.links }}
+              <a href="{{ this.link }}" class="tatt-poppular-sections__link">
+                <svg width="40" height="40" aria-hidden="true" class="tatt-poppular-sections__link-icon">
+                  <use xlink:href="#{{ this.linkIcon }}"></use>
+                </svg>
+                <span class="tatt-poppular-sections__link-name">
+                  {{ this.mame }}
+                </span>
+              </a>
+            {{/each}}
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

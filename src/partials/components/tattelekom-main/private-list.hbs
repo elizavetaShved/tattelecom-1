@@ -1,0 +1,14 @@
+<ul class="tatt-main-section__list">
+    {{#each privateClientsList }}
+    <li class="tatt-main-section__item">
+        <a href="{{ this.link }}" class="tatt-main-section__item-link">
+        <svg width="80" height="80" aria-hidden="true" class="tatt-main-section__item-icon">
+            <use xlink:href="#{{ this.icon }}"></use>
+        </svg>
+        <span class="tatt-main-section__item-name">
+            {{ this.heading }}
+        </span>
+        </a>
+    </li>
+    {{/each}}
+</ul>

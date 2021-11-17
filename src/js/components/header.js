@@ -5,6 +5,7 @@ export class Header {
   popupElem;
   popupContentElements;
   isBusinessMainPageHeader;
+  isTattelekomMain;
   menuLinkElements;
 
   businessMainPageMenuHost;
@@ -83,25 +84,30 @@ export class Header {
 
   // открыть поп-ап
   openPopUp(link) {
-    this.popupElem.classList.add('mod-show');
-    this.popupContentElements.forEach(popupContentElem => {
-      if ((popupContentElem.getAttribute('data-hover-value') === link.getAttribute('data-hover-value'))
-        && !popupContentElem.className.includes('mod-show')) {
-        this.popupContentElements.map(elem => {
-          elem.classList.remove('mod-show');
-          elem.style.marginLeft = 0;
-        });
-        popupContentElem.classList.add('mod-show');
-
-        if (popupContentElem.hasAttribute('data-alignment')) {
-          const distanceXLink = this.menuLinkElements[popupContentElem.getAttribute('data-alignment')].getBoundingClientRect().x;
-          const distanceXContent = popupContentElem.getBoundingClientRect().x;
-          popupContentElem.style.marginLeft = `${ distanceXLink - distanceXContent }px`;
+    this.isTattelekomMain = !!document.querySelector('.js-tattelekom-pages');
+    
+    // если не разделы таттелком то выполняем
+    if (this.isTattelekomMain == false) {
+      this.popupElem.classList.add('mod-show');
+      this.popupContentElements.forEach(popupContentElem => {
+        if ((popupContentElem.getAttribute('data-hover-value') === link.getAttribute('data-hover-value'))
+          && !popupContentElem.className.includes('mod-show')) {
+          this.popupContentElements.map(elem => {
+            elem.classList.remove('mod-show');
+            elem.style.marginLeft = 0;
+          });
+          popupContentElem.classList.add('mod-show');
+  
+          if (popupContentElem.hasAttribute('data-alignment')) {
+            const distanceXLink = this.menuLinkElements[popupContentElem.getAttribute('data-alignment')].getBoundingClientRect().x;
+            const distanceXContent = popupContentElem.getBoundingClientRect().x;
+            popupContentElem.style.marginLeft = `${ distanceXLink - distanceXContent }px`;
+          }
         }
-      }
-    })
-
-    this.isOpenPopup = true;
+      })
+  
+      this.isOpenPopup = true;
+    }
   }
 
   // закрыть поп-ап

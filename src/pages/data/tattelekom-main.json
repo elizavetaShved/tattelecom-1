@@ -1,0 +1,170 @@
+{
+  "isTattelekom": true,
+  "title": "Таттелком",
+  "script": "tattelekom-main",
+  "popularLinkList": [
+    {
+      "name": "Пресс-центр",
+      "iconName": "papper",
+      "link": "/"
+    },
+    {
+      "name": "Вакансии",
+      "iconName": "vac-headhunt",
+      "link": "/"
+    },    
+    {
+      "name": "Структурные подразделения",
+      "iconName": "teamwork",
+      "link": "/"
+    },    
+    {
+      "name": "Собрания акционеров",
+      "iconName": "teamwork-invest",
+      "link": "/"
+    },
+    {
+      "name": "Раскрытие информации",
+      "iconName": "info-open",
+      "link": "/"
+    }
+  ],
+  "popularSectionList": [
+    {
+      "heading": "Партнерам",
+      "links": [
+        {
+          "mame": "Поставщикам",
+          "linkIcon": "inventory",
+          "link": "/"
+        },
+        {
+          "mame": "Диллерам",
+          "linkIcon": "handshake",
+          "link": "/"
+        },
+        {
+          "mame": "Операторам связи",
+          "linkIcon": "operator",
+          "link": "/"
+        }
+      ]
+    },
+    {
+      "heading": "Кто мы",
+      "links": [
+        {
+          "mame": "О компании",
+          "linkIcon": "tatt-logo",
+          "link": "/"
+        },
+        {
+          "mame": "История",
+          "linkIcon": "history-table",
+          "link": "/"
+        },
+        {
+          "mame": "Руководство",
+          "linkIcon": "teamwork",
+          "link": "/"
+        }
+      ]
+    },
+    {
+      "heading": "Акционерам и инвесторам",
+      "links": [
+        {
+          "mame": "Годовой отчет",
+          "linkIcon": "diagram",
+          "link": "/"
+        },
+        {
+          "mame": "Существенные факты",
+          "linkIcon": "paper-warn",
+          "link": "/"
+        },
+        {
+          "mame": "Бухгалерская отчетность",
+          "linkIcon": "diagram-2",
+          "link": "/"
+        }
+      ]
+    }
+  ],
+  "privateClientsList": [
+    {
+      "link": "/",
+      "icon": "smartphone",
+      "heading": "Мобильная связь"
+    },
+    {
+      "link": "/",
+      "icon": "laptop",
+      "heading": "Интернет"
+    },
+    {
+      "link": "/",
+      "icon": "intercom",
+      "heading": "Домофон"
+    },
+    {
+      "link": "/",
+      "icon": "monitor",
+      "heading": "Телевидение"
+    },
+    {
+      "link": "/",
+      "icon": "tablet",
+      "heading": "4G Устройства"
+    }
+  ],
+  "buisnessList": [
+    {
+      "link": "/",
+      "icon": "smartphone",
+      "heading": "Мобильная связь"
+    },
+    {
+      "link": "/",
+      "icon": "laptop",
+      "heading": "Интернет в офис"
+    },
+    {
+      "link": "/",
+      "icon": "intercom2",
+      "heading": "Телефония"
+    },
+    {
+      "link": "/",
+      "icon": "cloud-computing",
+      "heading": "Виртуальная АТС"
+    },
+    {
+      "link": "/",
+      "icon": "call-center",
+      "heading": "Услуги Call – центра"
+    }
+  ],
+  "news-list": [
+    {
+      "title": "22 май",
+      "text": "Провели праздник двора для жителей ЖК Салават Купере"
+    },
+    {
+      "title": "22 май",
+      "text": "Провели праздник двора для жителей ЖК Салават Купере"
+    },
+    {
+      "title": "22 май",
+      "text": "Провели праздник двора для жителей ЖК Салават Купере"
+    },
+    {
+      "title": "22 май",
+      "text": "Провели праздник двора для жителей ЖК Салават Купере"
+    },
+    {
+      "title": "22 май",
+      "text": "Провели праздник двора для жителей ЖК Салават Купере"
+    }
+  ]
+}  

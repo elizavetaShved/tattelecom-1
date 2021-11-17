@@ -34,6 +34,76 @@
       fill: #fff;
     }
   }
+
+  &.mod-tattelekom {
+    .header__top-block {
+      background-color: #fff;
+    }
+
+    .header__bottom-block {
+      box-shadow: none;
+    }
+
+    .header__top-menu-items {
+      margin-right: 2rem;
+      
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .header__top-menu-items-link {
+      &:not(.mod-tatt-right-block-link) {
+        padding: 0;
+        color: #ADADAD;
+        text-transform: none;
+        border-top: none;
+        transition: border-bottom-color 250ms, color 250ms;
+  
+        &._is-active {
+          color: var(--main-color-2);
+          border-bottom-color: var(--main-color-2);
+        }
+  
+        &:hover {
+          &:not(.mod-with-icons) {
+            color: var(--main-color-2);
+            border-bottom-color: var(--main-color-2);
+          }
+        }
+      }
+    }
+
+    .header__bottom-menu-list {
+      margin: 0;
+    }
+
+    .header__bottom-menu-link {
+      font-size: 1.5rem;
+      line-height: 1.6rem;
+      padding: 0;
+    }
+
+    .header__bottom-menu-item {
+      margin-right: 3.5rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @include for-lg-down {
+        margin-right: 2rem;
+      }
+    }
+
+    .header__btns-container {
+      margin-left: 11.6rem;
+
+      @include for-fl-down {
+        margin-left: 3rem;
+      }
+    }
+  }
 }
 
 .header__content {
@@ -54,6 +124,38 @@
 
 .header__top-block {
   background-color: #E7F2FA;
+}
+
+.header__tatt-top-block-content {
+  flex-grow: 1;
+  border-bottom: 1px solid var(--border-color);
+
+  &_wrap {
+    display: flex;
+  }
+
+  @include for-md-down {
+    flex-grow: 0;
+    margin: 0 0 0 auto !important;
+    border-bottom: none;
+
+    .header__contacts-wrapper {
+      margin-left: 0;
+    }
+  }
+}
+
+.header__tatt-top-block-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3rem;
+}
+
+.header__tatt-top-block-logo {
+  @include for-lg-down {
+    width: 15rem;
+  }
 }
 
 .header__top-block-content {
@@ -112,6 +214,26 @@
   &.mod-with-icons {
     display: flex;
     align-items: center;
+  }
+
+  &.mod-tatt-right-block-link {
+    margin-right: 2rem;
+    padding: 0;
+    color: var(--grey-text);
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-transform: none;
+    border: none;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    @include for-xxs-down {
+      &:nth-child(1) {
+        display: none;
+      }
+    }
   }
 }
 
@@ -222,6 +344,10 @@
     @include for-xs-down {
       height: 1.8rem;
     }
+  }
+
+  &.mod-tatt-logo {
+    height: 4.2rem;
   }
 }
 
@@ -407,6 +533,17 @@
 
     &:after {
       transform: rotate(-45deg);
+    }
+  }
+
+  &.mod-tatt-header-burger {
+    width: 30px;
+    height: 30px;
+
+    &::after,
+    &::before {
+      width: 25px;
+      margin-left: -12px;
     }
   }
 }
