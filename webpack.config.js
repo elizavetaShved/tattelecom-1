@@ -58,6 +58,7 @@ module.exports = {
     ['b-cloud-video-page']: './src/js/pages/b-cloud-video-page',
     ['b-video-analytics-page']: './src/js/pages/b-video-analytics-page',
     ['b-m2m-business-control-page']: './src/js/pages/b-m2m-business-control-page-page',
+    ['tattelekom-main-page']: './src/js/pages/tattelekom-main-page',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),
