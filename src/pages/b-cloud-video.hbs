@@ -1,0 +1,29 @@
+{{#extend "layout"}}
+  {{#content "main"}}
+
+    {{> common/b-page-banner }}
+
+    {{> b-cloud-video-page/b-info }}
+
+    <section class="b-check-items" id="b-check-items-host">
+      <div class="gl__page-content">
+        <h2 class="gl__title">
+          Возможности и функции
+        </h2>
+
+        {{> common/b-check-items }}
+      </div>
+    </section>
+
+    {{> common/b-advantages-opportunities }}
+
+    {{> b-cloud-video-page/b-tariffs-list }}
+
+    {{> common/b-steps }}
+
+    {{> common/b-request-for-connection }}
+
+    {{> common/b-support }}
+
+  {{/content}}
+{{/extend}}
