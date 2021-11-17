@@ -4,6 +4,14 @@
   @include for-sm-down {
     margin: 2.6rem 0 4rem;
   }
+
+  &.mod-small-margin {
+    margin: 5rem 0 1.4rem;
+
+    @include for-sm-down {
+      margin: 2.6rem 0 1rem;
+    }
+  }
 }
 
 .info-drop-menu__title {
@@ -13,19 +21,31 @@
   line-height: 5rem;
   letter-spacing: 0.015em;
   padding-bottom: 3rem;
+  text-align: start;
 
-  &:hover {
+  @include for-sm-down {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+  }
+
+  &:hover, &.mod-open {
     color: var(--main-color);
 
-    .conditions__title-icon {
-      fill: var(--main-color);
+    .info-drop-menu__title-icon {
+      fill: var(--main-color) !important;
     }
   }
 }
 
 .info-drop-menu__title-icon {
   height: 3.2rem;
-  fill: var(--main-text-color)
+  fill: var(--main-text-color);
+  margin-right: 2rem;
+  flex: 0 0 3.2rem;
+
+  @include for-sm-down {
+    margin-right: 1.2rem;
+  }
 }
 
 .info-drop-menu__content {
@@ -66,15 +86,27 @@
 
 .info-drop-menu__flex {
   padding: 1.4rem 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: 11fr 3fr;
   border-bottom: 1px solid var(--border-color);
   align-items: center;
   justify-content: space-between;
   font-size: 1.6rem;
   line-height: 2.6rem;
   max-width: 129rem;
+
+  @include for-sm-down {
+    padding: .8rem 0;
+    grid-template-columns: 1fr;
+  }
+}
+
+.info-drop-menu__flex-caption {
+  font-weight: 300;
 }
 
 .info-drop-menu__flex-value {
-  font-weight: bold;
+  @include for-sm-up {
+    text-align: end;
+  }
 }

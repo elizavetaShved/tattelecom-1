@@ -75,6 +75,16 @@ body {
         border-bottom: 2px solid #fff;
       }
     }
+
+    .info-drop-menu__title {
+      &:hover, &.mod-open {
+        color: var(--main-color-business);
+
+        .info-drop-menu__title-icon {
+          fill: var(--main-color-business) !important;
+        }
+      }
+    }
   }
 }
 

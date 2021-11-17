@@ -137,6 +137,17 @@
     }
   }
 
+  &.mod-business-grey-transparent {
+    background-color: transparent;
+    color: var(--main-grey-color);
+    border-color: var(--main-grey-color);
+
+    &:hover {
+      background-color: var(--main-grey-color);
+      color: #fff !important;
+    }
+  }
+
   &.mod-business-white {
     background-color: #fff;
     color: var(--main-color-business);

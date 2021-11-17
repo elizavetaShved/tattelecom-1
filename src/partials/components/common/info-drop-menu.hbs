@@ -52,13 +52,13 @@
   }
 -->
 
-<section class="info-drop-menu" id="info-drop-menu-host">
+<section class="info-drop-menu {{#if smallMargin }}mod-small-margin{{/if}}" id="info-drop-menu-host">
   <div class="gl__page-content">
     <button type="button" class="info-drop-menu__title gl__drop-menu-btn js-drop-menu-btn">
-      {{ paragraphs.title }}
       <svg width="32" height="32" aria-hidden="true" class="info-drop-menu__title-icon gl__drop-menu-icon">
         <use xlink:href="#arrow-down"></use>
       </svg>
+      {{ paragraphs.title }}
     </button>
 
     {{#if paragraphs.text }}
