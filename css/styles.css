@@ -10683,8 +10683,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   @media screen and (max-width: 1023px) {
     .b-page-banner.b-web-hosting .b-page-banner__text {
       max-width: 60%; } }
-  .b-page-banner.b-virtual-server .b-page-banner__background {
-    background: linear-gradient(135deg, #9213CF 0%, #6F66E4 29.69%, #43CBFF 100%);
+  .b-page-banner.b-virtual-server .b-page-banner__background, .b-page-banner.b-domain-registration .b-page-banner__background {
     position: absolute;
     top: 0;
     left: 0;
@@ -10695,6 +10694,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none; }
+  .b-page-banner.b-virtual-server .b-page-banner__background {
+    background: linear-gradient(135deg, #9213CF 0%, #6F66E4 29.69%, #43CBFF 100%); }
+  .b-page-banner.b-domain-registration .b-page-banner__background {
+    background: linear-gradient(135deg, #FF7AF5 0%, #513162 100%); }
   .b-page-banner__content {
     overflow: hidden;
     position: relative;
