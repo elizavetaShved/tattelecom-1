@@ -1,0 +1,192 @@
+{
+  "isBusiness": true,
+  "title": "Web хостинг",
+  "script": "b-web-hosting-page",
+  "banner": {
+    "changeSize": 1024,
+    "additionalClass": "b-web-hosting",
+    "title": {
+      "accentText": "Web-хостинг",
+      "colorClass": "white"
+    },
+    "largeSubtitle": {
+      "text": "Предоставление определённого объёма пространства на виртуальном сервере",
+      "colorClass": "white"
+    },
+    "image": "b-web-hosting.jpg",
+    "mobile": {
+      "title": "Web-хостинг",
+      "image": "b-web-hosting--mobile.jpg"
+    }
+  },
+  "advantagesList": [
+    {
+      "img": "img/common/b-advantages/advantage-8.png",
+      "caption": "Экономия на покупке и установке оборудования"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-9.png",
+      "caption": "Настройка и техническое обслуживание оборудования"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-10.png",
+      "caption": "Надежность и безопасность"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-11.png",
+      "caption": "Возможность контроля и удаленного администрирования"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-12.png",
+      "caption": "Возможность создания сайтов-визиток"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-13.png",
+      "caption": "Возможность расширения дискового пространства"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-14.png",
+      "caption": "Обеспеченность бесперебойным каналом связи  Интернет"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-15.png",
+      "caption": "Ежедневное резервное копирование данных"
+    }
+  ],
+  "advantages-opportunities": {
+    "titleComponent": "Возможности услуги Веб-хостинг",
+    "sliderNum": "2.6",
+    "items": [
+      {
+        "title": "Конструктор сайтов Web Presence Builder",
+        "text": "возможность самостоятельно, быстро, в режиме онлайн создать собственный сайт из набора готовых шаблонов"
+      },
+      {
+        "title": "Plesk Onyx",
+        "text": "современное, обладающее широкими возможностями программное обеспечение для управления своими доменами, сайтами, базами данных, DNS и почтовыми ящиками"
+      }
+    ]
+  },
+  "tariffs": [
+    {
+      "isExpandedCard": true,
+      "name": "Тариф «Стандарт»",
+      "conditionsList": [
+        {
+          "services": {
+            "simpleFlexsList": [
+              {
+                "caption": "Дисковое пространство",
+                "value": "1 000 Мбайт"
+              },
+              {
+                "caption": "Количество баз данных MySQL, PostgreSQL",
+                "value": "5 шт."
+              },
+              {
+                "caption": "Количество доменов на одной площадке",
+                "value": "15 шт."
+              },
+              {
+                "caption": "Количество почтовых ящиков",
+                "value": "20"
+              }
+            ]
+          }
+        }
+      ],
+      "from": true,
+      "cost": 80
+    },
+    {
+      "isExpandedCard": true,
+      "name": "Тариф «Мастер»",
+      "conditionsList": [
+        {
+          "services": {
+            "simpleFlexsList": [
+              {
+                "caption": "Дисковое пространство",
+                "value": "3 000 Мбайт"
+              },
+              {
+                "caption": "Количество баз данных MySQL, PostgreSQL",
+                "value": "10 шт."
+              },
+              {
+                "caption": "Количество доменов на одной площадке",
+                "value": "30 шт."
+              },
+              {
+                "caption": "Количество почтовых ящиков",
+                "value": "50"
+              }
+            ]
+          }
+        }
+      ],
+      "from": true,
+      "cost": 188
+    },
+    {
+      "isExpandedCard": true,
+      "name": "Тариф «Корпоративный»",
+      "conditionsList": [
+        {
+          "services": {
+            "simpleFlexsList": [
+              {
+                "caption": "Дисковое пространство",
+                "value": "5 000 Мбайт"
+              },
+              {
+                "caption": "Количество баз данных MySQL, PostgreSQL",
+                "value": "15 шт."
+              },
+              {
+                "caption": "Количество доменов на одной площадке",
+                "value": "50 шт."
+              },
+              {
+                "caption": "Количество почтовых ящиков",
+                "value": "100"
+              }
+            ]
+          }
+        }
+      ],
+      "from": true,
+      "cost": 269
+    },
+    {
+      "isExpandedCard": true,
+      "name": "Тариф «VIP»",
+      "conditionsList": [
+        {
+          "services": {
+            "simpleFlexsList": [
+              {
+                "caption": "Дисковое пространство",
+                "value": "7 000 Мбайт"
+              },
+              {
+                "caption": "Количество баз данных MySQL, PostgreSQL",
+                "value": "20 шт."
+              },
+              {
+                "caption": "Количество доменов на одной площадке",
+                "value": "100 шт."
+              },
+              {
+                "caption": "Количество почтовых ящиков",
+                "value": "500"
+              }
+            ]
+          }
+        }
+      ],
+      "from": true,
+      "cost": 296
+    }
+  ]
+}

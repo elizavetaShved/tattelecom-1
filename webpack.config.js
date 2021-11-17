@@ -53,6 +53,7 @@ module.exports = {
     ['b-m2m-page']: './src/js/pages/b-m2m-page-page',
     ['b-colocation-page']: './src/js/pages/b-colocation-page',
     ['b-virtual-server-page']: './src/js/pages/b-virtual-server-page',
+    ['b-web-hosting-page']: './src/js/pages/b-web-hosting-page',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

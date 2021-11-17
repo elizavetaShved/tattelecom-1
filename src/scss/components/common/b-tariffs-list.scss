@@ -143,10 +143,10 @@
   }
 
   &__simple-flex {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
     align-items: center;
-    justify-content: space-between;
-    font-weight: 300;
     font-size: 1.4rem;
     line-height: 1.8rem;
     margin-bottom: 1.4rem;
@@ -162,7 +162,11 @@
 
   &__simple-flex-caption {
     color: var(--grey-text);
-    margin-right: .4rem;
+    font-weight: 300;
+  }
+
+  &__simple-flex-value {
+    text-align: end;
   }
 
   &__footer {
