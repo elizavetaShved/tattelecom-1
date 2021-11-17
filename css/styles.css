@@ -10671,14 +10671,14 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     margin-right: .6rem; }
   .b-page-banner.b-internet-by-radio .b-page-banner__btns-container {
     margin-top: 0; }
-  .b-page-banner.b-lorawan .b-page-banner__content, .b-page-banner.b-m2m .b-page-banner__content, .b-page-banner.b-colocation .b-page-banner__content, .b-page-banner.b-web-hosting .b-page-banner__content, .b-page-banner.b-cloud-video .b-page-banner__content {
+  .b-page-banner.b-lorawan .b-page-banner__content, .b-page-banner.b-m2m .b-page-banner__content, .b-page-banner.b-colocation .b-page-banner__content, .b-page-banner.b-web-hosting .b-page-banner__content, .b-page-banner.b-cloud-video .b-page-banner__content, .b-page-banner.b-video-analytics .b-page-banner__content {
     height: auto;
     min-height: 36rem; }
   @media screen and (max-width: 559px) {
     .b-page-banner.b-lorawan .b-page-banner__text, .b-page-banner.b-m2m .b-page-banner__text {
       max-width: 60%; } }
   @media screen and (max-width: 767px) {
-    .b-page-banner.b-colocation .b-page-banner__text, .b-page-banner.b-cloud-video .b-page-banner__text {
+    .b-page-banner.b-colocation .b-page-banner__text, .b-page-banner.b-cloud-video .b-page-banner__text, .b-page-banner.b-video-analytics .b-page-banner__text {
       max-width: 60%; } }
   @media screen and (max-width: 1023px) {
     .b-page-banner.b-web-hosting .b-page-banner__text {
@@ -10967,6 +10967,13 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     color: var(--main-text-color); }
   .b-tariffs-item.mod-select-card .b-tariffs-item__simple-signature {
     font-weight: 600; }
+  .b-tariffs-item.mod-is-small-card {
+    min-height: 27.8rem; }
+    .b-tariffs-item.mod-is-small-card .b-tariffs-item__name {
+      margin-bottom: 0; }
+    .b-tariffs-item.mod-is-small-card .b-tariffs-item__services-list-container {
+      border-bottom: solid 0.1rem var(--border-color);
+      padding-bottom: 2.2rem; }
   .b-tariffs-item:hover {
     -webkit-transform: translateY(-1rem);
             transform: translateY(-1rem); }
