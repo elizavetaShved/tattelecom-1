@@ -764,7 +764,7 @@ body {
       top: 0; }
 
 /**
- * Swiper 6.8.4
+ * Swiper 6.8.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -772,7 +772,7 @@ body {
  *
  * Released under the MIT License
  *
- * Released on: August 23, 2021
+ * Released on: July 22, 2021
  */
 @font-face {
   font-family: 'swiper-icons';
@@ -1087,9 +1087,6 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
   cursor: pointer; }
-
-.swiper-pagination-bullet:only-child {
-  display: none !important; }
 
 .swiper-pagination-bullet-active {
   opacity: 1;
@@ -1755,14 +1752,20 @@ button.swiper-pagination-bullet {
   z-index: 1;
   top: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
   -ms-transform-origin: 0 0;
   -webkit-transform-origin: 0 0;
   -webkit-transform-style: preserve-3d;
   transform-origin: 0 0;
   -webkit-transform-style: flat;
           transform-style: flat; }
+
+.noUi-connect {
+  height: 100%;
+  width: 100%; }
+
+.noUi-origin {
+  height: 10%;
+  width: 10%; }
 
 /* Offset direction
  */
@@ -1774,7 +1777,6 @@ button.swiper-pagination-bullet {
  * connect elements.
  */
 .noUi-vertical .noUi-origin {
-  top: -100%;
   width: 0; }
 
 .noUi-horizontal .noUi-origin {
@@ -1818,7 +1820,7 @@ button.swiper-pagination-bullet {
   width: 28px;
   height: 34px;
   right: -6px;
-  bottom: -17px; }
+  top: -17px; }
 
 .noUi-txt-dir-rtl.noUi-horizontal .noUi-handle {
   left: -17px;
@@ -14067,3 +14069,84 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   @media screen and (max-width: 559px) {
     .b-colocation-rates__content-item-value {
       text-align: start; } }
+
+.b-ddos-protection-info {
+  padding: 5rem 0; }
+  @media screen and (max-width: 1159px) {
+    .b-ddos-protection-info {
+      padding: 3rem 0; } }
+  @media screen and (max-width: 767px) {
+    .b-ddos-protection-info {
+      padding: 2.6rem 0; } }
+
+.b-ddos-protection-info__content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem; }
+  @media screen and (max-width: 767px) {
+    .b-ddos-protection-info__content-wrapper {
+      grid-gap: 2rem; } }
+  @media screen and (max-width: 559px) {
+    .b-ddos-protection-info__content-wrapper {
+      grid-template-columns: 1fr;
+      grid-gap: 4rem; } }
+
+.b-ddos-protection-info__list-title {
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 3rem; }
+  @media screen and (max-width: 767px) {
+    .b-ddos-protection-info__list-title {
+      font-size: 2rem;
+      line-height: 2.4rem;
+      margin-bottom: 2.4rem; } }
+
+.b-ddos-protection-info__item-percentages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .b-ddos-protection-info__item-percentages + .b-ddos-protection-info__item-percentages {
+    margin-top: 2rem; }
+
+.b-ddos-protection-info__item-num {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  color: var(--main-color-business);
+  margin-right: 2.2rem; }
+  @media screen and (max-width: 767px) {
+    .b-ddos-protection-info__item-num {
+      margin-right: 1.4rem;
+      font-size: 1.6rem;
+      line-height: 2.2rem; } }
+
+.b-ddos-protection-info__item-caption {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em; }
+  @media screen and (max-width: 767px) {
+    .b-ddos-protection-info__item-caption {
+      font-size: 1.4rem;
+      line-height: 2rem; } }
+  @media screen and (max-width: 559px) {
+    .b-ddos-protection-info__item-caption {
+      font-size: 1.6rem;
+      line-height: 2.6rem; } }
+
+.b-ddos-protection-info__item-check-icon {
+  fill: var(--main-color-business);
+  height: 2rem;
+  margin-right: 2.2rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 2.6rem;
+          flex: 0 0 2.6rem;
+  margin-top: 0.4rem; }
+  @media screen and (max-width: 767px) {
+    .b-ddos-protection-info__item-check-icon {
+      height: 1.6rem;
+      margin-right: 1.4rem;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 2rem;
+              flex: 0 0 2rem; } }
