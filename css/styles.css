@@ -4255,10 +4255,13 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   font-size: 1.8rem;
   line-height: 2.6rem;
   padding: 2rem;
-  margin: -2rem;
-  margin-top: 4.4rem; }
+  margin: -2rem; }
   .faq__download-link:hover {
     text-decoration: underline; }
+  .faq__download-link + .faq__download-link {
+    margin-top: .4rem; }
+  .faq__download-link:first-of-type {
+    margin-top: 4.4rem; }
 
 .faq__download-link-icon {
   height: 2.4rem;
@@ -5593,13 +5596,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       -ms-flex-align: center;
           align-items: center; }
 
-.header__bottom-btn + .header__bottom-btn {
-  margin-left: 1.4rem; }
-
 .header__btn-search {
   padding: 1rem; }
   .header__btn-search:hover .header__btn-search-icon.mod-business {
-    fill: var(--header-hover-business); }
+    fill: var(--header-hover-business) !important; }
   @media screen and (max-width: 1399px) {
     .header__btn-search {
       padding: .6rem; } }
@@ -10833,6 +10833,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     background: linear-gradient(135deg, #9213CF 0%, #6F66E4 29.69%, #43CBFF 100%); }
   .b-page-banner.b-domain-registration .b-page-banner__background {
     background: linear-gradient(135deg, #FF7AF5 0%, #513162 100%); }
+  .b-page-banner.b-video-conferencing .b-page-banner__background {
+    background: linear-gradient(101.01deg, #FF7A7A 8.09%, #FF7BFA 93.43%); }
   .b-page-banner.b-m2m-business-control .b-page-banner__background {
     background-color: #fff; }
   .b-page-banner.b-m2m-business-control .b-page-banner__content {
@@ -11204,7 +11206,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2rem;
-  background: #FFFFFF;
+  background-color: #fff;
   -webkit-box-shadow: 0 0 20px rgba(153, 152, 168, 0.17);
           box-shadow: 0 0 20px rgba(153, 152, 168, 0.17);
   border-radius: 1rem;
@@ -11214,6 +11216,30 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   transition: transform 300ms, -webkit-transform 300ms;
   min-height: 41rem;
   height: 100%; }
+  .b-tariffs-item.mod-hit {
+    background-color: #00A8E7;
+    position: relative;
+    z-index: 1;
+    color: #fff; }
+    .b-tariffs-item.mod-hit .b-tariffs-item__background {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 32rem;
+      height: 34.6rem;
+      -o-object-fit: contain;
+         object-fit: contain;
+      z-index: -1; }
+    .b-tariffs-item.mod-hit .b-tariffs-item__caption {
+      color: #fff; }
+    .b-tariffs-item.mod-hit .b-tariffs-item__service-icon {
+      fill: #fff; }
+    .b-tariffs-item.mod-hit .b-tariffs-item__btn {
+      background-color: #fff;
+      color: var(--main-color-business); }
+      .b-tariffs-item.mod-hit .b-tariffs-item__btn:hover {
+        background-color: #e5e5e5;
+        color: var(--main-color-business) !important; }
   .b-tariffs-item.mod-select-card .b-tariffs-item__services-list-caption {
     color: var(--main-text-color); }
   .b-tariffs-item.mod-select-card .b-tariffs-item__simple-signature {
@@ -11266,7 +11292,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   .b-tariffs-item__service-icon {
     position: absolute;
     left: 0;
-    top: 0.2rem; }
+    top: 0.2rem;
+    fill: var(--main-grey-color); }
   .b-tariffs-item__service-name {
     display: block;
     padding-left: 3.6rem; }
