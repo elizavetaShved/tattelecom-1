@@ -71,6 +71,10 @@
         @include for-md-down {
             width: calc(33.3% - 3.5rem);
             margin: 1.75rem;
+
+            &:last-child {
+                margin: 1.75rem;
+            }
         }
 
         @include for-xs-down {

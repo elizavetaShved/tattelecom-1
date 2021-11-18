@@ -37,10 +37,18 @@
 
         @include for-md-down {
             margin: 1.75rem;
+
+            &:last-child {
+                margin: 1.75rem;
+            }
         }
 
         @include for-xs-down {
             margin: 1.25rem;
+
+            &:last-child {
+                margin: 1.25rem;
+            }
         }
     }
 }
@@ -57,6 +65,7 @@
         padding-top: 2.3rem;
         border: 1px solid var(--border-color);
         border-radius: 10px;
+        transition: box-shadow 200ms;
 
         &:last-child {
             margin-right: 0;
@@ -69,6 +78,10 @@
         @include for-md-down {
             width: calc(50% - 3.5rem);
             margin: 1.75rem;
+
+            &:last-child {
+                margin: 1.75rem;
+            }
         }
 
         @include for-xs-down {
