@@ -1,0 +1,96 @@
+{
+  "isBusiness": true,
+  "title": "DDoS-защита",
+  "script": "b-ddos-protection-page",
+  "banner": {
+    "changeSize": 768,
+    "additionalClass": "b-web-hosting",
+    "title": {
+      "accentText": "DDoS защита"
+    },
+    "largeSubtitle": {
+      "text": "Надежная защита от DDoS атак"
+    },
+    "image": "b-ddos-protection.jpg",
+    "mobile": {
+      "title": "DDoS защита",
+      "image": "b-ddos-protection--mobile.jpg"
+    }
+  },
+  "advantagesList": [
+    {
+      "img": "img/common/b-advantages/advantage-17.png",
+      "caption": "Одна из крупнейших в Европе инсталляций операторского комплекса защиты Arbor Peakflow"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-18.png",
+      "caption": "Таттелеком крупнейший Оператор Татарстана с многолетним опытом"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-19.png",
+      "caption": "Систему защиты Таттелеком от DDoS нельзя атаковать в виду отсутствия IP-адреса"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-20.png",
+      "caption": "Плата не зависит от мощности атак и количества очисток трафика за месяц"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-21.png",
+      "caption": "Защита ресурса Абонента в режиме 7/24/365"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-22.png",
+      "caption": "Круглосуточная поддержка по телефону (843) 238-00-00"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-23.png",
+      "caption": "Фильтрация атак производится до 40 Гбит/сек"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-24.png",
+      "caption": "Доступ в личный кабинет для просмотра статистики"
+    }
+  ],
+  "tariffs": [
+    {
+      "isSmallCard": true,
+      "name": "DDoS-защита",
+      "from": true,
+      "cost": "9 720"
+    }
+  ],
+  "listPercentages": [
+    {
+      "num": "61",
+      "caption": "потеряли доступ к важной для бизнеса информации"
+    },
+    {
+      "num": "38",
+      "caption": "временно приостановили основную деятельность"
+    },
+    {
+      "num": "38",
+      "caption": "понесли репутационные потери"
+    },
+    {
+      "num": "33",
+      "caption": "упустили бизнес-возможности"
+    },
+    {
+      "num": "29",
+      "caption": "потеряли позиции в кредитных рейтингах"
+    },
+    {
+      "num": "26",
+      "caption": "столкнулись с повышением стоимости страхования"
+    }
+  ],
+  "listCheckMark": [
+    "отчет по DDoS-атакам",
+    "отчет по объему трафика",
+    "отчет по типу трафика",
+    "отчет по вирусной и botnet активности",
+    "отчет по городам РФ",
+    "отчет по странам и регионам"
+  ]
+}

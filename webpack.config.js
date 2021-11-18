@@ -57,7 +57,8 @@ module.exports = {
     ['b-domain-registration-page']: './src/js/pages/b-domain-registration-page',
     ['b-cloud-video-page']: './src/js/pages/b-cloud-video-page',
     ['b-video-analytics-page']: './src/js/pages/b-video-analytics-page',
-    ['b-m2m-business-control-page']: './src/js/pages/b-m2m-business-control-page-page',
+    ['b-m2m-business-control-page']: './src/js/pages/b-m2m-business-control-page',
+    ['b-ddos-protection-page']: './src/js/pages/b-ddos-protection-page',
     ['tattelekom-main-page']: './src/js/pages/tattelekom-main-page',
   },
   output: {

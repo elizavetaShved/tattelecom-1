@@ -261,6 +261,51 @@
       "url": "/b-virtual-networks.html",
       "name": "Виртуальные сети IP VPN",
       "img": "img_51.png"
+    },
+    {
+      "url": "/b-lorawan.html",
+      "name": "LoRaWAN",
+      "img": "img_52.png"
+    },
+    {
+      "url": "/b-m2m.html",
+      "name": "М2М решения для бизнеса",
+      "img": "img_53.png"
+    },
+    {
+      "url": "/b-colocation.html",
+      "name": "Colocation",
+      "img": "img_54.png"
+    },
+    {
+      "url": "/b-virtual-server.html",
+      "name": "Виртуальный сервер",
+      "img": "img_55.png"
+    },
+    {
+      "url": "/b-web-hosting.html",
+      "name": "Web хостинг",
+      "img": "img_56.png"
+    },
+    {
+      "url": "/b-domain-registration.html",
+      "name": "Регистрация доменов",
+      "img": "img_57.png"
+    },
+    {
+      "url": "/b-cloud-video.html",
+      "name": "Облачное видеонаблюдение",
+      "img": "img_58.png"
+    },
+    {
+      "url": "/b-video-analytics.html",
+      "name": "Видеоаналитика",
+      "img": "img_59.png"
+    },
+    {
+      "url": "/b-m2m-business-control.html",
+      "name": "Тариф «М2М Бизнес Контроль 2.0»",
+      "img": "img_60.png"
     }
   ]
 }

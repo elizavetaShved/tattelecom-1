@@ -1,0 +1,32 @@
+<section class="b-ddos-protection-info">
+  <div class="gl__page-content">
+    <div class="b-ddos-protection-info__content-wrapper">
+      <div class="b-ddos-protection-info__list-wrapper">
+        <div class="b-ddos-protection-info__list-title">Потери DDoS-атак</div>
+        <ul class="b-ddos-protection-info__list">
+          {{#each listPercentages }}
+            <li class="b-ddos-protection-info__item-percentages">
+              <div class="b-ddos-protection-info__item-num">{{ this.num }}%</div>
+              <div class="b-ddos-protection-info__item-caption">{{ this.caption }}</div>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="b-ddos-protection-info__list-wrapper">
+        <div class="b-ddos-protection-info__list-title">Мы предоставляем статистику по вашему трафику</div>
+        <ul class="b-ddos-protection-info__list">
+          {{#each listCheckMark }}
+            <li class="b-ddos-protection-info__item-percentages">
+              <svg width="26" height="20" aria-hidden="true"
+                   class="b-ddos-protection-info__item-check-icon">
+                <use xlink:href="#checkbox-checked"></use>
+              </svg>
+              <div class="b-ddos-protection-info__item-caption">{{ this }}</div>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

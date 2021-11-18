@@ -1,0 +1,92 @@
+.b-ddos-protection-info {
+  padding: 5rem 0;
+
+  @include for-lg-down {
+    padding: 3rem 0;
+  }
+
+  @include for-sm-down {
+    padding: 2.6rem 0;
+  }
+}
+
+.b-ddos-protection-info__content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+
+  @include for-sm-down {
+    grid-gap: 2rem;
+  }
+
+  @include for-xs-down {
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+  }
+}
+
+.b-ddos-protection-info__list-title {
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 3rem;
+
+  @include for-sm-down {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+}
+
+.b-ddos-protection-info__item-percentages {
+  display: flex;
+
+  & + & {
+    margin-top: 2rem;
+  }
+}
+
+.b-ddos-protection-info__item-num {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.015em;
+  color: var(--main-color-business);
+  margin-right: 2.2rem;
+
+  @include for-sm-down {
+    margin-right: 1.4rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+}
+
+.b-ddos-protection-info__item-caption {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02em;
+
+  @include for-sm-down {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  @include for-xs-down {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+}
+
+.b-ddos-protection-info__item-check-icon {
+  fill: var(--main-color-business);
+  height: 2rem;
+  margin-right: 2.2rem;
+  flex: 0 0 2.6rem;
+  margin-top: 0.4rem;
+
+  @include for-sm-down {
+    height: 1.6rem;
+    margin-right: 1.4rem;
+    flex: 0 0 2rem;
+  }
+}
