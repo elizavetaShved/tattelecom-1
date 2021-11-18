@@ -168,6 +168,12 @@
     }
   }
 
+  &.b-video-conferencing {
+    .b-page-banner__background {
+      background: linear-gradient(101.01deg, #FF7A7A 8.09%, #FF7BFA 93.43%);
+    }
+  }
+
   &.b-m2m-business-control {
     .b-page-banner__background {
       background-color: #fff;

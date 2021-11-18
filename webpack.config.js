@@ -59,6 +59,7 @@ module.exports = {
     ['b-video-analytics-page']: './src/js/pages/b-video-analytics-page',
     ['b-m2m-business-control-page']: './src/js/pages/b-m2m-business-control-page',
     ['b-ddos-protection-page']: './src/js/pages/b-ddos-protection-page',
+    ['b-video-conferencing-page']: './src/js/pages/b-video-conferencing-page',
     ['tattelekom-main-page']: './src/js/pages/tattelekom-main-page',
   },
   output: {

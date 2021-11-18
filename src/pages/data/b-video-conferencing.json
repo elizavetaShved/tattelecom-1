@@ -1,0 +1,20 @@
+{
+  "isBusiness": true,
+  "title": "Видеоконференцсвязь",
+  "script": "b-video-conferencing-page",
+  "bannerGradient": {
+    "title": "Оффер",
+    "additionalClass": "b-video-conferencing",
+    "btns": [
+      {
+        "text": "Оставить заявку на подключение"
+      }
+    ],
+    "links": [
+      {
+        "text": "Скачать презентацию",
+        "isDownload": true
+      }
+    ]
+  }
+}

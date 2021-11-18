@@ -2,6 +2,21 @@
   "isBusiness": true,
   "title": "Регистрация доменов",
   "script": "b-domain-registration-page",
+  "bannerGradient": {
+    "title": "Оффер",
+    "additionalClass": "b-domain-registration",
+    "btns": [
+      {
+        "text": "Подключиться"
+      }
+    ],
+    "links": [
+      {
+        "text": "Скачать презентацию",
+        "isDownload": true
+      }
+    ]
+  },
   "advantagesList": [
     {
       "img": "img/common/b-advantages/advantage-16.png",

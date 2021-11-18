@@ -2,6 +2,21 @@
   "isBusiness": true,
   "title": "Виртуальный сервер",
   "script": "b-virtual-server-page",
+  "bannerGradient": {
+    "title": "Оффер",
+    "additionalClass": "b-virtual-server",
+    "btns": [
+      {
+        "text": "Подключиться"
+      }
+    ],
+    "links": [
+      {
+        "text": "Скачать презентацию",
+        "isDownload": true
+      }
+    ]
+  },
   "advantagesList": [
     {
       "img": "img/common/b-advantages/advantage-1.png",
