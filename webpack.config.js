@@ -62,6 +62,7 @@ module.exports = {
     ['b-video-conferencing-page']: './src/js/pages/b-video-conferencing-page',
     ['b-abb-services-page']: './src/js/pages/b-abb-services-page',
     ['tattelekom-main-page']: './src/js/pages/tattelekom-main-page',
+    ['tatt-investors']: './src/js/pages/tatt-investors',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),
