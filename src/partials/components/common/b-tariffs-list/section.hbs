@@ -6,6 +6,7 @@
         "isSelectCards": true, -- кнопка выбрать, вместо "подключить" и модификация шрифта
         "noMore": true, -- Убрать кнопку "подробнее о тафифе"
         "name": "Корпорация-150",
+        "caption": "Синяя подпись"
         "conditionsList": [
           {
             "services": {
@@ -13,6 +14,10 @@
               "calls": "Безлимитные звонки внутри корпоративной группы",
               "internet": "5 ГБ 4G интернета",
               "callsRT": "250 мин на номера РТ",
+              "users": "От 1 до 5 участников",
+              "files": "Демонстрация документов...",
+              "presence": "Отображение состояния присутствия",
+              "webinars": "Вебинары до 300 участников",
               "simpleSignature": "...",
               "simpleFlexsList": [
                 {
@@ -25,6 +30,21 @@
       }
 ] --}}
 
+<!-- если есть ссылки на pdf файлы под тарифами-->
+<!--
+  "tariffsPdfFiles": [
+    {
+      "name": "Подробное описание тарифа Видеомониторинг",
+      "size": "(PDF, 395.3 KB)"
+    }
+  ]
+-->
+
+<!-- если есть "Тарифы указаны с учётом НДС" -->
+<!--
+  "tariffsNdsHint": true
+-->
+
 <section class="b-tariffs-list">
   <div class="gl__page-content">
     <h2 class="gl__title">
@@ -32,5 +52,25 @@
     </h2>
 
     {{> common/b-tariffs-list/content }}
+
+    {{#each tariffsPdfFiles }}
+      <a href="" download class="faq__download-link">
+        <svg width="24" height="24" aria-hidden="true" class="faq__download-link-icon">
+          <use xlink:href="#download-top"></use>
+        </svg>
+        <span>
+          <span class="faq__download-link-name">
+            {{ this.name }}
+          </span>
+          {{ this.size }}
+        </span>
+      </a>
+    {{/each}}
+
+    {{#if tariffsNdsHint }}
+      <div class="gl__b-hint-nds mod-no-line">
+        Тарифы указаны с учетом НДС
+      </div>
+    {{/if}}
   </div>
 </section>

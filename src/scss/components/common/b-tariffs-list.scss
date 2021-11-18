@@ -26,12 +26,47 @@
 
   padding: 2rem;
 
-  background: #FFFFFF;
+  background-color: #fff;
   box-shadow: 0 0 20px rgba(153, 152, 168, 0.17);
   border-radius: 1rem;
   transition: transform 300ms;
   min-height: 41rem;
   height: 100%;
+
+  &.mod-hit {
+    background-color: #00A8E7;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+
+    .b-tariffs-item__background {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 32rem;
+      height: 34.6rem;
+      object-fit: contain;
+      z-index: -1;
+    }
+
+    .b-tariffs-item__caption {
+      color: #fff;
+    }
+
+    .b-tariffs-item__service-icon {
+      fill: #fff;
+    }
+
+    .b-tariffs-item__btn {
+      background-color: #fff;
+      color: var(--main-color-business);
+
+      &:hover {
+        background-color: #e5e5e5;
+        color: var(--main-color-business) !important;
+      }
+    }
+  }
 
   &.mod-select-card {
     .b-tariffs-item__services-list-caption {
@@ -129,6 +164,7 @@
     position: absolute;
     left: 0;
     top: 0.2rem;
+    fill: var(--main-grey-color);
   }
 
   &__service-name {

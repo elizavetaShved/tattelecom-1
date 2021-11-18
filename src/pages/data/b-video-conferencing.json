@@ -16,5 +16,127 @@
         "isDownload": true
       }
     ]
-  }
+  },
+  "aboutService": [
+    {
+      "img": "img/b-video-conferencing-page/img-1.png",
+      "caption": "Через веб-браузер на Mac, Windows, Linux"
+    },
+    {
+      "img": "img/b-video-conferencing-page/img-2.png",
+      "caption": "Через мобильные клиенты iOS, Android"
+    }
+  ],
+  "advantagesList": [
+    {
+      "img": "img/common/b-advantages/advantage-25.png",
+      "caption": "Экономия средств на командировки и транспорт"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-26.png",
+      "caption": "Повышение управляемости и эффективности бизнеса"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-27.png",
+      "caption": "Уменьшение времени принятия решений"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-28.png",
+      "caption": "Эффективный канал продаж"
+    }
+  ],
+  "tariffs": [
+    {
+      "isHit": true,
+      "isExpandedCard": true,
+      "noMore": true,
+      "name": "Тариф Basic",
+      "caption": "Персональные звонки",
+      "conditionsList": [
+        {
+          "services": {
+            "users": "От 1 до 5 участников"
+          }
+        }
+      ],
+      "cost": 0
+    },
+    {
+      "isExpandedCard": true,
+      "noMore": true,
+      "name": "Тариф Pro",
+      "caption": "Для малых и средних групп",
+      "conditionsList": [
+        {
+          "services": {
+            "users": "От 6 до 10 участников",
+            "files": "Демонстрация документов, передача файлов, доска для рисования, голосование/опросы",
+            "presence": "Отображение состояния присутствия"
+          }
+        }
+      ],
+      "cost": 600
+    },
+    {
+      "isExpandedCard": true,
+      "noMore": true,
+      "name": "Тариф Business",
+      "caption": "Для среднего бизнеса",
+      "conditionsList": [
+        {
+          "services": {
+            "users": "От 11 до 20 участников",
+            "files": "Демонстрация документов, передача файлов, доска для рисования, голосование/опросы",
+            "presence": "Отображение состояния присутствия",
+            "webinars": "Вебинары до 300 участников"
+          }
+        }
+      ],
+      "cost": "3 000"
+    },
+    {
+      "isExpandedCard": true,
+      "noMore": true,
+      "name": "Тариф Business",
+      "caption": "Для крупного бизнеса",
+      "conditionsList": [
+        {
+          "services": {
+            "users": "От 21 до 50 участников",
+            "files": "Демонстрация документов, передача файлов, доска для рисования, голосование/опросы",
+            "presence": "Отображение состояния присутствия",
+            "webinars": "Вебинары до 300 участников"
+          }
+        }
+      ],
+      "cost": "11 000"
+    },
+    {
+      "isExpandedCard": true,
+      "noMore": true,
+      "name": "Тариф Individual",
+      "caption": "Индивидуальные решения",
+      "conditionsList": [
+        {
+          "services": {
+            "users": "От 51 до 100 участников",
+            "files": "Демонстрация документов, передача файлов, доска для рисования, голосование/опросы",
+            "presence": "Отображение состояния присутствия",
+            "webinars": "Вебинары до 300 участников"
+          }
+        }
+      ],
+      "cost": "28 000"
+    }
+  ],
+  "tariffsPdfFiles": [
+    {
+      "name": "Подробное описание тарифа",
+      "size": "(PDF, 395.3 KB)"
+    },
+    {
+      "name": "Презентация тарифа",
+      "size": "(PDF, 395.3 KB)"
+    }
+  ]
 }

@@ -229,10 +229,17 @@
   line-height: 2.6rem;
   padding: 2rem;
   margin: -2rem;
-  margin-top: 4.4rem;
 
   &:hover {
     text-decoration: underline;
+  }
+
+  & + & {
+    margin-top: .4rem;
+  }
+
+  &:first-of-type {
+    margin-top: 4.4rem;
   }
 }
 

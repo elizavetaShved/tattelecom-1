@@ -405,19 +405,13 @@
   align-items: center;
 }
 
-.header__bottom-btn {
-  & + & {
-    margin-left: 1.4rem;
-  }
-}
-
 .header__btn-search {
   padding: 1rem;
 
   &:hover {
     .header__btn-search-icon {
       &.mod-business {
-        fill: var(--header-hover-business);
+        fill: var(--header-hover-business) !important;
       }
     }
   }

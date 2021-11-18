@@ -1,0 +1,27 @@
+<section class="b-info">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      Об услуге
+    </h2>
+
+    <p class="b-info__text">
+      Современный способ организации Full HD видео и аудио конференций, а также вебинаров для территориально удаленных
+      пользователей
+    </p>
+
+    <h3 class="b-info__subtitle">
+      Видеоконференцсвязь организуется:
+    </h3>
+
+    <ul class="b-info__icon-list mod-3">
+      {{#each aboutService }}
+        <li class="b-info__icon-list-item">
+          <img src="{{ this.img }}" alt="" class="b-info__icon-list-image">
+          <div class="b-info__icon-list-text">
+            {{ this.caption }}
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

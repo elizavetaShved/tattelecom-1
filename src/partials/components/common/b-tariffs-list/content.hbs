@@ -6,8 +6,11 @@
         {{#each tariffs }}
           <li class="swiper-slide">
             <a href="/rates-mobile-item.html"
-               class="b-tariffs-item gl__no-default-hover  {{#if isExpandedCard }}mod-expanded{{/if}} {{#if
+               class="b-tariffs-item {{#if this.isHit}}mod-hit{{/if}} gl__no-default-hover  {{#if isExpandedCard }}mod-expanded{{/if}} {{#if
                  this.isSelectCards }}mod-select-card{{/if}}{{#if isSmallCard }}mod-is-small-card{{/if}}">
+              {{#if this.isHit}}
+                <img src="img/common/cobweb-slice.svg" alt="" class="b-tariffs-item__background">
+              {{/if}}
               <div class="b-tariffs-item__services-list-container">
                 <h3 class="b-tariffs-item__name">{{this.name}}</h3>
                 {{#if this.caption }}
@@ -44,6 +47,38 @@
                             <use xlink:href="#tariffs-calls-rt"></use>
                           </svg>
                           <span class="b-tariffs-item__service-name">{{this.services.callsRT}}</span>
+                        </li>
+                      {{/if}}
+                      {{#if this.services.users}}
+                        <li class="b-tariffs-item__service">
+                          <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
+                            <use xlink:href="#tariffs-user"></use>
+                          </svg>
+                          <span class="b-tariffs-item__service-name">{{this.services.users}}</span>
+                        </li>
+                      {{/if}}
+                      {{#if this.services.files}}
+                        <li class="b-tariffs-item__service">
+                          <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
+                            <use xlink:href="#tariffs-file"></use>
+                          </svg>
+                          <span class="b-tariffs-item__service-name">{{this.services.files}}</span>
+                        </li>
+                      {{/if}}
+                      {{#if this.services.presence}}
+                        <li class="b-tariffs-item__service">
+                          <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
+                            <use xlink:href="#tariffs-presence"></use>
+                          </svg>
+                          <span class="b-tariffs-item__service-name">{{this.services.presence}}</span>
+                        </li>
+                      {{/if}}
+                      {{#if this.services.webinars}}
+                        <li class="b-tariffs-item__service">
+                          <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
+                            <use xlink:href="#tariffs-webinars"></use>
+                          </svg>
+                          <span class="b-tariffs-item__service-name">{{this.services.webinars}}</span>
                         </li>
                       {{/if}}
                       {{#if this.services.callsRF}}
