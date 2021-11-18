@@ -15,29 +15,7 @@
       </div>
     </section>
 
-    <section class="b-promotions">
-      <div class="gl__page-content">
-        <h2 class="gl__title">Акции</h2>
-
-        <div class="b-promotions__content">
-          <div class="gl-slider js-swiper" data-swiper-slides-preview="3">
-            {{> common/controls/b-btns-slider }}
-            <div class="gl-slider__b-container gl-slider__container swiper-container js-swiper-container">
-              <ul class="gl-slider__wrapper swiper-wrapper" id="js-align-heights">
-                {{#each promotions }}
-                  <li class="swiper-slide">
-                    <a href="" class="b-promotion gl__no-default-hover rates-list__slide">
-                      <h3 class="b-promotion__title">{{this.title}}</h3>
-                      <p class="b-promotion__description">{{this.description}}</p>
-                    </a>
-                  </li>
-                {{/each}}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    {{> common/b-promotions }}
 
     {{> common/b-useful-articles }}
 

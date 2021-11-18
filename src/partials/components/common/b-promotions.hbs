@@ -1,0 +1,47 @@
+<!--
+  "promotions": {
+    "title": "Акции",
+    "list": [
+      {
+        "title": "Для своих",
+        "description": "Звонки с городского номера на мобильные номера «Летай» от 0,37 руб./ мин",
+        "link": "Подробнее"
+      }
+    ]
+  }
+-->
+
+<section class="b-promotions">
+  <div class="gl__page-content">
+    <h2 class="gl__title">{{ promotions.title }}</h2>
+
+    <div class="b-promotions__content">
+      <div class="gl-slider js-swiper" data-swiper-slides-preview="3">
+        {{> common/controls/b-btns-slider }}
+        <div class="gl-slider__b-container gl-slider__container swiper-container js-swiper-container">
+          <ul class="gl-slider__wrapper swiper-wrapper">
+            {{#each promotions.list }}
+              <li class="swiper-slide">
+                <a href="" class="b-promotion gl__no-default-hover rates-list__slide">
+                  <div class="b-promotion__info">
+                    <h3 class="b-promotion__title">{{this.title}}</h3>
+                    <p class="b-promotion__description">{{this.description}}</p>
+                  </div>
+
+                  {{#if this.link }}
+                    <span class="b-promotion__face-link">
+                      {{ this.link }}
+                    <svg width="20" height="20" aria-hidden="true" class="b-promotion__face-link-icon">
+                      <use xlink:href="#arrow-line-right"></use>
+                    </svg>
+                  </span>
+                  {{/if}}
+                </a>
+              </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
