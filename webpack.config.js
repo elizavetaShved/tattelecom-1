@@ -60,6 +60,7 @@ module.exports = {
     ['b-m2m-business-control-page']: './src/js/pages/b-m2m-business-control-page',
     ['b-ddos-protection-page']: './src/js/pages/b-ddos-protection-page',
     ['b-video-conferencing-page']: './src/js/pages/b-video-conferencing-page',
+    ['b-abb-services-page']: './src/js/pages/b-abb-services-page',
     ['tattelekom-main-page']: './src/js/pages/tattelekom-main-page',
   },
   output: {
