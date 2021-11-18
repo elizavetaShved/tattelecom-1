@@ -764,7 +764,7 @@ body {
       top: 0; }
 
 /**
- * Swiper 6.8.0
+ * Swiper 6.8.4
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -772,7 +772,7 @@ body {
  *
  * Released under the MIT License
  *
- * Released on: July 22, 2021
+ * Released on: August 23, 2021
  */
 @font-face {
   font-family: 'swiper-icons';
@@ -1087,6 +1087,9 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
   cursor: pointer; }
+
+.swiper-pagination-bullet:only-child {
+  display: none !important; }
 
 .swiper-pagination-bullet-active {
   opacity: 1;
@@ -1752,20 +1755,14 @@ button.swiper-pagination-bullet {
   z-index: 1;
   top: 0;
   right: 0;
+  height: 100%;
+  width: 100%;
   -ms-transform-origin: 0 0;
   -webkit-transform-origin: 0 0;
   -webkit-transform-style: preserve-3d;
   transform-origin: 0 0;
   -webkit-transform-style: flat;
           transform-style: flat; }
-
-.noUi-connect {
-  height: 100%;
-  width: 100%; }
-
-.noUi-origin {
-  height: 10%;
-  width: 10%; }
 
 /* Offset direction
  */
@@ -1777,6 +1774,7 @@ button.swiper-pagination-bullet {
  * connect elements.
  */
 .noUi-vertical .noUi-origin {
+  top: -100%;
   width: 0; }
 
 .noUi-horizontal .noUi-origin {
@@ -1820,7 +1818,7 @@ button.swiper-pagination-bullet {
   width: 28px;
   height: 34px;
   right: -6px;
-  top: -17px; }
+  bottom: -17px; }
 
 .noUi-txt-dir-rtl.noUi-horizontal .noUi-handle {
   left: -17px;
@@ -13206,7 +13204,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   @media screen and (max-width: 959px) {
     .tatt-main-section__item {
       width: calc(33.3% - 3.5rem);
-      margin: 1.75rem; } }
+      margin: 1.75rem; }
+      .tatt-main-section__item:last-child {
+        margin: 1.75rem; } }
   @media screen and (max-width: 559px) {
     .tatt-main-section__item {
       width: calc(50% - 3.5rem); } }
@@ -13267,7 +13267,11 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   height: 23rem;
   padding: 2.3rem 3rem;
   border: 1px solid var(--border-color);
-  border-radius: 10px; }
+  border-radius: 10px;
+  -webkit-transition: -webkit-box-shadow 200ms;
+  transition: -webkit-box-shadow 200ms;
+  transition: box-shadow 200ms;
+  transition: box-shadow 200ms, -webkit-box-shadow 200ms; }
   .popullar-link__icon {
     fill: var(--main-color-business);
     margin-bottom: 4.6rem; }
@@ -13336,10 +13340,14 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       margin-right: 0; }
     @media screen and (max-width: 959px) {
       .tatt-poppular__item {
-        margin: 1.75rem; } }
+        margin: 1.75rem; }
+        .tatt-poppular__item:last-child {
+          margin: 1.75rem; } }
     @media screen and (max-width: 559px) {
       .tatt-poppular__item {
-        margin: 1.25rem; } }
+        margin: 1.25rem; }
+        .tatt-poppular__item:last-child {
+          margin: 1.25rem; } }
 
 .tatt-poppular-sections {
   display: -webkit-box;
@@ -13360,7 +13368,11 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     margin-right: 3rem;
     padding-top: 2.3rem;
     border: 1px solid var(--border-color);
-    border-radius: 10px; }
+    border-radius: 10px;
+    -webkit-transition: -webkit-box-shadow 200ms;
+    transition: -webkit-box-shadow 200ms;
+    transition: box-shadow 200ms;
+    transition: box-shadow 200ms, -webkit-box-shadow 200ms; }
     .tatt-poppular-sections__item:last-child {
       margin-right: 0; }
     .tatt-poppular-sections__item:hover {
@@ -13369,7 +13381,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     @media screen and (max-width: 959px) {
       .tatt-poppular-sections__item {
         width: calc(50% - 3.5rem);
-        margin: 1.75rem; } }
+        margin: 1.75rem; }
+        .tatt-poppular-sections__item:last-child {
+          margin: 1.75rem; } }
     @media screen and (max-width: 559px) {
       .tatt-poppular-sections__item {
         margin: 0;
