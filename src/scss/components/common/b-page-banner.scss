@@ -627,4 +627,17 @@
       border-color: var(--main-color-business-hover);
     }
   }
+
+  &__postscript {
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 4.8rem;
+    letter-spacing: 0.02em;
+    margin-top: 2rem;
+
+    @include for-sm-down {
+      font-size: 2rem;
+      line-height: 2.4rem;
+    }
+  }
 }

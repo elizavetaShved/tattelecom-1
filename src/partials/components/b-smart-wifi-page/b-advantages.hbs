@@ -1,0 +1,18 @@
+<section class="b-info b-smart-wifi__advantages">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      Преимущества SMART Wi-Fi
+    </h2>
+
+    <ul class="b-info__icon-list mod-3">
+      {{#each advantagesList }}
+        <li class="b-info__icon-list-item">
+          <img src="{{ this.img }}" alt="" class="b-info__icon-list-image">
+          <p class="b-info__text">
+            {{ this.caption }}
+          </p>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,163 @@
+{
+  "isBusiness": true,
+  "title": "SMART Wi-Fi",
+  "script": "b-smart-wifi-page",
+  "banner": {
+    "changeSize": 768,
+    "additionalClass": "b-internet-wi-fi",
+    "title": {
+      "accentText": "Wi-fi Smart",
+      "colorClass": "white"
+    },
+    "cost": 2700,
+    "largeSubtitle": {
+      "text": "Управляемая сеть Wi-fi для гостей"
+    },
+    "image": "b-internet-wi-fi.jpg",
+    "mobile": {
+      "title": "Wi-fi Smart",
+      "image": "b-internet-wi-fi--mobile.jpg"
+    },
+    "postscript": "Это возможность продвигать свои услуги и товары во время авторизации посетителей через высокоскоростной безлимитный Wi-Fi"
+  },
+  "advantagesList": [
+    {
+      "img": "img/common/b-advantages/advantage-29.png",
+      "caption": "Безлимитный Интернет для ваших посетителей"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-30.png",
+      "caption": "Организация Wi-Fi зоны любого масштаба"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-31.png",
+      "caption": "Подключение и настройка услуги «под ключ»"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-32.png",
+      "caption": "Удобная авторизация по исходящему звонку или SMS"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-33.png",
+      "caption": "Опция «Wi-Fi таргетинг» для тонкой настройки сети, интеграции рекламы и получения статистики по посетителям"
+    }
+  ],
+  "tariffs": [
+    {
+      "isExpandedCard": true,
+      "noMore": true,
+      "name": "Wi-Fi Smart Standart",
+      "caption": "подключение 3000 ₽",
+      "isHit": true,
+      "isRedBtn": true,
+      "conditionsList": [
+        {
+          "services": {
+            "simpleFlexsList": [
+              {
+                "isSpeed": true,
+                "caption": "Скорость на сессию",
+                "value": "до 3 Мбит/с "
+              },
+              {
+                "isSpeedDown": true,
+                "caption": "Скорость канала",
+                "value": "50 Мбит/с"
+              },
+              {
+                "isDevices": true,
+                "caption": "Количество устройств",
+                "value": "до 50"
+              },
+              {
+                "isWiFi": true,
+                "caption": "Оборудование",
+                "value": "включено"
+              },
+              {
+                "isOption": true,
+                "caption": "Опция таргет",
+                "value": "от 2 000 ₽/мес"
+              }
+            ]
+          }
+        }
+      ],
+      "cost": "2 100"
+    },
+    {
+      "isExpandedCard": true,
+      "noMore": true,
+      "name": "Wi-Fi Smart Pro",
+      "caption": "подключение 3000 ₽",
+      "isHit": true,
+      "isRedBtn": true,
+      "conditionsList": [
+        {
+          "services": {
+            "simpleFlexsList": [
+              {
+                "isSpeed": true,
+                "caption": "Скорость на сессию",
+                "value": "до 5 Мбит/с"
+              },
+              {
+                "isSpeedDown": true,
+                "caption": "Скорость канала",
+                "value": "100 Мбит/с"
+              },
+              {
+                "isDevices": true,
+                "caption": "Количество устройств",
+                "value": "до 50"
+              },
+              {
+                "isWiFi": true,
+                "caption": "Оборудование",
+                "value": "включено"
+              },
+              {
+                "isOption": true,
+                "caption": "Опция таргет",
+                "value": "от 2 000 ₽/мес"
+              }
+            ]
+          }
+        }
+      ],
+      "cost": "3 000"
+    }
+  ],
+  "featuresList": [
+    {
+      "img": "img/common/b-advantages/advantage-34.png",
+      "caption": "Большой радиус действия",
+      "text": "Радиус покрытия до 100 метров обеспечит устойчивым сигналом большую площадь"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-35.png",
+      "caption": "Настраиваемая авторизация",
+      "text": "Настройте рекламный баннер и переадресацию на сайт или соцсети для продвижения и монетизации сети"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-36.png",
+      "caption": "Опросы для гостей",
+      "text": "Получить обратную связь от посетителей заведения, повысить сервис обслуживания"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-37.png",
+      "caption": "Сбор данных о посетителях",
+      "text": "Сбор данных о посетителях"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-38.png",
+      "caption": "Профессиональное подключение",
+      "text": "Подключение и настройка сети под ключ без затрат на сетевую инфраструктуру"
+    },
+    {
+      "img": "img/common/b-advantages/advantage-39.png",
+      "caption": "Отсутствие штрафов",
+      "text": "Идентификация пользователей Wi-Fi по звонку или SMS в соответствии с законодательством"
+    }
+  ]
+}

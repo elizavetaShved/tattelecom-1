@@ -6,7 +6,7 @@
         {{#each tariffs }}
           <li class="swiper-slide">
             <a href="/rates-mobile-item.html"
-               class="b-tariffs-item {{#if this.isHit}}mod-hit{{/if}} gl__no-default-hover  {{#if isExpandedCard }}mod-expanded{{/if}} {{#if
+               class="b-tariffs-item {{#if this.isHit}}mod-hit{{/if}} gl__no-default-hover {{#if this.isRedBtn}}mod-red-btn{{/if}}  {{#if isExpandedCard }}mod-expanded{{/if}} {{#if
                  this.isSelectCards }}mod-select-card{{/if}}{{#if isSmallCard }}mod-is-small-card{{/if}}">
               {{#if this.isHit}}
                 <img src="img/common/cobweb-slice.svg" alt="" class="b-tariffs-item__background">
@@ -110,7 +110,34 @@
 
                       {{#each this.services.simpleFlexsList }}
                         <li class="b-tariffs-item__simple-flex">
-                          <div class="b-tariffs-item__simple-flex-caption">{{this.caption}}</div>
+                          <div class="b-tariffs-item__simple-flex-caption-wrapper">
+                            {{#if this.isSpeed }}
+                              <svg width="16" height="16" aria-hidden="true" class="b-tariffs-item__simple-flex-icon">
+                                <use xlink:href="#tariffs-speed"></use>
+                              </svg>
+                            {{/if}}
+                            {{#if this.isSpeedDown }}
+                              <svg width="16" height="16" aria-hidden="true" class="b-tariffs-item__simple-flex-icon">
+                                <use xlink:href="#tariffs-speed-down"></use>
+                              </svg>
+                            {{/if}}
+                            {{#if this.isDevices }}
+                              <svg width="16" height="16" aria-hidden="true" class="b-tariffs-item__simple-flex-icon">
+                                <use xlink:href="#tariffs-devices"></use>
+                              </svg>
+                            {{/if}}
+                            {{#if this.isWiFi }}
+                              <svg width="16" height="16" aria-hidden="true" class="b-tariffs-item__simple-flex-icon">
+                                <use xlink:href="#tariffs-wi-fi"></use>
+                              </svg>
+                            {{/if}}
+                            {{#if this.isOption }}
+                              <svg width="16" height="16" aria-hidden="true" class="b-tariffs-item__simple-flex-icon">
+                                <use xlink:href="#tariffs-option"></use>
+                              </svg>
+                            {{/if}}
+                            <div class="b-tariffs-item__simple-flex-caption">{{this.caption}}</div>
+                          </div>
                           <div class="b-tariffs-item__simple-flex-value">{{this.value}}</div>
                         </li>
                       {{/each}}

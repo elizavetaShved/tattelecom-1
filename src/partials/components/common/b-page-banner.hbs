@@ -1,4 +1,3 @@
-
 {{!-- Секция с баннеров в начале страницы с услугой --}}
 {{!-- Шаблон данных: --}}
 {{!-- "banner": {
@@ -43,7 +42,8 @@
       <div class="b-page-banner__content">
         <picture>
           {{#if banner.mobile.image}}
-            <source srcset="img/common/b-page-banners/{{banner.mobile.image}}" media="(max-width: {{#if banner.changeSize}}{{banner.changeSize}}{{else}}768{{/if}}px)">
+            <source srcset="img/common/b-page-banners/{{banner.mobile.image}}"
+                    media="(max-width: {{#if banner.changeSize}}{{banner.changeSize}}{{else}}768{{/if}}px)">
           {{/if}}
 
           <img class="b-page-banner__image" src="img/common/b-page-banners/{{banner.image}}" alt="{{title}}">
@@ -66,7 +66,8 @@
               <p class="b-page-banner__subtitle {{banner.subtitle.colorClass}}">{{banner.subtitle.text}}</p>
             {{/if}}
             {{#if banner.largeSubtitle }}
-              <p class="b-page-banner__large-subtitle {{banner.largeSubtitle.colorClass}}">{{{banner.largeSubtitle.text}}}</p>
+              <p
+                class="b-page-banner__large-subtitle {{banner.largeSubtitle.colorClass}}">{{{banner.largeSubtitle.text}}}</p>
             {{/if}}
           </div>
           {{#if banner.cost }}
@@ -97,16 +98,22 @@
           {{/if}}
         </div>
         {{#if banner.label }}
-        <span class="b-page-banner__label {{banner.label.colorClass}}">{{{banner.label.text}}}</span>
+          <span class="b-page-banner__label {{banner.label.colorClass}}">{{{banner.label.text}}}</span>
         {{/if}}
         {{#if banner.btns }}
-        <div class="b-page-banner__btns-container">
-          {{#each banner.btns}}
-          <a href="" class="gl__main-btn mod-b-transparent {{this.classMod}}">{{this.text}}</a>
-          {{/each}}
-        </div>
+          <div class="b-page-banner__btns-container">
+            {{#each banner.btns}}
+              <a href="" class="gl__main-btn mod-b-transparent {{this.classMod}}">{{this.text}}</a>
+            {{/each}}
+          </div>
         {{/if}}
       </div>
     {{/if }}
+
+    {{#if banner.postscript}}
+      <p class="b-page-banner__postscript">
+        {{ banner.postscript }}
+      </p>
+    {{/if}}
   </div>
 </section>

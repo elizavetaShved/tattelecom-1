@@ -69,11 +69,11 @@
       z-index: -1;
     }
 
-    .b-tariffs-item__caption {
+    .b-tariffs-item__caption, .b-tariffs-item__simple-flex-caption, .b-tariffs-item__simple-flex {
       color: #fff;
     }
 
-    .b-tariffs-item__service-icon {
+    .b-tariffs-item__service-icon, .b-tariffs-item__simple-flex-icon {
       fill: #fff;
     }
 
@@ -84,6 +84,18 @@
       &:hover {
         background-color: #e5e5e5;
         color: var(--main-color-business) !important;
+      }
+    }
+  }
+
+  &.mod-red-btn {
+    .b-tariffs-item__btn {
+      background-color: var(--main-color);
+      color: #fff;
+
+      &:hover {
+        background-color: #fff;
+        color: var(--main-color) !important;
       }
     }
   }
@@ -211,6 +223,10 @@
     line-height: 1.8rem;
   }
 
+  &__simple-flex-caption-wrapper {
+    display: flex;
+  }
+
   &__simple-flex {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -227,6 +243,13 @@
     &:first-of-type {
       margin-top: 2rem;
     }
+  }
+
+  &__simple-flex-icon {
+    height: 1.6rem;
+    object-fit: contain;
+    fill: var(--main-grey-color);
+    margin-right: 1.4rem;
   }
 
   &__simple-flex-caption {

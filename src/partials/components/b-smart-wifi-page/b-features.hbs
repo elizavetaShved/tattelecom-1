@@ -1,0 +1,21 @@
+<section class="b-info b-smart-wifi__features">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      Возможности и функции
+    </h2>
+
+    <ul class="b-info__icon-list mod-3">
+      {{#each featuresList }}
+        <li class="b-info__icon-list-item">
+          <img src="{{ this.img }}" alt="" class="b-info__icon-list-image">
+          <div class="b-info__icon-list-text__wrapper">
+            <div class="b-info__text">
+              <div class="b-info__text-caption">{{ this.caption }}</div>
+              {{ this.text }}
+            </div>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>
