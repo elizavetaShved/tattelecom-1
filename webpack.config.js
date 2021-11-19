@@ -62,6 +62,7 @@ module.exports = {
     ['b-video-conferencing-page']: './src/js/pages/b-video-conferencing-page',
     ['b-abb-services-page']: './src/js/pages/b-abb-services-page',
     ['b-call-center-page']: './src/js/pages/b-call-center-page',
+    ['b-virtual-office-secretary-page']: './src/js/pages/b-virtual-office-secretary-page',
     ['tattelekom-main-page']: './src/js/pages/tattelekom-main-page',
   },
   output: {

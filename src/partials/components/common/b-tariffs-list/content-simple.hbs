@@ -1,0 +1,23 @@
+<div class="b-tariffs-list__content">
+  <div class="gl-slider js-swiper" data-swiper-slides-preview="4">
+    {{> common/controls/b-btns-slider }}
+    <div class="gl-slider__b-container gl-slider__container swiper-container js-swiper-container">
+      <ul class="gl-slider__wrapper swiper-wrapper" id="js-align-tariffs-heights">
+        {{#each tariffsSimple }}
+          <li class="swiper-slide">
+            <a href="" class="b-tariffs-item-simple b-tariffs-item gl__no-default-hover">
+              <div class="b-tariffs-item-simple__text">
+                {{ this.text }}
+              </div>
+
+              <div class="b-tariffs-item-simple__cost">
+                <span class="num">{{ this.cost.num }}</span>
+                {{ this.cost.unit }}
+              </div>
+            </a>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>
