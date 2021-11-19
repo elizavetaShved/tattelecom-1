@@ -38,7 +38,7 @@
     {{!-- /КОСТЫЛЬ --}}
 
     {{!-- Если заголовка нет, баннер вообще не выводим - КОСТЫЛЬ! --}}
-    {{#if banner.title}}
+    {{#if banner.noTitle}}{{else}}
       <div class="b-page-banner__content">
         <picture>
           {{#if banner.mobile.image}}
@@ -81,6 +81,9 @@
           {{/if}}
           {{#if banner.label }}
             <span class="b-page-banner__label {{banner.label.colorClass}}">{{{banner.label.text}}}</span>
+          {{/if}}
+          {{#if banner.bigPhone }}
+            <a href="tel:{{ banner.bigPhone.tilLink}}" class="b-page-banner__big-phone {{banner.bigPhone.colorClass}}">{{{banner.bigPhone.text}}}</a>
           {{/if}}
           {{#if banner.links }}
             <div class="b-page-banner__btns-container">

@@ -3,6 +3,7 @@
   "title": "Роуминг",
   "script": "b-roaming-international",
   "banner": {
+    "noTitle": true,
     "tabs": [
       {
         "name": "Роуминг по России"

@@ -1,0 +1,22 @@
+<section class="b-popular-categories">
+  <div class="gl__page-content">
+    {{> common/support-input example="Как самостоятельно настроить SIP-телефон?" }}
+
+    <h2 class="gl__title">
+      Популярные категории
+    </h2>
+
+    <ul class="b-popular-categories__list">
+      {{#each categoriesList }}
+        <li class="b-popular-categories__item gl__white-container">
+          <a href="" class="b-popular-categories__item-link">
+            <span class="b-popular-categories__item-title">{{ this.title }}</span>
+            <span class="b-popular-categories__item-image-wrapper">
+            <img src="{{ this.img }}" alt="" class="b-popular-categories__item-image">
+            </span>
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

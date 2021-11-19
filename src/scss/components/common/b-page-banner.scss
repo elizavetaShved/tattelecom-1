@@ -138,6 +138,14 @@
     }
   }
 
+  &.b-support-corporate {
+    .b-page-banner__text {
+      @include for-bg-down {
+        max-width: 70%;
+      }
+    }
+  }
+
   &.b-web-hosting  {
     .b-page-banner__text {
       @include for-bg-down {
@@ -496,6 +504,36 @@
 
     @include for-sm-down {
       font-size: var(--fs-t1);
+    }
+
+    &.white {
+      color: white;
+    }
+  }
+
+  &__big-phone {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 6rem;
+
+    @include for-bg-down {
+      font-size: 4.6rem;
+      line-height: 5rem;
+    }
+
+    @include for-sm-down {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+
+    @include for-xs-down {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      color: #fff !important;
     }
 
     &.white {

@@ -37,20 +37,7 @@
       {{/each}}
     </ul>
 
-    <div class="support__input-block">
-      <div class="support__input-container">
-        <label class="support__input-wrapper">
-          <input type="text" class="support__input" placeholder="Что будем искать?">
-          <svg width="24" height="24" aria-hidden="true" class="support__input-icon">
-            <use xlink:href="#search"></use>
-          </svg>
-        </label>
-
-        <div class="support__input-hint">
-          Например: <span class="mark">Платеж мобильной связи</span>
-        </div>
-      </div>
-    </div>
+    {{> common/support-input example="Платеж мобильной связи" }}
 
     <div class="support__info-links-container">
       {{#each infoLinksList }}
