@@ -11187,6 +11187,17 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     background-color: var(--main-color-business-hover);
     border-color: var(--main-color-business-hover); }
 
+.b-page-banner__postscript {
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 4.8rem;
+  letter-spacing: 0.02em;
+  margin-top: 2rem; }
+  @media screen and (max-width: 767px) {
+    .b-page-banner__postscript {
+      font-size: 2rem;
+      line-height: 2.4rem; } }
+
 .b-tariffs-list {
   overflow: hidden;
   padding: 5rem 0; }
@@ -11248,9 +11259,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       -o-object-fit: contain;
          object-fit: contain;
       z-index: -1; }
-    .b-tariffs-item.mod-hit .b-tariffs-item__caption {
+    .b-tariffs-item.mod-hit .b-tariffs-item__caption, .b-tariffs-item.mod-hit .b-tariffs-item__simple-flex-caption, .b-tariffs-item.mod-hit .b-tariffs-item__simple-flex {
       color: #fff; }
-    .b-tariffs-item.mod-hit .b-tariffs-item__service-icon {
+    .b-tariffs-item.mod-hit .b-tariffs-item__service-icon, .b-tariffs-item.mod-hit .b-tariffs-item__simple-flex-icon {
       fill: #fff; }
     .b-tariffs-item.mod-hit .b-tariffs-item__btn {
       background-color: #fff;
@@ -11258,6 +11269,12 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       .b-tariffs-item.mod-hit .b-tariffs-item__btn:hover {
         background-color: #e5e5e5;
         color: var(--main-color-business) !important; }
+  .b-tariffs-item.mod-red-btn .b-tariffs-item__btn {
+    background-color: var(--main-color);
+    color: #fff; }
+    .b-tariffs-item.mod-red-btn .b-tariffs-item__btn:hover {
+      background-color: #fff;
+      color: var(--main-color) !important; }
   .b-tariffs-item.mod-select-card .b-tariffs-item__services-list-caption {
     color: var(--main-text-color); }
   .b-tariffs-item.mod-select-card .b-tariffs-item__simple-signature {
@@ -11326,6 +11343,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   .b-tariffs-item__simple-signature {
     font-size: 1.4rem;
     line-height: 1.8rem; }
+  .b-tariffs-item__simple-flex-caption-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .b-tariffs-item__simple-flex {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -11340,6 +11361,12 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       margin-bottom: 0; }
     .b-tariffs-item__simple-flex:first-of-type {
       margin-top: 2rem; }
+  .b-tariffs-item__simple-flex-icon {
+    height: 1.6rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+    fill: var(--main-grey-color);
+    margin-right: 1.4rem; }
   .b-tariffs-item__simple-flex-caption {
     color: var(--grey-text);
     font-weight: 300; }
@@ -11895,6 +11922,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     .b-info {
       padding: 2.6rem 0; } }
 
+.b-info__text-caption {
+  font-weight: normal;
+  margin-bottom: .2rem; }
+
 .b-info__text {
   font-weight: 300;
   font-size: 1.6rem;
@@ -12035,12 +12066,6 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     .b-info__icon-list-image {
       height: 10rem; } }
 
-.b-info__icon-list-text {
-  font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  letter-spacing: 0.02em; }
-
 .b-info__directions-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12112,6 +12137,33 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   font-size: 1.4rem;
   line-height: 2rem;
   text-align: center; }
+
+.b-smart-wifi__advantages .b-info__icon-list {
+  max-width: 85rem; }
+
+.b-smart-wifi__advantages .b-info__icon-list-image {
+  height: 5.8rem; }
+  @media screen and (max-width: 767px) {
+    .b-smart-wifi__advantages .b-info__icon-list-image {
+      height: 4.4rem; } }
+
+.b-smart-wifi__advantages .b-info__icon-list-item:nth-child(5) {
+  grid-column: 2 / 4; }
+
+.b-smart-wifi__features .b-info__icon-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.b-smart-wifi__features .b-info__icon-list-image {
+  height: 5.8rem; }
+  @media screen and (max-width: 767px) {
+    .b-smart-wifi__features .b-info__icon-list-image {
+      height: 4.4rem; } }
+
+.b-smart-wifi__features .b-info__icon-list-image {
+  margin-bottom: 0;
+  margin-right: 1.2rem; }
 
 .b-link-back {
   margin: 3rem 0 -2rem; }
