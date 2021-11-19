@@ -1,14 +1,4 @@
 .b-additional-services {
-  padding: 5rem 0;
-
-  @include for-lg-down {
-    padding: 3rem 0;
-  }
-
-  @include for-sm-down {
-    padding: 2.6rem 0;
-  }
-
   &__content {
   }
 

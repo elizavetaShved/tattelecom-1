@@ -1,0 +1,32 @@
+.b-support-item {
+  & + & {
+    margin-top: 6rem;
+  }
+}
+
+.b-support-item__wrapper {
+  padding-top: 1.4rem;
+  border-bottom: 1px solid #fff;
+}
+
+.b-support-item__title {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.015em;
+  text-align: start;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  padding-bottom: 1.6rem;
+  width: 100%;
+
+  .info-drop-menu__title-icon {
+    height: 2.4rem;
+    flex: 0 0 2.4rem;
+  }
+}
+
+.b-support-item__title__content {
+  padding: 0 4.2rem;
+  font-weight: 300;
+}

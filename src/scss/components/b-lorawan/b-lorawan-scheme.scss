@@ -1,15 +1,3 @@
-.b-lorawan-scheme {
-  padding: 5rem 0;
-
-  @include for-lg-down {
-    padding: 3rem 0;
-  }
-
-  @include for-sm-down {
-    padding: 2rem 0;
-  }
-}
-
 .b-lorawan-scheme__list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

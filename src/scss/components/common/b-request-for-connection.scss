@@ -1,14 +1,4 @@
 .b-request-for-connection {
-  padding: 5rem 0;
-
-  @include for-lg-down {
-    padding: 3rem 0;
-  }
-
-  @include for-sm-down {
-    padding: 2.6rem 0;
-  }
-
   &__content {
     padding: 5rem 11rem 6rem 9rem;
 

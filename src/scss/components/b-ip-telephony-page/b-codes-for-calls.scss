@@ -1,15 +1,3 @@
-.b-codes-for-calls {
-  padding: 5rem 0;
-
-  @include for-lg-down {
-    padding: 3rem 0;
-  }
-
-  @include for-sm-down {
-    padding: 2.6rem 0;
-  }
-}
-
 .b-codes-for-calls__icon {
   height: 2.4rem;
   fill: var(--main-text-color);

@@ -65,6 +65,7 @@ module.exports = {
     ['b-virtual-office-secretary-page']: './src/js/pages/b-virtual-office-secretary-page',
     ['b-smart-wifi-page']: './src/js/pages/b-smart-wifi-page',
     ['b-support-corporate-page']: './src/js/pages/b-support-corporate-page',
+    ['b-support-item-page']: './src/js/pages/b-support-item-page',
     ['tattelekom-main-page']: './src/js/pages/tattelekom-main-page',
     ['tatt-investors']: './src/js/pages/tatt-investors',
     ['tatt-year-page']: './src/js/pages/tatt-year-page',

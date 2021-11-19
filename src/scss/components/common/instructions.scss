@@ -1,11 +1,3 @@
-.instructions {
-  padding: 5rem 0;
-
-  @include for-sm-down {
-    padding: 2.6rem 0;
-  }
-}
-
 .instructions__subtitle {
   font-weight: 300;
   font-size: 1.6rem;

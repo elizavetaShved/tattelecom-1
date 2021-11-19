@@ -15,6 +15,18 @@ body {
   margin-right: auto;
 }
 
+.gl__section {
+  padding: 5rem 0;
+
+  @include for-lg-down {
+    padding: 3rem 0;
+  }
+
+  @include for-sm-down {
+    padding: 2.6rem 0;
+  }
+}
+
 .tattelekom-pages .gl__page-content {
   max-width: 1450px;
 }
@@ -86,6 +98,16 @@ body {
 
         .info-drop-menu__title-icon {
           fill: var(--main-color-business) !important;
+        }
+      }
+    }
+
+    .gl__text {
+      a {
+        color: var(--main-color-business);
+
+        &:hover {
+          color: var(--main-color-business-hover) !important;
         }
       }
     }
@@ -366,6 +388,15 @@ body {
         left: 0;
         top: 0;
       }
+    }
+  }
+
+  a {
+    color: var(--main-color);
+
+    &:hover {
+      text-decoration: underline;
+      color: var(--main-color-hover) !important;
     }
   }
 }

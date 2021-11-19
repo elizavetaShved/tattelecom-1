@@ -1,10 +1,4 @@
 .b-support {
-  padding: 5rem 0 10rem;
-
-  @include for-sm-down {
-    padding: 2.6rem 0 5rem;
-  }
-
   &__content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);

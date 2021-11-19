@@ -1,10 +1,5 @@
 .b-high-slider {
-  padding: 5rem 0 5rem;
   overflow: hidden;
-
-  @include for-sm-down {
-    padding: 2.2rem 0 5rem;
-  }
 }
 
 .b-high-slider__slide {
