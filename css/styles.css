@@ -782,7 +782,7 @@ body {
       color: var(--main-color-hover) !important; }
 
 /**
- * Swiper 6.8.0
+ * Swiper 6.8.4
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -790,7 +790,7 @@ body {
  *
  * Released under the MIT License
  *
- * Released on: July 22, 2021
+ * Released on: August 23, 2021
  */
 @font-face {
   font-family: 'swiper-icons';
@@ -1105,6 +1105,9 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
   cursor: pointer; }
+
+.swiper-pagination-bullet:only-child {
+  display: none !important; }
 
 .swiper-pagination-bullet-active {
   opacity: 1;
@@ -1770,20 +1773,14 @@ button.swiper-pagination-bullet {
   z-index: 1;
   top: 0;
   right: 0;
+  height: 100%;
+  width: 100%;
   -ms-transform-origin: 0 0;
   -webkit-transform-origin: 0 0;
   -webkit-transform-style: preserve-3d;
   transform-origin: 0 0;
   -webkit-transform-style: flat;
           transform-style: flat; }
-
-.noUi-connect {
-  height: 100%;
-  width: 100%; }
-
-.noUi-origin {
-  height: 10%;
-  width: 10%; }
 
 /* Offset direction
  */
@@ -1795,6 +1792,7 @@ button.swiper-pagination-bullet {
  * connect elements.
  */
 .noUi-vertical .noUi-origin {
+  top: -100%;
   width: 0; }
 
 .noUi-horizontal .noUi-origin {
@@ -1838,7 +1836,7 @@ button.swiper-pagination-bullet {
   width: 28px;
   height: 34px;
   right: -6px;
-  top: -17px; }
+  bottom: -17px; }
 
 .noUi-txt-dir-rtl.noUi-horizontal .noUi-handle {
   left: -17px;
@@ -13379,6 +13377,68 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   .tatt-table-list {
     background-color: #fff;
     padding: 3rem 4.6rem; } }
+
+.tatt-select-wrap {
+  max-width: 12.7rem;
+  margin-bottom: 5.3rem; }
+  .tatt-select-wrap .select__container.mod-simple-design .choices__inner {
+    padding: 1.5rem 1.8rem !important;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: var(--border-color) !important; }
+  .tatt-select-wrap .select__container.mod-simple-design .choices__item--selectable {
+    font-size: 2rem;
+    line-height: 3.2rem; }
+  .tatt-select-wrap .gl-input__title {
+    font-size: 1.6rem;
+    line-height: 1.9rem; }
+
+.tatt-file-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 87%;
+  margin-bottom: 6rem; }
+  .tatt-file-wrap:nth-last-of-type(1) {
+    margin-bottom: 0; }
+  .tatt-file-wrap .dpf-file__file-link {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 0;
+    margin-bottom: 4rem; }
+    .tatt-file-wrap .dpf-file__file-link:last-child {
+      margin-bottom: 0; }
+    .tatt-file-wrap .dpf-file__file-link:hover .dpf-file__file-link-title {
+      color: var(--main-color); }
+    @media screen and (max-width: 1159px) {
+      .tatt-file-wrap .dpf-file__file-link {
+        margin-bottom: 3rem; } }
+  .tatt-file-wrap .dpf-file__file-link-icon {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 40px;
+    height: 40px; }
+  .tatt-file-wrap__heading {
+    font-size: 2rem;
+    line-height: 160%;
+    margin-bottom: 5.1rem;
+    max-width: 83%; }
+    @media screen and (max-width: 1159px) {
+      .tatt-file-wrap__heading {
+        max-width: 100%;
+        margin-bottom: 3rem;
+        font-size: 1.8rem; } }
+  @media screen and (max-width: 1159px) {
+    .tatt-file-wrap {
+      max-width: 100%; } }
 
 .popullar-link {
   display: -webkit-box;
