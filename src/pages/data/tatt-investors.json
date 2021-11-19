@@ -1,0 +1,102 @@
+{
+    "isTattelekom": true,
+    "title": "Акционерам и инвесторам",
+    "script": "tatt-investors",
+    "bread-crumbs": [
+        {
+          "name": "Главная"
+        },
+        {
+          "name": "Акционерам и инвесторам",
+          "noLink": true
+        }
+    ],
+    "tatt-table-lis": [
+        {
+            "isActive": true,
+            "link": "/",
+            "link-name": "Акционерам и инвесторам"
+        },
+        {
+            "link": "/",
+            "link-name": "Годовые отчеты"
+        },
+        {
+            "link": "/",
+            "link-name": "Квартальная отчетность"
+        },
+        {
+            "link": "/",
+            "link-name": "Отчетность по МСФО"
+        },
+        {
+            "link": "/",
+            "link-name": "Эмиссионные документы"
+        },
+        {
+            "link": "/",
+            "link-name": "Учредительные и внутренние документы"
+        },
+        {
+            "link": "/",
+            "link-name": "Список аффилированных лиц"
+        },
+        {
+            "link": "/",
+            "link-name": "Существенные факты"
+        },
+        {
+            "link": "/",
+            "link-name": "Рейтинги"
+        },
+        {
+            "link": "/",
+            "link-name": "Cобрания акционеров"
+        },
+        {
+            "link": "/",
+            "link-name": "Раскрытие информации"
+        },
+        {
+            "link": "/",
+            "link-name": "Бухгалтерская отчетность"
+        }
+    ],
+    "investors-page-list": [
+        {
+            "link": "/",
+            "img": "img/tatt-investors/investors-img0.jpg",
+            "name": "Годовые отчеты"
+        },
+        {
+            "link": "/",
+            "img": "img/tatt-investors/investors-img1.jpg",
+            "name": "Квартальные отчеты"
+        },
+        {
+            "link": "/",
+            "img": "img/tatt-investors/investors-img2.jpg",
+            "name": "Учредительные и внутренние документы"
+        },
+        {
+            "link": "/",
+            "img": "img/tatt-investors/investors-img3.jpg",
+            "name": "Существенные факты"
+        },
+        {
+            "link": "/",
+            "img": "img/tatt-investors/investors-img4.jpg",
+            "name": "Собрания акционеров"
+        },
+        {
+            "link": "/",
+            "img": "img/tatt-investors/investors-img5.jpg",
+            "name": "Бухгалерская отчетность"
+        },
+        {
+            "link": "/",
+            "img": "img/tatt-investors/investors-img6.jpg",
+            "name": "Отчетность по МСФО"
+        }
+    ]
+}  

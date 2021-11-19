@@ -1,0 +1,101 @@
+.investors-page {
+    margin-bottom: 10.6rem;
+
+    &__title {
+        margin-bottom: 6.4rem;
+    
+        &-course {
+            margin-bottom: 3rem;
+        }
+
+        @include for-md-down {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, 22rem);
+        gap: 2px;
+        margin-bottom: 10rem;
+
+        
+        @include for-md-down {
+            grid-template-rows: auto;
+        }
+
+        @include for-xs-down {
+            gap: 5px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        z-index: 2;
+        grid-column: 3 span;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 2.7rem 1.9rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0, 123, 195, 0) 0%, #007BC3 100%);
+            content: "";
+        }
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+            grid-column: 4 span;
+        }
+
+        &:hover {
+            .investors-page__item-heading {
+                transform: translateY(-0.5rem);
+            }
+        }
+
+        @include for-md-down {
+            grid-column: 4 span !important;
+            height: 18rem;
+        }
+
+        @include for-sm-down {
+            grid-column: 6 span !important;
+            height: 18rem;
+        }
+
+        @include for-xs-down {
+            grid-column: 12 span !important;
+        }
+    }
+
+    &__item-heading {
+        display: inline-block;
+        margin-top: auto;
+        font-size: 2rem;
+        line-height: 129%;
+        letter-spacing: 0.005em;
+        color: #fff;
+        transition: transform 200ms;
+
+        @include for-md-down {
+            font-size: 1.8rem;
+        }
+    }
+
+    @include for-sm-down {
+        padding-top: 3rem;
+    }
+}
