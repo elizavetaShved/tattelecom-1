@@ -89,6 +89,16 @@ body {
         }
       }
     }
+
+    .gl__text {
+      a {
+        color: var(--main-color-business);
+
+        &:hover {
+          color: var(--main-color-business-hover) !important;
+        }
+      }
+    }
   }
 }
 
@@ -366,6 +376,15 @@ body {
         left: 0;
         top: 0;
       }
+    }
+  }
+
+  a {
+    color: var(--main-color);
+
+    &:hover {
+      text-decoration: underline;
+      color: var(--main-color-hover) !important;
     }
   }
 }

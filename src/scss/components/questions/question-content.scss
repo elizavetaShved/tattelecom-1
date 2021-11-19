@@ -1,70 +1,71 @@
 .question-content {
+
+  border-bottom: 0.1rem solid var(--border-color);
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  &__question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 1.2rem 0;
 
-    border-bottom: 0.1rem solid var(--border-color);
+    width: 100%;
 
-    &:last-of-type {
-        border-bottom: none;
+    text-align: left;
+
+    @include for-lg-down {
+      padding: 0.8rem 0;
+    }
+
+    &.mod-open {
+      .question-content__question-label {
+        color: var(--main-color);
+      }
+
+      .question-content__question-icon {
+        fill: var(--main-color);
+      }
+    }
+  }
+
+  &__question-label {
+    margin-right: 1rem;
+
+    font-size: var(--fs-t1);
+    font-weight: 300;
+    letter-spacing: 0.015em;
+  }
+
+  &__question-icon {
+  }
+
+  &__answer-wrapper {
+  }
+
+  &__answer {
+    padding-top: 1rem;
+    padding-left: 4rem;
+    padding-bottom: 0;
+
+    color: var(--grey-text);
+    font-weight: 300;
+    font-size: var(--fs-t2);
+    line-height: 1.5;
+
+    a {
+      text-decoration: underline;
+      color: var(--main-color-hover);
     }
 
     @include for-lg-down {
-        padding: 0.8rem 0;
+      padding-top: 0.5rem;
+      padding-left: 2rem;
     }
-
-    &__question {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        width: 100%;
-
-        text-align: left;
-
-        &.mod-open {
-            .question-content__question-label {
-                color: var(--main-color);
-            }
-            .question-content__question-icon {
-                fill: var(--main-color);
-            }
-        }
+    @include for-bg-down {
+      padding-left: 1rem;
     }
-
-    &__question-label {
-        margin-right: 1rem;
-
-        font-size: var(--fs-t1);
-        font-weight: 300;
-        letter-spacing: 0.015em;
-    }
-
-    &__question-icon {
-    }
-
-    &__answer-wrapper {
-    }
-
-    &__answer {
-        padding-top: 1rem;
-        padding-left: 4rem;
-        padding-bottom: 0;
-
-        color: var(--grey-text);
-        font-weight: 300;
-        font-size: var(--fs-t2);
-        line-height: 1.5;
-
-        a {
-            text-decoration: underline;
-            color: var(--main-color-hover);
-        }
-
-        @include for-lg-down {
-            padding-top: 0.5rem;
-            padding-left: 2rem;
-        }
-        @include for-bg-down {
-            padding-left: 1rem;
-        }
-    }
+  }
 }

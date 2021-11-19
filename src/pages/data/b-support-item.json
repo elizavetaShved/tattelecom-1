@@ -1,0 +1,59 @@
+{
+  "isBusiness": true,
+  "title": "Интернет для офиса",
+  "script": "b-support-item-page",
+  "categoriesList": [
+    {
+      "title": "Мобильная связь",
+      "img": "img/b-support-corporate-page/category-1.svg"
+    },
+    {
+      "title": "Интернет в офис ",
+      "img": "img/b-support-corporate-page/category-2.svg"
+    },
+    {
+      "title": "Телефония",
+      "img": "img/b-support-corporate-page/category-3.svg"
+    },
+    {
+      "title": "Виртуальная АТС",
+      "img": "img/b-support-corporate-page/category-4.svg"
+    },
+    {
+      "title": "Таттелеком Коннект (ЭДокс)",
+      "img": "img/b-support-corporate-page/category-5.svg"
+    },
+    {
+      "title": "Интернет вещей",
+      "img": "img/b-support-corporate-page/category-6.svg"
+    },
+    {
+      "title": "Обработка и хранение данных",
+      "img": "img/b-support-corporate-page/category-7.svg"
+    },
+    {
+      "title": "Контроль и видеонаблюдение",
+      "img": "img/b-support-corporate-page/category-8.svg"
+    },
+    {
+      "title": "Безопасность",
+      "img": "img/b-support-corporate-page/category-9.svg"
+    },
+    {
+      "title": "Решения для бизнеса",
+      "img": "img/b-support-corporate-page/category-10.svg"
+    },
+    {
+      "title": "SMS рассылка",
+      "img": "img/b-support-corporate-page/category-11.svg"
+    },
+    {
+      "title": "Услуги Call – центра",
+      "img": "img/b-support-corporate-page/category-12.svg"
+    },
+    {
+      "title": "SMART  Wi-Fi",
+      "img": "img/b-support-corporate-page/category-13.svg"
+    }
+  ]
+}
