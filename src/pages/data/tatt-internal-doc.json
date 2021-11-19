@@ -1,0 +1,152 @@
+{
+    "isTattelekom": true,
+    "title": "Учредительные и внутренние документы",
+    "script": "tatt-internal-doc-page",
+    "bread-crumbs": [
+        {
+          "name": "Главная"
+        },
+        {
+            "name": "Акционерам и инвесторам"
+        },
+        {
+          "name": "Учредительные и внутренние документы",
+          "noLink": true
+        }
+    ],
+    "tatt-table-lis": [
+        {
+            "link": "/tatt-investors.html",
+            "link-name": "Акционерам и инвесторам"
+        },
+        {
+            "link": "/tatt-year-report.html",
+            "link-name": "Годовые отчеты"
+        },
+        {
+            "link": "/tatt-quartal-report.html",
+            "link-name": "Квартальная отчетность"
+        },
+        {
+            "link": "/tatt-msfo-report.html",
+            "link-name": "Отчетность по МСФО"
+        },
+        {
+            "link": "/tatt-emmision-doc.html",
+            "link-name": "Эмиссионные документы"
+        },
+        {
+            "isActive": true,
+            "link": "/tatt-internal-doc.html",
+            "link-name": "Учредительные и внутренние документы"
+        },
+        {
+            "link": "/tatt-affiliates-list.html",
+            "link-name": "Список аффилированных лиц"
+        },
+        {
+            "link": "/tatt-essential-facts.html",
+            "link-name": "Существенные факты"
+        },
+        {
+            "link": "/tatt-ratings.html",
+            "link-name": "Рейтинги"
+        },
+        {
+            "link": "/tatt-meetings-shareholders.html",
+            "link-name": "Cобрания акционеров"
+        },
+        {
+            "link": "/",
+            "link-name": "Раскрытие информации"
+        },
+        {
+            "link": "/tatt-financial-statements.html",
+            "link-name": "Бухгалтерская отчетность"
+        }
+    ],
+    "year-select": [
+        {
+          "selectTitle": "Год",
+          "name": "year-select",
+          "required": true,
+          "isSimpleDesign": true,
+          "isBorderBottom": false,
+          "options": [
+            "2020",
+            "2019"
+          ]
+        }
+    ],
+    "report-list": [
+        {
+            "pdf-file": {
+                "size": "PDF 2,97 МБ",
+                "caption": "Устав ПАО 'Таттелеком' (действующая редакция от 29.04.2019г.)"
+            }
+        },
+        {
+            "pdf-file": {
+                "size": "PDF 553 КБ",
+                "caption": "Свидетельство о постановке на налоговый учет ПАО 'Таттелеком'"
+            }
+        },
+        {
+            "pdf-file": {
+                "size": "PDF 2,97 МБ",
+                "caption": "Уведомления ФСФР России о государственной регистрации выпуска и отчета об итогах выпуска ценных бумаг"
+            }
+        }
+    ],
+    "report-list2": [
+        {
+            "pdf-file": {
+                "size": "pdf 2,97 мб",
+                "caption": "Свидетельство о государственной регистрации ОАО “Таттелеком”"
+            }
+        },
+        {
+            "pdf-file": {
+                "size": "PDF 553 КБ",
+                "caption": "Положение о конфликте интересов ПАО 'Таттелеком'"
+            }
+        },
+        {
+            "pdf-file": {
+                "size": "PDF 2,97 МБ",
+                "caption": "Антикоррупционная политика ПАО 'Таттелеком'"
+            }
+        },
+        {
+            "pdf-file": {
+                "size": "PDF 2,97 МБ",
+                "caption": "Политика по вознаграждению членов Совета директоров, исполнительных органов и иных ключевых руководящих работников ПАО 'Таттелеком'"
+            }
+        },
+        {
+            "pdf-file": {
+                "size": "PDF 553 КБ",
+                "caption": "Политика ПАО 'Таттелеком' в области внутреннего контроля и управления рисками"
+            }
+        },
+        {
+            "pdf-file": {
+                "size": "PDF 2,97 МБ",
+                "caption": "Положение о порядке хранения и предоставления документов и информации по требованию акционеров (в новой редакции от 03.11.2017г.)"
+            }
+        },
+        {
+            "pdf-file": {
+                "size": "PDF 2,97 МБ",
+                "caption": "Положение об Информационной политике ПАО 'Таттелеком'"
+            }
+        },
+        {
+            "pdf-file": {
+                "size": "PDF 2,97 МБ",
+                "caption": "Положение об общем собрании акционеров ПАО «Таттелеком» (действующая редакция от 26.04.2019г.)"
+            }
+        }
+    ]
+
+}  

@@ -1,23 +1,23 @@
 {
     "isTattelekom": true,
-    "title": "Акционерам и инвесторам",
-    "script": "tatt-investors",
+    "title": "Годовые отчеты",
+    "script": "tatt-year-page",
     "bread-crumbs": [
         {
           "name": "Главная"
         },
         {
-          "name": "Акционерам и инвесторам",
+          "name": "Годовые отчеты",
           "noLink": true
         }
     ],
     "tatt-table-lis": [
         {
-            "isActive": true,
             "link": "/tatt-investors.html",
             "link-name": "Акционерам и инвесторам"
         },
         {
+            "isActive": true,
             "link": "/tatt-year-report.html",
             "link-name": "Годовые отчеты"
         },
@@ -62,41 +62,33 @@
             "link-name": "Бухгалтерская отчетность"
         }
     ],
-    "investors-page-list": [
+    "year-select": [
         {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img0.jpg",
-            "name": "Годовые отчеты"
+          "selectTitle": "Год",
+          "name": "year-select",
+          "required": true,
+          "isSimpleDesign": true,
+          "isBorderBottom": false,
+          "options": [
+            "2020",
+            "2019"
+          ]
+        }
+    ],
+    "report-list": [
+        {
+            "pdf-file": {
+                "size": "pdf 2,97 мб",
+                "caption": "Годовой отчет ПАО 'Таттелеком' за 2019 г"
+            }
         },
         {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img1.jpg",
-            "name": "Квартальные отчеты"
-        },
-        {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img2.jpg",
-            "name": "Учредительные и внутренние документы"
-        },
-        {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img3.jpg",
-            "name": "Существенные факты"
-        },
-        {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img4.jpg",
-            "name": "Собрания акционеров"
-        },
-        {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img5.jpg",
-            "name": "Бухгалерская отчетность"
-        },
-        {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img6.jpg",
-            "name": "Отчетность по МСФО"
+            "pdf-file": {
+                "isDoc": true,
+                "size": "doc 553 кб",
+                "caption": "Приложение к годовому отчету ПАО 'Таттелеком' за 2019 года о соблюдении принципов и рекомендаций Кодекса корпоративного управления"
+            }
         }
     ]
+
 }  

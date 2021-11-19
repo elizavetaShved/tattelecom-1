@@ -1,0 +1,28 @@
+{{#extend "layout"}}
+{{#content "main"}}
+{{> bread-crumbs isTatt=true}}
+<section class="investors-page">
+  <div class="gl__page-content tatt-row-grid">
+    <div class="tatt-row-grid__block">
+      {{> tattelekom-main/tatt-table-list }}
+      <div class="gl__lg-show">
+        {{> common/btn-settings text="Навигация" }}
+      </div>
+    </div>
+    <div class="tatt-row-grid__block">
+      <h1 class="gl__title investors-page__title">
+        Годовые отчеты
+      </h1>
+      <div class="tatt-select-wrap">
+        {{> common/controls/select selects=year-select }}
+      </div>
+      <div class="tatt-file-wrap">
+        {{#each report-list }}
+          {{> common/pdf-file }}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>
+{{/content}}
+{{/extend}}

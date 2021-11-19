@@ -1,7 +1,13 @@
 <a href="" download class="dpf-file__file-link">
-  <svg width="30" height="40" aria-hidden="true" class="dpf-file__file-link-icon">
-    <use xlink:href="#pdf-file"></use>
-  </svg>
+  {{#if pdf-file.isDoc }}
+      <svg width="40" height="40" aria-hidden="true" class="dpf-file__file-link-icon">
+        <use xlink:href="#doc-file"></use>
+      </svg>
+   {{else }}
+      <svg width="30" height="40" aria-hidden="true" class="dpf-file__file-link-icon">
+        <use xlink:href="#pdf-file"></use>
+      </svg>
+  {{/if}}
   <div>
     <div class="dpf-file__file-link-title">{{ pdf-file.size }}</div>
     <div class="dpf-file__file-link-subtitle">{{ pdf-file.caption }}</div>

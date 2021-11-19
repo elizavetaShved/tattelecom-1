@@ -1,0 +1,36 @@
+{{#extend "layout"}}
+{{#content "main"}}
+{{> bread-crumbs isTatt=true}}
+<section class="investors-page">
+  <div class="gl__page-content tatt-row-grid">
+    <div class="tatt-row-grid__block">
+      {{> tattelekom-main/tatt-table-list }}
+      <div class="gl__lg-show">
+        {{> common/btn-settings text="Навигация" }}
+      </div>
+    </div>
+    <div class="tatt-row-grid__block">
+      <h1 class="gl__title investors-page__title">
+        Учредительные и внутренние документы
+      </h1>
+      <div class="tatt-file-wrap">
+        <span class="tatt-file-wrap__heading">
+          Учредительные документы Общества
+        </span>
+        {{#each report-list }}
+        {{> common/pdf-file }}
+        {{/each}}
+      </div>
+      <div class="tatt-file-wrap">
+        <span class="tatt-file-wrap__heading">
+            Внутренние Положения Общества
+        </span>
+        {{#each report-list2 }}
+          {{> common/pdf-file }}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>
+{{/content}}
+{{/extend}}

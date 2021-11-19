@@ -1,19 +1,21 @@
 {
     "isTattelekom": true,
-    "title": "Акционерам и инвесторам",
-    "script": "tatt-investors",
+    "title": "Отчетность по МСФО",
+    "script": "tatt-msfo-report-page",
     "bread-crumbs": [
         {
           "name": "Главная"
         },
         {
-          "name": "Акционерам и инвесторам",
+            "name": "Акционерам и инвесторам"
+        },
+        {
+          "name": "Отчетность по МСФО",
           "noLink": true
         }
     ],
     "tatt-table-lis": [
         {
-            "isActive": true,
             "link": "/tatt-investors.html",
             "link-name": "Акционерам и инвесторам"
         },
@@ -26,6 +28,7 @@
             "link-name": "Квартальная отчетность"
         },
         {
+            "isActive": true,
             "link": "/tatt-msfo-report.html",
             "link-name": "Отчетность по МСФО"
         },
@@ -62,41 +65,32 @@
             "link-name": "Бухгалтерская отчетность"
         }
     ],
-    "investors-page-list": [
+    "year-select": [
         {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img0.jpg",
-            "name": "Годовые отчеты"
+          "selectTitle": "Год",
+          "name": "year-select",
+          "required": true,
+          "isSimpleDesign": true,
+          "isBorderBottom": false,
+          "options": [
+            "2020",
+            "2019"
+          ]
+        }
+    ],
+    "report-list": [
+        {
+            "pdf-file": {
+                "size": "PDF 2,97 МБ",
+                "caption": "Консолидированная финансовая отчетность в соответствии с МСФО за 2020г"
+            }
         },
         {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img1.jpg",
-            "name": "Квартальные отчеты"
-        },
-        {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img2.jpg",
-            "name": "Учредительные и внутренние документы"
-        },
-        {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img3.jpg",
-            "name": "Существенные факты"
-        },
-        {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img4.jpg",
-            "name": "Собрания акционеров"
-        },
-        {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img5.jpg",
-            "name": "Бухгалерская отчетность"
-        },
-        {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img6.jpg",
-            "name": "Отчетность по МСФО"
+            "pdf-file": {
+                "size": "PDF 553 КБ",
+                "caption": "Консолидированная сокращенная промежуточная финансовая информация в соответствии с Международными стандартами финансовой отчетности и Заключение по результатам обзорной проверки консолидированной сокращенной промежуточной финансовой информации на 30 июня 2020 года"
+            }
         }
     ]
+
 }  

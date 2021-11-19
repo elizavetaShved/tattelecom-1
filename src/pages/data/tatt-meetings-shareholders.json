@@ -1,19 +1,21 @@
 {
     "isTattelekom": true,
-    "title": "Акционерам и инвесторам",
-    "script": "tatt-investors",
+    "title": "Cобрания акционеров",
+    "script": "tatt-meetings-shareholders-page",
     "bread-crumbs": [
         {
           "name": "Главная"
         },
         {
-          "name": "Акционерам и инвесторам",
+            "name": "Акционерам и инвесторам"
+        },
+        {
+          "name": "Cобрания акционеров",
           "noLink": true
         }
     ],
     "tatt-table-lis": [
         {
-            "isActive": true,
             "link": "/tatt-investors.html",
             "link-name": "Акционерам и инвесторам"
         },
@@ -21,7 +23,7 @@
             "link": "/tatt-year-report.html",
             "link-name": "Годовые отчеты"
         },
-        {
+        {   
             "link": "/tatt-quartal-report.html",
             "link-name": "Квартальная отчетность"
         },
@@ -50,6 +52,7 @@
             "link-name": "Рейтинги"
         },
         {
+            "isActive": true,
             "link": "/tatt-meetings-shareholders.html",
             "link-name": "Cобрания акционеров"
         },
@@ -62,41 +65,26 @@
             "link-name": "Бухгалтерская отчетность"
         }
     ],
-    "investors-page-list": [
+    "year-select": [
         {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img0.jpg",
-            "name": "Годовые отчеты"
-        },
+          "selectTitle": "Год",
+          "name": "year-select",
+          "required": true,
+          "isSimpleDesign": true,
+          "isBorderBottom": false,
+          "options": [
+            "2016",
+            "2015"
+          ]
+        }
+    ],
+    "report-list": [
         {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img1.jpg",
-            "name": "Квартальные отчеты"
-        },
-        {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img2.jpg",
-            "name": "Учредительные и внутренние документы"
-        },
-        {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img3.jpg",
-            "name": "Существенные факты"
-        },
-        {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img4.jpg",
-            "name": "Собрания акционеров"
-        },
-        {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img5.jpg",
-            "name": "Бухгалерская отчетность"
-        },
-        {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img6.jpg",
-            "name": "Отчетность по МСФО"
+            "pdf-file": {
+                "size": "PDF 1,66 МБ",
+                "caption": "Отчет об итогах голосования на годовом общем собрании акционеров ОАО 'Таттелеком' от 22.04.2009г."
+            }
         }
     ]
+
 }  

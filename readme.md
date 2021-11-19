@@ -75,6 +75,16 @@
     О компании / партнёрам / акционерам<br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tattelekom-main">Таттелеком главная</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-investors">Таттелеком инвесторам</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-year-report">Годовые отчеты</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-quartal-report">Квартальная отчетность</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-msfo-report">Отчетность по МСФО</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-emmision-doc">Эмиссионные документы</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-internal-doc">Учредительные и внутренние документы</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-affiliates-list">Список аффилированных лиц</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-essential-facts">Существенные факты</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-ratings">Рейтинги</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-meetings-shareholders">Cобрания акционеров</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-financial-statements">Бухгалтерская отчетность</a><br>
 </div>
 </body>
 

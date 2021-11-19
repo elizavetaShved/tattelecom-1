@@ -1,0 +1,146 @@
+{
+    "isTattelekom": true,
+    "title": "Эмиссионные документы",
+    "script": "tatt-emmision-doc-page",
+    "bread-crumbs": [
+        {
+          "name": "Главная"
+        },
+        {
+            "name": "Акционерам и инвесторам"
+        },
+        {
+          "name": "Эмиссионные документы",
+          "noLink": true
+        }
+    ],
+    "tatt-table-lis": [
+        {
+            "link": "/tatt-investors.html",
+            "link-name": "Акционерам и инвесторам"
+        },
+        {
+            "link": "/tatt-year-report.html",
+            "link-name": "Годовые отчеты"
+        },
+        {
+            "link": "/tatt-quartal-report.html",
+            "link-name": "Квартальная отчетность"
+        },
+        {
+            "link": "/tatt-msfo-report.html",
+            "link-name": "Отчетность по МСФО"
+        },
+        {
+            "isActive": true,
+            "link": "/tatt-emmision-doc.html",
+            "link-name": "Эмиссионные документы"
+        },
+        {
+            "link": "/tatt-internal-doc.html",
+            "link-name": "Учредительные и внутренние документы"
+        },
+        {
+            "link": "/tatt-affiliates-list.html",
+            "link-name": "Список аффилированных лиц"
+        },
+        {
+            "link": "/tatt-essential-facts.html",
+            "link-name": "Существенные факты"
+        },
+        {
+            "link": "/tatt-ratings.html",
+            "link-name": "Рейтинги"
+        },
+        {
+            "link": "/tatt-meetings-shareholders.html",
+            "link-name": "Cобрания акционеров"
+        },
+        {
+            "link": "/",
+            "link-name": "Раскрытие информации"
+        },
+        {
+            "link": "/tatt-financial-statements.html",
+            "link-name": "Бухгалтерская отчетность"
+        }
+    ],
+    "year-select": [
+        {
+          "selectTitle": "Год",
+          "name": "year-select",
+          "required": true,
+          "isSimpleDesign": true,
+          "isBorderBottom": false,
+          "options": [
+            "2020",
+            "2019"
+          ]
+        }
+    ],
+    "report-list": [
+        {
+            "pdf-file": {
+                "size": "PDF 2,97 МБ",
+                "caption": "Решение о выпуске ценных бумаг (1-02-50049-А от 12.01.2006г.)"
+            }
+        },
+        {
+            "pdf-file": {
+                "size": "PDF 553 КБ",
+                "caption": "Отчет об итогах выпуска ценных бумаг (1-02-50049-А от 14.02.2006г.)"
+            }
+        },
+        {
+            "pdf-file": {
+                "size": "PDF 2,97 МБ",
+                "caption": "Уведомления ФСФР России о государственной регистрации выпуска и отчета об итогах выпуска ценных бумаг"
+            }
+        }
+    ],
+    "report-list2": [
+        {
+            "pdf-file": {
+                "size": "pdf 2,97 мб",
+                "caption": "Решение о дополнительном выпуске ценных бумаг (1-02-50049-А-001D от 13.04.2006г.)"
+            }
+        },
+        {
+            "pdf-file": {
+                "size": "PDF 553 КБ",
+                "caption": "Решение о дополнительном выпуске ценных бумаг (1-02-50049-А-002D от 13.04.2006г.)"
+            }
+        },
+        {
+            "pdf-file": {
+                "size": "PDF 2,97 МБ",
+                "caption": "Проспект ценных бумаг"
+            }
+        },
+        {
+            "pdf-file": {
+                "size": "PDF 2,97 МБ",
+                "caption": "Отчет об итогах дополнительного выпуска ценных бумаг (1-02-50049-А-001D от 16.05.2006г.)"
+            }
+        },
+        {
+            "pdf-file": {
+                "size": "PDF 553 КБ",
+                "caption": "Отчет об итогах дополнительного выпуска ценных бумаг (1-02-50049-А-002D от 16.05.2006г.)"
+            }
+        },
+        {
+            "pdf-file": {
+                "size": "PDF 2,97 МБ",
+                "caption": "Уведомления ФСФР России о государственной регистрации дополнительных выпусков, проспекта ценных бумаг и отчетов об итогах дополнительных выпусков "
+            }
+        },
+        {
+            "pdf-file": {
+                "size": "PDF 2,97 МБ",
+                "caption": "Уведомление ФСФР России об аннулировании индивидуального номера дополнительных выпусков"
+            }
+        }
+    ]
+
+}  

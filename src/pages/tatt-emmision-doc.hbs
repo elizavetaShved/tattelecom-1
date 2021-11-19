@@ -1,0 +1,37 @@
+{{#extend "layout"}}
+{{#content "main"}}
+{{> bread-crumbs isTatt=true}}
+<section class="investors-page">
+  <div class="gl__page-content tatt-row-grid">
+    <div class="tatt-row-grid__block">
+      {{> tattelekom-main/tatt-table-list }}
+      <div class="gl__lg-show">
+        {{> common/btn-settings text="Навигация" }}
+      </div>
+    </div>
+    <div class="tatt-row-grid__block">
+      <h1 class="gl__title investors-page__title">
+        Эмиссионные документы
+      </h1>
+      <div class="tatt-file-wrap">
+        <span class="tatt-file-wrap__heading">
+          Акции ОАО «Таттелеком» (государственный регистрационный номер — 1-02-50049-A)
+        </span>
+        {{#each report-list }}
+        {{> common/pdf-file }}
+        {{/each}}
+      </div>
+      <div class="tatt-file-wrap">
+        <span class="tatt-file-wrap__heading">
+            Дополнительные выпуски акций ОАО «Таттелеком»
+            (государственные регистрационные номера — 1-02-50049-А-001D, 1-02-50049-А-002D)
+        </span>
+        {{#each report-list2 }}
+          {{> common/pdf-file }}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>
+{{/content}}
+{{/extend}}

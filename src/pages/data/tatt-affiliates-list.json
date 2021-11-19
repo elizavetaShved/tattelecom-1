@@ -1,19 +1,21 @@
 {
     "isTattelekom": true,
-    "title": "Акционерам и инвесторам",
-    "script": "tatt-investors",
+    "title": "Список аффилированных лиц",
+    "script": "tatt-affiliates-list-page",
     "bread-crumbs": [
         {
           "name": "Главная"
         },
         {
-          "name": "Акционерам и инвесторам",
+            "name": "Акционерам и инвесторам"
+        },
+        {
+          "name": "Список аффилированных лиц",
           "noLink": true
         }
     ],
     "tatt-table-lis": [
         {
-            "isActive": true,
             "link": "/tatt-investors.html",
             "link-name": "Акционерам и инвесторам"
         },
@@ -38,6 +40,7 @@
             "link-name": "Учредительные и внутренние документы"
         },
         {
+            "isActive": true,
             "link": "/tatt-affiliates-list.html",
             "link-name": "Список аффилированных лиц"
         },
@@ -62,41 +65,44 @@
             "link-name": "Бухгалтерская отчетность"
         }
     ],
-    "investors-page-list": [
+    "year-select": [
         {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img0.jpg",
-            "name": "Годовые отчеты"
+          "selectTitle": "Год",
+          "name": "year-select",
+          "required": true,
+          "isSimpleDesign": true,
+          "isBorderBottom": false,
+          "options": [
+            "2020",
+            "2019"
+          ]
+        }
+    ],
+    "report-list": [
+        {
+            "pdf-file": {
+                "size": "pdf 2,97 мб",
+                "caption": "Список аффилированных лиц на 31.12.2020г."
+            }
         },
         {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img1.jpg",
-            "name": "Квартальные отчеты"
+            "pdf-file": {
+                "size": "doc 553 кб",
+                "caption": "Список аффилированных лиц на 30.09.2020г."
+            }
         },
         {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img2.jpg",
-            "name": "Учредительные и внутренние документы"
+            "pdf-file": {
+                "size": "doc 553 кб",
+                "caption": "Список аффилированных лиц на 30.06.2020г."
+            }
         },
         {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img3.jpg",
-            "name": "Существенные факты"
-        },
-        {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img4.jpg",
-            "name": "Собрания акционеров"
-        },
-        {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img5.jpg",
-            "name": "Бухгалерская отчетность"
-        },
-        {
-            "link": "/",
-            "img": "img/tatt-investors/investors-img6.jpg",
-            "name": "Отчетность по МСФО"
+            "pdf-file": {
+                "size": "doc 553 кб",
+                "caption": "Список аффилированных лиц на 31.03.2020г."
+            }
         }
     ]
+
 }  
