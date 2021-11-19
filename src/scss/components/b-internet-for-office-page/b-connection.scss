@@ -1,15 +1,3 @@
-.b-connection {
-  padding: 5rem 0;
-
-  @include for-lg-down {
-    padding: 3rem 0;
-  }
-
-  @include for-sm-down {
-    padding: 2.6rem 0;
-  }
-}
-
 .b-connection__container {
   padding: 4.2rem 8.8rem;
 

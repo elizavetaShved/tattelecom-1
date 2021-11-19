@@ -1,15 +1,3 @@
-.b-advantages-list {
-  padding: 5rem 0;
-
-  @include for-bg-down {
-    padding: 3rem 0;
-  }
-
-  @include for-sm-down {
-    padding: 2.6rem 0;
-  }
-}
-
 .b-advantages-list__list {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));

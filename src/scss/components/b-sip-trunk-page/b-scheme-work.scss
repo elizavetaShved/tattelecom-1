@@ -1,15 +1,3 @@
-.b-scheme-work {
-  padding: 5rem 0;
-
-  @include for-bg-down {
-    padding: 3rem 0;
-  }
-
-  @include for-sm-down {
-    padding: 2.6rem 0;
-  }
-}
-
 .b-scheme-work__content {
   margin-left: 18rem;
 

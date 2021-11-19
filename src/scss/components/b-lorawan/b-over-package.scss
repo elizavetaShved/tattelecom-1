@@ -1,15 +1,3 @@
-.b-over-package {
-  padding: 5rem 0;
-
-  @include for-lg-down {
-    padding: 3rem 0;
-  }
-
-  @include for-sm-down {
-    padding: 2rem 0;
-  }
-}
-
 .b-over-package__table-container {
   @include for-sm-down {
     width: 100vw;

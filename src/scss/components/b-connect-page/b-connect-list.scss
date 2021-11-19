@@ -1,15 +1,3 @@
-.b-connect-list {
-  padding: 5rem 0;
-
-  @include for-lg-down {
-    padding: 3rem 0;
-  }
-
-  @include for-sm-down {
-    padding: 2.6rem 0;
-  }
-}
-
 .b-connect-list__wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

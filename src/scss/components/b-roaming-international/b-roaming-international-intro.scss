@@ -1,14 +1,4 @@
 .b-roaming-international-intro {
-
-  margin-bottom: 10rem;
-
-  @include for-bg-down {
-    margin-bottom: 6rem;
-  }
-  @include for-sm-down {
-    margin-bottom: 4rem;
-  }
-
   &__inner {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
