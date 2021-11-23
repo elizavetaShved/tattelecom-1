@@ -2117,6 +2117,15 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 .gl__layout-wrapper.mod-business .select__container .choices__list::-webkit-scrollbar-thumb {
   background-color: var(--main-color-business); }
 
+.rates-list__slide, .b-tariffs-item, .b-fractional-slider__slide-card, .b-low-slider__slide, .b-high-slider__slide, .b-normal-slider__slide {
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms; }
+  .rates-list__slide:hover, .b-tariffs-item:hover, .b-fractional-slider__slide-card:hover, .b-low-slider__slide:hover, .b-high-slider__slide:hover, .b-normal-slider__slide:hover {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem); }
+
 .dev-link__wrapper {
   display: grid;
   grid-template-columns: 20rem auto;
@@ -3560,14 +3569,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition: -webkit-transform 300ms;
-  transition: -webkit-transform 300ms;
-  transition: transform 300ms;
-  transition: transform 300ms, -webkit-transform 300ms;
   height: 100%; }
-  .rates-list__slide:hover {
-    -webkit-transform: translateY(-1rem);
-            transform: translateY(-1rem); }
 
 .rates-list__slide-hit {
   background-color: var(--main-text-color);
@@ -11546,10 +11548,6 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   -webkit-box-shadow: 0 0 20px rgba(153, 152, 168, 0.17);
           box-shadow: 0 0 20px rgba(153, 152, 168, 0.17);
   border-radius: 1rem;
-  -webkit-transition: -webkit-transform 300ms;
-  transition: -webkit-transform 300ms;
-  transition: transform 300ms;
-  transition: transform 300ms, -webkit-transform 300ms;
   min-height: 41rem;
   height: 100%; }
   .b-tariffs-item.mod-hit {
@@ -11593,9 +11591,6 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     .b-tariffs-item.mod-is-small-card .b-tariffs-item__services-list-container {
       border-bottom: solid 0.1rem var(--border-color);
       padding-bottom: 2.2rem; }
-  .b-tariffs-item:hover {
-    -webkit-transform: translateY(-1rem);
-            transform: translateY(-1rem); }
   .b-tariffs-item.mod-expanded .b-tariffs-item__services-list-container {
     margin-bottom: .6rem; }
   .b-tariffs-item.mod-expanded .b-tariffs-item__cost-block {
