@@ -141,8 +141,12 @@ gulp.task('prettify', function () {
         .pipe(prettyHtml({
             indent_size: 4,
             indent_char: ' ',
+            indent_with_tabs: '-s',
+            indent_inner_html: true,
+            unformatted: [],
+            content_unformatted: [],
             wrap_line_length: 0,
-            inline: ['b','big','br','em','i','small','strong','sub','sup'],
+            inline: [],
             extra_liners: ['header','main','footer', 'script', '/body']
         }))
         .pipe(gulp.dest('./build'));
