@@ -15,6 +15,9 @@ const webpackstream = require('webpack-stream');
 const data = require('gulp-data');
 const hb = require('gulp-hb');
 const sourcemaps = require('gulp-sourcemaps');
+// Новые:
+const htmlmin = require('gulp-htmlmin');
+var prettyHtml = require('gulp-pretty-html');
 
 const fs = require('fs');
 const path = require('path');
@@ -123,8 +126,30 @@ gulp.task('assets', function () {
     return gulp.src('./src/assets/**/*').pipe(newer('./build/assets')).pipe(gulp.dest('./build/assets')).pipe(browserSync.stream());
 });
 
+gulp.task('minify', () => {
+return gulp.src('./build/*.html')
+    .pipe(htmlmin({
+        collapseWhitespace: true,
+        collapseInlineTagWhitespace: true,
+        removeComments: true
+    }))
+    .pipe(gulp.dest('./build'));
+});
+
+gulp.task('prettify', function () {
+    return gulp.src('./build/*.html')
+        .pipe(prettyHtml({
+            indent_size: 4,
+            indent_char: ' ',
+            wrap_line_length: 0,
+            inline: ['b','big','br','em','i','small','strong','sub','sup'],
+            extra_liners: ['header','main','footer', 'script', '/body']
+        }))
+        .pipe(gulp.dest('./build'));
+});
+
 gulp.task('build', gulp.series('clean', 'images', 'sprite', 'handlebars', gulp.parallel('assets', 'styles', 'scripts')));
 
-gulp.task('build-production', gulp.series('clean', 'images', 'sprite', 'handlebars', gulp.parallel('assets', 'styles', 'scripts-production')));
+gulp.task('build-production', gulp.series('clean', 'images', 'sprite', 'handlebars', 'minify', 'prettify', gulp.parallel('assets', 'styles', 'scripts-production')));
 
 gulp.task('default', gulp.series('build', 'serve'));
