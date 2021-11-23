@@ -404,8 +404,21 @@
 											<img src="img/header/logo-fly.svg" alt="" class="header__logo mod-fly">
 										</a>
 									</div>
+									<form class="header__input-search-form js-show-when-search">
+										<label class="header__input-search-wrapper">
+											<svg width="24" height="24" aria-hidden="true" class="header__input-search-icon">
+												<use xlink:href="#search"></use>
+											</svg>
+											<input type="text" class="header__input-search js-input-search" placeholder="Поиск">
+											<button type="button" class="header__search-btn-close js-close-search-btn">
+												<svg width="30" height="30" aria-hidden="true" class="header__search-btn-close-icon">
+													<use xlink:href="#close"></use>
+												</svg>
+											</button>
+										</label>
+									</form>
 									<div class="header__bottom-block-right gl__bg-hide">
-										<ul class="header__bottom-menu-list">
+										<ul class="header__bottom-menu-list header__hide-when-search js-hide-when-search">
 											<li class="header__bottom-menu-item">
 												<a href="/mobile-communication.html" class="header__bottom-menu-link" data-hover-value="mobile">Мобильная связь</a>
 											</li>
@@ -423,7 +436,7 @@
 											</li>
 										</ul>
 										<div class="header__btns-container">
-											<button type="button" class="header__bottom-btn header__btn-search">
+											<button type="button" class="header__bottom-btn header__btn-search header__hide-when-search js-open-search-btn js-hide-when-search">
 												<svg width="30" height="30" aria-hidden="true" class="header__btn-search-icon">
 													<use xlink:href="#search"></use>
 												</svg>

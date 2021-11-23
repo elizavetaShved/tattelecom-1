@@ -404,7 +404,7 @@
 											<img src="img/header/logo-business.svg" alt="" class="header__logo mod-business">
 										</a>
 									</div>
-									<div class="header__bottom-block-right mod-business gl__bg-hide js-b-menu-header">
+									<div class="header__bottom-block-right mod-business gl__bg-hide js-b-menu-header header__hide-when-search js-hide-when-search">
 										<ul class="header__bottom-menu-list">
 											<li class="header__bottom-menu-item">
 												<a href="" class="header__bottom-menu-link mod-business" data-hover-value="business-solutions">Комплексные решения для бизнеса</a>
@@ -420,10 +420,23 @@
 											</li>
 										</ul>
 									</div>
+									<form class="header__input-search-form js-show-when-search mod-business">
+										<label class="header__input-search-wrapper">
+											<svg width="24" height="24" aria-hidden="true" class="header__input-search-icon">
+												<use xlink:href="#search"></use>
+											</svg>
+											<input type="text" class="header__input-search js-input-search" placeholder="Поиск">
+											<button type="button" class="header__search-btn-close js-close-search-btn">
+												<svg width="30" height="30" aria-hidden="true" class="header__search-btn-close-icon">
+													<use xlink:href="#close"></use>
+												</svg>
+											</button>
+										</label>
+									</form>
 									<div class="header__bottom-block-right">
 										<div class="header__btns-container">
 											<button type="button" class="header__bottom-btn header__btn-burger gl__bg-show mod-business"></button>
-											<button type="button" class="header__bottom-btn header__btn-search">
+											<button type="button" class="header__bottom-btn header__btn-search header__hide-when-search js-open-search-btn js-hide-when-search">
 												<svg width="30" height="30" aria-hidden="true" class="header__btn-search-icon mod-business">
 													<use xlink:href="#search"></use>
 												</svg>

@@ -108,6 +108,9 @@
       --header-height-top-block: 3rem;
       --header-height-bottom-block: 6rem;
       --header-height-b-bottom-block: 6rem; } }
+  @media screen and (max-width: 1159px) {
+    :root {
+      --page-content-padding: 7rem; } }
   @media screen and (max-width: 1023px) {
     :root {
       --page-content-padding: 5rem; } }
@@ -5369,11 +5372,6 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     @media screen and (max-width: 1159px) {
       .header.mod-tattelekom .header__bottom-menu-item {
         margin-right: 2rem; } }
-  .header.mod-tattelekom .header__btns-container {
-    margin-left: 11.6rem; }
-    @media screen and (max-width: 1399px) {
-      .header.mod-tattelekom .header__btns-container {
-        margin-left: 3rem; } }
 
 .header__content {
   background-repeat: repeat;
@@ -5551,7 +5549,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
           align-items: center;
   margin: -1.8rem;
   margin-right: 1rem;
-  width: 100%; }
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0;
+          flex: 0 0; }
 
 .header__logo-link {
   height: 100%;
@@ -5625,7 +5626,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%; }
+  height: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0;
+          flex: 0 0; }
   .header__bottom-block-right.mod-business:not(.mod-show) {
     opacity: 0;
     pointer-events: none; }
@@ -5655,6 +5659,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
           align-items: center;
   white-space: nowrap;
   cursor: pointer; }
+  @media screen and (max-width: 1159px) {
+    .header__bottom-menu-link {
+      padding: 1rem; } }
   .header__bottom-menu-link:hover {
     color: var(--main-color); }
   .header__bottom-menu-link.mod-business {
@@ -5670,18 +5677,23 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
 
 .header__btn-search {
-  padding: 1rem; }
-  .header__btn-search:hover .header__btn-search-icon.mod-business {
-    fill: var(--header-hover-business) !important; }
+  padding: 1rem;
+  margin-right: 2rem;
+  margin-left: 6rem; }
+  @media screen and (max-width: 1559px) {
+    .header__btn-search {
+      margin: 0 2rem; } }
   @media screen and (max-width: 1399px) {
     .header__btn-search {
-      padding: .6rem; } }
+      padding: .6rem;
+      margin: 0 1.4rem; } }
+  .header__btn-search:hover .header__btn-search-icon.mod-business {
+    fill: var(--header-hover-business) !important; }
 
 .header__btn-search-icon {
   height: 3rem;
@@ -6011,6 +6023,94 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 
 .header__b-popup-content-item + .header__b-popup-content-item {
   margin-left: 7.6rem; }
+
+.header__hide-when-search:not(.mod-show-search), .header__input-search-form:not(.mod-show-search) {
+  display: none; }
+
+.header__input-search-form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  margin-right: 2rem; }
+  @media screen and (max-width: 959px) {
+    .header__input-search-form {
+      display: none; } }
+  .header__input-search-form.mod-business .header__input-search {
+    color: #fff; }
+    .header__input-search-form.mod-business .header__input-search::-webkit-input-placeholder {
+      color: var(--header-hover-business); }
+    .header__input-search-form.mod-business .header__input-search::-moz-placeholder {
+      color: var(--header-hover-business); }
+    .header__input-search-form.mod-business .header__input-search:-ms-input-placeholder {
+      color: var(--header-hover-business); }
+    .header__input-search-form.mod-business .header__input-search::-ms-input-placeholder {
+      color: var(--header-hover-business); }
+    .header__input-search-form.mod-business .header__input-search::placeholder {
+      color: var(--header-hover-business); }
+  .header__input-search-form.mod-business .header__input-search-icon, .header__input-search-form.mod-business .header__search-btn-close-icon {
+    fill: #fff; }
+  .header__input-search-form.mod-business .header__search-btn-close:hover .header__search-btn-close-icon {
+    fill: var(--header-hover-business); }
+
+.header__input-search-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 4rem;
+  padding-left: 4rem;
+  cursor: text; }
+
+.header__input-search {
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  background-color: transparent; }
+  .header__input-search::-webkit-input-placeholder {
+    color: var(--main-grey-color); }
+  .header__input-search::-moz-placeholder {
+    color: var(--main-grey-color); }
+  .header__input-search:-ms-input-placeholder {
+    color: var(--main-grey-color); }
+  .header__input-search::-ms-input-placeholder {
+    color: var(--main-grey-color); }
+  .header__input-search::placeholder {
+    color: var(--main-grey-color); }
+
+.header__input-search-icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  height: 2.4rem;
+  fill: var(--main-grey-color);
+  pointer-events: none; }
+
+.header__search-btn-close {
+  height: 4rem;
+  width: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.header__search-btn-close-icon {
+  height: 3rem;
+  fill: var(--main-text-color); }
 
 .footer {
   padding: 6.2rem 0;
