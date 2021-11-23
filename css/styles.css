@@ -9240,15 +9240,16 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   .rates-internet-application__form-btn-wrapper {
     grid-column: 1 / 3; } }
 
-@media screen and (max-width: 767px) {
-  .rates-internet-application__form-btn {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content; } }
-
-@media screen and (max-width: 559px) {
-  .rates-internet-application__form-btn {
-    width: 100%; } }
+.rates-internet-application__form-btn {
+  height: 100%; }
+  @media screen and (max-width: 767px) {
+    .rates-internet-application__form-btn {
+      width: -webkit-min-content;
+      width: -moz-min-content;
+      width: min-content; } }
+  @media screen and (max-width: 559px) {
+    .rates-internet-application__form-btn {
+      width: 100%; } }
 
 .rates-internet-application__form-checkbox-wrapper {
   margin-top: 1.6rem;

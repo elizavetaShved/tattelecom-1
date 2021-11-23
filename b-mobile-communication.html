@@ -1137,7 +1137,7 @@
 								</svg>
 							</button>
 						</div>
-						<form class="js-form-modal callback__form">
+						<form class="js-form-modal callback__form" data-need-validation data-parsley-validate data-parsley-focus="none">
 							<label class="gl-input__wrapper js-input-tel">
 								<input type="tel" class="gl-input__input js-phone-mask" placeholder="+7 (___) ___-__-__" name="modal-callback-tel" data-parsley-required="">
 							</label>
@@ -1152,7 +1152,7 @@
 									<span class="checkbox__text mod-modal">Я согласен на обработку своих персональных данных</span>
 								</label>
 							</div>
-							<button type="button" class="gl__main-btn modal__btn-submit js-btn-submit">Жду звонка</button>
+							<button type="submit" class="gl__main-btn modal__btn-submit js-btn-submit">Жду звонка</button>
 						</form>
 					</div>
 				</div>
@@ -1211,7 +1211,7 @@
 									</div>
 								</div>
 							</div>
-							<form class="js-form-modal">
+							<form class="js-form-modal" data-need-validation data-parsley-validate data-parsley-focus="none">
 								<div class="send-request__form-inputs">
 									<label class="gl-input__wrapper js-input-text">
 										<input type="text" class="gl-input__input" placeholder="Ваше имя" name="modal-send-request-name" data-parsley-required="">
