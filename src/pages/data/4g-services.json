@@ -1,5 +1,6 @@
 {
   "title": "4G улуги",
+  "isPrivateClients": true,
   "script": "4g-services-page",
   "bread-crumbs": [
     {

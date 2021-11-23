@@ -12,7 +12,7 @@
         </button>
       </div>
 
-      <form class="js-form-modal callback__form">
+      <form class="js-form-modal callback__form" data-need-validation data-parsley-validate data-parsley-focus="none">
         {{> common/controls/input-main
           required=true
           type="tel"
@@ -30,7 +30,7 @@
           }}
         </div>
 
-        <button type="button" class="gl__main-btn modal__btn-submit js-btn-submit">
+        <button type="submit" class="gl__main-btn modal__btn-submit js-btn-submit">
           Жду звонка
         </button>
       </form>

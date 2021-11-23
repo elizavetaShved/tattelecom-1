@@ -1,5 +1,6 @@
 {
   "title": "Поиск по сайту",
+  "isPrivateClients": true,
   "script": "search-site-page",
   "articles-list": [
     {

@@ -1,5 +1,6 @@
 {
   "title": "Поддержка / Бланки и Документы",
+  "isPrivateClients": true,
   "script": "documents",
   "bread-crumbs": [
     {

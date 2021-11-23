@@ -1,5 +1,6 @@
 {
   "title": "Красивые номера",
+  "isPrivateClients": true,
   "script": "beautiful-phone-page",
   "bread-crumbs": [
     {

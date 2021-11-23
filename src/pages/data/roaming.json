@@ -1,5 +1,6 @@
 {
   "title": "Роуминг по России",
+  "isPrivateClients": true,
   "script": "roaming-page",
   "bread-crumbs": [
     {

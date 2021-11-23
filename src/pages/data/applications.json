@@ -1,5 +1,6 @@
 {
   "title": "Приложения",
+  "isPrivateClients": true,
   "script": "applications-page",
   "bread-crumbs": [
     {

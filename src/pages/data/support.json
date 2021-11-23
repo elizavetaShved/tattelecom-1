@@ -1,5 +1,6 @@
 {
   "title": "Служба поддержки",
+  "isPrivateClients": true,
   "script": "support-page",
   "bread-crumbs": [
     {

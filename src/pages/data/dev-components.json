@@ -1,5 +1,6 @@
 {
   "title": "Компоненты",
+  "isPrivateClients": true,
   "noLayout": true,
   "chapter3": [
     {

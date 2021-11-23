@@ -1,6 +1,7 @@
 {
   "title": "Перейти на летай со своим номером",
   "script": "fly-old-number-page",
+  "isPrivateClients": true,
   "bread-crumbs": [
     {
       "name": "Частным клиентам"

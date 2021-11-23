@@ -1,5 +1,6 @@
 {
   "title": "Вместе выгодно 2.0",
+  "isPrivateClients": true,
   "script": "together-profitable-page",
   "bread-crumbs": [
     {

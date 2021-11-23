@@ -1,6 +1,6 @@
 {
   "title": "Тариф «Много минут»",
-  "script": "rates-mobile-item-page",
+  "isPrivateClients": true,
   "bread-crumbs": [
     {
       "name": "Частным клиентам"

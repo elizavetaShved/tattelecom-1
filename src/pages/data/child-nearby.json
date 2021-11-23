@@ -1,5 +1,6 @@
 {
   "title": "Ребёнок рядом",
+  "isPrivateClients": true,
   "script": "child-nearby-page",
   "bread-crumbs": [
     {

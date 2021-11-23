@@ -1,5 +1,6 @@
 {
   "title": "Промо Много интернета",
+  "isPrivateClients": true,
   "script": "promo-internet-page",
   "rates-preview": [
     {

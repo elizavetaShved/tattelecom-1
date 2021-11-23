@@ -1,5 +1,6 @@
 {
   "title": "Тарифы мобильной связи",
+  "isPrivateClients": true,
   "script": "rates-mobile-list-page",
   "bread-crumbs": [
     {

@@ -1,6 +1,6 @@
 {
   "title": "Кешбэк 20%",
-  "script": "cashback-page",
+  "isPrivateClients": true,
   "bread-crumbs": [
     {
       "name": "Частным клиентам"

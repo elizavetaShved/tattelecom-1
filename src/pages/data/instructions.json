@@ -1,5 +1,6 @@
 {
   "title": "Поддержка / Инструкции",
+  "isPrivateClients": true,
   "script": "instructions",
   "bread-crumbs": [
     {

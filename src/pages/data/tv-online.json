@@ -1,5 +1,6 @@
 {
   "title": "ТВ онлайн",
+  "isPrivateClients": true,
   "script": "tv-online-page",
   "bread-crumbs": [
     {

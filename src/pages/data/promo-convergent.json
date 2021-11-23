@@ -1,6 +1,6 @@
 {
   "title": "Промо Конвергент",
-  "script": "promo-convergent-page",
+  "isPrivateClients": true,
   "rates-preview": [
     {
       "pageName": "promo-convergent",

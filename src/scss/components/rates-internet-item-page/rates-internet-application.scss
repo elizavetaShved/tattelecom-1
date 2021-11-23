@@ -46,6 +46,7 @@
 }
 
 .rates-internet-application__form-btn {
+  height: 100%;
   @include for-sm-down {
     width: min-content;
   }

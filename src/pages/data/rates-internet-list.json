@@ -1,5 +1,6 @@
 {
   "title": "Тарифы интернета",
+  "isPrivateClients": true,
   "script": "rates-internet-list-page",
   "bread-crumbs": [
     {

@@ -1,5 +1,6 @@
 {
   "title": "Поддержка / Часто задаваемые вопросы",
+  "isPrivateClients": true,
   "script": "questions",
   "bread-crumbs": [
     {

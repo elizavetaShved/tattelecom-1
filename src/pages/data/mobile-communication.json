@@ -1,5 +1,6 @@
 {
   "title": "Мобильная связь",
+  "isPrivateClients": true,
   "script": "mobile-communication-page",
   "bread-crumbs": [
     {

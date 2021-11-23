@@ -1,5 +1,6 @@
 {
   "title": "Тариф «Летай. Оранжевый Профит»",
+  "isPrivateClients": true,
   "script": "rates-internet-item-page",
   "bread-crumbs": [
     {

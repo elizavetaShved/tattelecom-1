@@ -1,5 +1,6 @@
 {
   "title": "USSD-запросы",
+  "isPrivateClients": true,
   "script": "ussd-requests-page",
   "bread-crumbs": [
     {

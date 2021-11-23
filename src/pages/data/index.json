@@ -1,5 +1,6 @@
 {
   "title": "Таттелеком",
+  "isPrivateClients": true,
   "two-logos": true,
   "script": "main-page",
   "rates-preview": [

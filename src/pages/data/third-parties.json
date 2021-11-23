@@ -1,5 +1,6 @@
 {
   "title": "Поддержка / Третьи лица",
+  "isPrivateClients": true,
   "script": "documents",
   "bread-crumbs": [
     {

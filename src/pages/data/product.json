@@ -1,5 +1,6 @@
 {
   "title": "Samsung Galaxy A51 (A515)",
+  "isPrivateClients": true,
   "script": "product-page",
   "bread-crumbs": [
     {

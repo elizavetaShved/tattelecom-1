@@ -1,6 +1,6 @@
 {
   "title": "Промо Домофон",
-  "script": "promo-intercom-page",
+  "isPrivateClients": true,
   "intercom-advantages": [
     {
       "img": "img/promo-intercom/advantages/tools.svg",

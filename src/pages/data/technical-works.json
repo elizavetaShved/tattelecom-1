@@ -1,5 +1,6 @@
 {
   "title": "Технические работы",
+  "isPrivateClients": true,
   "script": "technical-works-page",
   "year-select": [
     {

@@ -1,5 +1,6 @@
 {
   "title": "Промо GPON",
+  "isPrivateClients": true,
   "script": "promo-gpon-page",
   "rates-list": [
     {
