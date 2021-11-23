@@ -1,5 +1,6 @@
 .modal {
   @extend %modal;
+  z-index: var(--z-index-modal);
   background-color: rgba(0, 0, 0, .6);
   display: flex;
   align-items: center;

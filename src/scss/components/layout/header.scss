@@ -548,6 +548,7 @@
 
 .header__popup-container {
   @extend %modal;
+  z-index: var(--z-index-header);
   top: var(--header-height);
 
   &.mod-business {

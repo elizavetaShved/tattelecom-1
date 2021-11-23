@@ -2,6 +2,7 @@ import { checkExistParent } from '../finctions/checkExistParent';
 
 export class Header {
   hostElem;
+  bodyElem;
   popupElem;
   popupContentElements;
   isBusinessMainPageHeader;
@@ -16,14 +17,19 @@ export class Header {
 
   isOpenPopup = false;
 
+  sideBarElem;
+  sideBarContentElem;
+  isOpenSideBar = false;
+
   constructor() {
+    this.checkClickBySideBar = this.checkClickBySideBar.bind(this);
     this.openBusinessPopUp = this.openBusinessPopUp.bind(this);
     this.closeBusinessPopUp = this.closeBusinessPopUp.bind(this);
 
     this.hostElem = document.getElementById('header-host');
 
     if (!this.hostElem) return;
-
+    this.bodyElem = document.querySelector('body');
     this.popupElem = this.hostElem.querySelector('.js-header-popup-container');
     const popupWrapperElem = this.hostElem.querySelector('.js-header-popup-wrapper');
     const bottomBlockElem = this.hostElem.querySelector('.header__bottom-block-content');
@@ -35,6 +41,11 @@ export class Header {
     const hideWhenSearchElems = Array.from(this.hostElem.querySelectorAll('.js-hide-when-search'));
     const showWhenSearchElems = Array.from(this.hostElem.querySelectorAll('.js-show-when-search'));
     const inputSearch = this.hostElem.querySelector('.js-input-search');
+
+    const btnOpenSideBar = this.hostElem.querySelector('.js-open-side-bar');
+    const btnCloseSideBar = document.querySelector('.js-close-side-bar');
+    this.sideBarElem = document.querySelector('#side-bar-host');
+    this.sideBarContentElem = document.querySelector('#side-bar-content');
 
     this.contentMainPageBusinessElem = document.querySelector('#b-main-page-host');
 
@@ -52,6 +63,18 @@ export class Header {
         hideWhenSearchElems.map(elem => elem.classList.add('mod-show-search'));
         showWhenSearchElems.map(elem => elem.classList.remove('mod-show-search'));
         inputSearch.value = '';
+      }
+    }
+
+    if (btnOpenSideBar) {
+      btnOpenSideBar.onclick = () => {
+        this.onOpenSideBar();
+      }
+    }
+
+    if (btnCloseSideBar) {
+      btnCloseSideBar.onclick = () => {
+        this.onCloseSideBar();
       }
     }
 
@@ -169,6 +192,27 @@ export class Header {
       } else {
         this.contentMainPageBusinessElem.style.marginTop = `var(--header-height)`;
       }
+    }
+  }
+
+  onOpenSideBar() {
+    this.sideBarElem.classList.add('mod-show');
+    this.bodyElem.classList.add('mod-no-scroll');
+    document.addEventListener('click', this.checkClickBySideBar);
+  }
+
+  onCloseSideBar() {
+    this.sideBarElem.classList.remove('mod-show');
+    this.isOpenSideBar = false;
+    this.bodyElem.classList.remove('mod-no-scroll');
+    document.removeEventListener('click', this.checkClickBySideBar);
+  }
+
+  checkClickBySideBar(event) {
+    if (this.isOpenSideBar && !checkExistParent(event.target, this.sideBarContentElem)) {
+      this.onCloseSideBar();
+    } else {
+      this.isOpenSideBar = true;
     }
   }
 }
