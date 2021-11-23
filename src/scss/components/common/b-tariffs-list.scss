@@ -38,9 +38,9 @@
   background-color: #fff;
   box-shadow: 0 0 20px rgba(153, 152, 168, 0.17);
   border-radius: 1rem;
-  transition: transform 300ms;
   min-height: 41rem;
   height: 100%;
+  @extend %hover-slide-link;
 
   &.mod-hit {
     background-color: #00A8E7;
@@ -110,10 +110,6 @@
       border-bottom: solid 0.1rem var(--border-color);
       padding-bottom: 2.2rem;
     }
-  }
-
-  &:hover {
-    transform: translateY(-1rem);
   }
 
   &.mod-expanded {

@@ -9,7 +9,7 @@
       <div class="gl-slider__b-container gl-slider__container swiper-container js-swiper-container">
         <div class="gl-slider__wrapper swiper-wrapper">
           {{#each slidesList}}
-            <div class="b-low-slider__slide swiper-slide">
+            <a class="b-low-slider__slide swiper-slide">
               <div class="b-low-slider__slide-content {{#if isTopSubtitle }}mod-top-subtitle{{/if}}">
                 <img src="{{ this.img }}" alt="" class="b-low-slider__background">
                 <div class="b-low-slider__title {{#if isWhiteTitle }}mod-white{{/if}}">
@@ -27,7 +27,7 @@
                   от <span class="number">{{ this.subtitlePrice }}</span>₽/мес
                 </div>
               {{/if}}
-            </div>
+            </a>
           {{/each}}
         </div>
       </div>
