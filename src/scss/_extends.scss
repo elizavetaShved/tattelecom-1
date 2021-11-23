@@ -37,7 +37,7 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color:var(--main-color);
+    background-color: var(--main-color);
     border-radius: 4px;
   }
 
@@ -52,6 +52,14 @@
 
 %scroll-business {
   &::-webkit-scrollbar-thumb {
-    background-color:var(--main-color-business);
+    background-color: var(--main-color-business);
+  }
+}
+
+%hover-slide-link {
+  transition: transform 300ms;
+
+  &:hover {
+    transform: translateY(-1rem);
   }
 }

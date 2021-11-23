@@ -11,12 +11,12 @@
       <div class="gl-slider__b-container gl-slider__container swiper-container js-swiper-container">
         <div class="gl-slider__wrapper swiper-wrapper">
           {{#each slidesList}}
-            <div class="b-normal-slider__slide swiper-slide">
+            <a class="b-normal-slider__slide swiper-slide">
               <img src="{{ this.img }}" alt="" class="b-normal-slider__background">
               <div class="b-normal-slider__title {{#if isWhiteTitle }}mod-white{{/if}}">
                 {{ this.title }}
               </div>
-            </div>
+            </a>
           {{/each}}
         </div>
       </div>

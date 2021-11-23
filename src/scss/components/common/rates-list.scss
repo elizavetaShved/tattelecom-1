@@ -15,12 +15,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform 300ms;
   height: 100%;
-
-  &:hover {
-    transform: translateY(-1rem);
-  }
+  @extend %hover-slide-link;
 }
 
 .rates-list__slide-hit {

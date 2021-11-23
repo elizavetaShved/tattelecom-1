@@ -23,6 +23,7 @@
   flex-direction: column;
   justify-content: flex-end;
   width: 60rem;
+  @extend %hover-slide-link;
 }
 
 .b-normal-slider__title {

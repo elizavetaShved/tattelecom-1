@@ -11,6 +11,7 @@
   padding: 2.2rem 2.8rem;
   overflow: hidden;
   color: var(--main-color-business);
+  @extend %hover-slide-link;
 }
 
 .b-high-slider__background {
