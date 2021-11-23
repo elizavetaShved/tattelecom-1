@@ -30,7 +30,30 @@ export class Header {
     this.menuLinkElements = this.hostElem.querySelectorAll('.header__bottom-menu-link');
     this.popupContentElements = Array.from(this.hostElem.querySelectorAll('.js-header-popup'));
 
+    const btnOpenSearch = this.hostElem.querySelector('.js-open-search-btn');
+    const btnCloseSearch = this.hostElem.querySelector('.js-close-search-btn');
+    const hideWhenSearchElems = Array.from(this.hostElem.querySelectorAll('.js-hide-when-search'));
+    const showWhenSearchElems = Array.from(this.hostElem.querySelectorAll('.js-show-when-search'));
+    const inputSearch = this.hostElem.querySelector('.js-input-search');
+
     this.contentMainPageBusinessElem = document.querySelector('#b-main-page-host');
+
+    hideWhenSearchElems.map(elem => elem.classList.add('mod-show-search'));
+
+    if (btnOpenSearch) {
+      btnOpenSearch.onclick = () => {
+        hideWhenSearchElems.map(elem => elem.classList.remove('mod-show-search'));
+        showWhenSearchElems.map(elem => elem.classList.add('mod-show-search'));
+      }
+    }
+
+    if (btnCloseSearch) {
+      btnCloseSearch.onclick = () => {
+        hideWhenSearchElems.map(elem => elem.classList.add('mod-show-search'));
+        showWhenSearchElems.map(elem => elem.classList.remove('mod-show-search'));
+        inputSearch.value = '';
+      }
+    }
 
     // наведение на ссылку в меню нижнего блока
     this.menuLinkElements.forEach(link => {
@@ -87,7 +110,7 @@ export class Header {
   // открыть поп-ап
   openPopUp(link) {
     this.isTattelekomMain = !!document.querySelector('.js-tattelekom-pages');
-    
+
     // если не разделы таттелком то выполняем
     if (this.isTattelekomMain == false) {
       this.popupElem.classList.add('mod-show');
@@ -99,7 +122,7 @@ export class Header {
             elem.style.marginLeft = 0;
           });
           popupContentElem.classList.add('mod-show');
-  
+
           if (popupContentElem.hasAttribute('data-alignment')) {
             const distanceXLink = this.menuLinkElements[popupContentElem.getAttribute('data-alignment')].getBoundingClientRect().x;
             const distanceXContent = popupContentElem.getBoundingClientRect().x;
@@ -107,7 +130,7 @@ export class Header {
           }
         }
       })
-  
+
       this.isOpenPopup = true;
     }
   }

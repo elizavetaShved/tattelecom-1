@@ -37,6 +37,10 @@
   // padding content
   --page-content-padding: 8rem;
 
+  @include for-lg-down {
+    --page-content-padding: 7rem;
+  }
+
   @include for-bg-down {
     --page-content-padding: 5rem;
   }
