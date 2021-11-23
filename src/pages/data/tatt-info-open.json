@@ -1,0 +1,147 @@
+{
+    "isTattelekom": true,
+    "title": "Раскрытие информации",
+    "script": "tatt-info-open-page",
+    "bread-crumbs": [
+        {
+          "name": "Главная"
+        },
+        {
+            "name": "Акционерам и инвесторам"
+        },
+        {
+          "name": "Раскрытие информации",
+          "noLink": true
+        }
+    ],
+    "tatt-table-lis": [
+        {
+            "link": "/tatt-investors.html",
+            "link-name": "Акционерам и инвесторам"
+        },
+        {
+            "link": "/tatt-year-report.html",
+            "link-name": "Годовые отчеты"
+        },
+        {   
+            "link": "/tatt-quartal-report.html",
+            "link-name": "Квартальная отчетность"
+        },
+        {
+            "link": "/tatt-msfo-report.html",
+            "link-name": "Отчетность по МСФО"
+        },
+        {
+            "link": "/tatt-emmision-doc.html",
+            "link-name": "Эмиссионные документы"
+        },
+        {
+            "link": "/tatt-internal-doc.html",
+            "link-name": "Учредительные и внутренние документы"
+        },
+        {
+            "link": "/tatt-affiliates-list.html",
+            "link-name": "Список аффилированных лиц"
+        },
+        {
+            "link": "/tatt-essential-facts.html",
+            "link-name": "Существенные факты"
+        },
+        {
+            "link": "/tatt-ratings.html",
+            "link-name": "Рейтинги"
+        },
+        {
+            "link": "/tatt-meetings-shareholders.html",
+            "link-name": "Cобрания акционеров"
+        },
+        {
+            "isActive": true,
+            "link": "/tatt-info-open.html",
+            "link-name": "Раскрытие информации"
+        },
+        {
+            "link": "/tatt-financial-statements.html",
+            "link-name": "Бухгалтерская отчетность"
+        }
+    ],
+    "archive-list": [
+        {
+            "archive-file": {
+                "date": "20.02.2020",
+                "name": "Информация за 2009 год",
+                "size": "Zip 2,97 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "date": "20.02.2020",
+                "name": "Информация за 2010 год",
+                "size": "Zip 2,97 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "date": "20.02.2020",
+                "name": "Информация за 2011 год",
+                "size": "Zip 2,97 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "date": "20.02.2020",
+                "name": "Информация за 2012 год",
+                "size": "Zip 2,97 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "date": "20.02.2020",
+                "name": "Информация за 2013 год",
+                "size": "Zip 2,97 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "date": "20.02.2020",
+                "name": "Информация за 2014 год",
+                "size": "Zip 2,97 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "date": "20.02.2020",
+                "name": "Информация за 2015 год",
+                "size": "Zip 2,97 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "date": "20.02.2020",
+                "name": "Информация за 2016 год",
+                "size": "Zip 2,97 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "date": "20.02.2020",
+                "name": "Информация за 2017 год",
+                "size": "Zip 2,97 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "date": "20.02.2020",
+                "name": "Информация за 2018 год",
+                "size": "Zip 2,97 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "date": "20.02.2020",
+                "name": "Информация за 2019 год",
+                "size": "Zip 2,97 МБ"
+            }
+        }
+    ]
+}  

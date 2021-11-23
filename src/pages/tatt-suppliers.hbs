@@ -1,0 +1,70 @@
+{{#extend "layout"}}
+{{#content "main"}}
+{{> bread-crumbs isTatt=true}}
+<section class="suppliers">
+  <div class="gl__page-content suppliers__content">
+    <div class="suppliers__content-block">
+      {{> tatt-suppliers/tatt-table-list }}
+      <div class="gl__lg-show">
+        {{> common/btn-settings text="Навигация" }}
+      </div>
+    </div>
+    <div class="suppliers__content-block">
+      <div class="suppliers__block">
+        <h2 class="suppliers__block-title gl__title">
+          Поставщикам
+        </h2>
+        <ul class="suppliers__list">
+          <li class="suppliers__item">
+            <a href="/" class="suppliers__item-link">
+              Закупки
+            </a>
+          </li>
+          <li class="suppliers__item">
+            <a href="/" class="suppliers__item-link">
+              Информация для субьектов МСП
+            </a>
+          </li>
+          <li class="suppliers__item">
+            <a href="/" class="suppliers__item-link">
+              Перечень ТРУ для МСП
+            </a>
+          </li>
+          <li class="suppliers__item">
+            <a href="/" class="suppliers__item-link">
+              Нормативные документы
+            </a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="suppliers__block">
+        <h2 class="suppliers__block-title gl__title">
+          Операторам связи
+        </h2>
+        <p>
+          ПАО «Таттелеком» — это крупнейший в Республике Татарстан оператор проводной электросвязи, стабильно занимающий
+          лидирующее положение на рынке оказания телекоммуникационных услуг.Мы уже работаем с операторами связи более
+          чем в 100 странах мира и заинтересованы в расширении партнерства. Если вы тоже хотите работать с нами,
+          оставьте заявку — и мы обсудим перспективы взаимовыгодного сотрудничества.
+        </p>
+        <a href="/" class="suppliers__button-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="suppliers__block">
+        <h2 class="suppliers__block-title gl__title">
+          Дилерам
+        </h2>
+        <p>
+          ПАО «Таттелеком» приглашает компании и индивидуальных предпринимателей  к сотрудничеству по реализации телекоммуникационных   услуг: мобильной связи «Летай», телефонии, телевидения и интернета.
+        </p>
+        <a href="/" class="suppliers__button-link">
+          Подробнее
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+{{/content}}
+{{/extend}}

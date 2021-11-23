@@ -1,0 +1,39 @@
+.archive-file {
+    &__file-link {
+        position: relative;
+        display: inline-flex;
+        
+        &:hover {
+            .archive-file__file-link-title {
+                color: var(--main-color);
+            }
+
+            .archive-file__file-link-icon {
+                stroke: var(--main-color);
+            }
+        }
+    }
+
+    &__file-link-icon {
+        stroke: var(--grey-text);
+        stroke-width: 2px;
+        margin-right: 1.6rem;
+        transition: stroke 200ms;
+    }
+
+    &__file-link-title {
+        display: block;
+        font-size: 1.6rem;
+        line-height: 2.5rem; 
+        color: var(--main-color-business);
+        transition: color 200ms;
+    }
+
+    &__file-link-subtitle {
+        font-weight: 300;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.02em;
+        color: var(--main-grey-color);
+    }
+}

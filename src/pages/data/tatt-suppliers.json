@@ -1,0 +1,47 @@
+{
+    "isTattelekom": true,
+    "title": "Годовые отчеты",
+    "script": "tatt-suppliers-page",
+    "bread-crumbs": [
+        {
+          "name": "Главная"
+        },
+        {
+          "name": "Партнерам",
+          "noLink": true
+        }
+    ],
+    "tatt-table-list": [
+        {
+            "isSubmenu": true,
+            "isCurrent": true,
+            "link-name": "Поставщикам",
+            "submenu": [
+                {
+                    "submenu-link": "/",
+                    "submenu-link-name": "Закупки"
+                },
+                {
+                    "submenu-link": "/",
+                    "submenu-link-name": "Информация для субьектов МСП"
+                },
+                {
+                    "submenu-link": "/",
+                    "submenu-link-name": "Перечень ТРУ для МСП "
+                },
+                {
+                    "submenu-link": "/",
+                    "submenu-link-name": "Нормативные документы"
+                }
+            ]
+        },
+        {
+            "link": "/",
+            "link-name": "Операторам связи"
+        },
+        {
+            "link": "/",
+            "link-name": "Дилерам"
+        }
+    ]
+}  

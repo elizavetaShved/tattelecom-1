@@ -1,0 +1,33 @@
+<div class="tatt-table-list__lg-container gl__filter-container--lg js-filter-container">
+    <ul class="tatt-table-list mod-suppliers gl__filter--lg js-modal-container">
+        <button type="button" class="gl__lg-show gl__filter-modal-close modal__btn-close js-filter-close" id="close-thanks-modal">
+            <svg width="32" height="32" aria-hidden="true" class="modal__close-icon">
+            <use xlink:href="#close"></use>
+            </svg>
+        </button>
+        {{#each tatt-table-list }}
+            {{#if isSubmenu }}
+                <li class="tatt-table-list__item {{#if isCurrent }}_is-current{{/if}}">
+                    <button class="tatt-table-list__item-link {{#if isCurrent }}_is-current{{/if}}">
+                        {{ this.link-name }}
+                    </button>
+                    <ul class="tatt-table-list__submenu">
+                        {{#each this.submenu }}
+                            <li class="tatt-table-list__submenu-item">
+                                <a href="{{ this.submenu-link }}" class="tatt-table-list__submenu-link">
+                                    {{ this.submenu-link-name }}
+                                </a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </li>
+                {{else }}
+                <li class="tatt-table-list__item">
+                    <a href="{{ this.link }}" class="tatt-table-list__item-link {{#if isActive }}_is-active{{/if}}">
+                        {{ this.link-name }}
+                    </a>
+                </li>
+            {{/if}}
+        {{/each}}
+    </ul>
+</div>

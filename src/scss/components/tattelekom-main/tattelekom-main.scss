@@ -194,6 +194,51 @@
         background-color: #fff;
         padding: 3rem 4.6rem;
     }
+
+    &.mod-suppliers {
+        .tatt-table-list__item {
+            padding: 1.5rem 0;
+
+            &._is-current {
+                padding-bottom: 0;
+            }
+        }
+
+        .tatt-table-list__item-link {
+            padding: 0;
+        }
+
+    }
+
+    &__submenu {
+        padding-top: 1.5rem;
+        &-item {
+            padding: 1.5rem 0;
+            padding-left: 2.5rem;
+            border-bottom: 1px solid var(--border-color);
+
+            &:first-child {
+                border-top: 1px solid var(--border-color);
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        &-link {
+            font-weight: 300;
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+            letter-spacing: 0.02em;
+
+            &:hover {
+                &:not(.gl__no-default-hover) {
+                    color: var(--main-color-business);
+                }
+            }
+        }
+    }
 }
 
 .tatt-select-wrap {
@@ -268,5 +313,30 @@
 
     @include for-lg-down {
         max-width: 100%;
+    }
+}
+
+.tatt-info-documents {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 3rem;
+    row-gap: 0;
+    margin-top: 7rem;
+
+    &__item {
+        grid-column: 4 span;
+        margin-bottom: 4rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @include for-xs-down {
+        margin-top: 4rem;
+
+        &__item {
+            grid-column: 9 span;
+        }
     }
 }
