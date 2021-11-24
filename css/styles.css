@@ -5173,6 +5173,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     stroke: var(--main-color); }
 
 .archive-file__file-link-icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   stroke: var(--grey-text);
   stroke-width: 2px;
   margin-right: 1.6rem;
@@ -14269,6 +14271,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     .suppliers__content-block.mod-purchases p:nth-last-of-type(1) {
       margin-bottom: 0; }
 
+.suppliers__content-block-img {
+  margin-bottom: 3.6rem; }
+
 .suppliers__block {
   margin-bottom: 8.8rem; }
   @media screen and (max-width: 559px) {
@@ -14350,6 +14355,22 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   border-radius: 3px;
   border: 1px solid var(--main-text-color); }
 
+.suppliers__archive-list {
+  margin-top: 4.7rem;
+  max-width: 67.5rem; }
+
+.suppliers__archive-list-item {
+  margin-bottom: 1.4rem; }
+  .suppliers__archive-list-item:last-child {
+    margin-bottom: 0; }
+
+.suppliers__archive-list-item-date {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: var(--main-grey-color); }
+
 .suppliers__dropdown {
   margin-top: 5rem; }
   .suppliers__dropdown-button {
@@ -14406,6 +14427,71 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   @media screen and (max-width: 959px) {
     .purchases {
       margin-bottom: 6rem; } }
+
+.dealers {
+  margin-bottom: 13.3rem; }
+  @media screen and (max-width: 959px) {
+    .dealers {
+      margin-bottom: 8rem; } }
+  .dealers__content-block {
+    margin-bottom: 6.5rem; }
+    .dealers__content-block:last-child {
+      margin-bottom: 0; }
+  .dealers__content-heading {
+    font-size: 2.6rem;
+    line-height: 3.3rem; }
+  .dealers__content-tel {
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2.6rem;
+    line-height: 3.3rem;
+    letter-spacing: 0.015em; }
+    .dealers__content-tel:nth-last-of-type(1) {
+      margin-bottom: 0; }
+  .dealers__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: -1.5rem; }
+    @media screen and (max-width: 959px) {
+      .dealers__list {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+  .dealers__item {
+    width: calc(25% - 3rem);
+    margin: 1.5rem; }
+    @media screen and (max-width: 959px) {
+      .dealers__item {
+        width: calc(50% - 3rem); } }
+    .dealers__item-icon-wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 9.4rem;
+      height: 9.4rem;
+      margin-bottom: 2.5rem;
+      background-color: var(--border-color);
+      border-radius: 4px; }
+    .dealers__item-count {
+      font-weight: 300;
+      font-size: 3.8rem;
+      line-height: 4.6rem;
+      color: var(--main-color-business); }
+    .dealers__item-icon {
+      width: 5.8rem;
+      height: 5.8rem;
+      fill: var(--main-color-business); }
+    .dealers__item-text {
+      font-weight: 300;
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.02em; }
 
 .b-telephone-services-links {
   padding: 3.6rem 0 5rem; }
