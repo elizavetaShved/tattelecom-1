@@ -18,9 +18,10 @@
         </label>
       </form>
 
-      <button type="button" class="side-bar__btn gl__main-btn js-open-callback-modal">
-        Стать абонентом
-      </button>
+      {{#if isPrivateClients }}
+        <button type="button" class="side-bar__btn gl__main-btn js-open-callback-modal">
+          Стать абонентом
+        </button>
 
       <ul class="side-bar__drops-list">
         <li class="side-bar__drop-item">
@@ -209,6 +210,150 @@
           </div>
         </li>
       </ul>
+      {{/if}}
+
+      {{#if isBusiness }}
+        <ul class="side-bar__drops-list">
+          <li class="side-bar__drop-item">
+            <button class="side-bar__drop-btn gl__drop-menu-btn js-drop-menu-btn">
+              Комплексные решения для бизнеса
+              <svg width="24" height="24" aria-hidden="true" class="side-bar__drop-btn-icon gl__drop-menu-icon">
+                <use xlink:href="#arrow-down"></use>
+              </svg>
+            </button>
+
+            <div class="gl__drop-menu-container js-drop-menu-container">
+              <ul class="side-bar__drop-content gl__drop-menu js-drop-menu">
+                <li class="side-bar__drop-content-item">
+                  <div class="side-bar__drop-caption"><a href="">Комплекс услуг связи (Единый бизнес)</a></div>
+                </li>
+                <li class="side-bar__drop-content-item">
+                  <div class="side-bar__drop-caption"><a href="">Виртуальная АТС</a></div>
+                </li>
+                <li class="side-bar__drop-content-item">
+                  <div class="side-bar__drop-caption"><a href="">Таттелеком Коннект (ЭДокс)</a></div>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="side-bar__drop-item">
+            <button class="side-bar__drop-btn gl__drop-menu-btn js-drop-menu-btn">
+              Связь
+              <svg width="24" height="24" aria-hidden="true" class="side-bar__drop-btn-icon gl__drop-menu-icon">
+                <use xlink:href="#arrow-down"></use>
+              </svg>
+            </button>
+
+            <div class="gl__drop-menu-container js-drop-menu-container">
+              <ul class="side-bar__drop-content gl__drop-menu js-drop-menu">
+                <li class="side-bar__drop-content-item">
+                  <div class="side-bar__drop-caption">Мобильная связь</div>
+                  <ul class="side-bar__drop-links-list">
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Тарифы Мобильной связи</a></li>
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Тарифы Мобильного интернета</a></li>
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Роуминг</a></li>
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">«Красивый» номер</a></li>
+                  </ul>
+                </li>
+                <li class="side-bar__drop-content-item">
+                  <div class="side-bar__drop-caption">Интернет</div>
+                  <ul class="side-bar__drop-links-list">
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Интернет для офиса</a></li>
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Интернет Wi-Fi</a></li>
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Интернет по Радиоканалу</a></li>
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Виртуальные сети IP VPN</a></li>
+                  </ul>
+                </li>
+                <li class="side-bar__drop-content-item">
+                  <div class="side-bar__drop-caption">Телефония</div>
+                  <ul class="side-bar__drop-links-list">
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Междугородная и международная связь</a></li>
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Виртуальная АТС</a></li>
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Цифровая Телефония</a></li>
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Сервисы и услуги</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="side-bar__drop-item">
+            <button class="side-bar__drop-btn gl__drop-menu-btn js-drop-menu-btn">
+              Цифровые сервисы
+              <svg width="24" height="24" aria-hidden="true" class="side-bar__drop-btn-icon gl__drop-menu-icon">
+                <use xlink:href="#arrow-down"></use>
+              </svg>
+            </button>
+
+            <div class="gl__drop-menu-container js-drop-menu-container">
+              <ul class="side-bar__drop-content gl__drop-menu js-drop-menu">
+                <li class="side-bar__drop-content-item">
+                  <div class="side-bar__drop-caption">Интернет вещей</div>
+                  <ul class="side-bar__drop-links-list">
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">LoRaWAN</a></li>
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">М2М решения для бизнеса</a></li>
+                  </ul>
+                </li>
+                <li class="side-bar__drop-content-item">
+                  <div class="side-bar__drop-caption">Обработка и хранение данных</div>
+                  <ul class="side-bar__drop-links-list">
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Colocation</a></li>
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Виртуальный сервер</a></li>
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Web–хостинг</a></li>
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Регистрация доменов </a></li>
+                  </ul>
+                </li>
+                <li class="side-bar__drop-content-item">
+                  <div class="side-bar__drop-caption">Контроль и видеонаблюдение</div>
+                  <ul class="side-bar__drop-links-list">
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Облачное видеонаблюдение</a></li>
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">М2М Контроль</a></li>
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Видеоаналитика</a></li>
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Домофония</a></li>
+                  </ul>
+                </li>
+                <li class="side-bar__drop-content-item">
+                  <div class="side-bar__drop-caption">Безопасность</div>
+                  <ul class="side-bar__drop-links-list">
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">DDoS защита</a></li>
+                  </ul>
+                </li>
+                <li class="side-bar__drop-content-item">
+                  <div class="side-bar__drop-caption">Решения для бизнеса</div>
+                  <ul class="side-bar__drop-links-list">
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Видеоконференцсвязь</a></li>
+                    <li class="side-bar__drop-links-item"><a href="" class="side-bar__drop-link">Услуги Ак Барс Банк</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="side-bar__drop-item">
+            <button class="side-bar__drop-btn gl__drop-menu-btn js-drop-menu-btn">
+              Продвижение
+              <svg width="24" height="24" aria-hidden="true" class="side-bar__drop-btn-icon gl__drop-menu-icon">
+                <use xlink:href="#arrow-down"></use>
+              </svg>
+            </button>
+
+            <div class="gl__drop-menu-container js-drop-menu-container">
+              <ul class="side-bar__drop-content gl__drop-menu js-drop-menu">
+                <li class="side-bar__drop-content-item">
+                  <div class="side-bar__drop-caption"><a href="">SMS рассылка</a></div>
+                </li>
+                <li class="side-bar__drop-content-item">
+                  <div class="side-bar__drop-caption"><a href="">Услуги Call–центра</a></div>
+                </li>
+                <li class="side-bar__drop-content-item">
+                  <div class="side-bar__drop-caption"><a href="">SMART  Wi-Fi</a></div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      {{/if}}
     </div>
 
     <div class="side-bar__bottom">

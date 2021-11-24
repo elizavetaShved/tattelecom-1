@@ -404,20 +404,23 @@
 .header__btns-container {
   display: flex;
   align-items: center;
+  margin-left: 6rem;
+
+  @include for-mx-down {
+    margin-left: 2rem;
+  }
+
+  @include for-fl-down {
+    margin-left: 1.4rem;
+  }
 }
 
 .header__btn-search {
   padding: 1rem;
   margin-right: 2rem;
-  margin-left: 6rem;
-
-  @include for-mx-down {
-    margin: 0 2rem;
-  }
 
   @include for-fl-down {
-    padding: .6rem;
-    margin: 0 1.4rem;
+    margin-right: 1.4rem;
   }
 
   &:hover {
