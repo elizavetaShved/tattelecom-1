@@ -2100,18 +2100,18 @@ button.swiper-pagination-bullet {
   background-color: var(--main-color-business);
   color: #fff; }
 
-textarea::-webkit-scrollbar, .gl__layout-wrapper.mod-business textarea::-webkit-scrollbar, .select__container .choices__list::-webkit-scrollbar, .side-bar__content::-webkit-scrollbar, .modal__container::-webkit-scrollbar, .phone-list__select-wrapper .choices__list::-webkit-scrollbar {
+textarea::-webkit-scrollbar, .gl__layout-wrapper.mod-business textarea::-webkit-scrollbar, .select__container .choices__list::-webkit-scrollbar, .side-bar__content::-webkit-scrollbar, .modal__container::-webkit-scrollbar, .phone-list__select-wrapper .choices__list::-webkit-scrollbar, .sales-offices-map__list::-webkit-scrollbar {
   background-color: white;
   width: 0.6rem; }
 
-textarea::-webkit-scrollbar-thumb, .gl__layout-wrapper.mod-business textarea::-webkit-scrollbar-thumb, .select__container .choices__list::-webkit-scrollbar-thumb, .side-bar__content::-webkit-scrollbar-thumb, .modal__container::-webkit-scrollbar-thumb, .phone-list__select-wrapper .choices__list::-webkit-scrollbar-thumb {
+textarea::-webkit-scrollbar-thumb, .gl__layout-wrapper.mod-business textarea::-webkit-scrollbar-thumb, .select__container .choices__list::-webkit-scrollbar-thumb, .side-bar__content::-webkit-scrollbar-thumb, .modal__container::-webkit-scrollbar-thumb, .phone-list__select-wrapper .choices__list::-webkit-scrollbar-thumb, .sales-offices-map__list::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
   border-radius: 4px; }
 
-textarea::-webkit-scrollbar-button, .gl__layout-wrapper.mod-business textarea::-webkit-scrollbar-button, .select__container .choices__list::-webkit-scrollbar-button, .side-bar__content::-webkit-scrollbar-button, .modal__container::-webkit-scrollbar-button, .phone-list__select-wrapper .choices__list::-webkit-scrollbar-button {
+textarea::-webkit-scrollbar-button, .gl__layout-wrapper.mod-business textarea::-webkit-scrollbar-button, .select__container .choices__list::-webkit-scrollbar-button, .side-bar__content::-webkit-scrollbar-button, .modal__container::-webkit-scrollbar-button, .phone-list__select-wrapper .choices__list::-webkit-scrollbar-button, .sales-offices-map__list::-webkit-scrollbar-button {
   display: none; }
 
-textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-webkit-scrollbar-track, .select__container .choices__list::-webkit-scrollbar-track, .side-bar__content::-webkit-scrollbar-track, .modal__container::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-webkit-scrollbar-track {
+textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-webkit-scrollbar-track, .select__container .choices__list::-webkit-scrollbar-track, .side-bar__content::-webkit-scrollbar-track, .modal__container::-webkit-scrollbar-track, .phone-list__select-wrapper .choices__list::-webkit-scrollbar-track, .sales-offices-map__list::-webkit-scrollbar-track {
   background-color: var(--border-color); }
 
 .gl__layout-wrapper.mod-business .select__container .choices__list::-webkit-scrollbar-thumb {
@@ -2303,6 +2303,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
           user-select: none; }
   .checkbox__text.mod-main {
     color: #F9FAFB; }
+  .checkbox__text.mod-black {
+    color: var(--main-text-color); }
   .checkbox__text.mod-modal {
     color: var(--grey-text); }
   .checkbox__text.mod-grey-dark {
@@ -10941,6 +10943,126 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   line-height: 2.6rem;
   letter-spacing: 0.02em;
   color: var(--main-grey-color); }
+
+.sales-offices-map {
+  padding-top: 4rem; }
+  @media screen and (max-width: 767px) {
+    .sales-offices-map {
+      padding-top: 2rem; } }
+
+.sales-offices-map__container {
+  position: relative; }
+
+.sales-offices-map__points-list {
+  position: absolute;
+  top: 3.8rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none; }
+
+.sales-offices-map__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 67rem;
+  background-color: lightgrey;
+  width: 100%; }
+  .sales-offices-map__map .address {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: var(--main-text-color); }
+  .sales-offices-map__map .city {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: var(--main-grey-color);
+    margin-top: .4rem; }
+
+.sales-offices-map__points-list__content {
+  width: 41rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 16px rgba(51, 51, 51, 0.08);
+          box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 16px rgba(51, 51, 51, 0.08);
+  border-radius: 20px;
+  pointer-events: auto; }
+
+.sales-offices-map__form {
+  padding: 1rem 3rem; }
+
+.sales-offices-map__input-search-wrapper {
+  width: 100%;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid var(--main-text-color);
+  margin-bottom: 2rem; }
+
+.sales-offices-map__input-search {
+  height: 100%;
+  width: 100%;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.8rem; }
+  .sales-offices-map__input-search::-webkit-input-placeholder {
+    color: var(--main-grey-color); }
+  .sales-offices-map__input-search::-moz-placeholder {
+    color: var(--main-grey-color); }
+  .sales-offices-map__input-search:-ms-input-placeholder {
+    color: var(--main-grey-color); }
+  .sales-offices-map__input-search::-ms-input-placeholder {
+    color: var(--main-grey-color); }
+  .sales-offices-map__input-search::placeholder {
+    color: var(--main-grey-color); }
+
+.sales-offices-map__input-search-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-left: .6rem;
+  fill: var(--main-text-color); }
+
+.sales-offices-map__list {
+  height: 43rem;
+  overflow: auto; }
+
+.sales-offices-map__item {
+  padding: 1.6rem 3rem;
+  border-top: 1px solid var(--border-color-2);
+  cursor: pointer; }
+  .sales-offices-map__item.mod-hide {
+    display: none; }
+
+.sales-offices-map__item-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  margin-bottom: .8rem; }
+
+.sales-offices-map__item-city {
+  color: var(--main-grey-color);
+  margin-left: .8rem; }
+
+.sales-offices-map__item-work-time-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 7.4rem);
+  grid-gap: 2rem; }
+
+.sales-offices-map__item-work-caption {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  color: var(--main-color); }
+
+.sales-offices-map__item-work-value {
+  font-size: 1.2rem;
+  line-height: 1.6rem; }
 
 .b-support__content {
   display: grid;
