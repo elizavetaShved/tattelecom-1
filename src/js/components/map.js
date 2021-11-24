@@ -33,6 +33,7 @@ export class Map {
   }
 
   addGeoMark(x, y, name) {
+    console.log(x, y, name)
     const myPlacemark = new ymaps.Placemark([x, y], {
       iconCaption: name
     }, {
