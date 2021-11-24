@@ -5407,6 +5407,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     @media screen and (max-width: 1159px) {
       .header.mod-tattelekom .header__bottom-menu-item {
         margin-right: 2rem; } }
+  .header.mod-tattelekom .header__btns-container {
+    margin-left: 6rem; }
 
 .header__content {
   background-repeat: repeat;
@@ -13681,14 +13683,22 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 
 .tatt-table-list.mod-suppliers .tatt-table-list__item {
   padding: 1.5rem 0; }
-  .tatt-table-list.mod-suppliers .tatt-table-list__item._is-current {
-    padding-bottom: 0; }
 
 .tatt-table-list.mod-suppliers .tatt-table-list__item-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
   padding: 0; }
 
 .tatt-table-list__submenu {
-  padding-top: 1.5rem; }
+  padding: 1.5rem 0 0 0; }
   .tatt-table-list__submenu-item {
     padding: 1.5rem 0;
     padding-left: 2.5rem;
@@ -13696,12 +13706,16 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     .tatt-table-list__submenu-item:first-child {
       border-top: 1px solid var(--border-color); }
     .tatt-table-list__submenu-item:last-child {
-      border-bottom: none; }
+      border-bottom: none;
+      padding-bottom: 0; }
   .tatt-table-list__submenu-link {
     font-weight: 300;
     font-size: 1.6rem;
     line-height: 2.5rem;
     letter-spacing: 0.02em; }
+    .tatt-table-list__submenu-link._is-current {
+      font-weight: 400;
+      color: var(--main-color-business); }
     .tatt-table-list__submenu-link:hover:not(.gl__no-default-hover) {
       color: var(--main-color-business); }
 
@@ -14128,6 +14142,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     @media screen and (max-width: 1159px) {
       .suppliers__content-block:nth-of-type(2) {
         grid-column: 12 span; } }
+  .suppliers__content-block.mod-purchases p {
+    margin-bottom: 1.5rem; }
+    .suppliers__content-block.mod-purchases p:nth-last-of-type(1) {
+      margin-bottom: 0; }
 
 .suppliers__block {
   margin-bottom: 8.8rem; }
@@ -14139,12 +14157,14 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: -1.7rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media screen and (max-width: 959px) {
+    .suppliers__list {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
   @media screen and (max-width: 1559px) {
     .suppliers__list {
       margin: -1.2rem; } }
@@ -14207,6 +14227,63 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   padding: 1.7rem 6.5rem;
   border-radius: 3px;
   border: 1px solid var(--main-text-color); }
+
+.suppliers__dropdown {
+  margin-top: 5rem; }
+  .suppliers__dropdown-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.015em; }
+  .suppliers__dropdown-button-icon {
+    display: block;
+    margin-left: 0.3rem; }
+  .suppliers__dropdown-content {
+    padding-top: 2.5rem; }
+    @media screen and (max-width: 959px) {
+      .suppliers__dropdown-content {
+        padding-top: 1.5rem; } }
+  .suppliers__dropdown-content-item {
+    margin-bottom: 2.7rem; }
+    .suppliers__dropdown-content-item:last-child {
+      margin-bottom: 0; }
+  .suppliers__dropdown-content-date {
+    display: block;
+    margin-bottom: 1.6rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: var(--main-grey-color); }
+  .suppliers__dropdown-heading {
+    display: inline-block;
+    margin-bottom: 1.7rem;
+    font-size: 2rem;
+    line-height: 3.2rem; }
+
+.suppliers__select {
+  max-width: 12.7rem;
+  margin-bottom: 5rem; }
+  .suppliers__select .select__container.mod-simple-design .choices__inner {
+    padding: 1.5rem 1.8rem !important;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: var(--border-color) !important; }
+  .suppliers__select .select__container.mod-simple-design .choices__item--selectable {
+    font-size: 2rem;
+    line-height: 3.2rem; }
+  .suppliers__select .gl-input__title {
+    font-size: 1.6rem;
+    line-height: 1.9rem; }
+
+.purchases {
+  margin-bottom: 10.4rem; }
+  @media screen and (max-width: 959px) {
+    .purchases {
+      margin-bottom: 6rem; } }
 
 .b-telephone-services-links {
   padding: 3.6rem 0 5rem; }
