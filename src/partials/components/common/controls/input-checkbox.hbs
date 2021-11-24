@@ -8,11 +8,12 @@
   isChecked - нужен ли checked изначально
   isModal - чекбокс для модалки
   captionGreyDark - цвет подписи #A6A6A6 (--main-grey-color)
+  captionBlack - цвет подписи черный
 -->
 
 <label class="checkbox__wrapper">
   <input type="checkbox"
-         class="checkbox" name="{{ name }}"
+         class="checkbox {{#if isControl }}js-checkbox{{/if}}" name="{{ name }}"
     {{#if required }}
          data-parsley-required=""
     {{/if}}
@@ -42,6 +43,8 @@
       mod-filter
     {{else if captionGreyDark}}
       mod-grey-dark
+    {{else if captionBlack}}
+      mod-black
     {{else}}
       mod-main
     {{/if}}">

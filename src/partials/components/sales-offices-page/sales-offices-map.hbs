@@ -1,0 +1,58 @@
+<section class="sales-offices-map" id="sales-offices-map-host">
+  <div class="gl__page-content">
+    <h2 class="gl__title">
+      Офисы продаж
+    </h2>
+  </div>
+
+  <div class="sales-offices-map__container">
+    <div class="sales-offices-map__points-list">
+      <div class="gl__page-content">
+        <div class="sales-offices-map__points-list__content">
+          <form class="sales-offices-map__form">
+            <label class="sales-offices-map__input-search-wrapper">
+              <input type="text" class="sales-offices-map__input-search js-input-search" placeholder="Поиск">
+              <svg width="24" height="24" aria-hidden="true" class="sales-offices-map__input-search-icon">
+                <use xlink:href="#search"></use>
+              </svg>
+            </label>
+            {{> common/controls/input-checkbox
+              caption="Офисы партнёров"
+              isControl=true
+              name="checkbox-ofice"
+              captionBlack=true
+            }}
+          </form>
+
+          <ul class="sales-offices-map__list">
+            {{#each officesList }}
+              <li class="sales-offices-map__item js-offices-item" data-coord="{{this.coords}}" {{#if isPartner }}data-is-partner{{/if}}>
+                <div class="sales-offices-map__item-header">
+                  <div class="sales-offices-map__item-address js-address">{{this.address}}</div>
+                  <div class="sales-offices-map__item-city js-city">{{this.city}}</div>
+                </div>
+
+                <div class="sales-offices-map__item-work-time-wrapper">
+                  <div class="sales-offices-map__item-work-time">
+                    <div class="sales-offices-map__item-work-caption">пн.–пт.</div>
+                    <div class="sales-offices-map__item-work-value">{{this.weekday }}</div>
+                  </div>
+                  <div class="sales-offices-map__item-work-time">
+                    <div class="sales-offices-map__item-work-caption">сб.</div>
+                    <div class="sales-offices-map__item-work-value">{{this.saturday }}</div>
+                  </div>
+                  <div class="sales-offices-map__item-work-time">
+                    <div class="sales-offices-map__item-work-caption">вс.</div>
+                    <div class="sales-offices-map__item-work-value">{{this.sunday }}</div>
+                  </div>
+                </div>
+              </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sales-offices-map__map js-map" data-center="[55.78, 49.1]" data-pin="img/common/balloon.svg">
+    </div>
+  </div>
+</section>
