@@ -78,6 +78,11 @@ module.exports = {
     ['tatt-info-open-page']: './src/js/pages/tatt-info-open-page',
     ['tatt-suppliers-page']: './src/js/pages/tatt-suppliers-page',
     ['tatt-purchases-page']: './src/js/pages/tatt-purchases-page',
+    ['tatt-msp-page']: './src/js/pages/tatt-msp-page',
+    ['tatt-tru-page']: './src/js/pages/tatt-tru-page',
+    ['tatt-regulations-page']: './src/js/pages/tatt-regulations-page',
+    ['tatt-telecom-operators-page']: './src/js/pages/tatt-telecom-operators-page',
+    ['tatt-dealers-page']: './src/js/pages/tatt-dealers-page',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

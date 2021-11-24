@@ -1,6 +1,6 @@
 {
     "isTattelekom": true,
-    "title": "Годовые отчеты",
+    "title": "Закупки",
     "script": "tatt-purchases-page",
     "bread-crumbs": [
         {
@@ -20,6 +20,7 @@
     "tatt-table-list": [
         {
             "isSubmenu": true,
+            "isDropOpen": true,
             "link": "/tattelecom-1/tatt-suppliers.html",
             "link-name": "Поставщикам",
             "submenu": [
@@ -29,25 +30,25 @@
                     "isCurrent": true
                 },
                 {
-                    "submenu-link": "/tattelecom-1/",
+                    "submenu-link": "/tattelecom-1/tatt-msp.html",
                     "submenu-link-name": "Информация для субьектов МСП"
                 },
                 {
-                    "submenu-link": "/tattelecom-1/",
+                    "submenu-link": "/tattelecom-1/tatt-tru.html",
                     "submenu-link-name": "Перечень ТРУ для МСП "
                 },
                 {
-                    "submenu-link": "/tattelecom-1/",
+                    "submenu-link": "/tattelecom-1/tatt-regulations.html",
                     "submenu-link-name": "Нормативные документы"
                 }
             ]
         },
         {
-            "link": "/",
+            "link": "/tattelecom-1/tatt-telecom-operators.html",
             "link-name": "Операторам связи"
         },
         {
-            "link": "/",
+            "link": "/tattelecom-1/tatt-dealers.html",
             "link-name": "Дилерам"
         }
     ],

@@ -15,6 +15,7 @@
     }
 
     &__file-link-icon {
+        flex-shrink: 0;
         stroke: var(--grey-text);
         stroke-width: 2px;
         margin-right: 1.6rem;

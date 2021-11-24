@@ -1,0 +1,35 @@
+{{#extend "layout"}}
+{{#content "main"}}
+{{> bread-crumbs isTatt=true}}
+<section class="suppliers purchases">
+    <div class="gl__page-content suppliers__content">
+        <div class="suppliers__content-block">
+            {{> tatt-suppliers/tatt-table-list }}
+            <div class="gl__lg-show">
+                {{> common/btn-settings text="Навигация" }}
+            </div>
+        </div>
+        <div class="suppliers__content-block mod-purchases">
+            <h2 class="suppliers__block-title gl__title">
+               Перечень ТРУ для МСП
+            </h2>
+
+            <div class="suppliers__select">
+                {{> common/controls/select selects=year-select }}
+            </div>
+
+            <div class="suppliers__archive-list">
+                {{#each suppliers-archive-list }}
+                    <div class="suppliers__archive-list-item">
+                        <span class="suppliers__archive-list-item-date">
+                            19.03.2020
+                        </span>
+                        {{> common/archive-file }}
+                    </div>  
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</section>
+{{/content}}
+{{/extend}}

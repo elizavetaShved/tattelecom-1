@@ -1,0 +1,86 @@
+{{#extend "layout"}}
+{{#content "main"}}
+{{> bread-crumbs isTatt=true}}
+<section class="suppliers dealers">
+    <div class="gl__page-content suppliers__content">
+        <div class="suppliers__content-block">
+            {{> tatt-suppliers/tatt-table-list }}
+            <div class="gl__lg-show">
+                {{> common/btn-settings text="Навигация" }}
+            </div>
+        </div>
+        <div class="suppliers__content-block mod-purchases">
+            <h2 class="suppliers__block-title gl__title">
+               Дилерам
+            </h2>
+            <div class="dealers__content-block">
+                <div class="suppliers__dropdown">
+                    <button class="suppliers__dropdown-button gl__drop-menu-btn js-drop-menu-btn js-drop-menu-leave-open">
+                        <span>
+                            Стандартные агентские договора ООО «ТМТ»
+                        </span>
+                        <svg width="24" height="24" aria-hidden="true" class="suppliers__dropdown-button-icon gl__drop-menu-icon">
+                            <use xlink:href="#arrow-down"></use>
+                        </svg>
+                    </button>
+                    <div class="gl__drop-menu-container js-drop-menu-container">
+                        <div class="suppliers__dropdown-content gl__drop-menu js-drop-menu">
+                            {{#each suppliers-dropdown-list }}
+                                <div class="suppliers__dropdown-content-item">
+                                    {{> common/archive-file }}
+                                </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dealers__content-block">
+                <p>
+                    ПАО «Таттелеком» приглашает компании и индивидуальных предпринимателей  к сотрудничеству по реализации телекоммуникационных   услуг: мобильной связи «Летай», телефонии, телевидения и интернета
+                </p>
+            </div>
+            {{#each dealers-blocks }}
+                <div class="dealers__content-block">
+                    <h2 class="gl__title">
+                        {{this.title}}
+                    </h2>
+
+                    <ul class="dealers__list">
+                        {{#each this.list-items }}
+                            <li class="dealers__item">
+                                <div class="dealers__item-icon-wrap">
+                                    {{#if isCount }}
+                                    <span class="dealers__item-count">
+                                        {{ this.count  }}
+                                    </span>
+                                    {{else }}
+                                        <svg width="58" height="58" aria-hidden="true" class="dealers__item-icon">
+                                            <use xlink:href="#{{ this.icon }}"></use>
+                                        </svg>
+                                    {{/if}}
+                                </div>
+                                <span class="dealers__item-text">
+                                    {{ this.caption }}
+                                </span>
+                            </li>
+                        {{/each}} 
+                    </ul>
+                </div>
+            {{/each}}
+            <div class="dealers__content-block">
+                <h2 class="gl__title dealers__content-heading">
+                    Подробную информацию вы можете узнать по телефонам:
+                </h2>
+
+                <a class="dealers__content-tel" href="tel:+78435610578">(843) 561-05-78</a>
+                <br>
+                <a class="dealers__content-tel" href="tel:+78435610581">(843) 561-05-81</a>
+                 <br>
+                <a class="dealers__content-tel" href="tel:+78435610588">(843) 561-05-88</a>
+            </div> 
+        </div>
+    </div>
+</section>
+{{/content}}
+{{/extend}}

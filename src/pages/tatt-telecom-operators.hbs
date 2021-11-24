@@ -1,0 +1,25 @@
+{{#extend "layout"}}
+{{#content "main"}}
+{{> bread-crumbs isTatt=true}}
+<section class="suppliers purchases">
+    <div class="gl__page-content suppliers__content">
+        <div class="suppliers__content-block">
+            {{> tatt-suppliers/tatt-table-list }}
+            <div class="gl__lg-show">
+                {{> common/btn-settings text="Навигация" }}
+            </div>
+        </div>
+        <div class="suppliers__content-block mod-purchases">
+            <h2 class="suppliers__block-title gl__title">
+               Операторам связи
+            </h2>
+            <div class="tatt-file-wrap">
+            {{#each suppliers-archive-list }}
+                {{> common/pdf-file }}
+            {{/each}}
+            </div>
+        </div>
+    </div>
+</section>
+{{/content}}
+{{/extend}}

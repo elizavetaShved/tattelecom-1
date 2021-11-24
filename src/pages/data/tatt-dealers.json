@@ -1,0 +1,200 @@
+{
+    "isTattelekom": true,
+    "title": "Дилерам",
+    "script": "tatt-dealers-page",
+    "bread-crumbs": [
+        {
+          "name": "Главная"
+        },
+        {
+          "name": "Партнерам"
+        },
+        {
+            "name": "Дилерам",
+            "noLink": true
+        }
+    ],
+    "tatt-table-list": [
+        {
+            "isSubmenu": true,
+            "link": "/tattelecom-1/tatt-suppliers.html",
+            "link-name": "Поставщикам",
+            "submenu": [
+                {
+                    "submenu-link": "/tattelecom-1/tatt-purchases.html",
+                    "submenu-link-name": "Закупки"
+                },
+                {
+                    "submenu-link": "/tattelecom-1/tatt-msp.html",
+                    "submenu-link-name": "Информация для субьектов МСП"
+                },
+                {
+                    "submenu-link": "/tattelecom-1/tatt-tru.html",
+                    "submenu-link-name": "Перечень ТРУ для МСП "
+                },
+                {
+                    "submenu-link": "/tattelecom-1/tatt-regulations.html",
+                    "submenu-link-name": "Нормативные документы"
+                }
+            ]
+        },
+        {
+            "link": "/tattelecom-1/tatt-telecom-operators.html",
+            "link-name": "Операторам связи"
+        },
+        {
+            "link": "/tattelecom-1/tatt-dealers.html",
+            "link-name": "Дилерам",
+            "isActive": true
+        }
+    ],
+    "suppliers-dropdown-list": [
+        {
+            "archive-file": {
+                "name": "Агентский договор для ЦТО",
+                "size": "Zip 2,97 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "name": "Агентский договор вариант до 23.08.2017г.",
+                "size": "Zip 2,97 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "name": "Агентский договор с 23.08.2017г.",
+                "size": "Zip 2,97 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "name": "Дополнительное соглашение по мобильным офисам",
+                "size": "Zip 2,97 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "name": "Дополнительное соглашение на подключение к услугам связи ПАО «Таттелеком»",
+                "size": "Zip 2,97 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "name": "Дополнительное соглашение по стойке-прилавка до 23.08.2017г.",
+                "size": "Zip 2,97 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "name": "Дополнительное соглашение по промо-стойкам до 23.08.2017г.",
+                "size": "Zip 2,97 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "name": "Дополнительное соглашение по фирменным салонам с 23.08.2017г.",
+                "size": "Zip 2,97 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "name": "Дополнительное соглашение по Партнерской программе",
+                "size": "PDF 553 КБ"
+            }
+        },
+        {
+            "archive-file": {
+                "name": "Агентский договор c 12.04.18",
+                "size": "PDF 553 КБ"
+            }
+        },
+        {
+            "archive-file": {
+                "name": "Дополнительное соглашение по фирменным салонам (альтернатива) c 12.04.18",
+                "size": "PDF 553 КБ"
+            }
+        },
+        {
+            "archive-file": {
+                "name": "Дополнительное соглашение по фирменным салонам c 12.04.18",
+                "size": "PDF 553 КБ"
+            }
+        },
+        {
+            "archive-file": {
+                "name": "Допсоглашение соглашение по мобильным офисам c 12.04.18",
+                "size": "PDF 553 КБ"
+            }
+        }
+    ],
+    "dealers-blocks": [
+        {
+            "title": "Мы предлагаем:",
+            "list-items": [
+                {
+                    "icon": "medal",
+                    "caption": "система вознаграждений на уровне федеральных операторов"
+                },
+                {
+                    "icon": "shop",
+                    "caption": "оформление торговых точек и поставка рекламных материалов"
+                },
+                {
+                    "icon": "reading",
+                    "caption": "обучение и сертификация персонала"
+                },
+                {
+                    "icon": "reward",
+                    "caption": "мотивационные программы для персонала"
+                }
+            ]
+        },
+        {
+            "title": "Наши преимущества",
+            "list-items": [
+                {
+                    "icon": "test",
+                    "caption": "лидеры рынка телекоммуникационных услуг Республики Татарстан"
+                },
+                {
+                    "icon": "test",
+                    "caption": "гарантия своевременных выплат вознаграждения партнерам"
+                },
+                {
+                    "icon": "test",
+                    "caption": "максимальная география работы вашего бизнеса по Республике"
+                },
+                {
+                    "icon": "test",
+                    "caption": "сокращение расходов, благодаря обеспечению удобной логистики"
+                }
+            ]
+        },
+        {
+            "title": "Что нужно, чтобы стать партнером?",
+            "list-items": [
+                {
+                    "isCount": true,
+                    "count": "1",
+                    "caption": "желание и заинтересованность в сотрудничестве с крупнейшим оператором связи в РТ"
+                },
+                {
+                    "isCount": true,
+                    "count": "2",
+                    "caption": "организованное юридическое лицо (ИП/ООО)"
+                },
+                {
+                    "isCount": true,
+                    "count": "3",
+                    "caption": "наличие действующих торговых точек"
+                },
+                {
+                    "isCount": true,
+                    "count": "4",
+                    "caption": "опыт работы в мобильном бизнесе – будет плюсом"
+                }
+            ]
+        }
+    ]
+}  

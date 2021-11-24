@@ -1,0 +1,71 @@
+{
+    "isTattelekom": true,
+    "title": "Операторам связи",
+    "script": "tatt-telecom-operators-page",
+    "bread-crumbs": [
+        {
+          "name": "Главная"
+        },
+        {
+          "name": "Партнерам"
+        },
+        {
+            "name": "Операторам связи",
+            "noLink": true
+        }
+    ],
+    "tatt-table-list": [
+        {
+            "isSubmenu": true,
+            "link": "/tattelecom-1/tatt-suppliers.html",
+            "link-name": "Поставщикам",
+            "submenu": [
+                {
+                    "submenu-link": "/tattelecom-1/tatt-purchases.html",
+                    "submenu-link-name": "Закупки"
+                },
+                {
+                    "submenu-link": "/tattelecom-1/tatt-msp.html",
+                    "submenu-link-name": "Информация для субьектов МСП"
+                },
+                {
+                    "submenu-link": "/tattelecom-1/tatt-tru.html",
+                    "submenu-link-name": "Перечень ТРУ для МСП "
+                },
+                {
+                    "submenu-link": "/tattelecom-1/tatt-regulations.html",
+                    "submenu-link-name": "Нормативные документы"
+                }
+            ]
+        },
+        {
+            "link": "/tattelecom-1/tatt-telecom-operators.html",
+            "link-name": "Операторам связи",
+            "isActive": true
+        },
+        {
+            "link": "/tattelecom-1/tatt-dealers.html",
+            "link-name": "Дилерам"
+        }
+    ],
+    "suppliers-archive-list": [
+        {
+            "pdf-file": {
+                "size": "PDF 2,97 МБ",
+                "caption": "Приказ об утверждении существенных условий присоединения к сети телефонной связи ПАО «Таттелеком» на зоновом и местном уровне и установлении цен на услуги присоединения и услуги по пропуску трафика в телефонной сети связи общего пользования, предоставляемые ПАО 'Таттелеком'"
+            }
+        },
+        {
+            "pdf-file": {
+                "size": "PDF 553 КБ",
+                "caption": "Приказ о внесении изменений в договоры о присоединении сетей электросвязи"
+            }
+        },
+        {
+            "pdf-file": {
+                "size": "PDF 2,97 МБ",
+                "caption": "Существенные условия присоединения сети телефонной связи Оператора или сети передачи данных к сети телефонной связи ПАО «Таттелеком» на зоновом и местном уровне"
+            }
+        }
+    ]
+}  

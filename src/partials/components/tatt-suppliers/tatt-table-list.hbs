@@ -8,7 +8,7 @@
         {{#each tatt-table-list }}
             {{#if isSubmenu }}
                 <li class="tatt-table-list__item {{#if isCurrent }}_is-current{{/if}}">
-                    <button class="tatt-table-list__item-link {{#if isCurrent }}_is-current{{/if}} gl__drop-menu-btn js-drop-menu-btn js-drop-menu-leave-open">
+                    <button class="tatt-table-list__item-link {{#if isCurrent }}_is-current{{/if}} gl__drop-menu-btn js-drop-menu-btn js-drop-menu-leave-open" {{#if isDropOpen }}data-drop-menu-open{{/if}}>
                         {{ this.link-name }}
                         <svg width="24" height="24" aria-hidden="true" class="gl__drop-menu-icon">
                             <use xlink:href="#arrow-down"></use>

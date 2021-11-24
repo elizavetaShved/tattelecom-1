@@ -35,6 +35,10 @@
         }
     }
 
+    &__content-block-img {
+        margin-bottom: 3.6rem;
+    }
+
     &__block {
         margin-bottom: 8.8rem;
 
@@ -117,6 +121,27 @@
         border-radius: 3px;
         border: 1px solid var(--main-text-color);
     }
+
+    &__archive-list {
+        margin-top: 4.7rem;
+        max-width: 67.5rem;
+    }
+
+    &__archive-list-item {
+        margin-bottom: 1.4rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__archive-list-item-date {
+        display: block;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        color: var(--main-grey-color);
+    }
 }
 
 .suppliers__dropdown {
@@ -194,3 +219,4 @@
         margin-bottom: 6rem;
     }
 }
+

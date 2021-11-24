@@ -14,36 +14,61 @@
                 Закупки
             </h2>
             <p>
-                Процедуры закупок ПАО «Таттелеком» в электронной форме осуществляются на электронной торговой площадке <a href="223etp.zakazrf.ru">223etp.zakazrf.ru</a>
+                Процедуры закупок ПАО «Таттелеком» в электронной форме осуществляются на электронной торговой площадке
+                <a href="223etp.zakazrf.ru">223etp.zakazrf.ru</a>
             </p>
             <p>
-                Сайт закупок ПАО «Таттелеком»: <a href="etpgpb.ru/customers/pao-tattelekom/">etpgpb.ru/customers/pao-tattelekom/</a>
+                Сайт закупок ПАО «Таттелеком»: <a
+                    href="etpgpb.ru/customers/pao-tattelekom/">etpgpb.ru/customers/pao-tattelekom/</a>
                 <br>
-                Сайт закупок ООО «ТМТ»: <a href="etpgpb.ru/customers/ooo-tvoi-mobilnye-tehnologii"> etpgpb.ru/customers/ooo-tvoi-mobilnye-tehnologii</a>
+                Сайт закупок ООО «ТМТ»: <a href="etpgpb.ru/customers/ooo-tvoi-mobilnye-tehnologii">
+                    etpgpb.ru/customers/ooo-tvoi-mobilnye-tehnologii</a>
             </p>
 
             <div class="suppliers__dropdown">
                 <button class="suppliers__dropdown-button gl__drop-menu-btn js-drop-menu-btn js-drop-menu-leave-open">
                     Планы по закупкам
-                    <svg width="24" height="24" aria-hidden="true" class="suppliers__dropdown-button-icon gl__drop-menu-icon">
+                    <svg width="24" height="24" aria-hidden="true"
+                        class="suppliers__dropdown-button-icon gl__drop-menu-icon">
                         <use xlink:href="#arrow-down"></use>
                     </svg>
                 </button>
                 <div class="gl__drop-menu-container js-drop-menu-container">
                     <div class="suppliers__dropdown-content gl__drop-menu js-drop-menu">
-                        <span class="suppliers__dropdown-heading">
-                            Закупки
-                        </span>
                         <div class="suppliers__select">
                             {{> common/controls/select selects=year-select }}
                         </div>
                         {{#each suppliers-dropdown-list }}
-                            <div class="suppliers__dropdown-content-item">
-                                <span class="suppliers__dropdown-content-date">
-                                    {{this.date}}
-                                </span>
-                                {{> common/archive-file }}
-                            </div>
+                        <div class="suppliers__dropdown-content-item">
+                            <span class="suppliers__dropdown-content-date">
+                                {{this.date}}
+                            </span>
+                            {{> common/archive-file }}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="suppliers__dropdown">
+                <button class="suppliers__dropdown-button gl__drop-menu-btn js-drop-menu-btn js-drop-menu-leave-open">
+                    Закупки
+                    <svg width="24" height="24" aria-hidden="true"
+                        class="suppliers__dropdown-button-icon gl__drop-menu-icon">
+                        <use xlink:href="#arrow-down"></use>
+                    </svg>
+                </button>
+                <div class="gl__drop-menu-container js-drop-menu-container">
+                    <div class="suppliers__dropdown-content gl__drop-menu js-drop-menu">
+                        <div class="suppliers__select">
+                            {{> common/controls/select selects=year-select }}
+                        </div>
+                        {{#each suppliers-dropdown-list }}
+                        <div class="suppliers__dropdown-content-item">
+                            <span class="suppliers__dropdown-content-date">
+                                {{this.date}}
+                            </span>
+                            {{> common/archive-file }}
+                        </div>
                         {{/each}}
                     </div>
                 </div>

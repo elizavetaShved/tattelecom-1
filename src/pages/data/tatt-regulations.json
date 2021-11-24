@@ -1,22 +1,28 @@
 {
     "isTattelekom": true,
-    "title": "Партнерам",
-    "script": "tatt-suppliers-page",
+    "title": "Нормативные документы",
+    "script": "tatt-regulations-page",
     "bread-crumbs": [
         {
           "name": "Главная"
         },
         {
-          "name": "Партнерам",
-          "noLink": true
+          "name": "Партнерам"
+        },
+        {
+            "name": "Поставщикам"
+        },
+        {
+            "name": "Нормативные документы",
+            "noLink": true
         }
     ],
     "tatt-table-list": [
         {
             "isSubmenu": true,
-            "isCurrent": true,
             "link": "/tattelecom-1/tatt-suppliers.html",
             "link-name": "Поставщикам",
+            "isDropOpen": true,
             "submenu": [
                 {
                     "submenu-link": "/tattelecom-1/tatt-purchases.html",
@@ -32,7 +38,8 @@
                 },
                 {
                     "submenu-link": "/tattelecom-1/tatt-regulations.html",
-                    "submenu-link-name": "Нормативные документы"
+                    "submenu-link-name": "Нормативные документы",
+                    "isCurrent": true
                 }
             ]
         },
@@ -43,6 +50,27 @@
         {
             "link": "/tattelecom-1/tatt-dealers.html",
             "link-name": "Дилерам"
+        }
+    ],
+    "year-select": [
+        {
+          "selectTitle": "Год",
+          "name": "year-select",
+          "required": true,
+          "isSimpleDesign": true,
+          "isBorderBottom": false,
+          "options": [
+            "2020",
+            "2019"
+          ]
+        }
+    ],
+    "suppliers-archive-list": [
+        {
+            "archive-file": {
+                "name": "Положение о закупке ПАО «Таттелеком» (в новой редакции, с 09 января 2020)",
+                "size": "Zip 2,97 МБ"
+            }
         }
     ]
 }  
