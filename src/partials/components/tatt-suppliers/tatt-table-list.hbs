@@ -8,18 +8,23 @@
         {{#each tatt-table-list }}
             {{#if isSubmenu }}
                 <li class="tatt-table-list__item {{#if isCurrent }}_is-current{{/if}}">
-                    <button class="tatt-table-list__item-link {{#if isCurrent }}_is-current{{/if}}">
+                    <button class="tatt-table-list__item-link {{#if isCurrent }}_is-current{{/if}} gl__drop-menu-btn js-drop-menu-btn js-drop-menu-leave-open">
                         {{ this.link-name }}
+                        <svg width="24" height="24" aria-hidden="true" class="gl__drop-menu-icon">
+                            <use xlink:href="#arrow-down"></use>
+                        </svg>
                     </button>
-                    <ul class="tatt-table-list__submenu">
-                        {{#each this.submenu }}
-                            <li class="tatt-table-list__submenu-item">
-                                <a href="{{ this.submenu-link }}" class="tatt-table-list__submenu-link">
-                                    {{ this.submenu-link-name }}
-                                </a>
-                            </li>
-                        {{/each}}
-                    </ul>
+                    <div class="tatt-table-list__submenu-drop-container gl__drop-menu-container js-drop-menu-container">
+                        <ul class="tatt-table-list__submenu gl__drop-menu js-drop-menu">
+                            {{#each this.submenu }}
+                                <li class="tatt-table-list__submenu-item">
+                                    <a href="{{ this.submenu-link }}" class="tatt-table-list__submenu-link {{#if isCurrent }}_is-current{{/if}}">
+                                        {{ this.submenu-link-name }}
+                                    </a>
+                                </li>
+                            {{/each}}
+                        </ul>
+                    </div>
                 </li>
                 {{else }}
                 <li class="tatt-table-list__item">

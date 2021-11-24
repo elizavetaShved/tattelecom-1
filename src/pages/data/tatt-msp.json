@@ -1,29 +1,34 @@
 {
     "isTattelekom": true,
     "title": "Годовые отчеты",
-    "script": "tatt-suppliers-page",
     "bread-crumbs": [
         {
           "name": "Главная"
         },
         {
-          "name": "Партнерам",
-          "noLink": true
+          "name": "Партнерам"
+        },
+        {
+            "name": "Поставщикам"
+        },
+        {
+            "name": "Информация для субьектов МСП",
+            "noLink": true
         }
     ],
     "tatt-table-list": [
         {
             "isSubmenu": true,
-            "isCurrent": true,
             "link": "/tattelecom-1/tatt-suppliers.html",
             "link-name": "Поставщикам",
             "submenu": [
                 {
                     "submenu-link": "/tattelecom-1/tatt-purchases.html",
-                    "submenu-link-name": "Закупки"
+                    "submenu-link-name": "Закупки",
+                    "isCurrent": true
                 },
                 {
-                    "submenu-link": "/tattelecom-1/",
+                    "submenu-link": "/tattelecom-1/tatt-msp.html",
                     "submenu-link-name": "Информация для субьектов МСП"
                 },
                 {
