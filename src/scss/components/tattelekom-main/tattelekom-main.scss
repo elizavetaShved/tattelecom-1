@@ -198,20 +198,20 @@
     &.mod-suppliers {
         .tatt-table-list__item {
             padding: 1.5rem 0;
-
-            &._is-current {
-                padding-bottom: 0;
-            }
         }
 
         .tatt-table-list__item-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
             padding: 0;
         }
 
     }
 
     &__submenu {
-        padding-top: 1.5rem;
+        padding: 1.5rem 0 0 0;
         &-item {
             padding: 1.5rem 0;
             padding-left: 2.5rem;
@@ -223,6 +223,7 @@
 
             &:last-child {
                 border-bottom: none;
+                padding-bottom: 0;
             }
         }
 
@@ -231,11 +232,24 @@
             font-size: 1.6rem;
             line-height: 2.5rem;
             letter-spacing: 0.02em;
+            
+            &._is-current {
+                font-weight: 400;
+                color: var(--main-color-business);
+            }
 
             &:hover {
                 &:not(.gl__no-default-hover) {
                     color: var(--main-color-business);
                 }
+            }
+        }
+    }
+
+    &__submenu-drop-container {
+        &.mod-open {
+            .tatt-table-list__submenu {
+                // padding-bottom: 0;
             }
         }
     }

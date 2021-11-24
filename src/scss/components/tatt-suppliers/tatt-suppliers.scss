@@ -22,6 +22,16 @@
                     grid-column: 12 span;
                 }
             }
+
+            &.mod-purchases {
+                p {
+                    margin-bottom: 1.5rem;
+
+                    &:nth-last-of-type(1) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
         }
     }
 
@@ -35,9 +45,12 @@
 
     &__list {
         display: flex;
-        flex-wrap: wrap;
         margin: -1.7rem;
         align-items: center;
+
+        @include for-md-down {
+            flex-wrap: wrap;
+        }
 
         @include for-mx-down {
             margin: -1.2rem;
@@ -103,5 +116,81 @@
         padding: 1.7rem 6.5rem;
         border-radius: 3px;
         border: 1px solid var(--main-text-color);
+    }
+}
+
+.suppliers__dropdown {
+    margin-top: 5rem;
+
+    &-button {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        line-height: 3.2rem;
+        letter-spacing: 0.015em;
+    }
+
+    &-button-icon {
+        display: block;
+        margin-left: 0.3rem;
+    }
+
+    &-content {
+        padding-top: 2.5rem;
+
+        @include for-md-down {
+            padding-top: 1.5rem;
+        }
+    }
+
+    &-content-item {
+        margin-bottom: 2.7rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &-content-date {
+        display: block;
+        margin-bottom: 1.6rem;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        color: var(--main-grey-color);
+    }
+
+    &-heading {
+        display: inline-block;
+        margin-bottom: 1.7rem;
+        font-size: 2rem;
+        line-height: 3.2rem;
+    }
+}
+
+.suppliers__select {
+    max-width: 12.7rem; 
+    margin-bottom: 5rem;
+
+    .select__container.mod-simple-design .choices__inner {
+        padding: 1.5rem 1.8rem !important;
+        box-shadow: none;
+        background-color: var(--border-color) !important;
+    }
+    .select__container.mod-simple-design .choices__item--selectable {
+        font-size: 2rem;
+        line-height: 3.2rem;
+    }
+
+    .gl-input__title {
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
+}
+
+.purchases {
+    margin-bottom: 10.4rem;
+
+    @include for-md-down {
+        margin-bottom: 6rem;
     }
 }

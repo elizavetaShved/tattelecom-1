@@ -16,52 +16,52 @@
     ],
     "tatt-table-lis": [
         {
-            "link": "/tatt-investors.html",
+            "link": "/tattelecom-1/tatt-investors.html",
             "link-name": "Акционерам и инвесторам"
         },
         {
-            "link": "/tatt-year-report.html",
+            "link": "/tattelecom-1/tatt-year-report.html",
             "link-name": "Годовые отчеты"
         },
         {   
-            "link": "/tatt-quartal-report.html",
+            "link": "/tattelecom-1/tatt-quartal-report.html",
             "link-name": "Квартальная отчетность"
         },
         {
-            "link": "/tatt-msfo-report.html",
+            "link": "/tattelecom-1/tatt-msfo-report.html",
             "link-name": "Отчетность по МСФО"
         },
         {
-            "link": "/tatt-emmision-doc.html",
+            "link": "/tattelecom-1/tatt-emmision-doc.html",
             "link-name": "Эмиссионные документы"
         },
         {
-            "link": "/tatt-internal-doc.html",
+            "link": "/tattelecom-1/tatt-internal-doc.html",
             "link-name": "Учредительные и внутренние документы"
         },
         {
-            "link": "/tatt-affiliates-list.html",
+            "link": "/tattelecom-1/tatt-affiliates-list.html",
             "link-name": "Список аффилированных лиц"
         },
         {
-            "link": "/tatt-essential-facts.html",
+            "link": "/tattelecom-1/tatt-essential-facts.html",
             "link-name": "Существенные факты"
         },
         {
-            "link": "/tatt-ratings.html",
+            "link": "/tattelecom-1/tatt-ratings.html",
             "link-name": "Рейтинги"
         },
         {
-            "link": "/tatt-meetings-shareholders.html",
+            "link": "/tattelecom-1/tatt-meetings-shareholders.html",
             "link-name": "Cобрания акционеров"
         },
         {
-            "link": "/tatt-info-open.html",
+            "link": "/tattelecom-1/tatt-info-open.html",
             "link-name": "Раскрытие информации"
         },
         {
             "isActive": true,
-            "link": "/tatt-financial-statements.html",
+            "link": "/tattelecom-1/tatt-financial-statements.html",
             "link-name": "Бухгалтерская отчетность"
         }
     ],

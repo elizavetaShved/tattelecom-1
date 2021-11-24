@@ -1,26 +1,32 @@
 {
     "isTattelekom": true,
     "title": "Годовые отчеты",
-    "script": "tatt-suppliers-page",
+    "script": "tatt-purchases-page",
     "bread-crumbs": [
         {
           "name": "Главная"
         },
         {
-          "name": "Партнерам",
-          "noLink": true
+          "name": "Партнерам"
+        },
+        {
+            "name": "Поставщикам"
+        },
+        {
+            "name": "Закупки",
+            "noLink": true
         }
     ],
     "tatt-table-list": [
         {
             "isSubmenu": true,
-            "isCurrent": true,
             "link": "/tattelecom-1/tatt-suppliers.html",
             "link-name": "Поставщикам",
             "submenu": [
                 {
                     "submenu-link": "/tattelecom-1/tatt-purchases.html",
-                    "submenu-link-name": "Закупки"
+                    "submenu-link-name": "Закупки",
+                    "isCurrent": true
                 },
                 {
                     "submenu-link": "/tattelecom-1/",
@@ -43,6 +49,35 @@
         {
             "link": "/",
             "link-name": "Дилерам"
+        }
+    ],
+    "year-select": [
+        {
+          "selectTitle": "Год",
+          "name": "year-select",
+          "required": true,
+          "isSimpleDesign": true,
+          "isBorderBottom": false,
+          "options": [
+            "2020",
+            "2019"
+          ]
+        }
+    ],
+    "suppliers-dropdown-list": [
+        {
+            "date": "20.02.2020",
+            "archive-file": {
+                "name": "Открытие кредитной линии",
+                "size": "Zip 2,97 МБ"
+            }
+        },
+        {
+            "date": "07.05.2020",
+            "archive-file": {
+                "name": "СП-152: Предоставление кредит",
+                "size": "Zip 2,97 МБ"
+            }
         }
     ]
 }  

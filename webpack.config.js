@@ -77,6 +77,7 @@ module.exports = {
     ['tatt-financial-statements-page']: './src/js/pages/tatt-financial-statements-page',
     ['tatt-info-open-page']: './src/js/pages/tatt-info-open-page',
     ['tatt-suppliers-page']: './src/js/pages/tatt-suppliers-page',
+    ['tatt-purchases-page']: './src/js/pages/tatt-purchases-page',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),
