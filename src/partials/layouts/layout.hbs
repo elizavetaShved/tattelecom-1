@@ -51,7 +51,9 @@
           type="text/javascript"></script>
   <script src="js/common.js"></script>
   {{#if isPrivateClients }}<script src="js/common-private-clients.js"></script>{{/if}}
-  <script src="js/{{script}}.js"></script>
+  {{#if script }}
+    <script src="js/{{script}}.js"></script>
+  {{/if}}
   <script src="assets/js/backend.js"></script>
 </div>
 </body>
