@@ -570,6 +570,8 @@ body {
       color: var(--main-color-business); }
       .gl__layout-wrapper.mod-business .gl__text a:hover {
         color: var(--main-color-business-hover) !important; }
+    .gl__layout-wrapper.mod-business .gl__layout-content {
+      margin-top: var(--header-height-b); }
 
 .gl__layout-content {
   -webkit-box-flex: 1;
@@ -5885,7 +5887,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 
 .header__b-main-page-menu {
   -webkit-transition: max-height 300ms;
-  transition: max-height 300ms; }
+  transition: max-height 300ms;
+  background-size: cover; }
   @media screen and (max-width: 1199px) {
     .header__b-main-page-menu {
       grid-gap: 2rem; } }
