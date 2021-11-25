@@ -50,9 +50,10 @@ export class Header {
 
     this.contentMainPageBusinessElem = document.querySelector('#b-main-page-host');
 
-    const captionMenuElems = this.menuWrapperElem.querySelectorAll('.header__b-menu-item-caption');
-
-    setMaxHeightElem(captionMenuElems);
+    if (this.menuWrapperElem) {
+      const captionMenuElems = this.menuWrapperElem.querySelectorAll('.header__b-menu-item-caption');
+      setMaxHeightElem(captionMenuElems);
+    }
 
     hideWhenSearchElems.map(elem => elem.classList.add('mod-show-search'));
 
