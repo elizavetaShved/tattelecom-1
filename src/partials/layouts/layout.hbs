@@ -27,6 +27,9 @@
   {{/if}}
 
   <main class="gl__layout-content">
+    {{#if isBusinessMain }}
+      {{> layout-header/header-b-menu-main-page }}
+    {{/if}}
     {{#block "main"}}{{/block}}
   </main>
 

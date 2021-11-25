@@ -1,16 +1,16 @@
 import { checkExistParent } from '../finctions/checkExistParent';
+import getDeviceType from '../finctions/getDeviceType';
 
 export class Header {
   hostElem;
   bodyElem;
   popupElem;
+  menuWrapperElem;
   popupContentElements;
   isBusinessMainPageHeader;
   isTattelekomMain;
   menuLinkElements;
 
-  businessMainPageMenuHost;
-  businessMainPageMenuContent;
   businessMainPageMenu;
 
   contentMainPageBusinessElem;
@@ -21,17 +21,17 @@ export class Header {
   sideBarContentElem;
   isOpenSideBar = false;
 
+  linkActive;
+
   constructor() {
     this.checkClickBySideBar = this.checkClickBySideBar.bind(this);
-    this.openBusinessPopUp = this.openBusinessPopUp.bind(this);
-    this.closeBusinessPopUp = this.closeBusinessPopUp.bind(this);
-
     this.hostElem = document.getElementById('header-host');
 
     if (!this.hostElem) return;
     this.bodyElem = document.querySelector('body');
     this.popupElem = this.hostElem.querySelector('.js-header-popup-container');
     const popupWrapperElem = this.hostElem.querySelector('.js-header-popup-wrapper');
+    this.menuWrapperElem = document.querySelector('.js-header-menu-wrapper');
     const bottomBlockElem = this.hostElem.querySelector('.header__bottom-block-content');
     this.menuLinkElements = this.hostElem.querySelectorAll('.header__bottom-menu-link');
     this.popupContentElements = Array.from(this.hostElem.querySelectorAll('.js-header-popup'));
@@ -80,8 +80,22 @@ export class Header {
 
     // наведение на ссылку в меню нижнего блока
     this.menuLinkElements.forEach(link => {
-      link.onmouseover = () => {
-        this.openPopUp(link);
+      if (getDeviceType() === 'isDesk') {
+        link.onmouseover = () => {
+          this.openPopUp(link);
+        }
+      } else if (getDeviceType() === 'isMobile') {
+        link.onclick = event => {
+          if (this.linkActive === link) {
+            // костыль, чтобы отменить preventDefault()
+            link.onclick = () => console.log();
+          } else {
+            event.preventDefault();
+            this.openPopUp(link, true);
+          }
+
+          this.linkActive = link;
+        };
       }
     })
 
@@ -105,23 +119,14 @@ export class Header {
 
     this.isBusinessMainPageHeader = !!document.querySelector('.js-business-main');
 
-    // если это страница бизнеса (главная), то по скроллу убираем нижнее меню
+    // если это страница бизнеса (главная), то по скроллу добавялем основное меню
     if (this.isBusinessMainPageHeader) {
-      this.businessMainPageMenuHost = this.hostElem.querySelector('#header-b-main-page-menu-host');
-      this.businessMainPageMenuContent = this.businessMainPageMenuHost.querySelector('#header-b-main-page-menu-content');
       this.businessMainPageMenu = this.hostElem.querySelector('.js-b-menu-header');
 
-      this.businessMainPageMenuHost.style.maxHeight = `${ this.businessMainPageMenuContent.offsetHeight }px`;
+      this.checkScroll();
 
       document.addEventListener('scroll', () => {
-        if (window.innerWidth >= 1024) {
-          if (window.pageYOffset > 0) {
-            this.closeBusinessPopUp();
-          } else {
-            this.openBusinessPopUp(true);
-            this.closePopUp();
-          }
-        }
+        this.checkScroll();
       });
 
       window.addEventListener('resize', () => this.changePaddingMainContent(true));
@@ -135,7 +140,7 @@ export class Header {
     this.isTattelekomMain = !!document.querySelector('.js-tattelekom-pages');
 
     // если не разделы таттелком то выполняем
-    if (this.isTattelekomMain == false) {
+    if (this.isTattelekomMain === false) {
       this.popupElem.classList.add('mod-show');
       this.popupContentElements.forEach(popupContentElem => {
         if ((popupContentElem.getAttribute('data-hover-value') === link.getAttribute('data-hover-value'))
@@ -158,28 +163,32 @@ export class Header {
     }
   }
 
+  // проверка достаточно ли проскролена старница, чтобы показать меню
+  checkScroll() {
+    if (window.innerWidth >= 1024) {
+      if (window.pageYOffset > (this.menuWrapperElem.clientHeight)) {
+        this.closeBusinessPopUp();
+      } else {
+        this.hideMainMenuBusiness();
+        this.closePopUp();
+      }
+    }
+  }
+
   // закрыть поп-ап
   closePopUp() {
     this.popupElem.classList.remove('mod-show');
     this.isOpenPopup = false;
   }
 
-  // открыть бизнес поп-ап (со всей навигацией)
-  openBusinessPopUp(isCloseMenu) {
-    this.businessMainPageMenuHost.style.maxHeight = `${ this.businessMainPageMenuContent.offsetHeight }px`;
-    this.businessMainPageMenuHost.style.overflow = 'initial';
-    if (isCloseMenu) {
-      this.businessMainPageMenu.classList.remove('mod-show');
-    }
-    this.changePaddingMainContent(true);
+  // Скрыть меню бизнеса
+  hideMainMenuBusiness() {
+    this.businessMainPageMenu.classList.remove('mod-show');
   }
 
-  // закрыть бизнес поп-ап (со всей навигацией)
+  // // закрыть бизнес поп-ап (со всей навигацией)
   closeBusinessPopUp() {
-    this.businessMainPageMenuHost.style.maxHeight = 0;
-    this.businessMainPageMenuHost.style.overflow = 'hidden';
     this.businessMainPageMenu.classList.add('mod-show');
-    this.changePaddingMainContent(false)
   }
 
   changePaddingMainContent(isAdd) {

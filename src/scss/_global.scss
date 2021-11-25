@@ -111,6 +111,10 @@ body {
         }
       }
     }
+
+    .gl__layout-content {
+      margin-top: var(--header-height-b);
+    }
   }
 }
 
