@@ -11,7 +11,7 @@ export default function initSlider() {
   const sliderWrapperElements = Array.from(document.querySelectorAll(`.js-swiper`));
   if (!sliderWrapperElements) return;
 
-  sliderWrapperElements.map((sliderElem, index) => new Slider(
+  sliderWrapperElements.map(sliderElem => new Slider(
     sliderElem.querySelector('.js-swiper-container'),
     sliderElem.getAttribute('data-swiper-slides-preview'),
     sliderElem.querySelector('.js-slider-btn-prev'),

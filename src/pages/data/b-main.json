@@ -115,16 +115,12 @@
     },
     {
       "title": "М2М",
-      "isWhiteTitle": true,
       "subtitleDown": "Технология беспроводной передачи данных между устройствами",
-      "isWhiteSubtitle": true,
       "img": "img/b-main-page/digital-services/img-2.jpg"
     },
     {
       "title": "Виртуальные сети IP VPN",
-      "isWhiteTitle": true,
       "subtitleDown": "Единая корпоративная сеть надежно и быстро",
-      "isWhiteSubtitle": true,
       "img": "img/b-main-page/digital-services/img-3.jpg"
     },
     {

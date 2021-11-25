@@ -6,8 +6,6 @@ export class Slider {
 
   constructor(sliderElem, numSlide, btnPrev, btnNext, paginationElem, customGap) {
 
-    numSlide = +numSlide;
-
     const gap = customGap ? +customGap : 30;
 
     let slidesPerView769;
@@ -19,14 +17,14 @@ export class Slider {
         slidesPerView1025 = numSlide;
         break;
 
-      case  numSlide > 2:
-        slidesPerView769 = numSlide - 1 + 0.2;
-        slidesPerView1025 = numSlide - 1;
+      case  +numSlide > 2:
+        slidesPerView769 = +numSlide - 1 + 0.2;
+        slidesPerView1025 = +numSlide - 1;
         break;
 
       default:
-        slidesPerView769 = numSlide + 0.2;
-        slidesPerView1025 = numSlide;
+        slidesPerView769 = +numSlide + 0.2;
+        slidesPerView1025 = +numSlide;
       }
 
     new Swiper(sliderElem, {
