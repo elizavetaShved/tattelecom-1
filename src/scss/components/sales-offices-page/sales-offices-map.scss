@@ -8,6 +8,7 @@
 
 .sales-offices-map__container {
   position: relative;
+  height: 67rem;
 }
 
 .sales-offices-map__points-list {
@@ -24,13 +25,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 67rem;
+  height: 100%;
   background-color: lightgrey;
   width: 100%;
-
-  //.header-wrapper {
-  //  display: flex;
-  //}
 
   .address {
     font-weight: 600;
@@ -43,7 +40,31 @@
     font-size: 1.2rem;
     line-height: 1.6rem;
     color: var(--main-grey-color);
+  }
+
+  .body-wrapper {
     margin-top: .4rem;
+  }
+
+  .body-item {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin-bottom: .2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .caption {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: var(--main-color);
+  }
+
+  .value {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
 }
 
@@ -52,6 +73,7 @@
   background-color: #fff;
   box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 16px rgba(51, 51, 51, 0.08);
   border-radius: 20px;
+  overflow: hidden;
   pointer-events: auto;
 }
 

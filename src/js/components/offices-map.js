@@ -4,7 +4,8 @@ export class OfficesMap {
   myMap;
   officesElems;
 
-  officesDataArr = [];
+  officesArr = [];
+  filteredOfficesArr = [];
 
   inputSearch;
   checkboxPartner;
@@ -38,17 +39,22 @@ export class OfficesMap {
         coords: JSON.parse(officeElem.getAttribute('data-coord')),
         address: officeElem.querySelector('.js-address').innerText,
         city: officeElem.querySelector('.js-city').innerText,
+        weekday: officeElem.querySelector('.js-weekday').innerText,
+        saturday: officeElem.querySelector('.js-saturday').innerText,
+        sunday: officeElem.querySelector('.js-sunday').innerText,
         isPartner: officeElem.hasAttribute('data-is-partner'),
         placemark: null
       }
-      this.officesDataArr.push(newItem);
+      this.officesArr.push(newItem);
+      this.filteredOfficesArr.push(newItem);
 
       this.addGeoMark(newItem);
 
       officeElem.onclick = () => {
         this.myMap.setCenter(newItem.coords, 16);
         if (this.inputSearch) {
-          this.inputSearch.value = newItem.address + newItem.city
+          this.inputSearch.value = newItem.address + newItem.city;
+          this.onInput();
         }
       }
     })
@@ -58,56 +64,68 @@ export class OfficesMap {
       this.inputSearch.oninput = () => {
         clearTimeout(timeout);
         timeout = setTimeout(() => {
-          const inputValue = this.inputSearch.value.toLowerCase();
-          const newOfficesDataArr = [];
-          // очисить всю коллекцию меток
-          this.myMap.geoObjects.removeAll();
-          this.officesDataArr.forEach(officeItem => {
-            if (officeItem.address.toLowerCase().includes(inputValue) ||
-              officeItem.city.toLowerCase().includes(inputValue)) {
-              officeItem.elem.classList.remove('mod-hide');
-              newOfficesDataArr.push(officeItem);
-            } else {
-              officeItem.elem.classList.add('mod-hide');
-            }
-          })
-
-          // добавить в коллекцию меток только отфильтрованные метки
-          newOfficesDataArr.forEach(newOfficeItem => {
-            this.addGeoMark(newOfficeItem);
-          })
+          this.onInput();
         }, 300)
       }
     }
 
     if (this.checkboxPartner) {
       this.checkboxPartner.onchange = () => {
-        let newOfficesDataArr = [];
         // очисить всю коллекцию меток
         this.myMap.geoObjects.removeAll();
         if (this.checkboxPartner.checked) {
-          this.officesDataArr.forEach(officeItem => {
+          console.log(this.filteredOfficesArr)
+          this.filteredOfficesArr.forEach(officeItem => {
             if (officeItem.isPartner) {
               officeItem.elem.classList.remove('mod-hide');
-              newOfficesDataArr.push(officeItem);
+              this.filteredOfficesArr.push(officeItem);
             } else {
               officeItem.elem.classList.add('mod-hide');
             }
           })
         } else {
-          newOfficesDataArr = this.officesDataArr;
-          this.officesDataArr.forEach(officeItem => {
+          // this.filteredOfficesArr = this.officesArr;
+          this.filteredOfficesArr.forEach(officeItem => {
             officeItem.elem.classList.remove('mod-hide');
           })
         }
         // добавить в коллекцию меток только отфильтрованные метки
-        newOfficesDataArr.forEach(newOfficeItem => {
+        this.filteredOfficesArr.forEach(newOfficeItem => {
           this.addGeoMark(newOfficeItem);
         })
       }
     }
 
     this.setZoom();
+  }
+
+  onInput() {
+    const inputValue = this.inputSearch.value.toLowerCase();
+    // очисить всю коллекцию меток
+    this.myMap.geoObjects.removeAll();
+
+    let arrayForIteration;
+    if (this.checkboxPartner.checked) {
+      arrayForIteration = this.filteredOfficesArr;
+    } else {
+      arrayForIteration = this.officesArr;
+      this.filteredOfficesArr = [];
+    }
+    arrayForIteration.forEach(officeItem => {
+      if (officeItem.address.toLowerCase().includes(inputValue) ||
+        officeItem.city.toLowerCase().includes(inputValue) ||
+        inputValue.includes(officeItem.address.toLowerCase()) ) {
+        officeItem.elem.classList.remove('mod-hide');
+        this.filteredOfficesArr.push(officeItem);
+      } else {
+        officeItem.elem.classList.add('mod-hide');
+      }
+    })
+
+    // добавить в коллекцию меток только отфильтрованные метки
+    this.filteredOfficesArr.forEach(newOfficeItem => {
+      this.addGeoMark(newOfficeItem);
+    })
   }
 
   setZoom() {
@@ -129,7 +147,22 @@ export class OfficesMap {
           <div class="city">${ newItem.city }</div>
         </div>
       `,
-      // balloonContentBody: "",
+      balloonContentBody: `
+        <div class="body-wrapper">
+          <div class="body-item">
+            <div class="caption">пн.–пт.</div>
+            <div class="value">${ newItem.weekday }</div>
+          </div>
+          <div class="body-item">
+            <div class="caption">сб.</div>
+            <div class="value">${ newItem.saturday }</div>
+          </div>
+          <div class="body-item">
+            <div class="caption">вс.</div>
+            <div class="value">${ newItem.sunday }</div>
+          </div>
+        </div>
+      `,
       hintContent: newItem.address
     }, {
       iconLayout: 'default#image',

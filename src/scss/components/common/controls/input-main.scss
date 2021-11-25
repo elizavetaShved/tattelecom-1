@@ -51,6 +51,12 @@
   &.mod-textarea {
     height: 9.4rem;
     resize: none;
+
+    + .parsley-errors-list {
+      color: red;
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+    }
   }
 
   &.mod-no-arrow {
