@@ -33,6 +33,20 @@
     .header__top-menu-items-link-icon {
       fill: #fff;
     }
+
+    .header__btns-container {
+      margin-left: 1rem;
+    }
+
+    .header__btn-search {
+      @include for-mx-down {
+        margin-right: 0;
+      }
+    }
+
+    .header__input-search-form {
+      margin-right: 0;
+    }
   }
 
   &.mod-tattelekom {
@@ -366,7 +380,7 @@
   height: 100%;
   display: flex;
   justify-content: space-between;
-  margin: -1.4rem;
+  margin: -11.4rem 0;
 }
 
 .header__bottom-menu-link {
@@ -650,7 +664,7 @@
 }
 
 .header__b-menu-item-list {
-  margin: -1.2rem;
+  //margin: -1.2rem;
 }
 
 .header__b-menu-item-control, .header__b-popup-caption-list {
@@ -670,7 +684,7 @@
 
 .header__b-menu-item-control {
   &.mod-btn {
-    white-space: nowrap;
+    //white-space: nowrap;
     position: relative;
 
     &:hover {
@@ -682,7 +696,7 @@
       }
 
       .header__b-menu-item-control-icon-arrow {
-        fill: #fff;
+        fill: #fff !important;
       }
     }
   }
@@ -723,7 +737,9 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 20px;
   color: #fff;
-  width: 22.4rem;
+  width: min-content;
+  height: min-content;
+  min-height: 28rem;
 }
 
 .header__b-main-page-menu-tel-title {
@@ -778,7 +794,6 @@
   top: 0;
   right: 0;
   transform: translateX(100%);
-  width: min-content;
   box-shadow: 0 100px 80px rgba(0, 0, 0, 0.07), 0 64.8148px 46.8519px rgba(0, 0, 0, 0.0531481), 0 38.5185px 25.4815px rgba(0, 0, 0, 0.0425185), 0 20px 13px rgba(0, 0, 0, 0.035), 0 8.14815px 6.51852px rgba(0, 0, 0, 0.0274815), 0 1.85185px 3.14815px rgba(0, 0, 0, 0.0168519);
   border-radius: 10px;
   background-color: #fff;

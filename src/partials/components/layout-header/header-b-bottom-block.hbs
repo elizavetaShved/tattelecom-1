@@ -33,12 +33,16 @@
 
     {{> layout-header/header-search }}
 
-    <div class="header__bottom-block-right">
+    <div class="header__bottom-block-right header__hide-when-search js-hide-when-search">
       <div class="header__btns-container">
-        <button type="button" class="header__bottom-btn header__btn-search header__hide-when-search js-open-search-btn js-hide-when-search gl__lg-hide">
+        <button type="button" class="header__bottom-btn header__btn-search js-open-search-btn gl__lg-hide">
           <svg width="30" height="30" aria-hidden="true" class="header__btn-search-icon mod-business">
             <use xlink:href="#search"></use>
           </svg>
+        </button>
+
+        <button type="button" class="header__b-main-page-menu-btn gl__mx-hide">
+          Подобрать решение
         </button>
 
         <button type="button" class="header__bottom-btn header__btn-burger gl__bg-show mod-business js-open-side-bar"></button>

@@ -11,6 +11,11 @@
         <li class="header__top-menu-items">
           <a href="" class="header__top-menu-items-link">Бизнесу</a>
         </li>
+        {{#if isBusiness }}
+          <li class="header__top-menu-items">
+            <a href="" class="header__top-menu-items-link">Акции</a>
+          </li>
+        {{/if}}
         <li class="header__top-menu-items">
           <button type="button" class="header__top-menu-items-link">Ещё</button>
         </li>
@@ -25,12 +30,14 @@
           <li class="header__top-menu-items">
             <a href="" class="header__top-menu-items-link">Поддержка</a>
           </li>
-          <li class="header__top-menu-items">
-            <a href="" class="header__top-menu-items-link">Офисы продаж</a>
-          </li>
-          <li class="header__top-menu-items">
-            <a href="" class="header__top-menu-items-link">Оплата</a>
-          </li>
+          {{#if isPrivateClients }}
+            <li class="header__top-menu-items">
+              <a href="" class="header__top-menu-items-link">Офисы продаж</a>
+            </li>
+            <li class="header__top-menu-items">
+              <a href="" class="header__top-menu-items-link">Оплата</a>
+            </li>
+          {{/if}}
         </ul>
 
         <div class="header__contacts-wrapper">
@@ -44,8 +51,12 @@
             <svg width="20" height="20" aria-hidden="true" class="header__top-menu-items-link-icon">
               <use xlink:href="#lk"></use>
             </svg>
-            <span class="gl__xs-hide">Личный кабинет</span>
-            <span class="gl__xs-show">ЛК</span>
+            {{#if isPrivateClients }}
+              <span class="gl__xs-hide">Личный кабинет</span>
+              <span class="gl__xs-show">ЛК</span>
+            {{ else }}
+              Войти
+            {{/if}}
           </a>
         </div>
       </div>

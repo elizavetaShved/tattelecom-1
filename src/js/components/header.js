@@ -1,5 +1,6 @@
 import { checkExistParent } from '../finctions/checkExistParent';
 import getDeviceType from '../finctions/getDeviceType';
+import setMaxHeightElem from '../finctions/setMaxHeightElem';
 
 export class Header {
   hostElem;
@@ -48,6 +49,10 @@ export class Header {
     this.sideBarContentElem = document.querySelector('#side-bar-content');
 
     this.contentMainPageBusinessElem = document.querySelector('#b-main-page-host');
+
+    const captionMenuElems = this.menuWrapperElem.querySelectorAll('.header__b-menu-item-caption');
+
+    setMaxHeightElem(captionMenuElems);
 
     hideWhenSearchElems.map(elem => elem.classList.add('mod-show-search'));
 
@@ -150,6 +155,10 @@ export class Header {
             elem.style.marginLeft = 0;
           });
           popupContentElem.classList.add('mod-show');
+
+          // дать высоту заголовкам
+          const captionsElems = popupContentElem.querySelectorAll('.header__b-popup-caption-list');
+          setMaxHeightElem(captionsElems);
 
           if (popupContentElem.hasAttribute('data-alignment')) {
             const distanceXLink = this.menuLinkElements[popupContentElem.getAttribute('data-alignment')].getBoundingClientRect().x;
