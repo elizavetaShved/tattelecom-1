@@ -24,7 +24,11 @@
             }}
           </form>
 
-          <ul class="sales-offices-map__list">
+          <div class="sales-offices-map__not-found js-not-found">
+            По вашему запросу ничего не найдено
+          </div>
+
+          <ul class="sales-offices-map__list js-map-list">
             {{#each officesList }}
               <li class="sales-offices-map__item js-offices-item" data-coord="{{this.coords}}" {{#if isPartner }}data-is-partner{{/if}}>
                 <div class="sales-offices-map__item-header">

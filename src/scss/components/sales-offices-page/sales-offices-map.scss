@@ -7,27 +7,38 @@
 }
 
 .sales-offices-map__container {
-  position: relative;
-  height: 67rem;
+  @include for-sm-up {
+    position: relative;
+    height: 67rem;
+  }
 }
 
 .sales-offices-map__points-list {
-  position: absolute;
-  top: 3.8rem;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
+  @include for-sm-up {
+    position: absolute;
+    top: 3.8rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
 }
 
 .sales-offices-map__map {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
   background-color: lightgrey;
-  width: 100%;
+
+  @include for-sm-up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include for-sm-down {
+    height: 40rem;
+  }
 
   .address {
     font-weight: 600;
@@ -69,16 +80,36 @@
 }
 
 .sales-offices-map__points-list__content {
-  width: 41rem;
-  background-color: #fff;
-  box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 16px rgba(51, 51, 51, 0.08);
-  border-radius: 20px;
-  overflow: hidden;
-  pointer-events: auto;
+  @include for-sm-up {
+    width: 41rem;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 16px rgba(51, 51, 51, 0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    pointer-events: auto;
+  }
+
+  @include for-sm-down {
+    margin-bottom: 4rem;
+  }
 }
 
 .sales-offices-map__form {
-  padding: 1rem 3rem;
+  @include for-sm-up {
+    padding: 1rem 3rem;
+  }
+
+  @include for-sm-down {
+    margin-bottom: 2rem;
+
+    .checkbox__content {
+      width: 2rem;
+      height: 2rem;
+      flex: 0 0 2rem;
+      margin-right: 1rem;
+      margin-top: 0.2rem;
+    }
+  }
 }
 
 .sales-offices-map__input-search-wrapper {
@@ -89,6 +120,10 @@
   border-top: 1px solid transparent;
   border-bottom: 1px solid var(--main-text-color);
   margin-bottom: 2rem;
+
+  @include for-sm-down {
+    height: 4rem;
+  }
 }
 
 .sales-offices-map__input-search {
@@ -114,6 +149,18 @@
   height: 43rem;
   overflow: auto;
   @extend %scroll;
+
+  &.mod-no-items {
+    height: 38rem;
+
+    @include for-sm-down {
+      height: auto;
+    }
+  }
+
+  @include for-sm-down {
+    height: 34rem;
+  }
 }
 
 .sales-offices-map__item {
@@ -121,7 +168,11 @@
   border-top: 1px solid var(--border-color-2);
   cursor: pointer;
 
-  &.mod-hide {
+  @include for-sm-down {
+    padding: 1.6rem 0;
+  }
+
+  &.mod-hide, &.mod-hide-no-partner {
     display: none;
   }
 }
@@ -153,4 +204,19 @@
 .sales-offices-map__item-work-value {
   font-size: 1.2rem;
   line-height: 1.6rem;
+}
+
+.sales-offices-map__not-found {
+  padding: 1.6rem 3rem;
+  color: var(--main-color);
+  font-size: 1.6rem;
+  line-height: 2rem;
+
+  @include for-sm-down {
+    padding: 0;
+  }
+
+  &:not(.mod-show) {
+    display: none;
+  }
 }
