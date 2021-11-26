@@ -1,0 +1,400 @@
+.tatt-about-company {
+    &__section {
+        padding: 8rem 0;
+
+        p {
+            max-width: 88.1rem;
+            font-weight: 300;
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        &.mod-blue-bg {
+            background-color: rgba(0, 123, 195, 0.08);
+        }
+
+        &.mod-orange-bg {
+            background-color: rgba(232, 71, 53, 0.06);
+        }
+
+        @include for-md-down {
+            padding: 5rem 0;
+        }
+    }
+    
+    &__link {
+        display: inline-block;
+        padding: 1.7rem 2.4rem;
+        border: 1px solid #2b2b2b;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        letter-spacing: 0.01em;
+        border-radius: 3px;
+    }
+
+    &__title {
+        max-width: 47.9rem;
+    }
+}
+
+
+.tatt-about-company-hero {
+    margin-bottom: 7.7rem;
+
+    @include for-md-down {
+        margin-bottom: 5rem;
+    }
+
+    @include for-sm-down {
+        padding-top: 5rem;
+        margin-bottom: 0;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title-wrap {
+        max-width: 64.4rem;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 4.5rem;
+        line-height: 5.4rem;
+        margin-bottom: 6.4rem;
+        
+        @include for-md-down {
+            margin-bottom: 4rem;
+            font-size: 4rem;
+        }
+    }
+
+    &__img {
+        width: 25.5rem;
+        height: 25.5rem;
+        margin-right: 10rem;
+        display: block;
+        object-fit: cover;
+
+        @include for-md-down {
+            margin-right: 0;
+        }
+
+        @include for-sm-down {
+            display: none;
+        }
+    }
+}
+
+.tatt-about-company-numbers {
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 3rem;
+        row-gap: 5.4rem;
+
+        @include for-sm-down {
+            row-gap: 3rem;
+        }
+    }
+
+    &__item {
+        grid-column: 4 span;
+
+        @include for-md-down {
+            grid-column: 6 span;
+        }
+
+        @include for-sm-down {
+            grid-column: 12 span;
+        }
+
+        &-heading {
+            display: block;
+            margin-bottom: 2rem;
+            font-size: 3.8rem;
+            line-height: 4.9rem;
+            color: var(--red-color);
+        }
+
+        &-text {
+            display: inline-block;
+            font-size: 2rem;
+            line-height: 3.2rem;
+            letter-spacing: 0.015em;
+            max-width: 30rem;
+        }
+    }
+}
+
+.tatt-about-company-head {
+    padding: 4.3rem 0 0 0;
+    background-color: #EBF4FA;
+
+    @include for-md-down {
+        padding-bottom: 4.3rem;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            display: block;
+            object-fit: cover;
+            width: 41.3rem;
+            height: 55.8rem;
+        }
+
+        @include for-md-down {
+            img {
+                display: none;
+            }
+        }
+    }
+
+    &__info {
+        padding-top: 5rem;
+
+        @include for-md-down {
+            padding-top: 0;
+        }
+
+        &-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 8.7rem;
+
+            &:nth-last-of-type(1) {
+                margin-bottom: 0;
+            }
+        }
+
+        &-link {
+            display: inline-block;
+            margin-left: 3rem;
+            font-size: 2.6rem;
+            line-height: 3.3rem;
+            color: #007BC3;
+            margin-bottom: 2.3rem;
+
+            &:nth-last-of-type(1) {
+                margin-bottom: 0;
+            }
+
+            @include for-sm-down {
+                font-size: 2rem;
+                line-height: 2.4rem;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 2.7rem;
+    }
+}
+
+.tatt-about-company-career {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &__content {
+        position: relative;
+        display: flex;
+        padding-top: 15.6rem;
+        padding-bottom: 15.6rem;
+
+        @include for-md-down {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    }
+
+    &__info {
+        max-width: 47.9rem;
+    }
+
+    &__img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: block;
+        object-fit: cover;
+        width: 87.7rem;
+        height: 51.5rem;
+
+        @include for-md-down {
+            display: none;
+        }
+    }
+}
+
+.tatt-about-company-goals {
+    &__info {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            max-width: 52rem;
+        }
+
+        @include for-sm-down {
+            flex-direction: column;
+            justify-content: stretch;
+        }
+    }
+}
+
+.tatt-about-company-support {
+    .b-support__contacts-label {
+        max-width: 38.7rem;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+}
+
+.tatt-mission-hero {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 26.5rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include for-fl-down {
+        padding-bottom: 20rem;
+    }
+
+    @include for-sm-down {
+        padding-bottom: 15rem;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: rgba(1, 51, 80, 0.62);
+        content: "";
+    }
+
+    .bread-crumbs__container {
+        margin-bottom: 0;
+        background-color: transparent;
+
+        .bread-crumbs__link {
+            color: #fff;
+        }
+
+        .bread-crumbs__link-icon {
+            fill: #fff;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 13.5rem;
+
+        p {
+            text-align: center;
+            max-width: 59.5rem;
+            font-weight: 400;
+            font-size: 2.6rem;
+            line-height: 4.1rem;
+            color: #fff;
+
+            @include for-md-down {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+        }
+
+        @include for-md-down {
+            margin-top: 8rem;
+        }
+
+        @include for-sm-down {
+            margin-top: 0;
+            padding-top: 8rem;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 4.5rem;
+        font-size: 4.5rem;
+        line-height: 5.4rem;
+        color: #fff;
+
+        @include for-md-down {
+            margin-bottom: 3rem;
+        }
+
+        @include for-sm-down {
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.tatt-mission-block {
+    padding: 8rem 0;
+
+    @include for-md-down {
+        padding: 6rem 0;
+    }
+
+    &.mod-grey {
+        background-color: #F5F5F5;
+    }
+
+    p {
+        max-width: 73rem;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        margin-bottom: 1.5rem;
+
+        &:nth-last-of-type(1) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.tatt-mission-block2 {
+    padding: 10rem 0;
+
+    h3 {
+        font-weight: 400;
+        margin-top: 5rem;
+        font-size: 2.6rem;
+        line-height: 3.3rem;
+        margin-bottom: 1.5rem;
+
+        &:nth-of-type(1) {
+            margin-top: 0;
+        }
+    }
+
+    p {
+        max-width: 73rem;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    @include for-md-down {
+        padding: 6rem 0;
+    }
+}

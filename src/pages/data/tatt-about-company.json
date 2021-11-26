@@ -1,0 +1,13 @@
+{
+    "isTattelekom": true,
+    "title": "О компании",
+    "bread-crumbs": [
+        {
+          "name": "Главная"
+        },
+        {
+          "name": "О компании",
+          "noLink": true
+        }
+    ]
+}  

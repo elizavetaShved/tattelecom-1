@@ -1,0 +1,16 @@
+{
+    "isTattelekom": true,
+    "title": "Миссия Таттелеком",
+    "bread-crumbs": [
+        {
+          "name": "Главная"
+        },
+        {
+          "name": "О компании"
+        },
+        {
+            "name": "Миссия Таттелеком",
+            "noLink": true
+        }
+    ]
+}  
