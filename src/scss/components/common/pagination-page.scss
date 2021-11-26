@@ -92,7 +92,7 @@ $gat-tabs: 14px;
 
   &:checked {
     + .pagination-page__pages-radio-content {
-      background-color: var(--main-color);
+      background-color: var(--main-color) !important;
       color: #fff;
     }
   }

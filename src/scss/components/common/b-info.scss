@@ -22,6 +22,10 @@
   letter-spacing: 0.02em;
   margin-bottom: 5rem;
 
+  @include for-sm-down {
+    margin-bottom: 2.6rem;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }

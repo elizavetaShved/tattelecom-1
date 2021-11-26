@@ -105,3 +105,29 @@
 .b-advantages-opportunities__no-image-content {
   padding-left: 8.6rem;
 }
+
+.b-advantages-opportunities__grid-wrapper {
+  display: grid;
+  grid-gap: 3rem;
+
+  &.mod-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &.mod-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &.mod-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include for-bg-down {
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  @include for-xs-down {
+    grid-template-columns: 1fr !important;
+  }
+}

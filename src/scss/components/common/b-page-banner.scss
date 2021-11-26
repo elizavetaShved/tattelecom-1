@@ -72,6 +72,11 @@
   }
 
   &.b-internet-wi-fi {
+    .b-page-banner__content {
+      @include for-sm-up {
+        height: 40rem;
+      }
+    }
     .b-page-banner__text {
       @include for-xs-down {
         max-width: 80%;

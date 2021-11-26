@@ -75,14 +75,14 @@
         transition: border-bottom-color 250ms, color 250ms;
 
         &._is-active {
-          color: var(--main-color-2);
-          border-bottom-color: var(--main-color-2);
+          color: var(--red-color);
+          border-bottom-color: var(--red-color);
         }
 
         &:hover {
           &:not(.mod-with-icons) {
-            color: var(--main-color-2);
-            border-bottom-color: var(--main-color-2);
+            color: var(--red-color);
+            border-bottom-color: var(--red-color);
           }
         }
       }
