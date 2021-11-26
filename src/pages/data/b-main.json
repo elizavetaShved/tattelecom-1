@@ -7,8 +7,7 @@
     {
       "isLarge": true,
       "title": "Единый бизнес",
-      "additionalClass": "mod-unified-business",
-      "subtitle-down": "Все услуги связи в одном тарифе",
+      "subtitle-down": "Все услуги связи в<br>одном тарифе",
       "img": "img/b-main-page/top-slider/img-1.jpg"
     },
     {
@@ -30,7 +29,7 @@
     {
       "isLarge": true,
       "additionalClass": "mod-price",
-      "title": "Wi-fi Smart",
+      "title": "Wi-fi<br>Smart",
       "subtitle-up": "Управляемая сеть Wi-fi для гостей",
       "subtitle-down": "от 2700 ₽",
       "img": "img/b-main-page/top-slider/img-4.jpg"
@@ -38,30 +37,30 @@
     {
       "isLarge": true,
       "title": "Единый бизнес",
-      "subtitle-down": "Все услуги связи в одном тарифе",
+      "subtitle-down": "Все услуги связи в<br>одном тарифе",
       "img": "img/b-main-page/top-slider/img-1.jpg"
     }
   ],
   "businessSolutions": [
     {
-      "title": "Тарифы мобильной связи",
+      "title": "Тарифы<br>мобильной<br>связи",
       "img": "img/b-main-page/business-solutions/img-1.jpg"
     },
     {
-      "title": "Красивый номер в подарок",
+      "title": "Красивый номер<br>в подарок",
       "isWhiteTitle": true,
-      "subtitle": "при подключении мобильной связи",
+      "subtitle": "при подключении<br>мобильной связи",
       "isWhiteSubtitle": true,
       "img": "img/b-main-page/business-solutions/img-2.jpg"
     },
     {
-      "title": "Тарифы мобильного интернета",
+      "title": "Тарифы<br>мобильного<br>интернета",
       "img": "img/b-main-page/business-solutions/img-3.jpg"
     },
     {
       "title": "Sip телефония",
       "isWhiteTitle": true,
-      "subtitle": "Современная телефония для офиса доступно и быстро",
+      "subtitle": "Современная<br>телефония для офиса<br>доступно и быстро",
       "img": "img/b-main-page/business-solutions/img-4.jpg"
     },
     {
@@ -142,7 +141,7 @@
     {
       "title": "Видеонаблюдение",
       "isWhiteTitle": true,
-      "subtitle": "Удаленный контроль в режиме 24/7",
+      "subtitle": "Удаленный контроль<br>в режиме 24/7",
       "isTopSubtitle": true,
       "isWhiteSubtitle": true,
       "img": "img/b-main-page/safety/img-1.jpg"
@@ -150,13 +149,13 @@
     {
       "title": "Видеоаналитика",
       "isWhiteTitle": true,
-      "subtitle": "Безопасность и контроль бизнеса на расстоянии",
+      "subtitle": "Безопасность<br>и контроль<br>бизнеса<br>на расстоянии",
       "isTopSubtitle": true,
       "img": "img/b-main-page/safety/img-2.jpg"
     },
     {
       "title": "DDoS защита",
-      "subtitle": "Надежная защита от DDoS атак",
+      "subtitle": "Надежная защита<br>от DDoS атак",
       "isTopSubtitle": true,
       "img": "img/b-main-page/safety/img-3.jpg"
     },
@@ -164,7 +163,7 @@
       "title": "Виртуальная АТС",
       "additionalClass": "mod-price",
       "isWhiteTitle": true,
-      "subtitle": "Умная телефония для вашего бизнеса",
+      "subtitle": "Умная телефония<br>для вашего бизнеса",
       "isTopSubtitle": true,
       "subtitlePrice": 600,
       "img": "img/b-main-page/safety/img-4.jpg"
@@ -183,7 +182,7 @@
       "img": "img/b-main-page/cases/img-1.jpg"
     },
     {
-      "title": "Таттелеком в проекте «Наш Двор»",
+      "title": "Таттелеком в проекте<br>«Наш Двор»",
       "isWhiteTitle": true,
       "img": "img/b-main-page/cases/img-2.jpg"
     }

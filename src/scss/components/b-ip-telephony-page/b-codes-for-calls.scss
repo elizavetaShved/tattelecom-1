@@ -8,6 +8,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 9rem;
+  margin-top: 5rem;
 
   @include for-bg-down {
     grid-gap: 4rem;
@@ -15,6 +16,7 @@
 
   @include for-sm-down {
     grid-template-columns: 1fr;
+    margin-top: 2.6rem;;
   }
 }
 
@@ -51,4 +53,13 @@
 
 .b-codes-for-calls__item-value {
   text-align: end;
+}
+
+.b-codes-for-calls__btn {
+  margin-bottom: 0;
+}
+
+.b-codes-for-calls__button-icon {
+  height: 2.4rem;
+  fill: var(--main-text-color);
 }

@@ -251,6 +251,10 @@
   display: flex;
   align-items: center;
   margin-left: 4.8rem;
+
+  @include for-sm-down {
+    margin-left: 2rem;
+  }
 }
 
 .header__top-menu-items-link-icon {
@@ -369,6 +373,8 @@
   flex: 0 0;
 
   &.mod-business {
+    transition: opacity 250ms;
+
     &:not(.mod-show) {
       opacity: 0;
       pointer-events: none;
@@ -801,6 +807,7 @@
   pointer-events: none;
   transition: opacity 250ms;
   z-index: 2;
+  width: 24rem;
 }
 
 .header__b-menu-item-drop-link {
@@ -811,8 +818,7 @@
   padding: 1rem 1.4rem;
 
   &:hover {
-    color: var(--main-color-business-hover);
-    text-decoration: underline;
+    color: var(--main-color) !important;
   }
 }
 
@@ -828,6 +834,7 @@
 
 .header__b-popup-list {
   margin: -1rem;
+  margin-left: 2.4rem;
 }
 
 .header__b-popup-item-link {

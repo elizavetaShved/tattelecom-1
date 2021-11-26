@@ -45,7 +45,7 @@
 
   &.mod-large {
     padding: 3rem 3.2rem;
-    width: 56rem;
+    width: 60rem;
 
     @include for-bg-down {
       width: 43.8rem;
@@ -70,7 +70,7 @@
 
   &.mod-middle-horizontal {
     padding: 2.2rem;
-    width: 37rem;
+    width: 40rem;
 
     @include for-bg-down {
       width: 29rem;
@@ -130,12 +130,6 @@
 
   &.mod-center {
     justify-content: center;
-  }
-
-  &.mod-unified-business {
-    .b-fractional-slider__card-subtitle {
-      max-width: 50%;
-    }
   }
 }
 
