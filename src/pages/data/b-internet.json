@@ -16,7 +16,7 @@
       "connectBtn": "Подключить"
     },
     {
-      "title": "Интерет WI-FI",
+      "title": "Интернет WI-FI",
       "subtitle": "Беспроводной интернет для сотрудников и гостей ",
       "cost": "333",
       "detailBtn": "Подробнее",
@@ -39,7 +39,7 @@
       },
       "cost": "444",
       "detailBtn": "Подробнее",
-      "connectBtn": "Выбрать номер"
+      "connectBtn": "Подключить"
     }
   ],
   "usefulArticles": [

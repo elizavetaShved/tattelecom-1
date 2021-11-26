@@ -19,7 +19,20 @@
       "title": "Оффер"
     }
   },
-  "tariffs": [
+  "ratesBtn": [
+    {
+      "itemName": "Междугородная связь",
+      "value": "long-distance",
+      "name": "toggle-btn",
+      "isChecked": true
+    },
+    {
+      "itemName": "Международная связь",
+      "value": "international",
+      "name": "toggle-btn"
+    }
+  ],
+  "tariffsLongDistance": [
     {
       "name": "Тариф 1"
     },
@@ -31,6 +44,17 @@
     },
     {
       "name": "Тариф 4"
+    }
+  ],
+  "tariffsInternational": [
+    {
+      "name": "Тариф 1b"
+    },
+    {
+      "name": "Тариф 2b"
+    },
+    {
+      "name": "Тариф 3b"
     }
   ],
   "steps": {

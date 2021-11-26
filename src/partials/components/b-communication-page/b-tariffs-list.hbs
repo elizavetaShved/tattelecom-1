@@ -1,0 +1,20 @@
+<section class="b-tariffs-list gl__section">
+  <div class="gl__page-content">
+    <div class="js-menu-tabs-container">
+
+      {{> common/controls/b-menu-tabs menuTabs=ratesBtn }}
+
+      <h2 class="gl__title">
+        Тарифы
+      </h2>
+
+      <div class="js-menu-tab-content gl__menu-tab-content mod-show" data-menu="long-distance">
+        {{> common/b-tariffs-list/content tariffs=tariffsLongDistance }}
+      </div>
+
+      <div class="js-menu-tab-content gl__menu-tab-content mod-show" data-menu="international">
+        {{> common/b-tariffs-list/content tariffs=tariffsInternational }}
+      </div>
+    </div>
+  </div>
+</section>
