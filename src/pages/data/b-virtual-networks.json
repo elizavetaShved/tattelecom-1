@@ -5,11 +5,10 @@
   "banner": {
     "changeSize": 768,
     "title": {
-      "accentText": "Виртуальные сети IP VPN",
-      "colorClass": "white"
+      "accentText": "Виртуальные сети<br>IP VPN"
     },
     "largeSubtitle": {
-      "text": "Единая корпоративная сеть надежно и быстро"
+      "text": "Единая корпоративная сеть<br>надежно и быстро"
     },
     "image": "b-virtual-networks.jpg",
     "mobile": {

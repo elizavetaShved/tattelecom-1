@@ -1,0 +1,76 @@
+.b-discounts__content {
+  padding: 3.6rem 6rem;
+  box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+  border-radius: 20px;
+
+  @include for-bg-down {
+    padding: 2rem 3rem;
+  }
+}
+
+.b-discounts__title {
+  font-weight: 900;
+  font-size: 3.8rem;
+  line-height: 5rem;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: var(--red-color);
+  margin-bottom: 2.4rem;
+
+  @include for-sm-down {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 1.4rem;
+  }
+}
+
+.b-discounts__list {
+  display: flex;
+  margin-bottom: 3.4rem;
+
+  @include for-xs-down {
+    flex-direction: column;
+  }
+}
+
+.b-discounts__item {
+  color: var(--red-color);
+
+  & + & {
+    margin-left: 11.2rem;
+
+    @include for-sm-down {
+      margin-left: 4rem;
+    }
+
+    @include for-xs-down {
+      margin-left: 0;
+      margin-top: 2rem;
+    }
+  }
+}
+
+.b-discounts__item-caption {
+  font-weight: 600;
+  font-size: 3.8rem;
+  line-height: 5rem;
+  letter-spacing: 0.015em;
+  margin-bottom: .6rem;
+
+  @include for-sm-down {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: .4rem;
+  }
+}
+
+.b-discounts__item-value {
+  font-size: 2rem;
+  line-height:2.6rem;
+  letter-spacing: 0.015em;
+
+  @include for-sm-down {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+}

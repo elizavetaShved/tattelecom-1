@@ -4,6 +4,16 @@
   @include for-sm-down {
     padding: 2rem 0 5rem;
   }
+
+  &.mod-business {
+    .choices__list {
+      background-color: #fff;
+    }
+
+    .pagination-page__pages-radio-content, .pagination-page__btn-nav {
+      background-color: #fff;
+    }
+  }
 }
 
 .phone-list__subtitle {
