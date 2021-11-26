@@ -4382,7 +4382,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 .pagination-page__pages-radio {
   display: none; }
   .pagination-page__pages-radio:checked + .pagination-page__pages-radio-content {
-    background-color: var(--main-color);
+    background-color: var(--main-color) !important;
     color: #fff; }
 
 .pagination-page__pages-radio-content {
@@ -5261,14 +5261,6 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     .info-drop-menu__title-icon {
       margin-right: 1.2rem; } }
 
-.info-drop-menu__content {
-  padding: 5rem;
-  border-radius: 20px; }
-  .info-drop-menu__content.mod-small {
-    border-radius: 0;
-    padding: 0 4.2rem;
-    font-weight: 300; }
-
 .info-drop-menu__flex-list-wrapper {
   margin-bottom: 2.4rem; }
   .info-drop-menu__flex-list-wrapper:last-child {
@@ -5422,11 +5414,11 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     -webkit-transition: border-bottom-color 250ms, color 250ms;
     transition: border-bottom-color 250ms, color 250ms; }
     .header.mod-tattelekom .header__top-menu-items-link:not(.mod-tatt-right-block-link)._is-active {
-      color: var(--main-color-2);
-      border-bottom-color: var(--main-color-2); }
+      color: var(--red-color);
+      border-bottom-color: var(--red-color); }
     .header.mod-tattelekom .header__top-menu-items-link:not(.mod-tatt-right-block-link):hover:not(.mod-with-icons) {
-      color: var(--main-color-2);
-      border-bottom-color: var(--main-color-2); }
+      color: var(--red-color);
+      border-bottom-color: var(--red-color); }
   .header.mod-tattelekom .header__bottom-menu-list {
     margin: 0; }
   .header.mod-tattelekom .header__bottom-menu-link {
@@ -8048,6 +8040,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   @media screen and (max-width: 767px) {
     .phone-list {
       padding: 2rem 0 5rem; } }
+  .phone-list.mod-business .choices__list {
+    background-color: #fff; }
+  .phone-list.mod-business .pagination-page__pages-radio-content, .phone-list.mod-business .pagination-page__btn-nav {
+    background-color: #fff; }
 
 .phone-list__subtitle {
   font-size: 2rem;
@@ -11332,6 +11328,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
             justify-content: flex-start; }
   .b-page-banner.b-digital-streams .b-page-banner__content {
     padding-right: 40%; }
+  @media screen and (min-width: 768px) {
+    .b-page-banner.b-internet-wi-fi .b-page-banner__content {
+      height: 40rem; } }
   @media screen and (max-width: 559px) {
     .b-page-banner.b-internet-wi-fi .b-page-banner__text {
       max-width: 80%; } }
@@ -11807,8 +11806,6 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
           justify-content: space-between;
   padding: 2rem;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 20px rgba(153, 152, 168, 0.17);
-          box-shadow: 0 0 20px rgba(153, 152, 168, 0.17);
   border-radius: 1rem;
   min-height: 41rem;
   height: 100%; }
@@ -12375,6 +12372,23 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 .b-advantages-opportunities__no-image-content {
   padding-left: 8.6rem; }
 
+.b-advantages-opportunities__grid-wrapper {
+  display: grid;
+  grid-gap: 3rem; }
+  .b-advantages-opportunities__grid-wrapper.mod-col-2 {
+    grid-template-columns: repeat(2, 1fr); }
+  .b-advantages-opportunities__grid-wrapper.mod-col-3 {
+    grid-template-columns: repeat(3, 1fr); }
+  .b-advantages-opportunities__grid-wrapper.mod-col-4 {
+    grid-template-columns: repeat(4, 1fr); }
+  @media screen and (max-width: 1023px) {
+    .b-advantages-opportunities__grid-wrapper {
+      grid-gap: 2rem;
+      grid-template-columns: repeat(2, 1fr) !important; } }
+  @media screen and (max-width: 559px) {
+    .b-advantages-opportunities__grid-wrapper {
+      grid-template-columns: 1fr !important; } }
+
 .b-check {
   padding: 5rem 0; }
   @media screen and (max-width: 1159px) {
@@ -12485,6 +12499,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   line-height: 2.6rem;
   letter-spacing: 0.02em;
   margin-bottom: 5rem; }
+  @media screen and (max-width: 767px) {
+    .b-info__text {
+      margin-bottom: 2.6rem; } }
   .b-info__text:last-child {
     margin-bottom: 0; }
   .b-info__text.mod-padding-left {
@@ -13763,6 +13780,74 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   -webkit-box-shadow: var(--box-shadow-input);
           box-shadow: var(--box-shadow-input); }
 
+.b-discounts__content {
+  padding: 3.6rem 6rem;
+  -webkit-box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+          box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+  border-radius: 20px; }
+  @media screen and (max-width: 1023px) {
+    .b-discounts__content {
+      padding: 2rem 3rem; } }
+
+.b-discounts__title {
+  font-weight: 900;
+  font-size: 3.8rem;
+  line-height: 5rem;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: var(--red-color);
+  margin-bottom: 2.4rem; }
+  @media screen and (max-width: 767px) {
+    .b-discounts__title {
+      font-size: 3rem;
+      line-height: 4rem;
+      margin-bottom: 1.4rem; } }
+
+.b-discounts__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3.4rem; }
+  @media screen and (max-width: 559px) {
+    .b-discounts__list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+.b-discounts__item {
+  color: var(--red-color); }
+  .b-discounts__item + .b-discounts__item {
+    margin-left: 11.2rem; }
+    @media screen and (max-width: 767px) {
+      .b-discounts__item + .b-discounts__item {
+        margin-left: 4rem; } }
+    @media screen and (max-width: 559px) {
+      .b-discounts__item + .b-discounts__item {
+        margin-left: 0;
+        margin-top: 2rem; } }
+
+.b-discounts__item-caption {
+  font-weight: 600;
+  font-size: 3.8rem;
+  line-height: 5rem;
+  letter-spacing: 0.015em;
+  margin-bottom: .6rem; }
+  @media screen and (max-width: 767px) {
+    .b-discounts__item-caption {
+      font-size: 3rem;
+      line-height: 4rem;
+      margin-bottom: .4rem; } }
+
+.b-discounts__item-value {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.015em; }
+  @media screen and (max-width: 767px) {
+    .b-discounts__item-value {
+      font-size: 1.8rem;
+      line-height: 2rem; } }
+
 .tatt-banner {
   height: 52.6rem;
   margin-bottom: 7.7rem;
@@ -14850,7 +14935,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   min-height: 36.2rem; }
 
 .b-your-benefit__red-text {
-  color: var(--main-color-2); }
+  color: var(--red-color); }
 
 .b-your-benefit__content {
   display: -webkit-box;
