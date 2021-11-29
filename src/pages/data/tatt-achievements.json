@@ -1,0 +1,56 @@
+{
+    "isTattelekom": true,
+    "title": "Миссия Таттелеком",
+    "script": "tatt-achievements-page",
+    "bread-crumbs": [
+        {
+          "name": "Главная"
+        },
+        {
+          "name": "О компании"
+        },
+        {
+            "name": "Достижения Таттелеком",
+            "noLink": true
+        }
+    ],
+    "achievements-list": [
+        {
+            "year": "2020 г",
+            "value": "2020",
+            "isChecked": true
+        },
+        {
+            "year": "2019 г",
+            "value": "2019"
+        },
+        {
+            "year": "2018 г",
+            "value": "2018"
+        },
+        {
+            "year": "2017 г",
+            "value": "2017"
+        },
+        {
+            "year": "2016 г",
+            "value": "2016"
+        },
+        {
+            "year": "2015 г",
+            "value": "2015"
+        },
+        {
+            "year": "2014 г",
+            "value": "2014"
+        },
+        {
+            "year": "2013 г",
+            "value": "2013"
+        },        {
+            "year": "2012 г",
+            "value": "2012"
+        }
+
+    ]
+}  

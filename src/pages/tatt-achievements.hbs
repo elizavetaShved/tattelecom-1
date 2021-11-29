@@ -1,0 +1,107 @@
+{{#extend "layout"}}
+{{#content "main"}}
+<div class="tatt-about-company tatt-achievements">
+    {{> bread-crumbs isTatt=true}}
+    <section class="tatt-achievements__section">
+        <div class="gl__page-content">
+            <h1 class="tatt-achievements__title gl__title">
+                Достижения Таттелеком
+            </h1>
+            <div class="tatt-row-grid js-menu-tabs-container">
+                <div class="tatt-row-grid__block">
+                    <div class="tatt-achievements__filter-container gl__filter-container--lg js-filter-container">
+                        <button type="button" class="gl__lg-show gl__filter-modal-close modal__btn-close js-filter-close" id="close-thanks-modal">
+                            <svg width="32" height="32" aria-hidden="true" class="modal__close-icon">
+                            <use xlink:href="#close"></use>
+                            </svg>
+                        </button>
+                        <ul class="tatt-achievements__nav-list">
+                            {{#each achievements-list }}
+                                <li class="tatt-achievements__nav-item">
+                                    <label class="tatt-achievements__nav-item-label">
+                                        <input type="radio" class="tatt-achievements__nav-radio js-menu-tab" {{#if isChecked }}checked{{/if}} name="achievements-nav-item" value="{{this.value}}">
+                                        <span class="tatt-achievements__nav-item-text">
+                                            {{ this.year}}
+                                        </span>
+                                        <svg width="26" height="8" aria-hidden="true" class="tatt-achievements__nav-item-icon">
+                                            <use xlink:href="#arrow-long-small"></use>
+                                        </svg>
+                                    </label>
+                                </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+
+                    <div class="gl__lg-show">
+                        {{> common/btn-settings text="Навигация" }}
+                    </div>
+                </div>
+                <div class="tatt-row-grid__block tatt-achievements__content">
+                    {{#each achievements-list }}
+                        <div class="tatt-achievements__content-item gl__menu-tab-content js-menu-tab-content {{#if isChecked }}mod-show{{/if}}" data-menu="{{this.value}}" >
+                            <h2 class="tatt-achievements__content-title">
+                            {{ this.year }}
+                            </h2>
+                            <span class="tatt-achievements__content-date">
+                                17.09.2018 
+                            </span>
+                            <p>
+                                Таттелеком присоединился к всероссийскому дню бега
+                            </p>
+                            <span class="tatt-achievements__content-date">
+                                03.09.2018
+                            </span>
+                            <p>
+                                В День знаний генеральный директор Таттелеком принял участие в торжественной церемонии открытия новой школы в Казани
+                            </p>
+                            <span class="tatt-achievements__content-date">
+                                03.09.2018
+                            </span>
+                            <p>
+                                В Министерстве информатизации и связи республики подвели итоги работы отрасли за первое полугодие 2018 года
+                            </p>
+                            <span class="tatt-achievements__content-date">
+                                16.07.2018
+                            </span>
+                            <p>
+                                Команда Таттелеком заняла III место в забеге ''Ночная Казань-2018''
+                            </p>
+                            <span class="tatt-achievements__content-date">
+                                06.06.2018
+                            </span>
+                            <p>
+                                Футбольная команда Таттелеком победитель чемпионата по мини-футболу сезона 2017/2018
+                            </p>
+                            <span class="tatt-achievements__content-date">
+                                19.03.2018
+                            </span>
+                            <p>
+                                Компания ПАО ''Таттелеком'' - победитель конкурса ''Благотворитель года – 2017''
+                            </p>
+                            <span class="tatt-achievements__content-date">
+                                20.02.2018
+                            </span>
+                            <p>
+                                Команда Таттелеком заняла первое место на лыжных гонках отраслевой cпартакиады ''Здоровье 2018''
+                            </p>
+                            <span class="tatt-achievements__content-date">
+                                26.01.2018
+                            </span>
+                            <p>
+                                ''Татарстан - хороший пример'', - отметил президент Российской Федерации Владимир Путин
+                            </p>
+                            <span class="tatt-achievements__content-date">
+                                22.01.2018
+                            </span>
+                            <p>
+                                Таттелеком стал одним из главных победителей Всероссийского конкурса "100 Лучших товаров России " 2017 года по разделу услуги для населения
+                            </p>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{{/content}}
+{{/extend}}

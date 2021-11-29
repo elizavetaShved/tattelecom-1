@@ -84,6 +84,7 @@ module.exports = {
     ['tatt-regulations-page']: './src/js/pages/tatt-regulations-page',
     ['tatt-telecom-operators-page']: './src/js/pages/tatt-telecom-operators-page',
     ['tatt-dealers-page']: './src/js/pages/tatt-dealers-page',
+    ['tatt-achievements-page']: './src/js/pages/tatt-achievements-page',
   },
   output: {
     path: path.resolve(__dirname, './build/js'),

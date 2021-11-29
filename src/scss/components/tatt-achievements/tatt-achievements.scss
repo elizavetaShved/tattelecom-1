@@ -1,0 +1,106 @@
+.tatt-achievements {
+    margin-bottom: 10rem;
+
+    @include for-xs-down {
+        margin-top: 4rem;
+    }
+
+    &__nav-list {
+        width: 12.7rem;
+
+        @include for-lg-down {
+            width: 70%;
+            background-color: #fff;
+            padding: 3rem;
+            border-radius: 10px;
+        }
+    }
+
+    &__nav-radio {
+        display: none;
+    }
+
+    &__nav-item {
+        border-bottom: 1px solid var(--border-color);
+        transition: color 200ms;
+
+        &:first-child {
+            border-top: 1px solid var(--border-color);
+        }
+    }
+
+    &__nav-item-label {
+        padding: 1.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: color 200ms;
+
+        &:hover {
+            color: var(--main-color-business);
+
+            .tatt-achievements__nav-item-icon {
+                fill: var(--main-color-business);
+            }
+        }
+    }
+
+    &__nav-item-icon {
+        transition: fill 200ms;
+    }
+
+    &__content {
+        &-title {
+            font-weight: 400;
+            font-size: 10rem;
+            line-height: 12rem;
+            margin-bottom: 5rem;
+
+            @include for-lg-down {
+                font-size: 8rem;
+                line-height: 10rem;
+                margin-bottom: 3rem;
+            }
+
+            @include for-xs-down {
+                font-size: 6rem;
+                line-height: 8rem;
+            }
+        }
+
+        &-date {
+            display: inline-block;
+            margin-top: 4rem;
+            font-weight: 300;
+            font-size: 1.4rem;
+            line-height: 160%;
+            color: var(--main-grey-color);
+
+            &:nth-of-type(1) {
+                margin-top: 0;
+            }
+
+            @include for-xs-down {
+                margin-top: 3rem;
+            }
+        }
+
+        &-item {
+            max-width: 73.4rem;
+            p {
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 160%;
+            } 
+        }
+    }
+
+    &__filter-container {
+        @include for-lg-down {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
