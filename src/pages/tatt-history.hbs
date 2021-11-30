@@ -1,0 +1,113 @@
+{{#extend "layout"}}
+{{#content "main"}}
+<div class="tatt-about-company tatt-achievements">
+    {{> bread-crumbs isTatt=true}}
+    <section class="tatt-achievements__section">
+        <div class="gl__page-content">
+            <h1 class="tatt-achievements__title gl__title">
+                История Таттелеком 
+            </h1>
+            <div class="tatt-row-grid js-menu-tabs-container">
+                <div class="tatt-row-grid__block">
+                    <div class="tatt-achievements__filter-container gl__filter-container--lg js-filter-container">
+                        <button type="button" class="gl__lg-show gl__filter-modal-close modal__btn-close js-filter-close" id="close-thanks-modal">
+                            <svg width="32" height="32" aria-hidden="true" class="modal__close-icon">
+                            <use xlink:href="#close"></use>
+                            </svg>
+                        </button>
+                        <ul class="tatt-achievements__nav-list">
+                            {{#each achievements-list }}
+                                <li class="tatt-achievements__nav-item">
+                                    <label class="tatt-achievements__nav-item-label">
+                                        <input type="radio" class="tatt-achievements__nav-radio js-menu-tab" {{#if isChecked }}checked{{/if}} name="achievements-nav-item" value="{{this.value}}">
+                                        <span class="tatt-achievements__nav-item-text">
+                                            {{ this.year}}
+                                        </span>
+                                        <svg width="26" height="8" aria-hidden="true" class="tatt-achievements__nav-item-icon">
+                                            <use xlink:href="#arrow-long-small"></use>
+                                        </svg>
+                                    </label>
+                                </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+
+                    <div class="gl__lg-show">
+                        {{> common/btn-settings text="Навигация" }}
+                    </div>
+                </div>
+                <div class="tatt-row-grid__block tatt-achievements__content">
+                    {{#each achievements-list }}
+                        <div class="tatt-achievements__content-item gl__menu-tab-content js-menu-tab-content {{#if isChecked }}mod-show{{/if}}" data-menu="{{this.value}}" >
+                            <h2 class="tatt-achievements__content-title">
+                            {{ this.year }}
+                            </h2>
+                            <span class="tatt-achievements__content-date2">
+                                1 февраля 
+                            </span>
+                            <p>
+                                ОАО «Таттелеком» одной из первых в республике поддержала инициативу правительства, и объявила о старте собственной программы повышения уровня компьютерной грамотности населения Татарстана. Первые бесплатные курсы компьютерной грамотности открылись на базе Верхнеуслонского РУЭС.
+                            </p>
+                            <span class="tatt-achievements__content-date2">
+                                Май
+                            </span>
+                            <p>
+                                к 65-летию Великой Победы коллектив компании по своей инициативе собрал и передал в дар ветеранам-связистам денежные средства. Каждый ветеран «Таттелекома» (а их более 380 человек) получил ко Дню Победы денежный подарок. 15 ветеранам-связистам были улучшены жилищные условия.
+                            </p>
+                            <span class="tatt-achievements__content-date2">
+                                1 июня
+                            </span>
+                            <p>
+                                Генеральный директор ОАО «Таттелеком» награжден Благодарственным письмом Президента РТ.
+                            </p>
+                            <span class="tatt-achievements__content-date2">
+                                11 июня
+                            </span>
+                            <p>
+                                ОАО «Таттелеком» присвоено почетное звание «Лучшая компания России 2010» в номинации «Оператор проводной связи».
+                            </p>
+                            <span class="tatt-achievements__content-date2">
+                                20 июля
+                            </span>
+                            <p>
+                                ОАО «Таттелеком» с рабочим визитом посетил Премьер-министр Республики Татарстан Ильдар Халиков. Ильдар Шафкатович ознакомился с деятельностью предприятия, основными экономическими показателями, а так же посетил важные объекты связи. На пресс-конференции по итогам визита Премьер-министр назвал ОАО «Таттелеком» главным стратегическим партнером правительства республики.
+                            </p>
+                            <span class="tatt-achievements__content-date2">
+                                19.03.2018
+                            </span>
+                            <p>
+                                Компания ПАО ''Таттелеком'' - победитель конкурса ''Благотворитель года – 2017''
+                            </p>
+                            <span class="tatt-achievements__content-date2">
+                                26 октября
+                            </span>
+                            <p>
+                                Fitch Ratings повысило долгосрочный рейтинг дефолта эмитента ОАО Таттелеком в иностранной валюте (РДЭ) до «BB-» с «B +», что отражает стабильные показатели операционной деятельности компании в условиях экономического спада
+                            </p>
+                            <span class="tatt-achievements__content-date2">
+                                Ноябрь
+                            </span>
+                            <p>
+                                ОАО «Таттелеком» совместно с системным интегратором БЕЛТЕЛ завершил масштабный проект по модернизации своего контакт-центра.
+                            </p>
+                            <span class="tatt-achievements__content-date2">
+                                10 декабря
+                            </span>
+                            <p>
+                                Решением Ученого Совета Татарского государственного гуманитарно-педагогического университета генеральному директору ОАО «Таттелеком» Лутфулле Шафигуллину было присуждено звание «Заслуженный партнер Татарского государственного гуманитарно-педагогического университета».
+                            </p>
+                            <span class="tatt-achievements__content-date2">
+                                29 декабря
+                            </span>
+                            <p>
+                                Пенсионный фонд РФ по Республики Татарстан назвал генерального директора ОАО «Таттелеком» Лутфуллу Шафигуллина страхователем, достигшим высокого уровня организации работы в решении задач по обязательному страхованию и обеспечивающим соблюдение социальных гарантий застрахованных лиц.
+                            </p>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{{/content}}
+{{/extend}}

@@ -1,0 +1,92 @@
+{
+    "isTattelekom": true,
+    "title": "История Таттелеком",
+    "script": "tatt-achievements-page",
+    "bread-crumbs": [
+        {
+          "name": "Главная"
+        },
+        {
+          "name": "О компании"
+        },
+        {
+            "name": "История",
+            "noLink": true
+        }
+    ],
+    "achievements-list": [
+        {
+            "year": "1998 г",
+            "value": "1998",
+            "isChecked": true
+        },
+        {
+            "year": "2000 г",
+            "value": "2000"
+        },
+        {
+            "year": "2003 г",
+            "value": "2003"
+        },
+        {
+            "year": "2006 г",
+            "value": "2006"
+        },
+        {
+            "year": "2007 г",
+            "value": "2007"
+        },
+        {
+            "year": "2008 г",
+            "value": "2008"
+        },
+        {
+            "year": "2009 г",
+            "value": "2009"
+        },
+        {
+            "year": "2010 г",
+            "value": "2010"
+        }, 
+        {
+            "year": "2011 г",
+            "value": "2011"
+        },
+        {
+            "year": "2012 г",
+            "value": "2012"
+        },
+        {
+            "year": "2013 г",
+            "value": "2013"
+        },
+        {
+            "year": "2014 г",
+            "value": "2014"
+        },
+        {
+            "year": "2015 г",
+            "value": "2015"
+        },
+        {
+            "year": "2016 г",
+            "value": "2016"
+        },
+        {
+            "year": "2017 г",
+            "value": "2017"
+        },
+        {
+            "year": "2018 г",
+            "value": "2018"
+        },
+        {
+            "year": "2019 г",
+            "value": "2019"
+        },
+        {
+            "year": "2020 г",
+            "value": "2020"
+        }
+    ]
+}  

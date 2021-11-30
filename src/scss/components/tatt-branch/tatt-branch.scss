@@ -1,0 +1,299 @@
+.tatt-branch {
+    @include for-sm-down {
+        padding-top: 4rem;
+        margin-bottom: 7rem;
+    }
+
+    &__section {
+        margin-bottom: 10rem;
+
+        @include for-md-down {
+            margin-bottom: 6rem;
+        }
+    }
+
+    &__section-news {
+        .news-list {
+            padding: 0;
+        }
+    }
+
+    &__buton {
+        padding: 1.7rem;
+        border: 1px solid var(--main-text-color);
+        border-radius: 6px;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        transition: color 200ms;
+
+        &:hover {
+            color: var(--main-color);
+        }
+    }
+
+    &__hero-row {
+        display: flex;
+        align-items: center;
+
+        @include for-md-down {
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+
+    &__hero-img {
+        display: block;
+        width: 52rem;
+        height: 36.4rem;
+        object-fit: cover;
+
+        @include for-md-down {
+            width: 40rem;
+            height: 27.4rem;
+            margin-bottom: 2.4rem;
+        }
+
+        @include for-xxs-down {
+            width: 100%;
+        }
+    }
+
+    &__hero-block {
+        margin-left: 14rem;
+
+        &-item {
+            margin-bottom: 3rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 1.6rem;
+                line-height: 2.5rem;
+            }
+
+            @include for-md-down {
+                width: 50%;
+            }
+        }
+
+        &-legend {
+            display: block;
+            font-size: 2rem;
+            line-height: 3.2rem;
+            margin-bottom: 5px;
+            color: var(--main-grey-color);
+        }
+
+        @include for-md-down {
+            margin-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__head {
+        &-drop-content {
+            display: flex;
+            align-items: center;
+            max-width: 82.7rem;
+
+            @include for-sm-down {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+
+        &-buton {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        &-content-img {
+            width: 30.5rem;
+            height: 22.1rem;
+            display: block;
+            object-fit: cover;
+
+            @include for-sm-down {
+                margin-bottom: 2.4rem;
+            }
+        }
+
+        &-content-text {
+            margin-left: auto;
+
+            h3 {
+                font-weight: 600;
+                font-size: 2rem;
+                line-height: 2.4rem;
+                letter-spacing: 0.015em;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 1.6rem;
+                line-height: 2.5rem;
+                letter-spacing: 0.02em;
+                margin-bottom: 6px;
+
+                &:nth-last-of-type(1) {
+                    margin-bottom: 0;
+                }
+            }
+
+            @include for-md-down {
+                margin-left: 5rem;
+            }
+
+            @include for-sm-down {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &__branches-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -0.5rem -1.5rem;
+    }
+
+    &__branches-item {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(50% - 3rem);
+        margin: 0.5rem 1.5rem;
+        border: 1px solid #E8E8E8;
+        padding: 1.9rem 8rem;
+        border-radius: 5px;
+
+        &-link {
+            @include for-md-down {
+                display: none;
+            }
+        }
+
+        &-branch-link {
+            display: none;
+
+            @include for-md-down {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &-heading {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            h3 {
+                font-size: 2rem;
+                line-height: 3.2rem;
+                font-weight: 400;
+                margin-bottom: 1.2rem;
+            }
+
+            a {
+                display: inline-block;
+                font-weight: 300;
+                font-size: 1.6rem;
+                line-height: 2.5rem;
+                letter-spacing: 0.02em;
+                margin-bottom: 0.8rem;
+
+                &:nth-last-of-type(1) {
+                    margin-bottom: 0;
+                }
+
+                @include for-md-down {
+                    position: relative;
+                    z-index: 3;
+                }
+            }
+        }
+
+        @include for-md-down {
+            padding: 1.9rem;
+        }
+
+        @include for-sm-down {
+            width: 100%;
+        }
+    }
+
+    &__results-item {
+        margin-bottom: 3.7rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__contacts {
+        padding: 6.7rem 26.9rem 6.7rem 10.8rem;
+        background: #F5F5F5;
+        border-radius: 10px;
+
+        thead {
+            td {
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 160.5%;
+                letter-spacing: 0.015em;
+                color: #A6A6A6;
+                padding-bottom: 3rem;
+            }
+        }
+
+        tbody {
+            td {
+                font-weight: 600;
+                font-size: 1.6rem;
+                line-height: 2.5rem;
+                letter-spacing: 0.02em;
+                padding-bottom: 2rem;
+
+                &:not(:first-child) {
+                    font-weight: 300;
+                }
+            }
+        }
+
+        @include for-lg-down {
+            padding: 4rem 20rem 5rem 8rem;
+        }
+
+        @include for-md-down {
+            overflow-x: scroll;
+            padding: 8rem 4rem;
+
+            table {
+                width: 95rem;
+            }
+        }
+
+        @include for-sm-down {
+            padding: 4rem;
+        }
+
+        @include for-xxs-down {
+            table {
+                width: 75rem;
+            }
+        }
+    }
+
+    &__contacts-button {
+        margin-top: 3rem;
+    }
+}

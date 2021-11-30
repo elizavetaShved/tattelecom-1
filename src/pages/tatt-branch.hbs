@@ -1,0 +1,206 @@
+{{#extend "layout"}}
+{{#content "main"}}
+<div class="tatt-about-company tatt-branch">
+    {{> bread-crumbs isTatt=true}}
+    <section class="tatt-branch__section">
+        <div class="gl__page-content">
+            <h1 class="tatt-branch__title gl__title">
+                АЛЬМЕТЬЕВСКИЙ ЗУЭС
+            </h1>
+            <div class="tatt-branch__hero-row">
+                <img src="img/tatt-branch/hero.jpg" alt="Фото АЛЬМЕТЬЕВСКОГО ЗУЭС" class="tatt-branch__hero-img">
+                <div class="tatt-branch__hero-block">
+                    <div class="tatt-branch__hero-block-item">
+                        <span class="tatt-branch__hero-block-legend">
+                            Адрес:
+                        </span>
+                        <p>
+                            423452, г. Альметьевск, ул.Маяковского, 34
+                        </p>
+                    </div>
+                    <div class="tatt-branch__hero-block-item">
+                        <span class="tatt-branch__hero-block-legend">
+                            Телефон:
+                        </span>
+                        <a href="tel:+78553323333">
+                            8(8553) 32-33-33
+                        </a>
+                    </div>
+                    <div class="tatt-branch__hero-block-item">
+                        <span class="tatt-branch__hero-block-legend">
+                            Факс:
+                        </span>
+                        <a href="tel:+78553320533">
+                            8(8553) 32-05-33
+                        </a>
+                    </div>
+                    <div class="tatt-branch__hero-block-item">
+                        <span class="tatt-branch__hero-block-legend">
+                            Эл. почта:
+                        </span>
+                        <a href="mailto:zues@almet.tattelecom.ru">
+                            zues@almet.tattelecom.ru
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tatt-branch__section">
+        <div class="gl__page-content">
+            <div class="tatt-branch__contacts">
+                <h2 class="tatt-branch__contacts-title gl__title">
+                    Контактная информация
+                </h2>
+                <table align="center" width="100%" cellpading="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <td>
+                                Служба
+                            </td>
+                            <td>
+                                С городского
+                            </td>
+                            <td>
+                                С мобильного
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Справочная для частных лиц
+                            </td>
+                            <td>
+                                118-08, (843) 222-22-22
+                            </td>
+                            <td>
+                                <a href="tel:+78431180811">
+                                    (843) 118-08-11
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Техподдержка для частных лиц
+                            </td>
+                            <td>
+                                118-18
+                            </td>
+                            <td>
+                                <a href="tel:+78431181811">
+                                    (843) 118-18-11
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Справочная для юридических лиц
+                            </td>
+                            <td>
+                                118-88, (843) 238-00-00
+                            </td>
+                            <td>
+                                <a href="tel:+78431188811">
+                                    (843) 118-88-11
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Централизованное бюро ремонта
+                            </td>
+                            <td>
+                                125
+                            </td>
+                            <td>
+                                <a href="tel:+78431251111">
+                                    (843) 125-11-11
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="button tatt-branch__buton tatt-branch__contacts-button">
+                    Заявка на подключение
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="tatt-branch__section">
+        <div class="gl__page-content tatt-branch__head">
+            <button class="button tatt-branch__head-buton gl__title gl__drop-menu-btn js-drop-menu-btn">
+                Руководитель
+                <svg width="24" height="24" aria-hidden="true" class="gl__drop-menu-icon">
+                    <use xlink:href="#arrow-down"></use>
+                </svg>
+            </button>
+            <div class="tatt-branch__head-drop-container gl__drop-menu-container js-drop-menu-container">
+                <div class="tatt-branch__head-drop-content gl__drop-menu js-drop-menu">
+                    <img class="tatt-branch__head-content-img" src="img/tatt-branch/head.jpg"
+                        alt="Фото Надина Артема Александровича">
+                    <div class="tatt-branch__head-content-text">
+                        <h3>
+                            Надин Артем Александрович
+                        </h3>
+                        <p>
+                            Начальник Альметьевского ЗУЭС
+                        </p>
+                        <p>
+                            Время приема граждан: Понедельник 15:00-18:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tatt-branch__section">
+        <div class="gl__page-content tatt-branch__branches">
+            <h2 class="gl__title tatt-branch__branches-title">
+                Филиалы
+            </h2>
+            <ul class="tatt-branch__branches-list">
+                {{#each branches-list }}
+                <li class="tatt-branch__branches-item">
+                    <a href="/" class="tatt-branch__branches-item-branch-link"></a>
+                    <div class="tatt-branch__branches-item-heading">
+                        <h3>
+                            {{ this.name }}
+                        </h3>
+                        <a href="tel:{{ this.phone-whithout-spaces }}">
+                            {{ this.phone }}
+                        </a>
+                        <a href="mailto:">
+                            {{ this.mail }}
+                        </a>
+                    </div>
+                    <a href="/" class="tatt-branch__branches-item-link">
+                        <svg width="48" height="8" aria-hidden="true" class="tatt-branch__branches-item-icon">
+                            <use xlink:href="#arrow-long-big"></use>
+                        </svg>
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </section>
+    <div class="tatt-branch__section tatt-branch__section-news">
+        {{> common/news-list }}
+    </div>
+    <section class="tatt-branch__section">
+        <div class="gl__page-content tatt-branch__results">
+            <h2 class="gl__title tatt-branch__results-title">
+                Результаты специальной оценки условий труда
+            </h2>
+            <ul class="tatt-branch__results-list">
+                {{#each results-list }}
+                <li class="tatt-branch__results-item">
+                    {{> common/archive-file }}
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </section>
+</div>
+{{/content}}
+{{/extend}}

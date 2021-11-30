@@ -1,0 +1,43 @@
+{{#extend "layout"}}
+{{#content "main"}}
+<div class="tatt-about-company tatt-structural">
+    {{> bread-crumbs isTatt=true}}
+    <section class="tatt-structural__section">
+        <div class="gl__page-content">
+            <h1 class="tatt-structural__title gl__title">
+                Структурные подразделения
+            </h1>
+            <ul class="tatt-structural__list">
+                {{#each tatt-structural-list }}
+                    <li class="tatt-structural__item">
+                        <a href="/" class="tatt-structural__item-link-tablet"></a>
+                        <div class="tatt-structural__item-heading">
+                            <span class="tatt-structural__item-heading-place">
+                                {{this.name}}
+                            </span>
+                            <span class="tatt-structural__item-heading-adres">
+                                {{this.place-adres}}
+                            </span>
+                        </div>
+                        <div class="tatt-structural__item-info">
+                            <a href="tel:{{this.phone-whiout-spaces}}" class="tatt-structural__item-info-link">
+                                {{this.phone}}
+                            </a>
+                            <a href="mailto:{{this.email}}" class="tatt-structural__item-info-link">
+                                {{this.email}}
+                            </a>
+                        </div>
+                        <a href="/" class="tatt-structural__item-link">
+                            <svg width="48" height="8" aria-hidden="true"
+                                class="tatt-structural__item-link-icon">
+                                <use xlink:href="#arrow-long-big"></use>
+                            </svg>
+                        </a>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+    </section>
+</div>
+{{/content}}
+{{/extend}}

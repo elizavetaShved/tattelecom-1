@@ -13,11 +13,23 @@
             background-color: #fff;
             padding: 3rem;
             border-radius: 10px;
+            max-height: 80%;
+            overflow: scroll;
         }
     }
 
     &__nav-radio {
         display: none;
+
+        &:checked {
+            ~ .tatt-achievements__nav-item-text {
+                color: #007BC3;
+            }
+
+            ~ .tatt-achievements__nav-item-icon {
+                fill: #007BC3;
+            }
+        }
     }
 
     &__nav-item {
@@ -76,6 +88,23 @@
             font-size: 1.4rem;
             line-height: 160%;
             color: var(--main-grey-color);
+
+            &:nth-of-type(1) {
+                margin-top: 0;
+            }
+
+            @include for-xs-down {
+                margin-top: 3rem;
+            }
+        }
+
+        &-date2 {
+            display: inline-block;
+            margin-top: 4rem;
+            font-weight: 400;
+            font-size: 2.6rem;
+            line-height: 3.3rem;
+            margin-bottom: 1rem;
 
             &:nth-of-type(1) {
                 margin-top: 0;

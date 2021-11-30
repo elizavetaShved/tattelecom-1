@@ -1,0 +1,49 @@
+{{#extend "layout"}}
+{{#content "main"}}
+<div class="tatt-about-company tatt-head">
+    {{> bread-crumbs isTatt=true}}
+    <section class="tatt-head__section">
+        <div class="gl__page-content">
+            <h1 class="tatt-achievements__title gl__title">
+                Центральное управление
+            </h1>
+            <div class="tatt-head__main">
+                <img src="img/tatt-head/ceo.jpg" alt="Фото Нурутдинова Айрата Рафкатовича" class="tatt-head__main-img">
+                <div class="tatt-head__main-text">
+                    <p>
+                        Нурутдинов Айрат Рафкатович
+                    </p>
+                    <span>
+                        Генеральный директор ПАО «Таттелеком»
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{#each head-section-list }}
+        <section class="tatt-head__section">
+            <div class="gl__page-content">
+                <h2 class="gl__title">
+                    {{this.title}}
+                </h2>
+                <ul class="tatt-head__list">
+                    {{#each this.heads-list }}
+                        <li class="tatt-head__item">
+                            <img class="tatt-head__item-img" src="img/tatt-head/{{this.img}}.jpg" alt="Фото Хисамова Рустема Азатовича">
+                            <div class="tatt-head__item-text">
+                                <p>
+                                    {{this.head-name}}
+                                </p>
+                                <span>
+                                    {{this.head-position}}
+                                </span>
+                            </div>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </section>
+    {{/each}}
+</div>
+{{/content}}
+{{/extend}}

@@ -1,0 +1,57 @@
+{
+    "isTattelekom": true,
+    "title": "Структурные подразделения",
+    "bread-crumbs": [
+        {
+          "name": "Главная"
+        },
+        {
+            "name": "Структурные подразделения",
+            "noLink": true
+        }
+    ],
+    "tatt-structural-list": [
+        {
+            "name": "Альметьевский ЗУЭС",
+            "place-adres": "423452, г. Альметьевск, ул.Маяковского, 34",
+            "phone": "(85592) 7-33-03",
+            "phone-whiout-spaces": "+78559273303",
+            "email": "root@aznakai.tattelecom.ru"
+        },
+        {
+            "name": "Арский ЗУЭС",
+            "place-adres": "422000, г.Арск, ул.Трудовая, дом 26",
+            "phone": "8(85594) 4-52-10",
+            "phone-whiout-spaces": "+78559445210",
+            "email": "Elmira.Sabirova@tattelecom.ru"
+        },
+        {
+            "name": "Буинский ЗУЭС",
+            "place-adres": "422430 РТ г. Буинск, ул. Р. Люксембург, д. 138",
+            "phone": "(85592) 7-33-03",
+            "phone-whiout-spaces": "+7559273303",
+            "email": "root@aznakai.tattelecom.ru"
+        },
+        {
+            "name": "Набережно-Челнинский ЗУЭС",
+            "place-adres": "423812, г. Набережные Челны, пр. Мира, д.20/18",
+            "phone": "8(84345) 2-23-25",
+            "phone-whiout-spaces": "+78434522325",
+            "email": "rues@rues.nurlat.tattelecom.ru"
+        },
+        {
+            "name": "Казанское управление электрической связи",
+            "place-adres": "420061, г. Казань, ул. Н. Ершова, 55 е",
+            "phone": "(84396) 2-23-32",
+            "phone-whiout-spaces": "+78439622332",
+            "email": "rues@rues.cherem.tattelecom.ru"
+        },
+        {
+            "name": "Чистопольский ЗУЭС",
+            "place-adres": "Татарстан, 422980, г. Чистополь, ул.Ленина, 54",
+            "phone": "(84396) 2-23-32",
+            "phone-whiout-spaces": "+78439622332",
+            "email": "rues@rues.cherem.tattelecom.ru"
+        }
+    ]
+}  

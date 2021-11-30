@@ -1,0 +1,132 @@
+.tatt-head {
+
+    @include for-sm-down {
+        padding-top: 4rem;
+    }
+
+    &__section {
+        margin-bottom: 10rem;
+
+        @include for-md-down {
+            margin-bottom: 6rem;
+        }
+
+        @include for-sm-down {
+            margin-bottom: 8rem;
+        }
+    }
+
+    &__main {
+        display: flex;
+        align-items: center;
+
+        @include for-md-down {
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+
+    &__main-img {
+        display: block;
+        width: 51.9rem;
+        height: 58.2rem;
+        object-fit: cover;
+        border-radius: 10px;
+
+        @include for-md-down {
+            width: 45.9rem;
+            height: 51.2rem;
+        }
+
+        @include for-xxs-down {
+            width: 100%;
+            height: 49.2rem;
+        }
+
+    }
+
+    &__main-text {
+        max-width: 41rem;
+        margin-left: 14rem;
+
+        p {
+            font-size: 2.6rem;
+            line-height: 3.3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        span {
+            font-size: 2rem;
+            line-height: 3.2rem;
+            color: var(--grey-text);
+        }
+
+        @include for-md-down {
+            margin-top: 3rem;
+            margin-left: 0;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: -1.5rem;
+    }
+
+    &__item {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem;
+        width: 41rem;
+        height: 50rem;
+        padding: 2.5rem 1.8rem;
+        border-radius: 10px;
+        overflow: hidden;
+        
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(43, 43, 43, 0) 0%, rgba(43, 43, 43, 0) 68.23%, #2B2B2B 100%);
+            content: "";
+        }
+
+        &-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &-text {
+            position: relative;
+            z-index: 4;
+            margin-top: auto;
+            color: #fff;
+
+            p {
+                font-size: 2rem;
+                line-height: 3.2rem;
+                margin-bottom: 0.7rem;
+            }
+
+            span {
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+            }
+        }
+
+        @include for-md-down {
+            width: 35rem;
+            height: 43rem;
+        }
+    }
+}

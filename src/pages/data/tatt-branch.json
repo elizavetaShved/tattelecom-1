@@ -1,0 +1,136 @@
+{
+    "isTattelekom": true,
+    "title": "Структурные подразделения",
+    "script": "tatt-branch-page",
+    "bread-crumbs": [
+        {
+          "name": "Главная"
+        },
+        {
+            "name": "Структурные подразделения"
+        },
+        {
+            "name": "АЛЬМЕТЬЕВСКИЙ ЗУЭС",
+            "noLink": true
+        }
+    ],
+    "branches-list": [
+        {
+            "name": "Азнакаевский РУЭС",
+            "phone": "(85592) 7-33-03",
+            "phone-whithout-spaces": "+78559273303",
+            "mail": "root@aznakai.tattelecom.ru"
+        },
+        {
+            "name": "Бугульминский РУЭС",
+            "phone": "8(85594) 4-52-10",
+            "phone-whithout-spaces": "+78559445210",
+            "mail": "Elmira.Sabirova@tattelecom.ru"
+        },
+        {
+            "name": "Лениногорский РУЭС",
+            "phone": "(85592) 7-33-03",
+            "phone-whithout-spaces": "+78559273303",
+            "mail": "root@aznakai.tattelecom.ru"
+        },
+        {
+            "name": "Нурлатский РУЭС",
+            "phone": "8(84345) 2-23-25",
+            "phone-whithout-spaces": "+78434522325",
+            "mail": "rues@rues.nurlat.tattelecom.ru"
+        },
+        {
+            "name": "Черемшанский РУЭС",
+            "phone": "(84396) 2-23-32",
+            "phone-whithout-spaces": "+78439622332",
+            "mail": "rues@rues.cherem.tattelecom.ru"
+        },
+        {
+            "name": "Бавлинский РУЭС",
+            "phone": "(85569) 5-11-56",
+            "phone-whithout-spaces": "+78556951156",
+            "mail": "rukov@bavly.tattelecom.ru"
+        },
+        {
+            "name": "Заинский РУЭС",
+            "phone": "(85558) 3-20-21",
+            "phone-whithout-spaces": "+78555832021",
+            "mail": "Olga.Bakhireva@tattelecom.ru"
+        },
+        {
+            "name": "Муслюмовский РУЭС",
+            "phone": "(85556) 2-41-51",
+            "phone-whithout-spaces": "+78555624151",
+            "mail": "head@muslum.tattelecom.ru"
+        },
+        {
+            "name": "Сармановский РУЭС",
+            "phone": "(85559) 2-49-40",
+            "phone-whithout-spaces": "+78555924940",
+            "mail": "nii@sarman.tattelecom.ru"
+        }
+    ],
+    "news-list": {
+        "title": "Новости филиала",
+        "list": [
+          {
+            "title": "22 май",
+            "text": "Провели праздник двора для жителей ЖК Салават Купере"
+          },
+          {
+            "title": "22 май",
+            "text": "Провели праздник двора для жителей ЖК Салават Купере"
+          },
+          {
+            "title": "22 май",
+            "text": "Провели праздник двора для жителей ЖК Салават Купере"
+          },
+          {
+            "title": "22 май",
+            "text": "Провели праздник двора для жителей ЖК Салават Купере"
+          },
+          {
+            "title": "22 май",
+            "text": "Провели праздник двора для жителей ЖК Салават Купере"
+          }
+        ]
+    },
+    "results-list": [
+        {
+            "archive-file": {
+                "name": "Специальная оценка условий труда 2019 год (Альметьевский ЗУЭС)",
+                "size": "Zip 30,2 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "name": "Специальная оценка условий труда 2018 год (Альметьевский ЗУЭС)",
+                "size": "Zip 134 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "name": "Специальная оценка условий труда 2017 год (Альметьевский ЗУЭС)",
+                "size": "Zip 69,2 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "name": "Специальная оценка условий труда 2016 год (Альметьевский ЗУЭС)",
+                "size": "Zip 19,6 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "name": "Специальная оценка условий труда 2015 год (Альметьевский ЗУЭС)",
+                "size": "Zip 19,6 МБ"
+            }
+        },
+        {
+            "archive-file": {
+                "name": "Специальная оценка условий труда 2014 год (Альметьевский ЗУЭС)",
+                "size": "Zip 19,6 МБ"
+            }
+        }
+    ]
+}  
