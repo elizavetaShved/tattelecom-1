@@ -45,6 +45,14 @@
     .bread-crumbs__link-icon {
       display: none;
     }
+
+    .mod-tatt-news-link {
+      display: block;
+      transform: scale(-1, 1);
+      margin-right: 1rem;
+      margin-left: 0;
+      flex-shrink: 0;
+    }
   }
 }
 

@@ -9,6 +9,11 @@
             </span>
           {{else}}
             <a href="" class="bread-crumbs__link">
+              {{#if isTattNews}}
+                <svg width="20" height="8" aria-hidden="true" class="bread-crumbs__link-icon mod-tatt-news-link">
+                  <use xlink:href="#arrow-long-small"></use>
+                </svg>
+              {{/if}}
               {{ this.name }}
               <svg width="16" height="16" aria-hidden="true" class="bread-crumbs__link-icon">
                 <use xlink:href="#arrow-right"></use>
