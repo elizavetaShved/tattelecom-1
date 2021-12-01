@@ -14715,6 +14715,923 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       line-height: 2.5rem;
       letter-spacing: 0.02em; }
 
+.tatt-about-company__section {
+  padding: 8rem 0; }
+  .tatt-about-company__section p {
+    max-width: 88.1rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin-bottom: 3rem; }
+  .tatt-about-company__section.mod-blue-bg {
+    background-color: rgba(0, 123, 195, 0.08); }
+  .tatt-about-company__section.mod-orange-bg {
+    background-color: rgba(232, 71, 53, 0.06); }
+  @media screen and (max-width: 959px) {
+    .tatt-about-company__section {
+      padding: 5rem 0; } }
+
+.tatt-about-company__link {
+  display: inline-block;
+  padding: 1.7rem 2.4rem;
+  border: 1px solid #2b2b2b;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.01em;
+  border-radius: 3px; }
+
+.tatt-about-company__title {
+  max-width: 47.9rem; }
+
+.tatt-about-company-hero {
+  margin-bottom: 7.7rem; }
+  @media screen and (max-width: 959px) {
+    .tatt-about-company-hero {
+      margin-bottom: 5rem; } }
+  @media screen and (max-width: 767px) {
+    .tatt-about-company-hero {
+      padding-top: 5rem;
+      margin-bottom: 0; } }
+  .tatt-about-company-hero__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .tatt-about-company-hero__title-wrap {
+    max-width: 64.4rem; }
+  .tatt-about-company-hero__title {
+    font-weight: 600;
+    font-size: 4.5rem;
+    line-height: 5.4rem;
+    margin-bottom: 6.4rem; }
+    @media screen and (max-width: 959px) {
+      .tatt-about-company-hero__title {
+        margin-bottom: 4rem;
+        font-size: 4rem; } }
+  .tatt-about-company-hero__img {
+    width: 25.5rem;
+    height: 25.5rem;
+    margin-right: 10rem;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover; }
+    @media screen and (max-width: 959px) {
+      .tatt-about-company-hero__img {
+        margin-right: 0; } }
+    @media screen and (max-width: 767px) {
+      .tatt-about-company-hero__img {
+        display: none; } }
+
+.tatt-about-company-numbers__list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 3rem;
+  row-gap: 5.4rem; }
+  @media screen and (max-width: 767px) {
+    .tatt-about-company-numbers__list {
+      row-gap: 3rem; } }
+
+.tatt-about-company-numbers__item {
+  grid-column: 4 span; }
+  @media screen and (max-width: 959px) {
+    .tatt-about-company-numbers__item {
+      grid-column: 6 span; } }
+  @media screen and (max-width: 767px) {
+    .tatt-about-company-numbers__item {
+      grid-column: 12 span; } }
+  .tatt-about-company-numbers__item-heading {
+    display: block;
+    margin-bottom: 2rem;
+    font-size: 3.8rem;
+    line-height: 4.9rem;
+    color: var(--red-color); }
+  .tatt-about-company-numbers__item-text {
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.015em;
+    max-width: 30rem; }
+
+.tatt-about-company-head {
+  padding: 4.3rem 0 0 0;
+  background-color: #EBF4FA; }
+  @media screen and (max-width: 959px) {
+    .tatt-about-company-head {
+      padding-bottom: 4.3rem; } }
+  .tatt-about-company-head__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .tatt-about-company-head__content img {
+      display: block;
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 41.3rem;
+      height: 55.8rem; }
+    @media screen and (max-width: 959px) {
+      .tatt-about-company-head__content img {
+        display: none; } }
+  .tatt-about-company-head__info {
+    padding-top: 5rem; }
+    @media screen and (max-width: 959px) {
+      .tatt-about-company-head__info {
+        padding-top: 0; } }
+    .tatt-about-company-head__info-wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      margin-bottom: 8.7rem; }
+      .tatt-about-company-head__info-wrap:nth-last-of-type(1) {
+        margin-bottom: 0; }
+    .tatt-about-company-head__info-link {
+      display: inline-block;
+      margin-left: 3rem;
+      font-size: 2.6rem;
+      line-height: 3.3rem;
+      color: #007BC3;
+      margin-bottom: 2.3rem; }
+      .tatt-about-company-head__info-link:nth-last-of-type(1) {
+        margin-bottom: 0; }
+      @media screen and (max-width: 767px) {
+        .tatt-about-company-head__info-link {
+          font-size: 2rem;
+          line-height: 2.4rem; } }
+  .tatt-about-company-head__title {
+    margin-bottom: 2.7rem; }
+
+.tatt-about-company-career {
+  padding-top: 0;
+  padding-bottom: 0; }
+  .tatt-about-company-career__content {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 15.6rem;
+    padding-bottom: 15.6rem; }
+    @media screen and (max-width: 959px) {
+      .tatt-about-company-career__content {
+        padding-top: 5rem;
+        padding-bottom: 5rem; } }
+  .tatt-about-company-career__info {
+    max-width: 47.9rem; }
+  .tatt-about-company-career__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 87.7rem;
+    height: 51.5rem; }
+    @media screen and (max-width: 959px) {
+      .tatt-about-company-career__img {
+        display: none; } }
+
+.tatt-about-company-goals__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .tatt-about-company-goals__info p {
+    max-width: 52rem; }
+  @media screen and (max-width: 767px) {
+    .tatt-about-company-goals__info {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: stretch;
+          -ms-flex-pack: stretch;
+              justify-content: stretch; } }
+
+.tatt-about-company-support .b-support__contacts-label {
+  max-width: 38.7rem;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.5rem; }
+
+.tatt-mission-hero {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 26.5rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 1399px) {
+    .tatt-mission-hero {
+      padding-bottom: 20rem; } }
+  @media screen and (max-width: 767px) {
+    .tatt-mission-hero {
+      padding-bottom: 15rem; } }
+  .tatt-mission-hero::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 51, 80, 0.62);
+    content: ""; }
+  .tatt-mission-hero .bread-crumbs__container {
+    margin-bottom: 0;
+    background-color: transparent; }
+    .tatt-mission-hero .bread-crumbs__container .bread-crumbs__link {
+      color: #fff; }
+    .tatt-mission-hero .bread-crumbs__container .bread-crumbs__link-icon {
+      fill: #fff; }
+  .tatt-mission-hero__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 13.5rem; }
+    .tatt-mission-hero__content p {
+      text-align: center;
+      max-width: 59.5rem;
+      font-weight: 400;
+      font-size: 2.6rem;
+      line-height: 4.1rem;
+      color: #fff; }
+      @media screen and (max-width: 959px) {
+        .tatt-mission-hero__content p {
+          font-size: 2rem;
+          line-height: 3rem; } }
+    @media screen and (max-width: 959px) {
+      .tatt-mission-hero__content {
+        margin-top: 8rem; } }
+    @media screen and (max-width: 767px) {
+      .tatt-mission-hero__content {
+        margin-top: 0;
+        padding-top: 8rem; } }
+  .tatt-mission-hero__title {
+    text-align: center;
+    margin-bottom: 4.5rem;
+    font-size: 4.5rem;
+    line-height: 5.4rem;
+    color: #fff; }
+    @media screen and (max-width: 959px) {
+      .tatt-mission-hero__title {
+        margin-bottom: 3rem; } }
+    @media screen and (max-width: 767px) {
+      .tatt-mission-hero__title {
+        font-size: 3.5rem;
+        margin-bottom: 2rem; } }
+
+.tatt-mission-block {
+  padding: 8rem 0; }
+  @media screen and (max-width: 959px) {
+    .tatt-mission-block {
+      padding: 6rem 0; } }
+  .tatt-mission-block.mod-grey {
+    background-color: #F5F5F5; }
+  .tatt-mission-block p {
+    max-width: 73rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem; }
+    .tatt-mission-block p:nth-last-of-type(1) {
+      margin-bottom: 0; }
+
+.tatt-mission-block2 {
+  padding: 10rem 0; }
+  .tatt-mission-block2 h3 {
+    font-weight: 400;
+    margin-top: 5rem;
+    font-size: 2.6rem;
+    line-height: 3.3rem;
+    margin-bottom: 1.5rem; }
+    .tatt-mission-block2 h3:nth-of-type(1) {
+      margin-top: 0; }
+  .tatt-mission-block2 p {
+    max-width: 73rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem; }
+  @media screen and (max-width: 959px) {
+    .tatt-mission-block2 {
+      padding: 6rem 0; } }
+
+.tatt-achievements {
+  margin-bottom: 10rem; }
+  @media screen and (max-width: 559px) {
+    .tatt-achievements {
+      margin-top: 4rem; } }
+  .tatt-achievements__nav-list {
+    width: 12.7rem; }
+    @media screen and (max-width: 1159px) {
+      .tatt-achievements__nav-list {
+        width: 70%;
+        background-color: #fff;
+        padding: 3rem;
+        border-radius: 10px;
+        max-height: 80%;
+        overflow: scroll; } }
+  .tatt-achievements__nav-radio {
+    display: none; }
+    .tatt-achievements__nav-radio:checked ~ .tatt-achievements__nav-item-text {
+      color: #007BC3; }
+    .tatt-achievements__nav-radio:checked ~ .tatt-achievements__nav-item-icon {
+      fill: #007BC3; }
+  .tatt-achievements__nav-item {
+    border-bottom: 1px solid var(--border-color);
+    -webkit-transition: color 200ms;
+    transition: color 200ms; }
+    .tatt-achievements__nav-item:first-child {
+      border-top: 1px solid var(--border-color); }
+  .tatt-achievements__nav-item-label {
+    padding: 1.5rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    cursor: pointer;
+    -webkit-transition: color 200ms;
+    transition: color 200ms; }
+    .tatt-achievements__nav-item-label:hover {
+      color: var(--main-color-business); }
+      .tatt-achievements__nav-item-label:hover .tatt-achievements__nav-item-icon {
+        fill: var(--main-color-business); }
+  .tatt-achievements__nav-item-icon {
+    -webkit-transition: fill 200ms;
+    transition: fill 200ms; }
+  .tatt-achievements__content-title {
+    font-weight: 400;
+    font-size: 10rem;
+    line-height: 12rem;
+    margin-bottom: 5rem; }
+    @media screen and (max-width: 1159px) {
+      .tatt-achievements__content-title {
+        font-size: 8rem;
+        line-height: 10rem;
+        margin-bottom: 3rem; } }
+    @media screen and (max-width: 559px) {
+      .tatt-achievements__content-title {
+        font-size: 6rem;
+        line-height: 8rem; } }
+  .tatt-achievements__content-date {
+    display: inline-block;
+    margin-top: 4rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 160%;
+    color: var(--main-grey-color); }
+    .tatt-achievements__content-date:nth-of-type(1) {
+      margin-top: 0; }
+    @media screen and (max-width: 559px) {
+      .tatt-achievements__content-date {
+        margin-top: 3rem; } }
+  .tatt-achievements__content-date2 {
+    display: inline-block;
+    margin-top: 4rem;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 3.3rem;
+    margin-bottom: 1rem; }
+    .tatt-achievements__content-date2:nth-of-type(1) {
+      margin-top: 0; }
+    @media screen and (max-width: 559px) {
+      .tatt-achievements__content-date2 {
+        margin-top: 3rem; } }
+  .tatt-achievements__content-item {
+    max-width: 73.4rem; }
+    .tatt-achievements__content-item p {
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 160%; }
+  @media screen and (max-width: 1159px) {
+    .tatt-achievements__filter-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+@media screen and (max-width: 767px) {
+  .tatt-head {
+    padding-top: 4rem; } }
+
+.tatt-head__section {
+  margin-bottom: 10rem; }
+  @media screen and (max-width: 959px) {
+    .tatt-head__section {
+      margin-bottom: 6rem; } }
+  @media screen and (max-width: 767px) {
+    .tatt-head__section {
+      margin-bottom: 8rem; } }
+
+.tatt-head__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media screen and (max-width: 959px) {
+    .tatt-head__main {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; } }
+
+.tatt-head__main-img {
+  display: block;
+  width: 51.9rem;
+  height: 58.2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px; }
+  @media screen and (max-width: 959px) {
+    .tatt-head__main-img {
+      width: 45.9rem;
+      height: 51.2rem; } }
+  @media screen and (max-width: 425px) {
+    .tatt-head__main-img {
+      width: 100%;
+      height: 49.2rem; } }
+
+.tatt-head__main-text {
+  max-width: 41rem;
+  margin-left: 14rem; }
+  .tatt-head__main-text p {
+    font-size: 2.6rem;
+    line-height: 3.3rem;
+    margin-bottom: 1.5rem; }
+  .tatt-head__main-text span {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: var(--grey-text); }
+  @media screen and (max-width: 959px) {
+    .tatt-head__main-text {
+      margin-top: 3rem;
+      margin-left: 0; } }
+
+.tatt-head__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -1.5rem; }
+
+.tatt-head__item {
+  position: relative;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1.5rem;
+  width: 41rem;
+  height: 50rem;
+  padding: 2.5rem 1.8rem;
+  border-radius: 10px;
+  overflow: hidden; }
+  .tatt-head__item::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 43, 43, 0)), color-stop(68.23%, rgba(43, 43, 43, 0)), to(#2B2B2B));
+    background: linear-gradient(180deg, rgba(43, 43, 43, 0) 0%, rgba(43, 43, 43, 0) 68.23%, #2B2B2B 100%);
+    content: ""; }
+  .tatt-head__item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .tatt-head__item-text {
+    position: relative;
+    z-index: 4;
+    margin-top: auto;
+    color: #fff; }
+    .tatt-head__item-text p {
+      font-size: 2rem;
+      line-height: 3.2rem;
+      margin-bottom: 0.7rem; }
+    .tatt-head__item-text span {
+      font-size: 1.6rem;
+      line-height: 2.2rem; }
+  @media screen and (max-width: 959px) {
+    .tatt-head__item {
+      width: 35rem;
+      height: 43rem; } }
+
+.tatt-structural {
+  margin-bottom: 10rem; }
+  @media screen and (max-width: 767px) {
+    .tatt-structural {
+      padding-top: 4rem;
+      margin-bottom: 8rem; } }
+  .tatt-structural__list {
+    width: 100%; }
+  .tatt-structural__item {
+    position: relative;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3rem;
+    row-gap: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3rem 0 4.2rem 0;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    margin-bottom: 1rem; }
+    .tatt-structural__item:last-child {
+      margin-bottom: 0; }
+    @media screen and (max-width: 767px) {
+      .tatt-structural__item {
+        row-gap: 2.4rem;
+        padding: 2.5rem 0; }
+        .tatt-structural__item:hover .tatt-structural__item-heading-place {
+          color: var(--main-color); } }
+  .tatt-structural__item-heading {
+    grid-column: 7 span;
+    margin-left: 7.8rem; }
+    .tatt-structural__item-heading-place {
+      display: block;
+      font-size: 2rem;
+      line-height: 3.2rem;
+      letter-spacing: 0.015em;
+      margin-bottom: 1rem; }
+    .tatt-structural__item-heading-adres {
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.02em;
+      color: var(--grey-text); }
+    @media screen and (max-width: 1159px) {
+      .tatt-structural__item-heading {
+        margin-left: 1rem; } }
+    @media screen and (max-width: 959px) {
+      .tatt-structural__item-heading {
+        grid-column: 6 span; } }
+    @media screen and (max-width: 767px) {
+      .tatt-structural__item-heading {
+        grid-column: 12 span; } }
+  .tatt-structural__item-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-column: 3 span; }
+    .tatt-structural__item-info-link {
+      display: inline-block;
+      font-weight: 300;
+      font-size: 2rem;
+      line-height: 3.2rem;
+      letter-spacing: 0.015em;
+      margin-bottom: 2px; }
+      .tatt-structural__item-info-link:nth-last-of-type(1) {
+        margin-bottom: 0; }
+      @media screen and (max-width: 959px) {
+        .tatt-structural__item-info-link {
+          position: relative;
+          z-index: 5; } }
+    @media screen and (max-width: 959px) {
+      .tatt-structural__item-info {
+        grid-column: 6 span; } }
+    @media screen and (max-width: 767px) {
+      .tatt-structural__item-info {
+        grid-column: 12 span;
+        margin-left: 1rem; } }
+  .tatt-structural__item-link {
+    margin-left: auto;
+    display: inline-block;
+    grid-column: 2 span;
+    margin-right: 8rem; }
+    @media screen and (max-width: 1159px) {
+      .tatt-structural__item-link {
+        margin-right: 1rem; } }
+    @media screen and (max-width: 959px) {
+      .tatt-structural__item-link {
+        display: none; } }
+  .tatt-structural__item-link-tablet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%; }
+    @media screen and (max-width: 959px) {
+      .tatt-structural__item-link-tablet {
+        display: block; } }
+
+@media screen and (max-width: 767px) {
+  .tatt-branch {
+    padding-top: 4rem;
+    margin-bottom: 7rem; } }
+
+.tatt-branch__section {
+  margin-bottom: 10rem; }
+  @media screen and (max-width: 959px) {
+    .tatt-branch__section {
+      margin-bottom: 6rem; } }
+
+.tatt-branch__section-news .news-list {
+  padding: 0; }
+
+.tatt-branch__buton {
+  padding: 1.7rem;
+  border: 1px solid var(--main-text-color);
+  border-radius: 6px;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  -webkit-transition: color 200ms;
+  transition: color 200ms; }
+  .tatt-branch__buton:hover {
+    color: var(--main-color); }
+
+.tatt-branch__hero-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media screen and (max-width: 959px) {
+    .tatt-branch__hero-row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; } }
+
+.tatt-branch__hero-img {
+  display: block;
+  width: 52rem;
+  height: 36.4rem;
+  -o-object-fit: cover;
+     object-fit: cover; }
+  @media screen and (max-width: 959px) {
+    .tatt-branch__hero-img {
+      width: 40rem;
+      height: 27.4rem;
+      margin-bottom: 2.4rem; } }
+  @media screen and (max-width: 425px) {
+    .tatt-branch__hero-img {
+      width: 100%; } }
+
+.tatt-branch__hero-block {
+  margin-left: 14rem; }
+  .tatt-branch__hero-block-item {
+    margin-bottom: 3rem; }
+    .tatt-branch__hero-block-item:last-child {
+      margin-bottom: 0; }
+    .tatt-branch__hero-block-item p {
+      font-size: 1.6rem;
+      line-height: 2.5rem; }
+    @media screen and (max-width: 959px) {
+      .tatt-branch__hero-block-item {
+        width: 50%; } }
+  .tatt-branch__hero-block-legend {
+    display: block;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    margin-bottom: 5px;
+    color: var(--main-grey-color); }
+  @media screen and (max-width: 959px) {
+    .tatt-branch__hero-block {
+      margin-left: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+
+.tatt-branch__head-drop-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 82.7rem; }
+  @media screen and (max-width: 767px) {
+    .tatt-branch__head-drop-content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; } }
+
+.tatt-branch__head-buton {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.tatt-branch__head-content-img {
+  width: 30.5rem;
+  height: 22.1rem;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover; }
+  @media screen and (max-width: 767px) {
+    .tatt-branch__head-content-img {
+      margin-bottom: 2.4rem; } }
+
+.tatt-branch__head-content-text {
+  margin-left: auto; }
+  .tatt-branch__head-content-text h3 {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.015em;
+    margin-bottom: 2rem; }
+  .tatt-branch__head-content-text p {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 6px; }
+    .tatt-branch__head-content-text p:nth-last-of-type(1) {
+      margin-bottom: 0; }
+  @media screen and (max-width: 959px) {
+    .tatt-branch__head-content-text {
+      margin-left: 5rem; } }
+  @media screen and (max-width: 767px) {
+    .tatt-branch__head-content-text {
+      margin-left: 0; } }
+
+.tatt-branch__branches-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -0.5rem -1.5rem; }
+
+.tatt-branch__branches-item {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(50% - 3rem);
+  margin: 0.5rem 1.5rem;
+  border: 1px solid #E8E8E8;
+  padding: 1.9rem 8rem;
+  border-radius: 5px; }
+  @media screen and (max-width: 959px) {
+    .tatt-branch__branches-item-link {
+      display: none; } }
+  .tatt-branch__branches-item-branch-link {
+    display: none; }
+    @media screen and (max-width: 959px) {
+      .tatt-branch__branches-item-branch-link {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; } }
+  .tatt-branch__branches-item-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .tatt-branch__branches-item-heading h3 {
+      font-size: 2rem;
+      line-height: 3.2rem;
+      font-weight: 400;
+      margin-bottom: 1.2rem; }
+    .tatt-branch__branches-item-heading a {
+      display: inline-block;
+      font-weight: 300;
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.8rem; }
+      .tatt-branch__branches-item-heading a:nth-last-of-type(1) {
+        margin-bottom: 0; }
+      @media screen and (max-width: 959px) {
+        .tatt-branch__branches-item-heading a {
+          position: relative;
+          z-index: 3; } }
+  @media screen and (max-width: 959px) {
+    .tatt-branch__branches-item {
+      padding: 1.9rem; } }
+  @media screen and (max-width: 767px) {
+    .tatt-branch__branches-item {
+      width: 100%; } }
+
+.tatt-branch__results-item {
+  margin-bottom: 3.7rem; }
+  .tatt-branch__results-item:last-child {
+    margin-bottom: 0; }
+
+.tatt-branch__contacts {
+  padding: 6.7rem 26.9rem 6.7rem 10.8rem;
+  background: #F5F5F5;
+  border-radius: 10px; }
+  .tatt-branch__contacts thead td {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 160.5%;
+    letter-spacing: 0.015em;
+    color: #A6A6A6;
+    padding-bottom: 3rem; }
+  .tatt-branch__contacts tbody td {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.02em;
+    padding-bottom: 2rem; }
+    .tatt-branch__contacts tbody td:not(:first-child) {
+      font-weight: 300; }
+  @media screen and (max-width: 1159px) {
+    .tatt-branch__contacts {
+      padding: 4rem 20rem 5rem 8rem; } }
+  @media screen and (max-width: 959px) {
+    .tatt-branch__contacts {
+      overflow-x: scroll;
+      padding: 8rem 4rem; }
+      .tatt-branch__contacts table {
+        width: 95rem; } }
+  @media screen and (max-width: 767px) {
+    .tatt-branch__contacts {
+      padding: 4rem; } }
+  @media screen and (max-width: 425px) {
+    .tatt-branch__contacts table {
+      width: 75rem; } }
+
+.tatt-branch__contacts-button {
+  margin-top: 3rem; }
+
 .b-telephone-services-links {
   padding: 3.6rem 0 5rem; }
   @media screen and (max-width: 1159px) {
