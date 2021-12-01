@@ -103,6 +103,7 @@
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-structural-units">Структурные подразделения</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-branch">Структурные подразделения - АЛЬМЕТЬЕВСКИЙ ЗУЭС</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-news.html">Пресс центр</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tat-news-inner.html">Новость пример</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-company-news.html">Пресса о компании</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-media-contacts.html">Контакты для СМИ</a><br>
 </div>
