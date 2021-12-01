@@ -2843,6 +2843,14 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   display: inline-block; }
   .bread-crumbs__item:last-child .bread-crumbs__link-icon {
     display: none; }
+  .bread-crumbs__item:last-child .mod-tatt-news-link {
+    display: block;
+    -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+    margin-right: 1rem;
+    margin-left: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
 
 .bread-crumbs__link {
   display: -webkit-box;
@@ -5397,43 +5405,46 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       margin-right: 0; } }
   .header.mod-business .header__input-search-form {
     margin-right: 0; }
-  .header.mod-tattelekom .header__top-block {
-    background-color: #fff; }
-  .header.mod-tattelekom .header__bottom-block {
-    -webkit-box-shadow: none;
-            box-shadow: none; }
-  .header.mod-tattelekom .header__top-menu-items {
-    margin-right: 2rem; }
-    .header.mod-tattelekom .header__top-menu-items:last-child {
-      margin-right: 0; }
-  .header.mod-tattelekom .header__top-menu-items-link:not(.mod-tatt-right-block-link) {
-    padding: 0;
-    color: #ADADAD;
-    text-transform: none;
-    border-top: none;
-    -webkit-transition: border-bottom-color 250ms, color 250ms;
-    transition: border-bottom-color 250ms, color 250ms; }
-    .header.mod-tattelekom .header__top-menu-items-link:not(.mod-tatt-right-block-link)._is-active {
-      color: var(--red-color);
-      border-bottom-color: var(--red-color); }
-    .header.mod-tattelekom .header__top-menu-items-link:not(.mod-tatt-right-block-link):hover:not(.mod-with-icons) {
-      color: var(--red-color);
-      border-bottom-color: var(--red-color); }
-  .header.mod-tattelekom .header__bottom-menu-list {
-    margin: 0; }
-  .header.mod-tattelekom .header__bottom-menu-link {
-    font-size: 1.5rem;
-    line-height: 1.6rem;
-    padding: 0; }
-  .header.mod-tattelekom .header__bottom-menu-item {
-    margin-right: 3.5rem; }
-    .header.mod-tattelekom .header__bottom-menu-item:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 1159px) {
-      .header.mod-tattelekom .header__bottom-menu-item {
-        margin-right: 2rem; } }
-  .header.mod-tattelekom .header__btns-container {
-    margin-left: 6rem; }
+  .header.mod-tattelekom {
+    -webkit-box-shadow: 0px 0.19408px 41px rgba(52, 52, 52, 0.0646723), 0px -5.73123px 21px rgba(52, 52, 52, 0.0423377);
+            box-shadow: 0px 0.19408px 41px rgba(52, 52, 52, 0.0646723), 0px -5.73123px 21px rgba(52, 52, 52, 0.0423377); }
+    .header.mod-tattelekom .header__top-block {
+      background-color: #fff; }
+    .header.mod-tattelekom .header__bottom-block {
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    .header.mod-tattelekom .header__top-menu-items {
+      margin-right: 2rem; }
+      .header.mod-tattelekom .header__top-menu-items:last-child {
+        margin-right: 0; }
+    .header.mod-tattelekom .header__top-menu-items-link:not(.mod-tatt-right-block-link) {
+      padding: 0;
+      color: #ADADAD;
+      text-transform: none;
+      border-top: none;
+      -webkit-transition: border-bottom-color 250ms, color 250ms;
+      transition: border-bottom-color 250ms, color 250ms; }
+      .header.mod-tattelekom .header__top-menu-items-link:not(.mod-tatt-right-block-link)._is-active {
+        color: var(--red-color);
+        border-bottom-color: var(--red-color); }
+      .header.mod-tattelekom .header__top-menu-items-link:not(.mod-tatt-right-block-link):hover:not(.mod-with-icons) {
+        color: var(--red-color);
+        border-bottom-color: var(--red-color); }
+    .header.mod-tattelekom .header__bottom-menu-list {
+      margin: 0; }
+    .header.mod-tattelekom .header__bottom-menu-link {
+      font-size: 1.5rem;
+      line-height: 1.6rem;
+      padding: 0; }
+    .header.mod-tattelekom .header__bottom-menu-item {
+      margin-right: 3.5rem; }
+      .header.mod-tattelekom .header__bottom-menu-item:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 1159px) {
+        .header.mod-tattelekom .header__bottom-menu-item {
+          margin-right: 2rem; } }
+    .header.mod-tattelekom .header__btns-container {
+      margin-left: 6rem; }
 
 .header__content {
   background-repeat: repeat;
@@ -15737,6 +15748,49 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none; }
+
+.tatt-news-inner {
+  margin-bottom: 10rem; }
+  @media screen and (max-width: 767px) {
+    .tatt-news-inner {
+      padding-top: 3rem;
+      margin-bottom: 7rem; } }
+  .tatt-news-inner__date {
+    margin-bottom: 5rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.02em;
+    color: var(--main-grey-color);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .tatt-news-inner__date-icon {
+      margin-right: 1.5rem; }
+    @media screen and (max-width: 959px) {
+      .tatt-news-inner__date {
+        margin-bottom: 4rem; } }
+  .tatt-news-inner .tatt-news-inner__content {
+    max-width: 1000px; }
+    .tatt-news-inner .tatt-news-inner__content h1 {
+      font-weight: 400;
+      font-size: 3.8rem;
+      line-height: 4.9rem;
+      margin-bottom: 5rem;
+      letter-spacing: 0.015em; }
+      @media screen and (max-width: 959px) {
+        .tatt-news-inner .tatt-news-inner__content h1 {
+          font-size: 3rem;
+          line-height: 3.6rem;
+          margin-bottom: 3rem; } }
+    .tatt-news-inner .tatt-news-inner__content p {
+      margin-bottom: 1.6rem;
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.02em; }
 
 .b-telephone-services-links {
   padding: 3.6rem 0 5rem; }
