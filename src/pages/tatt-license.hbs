@@ -1,0 +1,34 @@
+{{#extend "layout"}}
+{{#content "main"}}
+<div class="tatt-about-company tatt-license">
+    {{> bread-crumbs isTatt=true}}
+    <section class="tatt-achievements__section">
+        <div class="gl__page-content">
+            <h1 class="tatt-license__title gl__title">
+                Лицензии
+            </h1>
+            {{#each tatt-license-block }}
+                <div class="tatt-license__block">
+                    <h2 class="tatt-license__legend">
+                       {{ this.title }}
+                    </h2>
+                    <ul class="tatt-license__list">
+                        {{#each this.tatt-license-list }}
+                            <li class="tatt-license__item">
+                                <a href="" download class="tatt-license__file-link">
+                                    <img class="tatt-license__preview-img" src="img/tatt-license/license.jpg" alt="/">
+                                    <div>
+                                        <span class="tatt-license__file-link-title">{{ this.name }}</span>
+                                        <span class="tatt-license__file-link-subtitle">{{ this.size }}</span>
+                                    </div>
+                                </a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            {{/each}}
+        </div>
+    </section>
+</div>
+{{/content}}
+{{/extend}}

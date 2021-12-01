@@ -1,0 +1,91 @@
+.tatt-contacts-info {
+    &__legend {
+        font-weight: 400;
+        font-size: 2.6rem;
+        line-height: 3.3rem;
+        letter-spacing: 0.015em;
+        margin-bottom: 2.5rem;
+    }
+
+    &__adress {
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.02em;
+        margin-bottom: 1.3rem;
+    }
+
+    &__link {
+        display: inline-block;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.02em;
+        margin-bottom: 1.3rem;
+
+        &:nth-last-of-type(1) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10rem;
+
+        &:nth-last-of-type(1) {
+            margin-bottom: 0;
+        }
+
+        @include for-sm-down {
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -2rem -3.5rem;
+
+        @include for-sm-down {
+            margin: 0;
+        }
+    }
+
+    &__item {
+        max-width: 26rem;
+        margin: 2rem 3.5rem;
+
+        &-legend {
+            display: inline-block;
+            margin-bottom: 2.2rem;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            white-space: nowrap;
+        }
+
+        @include for-sm-down {
+            margin: 0;
+            margin-bottom: 2rem;
+            max-width: none;
+        }
+    }
+
+    &__application-block {
+        margin-bottom: 10rem;
+
+        @include for-sm-down {
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__map {
+        width: 100%;
+        height: 33.2rem;
+        overflow: hidden;
+        border-radius: 1rem;
+        background-color: #A6A6A6;
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "title": "Контактная информация",
+    "isTattelekom": true,
+    "script": "tatt-contacts-info-page",
+    "bread-crumbs": [
+      {
+        "name": "Главная"
+      },
+      {
+        "name": "Контактная информация",
+        "noLink": true
+      }
+    ],
+    "tatt-table-lis": [
+      {
+        "isActive": true,
+        "link": "/tattelecom-1/",
+        "link-name": "Контактная информация"
+      },
+      {
+        "link": "/tattelecom-1/",
+        "link-name": "Офисы продаж и обслуживания"
+      },
+      {
+        "link": "/tattelecom-1/",
+        "link-name": "Реквизиты"
+      }
+    ]
+  }
+  

@@ -398,3 +398,75 @@
         padding: 6rem 0;
     }
 }
+
+.tatt-license {
+    @include for-sm-down {
+        padding-top: 3rem;
+    }
+
+    &__title {
+        margin-bottom: 2.5rem;
+    }
+
+    &__legend {
+        font-weight: 400;
+        font-size: 2.6rem;
+        line-height: 3.3rem;
+        letter-spacing: 0.015em;
+        margin-bottom: 5rem;
+
+        @include for-sm-down {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -1rem -1.75rem;
+    }
+
+    &__item {
+        width: calc(50% - 3.5rem);
+        margin: 1rem 1.75rem;
+
+        @include for-sm-down {
+            width: 100%;
+        }
+    }
+
+    &__file-link {
+        display: flex;
+    }
+
+    &__preview-img {
+        display: block;
+        width: 7rem;
+        height: 10rem;
+        object-fit: cover;
+        margin-right: 4rem;
+
+        @include for-sm-down {
+            margin-right: 2rem;
+        }
+    }
+
+    &__file-link-title {
+        display: block;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.02em;
+        margin-bottom: 0.5rem;
+    }
+
+    &__file-link-subtitle {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.02em;
+        color: var(--main-grey-color);
+    }
+
+    &__block {
+        margin-bottom: 10rem;
+    }
+}

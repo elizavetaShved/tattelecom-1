@@ -1,0 +1,162 @@
+{{#extend "layout"}}
+{{#content "main"}}
+{{> bread-crumbs isTatt=true}}
+<section class="technical-works tatt-news tatt-contacts-info">
+    <div class="gl__page-content">
+        <div class="tatt-row-grid">
+            <div class="tatt-row-grid__block">
+                {{> tatt-news-page/tatt-news-nav-list }}
+                <div class="gl__lg-show">
+                    {{> common/btn-settings text="Навигация" }}
+                </div>
+            </div> 
+            <div class="tatt-row-grid__block">
+                <h2 class="gl__title">
+                    Контактная информация
+                </h2>
+                <div class="tatt-contacts-info__block">
+                    <h3 class="tatt-contacts-info__legend">
+                        Главный офис «ТАТТЕЛЕКОМ»
+                    </h3>
+                    <p class="tatt-contacts-info__adress">
+                        420061, Казань, ул. Н. Ершова, 57
+                    </p>
+                    <a href="tel:+78432642096" class="tatt-contacts-info__link">
+                        (843) 264-20-96
+                    </a>
+                    <a href="mailto:kancel@tattelecom.ru" class="tatt-contacts-info__link">
+                        kancel@tattelecom.ru
+                    </a>
+                </div>
+                <div class="tatt-contacts-info__block">
+                    <h3 class="tatt-contacts-info__legend">
+                        Филиалы
+                    </h3>
+                    <ul class="tatt-contacts-info__list">
+                        <li class="tatt-contacts-info__item">
+                            <span class="tatt-contacts-info__item-legend">
+                                Альметьевский ЗУЭС
+                            </span>
+                            <p class="tatt-contacts-info__adress">
+                                420061, Казань, ул. Н. Ершова, 57
+                            </p>
+                            <a href="tel:+78432642096" class="tatt-contacts-info__link">
+                                (843) 264-20-96
+                            </a>
+                            <a href="mailto:kancel@tattelecom.ru" class="tatt-contacts-info__link">
+                                kancel@tattelecom.ru
+                            </a>
+                        </li>
+                        <li class="tatt-contacts-info__item">
+                            <span class="tatt-contacts-info__item-legend">
+                                Буинский ЗУЭС
+                            </span>
+                            <p class="tatt-contacts-info__adress">
+                                420061, Казань, ул. Н. Ершова, 57
+                            </p>
+                            <a href="tel:+78432642096" class="tatt-contacts-info__link">
+                                (843) 264-20-96
+                            </a>
+                            <a href="mailto:kancel@tattelecom.ru" class="tatt-contacts-info__link">
+                                kancel@tattelecom.ru
+                            </a>
+                        </li>
+                        <li class="tatt-contacts-info__item">
+                            <span class="tatt-contacts-info__item-legend">
+                                Казанское управление электросвязи
+                            </span>
+                            <p class="tatt-contacts-info__adress">
+                                420061, Казань, ул. Н. Ершова, 57
+                            </p>
+                            <a href="tel:+78432642096" class="tatt-contacts-info__link">
+                                (843) 264-20-96
+                            </a>
+                            <a href="mailto:kancel@tattelecom.ru" class="tatt-contacts-info__link">
+                                kancel@tattelecom.ru
+                            </a>
+                        </li>
+                        <li class="tatt-contacts-info__item">
+                            <span class="tatt-contacts-info__item-legend">
+                               Набережно-Челнинский ЗУЭС
+                            </span>
+                            <p class="tatt-contacts-info__adress">
+                                420061, Казань, ул. Н. Ершова, 57
+                            </p>
+                            <a href="tel:+78432642096" class="tatt-contacts-info__link">
+                                (843) 264-20-96
+                            </a>
+                            <a href="mailto:kancel@tattelecom.ru" class="tatt-contacts-info__link">
+                                kancel@tattelecom.ru
+                            </a>
+                        </li>
+                        <li class="tatt-contacts-info__item">
+                            <span class="tatt-contacts-info__item-legend">
+                               Чистопольский ЗУЭС
+                            </span>
+                            <p class="tatt-contacts-info__adress">
+                                420061, Казань, ул. Н. Ершова, 57
+                            </p>
+                            <a href="tel:+78432642096" class="tatt-contacts-info__link">
+                                (843) 264-20-96
+                            </a>
+                            <a href="mailto:kancel@tattelecom.ru" class="tatt-contacts-info__link">
+                                kancel@tattelecom.ru
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tatt-contacts-info__block" id="contacts-info-host">
+                    <h2 class="gl__title">
+                        Филиалы на карте
+                    </h2>
+                    <div class="tatt-contacts-info__map js-map"
+                        data-center="[55.8, 49.39]"
+                        data-mark-coords='
+                        [[54.906647, 52.310372, "АЛЬМЕТЬЕВСКИЙ ЗУЭС"],
+                        [54.979067, 48.299206, "БУИНСКИЙ ЗУЭС"],
+                        [55.800023, 49.179528, "Казанское управление электросвязи"],
+                        [55.728941, 52.393664, "НАБЕРЕЖНО-ЧЕЛНИНСКИЙ ЗУЭС"]]'
+                    >
+
+                    </div>
+                </div>
+
+                <div class="application__content tatt-contacts-info__application-block tatt-news__application-content">
+                    <h2 class="gl__title application__title tatt-news__application-title">Остались вопросы?</h2>
+
+                    <div class="application__subtitle tatt-news__application-subtitle">
+                        Оставьте заявку и наш менеджер перезвонит вам
+                    </div>
+
+                    <form class="application__form mod-leave-request" data-need-validation data-parsley-validate
+                        data-parsley-focus="none">
+                        {{> common/controls/input-main
+                        required=true
+                        type="text"
+                        placeholder="Ваше имя"
+                        name="application-name"
+                        }}
+                        {{> common/controls/input-main
+                        required=true
+                        type="tel"
+                        phoneMask=true
+                        placeholder="+7 (___) ___-__-__"
+                        name="application-tel"
+                        }}
+                        <div class="application__btn-wrapper">
+                            <button type="submit" class="gl__main-btn application__btn mod-business">Получить консльтацию</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="tatt-news__supports-content">
+                    {{> common/b-support-content tatt-news=true}}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+{{/content}}
+{{/extend}}
