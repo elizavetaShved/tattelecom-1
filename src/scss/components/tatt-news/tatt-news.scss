@@ -1,0 +1,128 @@
+.tatt-news {
+    padding: 0;
+    margin-bottom: 10rem;
+
+    @include for-sm-down {
+        padding-top: 2rem;
+        margin-bottom: 7rem;
+    }
+
+    &__small-heading {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        margin-bottom: 1.6rem;
+        letter-spacing: 0.02em;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.02em;
+        margin-bottom: 5rem;
+    }
+
+    &__application-content {
+        padding: 3.2rem;
+        background-color: #f5f5f5;
+        border-radius: 1rem;
+        margin-bottom: 5rem;
+    }
+
+    &__application-title {
+        color: #007BC3;
+    }
+
+    &__application-subtitle {
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+
+    &__application-btn {
+        background-color: #007BC3;
+    }
+
+    &__supports-content {
+        max-width: 38.7rem;
+
+        @include for-xxs-down {
+            .b-socials {
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    @include for-lg-down {
+        .tatt-table-list {
+            padding: 3rem;
+            width: 82% !important;
+        }
+    }
+}
+
+.media-contacts {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -1rem;
+    margin-bottom: 5rem;
+
+    &__block {
+        position: relative;
+        overflow: hidden;
+        width: calc(50% - 2rem);
+        margin: 1rem;
+        padding: 2.7rem 3.2rem;
+        border-radius: 1rem;
+        color: #fff;
+
+        &.mod-blue {
+            background-color: #007BC3;
+        }
+
+        &.mod-orange {
+            background-color: #E84735;
+        }
+
+        @include for-sm-down {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 2.5rem;
+        line-height: 3.3rem;
+        letter-spacing: 0.015em;
+        margin-bottom: 2.5rem;
+    }
+
+    &__legend {
+        display: block;
+        font-weight: 300;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        color: #F5F5F5;
+    }
+
+    &__link {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 2.6rem;
+        line-height: 3.3rem;
+        margin-bottom: 1.6rem;
+    }
+
+    &__img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        pointer-events: none;
+        user-select: none;
+    }
+}

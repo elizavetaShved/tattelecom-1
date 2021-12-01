@@ -1,0 +1,57 @@
+{{#extend "layout"}}
+{{#content "main"}}
+{{> bread-crumbs isTatt=true}}
+<section class="technical-works tatt-news" id="technical-works-host">
+    <div class="gl__page-content">
+        <div class="tatt-row-grid">
+            <div class="tatt-row-grid__block">
+                {{> tatt-news-page/tatt-news-nav-list }}
+                <div class="gl__lg-show">
+                    {{> common/btn-settings text="Навигация" }}
+                </div>
+            </div> 
+            <div class="tatt-row-grid__block">
+                <h2 class="gl__title">
+                    Новости
+                </h2>
+
+                <div class="technical-works__select-wrapper">
+                    {{> common/controls/select selects=year-select }}
+                    {{> common/controls/select selects=mouth-select }}
+                </div>
+
+                <ul class="search-site__list">
+                    {{#each articles-list }}
+                    <li class="search-site__item">
+                        <div class="technical-works__item-wrapper">
+                            <div class="technical-works__item-date">
+                                {{ this.date }}
+                            </div>
+                            <div>
+                                <div class="search-site__item-preview">
+                                    {{ this.preview }}
+                                </div>
+
+                                <a href="" class="search-site__item-link">
+                                    <span class="search-site__item-link-content">
+                                        Подробнее
+                                        <svg width="16" height="16" aria-hidden="true" class="search-site__item-icon">
+                                            <use xlink:href="#arrow-right"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+
+                <div class="search-site__pagination-wrapper">
+                    {{> common/pagination-page pageNumbers=pageNumbers }}
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+{{/content}}
+{{/extend}}

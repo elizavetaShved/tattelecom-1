@@ -1,0 +1,30 @@
+{
+    "title": "Контакты для СМИ",
+    "isTattelekom": true,
+    "script": "tatt-media-contacts-page",
+    "bread-crumbs": [
+      {
+        "name": "Главная"
+      },
+      {
+        "name": "Пресс-центр",
+        "noLink": true
+      }
+    ],
+    "tatt-table-lis": [
+      {
+        "link": "/tattelecom-1/",
+        "link-name": "Новости"
+      },
+      {
+        "link": "/tattelecom-1/",
+        "link-name": "Пресса о компании"
+      },
+      {
+        "isActive": true,
+        "link": "/tattelecom-1/",
+        "link-name": "Контакты для СМИ"
+      }
+    ]
+  }
+  

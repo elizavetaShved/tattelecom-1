@@ -1,0 +1,101 @@
+{{#extend "layout"}}
+{{#content "main"}}
+{{> bread-crumbs isTatt=true}}
+<section class="tatt-news">
+    <div class="gl__page-content">
+        <div class="tatt-row-grid">
+            <div class="tatt-row-grid__block">
+                {{> tatt-news-page/tatt-news-nav-list }}
+                <div class="gl__lg-show">
+                    {{> common/btn-settings text="Навигация" }}
+                </div>
+            </div>
+            <div class="tatt-row-grid__block">
+                <h2 class="gl__title">
+                    Контакты для СМИ
+                </h2>
+                <span class="tatt-news__small-heading">
+                    Уважаемые коллеги!
+                </span>
+                <p class="tatt-news__text">
+                    ПАО «Таттелеком» придерживается политики информационной открытости. В связи с этим пресс-центр будет
+                    рад оперативно предоставить информацию о деятельности компании или комментарий по интересующему
+                    вопросу.
+                </p>
+
+                <div class="tatt-news__media-contacts media-contacts">
+                    <div class="media-contacts__block mod-blue">
+                        <h3 class="media-contacts__title">
+                            Контакты для представителей средств массовой информации
+                        </h3>
+                        <span class="media-contacts__legend">
+                            Телефон:
+                        </span>
+                        <a class="media-contacts__link" href="tel:+78432990317">
+                            +7 (843) 299-03-17
+                        </a>
+                        <span class="media-contacts__legend">
+                            Мобильный телефон (в т.ч. мессенджеры):
+                        </span>
+                        <a class="media-contacts__link" href="tel:+79393613102">
+                            +7 (939) 361-31-02
+                        </a>
+                        <span class="media-contacts__legend">
+                            Электронная почта:
+                        </span>
+                        <a class="media-contacts__link" href="mailto:pr@tattelecom.ru">
+                            pr@tattelecom.ru
+                        </a>
+                    </div>
+                    <div class="media-contacts__block mod-orange">
+                        <h3 class="media-contacts__title">
+                            Контакты по вопросам размещения рекламы
+                        </h3>
+                        <span class="media-contacts__legend">
+                            Телефон:
+                        </span>
+                        <a class="media-contacts__link" href="tel:+78432211244">
+                            +7 (843) 221-12-44
+                        </a>
+                        <img class="media-contacts__img" src="img/tatt-news/lines-bg.svg" alt="Линии похожие на волны">
+                    </div>
+                </div>
+
+
+                <div class="application__content tatt-news__application-content">
+                    <h2 class="gl__title application__title tatt-news__application-title">Остались вопросы?</h2>
+
+                    <div class="application__subtitle tatt-news__application-subtitle">
+                        Оставьте заявку и наш менеджер перезвонит вам
+                    </div>
+
+                    <form class="application__form mod-leave-request" data-need-validation data-parsley-validate
+                        data-parsley-focus="none">
+                        {{> common/controls/input-main
+                        required=true
+                        type="text"
+                        placeholder="Ваше имя"
+                        name="application-name"
+                        }}
+                        {{> common/controls/input-main
+                        required=true
+                        type="tel"
+                        phoneMask=true
+                        placeholder="+7 (___) ___-__-__"
+                        name="application-tel"
+                        }}
+                        <div class="application__btn-wrapper">
+                            <button type="submit" class="gl__main-btn application__btn mod-business">Получить консльтацию</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="tatt-news__supports-content">
+                    {{> common/b-support-content tatt-news=true}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{/content}}
+{{/extend}}
