@@ -15052,6 +15052,70 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     .tatt-mission-block2 {
       padding: 6rem 0; } }
 
+@media screen and (max-width: 767px) {
+  .tatt-license {
+    padding-top: 3rem; } }
+
+.tatt-license__title {
+  margin-bottom: 2.5rem; }
+
+.tatt-license__legend {
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 3.3rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 5rem; }
+  @media screen and (max-width: 767px) {
+    .tatt-license__legend {
+      margin-bottom: 3rem; } }
+
+.tatt-license__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -1rem -1.75rem; }
+
+.tatt-license__item {
+  width: calc(50% - 3.5rem);
+  margin: 1rem 1.75rem; }
+  @media screen and (max-width: 767px) {
+    .tatt-license__item {
+      width: 100%; } }
+
+.tatt-license__file-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.tatt-license__preview-img {
+  display: block;
+  width: 7rem;
+  height: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 4rem; }
+  @media screen and (max-width: 767px) {
+    .tatt-license__preview-img {
+      margin-right: 2rem; } }
+
+.tatt-license__file-link-title {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5rem; }
+
+.tatt-license__file-link-subtitle {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.02em;
+  color: var(--main-grey-color); }
+
+.tatt-license__block {
+  margin-bottom: 10rem; }
+
 .tatt-achievements {
   margin-bottom: 10rem; }
   @media screen and (max-width: 559px) {
@@ -15791,6 +15855,88 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       font-size: 1.6rem;
       line-height: 2.5rem;
       letter-spacing: 0.02em; }
+
+.tatt-contacts-info__legend {
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 3.3rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 2.5rem; }
+
+.tatt-contacts-info__adress {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.3rem; }
+
+.tatt-contacts-info__link {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.3rem; }
+  .tatt-contacts-info__link:nth-last-of-type(1) {
+    margin-bottom: 0; }
+
+.tatt-contacts-info__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 10rem; }
+  .tatt-contacts-info__block:nth-last-of-type(1) {
+    margin-bottom: 0; }
+  @media screen and (max-width: 767px) {
+    .tatt-contacts-info__block {
+      margin-bottom: 5rem; } }
+
+.tatt-contacts-info__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -2rem -3.5rem; }
+  @media screen and (max-width: 767px) {
+    .tatt-contacts-info__list {
+      margin: 0; } }
+
+.tatt-contacts-info__item {
+  max-width: 26rem;
+  margin: 2rem 3.5rem; }
+  .tatt-contacts-info__item-legend {
+    display: inline-block;
+    margin-bottom: 2.2rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    white-space: nowrap; }
+  @media screen and (max-width: 767px) {
+    .tatt-contacts-info__item {
+      margin: 0;
+      margin-bottom: 2rem;
+      max-width: none; } }
+
+.tatt-contacts-info__application-block {
+  margin-bottom: 10rem; }
+  @media screen and (max-width: 767px) {
+    .tatt-contacts-info__application-block {
+      margin-bottom: 5rem; } }
+
+.tatt-contacts-info__map {
+  width: 100%;
+  height: 33.2rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: #A6A6A6; }
 
 .b-telephone-services-links {
   padding: 3.6rem 0 5rem; }
