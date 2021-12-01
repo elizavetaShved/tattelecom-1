@@ -99,7 +99,7 @@
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-mission-page">Миссия Таттелеком</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-achievements">Достижения Таттелеком</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-history">История Таттелеком</a><br>
-    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-head">Центральное управление</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-head.html">Центральное управление</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-structural-units">Структурные подразделения</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-branch">Структурные подразделения - АЛЬМЕТЬЕВСКИЙ ЗУЭС</a><br>
 </div>
