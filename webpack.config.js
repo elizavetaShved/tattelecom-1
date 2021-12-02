@@ -89,6 +89,7 @@ module.exports = {
     ['tatt-news-page']: './src/js/pages/tatt-news-page',
     ['tatt-media-contacts-page']: './src/js/pages/tatt-media-contacts-page',
     ['tatt-contacts-info-page']: './src/js/pages/tatt-contacts-info-page',
+    ['tatt-sales-offices-page']: './src/js/pages/tatt-sales-offices-page',
     
   },
   output: {

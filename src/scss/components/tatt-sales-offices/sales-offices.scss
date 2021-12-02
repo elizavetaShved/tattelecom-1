@@ -1,0 +1,163 @@
+.tatt-sales-offices {
+    padding-top: 10rem;
+    margin-bottom: 10rem;
+
+    @include for-lg-down {
+        padding-top: 5rem;
+    }
+
+    &__tab-list {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5rem;
+
+        @media screen and (max-width: 320px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__tab-item {
+        display: block;
+        margin-right: 3rem;
+        cursor: pointer;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @media screen and (max-width: 320px) {
+            width: 100%;
+            margin-bottom: 2rem;
+            margin-right: 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__tab-input {
+        display: none;
+
+        &:checked {
+            ~ .sales-offices__tab-namne {
+                color: var(--main-color);
+            }
+        }
+    }
+
+    &__tab-namne {
+        font-size: 2rem;
+        line-height: 3.2rem;
+        transition: color 200ms;
+
+        &:hover {
+            color: var(--main-color);
+        }
+    }
+
+    &__select {
+        max-width: 21.9rem;
+        margin-bottom: 7.2rem;
+
+        @include for-sm-down {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__table {
+        
+        thead {
+            color: #fff;
+            background-color: #FA4907;
+
+            td {
+                font-size: 2rem;
+                line-height: 3.2rem;
+                letter-spacing: 0.015em;
+                padding: 1.2rem 0;
+    
+                &:first-child {
+                    padding-left: 3rem;
+
+                    @include for-sm-down {
+                        padding-left: 2rem;
+                    }
+                }
+    
+                &:last-child {
+                    padding-right: 4.4rem;
+
+                    @include for-sm-down {
+                        padding-left: 3rem;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            td {
+                font-size: 1.6rem;
+                line-height: 2.5rem;
+                letter-spacing: 0.02em;
+                padding: 2.5rem 0 1.8rem 0;
+    
+                &:first-child {
+                    padding-left: 3rem;
+
+                    @include for-sm-down {
+                        padding-left: 2rem;
+                    }
+                }
+    
+                &:last-child {
+                    padding-right: 4.4rem;
+
+                    @include for-sm-down {
+                        padding-left: 3rem;
+                    }
+                }
+
+                @include for-sm-down {
+                    padding: 2rem 0 1.3rem 0;
+                }
+            }
+
+            tr {
+                border-bottom: 1px solid var(--border-color);
+            }
+        }
+
+        @include for-lg-down {
+            width: 149rem;
+        }
+
+        @include for-xxs-down {
+            width: 119rem;
+        }
+    }
+
+    &__table-container {
+        @include for-lg-down {
+           overflow-x: scroll;
+        }
+
+        @include for-sm-down {
+            padding-bottom: 2rem;
+        }
+    }
+
+    &__legend {
+        font-size: 3.8rem;
+        line-height: 4.9rem;
+        color: #555759;
+        letter-spacing: 0.015em;
+        margin-bottom: 6rem;
+
+        @include for-sm-down {
+            margin-bottom: 4rem;
+            font-size: 2.6rem;
+            line-height: 3.4rem;
+        }
+    }
+}

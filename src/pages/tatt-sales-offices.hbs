@@ -1,0 +1,205 @@
+{{#extend "layout"}}
+{{#content "main"}}
+<section class="tatt-sales-offices js-menu-tabs-container">
+    <div class="gl__page-content">
+        <h1 class="gl__title">
+            Офисы продаж
+        </h1>
+
+        <div class="tatt-sales-offices__tab-list">
+            <label class="tatt-sales-offices__tab-item">
+                <input class="tatt-sales-offices__tab-input js-menu-tab" checked type="radio" name="tab-name"
+                    value="Списком" />
+                <span class="tatt-sales-offices__tab-namne">
+                    Списком
+                </span>
+            </label>
+            <label class="tatt-sales-offices__tab-item">
+                <input class="tatt-sales-offices__tab-input js-menu-tab" type="radio" name="tab-name"
+                    value="На карте" />
+                <span class="tatt-sales-offices__tab-namne">
+                    На карте
+                </span>
+            </label>
+            <label class="tatt-sales-offices__tab-item">
+                <input class="tatt-sales-offices__tab-input js-menu-tab" type="radio" name="tab-name"
+                    value="Офисы партнеров" />
+                <span class="tatt-sales-offices__tab-namne">
+                    Офисы партнеров
+                </span>
+            </label>
+        </div>
+        <div class="tatt-sales-offices__tab-content js-menu-tab-content gl__menu-tab-content mod-show"
+            data-menu="Списком">
+            <div class="tatt-sales-offices__select">
+                {{> common/controls/select selects=year-select }}
+            </div>
+            <div class="tatt-sales-offices__table-container">
+                <table align="center" width="100%" cellpadding="0" cellspacing="0" class="tatt-sales-offices__table">
+                    <thead>
+                        <tr>
+                            <td>
+                                Населенный пункт
+                            </td>
+                            <td>
+                                Адрес
+                            </td>
+                            <td>
+                                Пн-пт
+                            </td>
+                            <td>
+                                Суббота
+                            </td>
+                            <td>
+                                Воскресенье
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each sales-offices-list }}
+                        <tr>
+                            <td>
+                                {{this.city}}
+                            </td>
+                            <td>
+                                {{this.adres}}
+                            </td>
+                            <td>
+                                {{this.time}}
+                            </td>
+                            <td>
+                                {{this.sb}}
+                            </td>
+                            <td>
+                                {{this.voskr}}
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="tatt-sales-offices__tab-content js-menu-tab-content gl__menu-tab-content"
+            data-menu="Офисы партнеров">
+            <div class="tatt-sales-offices__legend">
+                Основной режим работы
+            </div>
+            <div class="tatt-sales-offices__table-container">
+                <table align="center" width="100%" cellpadding="0" cellspacing="0" class="tatt-sales-offices__table">
+                    <thead>
+                        <tr>
+                            <td>
+                                Населенный пункт
+                            </td>
+                            <td>
+                                Адрес
+                            </td>
+                            <td>
+                                Пн-пт
+                            </td>
+                            <td>
+                                Суббота
+                            </td>
+                            <td>
+                                Воскресенье
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each sales-offices-list }}
+                        <tr>
+                            <td>
+                                {{this.city}}
+                            </td>
+                            <td>
+                                {{this.adres}}
+                            </td>
+                            <td>
+                                {{this.time}}
+                            </td>
+                            <td>
+                                {{this.sb}}
+                            </td>
+                            <td>
+                                {{this.voskr}}
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="tatt-sales-offices__tab-content js-menu-tab-content gl__menu-tab-content" data-menu="На карте"
+        id="sales-offices-map-host">
+        <div class="gl__page-content">
+            <div class="tatt-sales-offices__select">
+                {{> common/controls/select selects=year-select }}
+            </div>
+        </div>
+
+        <div class="sales-offices-map__container">
+            <div class="sales-offices-map__points-list">
+                <div class="gl__page-content">
+                    <div class="sales-offices-map__points-list__content">
+                        <form class="sales-offices-map__form">
+                            <label class="sales-offices-map__input-search-wrapper">
+                                <input type="text" class="sales-offices-map__input-search js-input-search"
+                                    placeholder="Поиск">
+                                <svg width="24" height="24" aria-hidden="true"
+                                    class="sales-offices-map__input-search-icon">
+                                    <use xlink:href="#search"></use>
+                                </svg>
+                            </label>
+                            {{> common/controls/input-checkbox
+                            caption="Офисы партнёров"
+                            isControl=true
+                            name="checkbox-ofice"
+                            captionBlack=true
+                            }}
+                        </form>
+
+                        <div class="sales-offices-map__not-found js-not-found">
+                            По вашему запросу ничего не найдено
+                        </div>
+
+                        <ul class="sales-offices-map__list js-map-list">
+                            {{#each officesList }}
+                            <li class="sales-offices-map__item js-offices-item" data-coord="{{this.coords}}" {{#if
+                                isPartner }}data-is-partner{{/if}}>
+                                <div class="sales-offices-map__item-header">
+                                    <div class="sales-offices-map__item-address js-address">{{this.address}}
+                                    </div>
+                                    <div class="sales-offices-map__item-city js-city">{{this.city}}</div>
+                                </div>
+
+                                <div class="sales-offices-map__item-work-time-wrapper">
+                                    <div class="sales-offices-map__item-work-time">
+                                        <div class="sales-offices-map__item-work-caption">пн.–пт.</div>
+                                        <div class="sales-offices-map__item-work-value js-weekday">
+                                            {{this.weekday}}</div>
+                                    </div>
+                                    <div class="sales-offices-map__item-work-time">
+                                        <div class="sales-offices-map__item-work-caption">сб.</div>
+                                        <div class="sales-offices-map__item-work-value js-saturday">
+                                            {{this.saturday}}</div>
+                                    </div>
+                                    <div class="sales-offices-map__item-work-time">
+                                        <div class="sales-offices-map__item-work-caption">вс.</div>
+                                        <div class="sales-offices-map__item-work-value js-sunday">
+                                            {{this.sunday}}</div>
+                                    </div>
+                                </div>
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sales-offices-map__map js-map" data-center="[55.78, 49.1]" data-pin="img/common/balloon.svg">
+            </div>
+        </div>
+    </div>
+</section>
+{{/content}}
+{{/extend}}
