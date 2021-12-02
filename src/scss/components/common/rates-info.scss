@@ -93,6 +93,22 @@
   line-height: 2.4rem;
   padding-right: 2.8rem;
   display: flex;
+
+  span {
+    display: inline-block;
+    max-width: 44.3rem;
+  }
+}
+
+.rates-info__preview-rows-caption-tooltip {
+  .btn-info__container {
+    margin: 0;
+  }
+
+  .btn-info__btn {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 
 .rates-info__preview-rows-btn {

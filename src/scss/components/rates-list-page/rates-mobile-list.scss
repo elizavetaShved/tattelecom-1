@@ -142,6 +142,10 @@
       border-color: #fff;
     }
 
+    .rates-list__slide-link-detailed-wrapper a:hover {
+      color: #fff;
+    }
+
     ::selection {
       @extend %select-white-background;
     }
@@ -218,13 +222,58 @@
 }
 
 .rates-list-internet__item-wifi {
+  position: relative;
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 2.6rem;
   color: var(--main-color);
   letter-spacing: 0.02em;
   border-bottom: 1px dashed var(--main-color);
+
+  &:hover {
+    .rates-list-internet__item-wifi-dropdown {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }
+
+.rates-list-internet__item-wifi-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 28rem;
+  padding-top: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms, visibillity 200ms;
+
+  p {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  a {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.rates-list-internet__item-wifi-dropdown-inner {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.6rem;
+  color: var(--main-text-color);
+  box-shadow: 0 0 10px var(--main-text-color);
+}
+
+.rates-list-internet__item-wifi 
 
 .rates-list-internet__item-price-wrapper {
   display: flex;

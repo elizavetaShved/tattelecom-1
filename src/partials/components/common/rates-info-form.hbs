@@ -17,7 +17,14 @@
               <li class="rates-info__preview-row">
                 <div class="rates-info__preview-rows-caption-wrapper">
                   <div class="rates-info__preview-rows-caption">
-                    {{ this.caption }}
+                    <span>
+                      {{ this.caption }}
+                    </span>
+                    {{#if info-btn-tooltip }}
+                      <div class="rates-info__preview-rows-caption-tooltip">
+                        {{> common/btn-info content-info=this.name }}
+                      </div>
+                     {{/if}}
                     {{#if info-btn }}
                       <button type="button" class="rates-info__preview-rows-btn">
                         <svg width="16" height="16" aria-hidden="true" class="rates-info__preview-rows-btn-icon">

@@ -1,14 +1,13 @@
 .applications-list {
   padding: 4rem 0 16rem;
 
+  &.mod-paddding {
+    padding-bottom: 0;
+    margin-bottom: 8.8rem;
+  }
+
   @include for-sm-down {
     padding: 2rem 0 8rem;
-  }
-}
-
-.applications-list__block {
-  & + & {
-    margin-top: 8.8rem;
   }
 }
 
