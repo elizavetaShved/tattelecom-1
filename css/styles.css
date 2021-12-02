@@ -4750,6 +4750,16 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .rates-info__preview-rows-caption span {
+    display: inline-block;
+    max-width: 44.3rem; }
+
+.rates-info__preview-rows-caption-tooltip .btn-info__container {
+  margin: 0; }
+
+.rates-info__preview-rows-caption-tooltip .btn-info__btn {
+  width: 2.5rem;
+  height: 2.5rem; }
 
 .rates-info__preview-rows-btn {
   width: 2.4rem;
@@ -8282,12 +8292,12 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 
 .applications-list {
   padding: 4rem 0 16rem; }
+  .applications-list.mod-paddding {
+    padding-bottom: 0;
+    margin-bottom: 8.8rem; }
   @media screen and (max-width: 767px) {
     .applications-list {
       padding: 2rem 0 8rem; } }
-
-.applications-list__block + .applications-list__block {
-  margin-top: 8.8rem; }
 
 .applications-list__grid-wrapper {
   display: grid;
@@ -9084,6 +9094,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     .rates-list-internet__item.mod-orange .rates-list-internet__item-wifi {
       color: #fff;
       border-color: #fff; }
+    .rates-list-internet__item.mod-orange .rates-list__slide-link-detailed-wrapper a:hover {
+      color: #fff; }
 
 .rates-list-internet__item-background {
   position: absolute;
@@ -9149,14 +9161,47 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
           justify-content: flex-start; }
 
 .rates-list-internet__item-wifi {
+  position: relative;
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 2.6rem;
   color: var(--main-color);
   letter-spacing: 0.02em;
   border-bottom: 1px dashed var(--main-color); }
+  .rates-list-internet__item-wifi:hover .rates-list-internet__item-wifi-dropdown {
+    opacity: 1;
+    visibility: visible; }
 
-.rates-list-internet__item-price-wrapper {
+.rates-list-internet__item-wifi-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 28rem;
+  padding-top: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 200ms, visibillity 200ms;
+  transition: opacity 200ms, visibillity 200ms; }
+  .rates-list-internet__item-wifi-dropdown p {
+    font-size: 1.4rem;
+    line-height: 1.6rem; }
+  .rates-list-internet__item-wifi-dropdown a {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem; }
+    .rates-list-internet__item-wifi-dropdown a:hover {
+      text-decoration: underline; }
+
+.rates-list-internet__item-wifi-dropdown-inner {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.6rem;
+  color: var(--main-text-color);
+  -webkit-box-shadow: 0 0 10px var(--main-text-color);
+          box-shadow: 0 0 10px var(--main-text-color); }
+
+.rates-list-internet__item-wifi .rates-list-internet__item-price-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
