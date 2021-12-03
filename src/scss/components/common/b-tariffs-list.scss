@@ -285,6 +285,18 @@
     }
   }
 
+  &__cost-old-price {
+    flex-shrink: 0;
+
+    margin: 0 0.5rem;
+    padding-bottom: 0.4rem;
+
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: 300;
+    text-decoration: line-through;
+  }
+
   &__btn {
     width: 100%;
   }

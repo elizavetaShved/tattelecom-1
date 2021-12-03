@@ -1,5 +1,5 @@
 {
-  "title": "Тариф «М2М Бизнес Контроль 2.0»",
+  "title": "М2М Контроль",
   "isBusiness": true,
   "script": "b-m2m-business-control",
   "check-items": {

@@ -1,6 +1,6 @@
 {
   "isBusiness": true,
-  "title": "Таттелеком Коннект (ЭДокс)",
+  "title": "Таттелеком Коннект",
   "script": "b-connect-page",
   "banner": {
     "additionalClass": "b-connect",

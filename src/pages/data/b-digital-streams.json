@@ -1,6 +1,6 @@
 {
   "isBusiness": true,
-  "title": "Цифровые потоки Е1 ",
+  "title": "Цифровые потоки Е1 ISDN PRI",
   "script": "b-digital-streams-page",
   "banner": {
     "additionalClass": "b-digital-streams",
@@ -98,21 +98,5 @@
     }
   ],
   "faq": [
-    {
-      "title": "Вопрос 1. Что нибудь про  Цифровые потоки Е1 . Если есть таковы",
-      "text": [
-        "text",
-        "text",
-        "text"
-      ]
-    },
-    {
-      "title": "Вопрос 2. Что нибудь про Цифровые потоки Е1 . Если есть таковы",
-      "text": [
-        "text",
-        "text",
-        "text"
-      ]
-    }
   ]
 }
