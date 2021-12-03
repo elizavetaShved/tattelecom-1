@@ -58,6 +58,26 @@
 
     .header__bottom-block {
       box-shadow: none;
+      height: var(--header-height-bottom-block-tatt);
+    }
+
+    .header__bottom-block-right {
+      flex-grow: 1;
+    }
+
+    .header__logo-wrapper {
+      margin: 0;
+      width: 19rem;
+      flex: none;
+      margin-right: 3rem;
+    }
+
+    .header__top-block-content {
+      margin: 0;
+    }
+
+    .header__logo-link {
+      padding: 0;
     }
 
     .header__top-menu-items {
@@ -113,7 +133,7 @@
     }
 
     .header__btns-container {
-      margin-left: 6rem;
+      margin-left: auto;
     }
   }
 }
@@ -141,6 +161,7 @@
 .header__tatt-top-block-content {
   flex-grow: 1;
   border-bottom: 1px solid var(--border-color);
+  height: var(--header-height-top-block-tatt);
 
   &_wrap {
     display: flex;
@@ -231,6 +252,7 @@
   &.mod-tatt-right-block-link {
     margin-right: 2rem;
     padding: 0;
+    font-weight: 300;
     color: var(--grey-text);
     font-size: 1.4rem;
     line-height: 1.6rem;
@@ -263,6 +285,22 @@
   margin-right: .4rem;
   height: 2rem;
   fill: var(--main-text-color);
+
+  &.mod-tatt-arrow-down {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: #adadad;
+  }
+
+  &.mod-geolocation-tatt {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  &.mod-tatt-person-lk {
+    width: 1.6rem;
+    height: 1.6rem; 
+  }
 }
 
 .header__bottom-block-content {
@@ -566,11 +604,25 @@
   &.mod-tatt-header-burger {
     width: 30px;
     height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
     &::after,
     &::before {
-      width: 25px;
-      margin-left: -12px;
+      content: none
+    }
+
+    span {
+      display: block;
+      width: 2.5rem;
+      height: 0.3rem;
+      background-color: #555759;
+
+      &:nth-of-type(2) {
+        margin: 0.5rem 0
+      }
     }
   }
 }

@@ -27,8 +27,14 @@ body {
   }
 }
 
-.tattelekom-pages .gl__page-content {
-  max-width: 1450px;
+.tattelekom-pages {
+  .gl__page-content {
+    max-width: 1450px;
+  }
+
+  .gl__layout-content {
+    margin-top: var(--header-height-tatt);
+  }
 }
 
 .gl__layout-wrapper {

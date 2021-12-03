@@ -29,6 +29,10 @@
   --header-height-bottom-block: 10rem;
   --header-height-b: calc(var(--header-height-top-block) + var(--header-height-b-bottom-block));
   --header-height-b-bottom-block: 9rem;
+  --header-height-top-block-tatt: 4.2rem;
+  --header-height-bottom-block-tatt: 7.5rem;
+  --header-height-tatt: calc(var(--header-height-top-block-tatt) + var(--header-height-bottom-block-tatt));
+
 
   @include for-bg-down {
     --header-height-top-block: 3rem;
