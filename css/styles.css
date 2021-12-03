@@ -12030,6 +12030,15 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       margin-right: 0; }
     .b-tariffs-item__cost-label:first-child {
       margin-left: 0; }
+  .b-tariffs-item__cost-old-price {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin: 0 0.5rem;
+    padding-bottom: 0.4rem;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: 300;
+    text-decoration: line-through; }
   .b-tariffs-item__btn {
     width: 100%; }
 
@@ -13091,7 +13100,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       line-height: 2.4rem; }
   .b-fractional-slider__slide-card.mod-large {
     padding: 3rem 3.2rem;
-    width: 60rem; }
+    width: 56rem; }
     @media screen and (max-width: 1023px) {
       .b-fractional-slider__slide-card.mod-large {
         width: 43.8rem; } }
