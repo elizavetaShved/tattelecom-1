@@ -145,7 +145,12 @@
 }
 
 .suppliers__dropdown {
-    margin-top: 5rem;
+    margin-top: 2.5rem;
+
+    &:nth-of-type(1) {
+        margin-top: 5rem;
+    }
+
 
     &-button {
         display: flex;
@@ -217,6 +222,18 @@
 
     @include for-md-down {
         margin-bottom: 6rem;
+    }
+
+    &__title {
+        margin-bottom: 6.5rem;
+
+        @include for-md-down {
+            margin-bottom: 3rem;
+        }
+    }
+
+    .suppliers__dropdown-content-item {
+        margin-bottom: 1.8rem;
     }
 }
 

@@ -150,7 +150,7 @@
 
 .tatt-table-list {
     &__item {
-        padding: 10px 0 18px;
+        padding: 11px 0 18px;
         border-bottom: 1px solid var(--border-color);
 
         &:first-child {
@@ -198,6 +198,10 @@
     &.mod-suppliers {
         .tatt-table-list__item {
             padding: 1.5rem 0;
+
+            &:nth-of-type(1) {
+                padding-top: 0.8rem;
+            }
         }
 
         .tatt-table-list__item-link {
@@ -257,7 +261,7 @@
 
 .tatt-select-wrap {
     max-width: 12.7rem;
-    margin-bottom: 5.3rem;
+    margin-bottom: 5rem;
 
     .select__container.mod-simple-design .choices__inner {
         padding: 1.5rem 1.8rem !important;
@@ -270,8 +274,10 @@
     }
 
     .gl-input__title {
+        display: inline-block;
         font-size: 1.6rem;
         line-height: 1.9rem;
+        margin-bottom: 0.7rem;
     }
 }
 
@@ -310,12 +316,17 @@
         flex-shrink: 0;
         width: 40px;
         height: 40px;
+        margin-right: 1.4rem;
+    }
+
+    .dpf-file__file-link-title {
+        line-height: 1.8rem;
     }
 
     &__heading {
         font-size: 2rem;
         line-height: 160%;
-        margin-bottom: 5.1rem;
+        margin-bottom: 2rem;
         max-width: 83%;
 
         @include for-lg-down {
@@ -373,5 +384,19 @@
 
     .gl__link-show-all-icon {
         fill: var(--main-text-color);
+    }
+}
+
+.tatt-info-open-page {
+    h2 {
+        margin-bottom: 2.1rem;
+    }
+
+    .tatt-info-documents {
+        margin-top: 7.5rem;
+    }
+
+    .tatt-info-documents__item {
+        margin-bottom: 3.8rem;
     }
 }

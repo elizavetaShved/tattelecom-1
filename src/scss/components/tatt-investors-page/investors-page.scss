@@ -2,11 +2,7 @@
     margin-bottom: 10.6rem;
 
     &__title {
-        margin-bottom: 6.4rem;
-    
-        &-course {
-            margin-bottom: 3rem;
-        }
+        margin-bottom: 5.5rem;
 
         @include for-md-down {
             margin-bottom: 3rem;
@@ -125,5 +121,25 @@
             line-height: 2.2rem;
             margin-bottom: 2rem;
         }
+    }
+
+    .investors-page__title-course {
+        margin-bottom: 3rem;
+        font-size: 3.8rem;
+        line-height: 5rem;
+        letter-spacing: 0.015em;
+        color: var(--main-text-color);
+        font-weight: normal;
+      
+        @include for-sm-down {
+          font-size: 2.6rem;
+          line-height: 3.4rem;
+        }
+    }
+}
+
+.tatt-info-open-page {
+    h2 {
+        margin-bottom: 2.1rem;
     }
 }

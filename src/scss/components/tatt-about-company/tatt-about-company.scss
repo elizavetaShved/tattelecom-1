@@ -58,6 +58,12 @@
 
     &__title-wrap {
         max-width: 64.4rem;
+
+        p {
+            font-weight: 300;
+            font-size: 2rem;
+            line-height: 2.4rem;
+        }
     }
 
     &__title {
