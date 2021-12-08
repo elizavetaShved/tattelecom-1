@@ -1390,6 +1390,84 @@
 					</div>
 				</div>
 			</div>
+			<div class="modal" id="modal-requestLetai-host">
+				<div class="modal__container mod-small js-modal-container">
+					<div class="modal__content js-modal-content">
+						<div class="modal__head">
+							<div class="modal__title">Поздравляем! Адрес подходит для подключения пакетной услуги Летай.</div>
+							<button type="button" class="modal__btn-close js-close-requestLetai-modal">
+								<svg width="32" height="32" aria-hidden="true" class="modal__close-icon">
+									<use xlink:href="#close"></use>
+								</svg>
+							</button>
+						</div>
+						<p class="modal__text">Оставьте номер телефона и дождитесь звонка оператора для подтверждения технической возможности подключения новых абонентов</p>
+						<form class="js-form-modal callback__form" data-need-validation data-parsley-validate data-parsley-focus="none">
+							<div class="callback__form-input-wrap">
+								<label class="gl-input__wrapper js-input-text">
+									<input type="text" class="gl-input__input" placeholder="Ваше имя" name="application-name" data-parsley-required="">
+								</label>
+							</div>
+							<div class="callback__form-input-wrap">
+								<label class="gl-input__wrapper js-input-tel">
+									<input type="tel" class="gl-input__input js-phone-mask" placeholder="+7 (___) ___-__-__" name="modal-callback-tel" data-parsley-required="">
+								</label>
+							</div>
+							<div class="callback__content-checkbox-wrapper">
+								<label class="checkbox__wrapper">
+									<input type="checkbox" class="checkbox" name="modal-callback-agree" data-parsley-required="">
+									<span class="checkbox__content mod-modal">
+										<svg width="16" height="16" aria-hidden="true" class="checkbox__content-icon">
+											<use xlink:href="#checkbox-checked"></use>
+										</svg>
+									</span>
+									<span class="checkbox__text mod-modal">Я согласен на обработку своих персональных данных</span>
+								</label>
+							</div>
+							<button type="submit" class="gl__main-btn mod-business modal__btn-submit js-btn-submit">Жду звонка</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="modal" id="modal-badRequestLetai-host">
+				<div class="modal__container mod-small js-modal-container">
+					<div class="modal__content js-modal-content">
+						<div class="modal__head">
+							<div class="modal__title">К сожалению, на данный момент, техническую возможность по указанному адресу определить невозможно!</div>
+							<button type="button" class="modal__btn-close js-close-badRequestLetai-modal">
+								<svg width="32" height="32" aria-hidden="true" class="modal__close-icon">
+									<use xlink:href="#close"></use>
+								</svg>
+							</button>
+						</div>
+						<p class="modal__text">Для уточнения технической возможности пожалуйста заполните поля ниже и наш менеджер свяжется по указанным Вами контактным данным в ближайшее время</p>
+						<form class="js-form-modal callback__form" data-need-validation data-parsley-validate data-parsley-focus="none">
+							<div class="callback__form-input-wrap">
+								<label class="gl-input__wrapper js-input-text">
+									<input type="text" class="gl-input__input" placeholder="Ваше имя" name="application-name" data-parsley-required="">
+								</label>
+							</div>
+							<div class="callback__form-input-wrap">
+								<label class="gl-input__wrapper js-input-tel">
+									<input type="tel" class="gl-input__input js-phone-mask" placeholder="+7 (___) ___-__-__" name="modal-callback-tel" data-parsley-required="">
+								</label>
+							</div>
+							<div class="callback__content-checkbox-wrapper">
+								<label class="checkbox__wrapper">
+									<input type="checkbox" class="checkbox" name="modal-callback-agree" data-parsley-required="">
+									<span class="checkbox__content mod-modal">
+										<svg width="16" height="16" aria-hidden="true" class="checkbox__content-icon">
+											<use xlink:href="#checkbox-checked"></use>
+										</svg>
+									</span>
+									<span class="checkbox__text mod-modal">Я согласен на обработку своих персональных данных</span>
+								</label>
+							</div>
+							<button type="submit" class="gl__main-btn mod-business modal__btn-submit js-btn-submit">Жду звонка</button>
+						</form>
+					</div>
+				</div>
+			</div>
 			<div class="side-bar gl__bg-show" id="side-bar-host">
 				<div class="side-bar__content" id="side-bar-content">
 					<div class="side-bar__top">
@@ -1607,6 +1685,9 @@
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 			<script src="https://api-maps.yandex.ru/2.1/?apikey=978d9dde-738d-4b87-8d8a-1de67b511402&lang=ru_RU" type="text/javascript"></script>
+			<link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.8.0/dist/css/suggestions.min.css" rel="stylesheet">
+
+			<script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.8.0/dist/js/jquery.suggestions.min.js"></script>
 
 			<script src="js/common.js"></script>
 

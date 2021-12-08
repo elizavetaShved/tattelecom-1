@@ -2590,6 +2590,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       transition: background-color 200ms; }
       .select__container .choices__item--selectable.is-highlighted {
         background-color: var(--border-color); }
+  .select__container .choices__input {
+    padding: 1.2rem !important; }
 
 .filter-uislider {
   padding-bottom: 5px; }
@@ -6760,11 +6762,20 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 .modal__btn-submit {
   width: 100%; }
 
+.modal__text {
+  margin-top: 1.5rem;
+  margin-bottom: 4rem; }
+
 .callback__form {
   margin-top: 4rem; }
   @media screen and (max-width: 767px) {
     .callback__form {
       margin-top: 2rem; } }
+
+.callback__form-input-wrap {
+  margin-bottom: 1rem; }
+  .callback__form-input-wrap:nth-last-of-type(1) {
+    margin-bottom: 0; }
 
 .callback__content-checkbox-wrapper {
   margin: 2.4rem 0 4rem; }
@@ -9405,7 +9416,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 
 .rates-internet-application__form-controls {
   display: grid;
-  grid-template-columns: 3fr 3fr 2fr 2fr 3fr;
+  grid-template-columns: 5fr 3fr;
   grid-gap: 2rem;
   margin-top: 3rem; }
   @media screen and (max-width: 1023px) {
@@ -9414,8 +9425,11 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       margin-top: 2rem; } }
   @media screen and (max-width: 767px) {
     .rates-internet-application__form-controls {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      grid-gap: 2rem 1.4rem; } }
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      row-gap: 2rem;
+      -webkit-column-gap: 0;
+         -moz-column-gap: 0;
+              column-gap: 0; } }
 
 @media screen and (max-width: 767px) {
   .rates-internet-application__form-btn-wrapper {
