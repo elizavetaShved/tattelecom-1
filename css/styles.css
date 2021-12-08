@@ -2840,6 +2840,14 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   .bread-crumbs__container.mod-tatt-bread-crumbs {
     background-color: #fff;
     margin-bottom: 4.5rem; }
+    .bread-crumbs__container.mod-tatt-bread-crumbs .bread-crumbs__link {
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+      padding: 0; }
+    .bread-crumbs__container.mod-tatt-bread-crumbs .bread-crumbs__list {
+      margin: 0;
+      padding: 0;
+      padding-top: 3.1rem; }
 
 .bread-crumbs__list {
   margin-left: -.6rem;
@@ -12831,16 +12839,44 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   text-align: center; }
 
 .b-smart-wifi__advantages .b-info__icon-list {
-  max-width: 85rem; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -1rem; }
+  @media screen and (max-width: 767px) {
+    .b-smart-wifi__advantages .b-info__icon-list {
+      margin: 0; } }
 
 .b-smart-wifi__advantages .b-info__icon-list-image {
   height: 5.8rem; }
   @media screen and (max-width: 767px) {
     .b-smart-wifi__advantages .b-info__icon-list-image {
-      height: 4.4rem; } }
+      height: 4.4rem;
+      width: 6.1rem;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      margin-right: 1.5rem; } }
 
-.b-smart-wifi__advantages .b-info__icon-list-item:nth-child(5) {
-  grid-column: 2 / 4; }
+.b-smart-wifi__advantages .b-info__icon-list-item {
+  width: calc(20% - 2rem);
+  margin: 1rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+  @media screen and (max-width: 1159px) {
+    .b-smart-wifi__advantages .b-info__icon-list-item {
+      width: calc(33.3% - 2rem); } }
+  @media screen and (max-width: 767px) {
+    .b-smart-wifi__advantages .b-info__icon-list-item {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0;
+      margin-bottom: 1.5rem; }
+      .b-smart-wifi__advantages .b-info__icon-list-item:last-child {
+        margin-bottom: 0; } }
 
 .b-smart-wifi__features .b-info__icon-list-item {
   display: -webkit-box;
@@ -14109,7 +14145,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       grid-column: 12 span; } }
 
 .tatt-table-list__item {
-  padding: 10px 0 18px;
+  padding: 11px 0 18px;
   border-bottom: 1px solid var(--border-color); }
   .tatt-table-list__item:first-child {
     padding-top: 0; }
@@ -14151,6 +14187,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 
 .tatt-table-list.mod-suppliers .tatt-table-list__item {
   padding: 1.5rem 0; }
+  .tatt-table-list.mod-suppliers .tatt-table-list__item:nth-of-type(1) {
+    padding-top: 0.8rem; }
 
 .tatt-table-list.mod-suppliers .tatt-table-list__item-link {
   display: -webkit-box;
@@ -14189,7 +14227,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 
 .tatt-select-wrap {
   max-width: 12.7rem;
-  margin-bottom: 5.3rem; }
+  margin-bottom: 5rem; }
   .tatt-select-wrap .select__container.mod-simple-design .choices__inner {
     padding: 1.5rem 1.8rem !important;
     -webkit-box-shadow: none;
@@ -14199,8 +14237,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     font-size: 2rem;
     line-height: 3.2rem; }
   .tatt-select-wrap .gl-input__title {
+    display: inline-block;
     font-size: 1.6rem;
-    line-height: 1.9rem; }
+    line-height: 1.9rem;
+    margin-bottom: 0.7rem; }
 
 .tatt-file-wrap {
   display: -webkit-box;
@@ -14234,11 +14274,14 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     -ms-flex-negative: 0;
         flex-shrink: 0;
     width: 40px;
-    height: 40px; }
+    height: 40px;
+    margin-right: 1.4rem; }
+  .tatt-file-wrap .dpf-file__file-link-title {
+    line-height: 1.8rem; }
   .tatt-file-wrap__heading {
     font-size: 2rem;
     line-height: 160%;
-    margin-bottom: 5.1rem;
+    margin-bottom: 2rem;
     max-width: 83%; }
     @media screen and (max-width: 1159px) {
       .tatt-file-wrap__heading {
@@ -14284,6 +14327,15 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 
 .tatt-section-news .gl__link-show-all-icon {
   fill: var(--main-text-color); }
+
+.tatt-info-open-page h2 {
+  margin-bottom: 2.1rem; }
+
+.tatt-info-open-page .tatt-info-documents {
+  margin-top: 7.5rem; }
+
+.tatt-info-open-page .tatt-info-documents__item {
+  margin-bottom: 3.8rem; }
 
 .popullar-link {
   display: -webkit-box;
@@ -14522,9 +14574,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 .investors-page {
   margin-bottom: 10.6rem; }
   .investors-page__title {
-    margin-bottom: 6.4rem; }
-    .investors-page__title-course {
-      margin-bottom: 3rem; }
+    margin-bottom: 5.5rem; }
     @media screen and (max-width: 959px) {
       .investors-page__title {
         margin-bottom: 3rem; } }
@@ -14620,6 +14670,20 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
         font-size: 1.5rem;
         line-height: 2.2rem;
         margin-bottom: 2rem; } }
+  .investors-page .investors-page__title-course {
+    margin-bottom: 3rem;
+    font-size: 3.8rem;
+    line-height: 5rem;
+    letter-spacing: 0.015em;
+    color: var(--main-text-color);
+    font-weight: normal; }
+    @media screen and (max-width: 767px) {
+      .investors-page .investors-page__title-course {
+        font-size: 2.6rem;
+        line-height: 3.4rem; } }
+
+.tatt-info-open-page h2 {
+  margin-bottom: 2.1rem; }
 
 @media screen and (max-width: 559px) {
   .suppliers {
@@ -14747,7 +14811,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   color: var(--main-grey-color); }
 
 .suppliers__dropdown {
-  margin-top: 5rem; }
+  margin-top: 2.5rem; }
+  .suppliers__dropdown:nth-of-type(1) {
+    margin-top: 5rem; }
   .suppliers__dropdown-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -14802,6 +14868,13 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   @media screen and (max-width: 959px) {
     .purchases {
       margin-bottom: 6rem; } }
+  .purchases__title {
+    margin-bottom: 6.5rem; }
+    @media screen and (max-width: 959px) {
+      .purchases__title {
+        margin-bottom: 3rem; } }
+  .purchases .suppliers__dropdown-content-item {
+    margin-bottom: 1.8rem; }
 
 .dealers {
   margin-bottom: 13.3rem; }
@@ -14914,6 +14987,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
             justify-content: space-between; }
   .tatt-about-company-hero__title-wrap {
     max-width: 64.4rem; }
+    .tatt-about-company-hero__title-wrap p {
+      font-weight: 300;
+      font-size: 2rem;
+      line-height: 2.4rem; }
   .tatt-about-company-hero__title {
     font-weight: 600;
     font-size: 4.5rem;
