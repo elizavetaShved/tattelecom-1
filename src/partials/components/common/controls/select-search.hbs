@@ -1,0 +1,75 @@
+<!--
+  __Обязательные поля__
+  name - input name
+  options - опции
+
+  __Необязательные поля__
+  selectTitle - заголовок
+  required - обязательно для заполнения
+  placeholder
+  isSearch - дизайн с лупой
+  isSimpleDesign - упрощенный дизайн
+  isBorderBottom - упрощенный дизайн
+  isPayOther - селект для "Оплата Другое"
+  isSmallChoicesList - укороченный список options
+
+  iconSearchRight (true/false)
+  iconSearchLeft (true/false)
+  iconSimLeft (true/false)
+-->
+{{#each selects }}
+  <div class="select">
+    {{#if selectTitle}}
+      <span class="gl-input__title {{#if isWhiteTitle}}mod-white{{/if}}">{{ selectTitle }}</span>
+    {{/if}}
+
+    <div class="select__container
+      {{#if isSearch}}mod-search{{/if}}
+      {{#if isSmallChoicesList }}mod-small-choices-list{{/if}}
+      {{#if isSimpleDesign}}mod-simple-design{{/if}}
+      {{#if isBorderBottom}}mod-border-bottom{{/if}}
+      {{#if iconSearchLeft}}mod-padding-left{{/if}}
+      {{#if iconSimLeft}}mod-padding-left{{/if}}
+      {{#if isPayOther}}mod-pay-other{{/if}}
+      {{#if iconSearchRight}}mod-padding-right{{/if}}" id="{{ this.name }}">
+      {{#if iconSearchLeft}}
+        <svg width="16" height="16" aria-hidden="true" class="select__search-icon mod-left">
+          <use xlink:href="#search"></use>
+        </svg>
+      {{/if}}
+
+      {{#if iconSimLeft}}
+        <svg width="12" height="16" aria-hidden="true" class="select__search-icon mod-left">
+          <use xlink:href="#sim-card"></use>
+        </svg>
+      {{/if}}
+
+      <label class="select__wrapper">
+        {{#if this.required }}
+          <span class="gl__input-mark-required"></span>
+        {{/if}}
+        <select class="gl__select js-custom-select-search"
+                data-parsley-class-handler="#{{ this.name }}"
+                name="{{ this.name }}"
+          {{#if this.required }}
+                data-parsley-required="" data-parsley-trigger="change"
+          {{/if}}
+        >
+          {{#if this.placeholder }}
+            <option placeholder value="">{{ this.placeholder }}</option>
+          {{/if}}
+          {{#each options}}
+            {{#if this }}
+              <option value="{{ this }}">{{ this }}</option>{{/if}}
+          {{/each}}
+        </select>
+      </label>
+
+      {{#if iconSearchRight}}
+        <svg width="16" height="16" aria-hidden="true" class="select__search-icon mod-right">
+          <use xlink:href="#search"></use>
+        </svg>
+      {{/if}}
+    </div>
+  </div>
+{{/each}}

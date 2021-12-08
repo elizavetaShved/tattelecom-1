@@ -27,6 +27,7 @@
     </span>
   {{/if}}
   <input type="{{ type }}"
+          {{#if adress }}id="address"{{/if}}
          class="gl-input__input
            {{#if phoneMask }}js-phone-mask{{/if}}
            {{#if rubMask }}js-rub-mask{{/if}}

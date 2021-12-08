@@ -6,6 +6,14 @@
   }
 }
 
+.callback__form-input-wrap {
+  margin-bottom: 1rem;
+
+  &:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
+}
+
 .callback__content-checkbox-wrapper {
   margin: 2.4rem 0 4rem;
 

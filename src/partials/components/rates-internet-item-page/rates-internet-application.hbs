@@ -12,19 +12,27 @@
       </div>
 
       <div class="rates-internet-application__form-controls">
-        {{> common/controls/select selects=city-select }}
+        {{!-- {{> common/controls/select-search selects=city-select }}
 
-        {{> common/controls/select selects=street-select }}
+        {{> common/controls/select-search selects=street-select }} --}}
 
         {{> common/controls/input-main
+          required=true
+          type="text"
+          placeholder="Введите адрес"
+          name="adress"
+          adress=true
+        }}
+
+        {{!-- {{> common/controls/input-main
           required=true
           type="number"
           placeholder="дом"
           name="house"
-        }}
+        }} --}}
 
         <div class="rates-internet-application__form-btn-wrapper">
-          <button type="submit" class="gl__main-btn rates-internet-application__form-btn">
+          <button type="submit" class="gl__main-btn rates-internet-application__form-btn js-open-requestLetai-modal">
             Проверить
           </button>
         </div>

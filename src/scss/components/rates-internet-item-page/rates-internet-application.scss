@@ -18,7 +18,7 @@
 
 .rates-internet-application__form-controls {
   display: grid;
-  grid-template-columns: 3fr 3fr 2fr 2fr 3fr;
+  grid-template-columns: 5fr 3fr;
   grid-gap: 2rem;
   margin-top: 3rem;
 
@@ -28,8 +28,9 @@
   }
 
   @include for-sm-down {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-gap: 2rem 1.4rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    row-gap: 2rem;
+    column-gap: 0;
   }
 }
 
