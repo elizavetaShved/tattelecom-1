@@ -40,6 +40,16 @@
                   }}
                 {{/if}}
 
+                {{#if isEmail }}
+                  {{> common/controls/input-main
+                    required=true
+                    inputTitle=this.title
+                    type="email"
+                    placeholder=this.title
+                    name="payment-email"
+                  }}
+                {{/if}}
+                
                 {{#if isAccountNumber }}
                   {{> common/controls/input-main
                     required=true

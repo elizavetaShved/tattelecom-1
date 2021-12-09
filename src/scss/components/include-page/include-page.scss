@@ -1,0 +1,81 @@
+.include-page {
+    padding-top: 3rem;
+    padding-bottom: 5.7rem;
+
+    &__content {
+        display: flex;
+        align-items: center;
+
+        @include for-sm-down {
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+
+    &__image {
+        display: block;
+        width: 61.4rem;
+        height: 58.9rem;
+        object-fit: cover;
+
+        @include for-mx-down {
+            width: 45.4rem;
+            height: 48.9rem;
+        }
+        
+        @include for-sm-down {
+            width: 100%;
+            height: 47rem;
+            margin-bottom: 3.2rem;
+        }
+
+        @include for-xxs-down {
+            height: 41rem;
+        }
+
+        @media (max-width: 320px) {
+            height: 33rem;
+        }
+    }
+
+    &__info {
+        margin-left: 14rem;
+
+        p {
+            font-size: 1.8rem;
+            line-height: 3rem;
+            max-width: 41rem;
+            margin-bottom: 6.4rem;
+
+            @include for-sm-down {
+                margin-bottom: 4rem;
+            }
+        }
+
+        @include for-md-down {
+            margin-left: 6rem;
+        }
+
+        
+        @include for-sm-down {
+            margin-left: 0;
+        }
+    }
+
+    &__heading {
+        font-weight: 600;
+        font-size: 3.8rem;
+        line-height: 4.5rem;
+        margin-bottom: 2.4rem;
+        max-width: 41rem;
+
+        @include for-md-down {
+            font-size: 3rem;
+            line-height: 3.6rem;
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+    }
+}

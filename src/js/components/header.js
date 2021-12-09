@@ -11,6 +11,8 @@ export class Header {
   isBusinessMainPageHeader;
   isTattelekomMain;
   menuLinkElements;
+  menuLoactionElement;
+  menuLoactionClose;
 
   businessMainPageMenu;
 
@@ -35,6 +37,8 @@ export class Header {
     this.menuWrapperElem = document.querySelector('.js-header-menu-wrapper');
     const bottomBlockElem = this.hostElem.querySelector('.header__bottom-block-content');
     this.menuLinkElements = this.hostElem.querySelectorAll('.header__bottom-menu-link');
+    this.menuLoactionElement = this.hostElem.querySelectorAll('.js-show-location-popup');
+    this.menuLoactionClose = this.hostElem.querySelector('.location-popup-content__close-btn');
     this.popupContentElements = Array.from(this.hostElem.querySelectorAll('.js-header-popup'));
 
     const btnOpenSearch = this.hostElem.querySelector('.js-open-search-btn');
@@ -105,6 +109,34 @@ export class Header {
       }
     })
 
+    
+    // клик по выбору города
+    this.menuLoactionElement.forEach(link => {
+      if (getDeviceType() === 'isDesk') {
+        link.onclick = event => {
+          event.preventDefault();
+          this.openPopUp(link);
+        }
+      } else if (getDeviceType() === 'isMobile') {
+        link.onclick = event => {
+          if (this.linkActive === link) {
+            // костыль, чтобы отменить preventDefault()
+            link.onclick = () => console.log();
+          } else {
+            event.preventDefault();
+            this.openPopUp(link, true);
+          }
+
+          this.linkActive = link;
+        };
+      }
+    })
+    // клик по закрытию города
+    this.menuLoactionClose.onclick = event => {
+      this.closePopUp();
+    };
+
+
     // уход с поп-ап
     document.addEventListener('mousemove', e => {
       let isMovePopup = false;
@@ -113,7 +145,7 @@ export class Header {
           isMovePopup = true;
         }
       })
-      if (this.isOpenPopup && !isMovePopup && !checkExistParent(e.target, popupWrapperElem) && !checkExistParent(e.target, bottomBlockElem)) {
+      if (this.isOpenPopup && !isMovePopup && !checkExistParent(e.target, popupWrapperElem) && !checkExistParent(e.target, bottomBlockElem) && !checkExistParent(e.target, this.hostElem.querySelector('.js-show-location-popup'))) {
         this.closePopUp();
         if (this.isBusinessMainPageHeader) {
           if (window.pageYOffset > 0) {
