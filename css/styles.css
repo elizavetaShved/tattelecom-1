@@ -6025,12 +6025,27 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     grid-gap: 3rem; }
     .location-popup-content .header__popup-item-wrapper:nth-child(1) {
       grid-column: 8 span; }
+      @media screen and (max-width: 767px) {
+        .location-popup-content .header__popup-item-wrapper:nth-child(1) {
+          grid-column: 12 span;
+          -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2; } }
     .location-popup-content .header__popup-item-wrapper:nth-child(2) {
       grid-column: 4 span; }
+      @media screen and (max-width: 767px) {
+        .location-popup-content .header__popup-item-wrapper:nth-child(2) {
+          grid-column: 12 span;
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1; } }
   .location-popup-content .header__popup-item-list {
     grid-column: 2 span; }
     .location-popup-content .header__popup-item-list:nth-of-type(1) .header__popup-item-link {
       font-weight: 600; }
+    @media screen and (max-width: 767px) {
+      .location-popup-content .header__popup-item-list {
+        grid-column: 4 span; } }
 
 .header__b-bottom-block {
   display: -webkit-box;
