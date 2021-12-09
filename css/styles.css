@@ -4400,6 +4400,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 .pagination-page__pages-item {
   cursor: pointer;
   max-width: 6rem; }
+  .pagination-page__pages-item._is-current .pagination-page__pages-radio-content {
+    background-color: var(--main-color) !important;
+    color: #fff; }
   .pagination-page__pages-item:hover .pagination-page__pages-btn {
     background-color: var(--main-color-hover);
     color: #fff; }
