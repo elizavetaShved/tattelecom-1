@@ -427,7 +427,7 @@
 												</li>
 											</ul>
 											<div class="header__contacts-wrapper">
-												<a href="" class="header__top-menu-items-link mod-with-icons">
+												<a href="" class="header__top-menu-items-link mod-with-icons js-show-location-popup" data-hover-value="location">
 													<svg width="20" height="20" aria-hidden="true" class="header__top-menu-items-link-icon">
 														<use xlink:href="#geolocation"></use>
 													</svg>Казань
@@ -693,6 +693,117 @@
 											<a href="/" class="header__popup-item-caption">Аксессуары</a>
 										</div>
 									</div>
+									<div class="header__popup-content js-header-popup location-popup-content" data-hover-value="location">
+										<div class="header__popup-item-wrapper">
+											<span class="location-popup-content__heading">Республика Татарстан</span>
+											<ul class="header__popup-item-list">
+												<li>
+													<a href="" class="header__popup-item-link">Казань</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Альметьевск</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Агрыз</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Бугульма</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Елабуга</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Набережные Челны</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Нижнекамск</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Чистополь</a>
+												</li>
+											</ul>
+											<ul class="header__popup-item-list">
+												<li>
+													<a href="" class="header__popup-item-link">Азнакаево</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Актюбинский</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Боровое Матюшино</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Бавлы</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Высокая Гора</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Джалиль</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Заинск</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Зеленодольск</a>
+												</li>
+											</ul>
+											<ul class="header__popup-item-list">
+												<li>
+													<a href="" class="header__popup-item-link">Камские поляны</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Куркачи</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Лениногорск</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Менделеевск</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Нурлат</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Осиново</a>
+												</li>
+												<li>
+													<a href="" class="header__popup-item-link">Усады</a>
+												</li>
+											</ul>
+										</div>
+										<div class="header__popup-item-wrapper">
+											<button class="location-popup-content__close-btn">
+												<svg width="30" height="30" aria-hidden="true" class="header__search-btn-close-icon">
+													<use xlink:href="#close"></use>
+												</svg>
+											</button>
+											<form action="/" class="location-popup-content__form" data-need-validation data-parsley-validate>
+												<span class="location-popup-content__legend">Другой населённый пункт</span>
+												<div class="select">
+													<div class="select__container mod-small-choices-list mod-simple-design">
+														<label class="select__wrapper">
+															<select class="gl__select js-custom-select" data-parsley-class-handler="#region" name="region" required data-parsley-required="" data-parsley-trigger="change">
+																<option placeholder value="">Район</option>
+																<option value="Район">Район</option>
+															</select>
+														</label>
+													</div>
+												</div>
+												<div class="select">
+													<div class="select__container mod-small-choices-list mod-simple-design">
+														<label class="select__wrapper">
+															<select class="gl__select js-custom-select" data-parsley-class-handler="#city" name="city" required data-parsley-required="" data-parsley-trigger="change">
+																<option placeholder value="">Населённый пункт</option>
+																<option value="Район">Населённый пункт</option>
+															</select>
+														</label>
+													</div>
+												</div>
+												<button class="gl__main-btn location-popup-content__button">Выбрать город</button>
+											</form>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -704,14 +815,14 @@
 				<section class="search-site" id="search-site-host">
 					<div class="gl__page-content">
 						<h2 class="gl__title">Поиск по сайту</h2>
-						<div class="search-site__input-wrapper">
+						<form class="search-site__input-wrapper">
 							<label class="input-search__wrapper">
 								<input type="text" class="input-search js-input-search" placeholder="Что будем искать?">
 								<svg width="24" height="24" aria-hidden="true" class="input-search__icon">
 									<use xlink:href="#search"></use>
 								</svg>
 							</label>
-						</div>
+						</form>
 						<div class="search-site__hint">Найдено 11675 результатов:</div>
 						<ul class="search-site__list">
 							<li class="search-site__item">
