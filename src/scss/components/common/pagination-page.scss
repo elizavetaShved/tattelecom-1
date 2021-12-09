@@ -79,6 +79,13 @@ $gat-tabs: 14px;
   cursor: pointer;
   max-width: 6rem;
 
+  &._is-current {
+    .pagination-page__pages-radio-content {
+      background-color: var(--main-color) !important;
+      color: #fff;
+    }
+  }
+
   &:hover {
     .pagination-page__pages-btn {
       background-color: var(--main-color-hover);

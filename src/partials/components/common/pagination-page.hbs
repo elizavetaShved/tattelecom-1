@@ -5,10 +5,9 @@
   <div class="swiper-container js-swiper-container-custom">
     <div class="pagination-page__pages-wrapper swiper-wrapper">
       {{#each pageNumbers }}
-        <label class="pagination-page__pages-item swiper-slide">
-          <input type="radio" class="pagination-page__pages-radio" name="phone-list-page" {{#if isChecked }}checked{{/if}}>
+        <a href="/" class="pagination-page__pages-item swiper-slide {{#if isChecked }}_is-current{{/if}}">
           <span class="pagination-page__pages-btn pagination-page__pages-radio-content">{{ this.pageNum }}</span>
-        </label>
+        </a>
       {{/each}}
     </div>
   </div>
