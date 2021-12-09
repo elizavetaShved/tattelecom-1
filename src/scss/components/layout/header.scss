@@ -464,7 +464,6 @@
 .header__btns-container {
   display: flex;
   align-items: center;
-  margin-left: 6rem;
 
   @include for-mx-down {
     margin-left: 2rem;
