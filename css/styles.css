@@ -5812,8 +5812,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  margin-left: 6rem; }
+          align-items: center; }
   @media screen and (max-width: 1559px) {
     .header__btns-container {
       margin-left: 2rem; } }
