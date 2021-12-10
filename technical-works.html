@@ -815,43 +815,45 @@
 				<section class="technical-works" id="technical-works-host">
 					<div class="gl__page-content">
 						<h2 class="gl__title">Технические работы</h2>
-						<div class="technical-works__select-wrapper">
-							<div class="select">
-								<div class="select__container mod-simple-design mod-border-bottom" id="year-select">
-									<label class="select__wrapper">
-										<span class="gl__input-mark-required"></span>
-										<select class="gl__select js-custom-select" data-parsley-class-handler="#year-select" name="year-select" data-parsley-required="" data-parsley-trigger="change">
-											<option placeholder value="">Все года</option>
-											<option value="2021">2021</option>
-											<option value="2020">2020</option>
-											<option value="2019">2019</option>
-										</select>
-									</label>
+						<form action="test.php" class="technical-works__form">
+							<div class="technical-works__select-wrapper">
+								<div class="select">
+									<div class="select__container mod-simple-design mod-border-bottom" id="year-select">
+										<label class="select__wrapper">
+											<span class="gl__input-mark-required"></span>
+											<select class="gl__select js-custom-select" data-parsley-class-handler="#year-select" name="year-select" data-parsley-required="" data-parsley-trigger="change">
+												<option placeholder value="">Все года</option>
+												<option value="2021">2021</option>
+												<option value="2020">2020</option>
+												<option value="2019">2019</option>
+											</select>
+										</label>
+									</div>
+								</div>
+								<div class="select">
+									<div class="select__container mod-simple-design mod-border-bottom" id="mouth-select">
+										<label class="select__wrapper">
+											<span class="gl__input-mark-required"></span>
+											<select class="gl__select js-custom-select" data-parsley-class-handler="#mouth-select" name="mouth-select" data-parsley-required="" data-parsley-trigger="change">
+												<option placeholder value="">Все месяцы</option>
+												<option value="Январь">Январь</option>
+												<option value="Февраль">Февраль</option>
+												<option value="Март">Март</option>
+												<option value="Апрель">Апрель</option>
+												<option value="Май">Май</option>
+												<option value="Июнь">Июнь</option>
+												<option value="Июль">Июль</option>
+												<option value="Август">Август</option>
+												<option value="Сентябрь">Сентябрь</option>
+												<option value="Октябрь">Октябрь</option>
+												<option value="Ноябрь">Ноябрь</option>
+												<option value="Декабрь">Декабрь</option>
+											</select>
+										</label>
+									</div>
 								</div>
 							</div>
-							<div class="select">
-								<div class="select__container mod-simple-design mod-border-bottom" id="mouth-select">
-									<label class="select__wrapper">
-										<span class="gl__input-mark-required"></span>
-										<select class="gl__select js-custom-select" data-parsley-class-handler="#mouth-select" name="mouth-select" data-parsley-required="" data-parsley-trigger="change">
-											<option placeholder value="">Все месяцы</option>
-											<option value="Январь">Январь</option>
-											<option value="Февраль">Февраль</option>
-											<option value="Март">Март</option>
-											<option value="Апрель">Апрель</option>
-											<option value="Май">Май</option>
-											<option value="Июнь">Июнь</option>
-											<option value="Июль">Июль</option>
-											<option value="Август">Август</option>
-											<option value="Сентябрь">Сентябрь</option>
-											<option value="Октябрь">Октябрь</option>
-											<option value="Ноябрь">Ноябрь</option>
-											<option value="Декабрь">Декабрь</option>
-										</select>
-									</label>
-								</div>
-							</div>
-						</div>
+						</form>
 						<ul class="search-site__list">
 							<li class="search-site__item">
 								<div class="technical-works__item-wrapper">
