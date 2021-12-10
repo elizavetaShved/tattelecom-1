@@ -4,10 +4,12 @@
       Технические работы
     </h2>
 
-    <div class="technical-works__select-wrapper">
-      {{> common/controls/select selects=year-select }}
-      {{> common/controls/select selects=mouth-select }}
-    </div>
+      <form action="test.php" class="technical-works__form">
+        <div class="technical-works__select-wrapper">
+            {{> common/controls/select selects=year-select }}
+            {{> common/controls/select selects=mouth-select }}
+        </div>
+      </form>
 
     <ul class="search-site__list">
       {{#each articles-list }}

@@ -73,4 +73,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     return false;
   }
+
+  // страница технические работы
+  const yearSelect = document.querySelector("select[name=year-select]");
+  const monthSelect = document.querySelector("select[name=mouth-select]");
+
+  yearSelect.addEventListener("change", (e) => {
+    let self = e.target;
+    let value = e.target.options[e.target.selectedIndex].value;
+    let form = self.closest("form");
+
+    form.submit();
+  });
+  
+  monthSelect.addEventListener("change", (e) => {
+    let self = e.target;
+    let value = e.target.options[e.target.selectedIndex].value;
+    let form = self.closest("form");
+
+    form.submit();
+  });
 });

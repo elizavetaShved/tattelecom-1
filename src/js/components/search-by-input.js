@@ -14,8 +14,16 @@ export class SearchByInput {
         searchItemElems.forEach(searchItemElem => {
           if (searchItemElem.innerText.toLowerCase().includes(inputSearch.value.toLowerCase())) {
             searchItemElem.classList.add('mod-select');
+          } else {
+            searchItemElem.classList.remove('mod-select');
           }
         })
+
+        if (inputSearch.value == "") {
+          searchItemElems.forEach(searchItemElem => {
+            searchItemElem.classList.remove('mod-select');
+          })
+        }
       }, 500)
     }
   }
