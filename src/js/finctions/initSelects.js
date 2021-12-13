@@ -24,3 +24,13 @@ export default function initSelects() {
     });
   }
 }
+
+function initSelect(elem) {
+  new Choices(elem, {
+    searchEnabled: false,
+    itemSelectText: '',
+    shouldSort: false,
+  });
+}
+
+window.initSelect = initSelect;
