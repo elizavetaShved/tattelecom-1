@@ -1,9 +1,8 @@
-import initSelects from '../finctions/initSelects';
+
 import initRequestLetaiModal from '../finctions/initModals/initRequestLetaiModal';
 import initBadRequestLetaiModal from '../finctions/initModals/initBadRequestLetaiModal';
 
 document.addEventListener('DOMContentLoaded', () => {
-  initSelects();
   initRequestLetaiModal();
   initBadRequestLetaiModal();
 

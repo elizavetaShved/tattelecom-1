@@ -21,7 +21,7 @@
       "componentImg": "img/dev-components/img.png",
       "hbs": "{{> common/controls/select selects=years-select }}",
       "json": "\"year-select\": [\n    {\n      \"name\": \"year-select\",\n      \"required\": true,\n      \"isSimpleDesign\": true,\n      \"isBorderBottom\": true,\n      \"placeholder\": \"Все года\",\n      \"options\": [\n        \"2021\",\n        \"2020\",\n        \"2019\"\n      ]\n    }\n  ]",
-      "js": "initSelects()"
+      "js": ""
     },
     {
       "title": "PDF-файл",
