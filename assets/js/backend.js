@@ -78,19 +78,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearSelect = document.querySelector("select[name=year-select]");
   const monthSelect = document.querySelector("select[name=mouth-select]");
 
-  yearSelect.addEventListener("change", (e) => {
-    let self = e.target;
-    let value = e.target.options[e.target.selectedIndex].value;
-    let form = self.closest("form");
-
-    form.submit();
-  });
+  if (yearSelect) {    
+    yearSelect.addEventListener("change", (e) => {
+      let self = e.target;
+      let value = e.target.options[e.target.selectedIndex].value;
+      let form = self.closest("form");
   
-  monthSelect.addEventListener("change", (e) => {
-    let self = e.target;
-    let value = e.target.options[e.target.selectedIndex].value;
-    let form = self.closest("form");
+      form.submit();
+    });
+  }
 
-    form.submit();
-  });
+  if (monthSelect) {
+    monthSelect.addEventListener("change", (e) => {
+      let self = e.target;
+      let value = e.target.options[e.target.selectedIndex].value;
+      let form = self.closest("form");
+  
+      form.submit();
+    });
+  }
 });
