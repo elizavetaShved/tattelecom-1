@@ -1,17 +1,15 @@
-<div class="pagination-page__pages-main-container js-pagination-page">
-  <button type="button" class="pagination-page__pages-btn pagination-page__btn-nav mod-prev js-slider-btn-prev">
+<div class="pagination-page__pages-main-container">
+  <a href="/" class="pagination-page__pages-btn pagination-page__btn-nav mod-prev">
     <span class="pagination-page__btn-nav-content"></span>
-  </button>
-  <div class="swiper-container js-swiper-container-custom">
-    <div class="pagination-page__pages-wrapper swiper-wrapper">
-      {{#each pageNumbers }}
-        <a href="/" class="pagination-page__pages-item swiper-slide {{#if isChecked }}_is-current{{/if}}">
-          <span class="pagination-page__pages-btn pagination-page__pages-radio-content">{{ this.pageNum }}</span>
-        </a>
-      {{/each}}
-    </div>
+  </a>
+  <div class="pagination-page__pages-wrapper">
+    {{#each pageNumbers }}
+      <a href="/" class="pagination-page__pages-item {{#if isChecked }}_is-current{{/if}} {{#if isEmpty }}_is-empty{{/if}}">
+        <span class="pagination-page__pages-btn pagination-page__pages-radio-content">{{ this.pageNum }}</span>
+      </a>
+    {{/each}}
   </div>
-  <button type="button" class="pagination-page__pages-btn pagination-page__btn-nav mod-next js-slider-btn-next">
+  <a href="/" class="pagination-page__pages-btn pagination-page__btn-nav mod-next">
     <span class="pagination-page__btn-nav-content"></span>
-  </button>
+  </a>
 </div>

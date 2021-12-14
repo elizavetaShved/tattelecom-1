@@ -116,6 +116,7 @@ export class Header {
         link.onclick = event => {
           event.preventDefault();
           this.openPopUp(link);
+          this.popupElem.classList.add("mod-location");
         }
       } else if (getDeviceType() === 'isMobile') {
         link.onclick = event => {
@@ -220,6 +221,9 @@ export class Header {
   // закрыть поп-ап
   closePopUp() {
     this.popupElem.classList.remove('mod-show');
+    setTimeout(() => {
+      this.popupElem.classList.remove("mod-location");
+    }, 400);
     this.isOpenPopup = false;
   }
 
