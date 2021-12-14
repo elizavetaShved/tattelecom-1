@@ -60,6 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', checkClickByModalThanks);
   }
 
+  window.openThanksModal = openThanksModal;
+
   // вспомогательная функция проекта (нельзя было экспортить её)
   function checkExistParent(child, parent) {
     let targetElement = child;
