@@ -38,18 +38,27 @@
   position: absolute;
   content: '';
   top: 0;
-  right: 0;
-  transform: translate(-10%, -100%);
+  left: 0;
+  transform: translate(0, -100%);
   padding: .6rem 1rem;
   background-color: #fff;
   font-size: 1.2rem;
   line-height: 1.4rem;
   box-shadow: var(--box-shadow-input);
   border-radius: 4px;
-  min-width: 12rem;
-  max-width: 16rem;
+  min-width: 30rem;
   word-break: break-word;
   transition: opacity 300ms;
   opacity: 0;
   pointer-events: none;
+
+  @include for-xs-down {
+    width: 19rem;
+    min-width: 0;
+  }
+
+  @include for-xxs-down {
+    width: 21rem;
+    transform: translate(-20%,-100%);
+  }
 }
