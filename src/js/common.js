@@ -5,6 +5,7 @@ import initDropDownMenu from './finctions/initDropDownMenu';
 import initCallbackModal from './finctions/initModals/initCallbackModal';
 import validation from './finctions/validation';
 import initSelects from './finctions/initSelects';
+import phoneMask from './finctions/masks/phoneMask';
 
 document.addEventListener('DOMContentLoaded', () => {
   new Header();
@@ -15,4 +16,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initCallbackModal();
   validation();
   initSelects();
+  phoneMask();
 });
