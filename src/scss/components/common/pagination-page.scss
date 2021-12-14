@@ -2,9 +2,10 @@ $width-tab: 6rem;
 $gat-tabs: 14px;
 
 .pagination-page__pages-main-container {
-  width: calc(#{ $width-tab } * 4 + #{ $gat-tabs } * 3);
+  width: auto;
   position: relative;
-  margin-right: 7.4rem;
+  display: flex;
+  align-items: center;
 }
 
 .pagination-page__pages-btn {
@@ -14,15 +15,24 @@ $gat-tabs: 14px;
   padding: 1.6rem;
   height: 6rem;
   transition: background-color 250ms, color 250ms;
+
+  @include for-xs-down {
+    min-width: 5rem;
+    height: 5rem;
+  }
 }
 
 .pagination-page__btn-nav {
-  display: inline-block;
+  display:  flex;
+  align-items: center;
+  justify-content: center;
   width: 6rem;
-  position: absolute;
-  top: 0;
   opacity: 1;
   transition: opacity 250ms, background-color 250ms;
+
+  @include for-xs-down {
+    width: 5rem;
+  }
 
   &:hover {
     background-color: var(--main-grey-color);
@@ -30,7 +40,6 @@ $gat-tabs: 14px;
 
   &.mod-next {
     margin-left: 1.4rem;
-    right: -7.4rem;
 
     .pagination-page__btn-nav-content {
       &:before {
@@ -42,7 +51,6 @@ $gat-tabs: 14px;
 
   &.mod-prev {
     margin-right: 1.4rem;
-    left: -7.4rem;
 
     .pagination-page__btn-nav-content {
       &:before {
@@ -73,16 +81,31 @@ $gat-tabs: 14px;
 
 .pagination-page__pages-wrapper {
   display: flex;
+  align-items: center;
 }
 
 .pagination-page__pages-item {
   cursor: pointer;
   max-width: 6rem;
+  margin-right: 1rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &._is-current {
     .pagination-page__pages-radio-content {
       background-color: var(--main-color) !important;
       color: #fff;
+    }
+  }
+
+  &._is-empty {
+    cursor: default;
+    pointer-events: none;
+  
+    .pagination-page__pages-radio-content {
+      background-color: transparent;
     }
   }
 
