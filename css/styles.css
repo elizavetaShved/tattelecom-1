@@ -5936,6 +5936,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   top: var(--header-height); }
   .header__popup-container.mod-business {
     top: var(--header-height-b); }
+  .header__popup-container.mod-location {
+    top: var(--header-height-top-block); }
 
 .header__popup-wrapper {
   background-color: #fff;
