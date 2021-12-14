@@ -634,6 +634,10 @@
   &.mod-business {
     top: var(--header-height-b);
   }
+
+  &.mod-location {
+    top: var(--header-height-top-block);
+  }
 }
 
 .header__popup-wrapper {
