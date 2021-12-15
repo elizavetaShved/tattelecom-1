@@ -115,5 +115,20 @@
       "linkWithArrow": true,
       "blackLink": true
     }
+  ],
+  "pageNumbers": [
+    {
+      "isChecked": true,
+      "pageNum": "1"
+    },
+    {
+      "pageNum": "2"
+    },
+    {
+      "pageNum": "..."
+    },
+    {
+      "pageNum": "10"
+    }
   ]
 }

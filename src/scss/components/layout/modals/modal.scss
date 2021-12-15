@@ -67,6 +67,7 @@
 .modal__close-icon {
   height: 3.2rem;
   fill: var(--main-grey-color);
+  pointer-events: none;
 
   &.mod-white {
     fill: #fff;

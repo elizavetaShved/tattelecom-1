@@ -31,7 +31,7 @@ export class Modal {
     this.modalThanksContainerElem = document.querySelector('#modal-thanks-container');
     this.modalThanksCloseBtn = document.querySelector('#close-thanks-modal');
 
-
+    console.log(this.modalThanksCloseBtn);
     this.modalThanksCloseBtn.onclick = () => {
       this.onCloseModalThanks();
     }

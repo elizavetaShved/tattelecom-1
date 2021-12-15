@@ -69,4 +69,12 @@
 .search-site__pagination-wrapper {
   display: flex;
   justify-content: flex-end;
+
+  &.mod-margin-top {
+    margin-top: 3rem;
+
+    @include for-sm-down {
+      margin-top: 2rem;
+    }
+  }
 }
