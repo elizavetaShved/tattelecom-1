@@ -45,6 +45,10 @@
   object-fit: contain;
   z-index: -1;
   height: 80%;
+
+  @include for-xxs-down {
+    transform: translateY(-30%);
+  }
 }
 
 .cashback__slide-title {
@@ -54,6 +58,14 @@
   color: var(--main-color);
   margin-bottom: 3.6rem;
   max-width: 52%;
+
+  @include for-sm-down {
+    max-width: 90%;
+
+    div {
+      display: inline;
+    }
+  }
 
   &.mod-black {
     color: var(--main-text-color);
@@ -71,6 +83,10 @@
   letter-spacing: 0.015em;
   color: var(--grey-text);
   max-width: 56%;
+
+  @include for-sm-down {
+    max-width: 90%;
+  }
 
   &.mod-white {
     color: #fff;
