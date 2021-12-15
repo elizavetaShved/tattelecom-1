@@ -3424,11 +3424,16 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
      object-fit: contain; }
 
 .rates-preview__video {
-  max-width: 100%; }
+  width: 100%;
+  height: 100%; }
   @media screen and (max-width: 767px) {
     .rates-preview__video {
       width: 100%;
       height: auto; } }
+
+.rates-preview__video-video {
+  width: 100%;
+  height: 100%; }
 
 .rates-preview__content-wrapper {
   display: -webkit-box;
