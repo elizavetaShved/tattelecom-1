@@ -1572,7 +1572,7 @@
 					<div class="modal__content js-modal-content">
 						<img src="img/modals/background.svg" alt="" class="modal-thanks__background">
 						<div class="modal-thanks__head">
-							<button type="button" class="modal__btn-close mod-modal-thanks" id="close-thanks-modal">
+							<button class="modal__btn-close mod-modal-thanks" id="close-thanks-modal">
 								<svg width="32" height="32" aria-hidden="true" class="modal__close-icon mod-white">
 									<use xlink:href="#close"></use>
 								</svg>
@@ -1621,7 +1621,7 @@
 									</div>
 								</div>
 							</div>
-							<form class="js-form-modal" data-need-validation data-parsley-validate data-parsley-focus="none">
+							<form action="test.php" class="js-form-modal" data-need-validation data-parsley-validate data-parsley-focus="none">
 								<div class="send-request__form-inputs">
 									<label class="gl-input__wrapper js-input-text">
 										<input type="text" class="gl-input__input" placeholder="Ваше имя" name="modal-send-request-name" data-parsley-required="">
@@ -1642,7 +1642,7 @@
 										<span class="checkbox__text mod-modal">Я согласен на обработку своих персональных данных</span>
 									</label>
 								</div>
-								<button type="button" class="gl__main-btn modal__btn-submit js-btn-submit">Отправить заявку</button>
+								<button type="submit" class="gl__main-btn modal__btn-submit js-btn-submit">Отправить заявку</button>
 							</form>
 						</div>
 					</div>

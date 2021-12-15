@@ -6878,7 +6878,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 
 .modal__close-icon {
   height: 3.2rem;
-  fill: var(--main-grey-color); }
+  fill: var(--main-grey-color);
+  pointer-events: none; }
   .modal__close-icon.mod-white {
     fill: #fff; }
 
@@ -10981,6 +10982,11 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
+  .search-site__pagination-wrapper.mod-margin-top {
+    margin-top: 3rem; }
+    @media screen and (max-width: 767px) {
+      .search-site__pagination-wrapper.mod-margin-top {
+        margin-top: 2rem; } }
 
 .questions__tabs-container {
   display: grid;
