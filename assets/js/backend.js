@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const onCloseModal = () => {
         modalElem.classList.remove('mod-show');
+        modalElem.querySelector("form").reset();
         isOpenModal = false;
         document.removeEventListener('click', checkClickByModal);
         window.removeEventListener('resize', setHeightModalContainer);
