@@ -41,6 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       onCloseModal();
+    } else {
+      modalThanksElem.classList.add('mod-show');
+      isOpenModal = true;
+      document.addEventListener('click', checkClickByModalThanks);
     }
 
     const checkClickByModalThanks = (event) => {
@@ -56,10 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
       isOpenThanksModal = false;
       document.removeEventListener('click', checkClickByModalThanks);
     }
-
-    modalThanksElem.classList.add('mod-show');
-    isOpenModal = true;
-    document.addEventListener('click', checkClickByModalThanks);
   }
 
   window.openThanksModal = openThanksModal;
