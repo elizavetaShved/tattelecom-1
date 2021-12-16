@@ -5,13 +5,4 @@ import initBadRequestLetaiModal from '../finctions/initModals/initBadRequestLeta
 document.addEventListener('DOMContentLoaded', () => {
   initRequestLetaiModal();
   initBadRequestLetaiModal();
-
-
-  $("#address").suggestions({
-    token: "a289c2b7ddef08f438c0c3d326f474d32a3e4a7c",
-    type: "ADDRESS",
-    onSelect: function(suggestion) {
-      // 
-    }
-  });
 });
