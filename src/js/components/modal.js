@@ -31,25 +31,24 @@ export class Modal {
     this.modalThanksContainerElem = document.querySelector('#modal-thanks-container');
     this.modalThanksCloseBtn = document.querySelector('#close-thanks-modal');
 
-    console.log(this.modalThanksCloseBtn);
     this.modalThanksCloseBtn.onclick = () => {
       this.onCloseModalThanks();
     }
 
-    // todo убрать с фронта
-    // if (formModal) {
-    //   formModal.onsubmit = event => {
-    //     event.preventDefault();
+    if (formModal) {
+      formModal.onsubmit = event => {
+        event.preventDefault();
 
-    //     if ($(formModal).parsley().isValid()) {
-    //       this.onCloseModal();
-    //       this.modalThanksElem.classList.add('mod-show');
-    //       document.addEventListener('click', this.checkClickByModalThanks);
+        if ($(formModal).parsley().isValid()) {
+          this.onCloseModal();
+          // todo убрать с фронта
+          // this.modalThanksElem.classList.add('mod-show');
+          document.addEventListener('click', this.checkClickByModalThanks);
 
-    //       return false;
-    //     }
-    //   }
-    // }
+          return false;
+        }
+      }
+    }
 
     document.addEventListener('click', this.checkClickByModal);
     document.addEventListener('keydown', event => {
@@ -75,6 +74,7 @@ export class Modal {
 
   onCloseModal() {
     this.modalElem.classList.remove('mod-show');
+    this.modalElem.querySelector("form").reset();
     this.isOpenModal = false;
     document.removeEventListener('click', this.checkClickByModal);
     window.removeEventListener('resize', this.setHeightModalContainer);
