@@ -92,7 +92,11 @@ export class Header {
     this.menuLinkElements.forEach(link => {
       if (getDeviceType() === 'isDesk') {
         link.onmouseover = () => {
-          this.openPopUp(link);
+          if (link.className.includes('mod-popup-empty')) {
+            this.closePopUp();
+          } else {
+            this.openPopUp(link);
+          }
         }
       } else if (getDeviceType() === 'isMobile') {
         link.onclick = event => {
