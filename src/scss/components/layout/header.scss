@@ -459,6 +459,10 @@
       border-bottom-color: #fff;
     }
   }
+
+  &.mod-is-current {
+    color: var(--main-color);
+  }
 }
 
 .header__btns-container {
