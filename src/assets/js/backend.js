@@ -68,6 +68,55 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.openThanksModal = openThanksModal;
 
+  function openModal(modalElemId) {
+    const bodyElem = document.querySelector('body');
+
+    let isOpenModal = false;
+
+    const modalElem = document.querySelector(modalElemId);
+    const modalContainerElem = modalElem.querySelector('.js-modal-container');
+    const modalContentElem = modalElem.querySelector('.js-modal-content');
+    const btnClose = modalElem.querySelector('.modal__btn-close');
+
+    const checkClickByModal = (event) => {
+      if (isOpenModal && !checkExistParent(event.target, modalContainerElem)) {
+        onCloseModal();
+      } else {
+        isOpenModal = true;
+      }
+    }
+
+    const setHeightModalContainer = () => {
+      if (modalContentElem) {
+        modalContainerElem.style.height = `${ modalContentElem.scrollHeight }px`;
+      }
+    }
+
+    const onOpenModal = () => {
+      modalElem.classList.add('mod-show');
+      setHeightModalContainer();
+      bodyElem.classList.add('mod-no-scroll');
+  
+      window.addEventListener('resize', setHeightModalContainer);
+    }
+    onOpenModal();
+
+    const onCloseModal = () => {
+      modalElem.classList.remove('mod-show');
+      isOpenModal = false;
+      document.removeEventListener('click', checkClickByModal);
+      window.removeEventListener('resize', setHeightModalContainer);
+      bodyElem.classList.remove('mod-no-scroll');
+    }
+
+
+    btnClose.onclick = () => {
+      onCloseModal();
+    }
+  }
+
+  window.openModal = openModal;
+
   // вспомогательная функция проекта (нельзя было экспортить её)
   function checkExistParent(child, parent) {
     let targetElement = child;
