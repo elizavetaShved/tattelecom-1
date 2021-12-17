@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function openThanksModal(modalElemId) {
     const modalThanksContainerElem = document.querySelector('#modal-thanks-container');
     const modalThanksElem = document.querySelector('#modal-thanks');
+    const modalThanksCloseBtn = document.querySelector('#close-thanks-modal');
+
 
     const bodyElem = document.querySelector('body');
 
@@ -41,11 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       onCloseModal();
-    } else {
-      modalThanksElem.classList.add('mod-show');
-      isOpenModal = true;
-      document.addEventListener('click', checkClickByModalThanks);
-    }
+    } 
 
     const checkClickByModalThanks = (event) => {
       if (isOpenThanksModal && !checkExistParent(event.target, modalThanksContainerElem)) {
@@ -59,6 +57,13 @@ document.addEventListener('DOMContentLoaded', () => {
       modalThanksElem.classList.remove('mod-show');
       isOpenThanksModal = false;
       document.removeEventListener('click', checkClickByModalThanks);
+    }
+
+    modalThanksElem.classList.add('mod-show'); 
+    document.addEventListener('click', checkClickByModalThanks);
+
+    modalThanksCloseBtn.onclick = () => {
+      onCloseModalThanks();
     }
   }
 
