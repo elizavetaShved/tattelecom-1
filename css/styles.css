@@ -5849,6 +5849,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     transition: border-bottom-color 250ms; }
     .header__bottom-menu-link.mod-business:hover {
       border-bottom-color: #fff; }
+  .header__bottom-menu-link.mod-is-current {
+    color: var(--main-color); }
 
 .header__btns-container {
   display: -webkit-box;
