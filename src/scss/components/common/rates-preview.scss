@@ -10,6 +10,36 @@ $padding-content: 2rem;
   background-position: center;
   background-size: cover;
 
+  &__btn {
+    display: inline-block;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__sldier-pagination {
+    position: absolute;
+    left: 50%;
+    bottom: 4rem;
+    z-index: 2;
+    transform: translateX(-50%);
+
+    .swiper-pagination-bullet {
+      width: 0.9rem;
+      height: 0.9rem;
+      margin-right: 0.5rem;
+      background: var(--main-color);
+    }
+
+    @include for-sm-down {
+      bottom: 3rem;
+      left: auto;
+      right: 4rem;
+      transform: none;
+    }
+  }
+
   @include for-sm-down {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,54 @@
+<div class="rates-preview__wrapper">
+    <div class="gl-slider__container swiper-container js-swiper-custom">
+        <div class="gl-slider__wrapper swiper-wrapper">
+            {{#each rates-preview }}
+                <div class="swiper-slide">
+                    <section class="rates-preview mod-{{ this.pageName }}"
+                            {{#if this.imgBackgroundDesk}}style="background-image: url({{ imgBackgroundDesk }})"{{/if}}
+                            id="rates-preview-host">
+
+                        <div class="gl__page-content rates-preview__content-wrapper">
+                        <div class="rates-preview__content {{#if this.isWhiteBackground}}mod-white-background{{/if}}">
+                            {{#if this.ratesSecondName}}
+                            <div class="rates-preview__content-title">{{ this.ratesSecondName }}</div>
+                            {{/if}}
+                            <div class="rates-preview__content-subtitle">{{ this.ratesName }}</div>
+                            <div class="rates-preview__content-caption-wrapper">
+                            {{#each this.ratesCaption }}
+                                <div class="rates-preview__content-caption">{{ this }}</div>
+                            {{/each}}
+                            </div>
+                            {{#if this.link }}
+                            <a href="{{ this.link.url }}" class="gl__main-btn rates-preview__btn">
+                                {{ this.link.text }}
+                            </a>
+                            {{/if}}
+                            {{#if this.btn }}
+                            <button type="submit" class="gl__main-btn rates-preview__btn {{#if modal }}js-open-send-request-modal{{/if}}"
+                                    {{#if this.modal.modalTitle }}data-tariff-name="{{ this.modal.modalTitle }}"{{/if}}
+                                    {{#if this.modal.modalPrice }}data-prise="{{ this.modal.modalPrice }}"{{/if}}
+                                >
+                                {{ this.btn.text }}
+                            </button>
+                            {{/if}}
+                        </div>
+
+                        <div class="rates-preview__img-wrapper">
+                            {{#if this.imgMobile}}
+                            <img src="{{ this.img }}" alt="" class="rates-preview__img gl__xxs-hide">
+                            <img src="{{ this.imgMobile }}" alt="" class="rates-preview__img gl__xxs-show">
+                            {{else if this.imgTablet}}
+                            <img src="{{ this.img }}" alt="" class="rates-preview__img gl__sm-hide">
+                            <img src="{{ this.imgTablet }}" alt="" class="rates-preview__img gl__sm-show">
+                            {{else}}
+                            <img src="{{ this.img }}" alt="" class="rates-preview__img">
+                            {{/if}}
+                        </div>
+                        </div>
+                    </section>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+    <div class="rates-preview__sldier-pagination"></div>
+</div>
