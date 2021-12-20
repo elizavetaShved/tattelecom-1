@@ -26,16 +26,20 @@ $padding-content: 2rem;
     transform: translateX(-50%);
 
     .swiper-pagination-bullet {
-      width: 0.9rem;
-      height: 0.9rem;
-      margin-right: 0.5rem;
+      width: 1.9rem;
+      height: 1.9rem;
+      margin-right: 1.5rem;
       background: var(--main-color);
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
 
     @include for-sm-down {
       bottom: 3rem;
       left: auto;
-      right: 4rem;
+      right: 1rem;
       transform: none;
     }
   }

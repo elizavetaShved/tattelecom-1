@@ -144,8 +144,21 @@
 
 .rates-list__slide-btn-plug {
   width: 100%;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+  }
 }
 
 .rates-list__slide-link-detailed-wrapper {
   margin: 0 -1.4rem -1.4rem -1.4rem;
+
+  .gl__secondary-btn {
+    position: relative;
+    z-index: 2;
+  }
 }

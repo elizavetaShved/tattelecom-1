@@ -125,6 +125,7 @@
 }
 
 .rates-list-internet__item {
+  position: relative;
   padding: 2.2rem;
   display: flex;
   flex-direction: column;
@@ -217,6 +218,8 @@
 }
 
 .rates-list-internet__item-wifi-wrapper {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: flex-start;
 }
