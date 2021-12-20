@@ -72,7 +72,6 @@ export class Header {
       btnCloseSearch.onclick = () => {
         hideWhenSearchElems.map(elem => elem.classList.add('mod-show-search'));
         showWhenSearchElems.map(elem => elem.classList.remove('mod-show-search'));
-        inputSearch.value = '';
       }
     }
 

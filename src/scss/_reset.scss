@@ -25,6 +25,7 @@ html {
 }
 
 html, body {
+  font-family: var(--font-museo-sans-cyrl), sans-serif;
   background-repeat: no-repeat;
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
@@ -33,7 +34,6 @@ html, body {
 }
 
 *, *:before, *:after {
-  font-family: var(--font-museo-sans-cyrl), sans-serif;
   outline: none;
   box-sizing: border-box;
   background-repeat: no-repeat;
