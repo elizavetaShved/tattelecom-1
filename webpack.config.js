@@ -24,6 +24,7 @@ module.exports = {
     ['questions']: './src/js/pages/questions.js',
     ['technical-works-page']: './src/js/pages/technical-works-page.js',
     ['sales-offices-page']: './src/js/pages/sales-offices-page.js',
+    ['news-page-page']: './src/js/pages/news-page-page.js',
     ['b-mobile-communication']: './src/js/pages/b-mobile-communication.js',
     ['b-rates-mobile-list']: './src/js/pages/b-rates-mobile-list.js',
     ['b-rates-mobile-internet-list']: './src/js/pages/b-rates-mobile-internet-list.js',

@@ -1,0 +1,104 @@
+.news-page {
+    margin-bottom: 6rem;
+    padding-top: 4rem;
+
+    &__news-item {
+        width: calc(50% - 0.9rem);
+        margin: 0.45rem;
+        box-shadow: none;
+        border: 1px solid rgba(166, 166, 166, 0.2);
+        padding-bottom: 1.4rem;
+
+        &:hover {
+            box-shadow: 0 0 12px 4px #0000000f;
+        }
+
+        .news-list__slide-text {
+            max-width: 36.8rem;
+        }
+
+        @include for-sm-down {
+            margin: 0;
+            margin-bottom: 2.4rem;
+            width: 100%;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        @include for-md-down {
+            flex-direction: column;
+            justify-content: stretch;
+        }
+    }
+
+    &__block {
+        &:nth-child(1) {
+            width: calc(100% - 44.2rem);
+
+            @include for-md-down {
+                width: 100%;
+                order: 2;
+            }
+        }
+        
+        &:nth-child(2) {
+            width: 35rem;
+
+            @include for-md-down {
+                width: 100%;
+                order: 1;
+                margin-bottom: 3.2rem;
+            }
+        }
+    }
+
+    &__news-warapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -0.45rem;
+        margin-bottom: 4rem;
+
+        @include for-sm-down {
+            margin: 0;
+        }
+    }
+
+    &__filter {
+        width: 100%;
+        .select {
+            margin-bottom: 1rem;
+
+            &:nth-last-of-type(1) {
+                margin-bottom: 2.4rem;
+            }
+        }
+    }
+
+    &__filter-heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.4rem;
+    }
+
+    &__filter-legend {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    &__filter-btn {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.02em;
+        color: var(--main-color);
+    }
+
+    &__filter-sbmt-btn {
+        width: 100%;
+    }
+}
+
+@import "news-page-detail";
