@@ -424,6 +424,7 @@ html {
       font-size: 8px; } }
 
 html, body {
+  font-family: var(--font-museo-sans-cyrl), sans-serif;
   background-repeat: no-repeat;
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
@@ -431,7 +432,6 @@ html, body {
   -webkit-font-smoothing: antialiased; }
 
 *, *:before, *:after {
-  font-family: var(--font-museo-sans-cyrl), sans-serif;
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
