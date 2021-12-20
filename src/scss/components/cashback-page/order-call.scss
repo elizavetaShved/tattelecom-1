@@ -30,7 +30,9 @@
         display: block;
       }
     }
+  }
 
+  &.mod-absolute-img {
     .order-call__img {
       position: absolute;
       bottom: 0;
@@ -38,16 +40,17 @@
       height: 48rem;
       margin-bottom: 0;
       z-index: -1;
-
+  
       @include for-mx-down {
         right: 0;
       }
-
+  
       @include for-sm-down {
         height: 27.6rem;
       }
     }
   }
+
 }
 
 .order-call__b-connect {
@@ -82,6 +85,8 @@
 }
 
 .order-call__content {
+  position: relative;
+  z-index: 1;
   display: flex;
   background: linear-gradient(99.54deg, #FA7007 3.54%, #FA4907 73.5%);
   border-radius: 10px;
