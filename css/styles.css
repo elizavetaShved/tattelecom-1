@@ -3124,6 +3124,29 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+  .rates-preview__btn {
+    display: inline-block; }
+  .rates-preview__wrapper {
+    position: relative; }
+  .rates-preview__sldier-pagination {
+    position: absolute;
+    left: 50%;
+    bottom: 4rem;
+    z-index: 2;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+    .rates-preview__sldier-pagination .swiper-pagination-bullet {
+      width: 0.9rem;
+      height: 0.9rem;
+      margin-right: 0.5rem;
+      background: var(--main-color); }
+    @media screen and (max-width: 767px) {
+      .rates-preview__sldier-pagination {
+        bottom: 3rem;
+        left: auto;
+        right: 4rem;
+        -webkit-transform: none;
+                transform: none; } }
   @media screen and (max-width: 767px) {
     .rates-preview {
       display: -webkit-box;
@@ -7557,19 +7580,20 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       .order-call.mod-giv-month-section .order-call__content {
         height: 42rem;
         display: block; } }
-  .order-call.mod-giv-month-section .order-call__img {
-    position: absolute;
-    bottom: 0;
-    right: 7rem;
-    height: 48rem;
-    margin-bottom: 0;
-    z-index: -1; }
-    @media screen and (max-width: 1559px) {
-      .order-call.mod-giv-month-section .order-call__img {
-        right: 0; } }
-    @media screen and (max-width: 767px) {
-      .order-call.mod-giv-month-section .order-call__img {
-        height: 27.6rem; } }
+
+.order-call.mod-absolute-img .order-call__img {
+  position: absolute;
+  bottom: 0;
+  right: 7rem;
+  height: 48rem;
+  margin-bottom: 0;
+  z-index: -1; }
+  @media screen and (max-width: 1559px) {
+    .order-call.mod-absolute-img .order-call__img {
+      right: 0; } }
+  @media screen and (max-width: 767px) {
+    .order-call.mod-absolute-img .order-call__img {
+      height: 27.6rem; } }
 
 @media screen and (min-width: 768px) {
   .order-call__b-connect .order-call__content {
@@ -7594,6 +7618,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     border-radius: 0; } }
 
 .order-call__content {
+  position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
