@@ -3136,15 +3136,17 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
     .rates-preview__sldier-pagination .swiper-pagination-bullet {
-      width: 0.9rem;
-      height: 0.9rem;
-      margin-right: 0.5rem;
+      width: 1.9rem;
+      height: 1.9rem;
+      margin-right: 1.5rem;
       background: var(--main-color); }
+      .rates-preview__sldier-pagination .swiper-pagination-bullet:last-child {
+        margin-right: 0; }
     @media screen and (max-width: 767px) {
       .rates-preview__sldier-pagination {
         bottom: 3rem;
         left: auto;
-        right: 4rem;
+        right: 1rem;
         -webkit-transform: none;
                 transform: none; } }
   @media screen and (max-width: 767px) {
@@ -3760,9 +3762,19 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 
 .rates-list__slide-btn-plug {
   width: 100%; }
+  .rates-list__slide-btn-plug::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: ""; }
 
 .rates-list__slide-link-detailed-wrapper {
   margin: 0 -1.4rem -1.4rem -1.4rem; }
+  .rates-list__slide-link-detailed-wrapper .gl__secondary-btn {
+    position: relative;
+    z-index: 2; }
 
 .services {
   background-color: var(--border-color);
@@ -9331,6 +9343,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       grid-gap: 2rem; } }
 
 .rates-list-internet__item {
+  position: relative;
   padding: 2.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9410,6 +9423,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   letter-spacing: 0.015em; }
 
 .rates-list-internet__item-wifi-wrapper {
+  position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
