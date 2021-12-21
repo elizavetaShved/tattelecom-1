@@ -117,6 +117,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.openModal = openModal;
 
+  function initRequestModal(modalElemId) {
+    const btnsOpen = document.querySelectorAll('.js-open-send-request-modal');
+
+    btnsOpen.addEventListener("click", ()=>{
+      window.openModal(modalElemId)
+    })
+  }
+
+  window.initRequestModal = initRequestModal;
+
   // вспомогательная функция проекта (нельзя было экспортить её)
   function checkExistParent(child, parent) {
     let targetElement = child;
