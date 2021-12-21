@@ -11,6 +11,7 @@
 }
 
 .rates-list__slide {
+  position: relative;
   padding: 2.2rem 1.6rem;
   display: flex;
   flex-direction: column;
@@ -125,6 +126,7 @@
 }
 
 .rates-list__slide-price {
+
   .big {
     font-size: 4rem;
     line-height: 5rem
@@ -132,7 +134,12 @@
 
   .small {
     font-size: 1.8rem;
-    line-height: 2.2rem
+    line-height: 2.2rem;
+  }
+
+  del {
+    display: inline-block;
+    transform: translateY(-20px);
   }
 }
 

@@ -1,5 +1,5 @@
 <li class=" {{#if isSlider }}swiper-slide{{/if}} ">
-  <a href="/rates-mobile-item.html" class="gl__no-default-hover rates-list__slide gl__white-container {{#if this.isHit }}rates-list__slide-hit{{/if}}">
+  <div href="/rates-mobile-item.html" class="gl__no-default-hover rates-list__slide gl__white-container {{#if this.isHit }}rates-list__slide-hit{{/if}}">
     {{#if this.isHit }}
       <img src="img/main-page/rates-list/hit-background.svg" alt="" class="rates-list__slide-hit-background">
       <img src="img/main-page/rates-list/hit-mark.svg" alt="" class="rates-list__slide-hit-mark">
@@ -39,23 +39,24 @@
         <div class="rates-list__slide-price-wrapper">
           <div class="rates-list__slide-price">
             <span class="big">{{ this.price }}</span><span class="small">₽/мес</span>
+            <del>345 ₽/мес</del>
           </div>
         </div>
 
         <div class="rates-list__slide-btns-wrapper">
-          <button type="button"
+          <a href="/" type="button"
                   data-tariff-name="{{ this.title }}"
                   data-prise="{{ this.price }}"
                   class="rates-list__slide-btn-plug gl__main-btn js-open-send-request-modal">
             Подключить
-          </button>
+          </a>
           <div class="rates-list__slide-link-detailed-wrapper">
-            <div class="gl__secondary-btn  {{#if this.isHit }}mod-white{{/if}}">
+            <a href="/" class="gl__secondary-btn  {{#if this.isHit }}mod-white{{/if}}">
               Подробнее о тарифе
-            </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </a>
+  </div>
 </li>

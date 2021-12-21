@@ -285,6 +285,8 @@
 }
 
 .rates-list-internet__item-price {
+  position: relative;
+  display: inline-block;
   font-size: 1.8rem;
   line-height: 2.2rem;
 
@@ -292,5 +294,11 @@
     font-size: 4rem;
     line-height: 5rem;
     margin-right: .4rem;
+  }
+
+  del {
+    position: absolute;
+    top: 0;
+    right: -70%;
   }
 }
