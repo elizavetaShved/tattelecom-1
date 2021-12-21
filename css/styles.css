@@ -11661,7 +11661,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       margin: 3rem 0 1rem; }
     .news-page-detail__content img {
       width: 100%;
-      height: 40rem;
+      height: auto;
       display: block;
       -o-object-fit: cover;
          object-fit: cover;
