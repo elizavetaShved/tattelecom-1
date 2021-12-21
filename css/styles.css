@@ -3631,6 +3631,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       padding-bottom: 5rem; } }
 
 .rates-list__slide {
+  position: relative;
   padding: 2.2rem 1.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3747,6 +3748,11 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 .rates-list__slide-price .small {
   font-size: 1.8rem;
   line-height: 2.2rem; }
+
+.rates-list__slide-price del {
+  display: inline-block;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px); }
 
 .rates-list__slide-btns-wrapper {
   display: -webkit-box;
@@ -9483,12 +9489,18 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   margin-bottom: 1.4rem; }
 
 .rates-list-internet__item-price {
+  position: relative;
+  display: inline-block;
   font-size: 1.8rem;
   line-height: 2.2rem; }
   .rates-list-internet__item-price .number {
     font-size: 4rem;
     line-height: 5rem;
     margin-right: .4rem; }
+  .rates-list-internet__item-price del {
+    position: absolute;
+    top: 0;
+    right: -70%; }
 
 .info-links {
   padding: 4rem 0 10rem; }
