@@ -5,6 +5,9 @@
     <div class="payment-services__content">
       {{#each payment-services }}
         <div class="payment-services__item gl__white-container">
+          <div class="_warnming">
+            {{this.warning }}
+          </div>
           <div class="payment-services__item-title">
             {{ this.title }}
           </div>

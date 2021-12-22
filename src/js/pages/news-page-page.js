@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     filterResetBtn.addEventListener("click", ()=>{
         let form = filterResetBtn.closest("form");
-        let selects = form.querySelector(".js-custom-select");
+        let selects = form.querySelectorAll(".js-custom-select");
 
-        resetSelect(selects);
+        window.resetSelect();
+
     });
 });
