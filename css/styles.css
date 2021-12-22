@@ -3164,10 +3164,23 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     @media screen and (max-width: 767px) {
       .rates-preview.mod-main-page {
         background-color: #131419;
-        background-image: none !important; } }
-    @media screen and (min-width: 768px) {
-      .rates-preview.mod-main-page .rates-preview__img-wrapper {
-        display: none; } }
+        background-image: none !important;
+        min-height: 49rem; } }
+    .rates-preview.mod-main-page .rates-preview__img-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%; }
+      @media screen and (min-width: 768px) {
+        .rates-preview.mod-main-page .rates-preview__img-wrapper {
+          display: none; } }
+    .rates-preview.mod-main-page .rates-preview__img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
   .rates-preview.mod-mobile-communication {
     background-color: #202342; }
   .rates-preview.mod-cashback {
