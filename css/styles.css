@@ -10900,6 +10900,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       grid-template-columns: 1fr; } }
 
 .payment-services__item {
+  position: relative;
   padding: 2.6rem 3.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10908,6 +10909,15 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  .payment-services__item ._warnming {
+    position: absolute;
+    top: 0.7rem;
+    left: 3.6rem;
+    color: tomato; }
+    @media screen and (max-width: 767px) {
+      .payment-services__item ._warnming {
+        left: 1.6rem;
+        top: 0.2rem; } }
   @media screen and (max-width: 1023px) {
     .payment-services__item {
       padding: 2.2rem; } }
