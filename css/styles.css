@@ -3750,9 +3750,31 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.rates-list__slide-old-price {
+  position: relative;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #AAAAAA; }
+  .rates-list__slide-old-price span {
+    font-size: 1.4rem;
+    line-height: 1.7rem; }
+  .rates-list__slide-old-price::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(6.34deg);
+            transform: translate(-50%, -50%) rotate(6.34deg);
+    width: 110%;
+    height: 1px;
+    background-color: currentColor; }
 
 .rates-list__slide-price .big {
   font-size: 4rem;
@@ -9385,6 +9407,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       border-color: #fff; }
     .rates-list-internet__item.mod-orange .rates-list__slide-link-detailed-wrapper a:hover {
       color: #fff; }
+    .rates-list-internet__item.mod-orange .rates-list__slide-old-price {
+      color: #FFCAB7; }
 
 .rates-list-internet__item-background {
   position: absolute;
@@ -9492,13 +9516,16 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   -webkit-box-shadow: 0 0 10px var(--main-text-color);
           box-shadow: 0 0 10px var(--main-text-color); }
 
-.rates-list-internet__item-wifi .rates-list-internet__item-price-wrapper {
+.rates-list-internet__item-price-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-bottom: 1.4rem; }
 
 .rates-list-internet__item-price {
