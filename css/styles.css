@@ -3127,7 +3127,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   .rates-preview__btn {
     display: inline-block; }
   .rates-preview__wrapper {
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
   .rates-preview__sldier-pagination {
     position: absolute;
     left: 50%;
