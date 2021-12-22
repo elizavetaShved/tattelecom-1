@@ -122,7 +122,31 @@
   padding-top: 2.8rem;
   margin-bottom: 1.4rem;
   display: flex;
-  justify-content: flex-end;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.rates-list__slide-old-price {
+  position: relative;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #AAAAAA;
+
+  span {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(6.34deg);
+    width: 110%;
+    height: 1px;
+    background-color: currentColor;
+  }
 }
 
 .rates-list__slide-price {

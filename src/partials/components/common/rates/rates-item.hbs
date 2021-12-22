@@ -31,15 +31,16 @@
         {{#if this.opportunities }}
           <div class="rates-list__opportunities-wrapper">
             <div class="rates-list__opportunities-title">Возможности</div>
-
             <div class="rates-list__opportunities-text">{{ this.opportunities }}</div>
           </div>
         {{/if}}
 
         <div class="rates-list__slide-price-wrapper">
+          <div class="rates-list__slide-old-price">
+            459 <span>₽/мес</span>
+          </div>
           <div class="rates-list__slide-price">
             <span class="big">{{ this.price }}</span><span class="small">₽/мес</span>
-            <del>345 ₽/мес</del>
           </div>
         </div>
 

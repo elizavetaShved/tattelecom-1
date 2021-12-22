@@ -150,6 +150,10 @@
     ::selection {
       @extend %select-white-background;
     }
+
+    .rates-list__slide-old-price {
+      color: #FFCAB7;
+    }
   }
 }
 
@@ -276,11 +280,10 @@
   box-shadow: 0 0 10px var(--main-text-color);
 }
 
-.rates-list-internet__item-wifi 
-
 .rates-list-internet__item-price-wrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
   margin-bottom: 1.4rem;
 }
 
