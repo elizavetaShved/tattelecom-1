@@ -5,13 +5,27 @@ export default function initSelects() {
   const customSelectsWithSearch = Array.from(document.querySelectorAll('.js-custom-select-search'));
 
   if (document.querySelectorAll('.js-custom-select')) {
+    let slcts = []; 
+
     customSelects.forEach((select) => {
-      new Choices(select, {
+      let slct = new Choices(select, {
         searchEnabled: false,
         itemSelectText: '',
         shouldSort: false,
       });
+
+      slcts.push(slct);
     });
+
+    function resetSelect() {
+      slcts.forEach((el)=>{
+        el.destroy();
+        el.init();
+      });
+    };
+
+    window.resetSelect = resetSelect;
+    
   }
 
   if (document.querySelectorAll('.js-custom-select-search')) {
