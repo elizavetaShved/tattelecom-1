@@ -10944,9 +10944,26 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       line-height: 2.4rem;
       margin-bottom: 1rem; } }
 
-.payment-services__form-btn-wrapper ._warnming {
-  color: tomato;
-  margin-top: 1rem; }
+.payment-services__form-btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .payment-services__form-btn-wrapper ._warnming {
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    color: var(--main-color);
+    padding: 0.8rem 1.6rem;
+    background-color: #FFDBDB;
+    border-radius: 0.5rem;
+    margin-top: 1rem; }
 
 .payment-services__item-subtitle {
   font-weight: 300;
