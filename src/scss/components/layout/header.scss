@@ -209,6 +209,10 @@
 
 .header__top-menu-items {
   height: 100%;
+
+  &.mod-more {
+    display: none;
+  }
 }
 
 .header__top-menu-items-list {
