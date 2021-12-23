@@ -10909,15 +10909,6 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .payment-services__item ._warnming {
-    position: absolute;
-    top: 0.7rem;
-    left: 3.6rem;
-    color: tomato; }
-    @media screen and (max-width: 767px) {
-      .payment-services__item ._warnming {
-        left: 1.6rem;
-        top: 0.2rem; } }
   @media screen and (max-width: 1023px) {
     .payment-services__item {
       padding: 2.2rem; } }
@@ -10952,6 +10943,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     .payment-services__item-title {
       line-height: 2.4rem;
       margin-bottom: 1rem; } }
+
+.payment-services__form-btn-wrapper ._warnming {
+  color: tomato;
+  margin-top: 1rem; }
 
 .payment-services__item-subtitle {
   font-weight: 300;
