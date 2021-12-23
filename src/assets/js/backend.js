@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function openModal(modalElemId) {
     const bodyElem = document.querySelector('body');
 
-    let isOpenModal = false;
+    let isOpenModal = true;
 
     const modalElem = document.querySelector(modalElemId);
     const modalContainerElem = modalElem.querySelector('.js-modal-container');

@@ -35,20 +35,20 @@ export class Modal {
       this.onCloseModalThanks();
     }
 
-    if (formModal) {
-      formModal.onsubmit = event => {
-        event.preventDefault();
+    // todo убрать с фронта
+    // if (formModal) {
+    //   formModal.onsubmit = event => {
+    //     event.preventDefault();
 
-        if ($(formModal).parsley().isValid()) {
-          this.onCloseModal();
-          // todo убрать с фронта
-          // this.modalThanksElem.classList.add('mod-show');
-          document.addEventListener('click', this.checkClickByModalThanks);
+    //     if ($(formModal).parsley().isValid()) {
+    //       this.onCloseModal();
+    //       this.modalThanksElem.classList.add('mod-show');
+    //       document.addEventListener('click', this.checkClickByModalThanks);
 
-          return false;
-        }
-      }
-    }
+    //       return false;
+    //     }
+    //   }
+    // }
 
     document.addEventListener('click', this.checkClickByModal);
     document.addEventListener('keydown', event => {
@@ -101,6 +101,12 @@ export class Modal {
     this.modalThanksElem.classList.remove('mod-show');
     this.isOpenThanksModal = false;
     document.removeEventListener('click', this.checkClickByModalThanks);
+  }
+
+  onOpenModalThanks() {
+    this.modalThanksElem.classList.add('mod-show');
+    this.isOpenThanksModal = true;
+    document.addEventListener('click', this.checkClickByModalThanks);
   }
 }
 
