@@ -5690,6 +5690,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 
 .header__top-menu-items {
   height: 100%; }
+  .header__top-menu-items.mod-more {
+    display: none; }
 
 .header__top-menu-items-list {
   display: -webkit-box;
