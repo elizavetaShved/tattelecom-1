@@ -278,6 +278,12 @@
 
   @include for-sm-down {
     margin-left: 2rem;
+
+    .header__top-menu-items-link {
+      &:nth-child(2) {
+        display: none;
+      } 
+    }
   }
 }
 
