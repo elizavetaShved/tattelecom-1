@@ -4925,14 +4925,31 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 3rem; }
+  @media screen and (max-width: 767px) {
+    .rates-info__preview-bottom {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: stretch;
+          -ms-flex-pack: stretch;
+              justify-content: stretch;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; } }
 
 .rates-info__preview-price-wrapper {
   font-size: 1.8rem;
   line-height: 2.2rem; }
+  @media screen and (max-width: 767px) {
+    .rates-info__preview-price-wrapper {
+      margin-bottom: 2.3rem; } }
   .rates-info__preview-price-wrapper .number {
     font-size: 4rem;
     line-height: 5rem;
     margin-right: .4rem; }
+  .rates-info__preview-price-wrapper .rates-list__slide-old-price {
+    margin-left: 1.5rem; }
 
 .rates-info__preview-btn {
   padding: 1.6rem 6rem; }
