@@ -137,16 +137,30 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 3rem;
+
+  @include for-sm-down {
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+  }
 }
 
 .rates-info__preview-price-wrapper {
   font-size: 1.8rem;
   line-height: 2.2rem;
 
+  @include for-sm-down {
+    margin-bottom: 2.3rem;
+  }
+
   .number {
     font-size: 4rem;
     line-height: 5rem;
     margin-right: .4rem;
+  }
+
+  .rates-list__slide-old-price {
+    margin-left: 1.5rem;
   }
 }
 
