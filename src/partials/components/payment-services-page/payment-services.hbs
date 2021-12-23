@@ -70,9 +70,11 @@
                 <button type="submit" class="payment-services__form-btn gl__main-btn js-open-top-up-account-modal">
                   Продолжить
                 </button>
-                <div class="_warnming">
-                  {{this.warning }}
-                </div>
+                {{#if this.warning }}
+                  <div class="_warnming">
+                    {{this.warning }}
+                  </div>
+                {{/if}}
               </div>
 
               <div class="payment-services__form-hint-wrapper">

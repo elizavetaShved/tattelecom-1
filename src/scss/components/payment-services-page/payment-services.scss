@@ -74,9 +74,18 @@
 }
 
 .payment-services__form-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   
   ._warnming {
-    color: tomato;
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    color: var(--main-color);
+    padding: 0.8rem 1.6rem;
+    background-color: #FFDBDB;
+    border-radius: 0.5rem;
     margin-top: 1rem;
   }
 }
