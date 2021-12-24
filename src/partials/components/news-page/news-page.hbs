@@ -6,18 +6,18 @@
         <div class="news-page__block">
             <div class="news-page__news-warapper">
                 {{#each news-page-list }}
-                    <div class="gl__white-container news-list__slide gl__link-arrow-container news-page__news-item">
+                    <a href="/" class="gl__white-container news-list__slide gl__link-arrow-container news-page__news-item">
                     <div class="news-list__slide-title">{{ this.title }}</div>
                     <div class="news-list__slide-text">{{ this.text }}</div>
                     <div class="news-list__slide-legend">{{ this.legend }}</div>
                     <div class="news-list__link-arrow-wrapper gl__link-arrow-wrapper gl__link-arrow-block">
-                        <a href="" class="gl__link-arrow-link">
+                        <div class="gl__link-arrow-link">
                         <svg width="26" height="26" aria-hidden="true" class="gl__link-arrow-icon">
                             <use xlink:href="#arrow-line-right"></use>
                         </svg>
-                        </a>
+                        </div>
                     </div>
-                    </div>
+                    </a>
                 {{/each}}
             </div>
             <div class="news-page__pagination">
