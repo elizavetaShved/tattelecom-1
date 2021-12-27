@@ -23,7 +23,7 @@ export default function initSendRequestModal() {
   const btnsClose = document.querySelectorAll('.js-close-send-request-modal');
   const modalElem = document.querySelector('#modal-send-request-host');
   const dataTitleElem = modalElem.querySelector('.modal__title');
-  const dataCommentElem = modalElem.querySelector('input[name=comment]');
+  const dataCommentElem = modalElem.querySelector('input[name=param_comment]');
   const modalPriceWrapperElem = modalElem.querySelector('.send-request__price');
   const modalPriceElem = modalElem.querySelector('.send-request__price .number');
 
