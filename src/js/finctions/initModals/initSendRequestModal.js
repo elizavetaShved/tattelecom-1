@@ -23,6 +23,7 @@ export default function initSendRequestModal() {
   const btnsClose = document.querySelectorAll('.js-close-send-request-modal');
   const modalElem = document.querySelector('#modal-send-request-host');
   const dataTitleElem = modalElem.querySelector('.modal__title');
+  const dataCommentElem = modalElem.querySelector('input[name=comment]');
   const modalPriceWrapperElem = modalElem.querySelector('.send-request__price');
   const modalPriceElem = modalElem.querySelector('.send-request__price .number');
 
@@ -40,6 +41,7 @@ export default function initSendRequestModal() {
     btn.addEventListener('click', event => {
       event.preventDefault();
       const dataTitle = btn.getAttribute('data-tariff-name');
+      const dataCommnt = btn.getAttribute('data-comment');
       const dataPrise = btn.getAttribute('data-prise');
 
       const dataProductImg = btn.getAttribute('data-product-img');
@@ -49,6 +51,7 @@ export default function initSendRequestModal() {
       const dataPointIssue = btn.hasAttribute('data-point-issue');
 
       dataTitleElem.innerText = dataTitle;
+      dataCommentElem.value = dataCommnt;
       if (dataPrise) {
         modalPriceElem.innerText = dataPrise;
       } else {
