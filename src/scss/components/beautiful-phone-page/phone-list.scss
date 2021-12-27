@@ -179,7 +179,7 @@
 .phone-list__pagination-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .phone-list__select-container {
@@ -277,5 +277,9 @@
 }
 
 .phone-list__upload-btn {
-  width: 100%;
+  width: auto;
+
+  @include for-sm-down {
+    width: 100%;
+  }
 }
