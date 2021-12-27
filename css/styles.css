@@ -8597,9 +8597,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .phone-list__select-container {
   display: block;
@@ -8670,7 +8670,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     border: none; }
 
 .phone-list__upload-btn {
-  width: 100%; }
+  width: auto; }
+  @media screen and (max-width: 767px) {
+    .phone-list__upload-btn {
+      width: 100%; } }
 
 .applications-list {
   padding: 4rem 0 16rem; }
