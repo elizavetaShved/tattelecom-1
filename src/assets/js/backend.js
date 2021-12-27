@@ -220,4 +220,28 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.initDropDownMenu = initDropDownMenu;
+
+  // страница tv-online
+  const video = document.querySelector("#video");
+
+  if (!video) return;
+  var flashVars = {
+    src: 'https://hls-iptv.tattelecom.ru/online_tv_Efir/index.m3u8',
+    plugin_hls: '/tattelecomNew/swf/flashlsOSMF.swf',
+    hls_live_flushurlcache: true,
+    autoPlay: true,
+    javascriptCallbackFunction: 'jsBridge'
+  };
+
+  if (Hls.isSupported()) {
+    var hls = new Hls();
+    window.hls = hls;
+    hls.loadSource('https://hls-iptv.tattelecom.ru/online_tv_Efir/index.m3u8');
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED, function () {
+      video.play();
+    });
+  } else {
+    swfobject.embedSWF('/tattelecomNew/swf/StrobeMediaPlayback.swf', 'player', 640, 480, '10.1.0', null, flashVars, { allowFullScreen: 'true' }, { name: 'flashPlayer' }, isPlayerEmbedded);
+  }
 });

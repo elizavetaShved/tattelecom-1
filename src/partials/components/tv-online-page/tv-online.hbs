@@ -6,7 +6,7 @@
       <ul class="tv-online__list-wrapper">
         {{#each tv-list }}
           <li class="tv-online__item">
-            <a href="" class="tv-online__item-link">
+            <a href="{{ this.link }}" class="tv-online__item-link">
               <img src="{{ this.img }}" alt="" class="tv-online__item-image">
               <div class="tv-online__item-caption">{{ this.name }}</div>
             </a>
@@ -16,14 +16,12 @@
     </div>
 
     <div class="tv-online__broadcast-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/FBHrfmnYQ9g" title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              class="tv-online__broadcast-iframe"></iframe>
+      <div id="player" class="tv-online__broadcast-iframe">
+        <video id="video" src="" class="tv-online__broadcast-video" controls></video>
+      </div>
 
       <div class="tv-online__broadcast-hint-wrapper">
-        <img src="img/tv-online-page/logo-1.png" alt="" class="tv-online__broadcast-logo">
+        <img src="img/tv-online-page/logo-5.png" alt="" class="tv-online__broadcast-logo">
         <div class="tv-online__broadcast-mark">Сейчас в эфире</div>
         <div class="tv-online__broadcast-caption">Кичке плейлист</div>
         <div class="tv-online__broadcast-time">17:00-18:00</div>
