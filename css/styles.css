@@ -8894,6 +8894,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     .tv-online__broadcast-iframe {
       padding: 0 var(--page-content-padding); } }
 
+.tv-online__broadcast-video {
+  width: 100%;
+  height: 100%; }
+
 .tv-online__broadcast-hint-wrapper {
   background-color: var(--border-color);
   padding: 3rem 3.2rem;

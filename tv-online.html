@@ -865,9 +865,11 @@
 							</ul>
 						</div>
 						<div class="tv-online__broadcast-container">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/FBHrfmnYQ9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="tv-online__broadcast-iframe"></iframe>
+							<div id="player" class="tv-online__broadcast-iframe">
+								<video id="video" src="" class="tv-online__broadcast-video" controls></video>
+							</div>
 							<div class="tv-online__broadcast-hint-wrapper">
-								<img src="img/tv-online-page/logo-1.png" alt="" class="tv-online__broadcast-logo">
+								<img src="img/tv-online-page/logo-5.png" alt="" class="tv-online__broadcast-logo">
 								<div class="tv-online__broadcast-mark">Сейчас в эфире</div>
 								<div class="tv-online__broadcast-caption">Кичке плейлист</div>
 								<div class="tv-online__broadcast-time">17:00-18:00</div>
@@ -1874,6 +1876,10 @@
 			<script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.8.0/dist/js/jquery.suggestions.min.js"></script>
 
 			<script src="js/common.js"></script>
+
+			<script src="assets/js/hls.min.js"></script>
+
+			<script src="assets/js/swfobjects.js"></script>
 
 			<script src="js/common-private-clients.js"></script>
 
