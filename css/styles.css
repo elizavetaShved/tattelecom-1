@@ -11023,6 +11023,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
           -ms-flex-direction: column;
               flex-direction: column; } }
 
+.error__content-text {
+  max-width: 53.2rem; }
+
 .error__image {
   max-width: 50%;
   margin-right: 3rem; }
