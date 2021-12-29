@@ -78,6 +78,7 @@
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/b-smart-wifi">SMART Wi-Fi</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/b-support-corporate">Поддержка корпоративных клиентов</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/b-support-item">Интернет для офиса</a><br>
+    <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/b-tariffs.html">Страница тарифа</a><br>
     О компании / партнёрам / акционерам<br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tattelekom-main">Таттелеком главная</a><br>
     <a style="display: block; padding: 4px; font-size: 20px" href="https://elizavetashved.github.io/tattelecom-1/tatt-investors">Таттелеком инвесторам</a><br>
