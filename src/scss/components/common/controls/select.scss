@@ -307,4 +307,10 @@
   .choices__input {
     padding: 1.2rem!important;
   }
+
+  &.mod-b-select {
+    .choices__inner {
+      background-color: #fff !important;
+    }
+  }
 }

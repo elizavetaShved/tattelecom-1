@@ -135,10 +135,12 @@ export class Header {
         };
       }
     })
-    // клик по закрытию города
-    this.menuLoactionClose.onclick = event => {
-      this.closePopUp();
-    };
+    if(this.menuLoactionClose) {
+      // клик по закрытию города
+      this.menuLoactionClose.onclick = event => {
+        this.closePopUp();
+      };
+    }
 
 
     // уход с поп-ап

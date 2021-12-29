@@ -289,6 +289,16 @@
       visibility: visible;
     }
   }
+
+  &.mod-b-top-menu-hover {
+    .header__top-menu-hover-content {
+      background-color: var(--main-color-business);
+    }
+
+    .header__top-menu-items-link {
+
+    }
+  }
 }
 
 .header__top-menu-hover-container {
@@ -761,6 +771,16 @@
   z-index: 5;
   grid-template-columns: repeat(12, 1fr);
 
+  &__button {
+    @include for-sm-down {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &.mod-b-popup-content {
+    display: grid;
+  }
+
   &__heading {
     grid-column: 8 span;
     font-size: 2.8rem;
@@ -1068,6 +1088,27 @@
 
   &:not(.mod-show) {
     display: none;
+  }
+
+  .header__popup-item-link {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  .location-popup-content__heading {
+    color: #fff;
+  }
+
+  .location-popup-content__legend {
+    color: #fff;
+  }
+
+  .location-popup-content__close-btn .header__search-btn-close-icon {
+    fill: #fff;
   }
 }
 

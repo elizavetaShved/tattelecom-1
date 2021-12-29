@@ -31,6 +31,7 @@ module.exports = {
     ['b-main-page']: './src/js/pages/b-main-page.js',
     ['b-roaming-russia']: './src/js/pages/b-roaming-russia.js',
     ['b-roaming-international']: './src/js/pages/b-roaming-international.js',
+    ['b-tariffs-page']: './src/js/pages/b-tariffs-page.js',
     ['b-beautiful-phone']: './src/js/pages/b-beautiful-phone',
     ['b-single-business-page']: './src/js/pages/b-single-business-page.js',
     ['b-virtual-ats-page']: './src/js/pages/b-virtual-ats-page.js',

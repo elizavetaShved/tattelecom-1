@@ -1,0 +1,69 @@
+{
+    "isBusiness": true,
+    "title": "Тариф «Название тарифа»",
+    "script": "b-tariffs-page",
+    "preview-list-title": "Включено в абонентскую плату:",
+    "preview-list": [
+        {
+        "caption": "Интернет",
+        "info-btn": true,
+        "rowsList": [
+            {
+            "caption": "Мобильный интернет",
+            "value": "Безлимит",
+            "info-btn-tooltip": true,
+            "name": "Мобильный интернет"
+            }
+        ]
+        },
+        {
+        "caption": "Звонки",
+        "info-btn": true,
+        "rowsList": [
+            {
+            "caption": "Исходящие вызовы на мобильные и городские номера РТ (за исключением номеров «Летай»)",
+            "value": "500 мин./мес.",
+            "info-btn-tooltip": true,
+            "name": "Мобильный интернет"
+            },
+            {
+            "caption": "Исходящие вызовы на мобильные и городские номера РФ",
+            "value": "300 мин./мес.",
+            "info-btn-tooltip": true,
+            "name": "Мобильный интернет"
+            },
+            {
+            "caption": "Исходящие вызовы на номера оператора «Летай»",
+            "value": "Без ограничений",
+            "info-btn-tooltip": true,
+            "name": "Мобильный интернет"
+            }
+        ]
+        },
+        {
+        "caption": "Сообщения",
+        "info-btn": true,
+        "rowsList": [
+            {
+            "caption": "Исходящие SMS на номера мобильных операторов РТ (в том числе на номера оператора «Летай»)",
+            "value": "100 SMS/мес.",
+            "info-btn-tooltip": true,
+            "name": "Мобильный интернет"
+            }
+        ]
+        },
+        {
+        "caption": "Дополнительно",
+        "info-btn": true,
+        "rowsList": [
+            {
+            "caption": "Кэшбэк ",
+            "value": "20%",
+            "info-btn-tooltip": true,
+            "name": "Мобильный интернет"
+            }
+        ]
+        }
+    ]
+  }
+  
