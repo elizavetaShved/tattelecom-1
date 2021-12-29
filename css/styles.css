@@ -14788,6 +14788,26 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 .b-tariff {
   padding-top: 5rem; }
 
+.b-tarif-options {
+  padding: 8rem 0 3.8rem; }
+  .b-tarif-options__option {
+    margin-bottom: 3rem; }
+  .b-tarif-options__title-wrapper {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer; }
+  .b-tarif-options__title {
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 3.3rem;
+    letter-spacing: 0.015em; }
+  .b-tarif-options__services-wrapper {
+    padding-top: 2rem; }
+
 .tatt-banner {
   height: 52.6rem;
   margin-bottom: 7.7rem;
