@@ -29,7 +29,9 @@
           }
         }
       ],
-      "cost": 1990
+      "cost": 1990,
+      "noMore": true,
+      "tariffsServices": true
     },
     {
       "name": "HoReCa",
@@ -40,7 +42,10 @@
           }
         }
       ],
-      "cost": 1990
+      "cost": 1990,
+      "noMore": true,
+      "from": true,
+      "tariffsServices": true
     },
     {
       "name": "Wi-Fi Деловой",
@@ -51,7 +56,10 @@
           }
         }
       ],
-      "cost": 1990
+      "cost": 1990,
+      "noMore": true,
+      "from": true,
+      "tariffsServices": true
     }
   ],
   "faq": [

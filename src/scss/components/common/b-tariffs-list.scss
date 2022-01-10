@@ -253,6 +253,7 @@
 
   &__cost-block {
     display: flex;
+    flex-direction: column;
     align-items: flex-end;
 
     margin-bottom: 2.8rem;
@@ -293,8 +294,9 @@
 
     font-size: 1.8rem;
     line-height: 1.2;
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: line-through;
+    color: rgba($color: #2B2B2B, $alpha: 0.5);
   }
 
   &__btn {

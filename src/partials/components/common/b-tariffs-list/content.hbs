@@ -148,12 +148,14 @@
               <div class="b-tariffs-item__footer">
                 {{#if this.cost }}
                   <div class="b-tariffs-item__cost-block">
-                    {{#if this.from }}
-                      <span class="b-tariffs-item__cost-label">от</span>
-                    {{/if}}
-                    <span class="b-tariffs-item__cost">{{this.cost}}</span>
-                    <span class="b-tariffs-item__cost-label">₽/мес</span>
                     <span class="b-tariffs-item__cost-old-price">350 ₽/мес</span>
+                    <div class="">
+                      {{#if this.from }}
+                        <span class="b-tariffs-item__cost-label">от</span>
+                      {{/if}}
+                      <span class="b-tariffs-item__cost">{{this.cost}}</span>
+                      <span class="b-tariffs-item__cost-label">₽/мес</span>
+                    </div>
                   </div>
                 {{/if}}
                 {{#if isSelectCards }}
@@ -167,7 +169,11 @@
                           data-tariff-name="{{this.name}}"
                           data-prise="{{this.cost}}"
                   >
+                  {{#if tariffsServices }}
+                    Подробнее о тарифе
+                  {{else}}
                     Подключить
+                  {{/if}}
                   </button>
                 {{/if}}
                 {{#if noMore }}{{else}}
