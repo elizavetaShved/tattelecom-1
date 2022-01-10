@@ -31,7 +31,8 @@
         }
       ],
       "cost": 250,
-      "from": true
+      "from": true,
+      "tariffsServices": true
     },
     {
       "name": "Бизнес Турбо 20Гб",
