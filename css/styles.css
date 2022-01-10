@@ -12851,6 +12851,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
@@ -12880,8 +12884,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     padding-bottom: 0.4rem;
     font-size: 1.8rem;
     line-height: 1.2;
-    font-weight: 300;
-    text-decoration: line-through; }
+    font-weight: 400;
+    text-decoration: line-through;
+    color: rgba(43, 43, 43, 0.5); }
   .b-tariffs-item__btn {
     width: 100%; }
 
