@@ -2,96 +2,30 @@
   display: grid;
   grid-template-columns: repeat(15, 1fr);
   grid-gap: 2rem;
-  grid-template-areas:
-            "i1 i1 i1 i1 i1 i2 i2 i2 i2 i2 i3 i3 i3 i3 i3"
-            "i4 i4 i4 i5 i5 i5 i6 i6 i6 i7 i7 i7 i8 i8 i8"
-            "i9 i9 i9 i10 i10 i10 i11 i11 i11 i12 i12 i12 i13 i13 i13";
-
-  @include for-bg-down {
-    grid-gap: 1rem;
-  }
 
   @include for-sm-down {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas:
-            "i1 i1 i1 i2 i2 i2"
-            "i3 i3 i4 i4 i5 i5"
-            "i6 i6 i7 i7 i8 i8"
-            "i9 i9 i10 i10 i11 i11"
-            "i12 i12 i12 i13 i13 i13";
-  }
-
-  @include for-xs-down {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-            "i1 i1"
-            "i2 i3"
-            "i4 i4"
-            "i5 i6"
-            "i7 i7"
-            "i8 i9"
-            "i10 i10"
-            "i11 i12"
-            "i13 i13";
+    grid-template-columns: repeat(12, 1fr);
   }
 }
 
 .b-popular-categories__item {
-  &:nth-child(1) {
-    grid-area: i1;
+  grid-column: 3 span;
+
+  @include for-md-down {
+    grid-column: 5 span;
   }
 
-  &:nth-child(2) {
-    grid-area: i2;
+  @include for-sm-down {
+    grid-column: 6 span;
   }
 
-  &:nth-child(3) {
-    grid-area: i3;
-  }
-
-  &:nth-child(4) {
-    grid-area: i4;
-  }
-
-  &:nth-child(5) {
-    grid-area: i5;
-  }
-
-  &:nth-child(6) {
-    grid-area: i6;
-  }
-
-  &:nth-child(7) {
-    grid-area: i7;
-  }
-
-  &:nth-child(8) {
-    grid-area: i8;
-  }
-
-  &:nth-child(9) {
-    grid-area: i9;
-  }
-
-  &:nth-child(10) {
-    grid-area: i10;
-  }
-
-  &:nth-child(11) {
-    grid-area: i11;
-  }
-
-  &:nth-child(12) {
-    grid-area: i12;
-  }
-
-  &:nth-child(13) {
-    grid-area: i13;
+  @include for-xxs-down {
+    grid-column: 12 span;
   }
 }
 
 .b-popular-categories__item-link {
-  padding: 2.6rem 2.2rem;
+  padding: 2.4rem;
   border-radius: 10px;
   border: 1px solid var(--main-grey-color);
   min-height: 14rem;
@@ -124,9 +58,11 @@
 }
 
 .b-popular-categories__item-title {
-  font-size: 1.6rem;
-  line-height: 2.6rem;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.4rem;
   letter-spacing: 0.02em;
+  max-width: 16.2rem;
 
   @include for-xs-down {
     line-height: 2.2rem;

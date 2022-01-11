@@ -6,6 +6,19 @@ $gat-tabs: 14px;
   position: relative;
   display: flex;
   align-items: center;
+
+  &.mod-b {
+    ._is-current {
+      .pagination-page__pages-radio-content {
+        background-color: var(--main-color-business) !important;
+      }
+    }
+
+    .pagination-page__pages-item:hover .pagination-page__pages-btn {
+      background-color: var(--main-color-business);
+      color: #fff;
+    }
+  }
 }
 
 .pagination-page__pages-btn {

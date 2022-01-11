@@ -4,6 +4,24 @@
   @include for-sm-down {
     padding: 5rem 0;
   }
+
+  &.mod-b {
+    .input-search {
+      background-color: var(--border-color);
+    }
+
+    .search-site__item-link:hover .search-site__item-link-content {
+      border-bottom-color: var(--main-color-business);
+    }
+
+    .search-site__item-link-content {
+      color: var(--main-color-business);
+    }
+    
+    .search-site__item-icon {
+      fill: var(--main-color-business);
+    }
+  }
 }
 
 .search-site__input-wrapper {

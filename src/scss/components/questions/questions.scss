@@ -179,4 +179,48 @@
 
   &__tabs-content {
   }
+
+  &.mod-b-questions {
+    padding-top: 4.5rem;
+
+    .questions__tab-nav-btn.active-tab {
+      .questions__tab-nav-btn-label {
+        color: var(--main-color-business);
+
+        &:hover {
+          color: var(--main-color-business);
+        }
+      }
+      .questions__tab-nav-btn-icon {
+        fill: var(--main-color-business);
+      }
+    }
+    .questions__tab-nav-btn-label {
+      &:hover {
+        color: var(--main-color-business);
+      }
+    }
+
+    .input-search {
+      background-color: var(--border-color);
+    }
+
+    .question-content__question.mod-open {
+      .question-content__question-label {
+        color: var(--main-color-business);
+      }
+
+      .question-content__question-icon {
+        fill: var(--main-color-business);
+      }
+    }
+
+    .question-content__answer a {
+      color: var(--main-color-business);
+    }
+
+    .question-content__question-icon {
+      flex-shrink: 0;
+    }
+  }
 }

@@ -20,6 +20,13 @@
     &:last-of-type {
       margin-bottom: 0;
     }
+
+    @include for-lg-down {
+      .btn-info__content {
+        right: 0;
+        left: auto;
+      }
+    }
   }
 
   &__header {

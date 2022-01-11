@@ -31,8 +31,17 @@ export class Modal {
     this.modalThanksContainerElem = document.querySelector('#modal-thanks-container');
     this.modalThanksCloseBtn = document.querySelector('#close-thanks-modal');
 
+    this.modalThanksElemB = document.querySelector('#b-modal-thanks');
+    this.modalThanksContainerElemB = document.querySelector('#b-modal-thanks-container');
+    this.modalThanksCloseBtnB = document.querySelector('#b-close-thanks-modal');
+
+
     this.modalThanksCloseBtn.onclick = () => {
       this.onCloseModalThanks();
+    }
+
+    this.modalThanksCloseBtnB.onclick = () => {
+      this.onCloseModalThanksB();
     }
 
     // todo убрать с фронта
@@ -74,7 +83,6 @@ export class Modal {
 
   onCloseModal() {
     this.modalElem.classList.remove('mod-show');
-    this.modalElem.querySelector("form").reset();
     this.isOpenModal = false;
     document.removeEventListener('click', this.checkClickByModal);
     window.removeEventListener('resize', this.setHeightModalContainer);
@@ -97,6 +105,14 @@ export class Modal {
     }
   }
 
+  checkClickByModalThanksB(event) {
+    if (this.isOpenThanksModalB && !checkExistParent(event.target, this.modalThanksContainerElemB)) {
+      this.onCloseModalThanksB();
+    } else {
+      this.isOpenThanksModalB = true;
+    }
+  }
+
   onCloseModalThanks() {
     this.modalThanksElem.classList.remove('mod-show');
     this.isOpenThanksModal = false;
@@ -107,6 +123,18 @@ export class Modal {
     this.modalThanksElem.classList.add('mod-show');
     this.isOpenThanksModal = true;
     document.addEventListener('click', this.checkClickByModalThanks);
+  }
+
+  onCloseModalThanksB() {
+    this.modalThanksElemB.classList.remove('mod-show');
+    this.isOpenThanksModalB = false;
+    document.removeEventListener('click', this.checkClickByModalThanksB);
+  }
+
+  onOpenModalThanksB() {
+    this.modalThanksElemB.classList.add('mod-show');
+    this.isOpenThanksModalB = true;
+    document.addEventListener('click', this.checkClickByModalThanksB);
   }
 }
 
