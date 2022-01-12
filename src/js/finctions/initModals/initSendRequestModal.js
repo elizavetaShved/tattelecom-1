@@ -51,6 +51,7 @@ export default function initSendRequestModal() {
       const dataPointIssue = btn.hasAttribute('data-point-issue');
 
       dataTitleElem.innerText = dataTitle;
+      dataCommentElem.value = "";
       dataCommentElem.value = dataCommnt;
       if (dataPrise) {
         modalPriceElem.innerText = dataPrise;

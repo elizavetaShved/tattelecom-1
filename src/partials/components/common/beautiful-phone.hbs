@@ -15,8 +15,8 @@
   {{#each phones }}
     <li class="phone-list__item">
       <button type="button" class="phone-list__item-btn js-open-send-request-modal"
-              data-tariff-name="Бронирование номера" data-comment="Тест">
-        <span class="phone-list__item-phone">{{ this }}</span>
+              data-tariff-name="Бронирование номера" data-comment="{{ this.comment }}">
+        <span class="phone-list__item-phone">{{ this.phone }}</span>
         <img src="img/beautiful-phone-page/buy.svg" alt="" class="phone-list__item-icon">
       </button>
     </li>
