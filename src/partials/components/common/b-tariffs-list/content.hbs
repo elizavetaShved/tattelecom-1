@@ -4,186 +4,184 @@
     <div class="gl-slider__b-container gl-slider__container swiper-container js-swiper-container">
       <ul class="gl-slider__wrapper swiper-wrapper" id="js-align-tariffs-heights">
         {{#each tariffs }}
-          <li class="swiper-slide">
-            <a href="/rates-mobile-item.html"
-               class="b-tariffs-item {{#if this.isHit}}mod-hit{{/if}} gl__no-default-hover {{#if this.isRedBtn}}mod-red-btn{{/if}}  {{#if isExpandedCard }}mod-expanded{{/if}} {{#if
+        <li class="swiper-slide">
+          <a href="/rates-mobile-item.html" class="b-tariffs-item {{#if this.isHit}}mod-hit{{/if}} gl__no-default-hover {{#if this.isRedBtn}}mod-red-btn{{/if}}  {{#if isExpandedCard }}mod-expanded{{/if}} {{#if
                  this.isSelectCards }}mod-select-card{{/if}}{{#if isSmallCard }}mod-is-small-card{{/if}}">
-              {{#if this.isHit}}
-                <img src="img/common/cobweb-slice.svg" alt="" class="b-tariffs-item__background">
+            {{#if this.isHit}}
+            <img src="img/common/cobweb-slice.svg" alt="" class="b-tariffs-item__background">
+            {{/if}}
+            <div class="b-tariffs-item__services-list-container">
+              <h3 class="b-tariffs-item__name">{{this.name}}</h3>
+              {{#if this.caption }}
+              <div class="b-tariffs-item__caption">{{this.caption}}</div>
               {{/if}}
-              <div class="b-tariffs-item__services-list-container">
-                <h3 class="b-tariffs-item__name">{{this.name}}</h3>
-                {{#if this.caption }}
-                  <div class="b-tariffs-item__caption">{{this.caption}}</div>
-                {{/if}}
 
-                {{#each conditionsList }}
-                  <div class="b-tariffs-item__services-list-wrapper {{#if this.cost }}border-bottom{{/if}}">
-                    {{#if this.services.caption}}
-                      <div class="b-tariffs-item__services-list-caption">
-                        {{ this.services.caption }}
-                      </div>
-                    {{/if}}
-                    <ul class="b-tariffs-item__services-list">
-                      {{#if this.services.calls}}
-                        <li class="b-tariffs-item__service">
-                          <svg width="15" height="15" aria-hidden="true" class="b-tariffs-item__service-icon">
-                            <use xlink:href="#tariffs-calls"></use>
-                          </svg>
-                          <span class="b-tariffs-item__service-name">{{this.services.calls}}</span>
-                        </li>
-                      {{/if}}
-                      {{#if this.services.internet}}
-                        <li class="b-tariffs-item__service">
-                          <svg width="15" height="11" aria-hidden="true" class="b-tariffs-item__service-icon">
-                            <use xlink:href="#tariffs-internet"></use>
-                          </svg>
-                          <span class="b-tariffs-item__service-name">{{this.services.internet}}</span>
-                        </li>
-                      {{/if}}
-                      {{#if this.services.callsRT}}
-                        <li class="b-tariffs-item__service">
-                          <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
-                            <use xlink:href="#tariffs-calls-rt"></use>
-                          </svg>
-                          <span class="b-tariffs-item__service-name">{{this.services.callsRT}}</span>
-                        </li>
-                      {{/if}}
-                      {{#if this.services.users}}
-                        <li class="b-tariffs-item__service">
-                          <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
-                            <use xlink:href="#tariffs-user"></use>
-                          </svg>
-                          <span class="b-tariffs-item__service-name">{{this.services.users}}</span>
-                        </li>
-                      {{/if}}
-                      {{#if this.services.files}}
-                        <li class="b-tariffs-item__service">
-                          <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
-                            <use xlink:href="#tariffs-file"></use>
-                          </svg>
-                          <span class="b-tariffs-item__service-name">{{this.services.files}}</span>
-                        </li>
-                      {{/if}}
-                      {{#if this.services.presence}}
-                        <li class="b-tariffs-item__service">
-                          <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
-                            <use xlink:href="#tariffs-presence"></use>
-                          </svg>
-                          <span class="b-tariffs-item__service-name">{{this.services.presence}}</span>
-                        </li>
-                      {{/if}}
-                      {{#if this.services.webinars}}
-                        <li class="b-tariffs-item__service">
-                          <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
-                            <use xlink:href="#tariffs-webinars"></use>
-                          </svg>
-                          <span class="b-tariffs-item__service-name">{{this.services.webinars}}</span>
-                        </li>
-                      {{/if}}
-                      {{#if this.services.callsRF}}
-                        <li class="b-tariffs-item__service">
-                          <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
-                            <use xlink:href="#tariffs-calls-rf"></use>
-                          </svg>
-                          <span class="b-tariffs-item__service-name">{{this.services.callsRF}}</span>
-                        </li>
-                      {{/if}}
-                      {{#if this.services.SMS}}
-                        <li class="b-tariffs-item__service">
-                          <svg width="15" height="15" aria-hidden="true" class="b-tariffs-item__service-icon">
-                            <use xlink:href="#tariffs-sms"></use>
-                          </svg>
-                          <span class="b-tariffs-item__service-name">{{this.services.SMS}}</span>
-                        </li>
-                      {{/if}}
-                      {{#if this.services.plus }}
-                        <li class="b-tariffs-item__plus">
-                          {{ this.services.plus }}
-                        </li>
-                      {{/if}}
-                      {{#if this.services.simpleSignature }}
-                        <li class="b-tariffs-item__simple-signature">
-                          {{{ this.services.simpleSignature }}}
-                        </li>
-                      {{/if}}
-
-                      {{#each this.services.simpleFlexsList }}
-                        <li class="b-tariffs-item__simple-flex">
-                          <div class="b-tariffs-item__simple-flex-caption-wrapper">
-                            {{#if this.isSpeed }}
-                              <svg width="16" height="16" aria-hidden="true" class="b-tariffs-item__simple-flex-icon">
-                                <use xlink:href="#tariffs-speed"></use>
-                              </svg>
-                            {{/if}}
-                            {{#if this.isSpeedDown }}
-                              <svg width="16" height="16" aria-hidden="true" class="b-tariffs-item__simple-flex-icon">
-                                <use xlink:href="#tariffs-speed-down"></use>
-                              </svg>
-                            {{/if}}
-                            {{#if this.isDevices }}
-                              <svg width="16" height="16" aria-hidden="true" class="b-tariffs-item__simple-flex-icon">
-                                <use xlink:href="#tariffs-devices"></use>
-                              </svg>
-                            {{/if}}
-                            {{#if this.isWiFi }}
-                              <svg width="16" height="16" aria-hidden="true" class="b-tariffs-item__simple-flex-icon">
-                                <use xlink:href="#tariffs-wi-fi"></use>
-                              </svg>
-                            {{/if}}
-                            {{#if this.isOption }}
-                              <svg width="16" height="16" aria-hidden="true" class="b-tariffs-item__simple-flex-icon">
-                                <use xlink:href="#tariffs-option"></use>
-                              </svg>
-                            {{/if}}
-                            <div class="b-tariffs-item__simple-flex-caption">{{this.caption}}</div>
-                          </div>
-                          <div class="b-tariffs-item__simple-flex-value">{{this.value}}</div>
-                        </li>
-                      {{/each}}
-                    </ul>
-                  </div>
-                {{/each}}
-              </div>
-              <div class="b-tariffs-item__footer">
-                {{#if this.cost }}
-                  <div class="b-tariffs-item__cost-block">
-                    <span class="b-tariffs-item__cost-old-price">350 ₽/мес</span>
-                    <div class="">
-                      {{#if this.from }}
-                        <span class="b-tariffs-item__cost-label">от</span>
-                      {{/if}}
-                      <span class="b-tariffs-item__cost">{{this.cost}}</span>
-                      <span class="b-tariffs-item__cost-label">₽/мес</span>
-                    </div>
-                  </div>
+              {{#each conditionsList }}
+              <div class="b-tariffs-item__services-list-wrapper {{#if this.cost }}border-bottom{{/if}}">
+                {{#if this.services.caption}}
+                <div class="b-tariffs-item__services-list-caption">
+                  {{ this.services.caption }}
+                </div>
                 {{/if}}
-                {{#if isSelectCards }}
-                  <button class="gl__main-btn mod-business b-tariffs-item__btn js-open-send-request-modal"
-                          type="button">
-                    Выбрать
-                  </button>
-                {{ else }}
-                  <button class="gl__main-btn mod-business b-tariffs-item__btn js-open-send-request-modal"
-                          type="button"
-                          data-tariff-name="{{this.name}}"
-                          data-prise="{{this.cost}}"
-                  >
-                  {{#if tariffsServices }}
-                    Подробнее об услуге
-                  {{else}}
-                    Подключить
+                <ul class="b-tariffs-item__services-list">
+                  {{#if this.services.calls}}
+                  <li class="b-tariffs-item__service">
+                    <svg width="15" height="15" aria-hidden="true" class="b-tariffs-item__service-icon">
+                      <use xlink:href="#tariffs-calls"></use>
+                    </svg>
+                    <span class="b-tariffs-item__service-name">{{this.services.calls}}</span>
+                  </li>
                   {{/if}}
-                  </button>
-                {{/if}}
-                {{#if noMore }}{{else}}
-                  <div class="gl__secondary-btn  {{#if this.isHit }}mod-white{{/if}}">
-                    Подробнее о тарифе
-                  </div>
-                {{/if}}
+                  {{#if this.services.internet}}
+                  <li class="b-tariffs-item__service">
+                    <svg width="15" height="11" aria-hidden="true" class="b-tariffs-item__service-icon">
+                      <use xlink:href="#tariffs-internet"></use>
+                    </svg>
+                    <span class="b-tariffs-item__service-name">{{this.services.internet}}</span>
+                  </li>
+                  {{/if}}
+                  {{#if this.services.callsRT}}
+                  <li class="b-tariffs-item__service">
+                    <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
+                      <use xlink:href="#tariffs-calls-rt"></use>
+                    </svg>
+                    <span class="b-tariffs-item__service-name">{{this.services.callsRT}}</span>
+                  </li>
+                  {{/if}}
+                  {{#if this.services.users}}
+                  <li class="b-tariffs-item__service">
+                    <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
+                      <use xlink:href="#tariffs-user"></use>
+                    </svg>
+                    <span class="b-tariffs-item__service-name">{{this.services.users}}</span>
+                  </li>
+                  {{/if}}
+                  {{#if this.services.files}}
+                  <li class="b-tariffs-item__service">
+                    <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
+                      <use xlink:href="#tariffs-file"></use>
+                    </svg>
+                    <span class="b-tariffs-item__service-name">{{this.services.files}}</span>
+                  </li>
+                  {{/if}}
+                  {{#if this.services.presence}}
+                  <li class="b-tariffs-item__service">
+                    <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
+                      <use xlink:href="#tariffs-presence"></use>
+                    </svg>
+                    <span class="b-tariffs-item__service-name">{{this.services.presence}}</span>
+                  </li>
+                  {{/if}}
+                  {{#if this.services.webinars}}
+                  <li class="b-tariffs-item__service">
+                    <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
+                      <use xlink:href="#tariffs-webinars"></use>
+                    </svg>
+                    <span class="b-tariffs-item__service-name">{{this.services.webinars}}</span>
+                  </li>
+                  {{/if}}
+                  {{#if this.services.callsRF}}
+                  <li class="b-tariffs-item__service">
+                    <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
+                      <use xlink:href="#tariffs-calls-rf"></use>
+                    </svg>
+                    <span class="b-tariffs-item__service-name">{{this.services.callsRF}}</span>
+                  </li>
+                  {{/if}}
+                  {{#if this.services.SMS}}
+                  <li class="b-tariffs-item__service">
+                    <svg width="15" height="15" aria-hidden="true" class="b-tariffs-item__service-icon">
+                      <use xlink:href="#tariffs-sms"></use>
+                    </svg>
+                    <span class="b-tariffs-item__service-name">{{this.services.SMS}}</span>
+                  </li>
+                  {{/if}}
+                  {{#if this.services.plus }}
+                  <li class="b-tariffs-item__plus">
+                    {{ this.services.plus }}
+                  </li>
+                  {{/if}}
+                  {{#if this.services.simpleSignature }}
+                  <li class="b-tariffs-item__simple-signature">
+                    {{{ this.services.simpleSignature }}}
+                  </li>
+                  {{/if}}
+
+                  {{#each this.services.simpleFlexsList }}
+                  <li class="b-tariffs-item__simple-flex">
+                    <div class="b-tariffs-item__simple-flex-caption-wrapper">
+                      {{#if this.isSpeed }}
+                      <svg width="16" height="16" aria-hidden="true" class="b-tariffs-item__simple-flex-icon">
+                        <use xlink:href="#tariffs-speed"></use>
+                      </svg>
+                      {{/if}}
+                      {{#if this.isSpeedDown }}
+                      <svg width="16" height="16" aria-hidden="true" class="b-tariffs-item__simple-flex-icon">
+                        <use xlink:href="#tariffs-speed-down"></use>
+                      </svg>
+                      {{/if}}
+                      {{#if this.isDevices }}
+                      <svg width="16" height="16" aria-hidden="true" class="b-tariffs-item__simple-flex-icon">
+                        <use xlink:href="#tariffs-devices"></use>
+                      </svg>
+                      {{/if}}
+                      {{#if this.isWiFi }}
+                      <svg width="16" height="16" aria-hidden="true" class="b-tariffs-item__simple-flex-icon">
+                        <use xlink:href="#tariffs-wi-fi"></use>
+                      </svg>
+                      {{/if}}
+                      {{#if this.isOption }}
+                      <svg width="16" height="16" aria-hidden="true" class="b-tariffs-item__simple-flex-icon">
+                        <use xlink:href="#tariffs-option"></use>
+                      </svg>
+                      {{/if}}
+                      <div class="b-tariffs-item__simple-flex-caption">{{this.caption}}</div>
+                    </div>
+                    <div class="b-tariffs-item__simple-flex-value">{{this.value}}</div>
+                  </li>
+                  {{/each}}
+                </ul>
               </div>
-            </a>
-          </li>
+              {{/each}}
+            </div>
+            <div class="b-tariffs-item__footer">
+              {{#if this.cost }}
+              <div class="b-tariffs-item__cost-block">
+                <span class="b-tariffs-item__cost-old-price">350 ₽/мес</span>
+                <div class="">
+                  {{#if this.from }}
+                  <span class="b-tariffs-item__cost-label">от</span>
+                  {{/if}}
+                  <span class="b-tariffs-item__cost">{{this.cost}}</span>
+                  <span class="b-tariffs-item__cost-label">₽/мес</span>
+                </div>
+              </div>
+              {{/if}}
+              {{#if isSelectCards }}
+              <button class="gl__main-btn mod-business b-tariffs-item__btn js-open-services-modal-b" type="button">
+                Выбрать
+              </button>
+              {{ else }}
+              {{#if tariffsServices }}
+                <button class="gl__main-btn mod-business b-tariffs-item__btn js-open-services-modal-b" type="button"
+                data-tariff-name="{{this.name}}" data-prise="{{this.cost}}">
+                  Подробнее об услуге
+                </button>
+              {{else}}
+                <button class="gl__main-btn mod-business b-tariffs-item__btn js-open-send-request-modal-b" type="button"
+                  data-tariff-name="{{this.name}}" data-prise="{{this.cost}}">
+                  Подключить
+                </button>
+              {{/if}}
+              {{/if}}
+              {{#if noMore }}{{else}}
+              <div class="gl__secondary-btn  {{#if this.isHit }}mod-white{{/if}}">
+                Подробнее о тарифе
+              </div>
+              {{/if}}
+            </div>
+          </a>
+        </li>
         {{/each}}
       </ul>
     </div>

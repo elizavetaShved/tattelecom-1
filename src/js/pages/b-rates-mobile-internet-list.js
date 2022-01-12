@@ -1,12 +1,13 @@
 import initSlider from "../finctions/initSlider";
 import phoneMask from '../finctions/masks/phoneMask';
-import initSendRequestModal from '../finctions/initModals/initSendRequestModal';
-import initAboutTariffModal from '../finctions/initModals/initAboutTariffModal';
+import initBServicesModal from '../finctions/initModals/initBServicesModal';
+import initBrequestModal from '../finctions/initModals/initBrequestModal';
+
 
 document.addEventListener('DOMContentLoaded', () => {
   initSlider();
   phoneMask();
 
-  initSendRequestModal();
-  initAboutTariffModal();
+  initBServicesModal();
+  initBrequestModal();
 });
