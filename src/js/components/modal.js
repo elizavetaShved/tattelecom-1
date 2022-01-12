@@ -40,8 +40,10 @@ export class Modal {
       this.onCloseModalThanks();
     }
 
-    this.modalThanksCloseBtnB.onclick = () => {
-      this.onCloseModalThanksB();
+    if (this.modalThanksCloseBtnB) {
+      this.modalThanksCloseBtnB.onclick = () => {
+        this.onCloseModalThanksB();
+      }
     }
 
     // todo убрать с фронта
