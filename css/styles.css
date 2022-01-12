@@ -4909,7 +4909,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 
 .rates-info__preview-row {
   display: grid;
-  grid-template-columns: 4fr 1fr; }
+  grid-template-columns: 4fr 3fr; }
   .rates-info__preview-row + .rates-info__preview-row {
     margin-top: 2rem; }
 
@@ -4953,8 +4953,7 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   font-size: 1.6rem;
   line-height: 2.4rem;
   text-align: end;
-  margin-left: 2rem;
-  white-space: nowrap; }
+  margin-left: 2rem; }
 
 .rates-info__preview-bottom {
   display: -webkit-box;
