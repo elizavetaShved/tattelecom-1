@@ -13966,12 +13966,12 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       padding: 1.4rem;
       width: 100%; } }
 
-.b-coverage-map__map-image {
+.b-coverage-map__content {
   width: 100%;
-  height: auto;
-  min-height: 33.5rem;
-  -o-object-fit: cover;
-     object-fit: cover; }
+  height: 68.1rem; }
+  @media screen and (max-width: 1399px) {
+    .b-coverage-map__content {
+      height: 48.1rem; } }
 
 .b-promotions {
   overflow: hidden; }
