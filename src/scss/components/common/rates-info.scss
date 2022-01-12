@@ -118,7 +118,7 @@
 
 .rates-info__preview-row {
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 4fr 3fr;
 
   & + & {
     margin-top: 2rem;
@@ -167,7 +167,6 @@
   line-height: 2.4rem;
   text-align: end;
   margin-left: 2rem;
-  white-space: nowrap;
 }
 
 .rates-info__preview-bottom {
