@@ -95,3 +95,5 @@ export default function initSendRequestModal() {
     })
   })
 }
+
+window.initSendRequestModal = initSendRequestModal;
