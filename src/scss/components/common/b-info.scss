@@ -22,6 +22,87 @@
   letter-spacing: 0.02em;
   margin-bottom: 5rem;
 
+  p {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 5rem;
+
+    @include for-sm-down {
+      margin-bottom: 2.6rem;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }  
+  }
+
+  h3 {
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.015em;
+    margin-bottom: 3rem;
+  }
+
+  h4,h5,h6 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.015em;
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    margin-bottom: 0;
+    li {
+      font-weight: 300;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      letter-spacing: 0.02em;
+      padding-left: 1.9rem;
+      position: relative;
+    
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 1rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: var(--main-text-color);
+        border-radius: 50%;
+      }
+    
+      & + & {
+        margin-top: .4rem;
+      }
+    }
+  }
+
+  ol {
+    margin-bottom: 0;
+    li {
+      font-weight: 300;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      letter-spacing: 0.02em;
+      padding-left: 3.2rem;
+      counter-increment: num;
+      position: relative;
+    
+      &:before {
+        content: counter(num) '.';
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    
+      & + & {
+        margin-top: .4rem;
+      }
+    }
+  }
+
   @include for-sm-down {
     margin-bottom: 2.6rem;
   }
@@ -36,6 +117,15 @@
     @include for-sm-down {
       padding-left: 0;
       margin-bottom: 2.2rem;
+    }
+
+    p {
+      padding-left: 6rem;
+
+      @include for-sm-down {
+        padding-left: 0;
+        margin-bottom: 2.2rem;
+      }
     }
   }
 }
