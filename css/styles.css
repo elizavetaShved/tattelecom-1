@@ -13581,6 +13581,64 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   line-height: 2.6rem;
   letter-spacing: 0.02em;
   margin-bottom: 5rem; }
+  .b-info__text p {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 5rem; }
+    @media screen and (max-width: 767px) {
+      .b-info__text p {
+        margin-bottom: 2.6rem; } }
+    .b-info__text p:last-child {
+      margin-bottom: 0; }
+  .b-info__text h3 {
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.015em;
+    margin-bottom: 3rem; }
+  .b-info__text h4, .b-info__text h5, .b-info__text h6 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.015em;
+    margin-bottom: 2rem; }
+  .b-info__text ul {
+    margin-bottom: 0; }
+    .b-info__text ul li {
+      font-weight: 300;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      letter-spacing: 0.02em;
+      padding-left: 1.9rem;
+      position: relative; }
+      .b-info__text ul li:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 1rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: var(--main-text-color);
+        border-radius: 50%; }
+      .b-info__text ul li + .b-info__text ul li {
+        margin-top: .4rem; }
+  .b-info__text ol {
+    margin-bottom: 0; }
+    .b-info__text ol li {
+      font-weight: 300;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      letter-spacing: 0.02em;
+      padding-left: 3.2rem;
+      counter-increment: num;
+      position: relative; }
+      .b-info__text ol li:before {
+        content: counter(num) ".";
+        position: absolute;
+        left: 0;
+        top: 0; }
+      .b-info__text ol li + .b-info__text ol li {
+        margin-top: .4rem; }
   @media screen and (max-width: 767px) {
     .b-info__text {
       margin-bottom: 2.6rem; } }
@@ -13592,6 +13650,12 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       .b-info__text.mod-padding-left {
         padding-left: 0;
         margin-bottom: 2.2rem; } }
+    .b-info__text.mod-padding-left p {
+      padding-left: 6rem; }
+      @media screen and (max-width: 767px) {
+        .b-info__text.mod-padding-left p {
+          padding-left: 0;
+          margin-bottom: 2.2rem; } }
 
 .b-info__block-wrapper + .b-info__block-wrapper {
   margin-top: 5rem; }
