@@ -2978,16 +2978,12 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     left: -6rem; }
     @media screen and (max-width: 1559px) {
       .gl-slider__b-slider-btn.mod-prev {
-        left: -10rem; }
-        .gl-slider__b-slider-btn.mod-prev svg {
-          right: -2rem; } }
+        left: -10rem; } }
   .gl-slider__b-slider-btn.mod-next {
     right: -6rem; }
     @media screen and (max-width: 1559px) {
       .gl-slider__b-slider-btn.mod-next {
-        right: -10rem; }
-        .gl-slider__b-slider-btn.mod-next svg {
-          left: -2rem; } }
+        right: -10rem; } }
   .gl-slider__b-slider-btn svg {
     position: relative;
     height: 4rem;
