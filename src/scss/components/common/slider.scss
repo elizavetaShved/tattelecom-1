@@ -94,10 +94,6 @@
 
     @include for-mx-down {
       left: -10rem;
-
-      svg {
-        right: -2rem;
-      }
     }
   }
 
@@ -106,10 +102,6 @@
 
     @include for-mx-down {
       right: -10rem;
-
-      svg {
-        left: -2rem;
-      }
     }
   }
 
