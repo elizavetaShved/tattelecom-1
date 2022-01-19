@@ -1,4 +1,4 @@
-<section class="news-page news-page-detail">
+<section class="news-page news-page-detail {{#if isBusiness}}mod-business{{/if}}">
     <div class="gl__page-content">
         <div class="news-page-detail__heading">
             <span class="news-page-detail__date">
@@ -12,7 +12,7 @@
             </span>
         </div>
 
-        <div class="news-page-detail__content">
+        <div class="news-page-detail__content {{#if isBusiness}}mod-business{{/if}}">
             <div class="lead">
                 <p>
                     Lead — суть новости как можно короче. Внезапно, действия представителей оппозиции являются только методом политического участия.

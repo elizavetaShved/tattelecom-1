@@ -1,6 +1,10 @@
 .news-page {
-    margin-bottom: 6rem;
+    padding-bottom: 6rem;
     padding-top: 4rem;
+
+    &.mod-business {
+        background-color: #fff;
+    }
 
     &__news-item {
         width: calc(50% - 0.9rem);
@@ -15,6 +19,18 @@
 
         .news-list__slide-text {
             max-width: 36.8rem;
+        }
+
+        &.mod-business {
+            .news-list__slide-title {
+                color: var(--main-color-business);
+            }
+
+            .gl__link-arrow-link {
+                &::before {
+                    background-color: rgba($color: #007BC3, $alpha: 0.1);
+                }
+            }
         }
 
         @include for-sm-down {
@@ -94,6 +110,10 @@
         line-height: 2.2rem;
         letter-spacing: 0.02em;
         color: var(--main-color);
+
+        &.mod-business {
+            color: var(--main-color-business);
+        }
     }
 
     &__filter-sbmt-btn {

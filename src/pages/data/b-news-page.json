@@ -1,0 +1,107 @@
+{
+    "isBusiness": true,
+    "title": "Новости",
+    "script": "news-page-page",
+    "bread-crumbs": [
+      {
+        "name": "Частным клиентам"
+      },
+      {
+        "name": "Новости",
+        "noLink": true
+      }
+    ],
+    "news-page-list": [
+        {
+            "isBusiness": true,
+            "title": "22 май",
+            "text": "Провели праздник двора для жителей ЖК Салават Купере",
+            "legend": "О компании"
+        },
+        {
+            "isBusiness": true,
+            "title": "21 май",
+            "text": "Летай приглашает жителей Альметьевска на эстафету",
+            "legend": "Прочие"
+        },
+        {
+            "isBusiness": true,
+            "title": "2 декабря",
+            "text": "Тариф «Новогодний безлимит»",
+            "legend": "Акции"
+        },
+        {
+            "isBusiness": true,
+            "title": "20 май",
+            "text": "Мы благодарим всех участников Летай Бонус",
+            "legend": "Прочие"
+        },
+        {
+            "isBusiness": true,
+            "title": "21 ноября",
+            "text": "Новые условия тарифных планов",
+            "legend": "Информация о тарифах"
+        },
+        {
+            "isBusiness": true,
+            "title": "19 ноября",
+            "text": "Встречайте новые телеканалы с 1 декабря",
+            "legend": "О компании"
+        }
+    ],
+    "year-select": [
+        {
+          "name": "news-year-select",
+          "placeholder": "Выберите год",
+          "required": true,
+          "isSimpleDesign": true,
+          "isBorderBottom": false,
+          "options": [
+            "2020",
+            "2019"
+          ]
+        }
+    ],
+    "month-select": [
+        {
+            "name": "news-month-select",
+            "placeholder": "Выберите месяц",
+            "required": true,
+            "isSimpleDesign": true,
+            "isBorderBottom": false,
+            "options": [
+              "Июнь",
+              "Июль"
+            ]
+        }
+    ],
+    "all-news-select": [
+        {
+            "name": "news-all-select",
+            "placeholder": "Все новости",
+            "required": true,
+            "isSimpleDesign": true,
+            "isBorderBottom": false,
+            "options": [
+              "Тип 1",
+              "Тип 2"
+            ]
+        }
+    ],
+    "pageNumbers": [
+        {
+          "isChecked": true,
+          "pageNum": "1"
+        },
+        {
+          "pageNum": "2"
+        },
+        {
+          "pageNum": "..."
+        },
+        {
+          "pageNum": "10"
+        }
+      ]
+  }
+  

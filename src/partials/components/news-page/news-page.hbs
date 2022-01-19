@@ -1,4 +1,4 @@
-<section class="news-page">
+<section class="news-page {{#if isBusiness}}mod-business{{/if}}">
   <div class="gl__page-content">
     <h2 class="gl__title">Новости</h2>
 
@@ -6,7 +6,7 @@
         <div class="news-page__block">
             <div class="news-page__news-warapper">
                 {{#each news-page-list }}
-                    <a href="/" class="gl__white-container news-list__slide gl__link-arrow-container news-page__news-item">
+                    <a href="/" class="gl__white-container news-list__slide gl__link-arrow-container news-page__news-item {{#if isBusiness}}mod-business{{/if}}">
                     <div class="news-list__slide-title">{{ this.title }}</div>
                     <div class="news-list__slide-text">{{ this.text }}</div>
                     <div class="news-list__slide-legend">{{ this.legend }}</div>
@@ -30,7 +30,7 @@
                     <span class="news-page__filter-legend">
                         Фильтр
                     </span>
-                    <button type="button" class="news-page__filter-btn button js-filter-reset">
+                    <button type="button" class="news-page__filter-btn button js-filter-reset {{#if isBusiness}}mod-business{{/if}}">
                         Сброс
                     </button>
                 </div>
@@ -39,7 +39,7 @@
                 {{> common/controls/select selects=month-select }}
                 {{> common/controls/select selects=all-news-select }}
 
-                <button type="submit" class="button news-page__filter-sbmt-btn gl__main-btn">
+                <button type="submit" class="button news-page__filter-sbmt-btn gl__main-btn {{#if isBusiness}}mod-business{{/if}}">
                     Показать
                 </button>
 

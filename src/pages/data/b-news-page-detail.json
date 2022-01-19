@@ -1,0 +1,18 @@
+{
+    "isBusiness": true,
+    "title": "Заголовок новости",
+    "isPrivateClients": true,
+    "bread-crumbs": [
+      {
+        "name": "Частным клиентам"
+      },
+      {
+        "name": "Новости"
+      },
+      {
+        "name": "Заголовок новости",
+        "noLink": true
+      }
+    ]
+}
+  

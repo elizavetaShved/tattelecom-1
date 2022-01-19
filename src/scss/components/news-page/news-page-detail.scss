@@ -1,6 +1,10 @@
 .news-page-detail {
-    margin-bottom: 8rem;
+    padding-bottom: 8rem;
     padding-top: 4rem;
+
+    &.mod-business {
+        background-color: #fff;
+    }
 
     &__heading {
         margin-bottom: 3.7rem;
@@ -29,6 +33,38 @@
 
     &__content {
         max-width: 65rem;
+
+        &.mod-business {
+            a {
+                color: var(--main-color-business);
+            }
+
+            ul {
+                li {
+                    &::before {
+                        background-color: var(--main-color-business);
+                    }
+                }
+            }
+
+            ol {
+                li {
+                    &::before {
+                        color: var(--main-color-business);
+                    }
+                }
+            }
+
+            button {
+                background-color: var(--main-color-business);
+            }
+
+            blockquote {
+                span {
+                    color: var(--main-color-business);
+                }
+            }
+        }
 
         .lead {
             margin-bottom: 2rem;
