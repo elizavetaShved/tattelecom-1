@@ -13,7 +13,8 @@ export default function initCallbackModal() {
   let modalComponent;
 
   btnsOpen.forEach(btn => {
-    btn.onclick = () => {
+    btn.onclick = (e) => {
+      e.preventDefault();
       modalComponent = new Modal(modalElem);
       modalComponent.onOpenModal();
     };
