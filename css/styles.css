@@ -578,6 +578,8 @@ body {
         color: var(--main-color-business-hover) !important; }
     .gl__layout-wrapper.mod-business .gl__layout-content {
       margin-top: var(--header-height-b); }
+    .gl__layout-wrapper.mod-business .suggestions-suggestions {
+      color: var(--main-text-color); }
 
 .gl__layout-content {
   -webkit-box-flex: 1;
