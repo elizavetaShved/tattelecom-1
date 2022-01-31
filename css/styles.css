@@ -2862,6 +2862,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       margin: 0;
       padding: 0;
       padding-top: 3.1rem; }
+  .bread-crumbs__container.mod-b {
+    background-color: #F5F5F5; }
 
 .bread-crumbs__list {
   margin-left: -.6rem;
@@ -7197,6 +7199,17 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     font-size: 1.4rem;
     line-height: 1;
     color: var(--main-color-business); }
+
+.modal__roaming-text p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.01em;
+  margin-bottom: 2rem; }
+  .modal__roaming-text p:nth-last-of-type(1) {
+    margin-bottom: 0; }
+
+.modal__roaming-title {
+  margin-bottom: 3rem; }
 
 .callback__form {
   margin-top: 4rem; }
@@ -15068,6 +15081,32 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     letter-spacing: 0.015em; }
   .b-tarif-options__services-wrapper {
     padding-top: 2rem; }
+
+.b-tariff-detail__text {
+  max-width: 75rem;
+  margin-bottom: 6.5rem; }
+  .b-tariff-detail__text p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 3rem; }
+    .b-tariff-detail__text p:nth-last-of-type(1) {
+      margin-bottom: 0; }
+
+.b-tariff-detail__rates-info {
+  margin-bottom: 5rem; }
+  .b-tariff-detail__rates-info p {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    margin-bottom: 2rem; }
+    .b-tariff-detail__rates-info p:nth-last-of-type(1) {
+      margin-bottom: 0; }
+
+.b-tariff-detail__rates-info-include p {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.4rem; }
 
 .tatt-banner {
   height: 52.6rem;
