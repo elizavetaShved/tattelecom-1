@@ -29,6 +29,8 @@
       </div>
     </section>
 
+    {{> roaming-page/price-list }}
+
     <section class="b-roaming-international-options gl__section">
       <div class="gl__page-content">
         <div class="swiper b-roaming-international-options__inner" id="js-init-options-slider">
@@ -43,7 +45,7 @@
                   <span class="b-roaming-international-options__slide-cost">{{this.cost}}</span>
                   <span class="b-roaming-international-options__slide-cost-label">₽/мес</span>
                 </div>
-                <a href="" class="b-roaming-international-options__slide-btn">
+                <a href="" class="b-roaming-international-options__slide-btn js-open-b-roaming-modal" data-heading="{{this.name}}">
                   <span class="b-roaming-international-options__slide-btn-label">Подробнее</span>
                   <svg aria-hidden="true" class="b-roaming-international-options__slide-btn-icon">
                     <use xlink:href="#arrow-line-right"></use>

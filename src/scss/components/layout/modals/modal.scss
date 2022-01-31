@@ -121,3 +121,20 @@
     color: var(--main-color-business);
   }
 }
+
+.modal__roaming-text {
+  p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.01em;
+    margin-bottom: 2rem;
+    
+    &:nth-last-of-type(1) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.modal__roaming-title {
+  margin-bottom: 3rem;
+}

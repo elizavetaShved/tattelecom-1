@@ -26,3 +26,44 @@
         padding-top: 2rem;
     }
 }
+
+.b-tariff-detail {
+    &__text {
+        max-width: 75rem;
+        margin-bottom: 6.5rem;
+
+        p {
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+            letter-spacing: 0.02em;
+            margin-bottom: 3rem;
+
+            &:nth-last-of-type(1) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__rates-info {
+        margin-bottom: 5rem;
+
+        p {
+            font-weight: 300;
+            font-size: 1.5rem;
+            line-height: 2.4rem;
+            margin-bottom: 2rem;
+
+            &:nth-last-of-type(1) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__rates-info-include {
+        p {
+            font-weight: 300;
+            font-size: 1.5rem;
+            line-height: 2.4rem;
+        }
+    }
+}

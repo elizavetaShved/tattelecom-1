@@ -1,4 +1,5 @@
-<form class="rates-info__content  {{#if isBusiness }} mod-b-info-content {{/if}}" data-need-validation data-parsley-validate data-parsley-focus="none">
+<form class="rates-info__content  {{#if isBusiness }} mod-b-info-content {{/if}}" data-need-validation
+  data-parsley-validate data-parsley-focus="none">
   <div class="rates-info__preview">
     <div class="rates-info__title">
       {{ preview-list-title }}
@@ -6,56 +7,79 @@
 
     <ul class="rates-info__preview-list">
       {{#each preview-list }}
-        <li class="rates-info__preview-item">
-          {{#if this.caption }}
-            <div class="rates-info__preview-caption">
-              {{ this.caption }}
+      <li class="rates-info__preview-item">
+        {{#if this.caption }}
+        <div class="rates-info__preview-caption">
+          {{ this.caption }}
+        </div>
+        {{/if}}
+        <ul class="rates-info__preview-rows-list">
+          {{#each this.rowsList }}
+          <li class="rates-info__preview-row">
+            <div class="rates-info__preview-rows-caption-wrapper">
+              <div class="rates-info__preview-rows-caption">
+                <span>
+                  {{ this.caption }}
+                </span>
+                {{#if info-btn-tooltip }}
+                <div class="rates-info__preview-rows-caption-tooltip">
+                  {{> common/btn-info content-info=this.name }}
+                </div>
+                {{/if}}
+                {{#if info-btn }}
+                <button type="button" class="rates-info__preview-rows-btn">
+                  <svg width="16" height="16" aria-hidden="true" class="rates-info__preview-rows-btn-icon">
+                    <use xlink:href="#info-ellipse"></use>
+                  </svg>
+                </button>
+                {{/if}}
+              </div>
             </div>
-          {{/if}}
-          <ul class="rates-info__preview-rows-list">
-            {{#each this.rowsList }}
-              <li class="rates-info__preview-row">
-                <div class="rates-info__preview-rows-caption-wrapper">
-                  <div class="rates-info__preview-rows-caption">
-                    <span>
-                      {{ this.caption }}
-                    </span>
-                    {{#if info-btn-tooltip }}
-                      <div class="rates-info__preview-rows-caption-tooltip">
-                        {{> common/btn-info content-info=this.name }}
-                      </div>
-                     {{/if}}
-                    {{#if info-btn }}
-                      <button type="button" class="rates-info__preview-rows-btn">
-                        <svg width="16" height="16" aria-hidden="true" class="rates-info__preview-rows-btn-icon">
-                          <use xlink:href="#info-ellipse"></use>
-                        </svg>
-                      </button>
-                    {{/if}}
-                  </div>
-                </div>
 
-                <div class="rates-info__preview-rows-caption-value">
-                  {{ this.value }}
-                </div>
-              </li>
-            {{/each}}
-          </ul>
-        </li>
+            <div class="rates-info__preview-rows-caption-value">
+              {{ this.value }}
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+      </li>
       {{/each}}
     </ul>
+    {{#if tariffsDetail}}
+    <div class="b-tariff-detail__rates-info">
+      <p>
+        Исходящие местные вызовы тарифицируются согласно действующему тарифному плану «Повременный» на услугу местной
+        телефонной связи.
+      </p>
+      <p>
+        Исходящие зоновые вызовы по Республике Татарстан (на фиксированные и мобильные номера)тарифицируются согласно
+        действующим тарифам на внутризоновую телефонную связь.
+      </p>
+      <p>
+        Исходящие междугородные и международные вызовы тарифицируются согласно действующим тарифам на междугородную и международную телефонную связь.
+      </p>
+    </div>
+    <div class="b-tariff-detail__rates-info-include">
+      <div class="rates-info__title">
+        Включено в абонентскую плату
+      </div>
+      <p>Переадресация вызовов</p>
+      <p>Черные/белые списки</p>
+      <p>АОН</p>
+      <p>3х сторонняя конференция</p>
+    </div>
+    {{/if}}
 
     <div class="rates-info__preview-bottom">
       <div class="rates-info__preview-price-wrapper">
         <span class="number">350</span>₽/мес
-          <span class="rates-list__slide-old-price">
-            459 <span>₽/мес</span>
-          </span>
+        <span class="rates-list__slide-old-price">
+          459 <span>₽/мес</span>
+        </span>
       </div>
 
       <button type="button" class="rates-info__preview-btn gl__main-btn js-open-send-request-modal mod-business"
-              data-prise="350"
-              data-tariff-name="{{ preview-list-title }}">
+        data-prise="350" data-tariff-name="{{ preview-list-title }}">
         Подключить
       </button>
     </div>
@@ -66,101 +90,102 @@
       Дополнительные опции
     </div>
     {{#if isBusiness }}
-      <div class="rates-info__b-additional-text">
-        <div class="rates-info__b-subtitle">
-          Заголовок
-        </div>
-        <p>
-          Все услуги связи в одном тарифе. Интернет для бизнеса, корпоративная мобильная связь и телефония.
-        </p>
-      </div>
-
+    <div class="rates-info__b-additional-text">
       <div class="rates-info__b-subtitle">
         Заголовок
       </div>
+      <p>
+        Все услуги связи в одном тарифе. Интернет для бизнеса, корпоративная мобильная связь и телефония.
+      </p>
+    </div>
 
-      <ul class="rates-info__b-additional-list">
-        <li class="rates-info__b-additional-item">
-          <span class="rates-info__b-additional-item-text">
-            Бронирование телефонного номера, абонентской линии по заявлению абонента на срокне более 3 месяцев
-          </span>
-          <span class="rates-info__b-additional-item-price">
-            288 ₽/мес.
-          </span>
-        </li>
-        <li class="rates-info__b-additional-item">
-          <span class="rates-info__b-additional-item-text">
-            Постоянный запрет исходящей связи по заявлению абонента (услуга предоставляется при наличии технической возможности)
-          </span>
-          <span class="rates-info__b-additional-item-price">
-            52,80 ₽
-          </span>
-        </li>
-        <li class="rates-info__b-additional-item">
-          <span class="rates-info__b-additional-item-text">
-            Обеспечение постоянного ограничения исходящей МГ или МН телефонной связи
-          </span>
-          <span class="rates-info__b-additional-item-price">
-            50,40 ₽/мес.
-          </span>
-        </li>
-      </ul>
+    <div class="rates-info__b-subtitle">
+      Заголовок
+    </div>
+
+    <ul class="rates-info__b-additional-list">
+      <li class="rates-info__b-additional-item">
+        <span class="rates-info__b-additional-item-text">
+          Бронирование телефонного номера, абонентской линии по заявлению абонента на срокне более 3 месяцев
+        </span>
+        <span class="rates-info__b-additional-item-price">
+          288 ₽/мес.
+        </span>
+      </li>
+      <li class="rates-info__b-additional-item">
+        <span class="rates-info__b-additional-item-text">
+          Постоянный запрет исходящей связи по заявлению абонента (услуга предоставляется при наличии технической
+          возможности)
+        </span>
+        <span class="rates-info__b-additional-item-price">
+          52,80 ₽
+        </span>
+      </li>
+      <li class="rates-info__b-additional-item">
+        <span class="rates-info__b-additional-item-text">
+          Обеспечение постоянного ограничения исходящей МГ или МН телефонной связи
+        </span>
+        <span class="rates-info__b-additional-item-price">
+          50,40 ₽/мес.
+        </span>
+      </li>
+    </ul>
 
 
-      <div class="rates-info__b-additional-text">
-        <div class="rates-info__b-subtitle">
-          Заголовок
-        </div>
-        <p>
-          Все услуги связи в одном тарифе. Интернет для бизнеса, корпоративная мобильная связь и телефония.
-        </p>
+    <div class="rates-info__b-additional-text">
+      <div class="rates-info__b-subtitle">
+        Заголовок
       </div>
+      <p>
+        Все услуги связи в одном тарифе. Интернет для бизнеса, корпоративная мобильная связь и телефония.
+      </p>
+    </div>
 
     {{ else }}
-      <div>
-        {{#if rates-info-subtitle }}
-          <div class="rates-info__subtitle">
-            {{ rates-info-subtitle }}
-          </div>
-        {{/if}}
-
-        <ul class="rates-info__additional-list">
-          {{#each additional-list }}
-            <li class="rates-info__additional-item">
-              <div>
-                <div class="rates-info__additional-caption">
-                  {{ this.caption }}
-                </div>
-
-                <div class="rates-info__additional-text">
-                  {{ this.text }}
-                </div>
-
-                <div class="rates-info__additional-apps-wrapper">
-                  {{#each appsList }}
-                    <img src="img/common/apps/{{ this }}.svg" alt="" class="rates-info__additional-apps-img">
-                  {{/each}}
-                </div>
-              </div>
-
-              <div class="rates-info__additional-control-wrapper">
-                <div class="rates-info__additional-actual-price-wrapper">
-                  <div class="rates-info__additional-actual-price">
-                    {{ this.actualPrice }}
-                  </div>
-                  {{#if oldPrice }}
-                    <div class="rates-info__additional-old-price">
-                      {{ this.oldPrice }}
-                    </div>
-                  {{/if}}
-                </div>
-
-                {{> common/controls/toggle name=this.toggleName }}
-              </div>
-            </li>
-          {{/each}}
-        </ul>
+    <div>
+      {{#if rates-info-subtitle }}
+      <div class="rates-info__subtitle">
+        {{ rates-info-subtitle }}
       </div>
+      {{/if}}
+
+      <ul class="rates-info__additional-list">
+        {{#each additional-list }}
+        <li class="rates-info__additional-item">
+          <div>
+            <div class="rates-info__additional-caption">
+              {{ this.caption }}
+            </div>
+
+            <div class="rates-info__additional-text">
+              {{ this.text }}
+            </div>
+
+            <div class="rates-info__additional-apps-wrapper">
+              {{#each appsList }}
+              <img src="img/common/apps/{{ this }}.svg" alt="" class="rates-info__additional-apps-img">
+              {{/each}}
+            </div>
+          </div>
+
+          <div class="rates-info__additional-control-wrapper">
+            <div class="rates-info__additional-actual-price-wrapper">
+              <div class="rates-info__additional-actual-price">
+                {{ this.actualPrice }}
+              </div>
+              {{#if oldPrice }}
+              <div class="rates-info__additional-old-price">
+                {{ this.oldPrice }}
+              </div>
+              {{/if}}
+            </div>
+
+            {{> common/controls/toggle name=this.toggleName }}
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
     {{/if}}
 
 
