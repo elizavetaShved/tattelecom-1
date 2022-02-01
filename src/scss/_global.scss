@@ -410,15 +410,15 @@ body {
 
     &:hover {
       text-decoration: underline;
-      color: var(--main-color-hover) !important;
+      color: var(--main-color-hover) ;
     }
   }
 }
 
 .gl__visually-hidden {
-  position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	clip: rect(0 0 0 0);
+  position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+	clip: rect(0 0 0 0) !important;
 }
