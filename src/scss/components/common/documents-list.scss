@@ -122,4 +122,51 @@
     font-size: var(--fs-t2);
     font-weight: 300;
   }
+
+  &.mod-b {
+
+    .documents-list__item-btn {
+      border-bottom: 1px solid #fff;
+
+      &:focus,
+      &:hover {
+        background-color: #fff;
+  
+        .documents-list__item-btn-label {
+          color: var(--main-color-business);
+        }
+      }
+  
+      &.mod-open {
+        background-color: #fff;
+  
+        .documents-list__item-btn-label {
+          color: var(--main-color-business);
+        }
+  
+        .documents-list__item-btn-icon {
+          fill: var(--main-color-business);
+        }
+      }
+    }
+
+    .documents-list__item {
+      &:first-of-type {
+        .documents-list__item-btn {
+          border-top: 1px solid #fff;
+        }
+      }
+    }
+
+    .documents-list__item-content-unit-link {
+      &:hover,
+      &:focus {
+        .documents-list__item-content-unit-icon {
+          stroke: var(--main-color-business);
+          fill: none;
+        }
+      }
+    }
+
+  }
 }

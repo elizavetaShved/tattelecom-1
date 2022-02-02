@@ -3,7 +3,7 @@
 {{!-- 1. Инструкции --}}
 {{!-- 2. Бланки и Документы --}}
 
-<ul class="documents-list">
+<ul class="documents-list {{#if isBusiness }} mod-b {{/if}}">
   {{#each documentsList }}
   <li class="documents-list__item">
     <button class="gl__drop-menu-btn documents-list__item-btn js-drop-menu-btn" type="button">

@@ -23,6 +23,20 @@
     z-index: 1;
     pointer-events: none;
   }
+
+  &.mod-b {
+    .sales-offices-map__item-work-caption,
+    .sales-offices-map__not-found {
+      color: var(--main-color-business);
+    }
+
+    .sales-offices-map__list {
+    
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--main-color-business);
+      }
+    }
+  }
 }
 
 .sales-offices-map__map {
