@@ -10,15 +10,20 @@ export default function initCallbackModal() {
     const btnsClose = document.querySelectorAll('.js-close-b-roaming-modal');
     const modalElem = document.querySelector('#b-roaming-modal');
     const modalElemHeading = modalElem.querySelector('.modal__title');
+    const modalElemText = modalElem.querySelector('.modal__roaming-text');
 
     let modalComponent;
 
     btnsOpen.forEach(btn => {
-        const btnHeading = btn.dataset.heading;
+        const btnHeading = btn.closest(".js-b-roaming-slide").dataset.heading;
+        const btnContent = btn.closest(".js-b-roaming-slide").dataset.content;
+
         btn.onclick = (e) => {
             e.preventDefault();
             modalComponent = new Modal(modalElem);
             modalElemHeading.innerHTML = btnHeading;
+            modalElemText.innerHTML = btnContent;
+
             modalComponent.onOpenModal();
         };
     })
