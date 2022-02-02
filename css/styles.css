@@ -4812,6 +4812,23 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   .documents-list__item-content-unit-description {
     font-size: var(--fs-t2);
     font-weight: 300; }
+  .documents-list.mod-b .documents-list__item-btn {
+    border-bottom: 1px solid #fff; }
+    .documents-list.mod-b .documents-list__item-btn:focus, .documents-list.mod-b .documents-list__item-btn:hover {
+      background-color: #fff; }
+      .documents-list.mod-b .documents-list__item-btn:focus .documents-list__item-btn-label, .documents-list.mod-b .documents-list__item-btn:hover .documents-list__item-btn-label {
+        color: var(--main-color-business); }
+    .documents-list.mod-b .documents-list__item-btn.mod-open {
+      background-color: #fff; }
+      .documents-list.mod-b .documents-list__item-btn.mod-open .documents-list__item-btn-label {
+        color: var(--main-color-business); }
+      .documents-list.mod-b .documents-list__item-btn.mod-open .documents-list__item-btn-icon {
+        fill: var(--main-color-business); }
+  .documents-list.mod-b .documents-list__item:first-of-type .documents-list__item-btn {
+    border-top: 1px solid #fff; }
+  .documents-list.mod-b .documents-list__item-content-unit-link:hover .documents-list__item-content-unit-icon, .documents-list.mod-b .documents-list__item-content-unit-link:focus .documents-list__item-content-unit-icon {
+    stroke: var(--main-color-business);
+    fill: none; }
 
 .rates-info {
   padding: 4rem 0 3rem; }
@@ -11782,6 +11799,13 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     height: 100%;
     z-index: 1;
     pointer-events: none; } }
+
+.sales-offices-map__points-list.mod-b .sales-offices-map__item-work-caption,
+.sales-offices-map__points-list.mod-b .sales-offices-map__not-found {
+  color: var(--main-color-business); }
+
+.sales-offices-map__points-list.mod-b .sales-offices-map__list::-webkit-scrollbar-thumb {
+  background-color: var(--main-color-business); }
 
 .sales-offices-map__map {
   background-color: lightgrey; }
