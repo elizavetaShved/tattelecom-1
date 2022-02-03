@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let value = e.target.options[e.target.selectedIndex].value;
       let form = self.closest("form");
   
-      form.submit();
+      location.href = '/technical-works/?year=' + value;
     });
   }
 
