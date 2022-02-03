@@ -905,6 +905,8 @@
 .header__b-main-page-menu {
   transition: max-height 300ms;
   background-size: cover;
+  position: relative;
+  z-index: 3;
 
   @include for-hg-down {
     grid-gap: 2rem;
