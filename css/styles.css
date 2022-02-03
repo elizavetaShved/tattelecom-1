@@ -6408,7 +6408,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 .header__b-main-page-menu {
   -webkit-transition: max-height 300ms;
   transition: max-height 300ms;
-  background-size: cover; }
+  background-size: cover;
+  position: relative;
+  z-index: 3; }
   @media screen and (max-width: 1199px) {
     .header__b-main-page-menu {
       grid-gap: 2rem; } }
