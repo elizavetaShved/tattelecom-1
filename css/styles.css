@@ -3957,11 +3957,15 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     width: 100%; } }
 
 .services__form-hint {
-  margin-top: 3.6rem;
   font-weight: 300;
   font-size: 1.4rem;
   line-height: 2.2rem;
-  letter-spacing: 0.02em; }
+  letter-spacing: 0.02em;
+  max-width: 34rem; }
+  @media screen and (max-width: 959px) {
+    .services__form-hint {
+      margin-bottom: 2.4rem;
+      max-width: 100%; } }
 
 .services__item-info-container {
   display: -webkit-box;
@@ -4029,6 +4033,27 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 
 .services__checkbox {
   margin-top: 4rem; }
+
+.services__form-payment-warpper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3.6rem; }
+  @media screen and (max-width: 959px) {
+    .services__form-payment-warpper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
 
 .useful-information {
   padding: 4rem 0 8rem; }
@@ -11379,7 +11404,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   font-size: 1.4rem;
   line-height: 1.8rem;
   color: var(--main-grey-color);
-  margin-right: 2rem; }
+  margin-right: 2rem;
+  max-width: 34rem; }
   @media screen and (max-width: 1023px) {
     .payment-services__form-hint-text {
       margin-right: 0;
