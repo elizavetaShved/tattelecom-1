@@ -158,11 +158,16 @@
 }
 
 .services__form-hint {
-  margin-top: 3.6rem;
   font-weight: 300;
   font-size: 1.4rem;
   line-height: 2.2rem;
   letter-spacing: 0.02em;
+  max-width: 34rem;
+
+  @include for-md-down {
+    margin-bottom: 2.4rem;
+    max-width: 100%;
+  }
 }
 
 .services__item-info-container   {
@@ -222,4 +227,16 @@
 
 .services__checkbox {
   margin-top: 4rem;
+}
+
+.services__form-payment-warpper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3.6rem;
+
+  @include for-md-down {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

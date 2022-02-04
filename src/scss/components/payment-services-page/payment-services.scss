@@ -134,6 +134,7 @@
   line-height: 1.8rem;
   color: var(--main-grey-color);
   margin-right: 2rem;
+  max-width: 34rem;
 
   @include for-bg-down {
     margin-right: 0;
