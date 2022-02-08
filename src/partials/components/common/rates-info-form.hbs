@@ -12,6 +12,11 @@
         <div class="rates-info__preview-caption">
           {{ this.caption }}
         </div>
+        {{#if this.captionSubTitle}}
+        <div class="rates-info__preview-caption-subtitl">
+          Без НДС
+        </div>
+        {{/if}}
         {{/if}}
         <ul class="rates-info__preview-rows-list">
           {{#each this.rowsList }}

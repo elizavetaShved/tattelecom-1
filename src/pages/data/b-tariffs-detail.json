@@ -57,6 +57,7 @@
         },
         {
         "caption": "Сообщения",
+        "captionSubTitle": true,
         "info-btn": true,
         "rowsList": [
             {

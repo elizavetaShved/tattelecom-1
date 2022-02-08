@@ -13,21 +13,28 @@
       </div>
 
       <form class="js-form-modal callback__form" data-need-validation data-parsley-validate data-parsley-focus="none">
-        {{> common/controls/input-main
-          required=true
-          type="tel"
-          phoneMask=true
-          placeholder="+7 (___) ___-__-__"
-          name="modal-callback-tel"
-        }}
-
-        <div class="callback__content-checkbox-wrapper">
-          {{> common/controls/input-checkbox
+        
+        <div class="callback__form-input-wrap-b">
+          {{> common/controls/input-main
             required=true
-            caption="Я согласен на обработку своих персональных данных"
-            name="modal-callback-agree"
-            isModal=true
+            type="text"
+            placeholder="Ваше имя"
+            name="modal-callback-name"
           }}
+        </div>
+        <div class="callback__form-input-wrap-b">
+          {{> common/controls/input-main
+            required=true
+            type="tel"
+            phoneMask=true
+            placeholder="+7 (___) ___-__-__"
+            name="modal-callback-tel"
+          }}
+        </div>
+        <div class="callback__form-input-wrap-b">
+          <p class="modal__required-text">
+            Нажимая кнопку, вы соглашаетесь на обработку персональных данных
+          </p>
         </div>
 
         <button type="submit" class="gl__main-btn {{#if isBusiness}}mod-business{{/if}} modal__btn-submit js-btn-submit">
