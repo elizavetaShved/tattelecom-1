@@ -6496,6 +6496,13 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   .header__b-menu-item-control:hover .header__b-menu-item-control-icon-arrow {
     fill: #fff; }
 
+a.header__b-popup-caption-list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+  a.header__b-popup-caption-list:hover {
+    text-decoration: underline; }
+
 .header__b-popup-caption-list {
   margin-bottom: 3rem; }
 

@@ -559,9 +559,9 @@
 									</div>
 									<div class="header__b-popup-content js-header-popup js-b-popup-margin" data-alignment="0" data-hover-value="connection">
 										<div class="header__b-popup-content-item">
-											<div class="header__b-popup-caption-list">
+											<a href="/" class="header__b-popup-caption-list">
 												<img src="img/header/business-menu/tel.svg" alt="" class="header__b-menu-item-control-icon"> Мобильная связь
-											</div>
+											</a>
 											<ul class="header__b-popup-list">
 												<li class="header__b-popup-item">
 													<a href="" class="header__b-popup-item-link">Тарифы Мобильной связи</a>
@@ -578,9 +578,9 @@
 											</ul>
 										</div>
 										<div class="header__b-popup-content-item">
-											<div class="header__b-popup-caption-list">
+											<a href="/" class="header__b-popup-caption-list">
 												<img src="img/header/business-menu/internet.svg" alt="" class="header__b-menu-item-control-icon"> Интернет
-											</div>
+											</a>
 											<ul class="header__b-popup-list">
 												<li class="header__b-popup-item">
 													<a href="" class="header__b-popup-item-link">Интернет для офиса</a>
@@ -597,9 +597,9 @@
 											</ul>
 										</div>
 										<div class="header__b-popup-content-item">
-											<div class="header__b-popup-caption-list">
+											<a href="/" class="header__b-popup-caption-list">
 												<img src="img/header/business-menu/telephony.svg" alt="" class="header__b-menu-item-control-icon"> Телефония
-											</div>
+											</a>
 											<ul class="header__b-popup-list">
 												<li class="header__b-popup-item">
 													<a href="" class="header__b-popup-item-link">Междугородная и международная связь</a>
@@ -858,8 +858,10 @@
 								<div class="header__b-menu-item-caption">Связь</div>
 								<ul class="header__b-menu-item-list">
 									<li>
-										<button type="button" class="header__b-menu-item-control mod-btn js-b-header-drop">
-											<img src="img/header/business-menu/tel.svg" alt="" class="header__b-menu-item-control-icon"> Мобильная связь<svg width="16" height="16" aria-hidden="true" class="header__b-menu-item-control-icon-arrow">
+										<div class="header__b-menu-item-control mod-btn js-b-header-drop">
+											<img src="img/header/business-menu/tel.svg" alt="" class="header__b-menu-item-control-icon">
+											<a class="gl__no-default-hover" href="/">Мобильная связь</a>
+											<svg width="16" height="16" aria-hidden="true" class="header__b-menu-item-control-icon-arrow">
 												<use xlink:href="#arrow-right"></use>
 											</svg>
 											<span class="header__b-menu-item-drop-list">
@@ -868,11 +870,13 @@
 												<a href="" class="header__b-menu-item-drop-link">Роуминг</a>
 												<a href="" class="header__b-menu-item-drop-link">«Красивый» номер</a>
 											</span>
-										</button>
+										</div>
 									</li>
 									<li>
-										<button type="button" class="header__b-menu-item-control mod-btn js-b-header-drop">
-											<img src="img/header/business-menu/internet.svg" alt="" class="header__b-menu-item-control-icon"> Интернет<svg width="16" height="16" aria-hidden="true" class="header__b-menu-item-control-icon-arrow">
+										<div class="header__b-menu-item-control mod-btn js-b-header-drop">
+											<img src="img/header/business-menu/internet.svg" alt="" class="header__b-menu-item-control-icon">
+											<a class="gl__no-default-hover" href="/">Интернет</a>
+											<svg width="16" height="16" aria-hidden="true" class="header__b-menu-item-control-icon-arrow">
 												<use xlink:href="#arrow-right"></use>
 											</svg>
 											<span class="header__b-menu-item-drop-list">
@@ -881,11 +885,13 @@
 												<a href="" class="header__b-menu-item-drop-link">Интернет по Радиоканалу</a>
 												<a href="" class="header__b-menu-item-drop-link">Виртуальные сети IP VPN</a>
 											</span>
-										</button>
+										</div>
 									</li>
 									<li>
-										<button type="button" class="header__b-menu-item-control mod-btn js-b-header-drop">
-											<img src="img/header/business-menu/telephony.svg" alt="" class="header__b-menu-item-control-icon"> Телефония<svg width="16" height="16" aria-hidden="true" class="header__b-menu-item-control-icon-arrow">
+										<div class="header__b-menu-item-control mod-btn js-b-header-drop">
+											<img src="img/header/business-menu/telephony.svg" alt="" class="header__b-menu-item-control-icon">
+											<a class="gl__no-default-hover" href="/">Телефония</a>
+											<svg width="16" height="16" aria-hidden="true" class="header__b-menu-item-control-icon-arrow">
 												<use xlink:href="#arrow-right"></use>
 											</svg>
 											<span class="header__b-menu-item-drop-list">
@@ -894,7 +900,7 @@
 												<a href="" class="header__b-menu-item-drop-link">Цифровая Телефония</a>
 												<a href="" class="header__b-menu-item-drop-link">Сервисы и услуги</a>
 											</span>
-										</button>
+										</div>
 									</li>
 								</ul>
 							</div>
@@ -1302,25 +1308,31 @@
 						<div class="gl__page-content">
 							<h2 class="gl__title">Кейсы</h2>
 						</div>
-						<div class="gl-slider js-swiper" data-swiper-slides-preview="2.5" data-swiper-gap="20">
-							<div class="gl__bg-hide">
-								<button type="button" class="gl-slider__slider-btn mod-prev gl__no-default-hover js-slider-btn-prev gl-slider__b-slider-btn">
-									<svg class="gl-slider__slider-btn-icon" width="26" height="26" aria-hidden="true">
-										<use xlink:href="#arrow-left"></use>
-									</svg>
-								</button>
-								<button type="button" class="gl-slider__slider-btn mod-next gl__no-default-hover js-slider-btn-next gl-slider__b-slider-btn">
-									<svg class="gl-slider__slider-btn-icon" width="26" height="26" aria-hidden="true">
-										<use xlink:href="#arrow-right"></use>
-									</svg>
-								</button>
-							</div>
-							<div class="gl__page-content">
+						<div class="gl__page-content">
+							<div class="gl-slider js-swiper" data-swiper-slides-preview="2.5" data-swiper-gap="20">
+								<div class="gl__bg-hide">
+									<button type="button" class="gl-slider__slider-btn mod-prev gl__no-default-hover js-slider-btn-prev gl-slider__b-slider-btn">
+										<svg class="gl-slider__slider-btn-icon" width="26" height="26" aria-hidden="true">
+											<use xlink:href="#arrow-left"></use>
+										</svg>
+									</button>
+									<button type="button" class="gl-slider__slider-btn mod-next gl__no-default-hover js-slider-btn-next gl-slider__b-slider-btn">
+										<svg class="gl-slider__slider-btn-icon" width="26" height="26" aria-hidden="true">
+											<use xlink:href="#arrow-right"></use>
+										</svg>
+									</button>
+								</div>
 								<div class="gl-slider__b-container gl-slider__container swiper-container js-swiper-container">
 									<div class="gl-slider__wrapper swiper-wrapper">
 										<a class="b-normal-slider__slide swiper-slide">
 											<img src="img/b-main-page/cases/img-1.jpg" alt="" class="b-normal-slider__background">
 											<div class="b-normal-slider__title mod-white">Проект «Мобильный офис дистанционного сотрудника надомного обслуживания населения»</div>
+										</a>
+										<a class="b-normal-slider__slide swiper-slide">
+											<img src="img/b-main-page/cases/img-2.jpg" alt="" class="b-normal-slider__background">
+											<div class="b-normal-slider__title mod-white">Таттелеком в проекте
+												<br>«Наш Двор»
+											</div>
 										</a>
 										<a class="b-normal-slider__slide swiper-slide">
 											<img src="img/b-main-page/cases/img-2.jpg" alt="" class="b-normal-slider__background">
