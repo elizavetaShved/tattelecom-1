@@ -12449,6 +12449,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
       background-color: #F7931E; }
     .b-socials__link-content.viber {
       background-color: #665CA7; }
+    .b-socials__link-content.inst {
+      background: linear-gradient(221.99deg, #805BC5 14.8%, #B24674 46.43%, #F5D384 86.25%); }
 
 .b-page-banner {
   padding: 5rem 0; }
