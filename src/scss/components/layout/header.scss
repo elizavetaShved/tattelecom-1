@@ -978,6 +978,14 @@
   }
 }
 
+a.header__b-popup-caption-list {
+  display: inline-flex;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .header__b-popup-caption-list {
   margin-bottom: 3rem;
 }
