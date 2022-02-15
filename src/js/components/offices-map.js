@@ -20,9 +20,11 @@ export class OfficesMap {
     this.mapElem = this.hostElem.querySelector('.js-map');
     this.officesElems = this.hostElem.querySelectorAll('.js-offices-item');
     this.inputSearch = this.hostElem.querySelector('.js-input-search');
+    this.inputSearchWrapper = this.hostElem.querySelector(".sales-offices-map__input-search-wrapper");
     this.checkboxPartner = this.hostElem.querySelector('.js-checkbox');
     this.notFound = this.hostElem.querySelector('.js-not-found');
     this.mapListElem = this.hostElem.querySelector('.js-map-list');
+    this.inputReset = this.inputSearchWrapper.querySelector(".sales-offices-map__form-reset");
 
     ymaps.ready(this.initMap);
   }
@@ -109,7 +111,40 @@ export class OfficesMap {
       }
     }
 
+
+    this.inputReset.onclick = () => {
+      this.onResetInput();
+    }
+
     this.setZoom();
+  }
+
+  onResetInput() {
+    const inputValue = this.inputSearch.value.toLowerCase();
+    // очисить всю коллекцию меток
+    this.myMap.geoObjects.removeAll();
+
+    let arrayForIteration;
+    if (this.checkboxPartner.checked) {
+      arrayForIteration = this.filteredForPartnerArr;
+    } else {
+      arrayForIteration = this.officesArr;
+    }
+    this.filteredForInputArr = [];
+
+    this.filteredForInputArr = this.officesArr;
+    this.filteredForInputArr.map(item => item.elem.classList.remove('mod-hide'));
+    this.inputSearchWrapper.querySelector(".sales-offices-map__input-search-icon").classList.remove("is-hidden");
+    this.inputSearchWrapper.querySelector(".sales-offices-map__form-reset").classList.remove("is-active");
+    
+    this.showNotFound(!this.filteredForInputArr.length);
+
+    // добавить в коллекцию меток только отфильтрованные метки
+    this.filteredForInputArr.forEach(newOfficeItem => {
+      this.addGeoMark(newOfficeItem);
+    })
+
+    this.inputSearch.value = "";
   }
 
   onInput() {
@@ -126,6 +161,9 @@ export class OfficesMap {
     this.filteredForInputArr = [];
 
     if (inputValue) {
+      this.inputSearchWrapper.querySelector(".sales-offices-map__input-search-icon").classList.add("is-hidden");
+      this.inputSearchWrapper.querySelector(".sales-offices-map__form-reset").classList.add("is-active");
+
       arrayForIteration.forEach(officeItem => {
         if (officeItem.address.toLowerCase().includes(inputValue) ||
           officeItem.city.toLowerCase().includes(inputValue) ||
@@ -139,6 +177,8 @@ export class OfficesMap {
     } else {
       this.filteredForInputArr = this.officesArr;
       this.filteredForInputArr.map(item => item.elem.classList.remove('mod-hide'));
+      this.inputSearchWrapper.querySelector(".sales-offices-map__input-search-icon").classList.remove("is-hidden");
+      this.inputSearchWrapper.querySelector(".sales-offices-map__form-reset").classList.remove("is-active");
     }
 
     this.showNotFound(!this.filteredForInputArr.length);
@@ -147,6 +187,8 @@ export class OfficesMap {
     this.filteredForInputArr.forEach(newOfficeItem => {
       this.addGeoMark(newOfficeItem);
     })
+
+
   }
 
   setZoom() {
