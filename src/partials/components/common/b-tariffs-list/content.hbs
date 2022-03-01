@@ -48,11 +48,11 @@
                     <span class="b-tariffs-item__service-name">{{this.services.callsRT}}</span>
                   </li>
                   {{/if}}
+                    <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
+                      <use xlink:href="#router"></use>
+                    </svg>
                   {{#if this.services.users}}
                   <li class="b-tariffs-item__service">
-                    <svg width="14" height="14" aria-hidden="true" class="b-tariffs-item__service-icon">
-                      <use xlink:href="#tariffs-user"></use>
-                    </svg>
                     <span class="b-tariffs-item__service-name">{{this.services.users}}</span>
                   </li>
                   {{/if}}

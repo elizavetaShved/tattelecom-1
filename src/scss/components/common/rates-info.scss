@@ -8,6 +8,7 @@
 
 .rates-info__content {
   display: flex;
+  align-items: flex-start;
 
   @include for-md-down {
     display: block;
