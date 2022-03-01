@@ -803,6 +803,9 @@ body {
   margin: -1px !important;
   clip: rect(0 0 0 0) !important; }
 
+.gl__pointer-events-auto {
+  pointer-events: auto !important; }
+
 /**
  * Swiper 6.8.4
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -4864,7 +4867,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 .rates-info__content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
   @media screen and (max-width: 959px) {
     .rates-info__content {
       display: block; } }
