@@ -6761,6 +6761,7 @@ a.header__b-popup-caption-list {
   -webkit-box-shadow: 0 0.266px 20px rgba(153, 152, 168, 0.17);
           box-shadow: 0 0.266px 20px rgba(153, 152, 168, 0.17);
   padding: 2rem;
+  padding-bottom: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
