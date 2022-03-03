@@ -6753,7 +6753,7 @@ a.header__b-popup-caption-list {
             transform: translateX(0); }
 
 .side-bar__content {
-  height: 100vh;
+  height: 100%;
   width: 40rem;
   max-width: 100vw;
   overflow: auto;
