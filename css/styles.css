@@ -6747,7 +6747,8 @@ a.header__b-popup-caption-list {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  height: 100%; }
   .side-bar.mod-show .side-bar__content {
     -webkit-transform: translateX(0);
             transform: translateX(0); }
@@ -6761,7 +6762,6 @@ a.header__b-popup-caption-list {
   -webkit-box-shadow: 0 0.266px 20px rgba(153, 152, 168, 0.17);
           box-shadow: 0 0.266px 20px rgba(153, 152, 168, 0.17);
   padding: 2rem;
-  padding-bottom: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
