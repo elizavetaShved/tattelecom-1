@@ -5867,7 +5867,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
 .header__top-menu-items {
   height: 100%; }
   .header__top-menu-items.mod-more {
-    display: none; }
+    display: none;
+    -webkit-transform: translateY(0.1rem);
+            transform: translateY(0.1rem); }
 
 .header__top-menu-items-list {
   display: -webkit-box;
@@ -5927,8 +5929,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     .header__top-menu-items-link.mod-tatt-right-block-link:last-child {
       margin: 0; }
     @media screen and (max-width: 425px) {
-      .header__top-menu-items-link.mod-tatt-right-block-link:nth-child(1) {
-        display: none; } }
+      .header__top-menu-items-link.mod-tatt-right-block-link {
+        border-bottom: none; }
+        .header__top-menu-items-link.mod-tatt-right-block-link:nth-child(1) {
+          display: none; } }
 
 .header__top-menu-mobile-nav {
   display: -webkit-box;
