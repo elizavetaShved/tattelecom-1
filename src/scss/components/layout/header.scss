@@ -289,6 +289,8 @@
 
 .header__top-menu-hover-nav {
   position: relative;
+  transform: translateY(0.1rem);
+
   &:hover {
     .header__top-menu-hover-container {
       opacity: 1;
