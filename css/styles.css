@@ -5946,7 +5946,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
           align-items: center; }
 
 .header__top-menu-hover-nav {
-  position: relative; }
+  position: relative;
+  -webkit-transform: translateY(0.1rem);
+          transform: translateY(0.1rem); }
   .header__top-menu-hover-nav:hover .header__top-menu-hover-container {
     opacity: 1;
     visibility: visible; }
