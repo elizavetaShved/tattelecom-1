@@ -212,6 +212,7 @@
 
   &.mod-more {
     display: none;
+    transform: translateY(0.1rem);
   }
 }
 
@@ -269,6 +270,7 @@
     }
 
     @include for-xxs-down {
+      border-bottom: none;
       &:nth-child(1) {
         display: none;
       }
