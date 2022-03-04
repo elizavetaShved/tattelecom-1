@@ -276,6 +276,10 @@
       }
     }
   }
+
+  @include for-xxs-down {
+    border-bottom: none;
+  }
 }
 
 .header__top-menu-mobile-nav {
