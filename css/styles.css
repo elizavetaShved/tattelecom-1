@@ -2287,13 +2287,16 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   background: #fff;
   border-radius: 4px;
   margin-right: 1.2rem;
-  position: relative; }
+  position: relative;
+  border: 1px solid var(--main-color); }
   .checkbox__content.mod-main {
     border: 1px solid #D4D4D4; }
     .checkbox__content.mod-main .checkbox__content-icon {
       fill: var(--main-color); }
-  .checkbox__content.mod-business .checkbox__content-icon {
-    fill: var(--main-color-business); }
+  .checkbox__content.mod-business {
+    border: 1px solid var(--main-color-business); }
+    .checkbox__content.mod-business .checkbox__content-icon {
+      fill: var(--main-color-business); }
   .checkbox__content.mod-modal {
     background: var(--border-color); }
     .checkbox__content.mod-modal .checkbox__content-icon {
@@ -7147,7 +7150,15 @@ a.header__b-popup-caption-list {
 
 .footer__contact-social-link {
   padding: 1.6rem;
-  display: inline-block; }
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   @media screen and (max-width: 767px) {
     .footer__contact-social-link {
       padding: 1.4rem; } }
@@ -7155,6 +7166,8 @@ a.header__b-popup-caption-list {
 .footer__contact-social-icon {
   height: 4rem;
   fill: var(--main-grey-color); }
+  .footer__contact-social-icon.wt, .footer__contact-social-icon.tg {
+    height: 3.2rem; }
 
 .footer__agreement-link {
   color: #fff; }
@@ -12018,7 +12031,8 @@ a.header__b-popup-caption-list {
 
 .sales-offices-map__item-work-value {
   font-size: 1.2rem;
-  line-height: 1.6rem; }
+  line-height: 1.6rem;
+  white-space: nowrap; }
 
 .sales-offices-map__not-found {
   padding: 1.6rem 3rem;
@@ -13736,10 +13750,10 @@ a.header__b-popup-caption-list {
     font-size: 1.6rem;
     line-height: 2.6rem;
     letter-spacing: 0.02em;
-    margin-bottom: 5rem; }
+    margin-bottom: 2rem; }
     @media screen and (max-width: 767px) {
       .b-info__text p {
-        margin-bottom: 2.6rem; } }
+        margin-bottom: 2rem; } }
     .b-info__text p:last-child {
       margin-bottom: 0; }
   .b-info__text h3 {
