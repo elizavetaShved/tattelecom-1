@@ -10,12 +10,11 @@ export default function initCallbackModal() {
   const btnsClose = document.querySelectorAll('.js-close-callback-modal');
   const modalElem = document.querySelector('#modal-callback-host');
 
-  let modalComponent;
+  let modalComponent = new Modal(modalElem);
 
   btnsOpen.forEach(btn => {
     btn.onclick = (e) => {
       e.preventDefault();
-      modalComponent = new Modal(modalElem);
       modalComponent.onOpenModal();
     };
   })

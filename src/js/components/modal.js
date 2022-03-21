@@ -1,4 +1,6 @@
-import { checkExistParent } from '../finctions/checkExistParent';
+import {
+  checkExistParent
+} from '../finctions/checkExistParent';
 
 export class Modal {
   bodyElem;
@@ -63,7 +65,7 @@ export class Modal {
 
     document.addEventListener('click', this.checkClickByModal);
     document.addEventListener('keydown', event => {
-      if (event.key === 'Escape') {
+      if (event.keyCode == 27) {
         this.onCloseModal();
       }
     });
@@ -81,11 +83,13 @@ export class Modal {
     this.bodyElem.classList.add('mod-no-scroll');
 
     window.addEventListener('resize', this.setHeightModalContainer);
+    this.isOpenModal = true;
   }
 
   onCloseModal() {
     this.modalElem.classList.remove('mod-show');
     this.isOpenModal = false;
+    console.log(this.isOpenModal);
     document.removeEventListener('click', this.checkClickByModal);
     window.removeEventListener('resize', this.setHeightModalContainer);
     this.bodyElem.classList.remove('mod-no-scroll');
@@ -94,6 +98,8 @@ export class Modal {
   checkClickByModal(event) {
     if (this.isOpenModal && !checkExistParent(event.target, this.modalContainerElem)) {
       this.onCloseModal();
+
+      console.log(event.target);
     } else {
       this.isOpenModal = true;
     }

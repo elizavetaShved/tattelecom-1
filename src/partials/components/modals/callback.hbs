@@ -31,11 +31,15 @@
             name="modal-callback-tel"
           }}
         </div>
-        <div class="callback__form-input-wrap-b">
-          <p class="modal__required-text">
-            Нажимая кнопку, вы соглашаетесь на обработку персональных данных
-          </p>
-        </div>
+        <div class="send-request__content-checkbox-wrapper">
+            {{> common/controls/input-checkbox
+              required=true
+              caption="Я согласен на обработку своих персональных данных"
+              name="modal-send-request-agree"
+              isModal=true
+              businessMod=true
+            }}
+          </div>
 
         <button type="submit" class="gl__main-btn {{#if isBusiness}}mod-business{{/if}} modal__btn-submit js-btn-submit">
           Жду звонка

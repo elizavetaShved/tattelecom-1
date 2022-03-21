@@ -43,6 +43,7 @@
   border-radius: 4px;
   margin-right: 1.2rem;
   position: relative;
+  border: 1px solid var(--main-color);
 
   &.mod-main {
     border: 1px solid #D4D4D4;
@@ -56,6 +57,8 @@
     .checkbox__content-icon {
       fill: var(--main-color-business);
     }
+
+    border: 1px solid var(--main-color-business);
   }
 
   &.mod-modal {

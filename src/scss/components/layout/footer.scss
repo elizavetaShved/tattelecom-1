@@ -266,7 +266,9 @@
 
 .footer__contact-social-link {
   padding: 1.6rem;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
   @include for-sm-down {
     padding: 1.4rem;
@@ -276,6 +278,11 @@
 .footer__contact-social-icon {
   height: 4rem;
   fill: var(--main-grey-color);
+
+  &.wt,
+  &.tg {
+    height: 3.2rem;
+  }
 }
 
 .footer__agreement-link {

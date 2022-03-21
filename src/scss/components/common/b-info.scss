@@ -27,10 +27,10 @@
     font-size: 1.6rem;
     line-height: 2.6rem;
     letter-spacing: 0.02em;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 
     @include for-sm-down {
-      margin-bottom: 2.6rem;
+      margin-bottom: 2rem;
     }
 
     &:last-child {
