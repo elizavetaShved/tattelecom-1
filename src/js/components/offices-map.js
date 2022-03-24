@@ -46,12 +46,20 @@ export class OfficesMap {
         coords: JSON.parse(officeElem.getAttribute('data-coord')),
         address: officeElem.querySelector('.js-address').innerText,
         city: officeElem.querySelector('.js-city').innerText,
-        weekday: officeElem.querySelector('.js-weekday').innerText,
-        saturday: officeElem.querySelector('.js-saturday').innerText,
-        sunday: officeElem.querySelector('.js-sunday').innerText,
         isPartner: officeElem.hasAttribute('data-is-partner'),
+        days: [],
         placemark: null
-      }
+      };
+
+      officeElem.querySelectorAll(".sales-offices-map__item-work-time").forEach(item=>{
+        let obj = {
+          day: item.querySelector(".js-day").innerText,
+          weekday: item.querySelector(".js-time").innerText
+        };
+
+        newItem.days.push(obj);
+      });
+
       this.officesArr.push(newItem);
       this.filteredForInputArr.push(newItem);
 
@@ -213,6 +221,18 @@ export class OfficesMap {
   }
 
   addGeoMark(newItem) {
+    let body = "";
+    
+    for (let i = 0; i<newItem.days.length; i++) {
+      let daysLayout = `
+        <div class="body-item">
+          <div class="caption">${newItem.days[i].day}</div>
+          <div class="value">${newItem.days[i].weekday}</div>
+        </div>
+      `
+      body+=daysLayout;
+    }
+
     const myPlacemark = new ymaps.Placemark([newItem.coords[0], newItem.coords[1]], {
       balloonContentHeader: `
         <div class="header-wrapper">
@@ -220,22 +240,7 @@ export class OfficesMap {
           <div class="city">${ newItem.city }</div>
         </div>
       `,
-      balloonContentBody: `
-        <div class="body-wrapper">
-          <div class="body-item">
-            <div class="caption">пн.–пт.</div>
-            <div class="value">${ newItem.weekday }</div>
-          </div>
-          <div class="body-item">
-            <div class="caption">сб.</div>
-            <div class="value">${ newItem.saturday }</div>
-          </div>
-          <div class="body-item">
-            <div class="caption">вс.</div>
-            <div class="value">${ newItem.sunday }</div>
-          </div>
-        </div>
-      `,
+      balloonContentBody: `<div class="body-wrapper">${body}</div>`,
       hintContent: newItem.address
     }, {
       iconLayout: 'default#image',
