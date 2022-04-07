@@ -16,11 +16,13 @@
 
                 <div class="investors-page__list">
                     {{#each investors-page-list }}
-                        <a href="{{this.link}}" class="investors-page__item" style="background-image: url({{this.img}});">
-                            <span class="investors-page__item-heading">
-                                {{this.name}}
-                            </span>
-                        </a>
+                        <div class="investors-page__item" style="background-image: url({{this.img}});">
+                            <a href="{{this.link}}">
+                                <span class="investors-page__item-heading">
+                                    {{this.name}}
+                                </span>
+                            </a>
+                        </div>
                     {{/each}}
                 </div>
 

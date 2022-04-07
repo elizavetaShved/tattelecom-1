@@ -400,3 +400,11 @@
         margin-bottom: 3.8rem;
     }
 }
+
+.tatt-offset-bottom {
+    margin-bottom: 10rem !important;
+
+    @include for-md-down {
+        margin-bottom: 6rem !important;
+    }
+}

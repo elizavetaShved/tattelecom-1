@@ -39,6 +39,12 @@
         background-size: cover;
         overflow: hidden;
 
+        a {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
         &::before {
             position: absolute;
             top: 0;

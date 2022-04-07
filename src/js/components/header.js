@@ -184,31 +184,29 @@ export class Header {
     this.isTattelekomMain = !!document.querySelector('.js-tattelekom-pages');
 
     // если не разделы таттелком то выполняем
-    if (this.isTattelekomMain === false) {
-      this.popupElem.classList.add('mod-show');
-      this.popupContentElements.forEach(popupContentElem => {
-        if ((popupContentElem.getAttribute('data-hover-value') === link.getAttribute('data-hover-value'))
-          && !popupContentElem.className.includes('mod-show')) {
-          this.popupContentElements.map(elem => {
-            elem.classList.remove('mod-show');
-            elem.style.marginLeft = 0;
-          });
-          popupContentElem.classList.add('mod-show');
+    this.popupElem.classList.add('mod-show');
+    this.popupContentElements.forEach(popupContentElem => {
+      if ((popupContentElem.getAttribute('data-hover-value') === link.getAttribute('data-hover-value'))
+        && !popupContentElem.className.includes('mod-show')) {
+        this.popupContentElements.map(elem => {
+          elem.classList.remove('mod-show');
+          elem.style.marginLeft = 0;
+        });
+        popupContentElem.classList.add('mod-show');
 
-          // дать высоту заголовкам
-          const captionsElems = popupContentElem.querySelectorAll('.header__b-popup-caption-list');
-          setMaxHeightElem(captionsElems);
+        // дать высоту заголовкам
+        const captionsElems = popupContentElem.querySelectorAll('.header__b-popup-caption-list');
+        setMaxHeightElem(captionsElems);
 
-          if (popupContentElem.hasAttribute('data-alignment')) {
-            const distanceXLink = this.menuLinkElements[popupContentElem.getAttribute('data-alignment')].getBoundingClientRect().x;
-            const distanceXContent = popupContentElem.getBoundingClientRect().x;
-            popupContentElem.style.marginLeft = `${ distanceXLink - distanceXContent }px`;
-          }
+        if (popupContentElem.hasAttribute('data-alignment')) {
+          const distanceXLink = this.menuLinkElements[popupContentElem.getAttribute('data-alignment')].getBoundingClientRect().x;
+          const distanceXContent = popupContentElem.getBoundingClientRect().x;
+          popupContentElem.style.marginLeft = `${ distanceXLink - distanceXContent }px`;
         }
-      })
+      }
+    })
 
-      this.isOpenPopup = true;
-    }
+    this.isOpenPopup = true;
   }
 
   // проверка достаточно ли проскролена старница, чтобы показать меню
