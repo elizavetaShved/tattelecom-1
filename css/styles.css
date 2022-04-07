@@ -5948,6 +5948,9 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
         border-bottom: none; }
         .header__top-menu-items-link.mod-tatt-right-block-link:nth-child(1) {
           display: none; } }
+    @media screen and (max-width: 1159px) {
+      .header__top-menu-items-link.mod-tatt-right-block-link {
+        margin-right: 0; } }
   @media screen and (max-width: 425px) {
     .header__top-menu-items-link {
       border-bottom: none; } }
