@@ -286,6 +286,10 @@
         display: none;
       }
     }
+
+    @include for-lg-down {
+      margin-right: 0;
+    }
   }
 
   @include for-xxs-down {
