@@ -54,6 +54,7 @@
     
     .header__top-block {
       background-color: #fff;
+      height: var(--header-height-top-block-tatt);
     }
 
     .header__top-block-right {
@@ -739,6 +740,14 @@
 
   &.mod-tattelekom {
     top: var(--header-height-tatt);
+
+    .header__popup-item-caption {
+      margin-bottom: 2.5rem;
+    }
+
+    .header__popup-content {
+      min-height: 22.7rem;
+    }
   }
 
   &.mod-business {
