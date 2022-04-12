@@ -5735,7 +5735,8 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
     -webkit-box-shadow: 0px 0.19408px 41px rgba(52, 52, 52, 0.0646723), 0px -5.73123px 21px rgba(52, 52, 52, 0.0423377);
             box-shadow: 0px 0.19408px 41px rgba(52, 52, 52, 0.0646723), 0px -5.73123px 21px rgba(52, 52, 52, 0.0423377); }
     .header.mod-tattelekom .header__top-block {
-      background-color: #fff; }
+      background-color: #fff;
+      height: var(--header-height-top-block-tatt); }
     .header.mod-tattelekom .header__top-block-right {
       margin-left: auto; }
     .header.mod-tattelekom .header__bottom-block {
@@ -6323,6 +6324,10 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   top: var(--header-height); }
   .header__popup-container.mod-tattelekom {
     top: var(--header-height-tatt); }
+    .header__popup-container.mod-tattelekom .header__popup-item-caption {
+      margin-bottom: 2.5rem; }
+    .header__popup-container.mod-tattelekom .header__popup-content {
+      min-height: 22.7rem; }
   .header__popup-container.mod-business {
     top: var(--header-height-b); }
   .header__popup-container.mod-location {
