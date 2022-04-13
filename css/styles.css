@@ -806,6 +806,32 @@ body {
 .gl__pointer-events-auto {
   pointer-events: auto !important; }
 
+.tattelekom-pages .gl__layout-content {
+  margin-top: calc(4rem + var(--header-height-tatt)); }
+
+@media screen and (max-width: 767px) {
+  .tattelekom-pages .gl__layout-content {
+    margin-top: var(--header-height-tatt); } }
+
+.tattelekom-pages .tatt-achievements__link {
+  display: block;
+  margin-top: 4rem; }
+
+.tattelekom-pages .tatt-achievements__link:first-of-type {
+  margin-top: 0; }
+
+@media screen and (max-width: 559px) {
+  .tattelekom-pages .tatt-achievements__link {
+    margin-top: 3rem; } }
+
+.tattelekom-pages main > section.bread-crumbs__container {
+  max-width: 1450px;
+  padding-left: var(--page-content-padding);
+  padding-right: var(--page-content-padding);
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto; }
+
 /**
  * Swiper 6.8.4
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -6325,9 +6351,18 @@ textarea::-webkit-scrollbar-track, .gl__layout-wrapper.mod-business textarea::-w
   .header__popup-container.mod-tattelekom {
     top: var(--header-height-tatt); }
     .header__popup-container.mod-tattelekom .header__popup-item-caption {
-      margin-bottom: 2.5rem; }
+      margin-bottom: 2rem;
+      grid-column: 3 span; }
+      .header__popup-container.mod-tattelekom .header__popup-item-caption.mod-2-span {
+        grid-column: 2 span; }
     .header__popup-container.mod-tattelekom .header__popup-content {
       min-height: 22.7rem; }
+    .header__popup-container.mod-tattelekom .header__popup-item-wrapper {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      -webkit-column-gap: 3rem;
+         -moz-column-gap: 3rem;
+              column-gap: 3rem; }
   .header__popup-container.mod-business {
     top: var(--header-height-b); }
   .header__popup-container.mod-location {
