@@ -426,3 +426,36 @@ body {
 .gl__pointer-events-auto {
   pointer-events: auto !important;
 }
+
+.tattelekom-pages .gl__layout-content {
+  margin-top: calc(4rem + var(--header-height-tatt));
+}
+@media screen and (max-width: 767px) {
+  .tattelekom-pages .gl__layout-content {
+      margin-top: var(--header-height-tatt);
+  }
+}
+
+.tattelekom-pages .tatt-achievements__link {
+  display: block;
+  margin-top: 4rem;
+}
+
+.tattelekom-pages .tatt-achievements__link:first-of-type {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 559px) {
+  .tattelekom-pages .tatt-achievements__link {
+      margin-top: 3rem;
+  }
+}
+
+.tattelekom-pages main > section.bread-crumbs__container {
+  max-width: 1450px;
+  padding-left: var(--page-content-padding);
+  padding-right: var(--page-content-padding);
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+}

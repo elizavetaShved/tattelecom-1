@@ -742,11 +742,22 @@
     top: var(--header-height-tatt);
 
     .header__popup-item-caption {
-      margin-bottom: 2.5rem;
+      margin-bottom: 2rem;
+      grid-column: 3 span;
+
+      &.mod-2-span {
+        grid-column: 2 span;
+      }
     }
 
     .header__popup-content {
       min-height: 22.7rem;
+    }
+
+    .header__popup-item-wrapper {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      column-gap: 3rem;
     }
   }
 
