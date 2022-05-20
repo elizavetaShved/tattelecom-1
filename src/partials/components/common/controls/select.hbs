@@ -48,7 +48,7 @@
         {{#if this.required }}
           <span class="gl__input-mark-required"></span>
         {{/if}}
-        <select class="gl__select js-custom-select"
+        <select class="gl__select js-custom-select {{ this.classJS }}"
                 data-parsley-class-handler="#{{ this.name }}"
                 name="{{ this.name }}"
           {{#if this.required }}
