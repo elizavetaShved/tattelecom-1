@@ -250,8 +250,8 @@
 .footer__contact-social-wrapper {
   display: flex;
   justify-content: flex-end;
-  margin: -1.6rem;
-  margin-top: 3.6rem;
+  // margin: -1.6rem;
+  // margin-top: 1.6rem;
 
   @include for-hg-down {
     display: block;
@@ -293,3 +293,19 @@
     text-decoration: underline;
   }
 }
+
+.footer__autor {
+  text-align: right;
+  padding-top: 10px;
+
+  @include for-hg-down {
+    display: block;
+    text-align: left;
+  }
+
+  @include for-sm-down {
+    // margin: -1.4rem;
+    margin-top: 1rem;
+  }
+}
+
