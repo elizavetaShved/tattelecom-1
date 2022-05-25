@@ -7203,9 +7203,7 @@ a.header__b-popup-caption-list {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin: -1.6rem;
-  margin-top: 3.6rem; }
+          justify-content: flex-end; }
   @media screen and (max-width: 1199px) {
     .footer__contact-social-wrapper {
       display: block;
@@ -7241,6 +7239,17 @@ a.header__b-popup-caption-list {
   .footer__agreement-link:hover {
     color: #fff;
     text-decoration: underline; }
+
+.footer__autor {
+  text-align: right;
+  padding-top: 10px; }
+  @media screen and (max-width: 1199px) {
+    .footer__autor {
+      display: block;
+      text-align: left; } }
+  @media screen and (max-width: 767px) {
+    .footer__autor {
+      margin-top: 1rem; } }
 
 .modal {
   z-index: var(--z-index-modal);
